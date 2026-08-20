@@ -1061,9 +1061,319 @@ const ENGLISH_REPORTS = [
     { question: "After three acquisitions in two years, the product lineup had become ___ and confusing for customers.", choices: ["savvy", "seamless", "bloated", "abrasive"], answerIndex: 2, explanation: "\"Bloated\" describes something excessively large and inefficient, filled with unnecessary elements." },
     { question: "It took nearly two years for the idea to ___ internally before the board finally approved a pilot.", choices: ["gain traction", "hit a snag", "set the tone", "take stock"], answerIndex: 0, explanation: "\"Gain traction\" means to start making measurable progress or gaining acceptance after a period of little movement." }
   ]
+},
+{
+  date: "2026-08-20",
+  dateLabel: "2026年8月20日（木）",
+  readTimeMin: 32,
+  coreItems: [
+    {
+      type: "word", term: "vet", ipa: "/vet/", register: "実務全般（採用・調達・法務）",
+      meaning_en: "to investigate someone or something carefully and thoroughly before accepting, approving, or trusting them",
+      meaning_ja: "（信用・採用・承認の前に）入念に審査する、身元や内容を精査する",
+      examples: [
+        "Compliance vets every new counterparty against the sanctions list before we're allowed to open an account.",
+        "My sister vetted three contractors and read every review before letting anyone touch the kitchen."
+      ],
+      synonyms: [
+        { term: "screen", nuance_ja: "より機械的・初期段階のふるい分けに近い語。vetが持つ「深く掘り下げて確認する」徹底度・厳しさはやや弱い。" },
+        { term: "scrutinize", nuance_ja: "「細部まで厳しく調べる」行為そのものに焦点があり、必ずしも承認・採用の可否を決めるプロセスの一部とは限らない。" },
+        { term: "check out", nuance_ja: "非常にカジュアルな言い方。vetが持つ公式な審査プロセスというニュアンスは薄く、個人的な確認にも使える。" }
+      ],
+      explanation_ja: "元々は「獣医（veterinarian）」から派生した動詞で、動物の健康状態を検査することを指していた。そこから転じて、人や提案、書類の「健全性」を隅々までチェックするという意味で使われるようになった。採用面接前のバックグラウンドチェックや、M&Aの相手先候補を調べる場面で \"vet a candidate\" \"vet a counterparty\" のように頻出する、実務では避けて通れない一語。"
+    },
+    {
+      type: "word", term: "stonewall", ipa: "/ˈstoʊnwɔːl/", register: "批判的・交渉",
+      meaning_en: "to deliberately refuse to answer questions, cooperate, or provide information, in order to delay or obstruct a process",
+      meaning_ja: "（意図的に）のらりくらりとかわす、非協力的な態度で情報提供や進展を妨げる",
+      examples: [
+        "The vendor has been stonewalling every request for the audited financials for three weeks now.",
+        "Whenever I bring up splitting the rent fairly, my roommate just stonewalls and changes the subject."
+      ],
+      synonyms: [
+        { term: "obstruct", nuance_ja: "より一般的で、必ずしも「質問に答えない」という具体的な戦術を含意しない。プロセス全体を妨げる行為全般を指せる。" },
+        { term: "give someone the runaround", nuance_ja: "たらい回しにする、というニュアンスで、担当者を次々変えて対応を引き延ばす具体的な手口を指すことが多い。" },
+        { term: "clam up", nuance_ja: "「口を閉ざす」という個人の感情的な反応に近く、stonewallほど計算高い戦術というニュアンスは薄い。" }
+      ],
+      explanation_ja: "文字通り「石の壁」にぶつかるように、何を言ってもびくともしない、進展がゼロという状況を描写する語。1970年代のウォーターゲート事件でニクソン政権関係者が捜査に対して取った非協力的な態度を報じる中で政治用語として定着し、現在ではビジネスの交渉や監査対応で「意図的にのらりくらりとかわす」相手を批判する際の定番語彙になっている。"
+    },
+    {
+      type: "word", term: "tout", ipa: "/taʊt/", register: "報道・やや懐疑的",
+      meaning_en: "to promote or praise something persistently and enthusiastically, often with a hint that the praise may be exaggerated or self-serving",
+      meaning_ja: "（誇張気味に）盛んに宣伝する、吹聴する",
+      examples: [
+        "The startup's pitch deck touted 300% year-over-year growth without mentioning it started from almost nothing.",
+        "Every ad in my feed touts some miracle supplement that 'changes your life in two weeks.'"
+      ],
+      synonyms: [
+        { term: "promote", nuance_ja: "より中立的な語。touがtoutが暗に含む「話半分に聞いておいた方がいい」という懐疑的なニュアンスは持たない。" },
+        { term: "hype", nuance_ja: "SNS的でカジュアルな響きを持ち、人為的に作られた盛り上がり・熱狂に焦点がある。" },
+        { term: "champion", nuance_ja: "「本心から支持し擁護する」というポジティブな意味合いが強く、touchの懐疑的なトーンとは正反対に近い。" }
+      ],
+      explanation_ja: "元々はイギリスの競馬場で「この馬に賭けろ」と情報を売り歩く客引き（tout）を指した俗語で、そこから「売り込むために大げさに褒める」というニュアンスが今も残っている。金融報道で企業や経営陣が自社について語る内容を紹介する際、\"the company touted its growth\" のように使われると、記者がその主張を全面的には信じていないことを行間で示す、便利な懐疑的フレーミングの語。"
+    },
+    {
+      type: "word", term: "rescind", ipa: "/rɪˈsɪnd/", register: "フォーマル・法務/人事",
+      meaning_en: "to officially cancel or withdraw a law, order, agreement, or decision",
+      meaning_ja: "（決定・提案・契約などを）正式に取り消す、撤回する",
+      examples: [
+        "The firm rescinded his job offer after the background check turned up inconsistencies in his resume.",
+        "The landlord rescinded the rent increase after half the building complained in writing."
+      ],
+      synonyms: [
+        { term: "revoke", nuance_ja: "ほぼ同義だが、免許・資格・権利を「剥奪する」場面（revoke a license）でより自然に使われる。" },
+        { term: "retract", nuance_ja: "主に発言・声明など「言葉にしたもの」を撤回する場合に使われ、rescindのように契約や決定そのものにはあまり使わない。" },
+        { term: "annul", nuance_ja: "より法的・形式的で、契約や結婚などを「最初からなかったことにする」極めて強い取り消しを表す。" }
+      ],
+      explanation_ja: "ラテン語の \"rescindere\"（切り離す、切り取る）に由来し、何かをきれいに切断して無効にするというイメージを持つ。人事の現場で内定を取り消す \"rescind an offer\"、企業が過去の方針を撤回する \"rescind a policy\" のように、単なる \"cancel\" よりも一段フォーマルで「後戻りできない正式な取り消し」という重みを持つ語として使われる。"
+    },
+    {
+      type: "idiom", term: "throw someone under the bus", ipa: "", register: "口語・批判的",
+      meaning_en: "to blame or betray someone, often a colleague, in order to protect yourself or avoid responsibility",
+      meaning_ja: "（自分を守るために）人を売る、責任を押し付けて犠牲にする",
+      examples: [
+        "When the project missed its deadline, the VP threw the junior analyst under the bus in front of the whole steering committee.",
+        "I can't believe he threw me under the bus and told our boss the delay was my idea."
+      ],
+      synonyms: [
+        { term: "scapegoat (someone)", nuance_ja: "組織的な失敗の責任を一人に押し付けるというニュアンスが強く、throw under the busよりやや客観的・フォーマルな響きを持つ。" },
+        { term: "sell someone out", nuance_ja: "信頼や忠誠を裏切るという点でほぼ同義。特に秘密や仲間を裏切る場面に使われやすい。" },
+        { term: "pin the blame on", nuance_ja: "より中立的・説明的な言い方で、throw under the busが持つ生々しい裏切りのイメージは薄い。" }
+      ],
+      explanation_ja: "由来は諸説あるが、1980〜90年代の英米の政治報道で「味方を見捨てて自分だけ助かる」という意味で広まった、非常に生々しく残酷な視覚イメージを持つ表現。バスに轢かれるのを見捨てて自分は無傷で逃げる、という構図がそのまま「責任転嫁・裏切り」の比喩になっている。オフィスの人間関係・社内政治を語る雑談で頻出し、知っておくと会話の温度感が一気につかめるようになる。"
+    },
+    {
+      type: "idiom", term: "cut corners", ipa: "", register: "批判的・品質",
+      meaning_en: "to do something in the easiest, cheapest, or fastest way, often sacrificing quality, safety, or thoroughness",
+      meaning_ja: "（手間や費用を惜しんで）手を抜く、質を犠牲にして簡略化する",
+      examples: [
+        "The contractor cut corners on the fire suppression system to hit budget, and it failed inspection.",
+        "I cut corners on the recipe and used store-bought sauce instead of making it from scratch — you could tell."
+      ],
+      synonyms: [
+        { term: "skimp on", nuance_ja: "特に「お金や資源をケチる」ことに焦点があり、cut cornersが含む「手間・時間の省略」まではカバーしない、やや狭い語。" },
+        { term: "take shortcuts", nuance_ja: "より中立的で、必ずしも品質の犠牲を伴うとは限らない。時には賢い近道として肯定的にも使われる。" },
+        { term: "compromise on quality", nuance_ja: "何が犠牲になっているかを明示的に説明する、よりフォーマルな言い換え。" }
+      ],
+      explanation_ja: "本来の道を歩かず、角を斜めに突っ切ることで距離を短縮する、という物理的なイメージに由来する表現。コンプライアンス・建設・品質管理の文脈で非常によく使われ、ほぼ常に否定的な意味で使われる点が特徴。「褒め言葉として使われることはまずない」と覚えておくと誤用を避けられる。"
+    },
+    {
+      type: "idiom", term: "hit the ground running", ipa: "", register: "採用・オンボーディング",
+      meaning_en: "to start a new activity, job, or project immediately with full energy and effectiveness, without a slow start",
+      meaning_ja: "（新しい仕事などに）着任してすぐに全力で成果を出し始める",
+      examples: [
+        "We need someone who can hit the ground running — there's no time for a three-month ramp-up before launch.",
+        "She hit the ground running on her marathon training plan the very day she signed up."
+      ],
+      synonyms: [
+        { term: "get up to speed quickly", nuance_ja: "学習・慣れのプロセスそのものに焦点があり、hit the ground runningが含意する「最初から高いパフォーマンスを出す」という結果までは強調しない。" },
+        { term: "jump right in", nuance_ja: "より口語的で、意欲・積極性に焦点があり、スキルや成果のスピード感まで含意するとは限らない。" }
+      ],
+      explanation_ja: "落下傘部隊が着地と同時に走り出す、あるいは戦時中に走行中の列車から兵士が飛び降りて即座に行動を始める、という軍事由来のイメージが語源とされる。求人票やオンボーディングの場面で「立ち上がりの遅い人材は求めていない」という即戦力志向を伝える定番フレーズとして非常によく使われる。"
+    },
+    {
+      type: "idiom", term: "play devil's advocate", ipa: "", register: "議論・MBA的",
+      meaning_en: "to argue for the opposite or unpopular side of a debate, not because you believe it, but to test the strength of an argument or provoke discussion",
+      meaning_ja: "（本心ではなく）あえて反対意見を述べる、議論を深めるためにわざと異論を唱える",
+      examples: [
+        "Let me play devil's advocate for a second — what if the target's customer concentration is worse than disclosed?",
+        "I actually agree with you, but let me play devil's advocate: what would someone against this say?"
+      ],
+      synonyms: [
+        { term: "poke holes in (an argument)", nuance_ja: "議論全体の立場を代弁するというより、具体的な弱点や欠陥をピンポイントで指摘することに焦点がある。" },
+        { term: "push back", nuance_ja: "より一般的な「異議を唱える」行為全般を指し、devil's advocateのように「本心とは別の立場をわざと取る」という前提は必ずしも含まない。" }
+      ],
+      explanation_ja: "由来はカトリック教会の実際の役職 \"advocatus diaboli\"（悪魔の代弁人）で、聖人認定の審査を厳格にするため、あえて反対意見を述べる役割が公式に置かれていたことに由来する。MBAのケース討論や投資委員会の場では、あえて反対意見を述べることが「議論への不誠実さ」ではなく「思考の厳密さ」の証として好意的に受け止められる文化があり、その象徴的な表現として頻出する。"
+    },
+    {
+      type: "phrase", term: "a foregone conclusion", ipa: "", register: "分析・予測",
+      meaning_en: "an outcome that is certain or obvious before it actually happens, leaving little or no doubt",
+      meaning_ja: "（結果が）分かりきったこと、既定路線",
+      examples: [
+        "With three board members already publicly backing the merger, shareholder approval is basically a foregone conclusion.",
+        "Given how well he interviewed, getting the offer felt like a foregone conclusion."
+      ],
+      synonyms: [
+        { term: "a done deal", nuance_ja: "「既に正式に決定・合意された」ことに焦点があり、foregone conclusionが持つ「結果の予測しやすさ」というニュアンスとはやや異なる。" },
+        { term: "a sure thing", nuance_ja: "より口語的でカジュアル。賭け事や非公式な予想の場面でよく使われる。" },
+        { term: "a shoo-in", nuance_ja: "選挙やコンペなど、特定の候補・選択肢が「確実に選ばれる」場面に限定して使われることが多い、やや狭い語。" }
+      ],
+      explanation_ja: "シェイクスピアの『オセロ』に由来するとされる表現で、英語話者が語源を意識せずに日常的に使っているフレーズの一つ。アナリストのコメントや採決前の報道解説で頻出し、「これ以上議論しても結果は変わらない」というやや突き放したニュアンスを込めて使われることが多い。"
+    },
+    {
+      type: "phrase", term: "the path of least resistance", ipa: "", register: "戦略・組織論",
+      meaning_en: "the easiest or most convenient course of action, chosen even though it may not be the best or most effective option",
+      meaning_ja: "（必ずしも最善ではないが）最も楽で抵抗の少ない道、安易な選択肢",
+      examples: [
+        "Renewing the existing vendor contract without a competitive bid was the path of least resistance, even if it wasn't the cheapest option.",
+        "Ordering delivery again was the path of least resistance after a twelve-hour workday."
+      ],
+      synonyms: [
+        { term: "the easy way out", nuance_ja: "より批判的・道徳的なニュアンスを持ち、責任や努力からの「逃げ」というトーンが強い。path of least resistanceは物理学由来でより分析的・中立的。" },
+        { term: "the default option", nuance_ja: "さらに中立的な言い方で、「楽をする」というニュアンスよりも「特に何もしなければ自動的にそうなる」という受動性に焦点がある。" }
+      ],
+      explanation_ja: "物理学の「電気や水は抵抗が最も少ない経路を自然に流れる」という法則から借用された比喩で、そのため「怠けている」というより「ほぼ必然的にそうなる」という、やや分析的で突き放したトーンを持つ。組織行動論やチームマネジメントの議論で、「なぜチームは最適ではなく慣れた方法を選び続けるのか」を説明する際の定番語彙。"
+    },
+    {
+      type: "phrase", term: "the writing on the wall", ipa: "", register: "警告・予兆",
+      meaning_en: "clear signs that something (usually negative, such as failure or an ending) is about to happen",
+      meaning_ja: "（悪い事態の）予兆、はっきりと見える前兆",
+      examples: [
+        "When two of the top three clients gave notice in the same month, the writing on the wall was pretty clear.",
+        "He saw the writing on the wall after the third round of layoffs and started job hunting quietly."
+      ],
+      synonyms: [
+        { term: "a red flag", nuance_ja: "より個別・具体的な「一つの警告サイン」を指すことが多く、the writing on the wallが示す「もはや結末がほぼ確定している」という強い予兆感とはやや異なる。" },
+        { term: "it's just a matter of time", nuance_ja: "予兆の「見えやすさ」よりも、結末までの「時間の問題」であることそのものを強調する言い方。" }
+      ],
+      explanation_ja: "旧約聖書『ダニエル書』で、宴会の最中に壁に謎の文字が浮かび上がり、それがバビロニア王国の滅亡を予言していた、という有名な逸話に由来する。今では宗教的な文脈を離れ、レイオフや業績悪化、製品の失敗など「誰の目にも明らかな終わりの兆候」を語るオフィスの日常会話で当たり前に使われている。"
+    },
+    {
+      type: "phrase", term: "low-hanging fruit", ipa: "", register: "戦略・優先順位付け",
+      meaning_en: "tasks, opportunities, or goals that are the easiest to achieve or take advantage of, requiring the least effort for a quick, visible result",
+      meaning_ja: "（労力の割に成果が出やすい）手っ取り早く着手できる案件、簡単に得られる成果",
+      examples: [
+        "Before we tackle the full cost restructuring, let's knock out the low-hanging fruit — renegotiating the two biggest vendor contracts.",
+        "For the apartment declutter, I started with the low-hanging fruit: the pile of clothes I hadn't worn in a year."
+      ],
+      synonyms: [
+        { term: "quick wins", nuance_ja: "ほぼ同義で同じくらい頻出する語。low-hanging fruitが「労力の少なさ」に焦点を置くのに対し、quick winsは「結果の速さ」により焦点がある。" },
+        { term: "easy pickings", nuance_ja: "弱った競合や無防備な相手からうまく利益を得る、というやや便乗的・機会主義的なニュアンスを帯びることがある。" }
+      ],
+      explanation_ja: "木の一番低い枝になっている果物は、はしごがなくても誰でも手が届く、という視覚的にわかりやすい比喩から。経営会議で使い古されすぎて半ば自虐的なジョークとして使われることもあるが、それでも優先順位付けの議論では欠かせない語彙で、\"what's the low-hanging fruit here?\" は会議で頻出する定番の問いかけ。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "opaque", ipa: "/oʊˈpeɪk/",
+      meaning_en: "difficult to understand or see through; lacking transparency, especially in how a process, decision, or pricing works",
+      meaning_ja: "（プロセスや料金体系などが）不透明な、外から見えにくい",
+      examples: [
+        "The fund's fee structure is notoriously opaque — you don't find the real cost until footnote 14.",
+        "The refund policy on that site is so opaque that I gave up trying to figure out if I qualified."
+      ],
+      synonyms: [
+        { term: "murky", nuance_ja: "よりインフォーマルで、状況・動機・法的地位など曖昧な事柄に使われやすく、料金体系やガバナンス構造のような整った仕組みにはやや不向き。" },
+        { term: "non-transparent", nuance_ja: "より直接的・事務的な言い回しで、規制文書やコンプライアンス文書に頻出するが、opaqueほどの比喩的な鋭さはない。" }
+      ],
+      explanation_ja: "「光を通さない」という物理的な意味がそのまま比喩に転用された語で、transparent（透明な）の対義語として機能する。金融規制やコーポレートガバナンス批判の定番語で、\"opaque pricing\" \"opaque ownership structure\" のようにFT（フィナンシャル・タイムズ）などの経済メディアで極めて頻繁に使われるコロケーション。"
+    },
+    {
+      term: "toothless", ipa: "/ˈtuːθləs/",
+      meaning_en: "lacking real power, authority, or effectiveness to enforce or achieve anything, despite appearing to have some",
+      meaning_ja: "（規制や合意などが）実効性のない、名ばかりで力のない",
+      examples: [
+        "Critics called the new disclosure rule toothless, since it comes with no penalties for non-compliance.",
+        "The building's noise policy is basically toothless — nobody's ever actually been fined."
+      ],
+      synonyms: [
+        { term: "ineffective", nuance_ja: "より一般的・中立的な語で、あらゆる失敗した結果に使えるが、toothlessが持つ「執行力の欠如」という具体性は薄い。" },
+        { term: "a paper tiger", nuance_ja: "「見た目は強そうだが実際には無力」という比喩表現で、toothlessよりも「見せかけと実態のギャップ」そのものに焦点がある。" }
+      ],
+      explanation_ja: "噛みつく歯を持たない動物、というイメージから来ており、「本来なら威圧感・執行力があるはずのものが、実際には何もできない」という皮肉なギャップを表す。規制・制裁・国際合意への批評で非常によく使われ、\"a toothless watchdog\" \"toothless sanctions\" のように、「ルールはあるのに罰則がない」という具体的な欠陥を鋭く指摘する語。"
+    },
+    {
+      term: "scathing", ipa: "/ˈskeɪðɪŋ/",
+      meaning_en: "extremely harsh and critical, often in a way that is memorable or cutting",
+      meaning_ja: "（批判・論評などが）痛烈な、辛辣な",
+      examples: [
+        "The analyst note was scathing, calling management's turnaround plan 'wishful thinking dressed up as strategy.'",
+        "The restaurant got a scathing review that basically ended its second location before it opened."
+      ],
+      synonyms: [
+        { term: "harsh", nuance_ja: "より一般的な語で、口調や扱い全般の厳しさを指し、scathingが持つ「気の利いた辛辣さ・記憶に残る鋭さ」までは含意しない。" },
+        { term: "blistering", nuance_ja: "ほぼ同じ強さで、報道記事などでほぼ同義に使われる。特に \"a blistering critique\" という組み合わせで頻出。" },
+        { term: "withering", nuance_ja: "批判を受けた側が「萎れる・打ちのめされる」ような精神的インパクトの大きさに焦点がある。" }
+      ],
+      explanation_ja: "動詞 \"scathe\"（傷つける、害する）に由来し、単なる意見の相違ではなく「実際にダメージを与える」ほどの鋭さを含意する語。アナリストレポートや書評・映画評で「scathingと形容された」と言えば、読者は測定的な反論ではなく、引用したくなるような辛辣な一文を期待する、というジャンル特有の合図になっている。"
+    },
+    {
+      term: "gung-ho", ipa: "/ˌɡʌŋˈhoʊ/",
+      meaning_en: "extremely enthusiastic and eager about something, sometimes to the point of being reckless or overzealous",
+      meaning_ja: "（時に向こう見ずなほど）非常に意欲的な、やる気満々の",
+      examples: [
+        "The new hire was so gung-ho about the project that he started building a model before scoping had even finished.",
+        "My roommate got gung-ho about meal prepping and bought a week's worth of containers before cooking a single thing."
+      ],
+      synonyms: [
+        { term: "enthusiastic", nuance_ja: "無難でニュートラルな語。gung-hoが持つ「勢い余って向こう見ずになる」という危うさのニュアンスはない。" },
+        { term: "overzealous", nuance_ja: "より明確に批判的で、熱意そのものよりも「やりすぎて逆効果になっている」という欠点に焦点がある。" },
+        { term: "all in", nuance_ja: "熱意というより「後戻りできないレベルの全面的コミットメント」に焦点があり、ポーカー由来のニュアンスを持つ。" }
+      ],
+      explanation_ja: "中国語の「工合（gōnghé、共に働く）」が語源とされ、第二次世界大戦中に米海兵隊がスローガンとして採用したことで英語に定着した経緯を持つ、意外なほど遠い旅をしてきた語。現在では、意欲は買えるが計画性や経験が伴っていない新入社員やインターンを、半分好意的・半分揶揄しつつ形容する際によく使われる、絶妙に温度感のある表現。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "manage expectations",
+      meaning_en: "to communicate proactively about what is realistically likely to happen, in order to avoid disappointment or misunderstanding later",
+      meaning_ja: "（過度な期待を持たせないよう）事前に現実的な見通しをすり合わせておく",
+      examples: [
+        "We're managing expectations with the client early — the integration will likely take six months, not two.",
+        "I tried to manage my parents' expectations about the size of my new apartment before they visited."
+      ],
+      synonyms: [
+        { term: "set expectations", nuance_ja: "ほぼ同義だが、manage expectationsが持つ「悪い知らせへの予防線」というやや守備的な含みは薄く、より中立的な事前説明に近い。" },
+        { term: "under-promise and over-deliver", nuance_ja: "期待値調整のための具体的な戦術・方法論を指し、単に「伝える」行為そのものを指すmanage expectationsより一段具体的。" }
+      ],
+      explanation_ja: "プロジェクトマネジメントやクライアント対応の現場で必須の表現で、この言葉自体が「あらかじめ現実的な見通しを共有し、後で失望させないための意図的なコミュニケーション戦略」であることを示す。ステータス更新の場で \"let's manage expectations here\" と言えるようになると、一気にプロらしい響きになる。"
+    },
+    {
+      phrase: "push back on",
+      meaning_en: "to resist, question, or object to a proposal, decision, or request, rather than simply accepting it",
+      meaning_ja: "（提案や指示に対して）異議を唱える、抵抗する",
+      examples: [
+        "Legal pushed back on the aggressive timeline, arguing the disclosures wouldn't be ready in time.",
+        "I pushed back on my landlord's request for an extra deposit and asked him to put the reason in writing."
+      ],
+      synonyms: [
+        { term: "object to", nuance_ja: "よりフォーマルで、しばしばより強い・最終的な拒否を含意する。push back onは議論を促す「疑問の提示」に近く、やや柔らかい。" },
+        { term: "challenge", nuance_ja: "より広い対象（アイデア、事実、権威全般）に使え、特定の会議での提案や指示に限定されない。" }
+      ],
+      explanation_ja: "会議文化で非常に頻出し、\"did anyone push back on that?\" は会議後の振り返りで定番の質問になっている。単に反対するのではなく、決定をより良くするための建設的な抵抗、というニュアンスを持つ点が、ただの不満とは一線を画す。"
+    },
+    {
+      phrase: "float an idea",
+      meaning_en: "to suggest an idea tentatively, in order to see how people react before committing to it",
+      meaning_ja: "（反応を見るために）試しにアイデアを出してみる、打診する",
+      examples: [
+        "I floated the idea of a four-day work week at the offsite, just to gauge how leadership would react.",
+        "I floated the idea of a joint birthday party with my sister to see if she'd actually go for it."
+      ],
+      synonyms: [
+        { term: "throw out an idea", nuance_ja: "ほぼ同義でよりカジュアル。floatが持つ「意図的に反応を試している」という慎重さより、思いつきに近い響き。" },
+        { term: "test the waters", nuance_ja: "アイデアだけでなく、製品や市場の反応を試す場合にも使える、より広い場面で使われる表現。" }
+      ],
+      explanation_ja: "水に浮かべて、沈むか浮くかを見る、という比喩から来ており、「まだ正式な提案ではない」という低コミットメントのシグナルを相手に送れる便利な言い回し。ブレインストーミングや戦略会議で、反応が悪ければすぐ引っ込められる余地を残しつつ意見を出す際に好んで使われる。"
+    },
+    {
+      phrase: "walk back a statement",
+      meaning_en: "to retract or soften an earlier statement, often after it caused controversy or turned out to be inaccurate",
+      meaning_ja: "（物議を醸した発言などを）後になって撤回する、トーンダウンさせる",
+      examples: [
+        "The CFO had to walk back her comment about 'no plans for layoffs' just two weeks before the restructuring was announced.",
+        "He tried to walk back what he said at dinner, but everyone had already heard it."
+      ],
+      synonyms: [
+        { term: "backtrack (on something)", nuance_ja: "ほぼ同義だがより広く使え、発言だけでなく決定や行動を撤回する場合にも使われる。" },
+        { term: "retract a statement", nuance_ja: "よりフォーマルで全面的な撤回を意味し、walk backが持つ「一部だけ和らげる」という部分的なニュアンスより強い。" }
+      ],
+      explanation_ja: "政治報道や企業の危機管理広報で頻出する表現で、完全な謝罪でも全面撤回でもない、「目立たないようにトーンを和らげる」という中間的な対応を的確に描写する。\"the company later walked back its earlier claim\" は、発言の勇み足を静かに収拾しようとする様子を伝える、報道特有の言い回し。"
+    }
+  ],
+  todayQuiz: [
+    { question: "Before onboarding a new vendor, procurement needs to ___ them for any past compliance violations.", choices: ["vet", "tout", "rescind", "stonewall"], answerIndex: 0, explanation: "\"Vet\" means to investigate someone or something carefully before approving or trusting them — exactly what compliance does with a new vendor." },
+    { question: "The company had to ___ the job offer after the background check turned up a criminal record.", choices: ["rescind", "retract", "tout", "vet"], answerIndex: 0, explanation: "\"Rescind\" is used for formally canceling agreements, offers, or decisions. \"Retract\" is typically reserved for statements or claims, not offers." },
+    { question: "When the deadline slipped, the manager ___ his own team in front of the steering committee to protect his bonus.", choices: ["threw ... under the bus", "played devil's advocate with", "cut corners on", "hit the ground running with"], answerIndex: 0, explanation: "\"Throw someone under the bus\" means to blame or betray someone to protect yourself — exactly the manager's move here." },
+    { question: "Before we present to the investment committee, let me ___ — what if the customer concentration is worse than disclosed?", choices: ["play devil's advocate", "hit the ground running", "cut corners", "stonewall you"], answerIndex: 0, explanation: "\"Play devil's advocate\" means to argue an opposing view deliberately, to pressure-test an argument, not because you actually hold that view." },
+    { question: "With three of five board members already publicly backing the merger, shareholder approval is basically ___.", choices: ["a foregone conclusion", "the writing on the wall", "low-hanging fruit", "the path of least resistance"], answerIndex: 0, explanation: "\"A foregone conclusion\" describes an outcome that's certain before it happens. \"The writing on the wall\" specifically signals an impending negative outcome, which doesn't fit here." },
+    { question: "Three long-time clients canceling their contracts within the same month was ___ that the business was in serious trouble.", choices: ["the writing on the wall", "a foregone conclusion", "low-hanging fruit", "the path of least resistance"], answerIndex: 0, explanation: "\"The writing on the wall\" refers to clear signs that something bad is about to happen — a string of client losses is exactly that kind of warning sign." },
+    { question: "Critics called the new disclosure rule ___ since it comes with no penalties for non-compliance.", choices: ["toothless", "opaque", "scathing", "gung-ho"], answerIndex: 0, explanation: "\"Toothless\" describes a rule or policy that lacks real enforcement power — exactly the criticism here, since there's no penalty attached." },
+    { question: "Before committing any budget, the CFO wants to ___ with the board first, just to gauge their informal reaction.", choices: ["float the idea", "manage expectations", "push back", "walk back the statement"], answerIndex: 0, explanation: "\"Float an idea\" means to suggest something tentatively to test reactions before committing — perfect for an informal gauge-check with the board." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-08-19 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-08-20 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
