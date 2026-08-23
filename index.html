@@ -1676,9 +1676,323 @@ const ENGLISH_REPORTS = [
     { question: "Until the wire transfer actually clears, don't tell anyone it's ___.", choices: ["in the pipeline", "a done deal", "a blessing in disguise", "at the eleventh hour"], answerIndex: 1, explanation: "\"A done deal\" means something already decided and final — premature to claim before the funds have actually settled." },
     { question: "The two sides settled the lawsuit ___, just hours before the trial was set to begin.", choices: ["in the pipeline", "at the eleventh hour", "a blessing in disguise", "a done deal"], answerIndex: 1, explanation: "\"At the eleventh hour\" means at the very last possible moment, which matches a settlement reached just before trial." }
   ]
+},
+{
+  date: "2026-08-22",
+  dateLabel: "2026年8月22日（土）",
+  readTimeMin: 33,
+  coreItems: [
+    {
+      type: "word", term: "recuse", ipa: "/rɪˈkjuːz/", register: "フォーマル・ガバナンス・法務",
+      meaning_en: "to withdraw from a decision or vote because of a personal conflict of interest",
+      meaning_ja: "利害関係があるため、審議・投票から身を引く、忌避する",
+      examples: [
+        "The board member recused himself from the vote since his brother-in-law ran the target company.",
+        "She recused herself from the loan approval committee because the applicant was a former client."
+      ],
+      synonyms: [
+        { term: "step aside", nuance_ja: "より口語的で一般的な「身を引く」。利益相反という法的含意は弱い。" },
+        { term: "withdraw", nuance_ja: "より広い「撤退する」全般に使え、必ずしも利益相反が理由とは限らない。" },
+        { term: "abstain", nuance_ja: "投票を棄権するという意味に近いが、「利益相反のため」という理由の明示は弱く、単に賛否を表明しないだけの場合にも使う。" }
+      ],
+      explanation_ja: "ラテン語 \"recusare\"（拒否する）由来。取締役会や監査委員会などのガバナンス文脈で頻出し、\"conflict of interest\" とセットで使われることが多い。USCPAの独立性（independence）の議論とも直結する語彙で、コンプライアンス関連の議事録や開示文書で目にする機会が多い。日常会話ではまず使わないが、金融・法務のプロフェッショナルな場では必須語彙。"
+    },
+    {
+      type: "word", term: "quash", ipa: "/kwɑːʃ/", register: "フォーマル・報道",
+      meaning_en: "to officially reject, invalidate, or put a definitive end to something, such as a rumor, lawsuit, or plan",
+      meaning_ja: "（噂・訴訟・計画などを）正式に退ける、握りつぶす、鎮圧する",
+      examples: [
+        "The CFO moved quickly to quash rumors of a merger before the earnings call.",
+        "A federal judge quashed the subpoena, ruling it overly broad."
+      ],
+      synonyms: [
+        { term: "squash", nuance_ja: "より口語的なバリエーションで、意味はほぼ同じだが法的な響きはやや弱い。" },
+        { term: "dispel", nuance_ja: "「噂・疑念を払拭する」に近く、より穏やかで説得的なニュアンス。quashが持つ「強制的に終わらせる」響きは薄い。" },
+        { term: "suppress", nuance_ja: "情報や感情を「抑え込む」ことに焦点があり、必ずしも「完全に無効化する」わけではない継続的な抑制も含む。" }
+      ],
+      explanation_ja: "元々は「押しつぶす」という物理的な意味を持つ語で、そこから「噂や訴えを力づくで潰す」という比喩に転じた。決算発表前のリーク対策や、企業の危機管理広報（PR）の記事で \"quash speculation/rumors\" という形で頻出する。法律用語としては判決や令状を「無効にする」という厳密な意味でも使われ、レジスターの幅が広いのが特徴。"
+    },
+    {
+      type: "word", term: "flout", ipa: "/flaʊt/", register: "フォーマル・批判的",
+      meaning_en: "to openly and deliberately disregard a rule, law, or convention",
+      meaning_ja: "（規則・慣習などを）公然と無視する、あからさまに破る",
+      examples: [
+        "The startup flouted basic disclosure requirements, and the SEC eventually took notice.",
+        "He openly flouts the firm's dress code, showing up in sneakers to client meetings."
+      ],
+      synonyms: [
+        { term: "defy", nuance_ja: "より一般的で、権威や命令に「反抗する」という対立的なニュアンスが強い。" },
+        { term: "disregard", nuance_ja: "中立的で、「無視する」という行為そのものに焦点があり、\"flout\"が持つ「見せつけるように、あえて」という挑発的な響きは弱い。" },
+        { term: "violate", nuance_ja: "規則違反という事実に焦点を当てた、より事務的・法律的な語。" }
+      ],
+      explanation_ja: "\"flout\" と \"flaunt\"（見せびらかす）は綴りも意味も混同されがちだが全くの別語で、ネイティブでも間違えることがある有名な混同ペア。\"flout\" の核心は「規則を知った上で、あえて公然と破る」という挑発性にあり、単なる「知らずに破る」とは異なる。コンプライアンス関連のニュース記事で規制違反企業を批判的に描写する際の定番語彙。"
+    },
+    {
+      type: "word", term: "recoup", ipa: "/rɪˈkuːp/", register: "フォーマル・金融",
+      meaning_en: "to regain or make up for money that has been lost or spent",
+      meaning_ja: "（失った資金・費用を）取り戻す、回収する",
+      examples: [
+        "It will take the fund at least three years to recoup its initial investment in the failed venture.",
+        "The airline is still trying to recoup the losses from last year's grounded fleet."
+      ],
+      synonyms: [
+        { term: "recover", nuance_ja: "最も一般的で汎用的な「取り戻す」。金銭に限らず健康や地位にも使える。" },
+        { term: "offset", nuance_ja: "「相殺する」に近く、損失を別の利益で埋め合わせるニュアンスが強い。必ずしも同じ性質のものを取り戻すわけではない。" },
+        { term: "break even", nuance_ja: "「収支トントンになる」という状態そのものを指し、\"recoup\" が表す「取り戻すプロセス」とは視点がやや異なる。" }
+      ],
+      explanation_ja: "フランス語 \"recouper\"（再び切る、取り戻す）に由来。投資回収（payback period）やコスト回収の議論で頻出し、\"recoup the investment/costs/losses\" という形が定番のコロケーション。ファイナンスのケーススタディやアニュアルレポートで、失敗した事業や設備投資の説明にしばしば登場する、実務感の強い語彙。"
+    },
+    {
+      type: "idiom", term: "raise eyebrows", ipa: "", register: "報道・やや批判的",
+      meaning_en: "to cause surprise, suspicion, or mild disapproval",
+      meaning_ja: "（人々の）眉をひそめさせる、物議を醸す、驚きや疑念を引き起こす",
+      examples: [
+        "The CEO's sudden resignation two weeks before earnings raised eyebrows on Wall Street.",
+        "Her decision to skip the mandatory training raised a few eyebrows in the office."
+      ],
+      synonyms: [
+        { term: "turn heads", nuance_ja: "驚きよりも「注目を集める」というポジティブ〜中立的な意味合いが強く、批判のニュアンスは薄い。" },
+        { term: "cause a stir", nuance_ja: "より強い、広範囲の反応・騒動を表す。「眉をひそめる」程度の静かな疑念より大きな反応を示唆する。" },
+        { term: "raise questions", nuance_ja: "「疑問を投げかける」という、より分析的で冷静な反応を表し、感情的な驚きの要素は弱い。" }
+      ],
+      explanation_ja: "眉を上げる（raise an eyebrow）というジェスチャーそのものが「え、それってどうなの？」という疑いや驚きの表情を表すことに由来する。金融ニュースでは、経営陣の不可解な行動や不自然なタイミングの取引を報じる際の定番表現で、直接的な非難を避けつつやんわりと疑念を示す、英語らしい婉曲表現の好例。"
+    },
+    {
+      type: "idiom", term: "put out feelers", ipa: "", register: "ビジネス・非公式",
+      meaning_en: "to informally and cautiously test interest or gather information before making a formal move",
+      meaning_ja: "（正式な行動の前に）非公式に打診する、探りを入れる",
+      examples: [
+        "Before formally listing the company, the founders put out feelers to a few strategic buyers.",
+        "I've been putting out feelers about job openings, but I'm not actively applying yet."
+      ],
+      synonyms: [
+        { term: "test the waters", nuance_ja: "ほぼ同義でよく使われるが、「反応を見る」という結果検証の側面がやや強い。\"put out feelers\"は「情報を集める行為」自体に焦点がある。" },
+        { term: "sound someone out", nuance_ja: "特定の「相手の意向を探る」場合に使われ、より対象が限定的。" },
+        { term: "float a trial balloon", nuance_ja: "反応を見るためにあえて情報を流す、というやや戦略的・政治的なニュアンスが強い。" }
+      ],
+      explanation_ja: "昆虫の触角（feelers）が周囲を探りながら進む様子に由来する視覚的な表現。M&Aの初期段階で、正式なプロセスに入る前に水面下で買収候補に打診する状況を表すのに絶好の語彙。\"feeler\" は単数でも使われるが、複数形 \"feelers\" で使うのが一般的。"
+    },
+    {
+      type: "idiom", term: "keep something under wraps", ipa: "", register: "ビジネス・報道",
+      meaning_en: "to keep something secret or confidential until it is ready to be revealed",
+      meaning_ja: "（発表するまで）秘密にしておく、伏せておく",
+      examples: [
+        "The company kept the acquisition under wraps until regulatory approval was secured.",
+        "We're keeping the product launch under wraps until the press event next month."
+      ],
+      synonyms: [
+        { term: "keep a lid on", nuance_ja: "より「情報が漏れないよう抑え込む」努力・緊張感が強調される。" },
+        { term: "hush up", nuance_ja: "しばしばネガティブな情報を「もみ消す」というニュアンスを伴う。" },
+        { term: "confidential (adj.)", nuance_ja: "単に「機密である」という状態を述べるだけで、\"keep under wraps\"が持つ「意図的に隠す」という動的なニュアンスは弱い。" }
+      ],
+      explanation_ja: "布や包み（wraps）で覆い隠すという物理的なイメージから来ている表現。企業の新製品発表やM&A交渉など、情報管理（information control）が重要な場面で頻出し、ビジネスニュースの記事タイトルにもよく使われる。\"keep under wraps\" は他動詞的に何かを目的語に取る点に注意（\"stay under wraps\" は自動詞的な用法）。"
+    },
+    {
+      type: "idiom", term: "run circles around (someone)", ipa: "", register: "カジュアル・評価",
+      meaning_en: "to outperform someone by a large margin, especially through greater skill or speed",
+      meaning_ja: "（能力・スピードなどで）圧倒的に上回る、はるかに凌駕する",
+      examples: [
+        "This three-person analytics team runs circles around the twenty-person department at our competitor.",
+        "She runs circles around the rest of the interns when it comes to building financial models."
+      ],
+      synonyms: [
+        { term: "outshine", nuance_ja: "より上品で、才能や輝きの面で「勝る」ことに焦点がある。" },
+        { term: "blow (someone) out of the water", nuance_ja: "さらに強調的でインフォーマルな表現。差が圧倒的であることを強く示す。" },
+        { term: "leave (someone) in the dust", nuance_ja: "「置き去りにする」という、競争や進歩のスピード差を強調する比喩。" }
+      ],
+      explanation_ja: "相手の周りをぐるぐると走り回れるほどの速さと余裕がある、という視覚的な誇張表現。スポーツ由来だが、ビジネスでもチームや個人の圧倒的なパフォーマンス差を語る際にカジュアルな会話でよく使われる。フォーマルな文書には不向きだが、同僚との雑談やチームを褒める場面で使うと生き生きとした表現になる。"
+    },
+    {
+      type: "phrase", term: "a drop in the bucket", ipa: "", register: "ビジネス・比較",
+      meaning_en: "an amount that is too small to make a meaningful difference relative to what is needed",
+      meaning_ja: "（全体から見れば）ごくわずかな量、焼け石に水",
+      examples: [
+        "A $2 million fine is a drop in the bucket for a company with $50 billion in annual revenue.",
+        "The extra hour of studying each week is a drop in the bucket compared to what she needs before the CFA exam."
+      ],
+      synonyms: [
+        { term: "a rounding error", nuance_ja: "会計・金融の文脈で特に好まれる表現で、「誤差の範囲内」というより数字的な皮肉を込めたニュアンス。" },
+        { term: "negligible (adj.)", nuance_ja: "より中立的でフォーマルな形容詞表現。比喩的な軽妙さはない。" },
+        { term: "a drop in the ocean", nuance_ja: "意味は同じだが、これは英式でより一般的。アメリカ英語では \"in the bucket\" の方が定番。" }
+      ],
+      explanation_ja: "聖書（イザヤ書）に由来するとされる古い比喩表現。バケツ一杯の水の中の一滴、という圧倒的なスケール差を視覚的に伝える。企業の罰金・寄付・投資額などを、その企業の規模と比較して「大したことない」と評する決算分析やニュース記事で非常によく使われる、皮肉交じりの定番フレーズ。"
+    },
+    {
+      type: "phrase", term: "off the table", ipa: "", register: "交渉・意思決定",
+      meaning_en: "no longer available as an option or being considered in a negotiation or decision",
+      meaning_ja: "（選択肢として）検討対象外である、白紙になっている",
+      examples: [
+        "A hostile takeover is off the table for now, but the board hasn't ruled it out entirely.",
+        "Layoffs are off the table this quarter, but hiring will be frozen."
+      ],
+      synonyms: [
+        { term: "out of the question", nuance_ja: "より強く、断固として不可能・許されないというニュアンス。交渉の余地がほぼない。" },
+        { term: "ruled out", nuance_ja: "よりフォーマルで事務的な響き。公式な決定・声明で好まれる。" },
+        { term: "shelved", nuance_ja: "「棚上げされた」に近く、完全に消えたわけではなく将来再検討される可能性を残すニュアンスがある。" }
+      ],
+      explanation_ja: "交渉のテーブル（negotiating table）に案を「載せる（put on the table）」「下ろす（take off the table）」という空間的な比喩に由来する。M&A交渉や労使交渉の報道記事で頻出し、\"put X back on the table\"（再検討する）という反意表現とセットで覚えると使い勝手が良い。"
+    },
+    {
+      type: "phrase", term: "a mixed bag", ipa: "", register: "評価・レビュー",
+      meaning_en: "something that contains both good and bad elements, making an overall assessment difficult",
+      meaning_ja: "良い面と悪い面が混在しているもの、玉石混交",
+      examples: [
+        "Q3 earnings were a mixed bag — revenue beat expectations, but margins compressed sharply.",
+        "The feedback on the new onboarding process has been a mixed bag; some love it, others find it confusing."
+      ],
+      synonyms: [
+        { term: "a double-edged sword", nuance_ja: "「一つの物事が良い面と悪い面を同時に持つ」ことに焦点があり、\"a mixed bag\"（複数の要素が玉石混交）とは構造が少し異なる。" },
+        { term: "hit or miss", nuance_ja: "一貫性のなさ、結果が「当たり外れ」であることを強調する。" },
+        { term: "a mixed blessing", nuance_ja: "ポジティブな出来事が同時に問題も引き起こす、という状況に近い。" }
+      ],
+      explanation_ja: "中身の異なる複数のものが一つの袋に入っている、という視覚的なイメージ。決算発表のレビュー記事で \"a mixed bag of results\" という形で非常に頻出し、単純に「良い」「悪い」と二分できない、複雑な評価を簡潔に伝えられる便利な表現。アナリストのコメントやレポートの要約でよく目にする。"
+    },
+    {
+      type: "phrase", term: "not out of the woods (yet)", ipa: "", register: "危機・リスク評価",
+      meaning_en: "not yet safe from danger or difficulty, even though the situation has improved",
+      meaning_ja: "（状況は改善したが）まだ危機を完全に脱していない",
+      examples: [
+        "The company refinanced its debt, but with covenant tests looming next quarter, it's not out of the woods yet.",
+        "His fever broke overnight, but the doctor said he's not out of the woods yet."
+      ],
+      synonyms: [
+        { term: "not in the clear", nuance_ja: "ほぼ同義で、フォーマルな文書でも使いやすい代替表現。" },
+        { term: "still on shaky ground", nuance_ja: "「まだ基盤が不安定」という、状態そのものへの焦点がやや強い。" },
+        { term: "the risk isn't fully priced out", nuance_ja: "市場がリスクをまだ完全に織り込んでいない、というより専門的な金融特有の言い換え。" }
+      ],
+      explanation_ja: "深い森の中で迷子になり、まだ森を抜け出せていない、という状況からの比喩。企業の財務危機、規制上の問題、あるいは病状など、「改善の兆しはあるが、まだ油断できない」という時間的な緊張感を伴う場面で頻出する。決算コールで経営陣が慎重な楽観論（cautious optimism）を示す際の定番フレーズでもある。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "tepid", ipa: "/ˈtepɪd/",
+      meaning_en: "showing little enthusiasm or energy; lukewarm in response or performance",
+      meaning_ja: "（反応・成果などが）ぬるい、盛り上がりに欠ける、いまひとつ乗り気でない",
+      examples: [
+        "Investor demand for the IPO was tepid, forcing the bank to price it at the bottom of the range.",
+        "The crowd's applause was tepid at best after the keynote speech."
+      ],
+      synonyms: [
+        { term: "lukewarm", nuance_ja: "ほぼ同義の語源的双子。\"tepid\"はやや文語的でビジネス文書に多く、\"lukewarm\"は口語でも均等に使われる。" },
+        { term: "muted", nuance_ja: "反応や数字の「抑えられた、控えめな」動きを表し、市場のリアクションを描写する際によく使われる。" }
+      ],
+      explanation_ja: "元々「生ぬるい（液体の温度）」を表す物理的な語で、そこから比喩的に「熱意や反応の弱さ」を表すようになった。決算発表後の株価反応やIPOの需要を報じる金融ニュースで \"tepid demand/response/reception\" という形が定番。\"hot\"でも\"cold\"でもない、まさに「ぬるい」という日本語の感覚と驚くほど近い語感を持つ。"
+    },
+    {
+      term: "staid", ipa: "/steɪd/",
+      meaning_en: "conventional, serious, and unadventurous in character; old-fashioned in a respectable way",
+      meaning_ja: "堅苦しい、地味で保守的な、お堅い（安定感というニュアンスも含む）",
+      examples: [
+        "Compared to fintech disruptors, the staid regional bank has been slow to modernize its app.",
+        "He swapped his staid corporate job for a scrappy startup because he craved more risk."
+      ],
+      synonyms: [
+        { term: "conservative", nuance_ja: "より中立的で幅広く使える語。\"staid\"が持つ「面白みのなさ、古臭さ」というやや皮肉な響きは弱い。" },
+        { term: "stodgy", nuance_ja: "さらに強い「古臭くて退屈」というネガティブなニュアンス。" }
+      ],
+      explanation_ja: "元々は \"stay\" の過去分詞形から派生した語で、「（変化せず）そのままの状態を保つ」という語源的なイメージを残す。伝統的な銀行・保険会社・大企業を評する際に頻出し、必ずしも純粋な悪口ではなく「安定していて信頼できるが、革新性には欠ける」という、良くも悪くもある評価を含む点が使いこなしの鍵。フィンテック企業と対比される文脈で特によく登場する。"
+    },
+    {
+      term: "punchy", ipa: "/ˈpʌntʃi/",
+      meaning_en: "forceful, direct, and attention-grabbing, especially in style or delivery",
+      meaning_ja: "（表現・スタイルなどが）力強くインパクトのある、歯切れの良い",
+      examples: [
+        "The new CMO wants punchier headlines in our marketing emails — nothing bland or corporate-sounding.",
+        "Her presentation was punchy and to the point, unlike the usual 40-slide decks."
+      ],
+      synonyms: [
+        { term: "snappy", nuance_ja: "より軽快でテンポの良い響きに焦点があり、必ずしも「力強さ」を伴わない。" },
+        { term: "hard-hitting", nuance_ja: "より深刻・攻撃的な内容(調査報道など)に使われることが多く、\"punchy\"が持つ軽妙さは薄い。" }
+      ],
+      explanation_ja: "ボクシングのパンチ（punch）から派生した語で、「一撃で相手を仕留めるような力強さ」を持つスタイルを表す。マーケティング資料、プレゼン資料、キャッチコピーなどのレビューで頻出し、\"make it punchier\"（もっとインパクトを出して）という指示は、クリエイティブ職やコンサルティングの現場で日常的に飛び交う。"
+    },
+    {
+      term: "dicey", ipa: "/ˈdaɪsi/",
+      meaning_en: "risky or uncertain, with an unpredictable outcome",
+      meaning_ja: "危なっかしい、不確実性が高くリスキーな（口語的）",
+      examples: [
+        "Financing this deal with that much variable-rate debt feels dicey given where rates might go.",
+        "The weather looked dicey, so we moved the outdoor client event indoors at the last minute."
+      ],
+      synonyms: [
+        { term: "risky", nuance_ja: "最も一般的で中立的な語。\"dicey\"は口語的で、話者の不安や躊躇のニュアンスをより強く伴う。" },
+        { term: "iffy", nuance_ja: "ほぼ同義のカジュアルな類義語。\"dicey\"よりもさらにくだけた印象。" }
+      ],
+      explanation_ja: "サイコロ（dice）の目に運を任せる、というギャンブル由来の語感を残す口語表現。フォーマルな文書には不向きだが、同僚との会話や社内チャットで「これ、ちょっと危なくない？」というニュアンスを軽く伝えるのに便利。\"risky\"よりも直感的・感覚的な「嫌な予感」を含意する点がポイント。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "table a proposal",
+      meaning_en: "(US usage) to postpone discussion of a proposal, often indefinitely — note that British usage means the opposite: to formally bring it forward for discussion",
+      meaning_ja: "（米用法）提案を棚上げする、先送りにする ／（英用法では逆に「提案を持ち出す・審議にかける」の意味になる点に要注意）",
+      examples: [
+        "The board decided to table the compensation proposal until next quarter's meeting.",
+        "Let's table this discussion for now and revisit it once we have the Q4 numbers."
+      ],
+      synonyms: [
+        { term: "shelve (a proposal)", nuance_ja: "ほぼ同義（米用法）。\"shelve\"はより「棚に上げて放置する」という永続的な保留のニュアンスが強い。" },
+        { term: "put on hold", nuance_ja: "口語的で、意図的な保留であることを穏やかに伝える。" }
+      ],
+      explanation_ja: "アメリカ英語とイギリス英語で意味が正反対になることで有名な要注意表現。米国では「（今は）審議しない、棚上げする」という意味だが、英国では逆に「正式に議題として提出する」という意味になる。国際的な会議やメールのやり取りで、相手がどちらの英語圏の出身かを意識しないと大きな誤解を招くため、多国籍企業の会議では特に注意して使うべき表現。"
+    },
+    {
+      phrase: "bear the brunt of",
+      meaning_en: "to suffer the main or worst impact of something negative",
+      meaning_ja: "（悪影響・損害の）矢面に立つ、最も大きな打撃を受ける",
+      examples: [
+        "Small suppliers bore the brunt of the price increases, since they had no leverage to push back.",
+        "The customer service team bore the brunt of complaints after the system outage."
+      ],
+      synonyms: [
+        { term: "take the hit", nuance_ja: "より口語的でカジュアル。ビジネス会話でも頻出する。" },
+        { term: "shoulder the burden", nuance_ja: "「責任・負担を背負う」ことに焦点があり、必ずしも「最も大きな被害を受ける」わけではない場合にも使う。" }
+      ],
+      explanation_ja: "\"brunt\" は元々「（攻撃の）主要な衝撃、矢面」を意味する古い軍事用語で、単独ではほとんど使われず \"bear/take the brunt of\" という形でしか登場しない珍しい語。サプライチェーンの分析や決算の影響分析で、「誰が一番割を食ったか」を語る際の定番表現で、金融メディアの記事タイトルにも頻出する。"
+    },
+    {
+      phrase: "iron out the kinks",
+      meaning_en: "to resolve the small remaining problems or difficulties in a plan, system, or process",
+      meaning_ja: "（残っている細かい問題・不具合を）解消する、詰めの調整をする",
+      examples: [
+        "We're still ironing out the kinks in the new expense reporting system before the full rollout.",
+        "The team spent the last week ironing out the kinks in the client presentation."
+      ],
+      synonyms: [
+        { term: "work out the bugs", nuance_ja: "よりIT・システム的な文脈で好まれる、ほぼ同義の表現。" },
+        { term: "fine-tune", nuance_ja: "「微調整する」に近く、必ずしも「問題」を前提とせず、既に良いものをさらに改善する場合にも使える。" }
+      ],
+      explanation_ja: "アイロン（iron）でしわ（kink = よじれ、ねじれ）を伸ばす、という家事の動作から来た視覚的な比喩。新しいプロセスやシステムの立ち上げ初期、「大枠はうまくいっているが、細部にまだ問題が残っている」という状況を表すのに絶好の表現。プロジェクトの進捗報告やステータスアップデートで頻出する、実務感の強いコロケーション。"
+    },
+    {
+      phrase: "close the loop (on something)",
+      meaning_en: "to finish a process by following up, confirming, or communicating the outcome to everyone involved",
+      meaning_ja: "（関係者に結果を共有・確認して）話を完結させる、フォローアップを完了する",
+      examples: [
+        "Can you close the loop with the client once the wire transfer clears?",
+        "Let's close the loop on this by Friday so nothing falls through the cracks over the weekend."
+      ],
+      synonyms: [
+        { term: "follow up", nuance_ja: "より一般的な「フォローアップする」で、必ずしも「完結させる」ニュアンスは含まない。" },
+        { term: "wrap up", nuance_ja: "「まとめ上げる、終わらせる」ことに焦点があり、関係者への情報共有という要素は薄い。" }
+      ],
+      explanation_ja: "電気回路（loop）が閉じて初めて電流が流れる、というエンジニアリング由来の比喩とされる。コンサルティングやプロジェクトマネジメントの現場で非常に頻出する表現で、「言いっぱなし・やりっぱなしにせず、関係者に結果をきちんと共有して完結させる」という、アメリカのビジネス文化で重視される \"follow-through\" の姿勢を象徴する一語。ミーティングの最後によく使われるフレーズ。"
+    }
+  ],
+  todayQuiz: [
+    { question: "Because her spouse worked at the acquiring firm, the general counsel had to ___ herself from the deal committee entirely.", choices: ["quash", "recuse", "flout", "recoup"], answerIndex: 1, explanation: "\"Recuse\" specifically means to withdraw from a decision due to a conflict of interest, which fits a lawyer stepping away from a deal involving her spouse's firm." },
+    { question: "The CFO moved quickly to ___ rumors of insider trading before they spread further, issuing an official denial within hours.", choices: ["flout", "recoup", "quash", "recuse"], answerIndex: 2, explanation: "\"Quash\" means to officially put a definitive end to something like a rumor, which fits issuing a swift denial." },
+    { question: "Before formally engaging an investment bank, the founders decided to ___ with a couple of potential acquirers to gauge interest.", choices: ["put out feelers", "raise eyebrows", "keep it under wraps", "run circles around them"], answerIndex: 0, explanation: "\"Put out feelers\" means to informally test interest before taking formal action, matching the founders' cautious first move." },
+    { question: "The CEO's abrupt departure just days before the earnings call ___ among analysts, who suspected something was being hidden.", choices: ["put out feelers", "raised eyebrows", "closed the loop", "bore the brunt"], answerIndex: 1, explanation: "\"Raise eyebrows\" describes causing surprise or suspicion, matching analysts' reaction to a sudden, oddly timed departure." },
+    { question: "Even after the impressive earnings beat, the CFO cautioned that the company is ___, given the looming debt covenant tests next quarter.", choices: ["a mixed bag", "off the table", "not out of the woods yet", "a drop in the bucket"], answerIndex: 2, explanation: "This phrase describes a situation that has improved but where real danger — the covenant tests — still remains, which is exactly what \"not out of the woods yet\" conveys." },
+    { question: "Analysts described the quarter as ___: strong subscriber growth was offset by a sharp rise in churn.", choices: ["a mixed bag", "a drop in the bucket", "off the table", "tepid"], answerIndex: 0, explanation: "\"A mixed bag\" captures results that combine both positive and negative elements, fitting growth alongside rising churn." },
+    { question: "Investor reception to the IPO was ___ at best, with the deal barely covering its offering range.", choices: ["punchy", "staid", "tepid", "dicey"], answerIndex: 2, explanation: "\"Tepid\" describes a lukewarm, unenthusiastic response, which matches weak investor demand for the IPO." },
+    { question: "Marketing wanted ___ headlines that would grab attention immediately, not the bland corporate language from the old campaign.", choices: ["staid", "dicey", "tepid", "punchy"], answerIndex: 3, explanation: "\"Punchy\" describes forceful, attention-grabbing style, fitting the request for headlines that stand out." },
+    { question: "After the client meeting, make sure to ___ with the vendor once the contract is signed, so everyone knows the final terms.", choices: ["table the proposal", "bear the brunt", "close the loop", "iron out the kinks"], answerIndex: 2, explanation: "\"Close the loop\" means to follow up and communicate the final outcome to everyone involved, matching the need to inform the vendor after signing." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-08-21 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-08-22 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
