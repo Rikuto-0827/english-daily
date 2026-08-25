@@ -54,8 +54,312 @@ a{color:#0d6e6e}
 
 <script>
 // ── START_DATA ──
-const ENGLISH_REPORTS = [];
-// ── END_DATA ──  (last sync: none yet / automated refresh)
+const ENGLISH_REPORTS = [
+{
+  date: "2026-08-17",
+  dateLabel: "2026年8月17日（月）",
+  readTimeMin: 32,
+  coreItems: [
+    {
+      type: "word", term: "vindicate", ipa: "/ˈvɪndɪkeɪt/", register: "フォーマル",
+      meaning_en: "to prove that someone or something was right, justified, or correct, especially after doubt or criticism",
+      meaning_ja: "（疑いや批判の後で）正しかったことを証明する、正当性を裏付ける",
+      examples: [
+        "The team's cautious decision to delay the acquisition was vindicated when the target's valuation dropped 30% six months later.",
+        "History has largely vindicated her warnings about excessive leverage in the shadow banking system."
+      ],
+      synonyms: [
+        { term: "justify", nuance_ja: "より一般的で中立的な語。「正当化する」というプロセスそのものに焦点があり、「後から証明された」という時間経過のニュアンスは弱い。" },
+        { term: "prove right", nuance_ja: "口語的で直接的な言い方。フォーマルな文章では \"vindicate\" の方が洗練された響きを持つ。" },
+        { term: "corroborate", nuance_ja: "「（証拠が）裏付ける」という意味で、人の判断よりも主張・仮説を裏付ける場面で使われることが多い。" }
+      ],
+      explanation_ja: "ラテン語の \"vindicare\"（要求する、守る）に由来する語。単に「正しかった」ではなく、「一度は疑われた、あるいは批判された判断が、後になって正しかったと証明される」という、逆転劇のようなドラマ性を持つのが特徴。投資判断や経営判断を振り返るビジネス記事で頻出し、\"be vindicated\" という受動態の形でよく使われる。使いこなせると、単なる \"be right\" よりも一段深い、時間軸を伴ったニュアンスを表現できる。"
+    },
+    {
+      type: "word", term: "placate", ipa: "/ˈpleɪkeɪt/", register: "フォーマル・やや批判的",
+      meaning_en: "to make someone less angry or upset, often with a temporary or superficial gesture",
+      meaning_ja: "（一時しのぎ的に）なだめる、機嫌を取る",
+      examples: [
+        "The airline offered a partial refund to placate frustrated customers after the delay.",
+        "Management announced a token bonus to placate employees rather than addressing the underlying pay gap."
+      ],
+      synonyms: [
+        { term: "appease", nuance_ja: "\"placate\" とほぼ同義だが、要求や圧力に「譲歩する」というニュアンスがより強く、政治・外交文脈にも頻出する。" },
+        { term: "soothe", nuance_ja: "より穏やかで、感情面をなだめる日常的な語。ビジネスの「一時しのぎ」的な批判ニュアンスは薄い。" },
+        { term: "pacify", nuance_ja: "怒りや反発を「鎮める」という意味で、より強い不満・抗議を抑える場面に使われる。" }
+      ],
+      explanation_ja: "本質的な問題を解決せず、表面的な対応で相手を静める、という皮肉めいたニュアンスを持つのが最大の特徴。ビジネス記事で企業の対応を評する際、\"placate\" が使われていたら、それは「根本解決ではなく、その場しのぎだ」という暗に批判的な視点が込められていることが多い。ニュース記事の行間を読む力がつく一語。"
+    },
+    {
+      type: "word", term: "substantiate", ipa: "/səbˈstænʃieɪt/", register: "フォーマル・分析的",
+      meaning_en: "to provide evidence or proof to support a claim, statement, or theory",
+      meaning_ja: "（主張や見積もりの）裏付けとなる証拠を示す、実証する",
+      examples: [
+        "You need to substantiate that revenue projection with actual signed contracts, not just optimism.",
+        "The auditor asked the company to substantiate its inventory valuation with physical count records."
+      ],
+      synonyms: [
+        { term: "back up", nuance_ja: "口語的で汎用的な表現。フォーマルな監査・法務文脈では \"substantiate\" の方が自然。" },
+        { term: "verify", nuance_ja: "「事実であることを確認する」に近く、既存の主張が正しいかどうかをチェックする行為に焦点がある。" },
+        { term: "corroborate", nuance_ja: "複数の独立した証拠源が「一致して裏付ける」場合に使われることが多く、単独の証拠提示にはやや不向き。" }
+      ],
+      explanation_ja: "会計・監査・法務の世界で非常に頻出する語で、USCPAの実務でもおなじみの発想と直結する。\"substantiate a claim\" という形で、「言うだけでなく、証拠を出せ」という実務的でシビアな要求を表す。日常会話ではやや硬いが、デューデリジェンスや契約交渉の場では標準語彙。"
+    },
+    {
+      type: "word", term: "extrapolate", ipa: "/ɪkˈstræpəleɪt/", register: "分析的",
+      meaning_en: "to estimate or predict something by extending known data or trends into an unknown situation",
+      meaning_ja: "（既知のデータや傾向を延長して）推定する、外挿する",
+      examples: [
+        "It's risky to extrapolate five years of hypergrowth into a DCF model without discounting for market saturation.",
+        "We can't simply extrapolate last quarter's churn rate across the full year — seasonality matters."
+      ],
+      synonyms: [
+        { term: "project", nuance_ja: "より一般的な「予測する」。既知データの「延長線上にある」という統計的ニュアンスは \"extrapolate\" の方が強い。" },
+        { term: "infer", nuance_ja: "データの延長というより、限られた情報から「論理的に推測する」ことに焦点がある。" }
+      ],
+      explanation_ja: "統計学・データ分析由来の語で、「既知の範囲の外側まで、傾向線を延ばして予測する」という視覚的なイメージを持つ。ファイナンスのモデリングにおいて、\"extrapolate\" という言葉自体に「その前提、本当に将来も成り立つのか？」という懐疑的なニュアンスが暗に含まれることが多く、批判的にモデルの前提を指摘する際の定番語彙。"
+    },
+    {
+      type: "idiom", term: "move the needle", ipa: "", register: "ビジネス全般",
+      meaning_en: "to make a significant, measurable difference or impact",
+      meaning_ja: "（大きな）実質的な影響・変化をもたらす",
+      examples: [
+        "This new product line probably won't move the needle on our overall revenue this quarter.",
+        "We need initiatives that actually move the needle, not just incremental tweaks."
+      ],
+      synonyms: [
+        { term: "make a dent", nuance_ja: "「（問題や負債などを）少し減らす」という、部分的・限定的な効果を表すことが多い。" },
+        { term: "have an impact", nuance_ja: "最も中立的で汎用的。効果の大小を問わず使える。" },
+        { term: "be a game-changer", nuance_ja: "「move the needle」より更に強く、状況そのものを一変させるレベルのインパクトを表す。" }
+      ],
+      explanation_ja: "計測器のアナログ針（スピードメーターや体重計）が「動く」ことに由来する比喩。ビジネス・投資の世界で \"needle-moving\"（形容詞化）という形でも頻出し、「数字上、意味のある変化として現れるかどうか」という、極めてデータドリブンな価値判断を含んでいるのがポイント。逆に \"This won't move the needle\" は「悪くはないが、全体への影響としては誤差レベル」という、婉曲だが辛口な評価を伝える便利な表現でもある。"
+    },
+    {
+      type: "idiom", term: "punch above your weight", ipa: "", register: "評価・称賛",
+      meaning_en: "to perform better than expected given one's size or resources",
+      meaning_ja: "（体格・規模の割に）実力以上の成果を出す、格上と対等以上に渡り合う",
+      examples: [
+        "This boutique advisory firm punches well above its weight in cross-border M&A.",
+        "For a team of five, they punch above their weight — competing directly with firms ten times their size."
+      ],
+      synonyms: [
+        { term: "outperform expectations", nuance_ja: "より直接的でフォーマルな表現。ボクシングの比喩が持つ軽妙さは失われる。" },
+        { term: "overachieve", nuance_ja: "個人の能力・成果に焦点を当てることが多く、組織全体の評価にはやや不向き。" }
+      ],
+      explanation_ja: "ボクシングの階級制度（体重別階級）が語源。本来は自分より重い階級の相手と戦って勝つ、という状況を指す。ビジネス文脈に転用されると、「規模・予算・知名度で劣るのに、成果はトップ企業と並ぶ、あるいはそれ以上」という褒め言葉になる。特に投資業界のニュースで、ブティック系ファームや新興企業を評価する際の定番表現。"
+    },
+    {
+      type: "idiom", term: "read the tea leaves", ipa: "", register: "市場分析・やや比喩的",
+      meaning_en: "to try to predict future events based on unclear or indirect signs",
+      meaning_ja: "（はっきりしない兆候から）今後の展開を読み取ろうとする",
+      examples: [
+        "Investors are reading the tea leaves on the Fed's next move after that ambiguous press conference.",
+        "Analysts spent the week reading the tea leaves from the CEO's carefully worded earnings call comments."
+      ],
+      synonyms: [
+        { term: "read between the lines", nuance_ja: "書かれた文章・発言の「行間」を読む、という意味に寄る。\"read the tea leaves\" はより広く、状況証拠全般から予測するニュアンス。" },
+        { term: "gauge the mood", nuance_ja: "空気感・雰囲気を読み取ることに焦点があり、将来予測というより現状把握に近い。" }
+      ],
+      explanation_ja: "紅茶を飲み干した後にカップの底に残る茶葉の模様から占いをする、という古い占術（tasseography）に由来する表現。転じて、「不確実な手がかりから将来を予測しようとする」ことを、やや皮肉と軽妙さを込めて表す。中央銀行の発言の行間を読むFRBウォッチャーの記事などで頻出する、金融メディア特有の定番表現。"
+    },
+    {
+      type: "idiom", term: "drink the Kool-Aid", ipa: "", register: "カジュアル・やや皮肉",
+      meaning_en: "to become an uncritical believer in something, often company culture or hype, without questioning it",
+      meaning_ja: "（企業文化やブームなどを）無批判に信じ込む、盲信する",
+      examples: [
+        "New hires are expected to drink the Kool-Aid pretty fast around here — skepticism isn't exactly rewarded.",
+        "He'd completely drunk the Kool-Aid on the startup's growth story, ignoring every red flag in the numbers."
+      ],
+      synonyms: [
+        { term: "buy into (something)", nuance_ja: "より穏やかで中立的な表現。\"drink the Kool-Aid\" ほどの「盲信」「思考停止」というネガティブな響きは薄い。" },
+        { term: "swallow it whole", nuance_ja: "「疑いもせず丸呑みにする」という口語的な言い回し。同じくらい批判的なニュアンス。" }
+      ],
+      explanation_ja: "1978年に起きたジョーンズタウン集団自殺事件（信者が毒入り飲料を飲まされた）に由来する、実はかなり重い歴史的背景を持つ表現。現代のビジネス英語では和らげられて「（企業のビジョンや流行りの技術を）批判的思考なしに信じ込む」という意味で日常的に使われるが、由来を知ると使いどころに一段慎重になれる、知っておく価値のある一語。スタートアップ文化を語る記事で頻出。"
+    },
+    {
+      type: "phrase", term: "kick the can down the road", ipa: "", register: "政策・金融報道",
+      meaning_en: "to postpone dealing with a problem, usually making it worse in the long run",
+      meaning_ja: "（問題の解決を）先送りする、その場しのぎで対応を遅らせる",
+      examples: [
+        "Congress once again kicked the can down the road on the debt ceiling instead of reaching a lasting agreement.",
+        "Refinancing at a higher rate just kicks the can down the road — the underlying leverage problem doesn't go away."
+      ],
+      synonyms: [
+        { term: "put off", nuance_ja: "最も一般的な「先延ばしにする」。ニュアンス中立でどんな文脈にも使える。" },
+        { term: "punt (on something)", nuance_ja: "アメフトの「パント」に由来する口語表現。特に決定・意思決定を先送りする場面でアメリカのビジネス英語に頻出。" },
+        { term: "paper over", nuance_ja: "問題を「先送り」というより「見えなくする、取り繕う」に近く、根本解決せず表面的に隠すニュアンスが強い。" }
+      ],
+      explanation_ja: "道端の空き缶を蹴って前に転がすだけで、結局その缶（＝問題）は消えずについてくる、という視覚的にわかりやすい比喩。アメリカの財政・金融政策報道（債務上限問題など）で非常によく使われ、「根本的な解決を避けて、問題を将来に先送りしているだけだ」という批判的なニュアンスを込めて使われることが多い。"
+    },
+    {
+      type: "phrase", term: "a moving target", ipa: "", register: "計画・見積もり",
+      meaning_en: "something that keeps changing, making it difficult to plan, define, or hit",
+      meaning_ja: "常に変化し続けていて捉えどころのないもの（目標・状況）",
+      examples: [
+        "Regulatory requirements have been a moving target for the industry all year.",
+        "Estimating the deal's final valuation is tricky because the target's revenue guidance keeps being a moving target."
+      ],
+      synonyms: [
+        { term: "a shifting landscape", nuance_ja: "より広い「環境・情勢全体」が変化していることを表す。個別の数値や基準を指す \"moving target\" とはスケール感が異なる。" },
+        { term: "in flux", nuance_ja: "「流動的な状態にある」という形容詞的表現。名詞の \"a moving target\" よりフォーマルで抽象度が高い。" }
+      ],
+      explanation_ja: "文字通り「動いている的（まと）」——射撃で狙いを定めにくい対象からの比喩。ビジネスでは、規制・為替レート・顧客ニーズなど「基準そのものが変わり続けるせいで、計画や評価がしづらい」状況を表すのに使われる。"
+    },
+    {
+      type: "phrase", term: "par for the course", ipa: "", register: "日常・やや口語",
+      meaning_en: "something that is typical or expected, especially in a mildly negative or frustrating situation",
+      meaning_ja: "よくあること、想定内（多くの場合、やや残念な意味で）",
+      examples: [
+        "Delays in due diligence are par for the course in cross-border deals.",
+        "Another vendor missing a deadline? At this point, that's just par for the course."
+      ],
+      synonyms: [
+        { term: "to be expected", nuance_ja: "最も中立的で一般的な言い方。ゴルフ由来の比喩的な軽妙さは失われる。" },
+        { term: "nothing new", nuance_ja: "より口語的で、やや投げやりなニュアンスを伴うことが多い。" }
+      ],
+      explanation_ja: "ゴルフの「パー（規定打数）」に由来し、「その状況にとって標準的・平均的」という意味から転じた表現。ネイティブは「残念だけど、まあいつも通りだよね」という、諦め半分・皮肉半分のトーンでよく使う。会議で愚痴めいた報告をする時に使うと、深刻になりすぎず、こなれた印象を与えられる。"
+    },
+    {
+      type: "phrase", term: "on thin ice", ipa: "", register: "警告・評価",
+      meaning_en: "in a risky or precarious position, especially in terms of someone's trust, patience, or approval",
+      meaning_ja: "（信頼や評価の面で）危うい立場にある、薄氷を踏む状態",
+      examples: [
+        "After missing two consecutive quarters, the CEO is on thin ice with the board.",
+        "The vendor is on thin ice with us after the third late delivery this year."
+      ],
+      synonyms: [
+        { term: "in hot water", nuance_ja: "既に問題やトラブルの渦中にある状態を指すことが多く、「まだ持ちこたえているが危うい」という \"on thin ice\" の緊張感とはやや異なる。" },
+        { term: "on shaky ground", nuance_ja: "立場や根拠が不安定であることを表す、より広い場面で使える表現。" }
+      ],
+      explanation_ja: "薄く張った氷の上を歩く、というそのままの視覚的イメージ通り、「今はまだ大丈夫だが、次に何か失敗すれば一気に転落する」という緊張感を伴う表現。人事評価・取引先との関係・信頼関係など、\"trust\" が絡む場面で特によく使われる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "scrappy", ipa: "/ˈskræpi/",
+      meaning_en: "determined and resourceful, especially despite limited size or resources",
+      meaning_ja: "（資源や規模が限られる中でも）粘り強く、たくましく戦う",
+      examples: [
+        "It's a scrappy team that gets more done with five people than most departments do with twenty.",
+        "The startup built a scrappy go-to-market strategy because it couldn't afford a big ad budget."
+      ],
+      synonyms: [
+        { term: "resourceful", nuance_ja: "「scrappy」より上品でフォーマル。工夫や知恵に焦点があり、「泥臭さ」のニュアンスは薄い。" },
+        { term: "gritty", nuance_ja: "「粘り強さ・根性」がより前面に出る語。逆境を耐え抜くイメージが強い。" }
+      ],
+      explanation_ja: "元々 \"scrap\"（くず、がらくた、あるいは「取っ組み合いのケンカ」）から派生した語で、「持っているものが少ない中で、なりふり構わず全力で戦う」というイメージが核にある。シリコンバレーのスタートアップ文化で特に好まれる褒め言葉。面接で \"I'm a scrappy problem-solver\" と言えると、「泥臭くても結果を出すタイプ」という好印象を与えられる。"
+    },
+    {
+      term: "cutthroat", ipa: "/ˈkʌtˌθroʊt/",
+      meaning_en: "fiercely competitive and ruthless, with no regard for others",
+      meaning_ja: "（競争などが）極めて激しく、容赦のない",
+      examples: [
+        "Investment banking recruiting is notoriously cutthroat, especially during on-cycle season.",
+        "It's a cutthroat industry where firms will undercut each other on price without hesitation."
+      ],
+      synonyms: [
+        { term: "fierce", nuance_ja: "競争の激しさのみを表す、より中立的な語。「容赦のなさ」まではニュアンスに含まない。" },
+        { term: "ruthless", nuance_ja: "個人の性格・行動を形容することが多く、「業界・環境」よりも「人」を主語にすると自然。" }
+      ],
+      explanation_ja: "文字通り「喉を切る」という物騒な語源を持つが、現代のビジネス英語では比喩として「勝つためなら手段を選ばない」ほど激しい競争環境を表す定番の形容詞になっている。\"cutthroat competition/industry/market\" という形で頻出し、ネイティブは日常的に使うが教科書にはまず出てこない。"
+    },
+    {
+      term: "underwhelming", ipa: "/ˌʌndərˈwelmɪŋ/",
+      meaning_en: "disappointingly unimpressive; falling short of expectations",
+      meaning_ja: "期待外れで、拍子抜けするほど物足りない",
+      examples: [
+        "Q3 earnings were underwhelming compared to consensus estimates, and the stock sold off on the news.",
+        "The product launch was underwhelming — a lot of hype for very little substance."
+      ],
+      synonyms: [
+        { term: "disappointing", nuance_ja: "最も直接的でストレートな語。「underwhelming」より感情がやや強く出る。" },
+        { term: "lackluster", nuance_ja: "「輝きがない、精彩を欠く」というニュアンス。パフォーマンスや結果そのものの質の低さを描写するのに向く。" },
+        { term: "middling", nuance_ja: "「並以下、可もなく不可もなく」という、良くも悪くもない中途半端さを表す。「underwhelming」ほどネガティブではない。" }
+      ],
+      explanation_ja: "「overwhelming（圧倒的な）」の反対語として作られた比較的新しい語で、直訳しにくいのに驚くほどよく使われる。日本語で言う「思ったほどでもなかった」「肩透かしを食らった」に近いニュアンスを一語で表現でき、決算発表・製品発表など「期待と結果のギャップ」を語る場面で頻出する。"
+    },
+    {
+      term: "half-baked", ipa: "/ˌhæfˈbeɪkt/", register: "カジュアル・批判的",
+      meaning_en: "poorly thought out or not fully developed, especially an idea or plan",
+      meaning_ja: "（アイデアや計画が）生煮えの、十分に練られていない",
+      examples: [
+        "The board rejected the half-baked expansion plan and asked for a proper feasibility study.",
+        "It sounded like a great idea in the meeting, but on paper it was pretty half-baked."
+      ],
+      synonyms: [
+        { term: "ill-conceived", nuance_ja: "よりフォーマルで、計画そのものの「発想段階での欠陥」に焦点がある。" },
+        { term: "underdeveloped", nuance_ja: "より中立的な語。「まだ発展途上」というニュアンスで、批判の強さはやや弱い。" }
+      ],
+      explanation_ja: "文字通り「半分しか焼けていないパン・ケーキ」からの比喩で、「表面はそれらしく見えても、中身が固まっていない」というイメージが的確に伝わる、視覚的でわかりやすい表現。会議で提案を却下する際の定番の言い回しで、\"half-baked idea/plan\" という形で頻出する。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "run the numbers",
+      meaning_en: "to do a quick financial calculation or estimate before making a decision",
+      meaning_ja: "（意思決定の前に）数字で試算・検証する",
+      examples: [
+        "Before we commit to the acquisition, let's run the numbers on the synergies one more time.",
+        "I ran the numbers, and the deal only makes sense if we can refinance at under 6%."
+      ],
+      synonyms: [
+        { term: "crunch the numbers", nuance_ja: "ほぼ同義でより口語的。\"crunch\" の方が「大量のデータを力技で処理する」というニュアンスが強い。" }
+      ],
+      explanation_ja: "「run」は「（プログラムや計算を）実行する」という意味合いで使われ、\"run the numbers\" 全体で「精緻な財務モデルを作る」というよりも「概算・試算をしてみる」という、比較的カジュアルで実務的なニュアンスを持つ。"
+    },
+    {
+      phrase: "build consensus",
+      meaning_en: "to gradually get a group of people to agree on a decision",
+      meaning_ja: "（関係者間で）合意を形成する",
+      examples: [
+        "It took three separate meetings to build consensus among the stakeholders on the pricing strategy.",
+        "Building consensus across departments is often harder than solving the technical problem itself."
+      ],
+      synonyms: [
+        { term: "get everyone on the same page", nuance_ja: "より口語的で日常会話寄り。「合意」というよりは「同じ理解を持つ」ことに焦点がある。" }
+      ],
+      explanation_ja: "「build」という動詞が使われることで、合意形成が一朝一夕にはできない、時間をかけて積み上げていくプロセスであることが伝わる。\"reach consensus\"（合意に達する、結果に焦点）との使い分けが重要。"
+    },
+    {
+      phrase: "flag a concern",
+      meaning_en: "to point out a potential problem so that others are made aware of it",
+      meaning_ja: "懸念点を指摘する、注意喚起する",
+      examples: [
+        "I want to flag a concern about the timeline before we move forward.",
+        "Our auditor flagged a concern about the revenue recognition policy."
+      ],
+      synonyms: [
+        { term: "raise a red flag", nuance_ja: "より緊急性・警戒感が強い表現。\"raise a concern\" よりも深刻な問題を示唆する。" }
+      ],
+      explanation_ja: "「flag」は本来「旗を立てて目印にする」という意味の動詞で、そこから転じて「（問題点に）印をつけて、みんなに気づかせる」という意味で使われる。\"raise a concern\" よりもやや軽く、「今すぐ大問題というわけではないが、記録として指摘しておきたい」という温度感を持つ。"
+    },
+    {
+      phrase: "circle back",
+      meaning_en: "to return to a topic or person later in order to follow up",
+      meaning_ja: "（後で改めて）話を戻す、再度取り上げる",
+      examples: [
+        "Let's circle back to the pricing question after we've discussed the timeline.",
+        "I'll circle back with you next week once I have the final numbers."
+      ],
+      synonyms: [
+        { term: "touch base", nuance_ja: "「軽く連絡を取る」に近く、必ずしも特定の議題に戻るとは限らない、より汎用的な表現。" }
+      ],
+      explanation_ja: "オフィスで極めて頻繁に使われる表現だが、あまりに多用されるため「またそれか」とやや皮肉交じりに揶揄されることもある、いわゆる \"corporate jargon\" の代表格。とはいえ実際の会議やメールでは今も標準的に使われているため、知らないと会話についていけない。"
+    }
+  ],
+  todayQuiz: [
+    { question: "Investors are trying to ___ on the Fed's next move after that ambiguous press conference.", choices: ["read the tea leaves", "drink the Kool-Aid", "punch above their weight", "move the needle"], answerIndex: 0, explanation: "\"Read the tea leaves\" means to try to predict future events from unclear or indirect signs — a good fit for interpreting an ambiguous Fed statement." },
+    { question: "The team's cautious decision to delay the acquisition was ___ when the target's valuation dropped sharply months later.", choices: ["placated", "vindicated", "substantiated", "extrapolated"], answerIndex: 1, explanation: "\"Vindicate\" means to prove someone right after doubt or criticism — the earlier decision was later shown to be correct." },
+    { question: "Which word best describes a plan that is poorly thought out and not fully developed?", choices: ["scrappy", "cutthroat", "half-baked", "underwhelming"], answerIndex: 2, explanation: "\"Half-baked\" describes an idea or plan that hasn't been properly thought through, like bread that hasn't finished baking." },
+    { question: "You need to ___ that revenue projection with real signed contracts, not just optimism.", choices: ["placate", "substantiate", "extrapolate", "vindicate"], answerIndex: 1, explanation: "\"Substantiate\" means to support a claim with solid evidence — exactly what auditors and investors demand." },
+    { question: "After missing two straight quarters, the CEO is ___ with the board.", choices: ["a moving target", "on thin ice", "par for the course", "kicking the can down the road"], answerIndex: 1, explanation: "\"On thin ice\" describes being in a precarious position, especially regarding someone's trust or patience." },
+    { question: "Which phrase means to postpone dealing with a problem instead of solving it?", choices: ["kick the can down the road", "circle back", "run the numbers", "flag a concern"], answerIndex: 0, explanation: "\"Kick the can down the road\" means to delay addressing a problem, usually making it worse later on." },
+    { question: "\"Let's ___ on the pricing question after we've reviewed the contract.\" Which collocation fits best?", choices: ["circle back", "build consensus", "flag a concern", "run the numbers"], answerIndex: 0, explanation: "\"Circle back (to something)\" means to return to a topic later — perfect for postponing a specific discussion point." },
+    { question: "It's risky to ___ five years of hypergrowth into a forecast without adjusting for market saturation.", choices: ["placate", "vindicate", "extrapolate", "substantiate"], answerIndex: 2, explanation: "\"Extrapolate\" means to estimate or predict by extending known data or trends — often riskier than it sounds." }
+  ]
+}
+];
+// ── END_DATA ──  (last sync: 2026-08-25 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
