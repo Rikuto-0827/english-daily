@@ -1892,9 +1892,315 @@ const ENGLISH_REPORTS = [
     { question: "Marketing wanted ___ headlines that would grab attention immediately, not the bland corporate language from the old campaign.", choices: ["staid", "dicey", "tepid", "punchy"], answerIndex: 3, explanation: "\"Punchy\" describes forceful, attention-grabbing style, fitting the request for headlines that stand out." },
     { question: "After the client meeting, make sure to ___ with the vendor once the contract is signed, so everyone knows the final terms.", choices: ["table the proposal", "bear the brunt", "close the loop", "iron out the kinks"], answerIndex: 2, explanation: "\"Close the loop\" means to follow up and communicate the final outcome to everyone involved, matching the need to inform the vendor after signing." }
   ]
+},
+{
+  date: "2026-08-24",
+  dateLabel: "2026年8月24日（月）",
+  readTimeMin: 32,
+  coreItems: [
+    {
+      type: "word", term: "precipitous", ipa: "/prɪˈsɪpɪtəs/", register: "フォーマル・報道",
+      meaning_en: "extremely sudden, rapid, and steep, especially describing a decline",
+      meaning_ja: "（下落などが）非常に急激で危険なほど急な",
+      examples: [
+        "The stock suffered a precipitous decline after the CFO abruptly resigned amid accounting concerns.",
+        "Rents in the neighborhood have fallen at a precipitous rate since the office towers emptied out."
+      ],
+      synonyms: [
+        { term: "steep", nuance_ja: "より一般的で中立的な語。「precipitous」が持つ「危険なほど急」という切迫感・警戒感は弱い。" },
+        { term: "sharp", nuance_ja: "程度の大きさを表す最も汎用的な語。フォーマルな報道記事では precipitous の方が緊迫感を演出できる。" },
+        { term: "abrupt", nuance_ja: "「急激さ」よりも「予期しない唐突さ」に焦点があり、下落の角度そのものよりタイミングの唐突さを強調する。" }
+      ],
+      explanation_ja: "元々は「崖（precipice）」に由来する語で、崖から真っ逆さまに落ちるようなイメージを内包する。単なる \"sharp decline\" よりも視覚的に切迫感があり、株価暴落や急激な業績悪化を報じるニュース記事の見出しで好んで使われる。名詞形 \"precipice\" とセットで覚えると、\"on the precipice of a recession\"（景気後退の瀬戸際に）のような表現にも応用できる。"
+    },
+    {
+      type: "word", term: "unassailable", ipa: "/ˌʌnəˈseɪləbl/", register: "フォーマル・評価",
+      meaning_en: "so strong that it cannot be attacked, questioned, or defeated",
+      meaning_ja: "（地位・論拠などが）揺るぎない、攻略不可能な",
+      examples: [
+        "The firm has built an unassailable position in enterprise software, with switching costs that lock in customers for decades.",
+        "Her argument was unassailable — every data point in the deck backed up the recommendation."
+      ],
+      synonyms: [
+        { term: "unshakable", nuance_ja: "信念や自信など、内面的な強さを表すのに向く。市場でのポジションや議論の強さには unassailable の方が自然。" },
+        { term: "impregnable", nuance_ja: "元々は要塞・城が「難攻不落」であることを表す軍事語。ビジネスでは市場シェアや競争優位性を語る際に使われ、unassailable よりやや文語的。" },
+        { term: "airtight", nuance_ja: "特に論理・アリバイ・契約など「隙がない」ことを表す際に使われ、地位や優位性そのものよりも「議論・計画の完璧さ」に焦点がある。" }
+      ],
+      explanation_ja: "\"assail\"（猛攻撃する）の否定形で、文字通り「攻撃されえない」という強さを表す。M&Aや競争戦略の文脈で、企業の市場地位やブランド力を評する際の最上級の褒め言葉として使われ、「competitive moat（競争の堀）」という概念とセットで語られることが多い。逆に投資家がこの語を疑わしげに使う場合、「本当にそこまで盤石なのか？」という皮肉を込めることもある。"
+    },
+    {
+      type: "word", term: "perfunctory", ipa: "/pərˈfʌŋktəri/", register: "フォーマル・批判的",
+      meaning_en: "carried out with minimum effort or reflection, as a routine duty rather than genuine care",
+      meaning_ja: "（義務的で）おざなりな、形だけの",
+      examples: [
+        "The due diligence turned out to be perfunctory at best — nobody actually verified the customer contracts.",
+        "He gave a perfunctory nod to the feedback and then did exactly what he'd originally planned."
+      ],
+      synonyms: [
+        { term: "cursory", nuance_ja: "「表面的で急いだ」というニュアンスが強く、時間不足による粗さを示唆する。perfunctory は時間よりも「やる気・誠意の欠如」に焦点がある。" },
+        { term: "half-hearted", nuance_ja: "「熱意がない」という感情面を強調する、より口語的な表現。" },
+        { term: "token", nuance_ja: "「形式だけ整えるためのもの」という意味で名詞的にも形容詞的にも使われ、perfunctory よりも「アリバイ作り」という皮肉が強い。" }
+      ],
+      explanation_ja: "監査やデューデリジェンスの品質を批判する際に頻出する語で、「一応やった体裁は整えたが、実質的な検証は何もしていない」という辛辣なニュアンスを持つ。USCPAの実務経験がある人なら、監査調書に \"perfunctory review\"（形だけのレビュー）と書かれることの重大さが直感的にわかるはず。会議や上司への報告で、手抜き仕事を上品かつ鋭く指摘したいときに便利な一語。"
+    },
+    {
+      type: "word", term: "commensurate", ipa: "/kəˈmensərət/", register: "フォーマル・人事/契約",
+      meaning_en: "corresponding in size, degree, or amount to something else; proportionate",
+      meaning_ja: "（〜に）見合った、釣り合いの取れた",
+      examples: [
+        "The offer includes a base salary commensurate with experience, plus a discretionary bonus.",
+        "The penalty imposed on the bank was hardly commensurate with the scale of the compliance failure."
+      ],
+      synonyms: [
+        { term: "proportionate", nuance_ja: "ほぼ同義でより平易な語。commensurate は求人票や契約書などのフォーマルな文書に特に多く登場する。" },
+        { term: "in line with", nuance_ja: "口語的で汎用性が高い言い換え。commensurate ほど硬い響きはない。" },
+        { term: "on par with", nuance_ja: "「同等のレベルにある」という意味に寄り、単純な「釣り合い」よりも「比較対象と同格である」ことを強調する。" }
+      ],
+      explanation_ja: "求人広告の \"salary commensurate with experience\"（経験に応じた給与）というフレーズで見たことがある人は多いはずだが、実は使いこなせている人は少ない、いかにも「知っていれば得」な語彙。ラテン語の \"com-\"（共に）+ \"mensura\"（測定）に由来し、「同じ物差しで測って釣り合っている」という語源イメージを持つ。規制当局が科す罰金の妥当性を議論する記事などでも頻出する。"
+    },
+    {
+      type: "idiom", term: "cook the books", ipa: "", register: "会計不正・強い批判",
+      meaning_en: "to illegally falsify financial records to make a company's performance look better than it actually is",
+      meaning_ja: "帳簿を改ざんする、粉飾決算をする",
+      examples: [
+        "The former CFO was indicted for cooking the books to hit earnings targets three years in a row.",
+        "Auditors eventually caught the company cooking the books by recognizing revenue before contracts were even signed."
+      ],
+      synonyms: [
+        { term: "falsify the accounts", nuance_ja: "よりフォーマルで法律文書にも使われる直接的な表現。cook the books は同じ内容を会話的・報道的に表す。" },
+        { term: "fudge the numbers", nuance_ja: "cook the books ほど犯罪性が明確ではなく、「数字を都合よく操作する」というやや軽いニュアンスでも使われる。" },
+        { term: "engage in accounting fraud", nuance_ja: "最もフォーマルで法的な表現。ニュース記事の見出しでは cook the books の方が圧倒的によく使われる。" }
+      ],
+      explanation_ja: "帳簿（books）を「料理する（cook）」という比喩は、材料（数字）を都合よく調理して見栄えを良くする、というイメージから来ている。エンロン事件をはじめとする会計スキャンダルの報道で定番中の定番の表現で、CPA資格を持つ人なら特に馴染み深い状況を的確に一言で表せる。フォーマルな監査報告書では使われないが、ニュース記事や日常の会話では驚くほど頻繁に登場する。"
+    },
+    {
+      type: "idiom", term: "drop the ball", ipa: "", register: "日常・批判的",
+      meaning_en: "to fail to do something you were responsible for, causing a mistake or missed opportunity",
+      meaning_ja: "（責任を）ミスる、しくじる、失態を犯す",
+      examples: [
+        "Legal dropped the ball on the trademark filing, and now a competitor has registered the name first.",
+        "I'll admit it — I dropped the ball on following up with that client before they signed with a rival firm."
+      ],
+      synonyms: [
+        { term: "screw up", nuance_ja: "より強くカジュアルな失敗表現。フォーマルな場では drop the ball の方がまだ許容される柔らかさを持つ。" },
+        { term: "fall short", nuance_ja: "「期待や基準に届かなかった」という結果に焦点があり、drop the ball が持つ「不注意による失態」という原因のニュアンスは弱い。" },
+        { term: "let something slip through the cracks", nuance_ja: "「見落として対応し忘れる」という受動的なミスに近く、drop the ball ほど「責任を持っていたのに」という当事者性は強くない。" }
+      ],
+      explanation_ja: "アメリカンフットボールやバスケットボールで、パスやキャッチをすべき選手がボールを落としてしまう場面から来た比喩。ビジネス英語では非常に日常的に使われ、自分のミスを認める際に \"I dropped the ball on that\" と言うと、深刻すぎず、かつ責任はきちんと認めている、というちょうど良いトーンを出せる。会議での率直な反省の弁として重宝する。"
+    },
+    {
+      type: "idiom", term: "cut your losses", ipa: "", register: "投資・意思決定",
+      meaning_en: "to stop investing time, money, or effort in something that is failing, in order to avoid greater loss",
+      meaning_ja: "（これ以上の損失を避けるため）損切りする、見切りをつける",
+      examples: [
+        "At some point you have to cut your losses and shut down the pilot program instead of pouring in more budget.",
+        "The fund cut its losses on the position after the third consecutive earnings miss."
+      ],
+      synonyms: [
+        { term: "pull the plug", nuance_ja: "「完全に停止・終了させる」という決定的な行動そのものに焦点があり、cut your losses は「これ以上損をしないための判断」という理由づけがより明確。" },
+        { term: "walk away", nuance_ja: "より広く「関わりをやめる」ことを指し、必ずしも金銭的損失を前提としない。" },
+        { term: "bail out (of a position)", nuance_ja: "特に投資・トレーディング文脈での口語表現。cut your losses よりも切迫感・緊急性が強いニュアンスを持つことが多い。" }
+      ],
+      explanation_ja: "ギャンブルやトレーディングの世界から一般ビジネスに広まった表現で、「サンクコスト（埋没費用）にこだわらず、合理的に撤退を判断する」という行動経済学的な知恵を一言で表す。関連表現の \"throw good money after bad\"（既出）とはコインの表裏の関係にあり、\"cut your losses\" はその望ましい対処法を示す前向きな表現として対になる。投資委員会やボードで撤退判断を提案する際の定番フレーズ。"
+    },
+    {
+      type: "idiom", term: "pull the plug", ipa: "", register: "意思決定・やや口語",
+      meaning_en: "to abruptly stop or cancel a project, deal, or activity, usually because it is no longer viable",
+      meaning_ja: "（計画・プロジェクトなどを）打ち切る、中止する",
+      examples: [
+        "The board pulled the plug on the joint venture after the regulatory approval kept getting delayed.",
+        "Investors pulled the plug on the startup's Series C after the growth numbers failed to materialize."
+      ],
+      synonyms: [
+        { term: "scrap (a project)", nuance_ja: "計画・製品そのものを「白紙に戻す」ことに焦点があり、pull the plug が持つ「電源を落とす」という即時停止のイメージはない。" },
+        { term: "shut down", nuance_ja: "より中立的で汎用的な語。pull the plug の方が「土壇場での決定的な打ち切り」という劇的なニュアンスを持つ。" },
+        { term: "kill (a deal)", nuance_ja: "口語的で直接的。特に交渉・取引が「破談になる」場面で pull the plug とほぼ同義に使われる。" }
+      ],
+      explanation_ja: "生命維持装置のプラグを抜く、という医療現場の重いイメージに由来する表現で、そこから転じて「もう後がない、決定的に終わらせる」という決断を表す。資金調達の打ち切りやプロジェクトの中止を報じるビジネスニュースで頻出し、\"pull the plug on\" という形で対象を後ろに続けるのが定型。"
+    },
+    {
+      type: "phrase", term: "a dog and pony show", ipa: "", register: "皮肉・カジュアル",
+      meaning_en: "an elaborate, overly rehearsed presentation or demonstration designed to impress rather than inform",
+      meaning_ja: "（中身より見せかけ重視の）派手なだけの演出、茶番のようなプレゼン",
+      examples: [
+        "The investor pitch felt like a dog and pony show — all polish, no substance on unit economics.",
+        "Let's skip the dog and pony show for the board meeting and just walk them through the real numbers."
+      ],
+      synonyms: [
+        { term: "window dressing", nuance_ja: "特に「数字や決算を見栄え良く整える」ことに使われることが多く、dog and pony show はプレゼンや商談そのものの演出性を指すことが多い。" },
+        { term: "a song and dance", nuance_ja: "ほぼ同義の口語表現。「言い訳・説明を長々と、大げさに繰り広げる」という意味でも使われる、より会話的な言い回し。" }
+      ],
+      explanation_ja: "19世紀に旅回りの見世物一座が犬とポニーを使った芸を披露して回ったことに由来する表現。転じて、「実質的な中身よりも見た目や演出に力を入れたプレゼンテーション」を軽蔑的に指す、ビジネス英語における定番の皮肉表現になった。投資家向けピッチや役員向け報告を揶揄する際に驚くほど頻繁に使われる。"
+    },
+    {
+      type: "phrase", term: "back to square one", ipa: "", register: "日常・ビジネス",
+      meaning_en: "back to the very beginning, after an attempt or plan has failed",
+      meaning_ja: "（失敗して）振り出しに戻る、最初からやり直し",
+      examples: [
+        "The lead investor pulled out at the last minute, so we're back to square one on the funding round.",
+        "After the vendor failed the security audit, we're back to square one in our search for a payments partner."
+      ],
+      synonyms: [
+        { term: "back to the drawing board", nuance_ja: "「計画そのものを設計し直す」という含みが強く、back to square one よりも「新しいアプローチを考える」前向きさがある。" },
+        { term: "start from scratch", nuance_ja: "何もない状態からゼロで再開する、というニュアンスがより強い。既存の進捗が完全に無に帰した場合に使われる。" }
+      ],
+      explanation_ja: "すごろくやボードゲームで振り出しのマス（square one）に戻される、というシンプルな比喩から来た表現。ビジネスでは、交渉決裂や計画の頓挫によって「せっかく積み上げた進捗が振り出しに戻ってしまった」という徒労感を伴うニュアンスで使われることが多い。似た表現の \"back to the drawing board\" と使い分けられると、状況の描写がより的確になる。"
+    },
+    {
+      type: "phrase", term: "the ball is in your court", ipa: "", register: "交渉・日常",
+      meaning_en: "it is now someone else's turn to take action or make a decision",
+      meaning_ja: "（次に動くのは）相手の番だ、ボールはそちらにある",
+      examples: [
+        "We've sent over our best and final offer — the ball is in their court now.",
+        "I've done everything I can on my end; the ball is in your court to get sign-off from legal."
+      ],
+      synonyms: [
+        { term: "it's up to you now", nuance_ja: "より直接的でシンプルな言い方。テニス由来の比喩の軽妙さは失われる。" },
+        { term: "the next move is yours", nuance_ja: "チェスや将棋を連想させる、やや戦略的なニュアンスを持つ言い換え。" }
+      ],
+      explanation_ja: "テニスに由来する表現で、ボールが相手コートに入った以上、次に打つ（＝行動する）のは相手の番だ、という視覚的にわかりやすい比喩。交渉や契約プロセスで「こちらはやるべきことをやった、次は相手の対応待ちだ」という状況を、角を立てずに伝えられる便利なフレーズ。メールの締めくくりにも頻出する。"
+    },
+    {
+      type: "phrase", term: "asleep at the wheel", ipa: "", register: "批判的",
+      meaning_en: "failing to pay attention to or take responsibility for something important, as if not paying attention while driving",
+      meaning_ja: "（重大な事態に）気づかず、注意を怠っている、居眠り運転状態の",
+      examples: [
+        "Regulators were asleep at the wheel in the years leading up to the financial crisis, missing obvious warning signs.",
+        "Nobody on the risk team flagged the exposure — everyone was asleep at the wheel on that account."
+      ],
+      synonyms: [
+        { term: "caught napping", nuance_ja: "「不意を突かれる、油断していた」という意味で、asleep at the wheel よりも「一時的な油断」に近く、継続的な怠慢というニュアンスは弱い。" },
+        { term: "negligent", nuance_ja: "法律・監査文書でも使われるフォーマルな語。asleep at the wheel はより口語的で、批判のトーンも比喩的で辛辣。" }
+      ],
+      explanation_ja: "車の運転中に居眠りをしてしまう、という危険なイメージそのものの比喩で、「本来最も注意を払うべき立場の人・組織が、重大な兆候を見逃していた」ことを痛烈に批判する表現。金融危機や不祥事の事後検証記事で、規制当局や取締役会の監督責任を問う際に極めて頻繁に使われる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "unflappable", ipa: "/ʌnˈflæpəbl/",
+      meaning_en: "remaining calm and composed even under pressure or in a crisis",
+      meaning_ja: "（プレッシャーや危機下でも）動じない、冷静沈着な",
+      examples: [
+        "The CEO stayed remarkably unflappable during the earnings call, even as analysts grilled her on the guidance cut.",
+        "You need an unflappable negotiator in the room when talks get this tense."
+      ],
+      synonyms: [
+        { term: "composed", nuance_ja: "より一般的でフォーマルな語。unflappable が持つ「何が起きても動じない」という強さのニュアンスはやや弱い。" },
+        { term: "cool-headed", nuance_ja: "判断力の冷静さに焦点があり、感情面の動じなさを表す unflappable とは微妙にニュアンスが異なる。" }
+      ],
+      explanation_ja: "\"flap\"（慌てる、動揺する）の否定形で、まさに「決して慌てふためかない」という頼もしいイメージを持つ。危機対応やハイステークスな交渉の場面で、リーダーシップを称賛する際の定番の褒め言葉。面接で自分の強みとして使うと、ストレス耐性の高さを気取らずアピールできる便利な一語。"
+    },
+    {
+      term: "hard-nosed", ipa: "/ˌhɑːrdˈnoʊzd/",
+      meaning_en: "tough, pragmatic, and unsentimental, especially in business or negotiation",
+      meaning_ja: "（交渉・判断が）徹底的に実利本位で容赦のない、厳しい現実主義の",
+      examples: [
+        "She has a reputation as a hard-nosed negotiator who won't budge an inch on price.",
+        "The new CFO took a hard-nosed approach to cost-cutting, eliminating any expense that couldn't be justified."
+      ],
+      synonyms: [
+        { term: "pragmatic", nuance_ja: "より中立的で、感情を排して実利を優先するという点は同じだが、hard-nosed が持つ「情け容赦なさ」までは含意しない。" },
+        { term: "no-nonsense", nuance_ja: "「無駄を排する」という点で近いが、対人関係での厳しさよりも「効率重視の姿勢」に焦点がある。" }
+      ],
+      explanation_ja: "ボクサーが何度も鼻を殴られて硬くなった（hard-nosed）状態を想像させる、身体的な比喩から来た表現。感傷や人情に流されず、数字と結果だけを見て判断する人物像を表し、交渉担当者やターンアラウンド（事業再生）の専門家を評する際によく使われる。褒め言葉にも批判にもなりうる、文脈依存の語。"
+    },
+    {
+      term: "brazen", ipa: "/ˈbreɪzn/",
+      meaning_en: "bold and shameless, without any sense of guilt or embarrassment, especially about something wrong",
+      meaning_ja: "（悪事や無礼を）恥じることなく大胆に行う、厚顔無恥な",
+      examples: [
+        "It was a brazen violation of the non-compete clause — he started poaching clients the same week he resigned.",
+        "Analysts were stunned by the brazen accounting maneuver used to hide the losses in a footnote."
+      ],
+      synonyms: [
+        { term: "shameless", nuance_ja: "ほぼ同義でより平易な語。brazen は特に「大胆さ・図太さ」も同時に強調するニュアンスが強い。" },
+        { term: "audacious", nuance_ja: "「大胆さ」自体はポジティブにもネガティブにも使われる中立寄りの語。brazen は基本的にネガティブな行為を形容する。" }
+      ],
+      explanation_ja: "元々「真鍮（brass）のような」という意味の語で、真鍮のように硬く図太い面の皮を持つ、というイメージから「恥知らずなほど大胆」という意味に発展した。契約違反やコンプライアンス違反など、明らかに悪いとわかっていながら堂々とやってのける行為を批判する際に使われる、辛辣だが的確な形容詞。"
+    },
+    {
+      term: "wishy-washy", ipa: "/ˈwɪʃi ˌwɑːʃi/", register: "カジュアル・批判的",
+      meaning_en: "lacking firmness, decisiveness, or clear conviction; vague and indecisive",
+      meaning_ja: "（態度や意見が）煮え切らない、あいまいで優柔不断な",
+      examples: [
+        "The memo was so wishy-washy that nobody could tell whether leadership actually supported the merger.",
+        "Stop being wishy-washy about the budget cuts — give me a firm number by Friday."
+      ],
+      synonyms: [
+        { term: "namby-pamby", nuance_ja: "より古風で軽蔑的、優柔不断さに加えて「軟弱さ」まで揶揄するニュアンスが強い。" },
+        { term: "noncommittal", nuance_ja: "よりフォーマルで中立的。「意図的にはっきりさせない」という戦略的な曖昧さも含み、wishy-washy ほど否定的でない場合もある。" }
+      ],
+      explanation_ja: "「washy（水っぽい）」を重ねた擬態語的な響きを持つ、いかにも「頼りない」感じが音からも伝わってくる面白い形容詞。会議で誰も明確な意思決定をせず、玉虫色の結論に終わったときなどに使われ、はっきりしないリーダーシップや文書に対するフラストレーションを表現するのにぴったり。フォーマルな文章では使われないが、日常会話や社内での率直な愚痴で頻出する。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "shore up (something)",
+      meaning_en: "to strengthen or support something that is weak or at risk of failing",
+      meaning_ja: "（弱っているものを）補強する、立て直す",
+      examples: [
+        "The bank raised $2 billion in fresh capital to shore up its balance sheet after the ratings downgrade.",
+        "Management brought in a turnaround consultant to shore up investor confidence before the next earnings call."
+      ],
+      synonyms: [
+        { term: "bolster", nuance_ja: "ほぼ同義でよりフォーマル。shore up は「崩れかけているものを支える」という切迫感がより強い。" }
+      ],
+      explanation_ja: "「shore」は元々、傾いた建物や船を支えるための「支柱」を意味する名詞で、そこから「支柱を当てて崩壊を防ぐ」という動詞の意味が生まれた。財務基盤や信頼など、「今にも崩れそうなものを緊急に補強する」というニュアンスが強く、危機対応のニュース記事で頻出する。"
+    },
+    {
+      phrase: "rein in (something)",
+      meaning_en: "to impose tighter control on something, especially spending, risk, or behavior that has gotten excessive",
+      meaning_ja: "（支出やリスクなどを）抑制する、手綱を締める",
+      examples: [
+        "The new CEO's first move was to rein in discretionary spending across every department.",
+        "Regulators are moving to rein in risky lending practices before they spread through the system."
+      ],
+      synonyms: [
+        { term: "curb", nuance_ja: "ほぼ同義で使われる場面も多いが、rein in は「手綱で馬を制御する」という比喩から、それまで自由にふるまっていたものを「引き締める」という動きのニュアンスがより強い。" }
+      ],
+      explanation_ja: "馬の手綱（reins）を引いて走りを制御する、という乗馬由来の比喩表現。経営陣が交代した直後や、業績が悪化した際に「これまで緩んでいたものを一気に引き締める」場面で好んで使われ、\"rein in costs/spending/risk\" という組み合わせで特に頻出する。"
+    },
+    {
+      phrase: "hash out (the details)",
+      meaning_en: "to discuss something thoroughly and work through disagreements until an agreement or plan is reached",
+      meaning_ja: "（詳細を）徹底的に話し合って詰める、議論して決着させる",
+      examples: [
+        "The two legal teams spent all weekend hashing out the details of the indemnification clause.",
+        "Let's grab a room and hash this out before the call with the client this afternoon."
+      ],
+      synonyms: [
+        { term: "iron out", nuance_ja: "既出の \"iron out the kinks\" と似るが、hash out は合意に至るまでの「議論のプロセス」そのものに焦点があり、iron out は「残った問題点を解消する」ことにより重点がある。" }
+      ],
+      explanation_ja: "「hash」は本来「刻んで混ぜ合わせる（ハッシュドポテトのハッシュ）」という意味で、そこから「様々な意見や論点を細かく刻んで、時間をかけて一つにまとめ上げる」というイメージが生まれた。契約交渉や条件詰めなど、時間のかかる議論の末に合意に至るプロセスを表すのに最適な、実務でよく使われる表現。"
+    },
+    {
+      phrase: "pad the numbers",
+      meaning_en: "to artificially inflate figures or statistics to make results look better than they really are",
+      meaning_ja: "（数字を）水増しする、実態より良く見せかける",
+      examples: [
+        "Some reps were suspected of padding the numbers by booking deals that hadn't actually closed yet.",
+        "Investors grew suspicious after noticing the company had been padding its user growth numbers for two straight quarters."
+      ],
+      synonyms: [
+        { term: "inflate the figures", nuance_ja: "ほぼ同義でよりフォーマル。pad the numbers はより口語的で、営業成績や決算数値の水増しを指す場面で特によく使われる。" },
+        { term: "cook the books", nuance_ja: "本日の項目にも登場した通り、cook the books は「不正な会計操作」というより重い犯罪性を含意することが多いのに対し、pad the numbers は必ずしも違法とは限らない「見栄えの誇張」も含む、やや軽いニュアンスで使われることもある。" }
+      ],
+      explanation_ja: "クッションを詰め物（padding）で膨らませるイメージそのままに、「実際の数字に架空の要素を詰め込んで膨らませる」ことを表す。営業チームのノルマ達成報告や、決算前のKPI操作を疑う文脈で頻出し、\"cook the books\" よりもカジュアルで、必ずしも違法性を断定しないグレーゾーンな表現として使い分けられる。"
+    }
+  ],
+  todayQuiz: [
+    { question: "The company's stock suffered a ___ decline, falling 18% in a single trading session after the CFO's shock resignation.", choices: ["gradual", "modest", "precipitous", "commensurate"], answerIndex: 2, explanation: "\"Precipitous\" describes an extremely sudden, steep decline — fitting a dramatic single-session stock drop, unlike \"gradual\" or \"modest.\"" },
+    { question: "After two decades of dominant market share, the brand's position in the category was widely considered ___.", choices: ["wishy-washy", "precipitous", "unassailable", "hard-nosed"], answerIndex: 2, explanation: "\"Unassailable\" describes a position so strong it cannot be attacked or overturned — perfect for a dominant, long-held market position." },
+    { question: "Which word best describes a review that was carried out with minimal genuine effort, more for show than substance?", choices: ["thorough", "perfunctory", "commensurate", "unflappable"], answerIndex: 1, explanation: "\"Perfunctory\" describes something done as a routine formality rather than with real care or diligence." },
+    { question: "The bonus pool was hardly ___ with the record profits the division generated this year — employees were furious.", choices: ["perfunctory", "commensurate", "brazen", "precipitous"], answerIndex: 1, explanation: "\"Commensurate\" means proportionate to or matching something else in size or degree — here, the bonus didn't match the scale of the profits." },
+    { question: "Which phrase emphasizes the rational decision to stop investing in a failing venture, rather than the act of shutting it down entirely?", choices: ["cut your losses", "pull the plug", "drop the ball", "shore up the project"], answerIndex: 0, explanation: "\"Cut your losses\" focuses on the reasoning — stopping further loss — while \"pull the plug\" emphasizes the decisive act of termination itself." },
+    { question: "Regulators failed to notice years of obvious warning signs before the crisis hit — critics said they were completely ___.", choices: ["asleep at the wheel", "back to square one", "cooking the books", "hashing it out"], answerIndex: 0, explanation: "\"Asleep at the wheel\" criticizes a sustained failure to pay attention to something important, matching years of missed warning signs — unlike \"cooking the books,\" which refers to fraud, not oversight failure." },
+    { question: "She stayed remarkably ___ throughout the crisis, never losing her composure even as reporters hurled tough questions during the call.", choices: ["unflappable", "hard-nosed", "brazen", "wishy-washy"], answerIndex: 0, explanation: "\"Unflappable\" describes someone who remains calm and composed under pressure — exactly the trait being praised here." },
+    { question: "After the ratings downgrade, the bank rushed to ___ its balance sheet with an emergency capital raise.", choices: ["shore up", "rein in", "hash out", "pad"], answerIndex: 0, explanation: "\"Shore up\" means to strengthen something weak or at risk — fitting the bank's move to reinforce a shaky balance sheet, unlike \"rein in,\" which means to restrict something excessive." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-08-30 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-02 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
