@@ -154,312 +154,6 @@ a{color:#0d6e6e}
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-08-25",
-  dateLabel: "2026年8月25日（火）",
-  readTimeMin: 33,
-  coreItems: [
-    {
-      type: "word", term: "broach", ipa: "/broʊtʃ/", register: "ややフォーマル・慎重を要する場面",
-      meaning_en: "to raise a difficult, sensitive, or awkward subject for discussion for the first time",
-      meaning_ja: "（言い出しにくい話題を）切り出す、初めて持ち出す",
-      examples: [
-        "Nobody wanted to broach the subject of layoffs until after the earnings call was over.",
-        "I finally broached the topic of a raise with my manager, and it went far better than I expected."
-      ],
-      synonyms: [
-        { term: "bring up", nuance_ja: "最も一般的で中立的な口語表現。broach と違って「言い出しにくい」という緊張感は含まれず、天気でも週末の予定でも何にでも使える。" },
-        { term: "raise", nuance_ja: "ビジネスで頻出のややフォーマルな語（raise a concern など）。話題の「気まずさ」よりも、議題として正式に提起する行為そのものに焦点がある。" },
-        { term: "touch on", nuance_ja: "話題に「軽く触れる」だけで深入りしないニュアンス。broach が本格的な議論の口火を切るのとは対照的。" }
-      ],
-      explanation_ja: "語源は「樽に穴を開けて栓を抜く」を意味する古フランス語で、現代でも「密封されていたものに最初に手をつける」という感覚が残っている。だから broach は必ず「まだ誰も触れていない、触れにくい話題」に対して使われ、天気の話を broach するとは言わない。退職の申し出、報酬交渉、後継者問題など社内で慎重に扱われるテーマとの相性が抜群で、\"broach the subject of ~\" という型で覚えると即戦力になる。ネイティブがこの語を選んだ瞬間、「これは気まずい話だ」という含意が同時に相手へ伝わる点が最大の効用。"
-    },
-    {
-      type: "word", term: "sandbag", ipa: "/ˈsændbæɡ/", register: "ビジネス口語・やや批判的",
-      meaning_en: "to deliberately understate what you can achieve, so that the eventual result looks impressive",
-      meaning_ja: "（達成できる水準をわざと低く見せて）目標や見通しを控えめに出しておく",
-      examples: [
-        "Every division head sandbags their forecast in Q1 so they can comfortably beat the target and collect the bonus.",
-        "Don't sandbag me — just give me the realistic timeline, not the one padded with three weeks of buffer."
-      ],
-      synonyms: [
-        { term: "lowball", nuance_ja: "「不当に低い数字を提示する」。sandbag が自分の目標や見通しを低く置くのに対し、lowball は主に相手への提示価格やオファーを低く出す場面で使う。" },
-        { term: "underpromise", nuance_ja: "\"underpromise and overdeliver\" の形で使われる、むしろ肯定的な処世術としての言い方。sandbag が持つ「ずるさ」「社内政治」の含みはない。" }
-      ],
-      explanation_ja: "元は「土嚢（sandbag）で相手を殴る」＝不意打ちするという物騒な意味だったが、現代のビジネス英語ではもっぱら「自分のノルマや予算をわざと控えめに出しておき、後で楽々達成してみせる」という社内政治的な行為を指す。予算会議やフォーキャストレビューで極めて頻出し、\"the numbers look sandbagged\" と言えば「この予算、盛るどころか意図的に低く置いてるよね」という鋭い指摘になる。既出の pad the numbers（水増し）とはちょうど逆方向の操作であり、この二語をセットで押さえると数字を巡る駆け引きの語彙が一気に立体的になる。"
-    },
-    {
-      type: "word", term: "parlay", ipa: "/ˈpɑːrleɪ/", register: "ややインフォーマル・キャリア文脈で頻出",
-      meaning_en: "to use an existing asset, skill, or success to gain something considerably bigger",
-      meaning_ja: "（今ある強みや実績を）足がかりにして、より大きなものへ発展させる",
-      examples: [
-        "She parlayed two years at a boutique advisory firm into a director role at a bulge-bracket bank.",
-        "He parlayed a popular cooking blog into a cookbook deal and eventually his own restaurant."
-      ],
-      synonyms: [
-        { term: "leverage", nuance_ja: "ビジネスで多用されるが「既存の資産を活用する」という静的な意味合いが中心。parlay は「AをBという別のより大きなものへ転化させた」という結果までを含む。" },
-        { term: "turn (something) into", nuance_ja: "最も平易な言い換え。parlay はそこに「賭け金を次々に乗せて増やしていく」ような巧みさ・戦略性のニュアンスが加わる。" }
-      ],
-      explanation_ja: "元はギャンブル用語で、「勝った賭け金をそのまま次の賭けに丸ごと乗せる」ことを指す（競馬の連勝式に近い発想）。そこから転じて、キャリアやビジネスで「小さな成功を元手に一段上のポジションへ跳ぶ」ことを表すようになった。\"parlay A into B\" という構文でほぼ固定されており、Bには必ずAより大きなものが来るのが構造上のポイント。転職面接での経歴の語りや、WSJ・Bloomberg の人物紹介記事で頻出するため、自分のキャリアを説明するときに使えると一気にこなれた印象を与えられる。"
-    },
-    {
-      type: "word", term: "optics", ipa: "/ˈɑːptɪks/", register: "ビジネス・政治で頻出、やや冷めた視点",
-      meaning_en: "the way a decision or situation is likely to be perceived by the public, regardless of its actual merits",
-      meaning_ja: "世間からの見え方、（実質はさておき）対外的な印象",
-      examples: [
-        "Cutting the workforce in the same quarter the CEO's pay doubled — the optics of that are terrible.",
-        "I know the dinner is a legitimate business expense, but think about the optics if it ever leaks."
-      ],
-      synonyms: [
-        { term: "appearances", nuance_ja: "ほぼ同義だがより古風で一般的。現代のビジネス英語・報道英語では optics の方が圧倒的に自然に響く。" },
-        { term: "perception", nuance_ja: "「受け止められ方」全般を指す中立的な語。optics は特に「実態と印象が乖離しているかもしれない」という戦略的な計算を含む点で異なる。" },
-        { term: "public image", nuance_ja: "企業や人物の長期的なブランドイメージを指す。optics は個別の一つの判断や場面についての、短期的な見え方を指すことが多い。" }
-      ],
-      explanation_ja: "元来は「光学」を意味する物理学用語だが、1970年代以降のアメリカ政治報道で「その決定が有権者の目にどう映るか」の意味で使われ始め、今ではビジネスの会議でも完全に定着している。決定的に重要なのは、optics が「中身が正しいかどうか」とは切り離して「見え方」だけを論じる語だという点で、\"the optics are bad\" は「それ自体は間違っていないが、外から見たら不味い」という含意になる。IR、危機管理、役員報酬の設計といった文脈では必ず登場するので、聞き取れるだけでなく自分から使えると議論の解像度が一段上がる。"
-    },
-    {
-      type: "idiom", term: "the tail wagging the dog", ipa: "", register: "ビジネス全般・批判的",
-      meaning_en: "a situation in which a minor or secondary element ends up controlling the more important one",
-      meaning_ja: "本末転倒、些末な要素が全体を振り回している状態",
-      examples: [
-        "We're redesigning the entire product roadmap around one client's request — that's the tail wagging the dog.",
-        "When quarterly earnings targets start dictating long-term R&D strategy, it's the tail wagging the dog."
-      ],
-      synonyms: [
-        { term: "putting the cart before the horse", nuance_ja: "「順序が逆」という手順の誤りを指す。the tail wagging the dog は順序ではなく「主従・重要度の逆転」を指す点で対象が違う。" },
-        { term: "losing sight of the bigger picture", nuance_ja: "平易で穏やかな言い換え。批判の鋭さと絵の可笑しみは the tail wagging the dog の方がはるかに強い。" }
-      ],
-      explanation_ja: "犬が尻尾を振るのが自然なのに、尻尾のほうが犬を振り回している、という滑稽な絵が語源。日本語の「本末転倒」とほぼ完全に対応するが、英語の方がユーモラスなぶん、会議で使うと批判の角を立てずに的確に問題を突ける便利な表現になる。定型として \"That's the tail wagging the dog.\" と一文で言い切る使い方が最も多く、冠詞 the を落とさないのが正確さの分かれ目。金融には「デリバティブ市場の規模が大きくなりすぎて原資産市場を動かしてしまう」現象をこう呼ぶ専門的な用法もある。"
-    },
-    {
-      type: "idiom", term: "be on the hook (for something)", ipa: "", register: "ビジネス・法務・日常すべてで頻出",
-      meaning_en: "to be the one held responsible for paying for or dealing with something, often unwillingly",
-      meaning_ja: "（支払いや責任を）負わされている、逃れられない立場にある",
-      examples: [
-        "If the borrower defaults, the guarantor is on the hook for the full outstanding balance.",
-        "I'm on the hook for picking up my sister from the airport at 5 a.m., so I'll have to skip drinks tonight."
-      ],
-      synonyms: [
-        { term: "be liable for", nuance_ja: "法的責任を明示するフォーマルな語で、契約書や訴訟の文脈で使う。on the hook は契約書の外、会話やメールで使われる口語表現。" },
-        { term: "be responsible for", nuance_ja: "中立的で汎用的。on the hook は「望んでその責任を引き受けたわけではない」という不本意さのニュアンスを含む点が違う。" },
-        { term: "be left holding the bag", nuance_ja: "他人の尻拭いを押し付けられた、という被害者性がさらに強い表現で、責任の不当さを訴える響きがある。" }
-      ],
-      explanation_ja: "釣り針（hook）に掛かった魚のように「逃げられない」というイメージが核にあり、だからこそ「自ら進んで負った責任」ではなく「負わされてしまった責任」を表す。逆に責任を免れることは \"off the hook\"（\"That call got canceled, so you're off the hook.\"）と言い、この対で覚えるのが最も効率的。保証、補償条項、費用負担を巡る交渉で極めて頻出する一方、家族の送迎のような日常会話でも全く同じ形のまま使える、守備範囲の異常に広い表現。"
-    },
-    {
-      type: "idiom", term: "paper over the cracks", ipa: "", register: "やや批判的・報道/ビジネス",
-      meaning_en: "to hide a fundamental problem with a superficial fix instead of actually solving it",
-      meaning_ja: "（根本問題を解決せず）表面だけ取り繕う、その場しのぎで覆い隠す",
-      examples: [
-        "The bridge loan just papers over the cracks — without a real restructuring, they'll be back here within a year.",
-        "They papered over the cracks in the merger announcement, but everyone could see the two cultures hadn't been reconciled."
-      ],
-      synonyms: [
-        { term: "gloss over", nuance_ja: "都合の悪い点に「触れずに軽く流す」こと。paper over the cracks は積極的に隠すための手当てを打つ点で、より行動を伴う。" },
-        { term: "put a Band-Aid on it", nuance_ja: "アメリカ英語でより口語的な同義表現。応急処置の感覚が強く、paper over the cracks より軽微な問題にも使える。" }
-      ],
-      explanation_ja: "壁のひび割れ（cracks）を、修繕せずに壁紙（paper）で覆い隠す、という生活感のあるイメージが語源。壁紙を貼っても構造上の欠陥はそのまま残っている、というのがこの表現の批判の核心で、いずれ必ず問題が再発するという予言的な含みまで運んでくれる。既出の placate が「人の感情」を一時的になだめるのに対し、こちらは「問題そのもの」を覆い隠す点で使い分けられる。資本注入や条件緩和といった金融支援策を論評するときの、英字紙の常套句でもある。"
-    },
-    {
-      type: "idiom", term: "have your work cut out for you", ipa: "", register: "中立〜励まし・警告",
-      meaning_en: "to face a task that will be very difficult and demanding to complete",
-      meaning_ja: "前途多難である、相当骨の折れる仕事を抱えている",
-      examples: [
-        "The new CFO has her work cut out for her — three restatements and an SEC inquiry in her first month.",
-        "You've got your work cut out for you if you're planning to run a marathon in twelve weeks."
-      ],
-      synonyms: [
-        { term: "a tough road ahead", nuance_ja: "ほぼ同義でやや文語的。have your work cut out for you の方が会話で自然に口をついて出る口語表現。" },
-        { term: "be up against it", nuance_ja: "困難な状況に「追い込まれている」という切迫感が強く、必要な努力量よりも状況の厳しさそのものに焦点がある。" }
-      ],
-      explanation_ja: "直感に反するが、この表現はもともと「仕立て屋があらかじめ生地を裁断してくれている」＝仕事がすでに用意されている、という意味で、そこから「やるべき量がこれだけ積み上がっている」→「大変だぞ」へと転じた。そのため「困難だ」と言いながらも、不可能だという絶望ではなく「覚悟して取り掛かれ」という現実的で前向きなトーンを保つ。所有格が主語に一致して your / her / his / their と変化する点（\"she has her work cut out for her\"）が学習者最大の落とし穴で、ここを正確に言えると一段上に聞こえる。"
-    },
-    {
-      type: "phrase", term: "a non-starter", ipa: "", register: "ビジネス・交渉で頻出",
-      meaning_en: "an idea or proposal that has no chance of succeeding and is therefore not worth pursuing",
-      meaning_ja: "最初から成り立たない案、検討に値しないもの",
-      examples: [
-        "Asking them to drop the non-compete entirely is a non-starter — let's negotiate the duration instead.",
-        "A 6 a.m. standup for a team spread across three time zones was always going to be a non-starter."
-      ],
-      synonyms: [
-        { term: "a dead end", nuance_ja: "進めてみた結果「行き詰まる」こと。non-starter は着手する前の段階ですでに成立していないという点で、断念の時点が早い。" },
-        { term: "out of the question", nuance_ja: "「絶対にありえない」と強く拒絶する表現。non-starter はより冷静・分析的で、感情ではなく実現可能性の判断として響く。" }
-      ],
-      explanation_ja: "競馬で、エントリーはしたが実際にはスタートしなかった馬（non-starter）が語源で、「レースにすら出られない」＝土俵に上がる前に終わっている、という含意を持つ。交渉の場で相手の提案を退けるとき、\"No\" と言うより角が立たず、しかも「感情ではなく現実性の問題だ」というフレーミングができるため実用性が非常に高い。冠詞 a を伴って \"That's a non-starter.\" と名詞句で言い切るのが定型で、\"It's a non-starter for legal\"（法務が通さない）のように理由を後ろに添える形も多用される。"
-    },
-    {
-      type: "phrase", term: "a hard stop", ipa: "", register: "ビジネス口語・会議文化",
-      meaning_en: "a fixed time at which you must end a meeting or call, with no flexibility to run over",
-      meaning_ja: "（会議などの）延長できない終了時刻、絶対に抜けなければならない時間",
-      examples: [
-        "Just so everyone knows, I have a hard stop at 3:30 — let's cover the pricing question first.",
-        "We had a hard stop because the room was booked, so we moved the rest of the agenda to email."
-      ],
-      synonyms: [
-        { term: "a hard out", nuance_ja: "アメリカのビジネス口語でほぼ同義。hard stop より若干くだけた響きで、特にテック系の企業でよく耳にする。" },
-        { term: "a firm deadline", nuance_ja: "会議の終了時刻ではなく、成果物の提出期限を指す。時間帯を区切る hard stop とは対象そのものが違う。" }
-      ],
-      explanation_ja: "学校英語には一切出てこないが、英語圏のオフィスで働けば一日に何度も耳にする、極めて実用性の高い会議語彙。ポイントは「予定がありますので早めに失礼します」という長い説明を、\"I have a hard stop at four.\" の一言に圧縮できることで、これは失礼どころか、相手に議題の優先順位付けを促す配慮とみなされる。冒頭で宣言するのがマナーで、終了間際に突然切り出すと準備不足の印象を与える。延長の余地がある場合を soft stop と呼ぶこともある。"
-    },
-    {
-      type: "phrase", term: "table stakes", ipa: "", register: "ビジネス・戦略議論",
-      meaning_en: "the minimum requirements needed simply to compete, which provide no advantage in themselves",
-      meaning_ja: "参入・競争のための最低条件、（差別化要因ではない）あって当然のもの",
-      examples: [
-        "Same-day settlement isn't a differentiator anymore — it's table stakes for any custodian bidding on this mandate.",
-        "A decent mobile app used to win customers; now it's just table stakes."
-      ],
-      synonyms: [
-        { term: "the price of entry", nuance_ja: "ほぼ同義でより平易。table stakes の方が戦略論・コンサル文脈での定番表現として通りがいい。" },
-        { term: "a prerequisite", nuance_ja: "フォーマルで中立的な「前提条件」。table stakes にはさらに「それだけでは全く勝てない」という競争上の含意が加わる。" }
-      ],
-      explanation_ja: "ポーカーで、席に着くために最低限テーブルに積まなければならないチップ（table stakes）が語源で、「出しても勝てるわけではない、ただ参加できるだけ」という感覚が核にある。MBAの戦略論やコンサルの提案書で頻出し、\"X is table stakes\" と言えば「Xでは差別化にならない、議論すべきはその先だ」という主張を一言で表せる。常に複数形 stakes で使い、単数にしないのが鉄則。競争環境が成熟して、かつての強みが何時の間にか「当たり前」に格下げされた状況を語るときの、最も切れ味のいい語彙。"
-    },
-    {
-      type: "phrase", term: "a sanity check", ipa: "", register: "実務・ややカジュアル",
-      meaning_en: "a quick, informal review to confirm that something is broadly reasonable before going any further",
-      meaning_ja: "（詳細に入る前の）ざっくりした妥当性確認、おかしくないかの一次チェック",
-      examples: [
-        "Before I send this to the client, can you run a sanity check on the exit multiple? It feels high to me.",
-        "I did a quick sanity check on the total — twelve people at $80 a head shouldn't come to $2,000."
-      ],
-      synonyms: [
-        { term: "a gut check", nuance_ja: "数字の整合性ではなく「本当にこれでいいのか」という意思や覚悟を問い直すニュアンスが強く、対象が感情や決断に寄る。" },
-        { term: "a reality check", nuance_ja: "期待が現実離れしていることに気づかせる、やや厳しい響き。sanity check は中立的で、単純な検算・確認作業を指す。" }
-      ],
-      explanation_ja: "エンジニアリング由来の表現で、「精緻な検証」ではなく「常識に照らして明らかにおかしくないか」を素早く見る作業を指す。既出の run the numbers が本格的に計算し直すことなのに対し、sanity check は桁が合っているか、前提が非常識でないかを数十秒で見るイメージ。同僚に頼むときは \"Can you sanity-check this?\" とハイフンでつないで動詞化することもでき、この動詞用法まで自然に出てくると相当こなれて聞こえる。依頼される側にとっても「大した手間はかけさせません」という配慮が伝わる、人間関係に優しい一語。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "untenable", ipa: "/ʌnˈtenəbl/", register: "フォーマル・分析的",
-      meaning_en: "impossible to defend, justify, or maintain in the face of criticism or pressure",
-      meaning_ja: "（立場や主張が）もはや維持できない、擁護しようのない",
-      examples: [
-        "Once the internal emails leaked, the CEO's position became untenable and he resigned within the week.",
-        "Carrying that much floating-rate debt into a tightening cycle left the company in an untenable position."
-      ],
-      synonyms: [
-        { term: "indefensible", nuance_ja: "「倫理的に弁護の余地がない」という道徳的非難の色が強い。untenable は道徳よりも「現実的に維持できない」という構造的な限界を指す。" },
-        { term: "unsustainable", nuance_ja: "主に財務や環境が「長期的に続かない」ことを指す。untenable は論理や立場が「今この時点ですでに成り立っていない」ことを指し、切迫度が高い。" }
-      ],
-      explanation_ja: "ラテン語 tenere（保持する）に由来し、tenant（借主）や tenure（在職期間）と同族で、原義は「持ちこたえられない」。人事報道での定番表現 \"his position became untenable\" は、事実上「辞任は不可避になった」ことを婉曲に伝える決まり文句で、英字紙でこの一語を見つけたら数日以内の辞任を読み取れることが多い。財務・法務・政治のいずれの文脈でも使え、\"an untenable position\" というコロケーションの形で覚えると応用が利く。"
-    },
-    {
-      term: "cagey", ipa: "/ˈkeɪdʒi/", register: "カジュアル・やや批判的",
-      meaning_en: "unwilling to give clear information, and deliberately vague or guarded when questioned",
-      meaning_ja: "（質問をはぐらかして）言葉を濁す、含みを持たせて明言しない",
-      examples: [
-        "Management was noticeably cagey about the timing of the buyback when analysts pressed them on the call.",
-        "He got weirdly cagey when I asked how much he'd actually paid for the apartment."
-      ],
-      synonyms: [
-        { term: "evasive", nuance_ja: "「質問から逃げる」という回避行動を客観的に描写するフォーマル寄りの語。cagey はより口語的で、用心深さという当人の計算まで含む。" },
-        { term: "tight-lipped", nuance_ja: "単に「何も言わない」沈黙を指す。cagey は喋ってはいるのに肝心なことを言わない、という点で決定的に違う。" },
-        { term: "guarded", nuance_ja: "慎重で控えめな態度全般を指す中立的な語で、批判の色はほとんどない。" }
-      ],
-      explanation_ja: "語源は諸説あるが、「檻（cage）に入れられた動物のように用心深い」という連想で説明されることが多い。決算説明会やインタビューの描写で頻出し、\"cagey about ~\" の形で何について口を濁しているかを続ける。使いこなしの勘所は、evasive ほど非難がましくならず、「戦略的に情報を出し控えているのだろう」という一定の理解も込められる点で、だからこそ記者やアナリストが企業側の態度を評するときの、絶妙な距離感を持つ一語として重宝される。"
-    },
-    {
-      term: "buttoned-up", ipa: "/ˌbʌtndˈʌp/", register: "ビジネス口語・基本は肯定的（人に使うと皮肉にもなる）",
-      meaning_en: "thoroughly prepared, disciplined, and free of loose ends; also, formal and emotionally reserved",
-      meaning_ja: "（体制や資料が）隙なく整っている、抜かりない／（人が）堅苦しい",
-      examples: [
-        "Their data room was incredibly buttoned-up — every contract indexed and every question answered within a day.",
-        "He's pretty buttoned-up in meetings, but he's a completely different person once you get him at a team dinner."
-      ],
-      synonyms: [
-        { term: "airtight", nuance_ja: "論理や証拠に穴がないことを指し、対象が主張・契約・アリバイなどに限られる。buttoned-up は運営体制や資料全体の整い方に使え、守備範囲が広い。" },
-        { term: "polished", nuance_ja: "見た目や仕上がりの洗練を指す。buttoned-up は見栄えよりも「抜け漏れがない」という内部管理の質そのものに焦点がある。" }
-      ],
-      explanation_ja: "シャツのボタンを一番上まで留めた姿が語源で、そこから「隙のない、きっちりした」という意味に広がった。デューデリジェンスの現場で対象会社の管理体制を評する常套句であり、\"a buttoned-up process\" と言えば買い手に安心感を与える最上級の褒め言葉になる。一方で人に対して使うと「几帳面すぎて打ち解けない」というやや冷めた含みが出ることもあり、褒めているのか皮肉なのかが文脈で決まる。この二面性こそが使いこなしの勘所。"
-    },
-    {
-      term: "thorny", ipa: "/ˈθɔːrni/", register: "中立・やや文語寄りだが会話でも使う",
-      meaning_en: "involving many difficulties and complications that make something awkward to resolve",
-      meaning_ja: "（問題が）やっかいな、一筋縄ではいかない",
-      examples: [
-        "Transfer pricing across five jurisdictions is easily the thorniest issue in this integration plan.",
-        "Splitting the bill when half the table didn't drink is always a thorny little problem."
-      ],
-      synonyms: [
-        { term: "tricky", nuance_ja: "口語的で軽い響き。thorny はより重く、関係者の利害が絡んで簡単には解けない問題に対して使われる。" },
-        { term: "contentious", nuance_ja: "「意見が対立して揉める」という争点性に焦点がある。thorny は必ずしも対立を含まず、単に複雑で扱いにくい問題にも使える。" }
-      ],
-      explanation_ja: "茨（thorn）だらけの藪に手を突っ込むイメージそのままで、「どこから触っても痛い」という感覚が核にある。困難さの種類を表す語として、複雑さを指す complex、危うさを指す dicey（既出）と並べて対比すると輪郭がはっきりする。実際の用例は \"a thorny issue\" \"a thorny question\" というコロケーションが圧倒的に多く、法務・税務・人事のように正解が一つに定まらない領域の話題と特に相性がいい。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "stress-test an assumption",
-      meaning_en: "to deliberately push a key assumption to extreme cases in order to see where it breaks down",
-      meaning_ja: "（前提条件を）極端なケースまで振って、どこで破綻するかを検証する",
-      examples: [
-        "Before we take this to the investment committee, let's stress-test the assumption that churn stays flat through a recession.",
-        "I stress-tested my own budget by asking what actually happens if I'm out of work for six months."
-      ],
-      synonyms: [
-        { term: "pressure-test", nuance_ja: "ほぼ同義で、コンサル文脈ではこちらもよく使う。数値モデルというより、ロジックや戦略の頑健性を試す場面にやや寄る。" },
-        { term: "sensitivity-test", nuance_ja: "変数を少しずつ動かして影響度を測る、より技術的で穏当な検証。stress-test は「壊れるところまで振り切る」極端さが特徴。" }
-      ],
-      explanation_ja: "2008年の金融危機後に銀行の資本規制で使われた stress test（健全性審査）が一般語化したもので、今では投資委員会だけでなく、事業計画やキャリア設計の議論にまで広がっている。核心は「うまくいく前提」ではなく「どこで壊れるか」を先に探しに行く思考法にある。ネイティブがこの語を使うとき、相手のモデルを否定するのではなく共同で頑健性を高めようという協調的なトーンになるのがポイントで、批判を柔らかく届ける装置としても機能する。動詞として使う際はハイフンでつなぐのが一般的。"
-    },
-    {
-      phrase: "socialize an idea",
-      meaning_en: "to share a proposal informally with key people in advance, gathering reactions and building support before it is formally presented",
-      meaning_ja: "（正式提案の前に）関係者へ非公式に案を通しておく、根回しする",
-      examples: [
-        "Let's socialize the reorg with the regional heads before it goes to the board — I don't want anyone blindsided.",
-        "She spent three weeks socializing the idea internally, which is exactly why the vote ended up unanimous."
-      ],
-      synonyms: [
-        { term: "float an idea", nuance_ja: "反応を見るために軽く投げてみること。socialize はより計画的で、複数の関係者を順に回って支持を積み上げていく継続的なプロセスを指す。" },
-        { term: "pre-wire", nuance_ja: "アメリカの大企業やコンサルで使われるさらに内輪の言い方で、「結論が決まっている会議のために事前に固めておく」という戦略性が強い。" }
-      ],
-      explanation_ja: "「社交する」という辞書的な意味からは想像しにくいが、アメリカの大企業では「正式な場に出す前に一人ずつ話して感触を確かめ、味方を作っておく」という意味で完全に定着している。日本語の「根回し」とほぼ同義でありながら、英語圏では裏工作ではなく有能さの証と受け止められる点が文化的に面白い。既出の build consensus が合意形成という結果を指すのに対し、socialize はそこへ至る個別接触のプロセスそのものを指すため、\"socialize it first, then build consensus in the room\" のように連続して使える。"
-    },
-    {
-      phrase: "bake in (an assumption / an expectation)",
-      meaning_en: "to build something into a plan, price, or forecast so firmly that it can no longer be separated out",
-      meaning_ja: "（前提や期待を）あらかじめ織り込む、分離できない形で組み込む",
-      examples: [
-        "Two more rate cuts are already baked into the current bond price, so there may be limited upside from here.",
-        "We baked a 15% contingency into the timeline, so a short delay won't derail the launch."
-      ],
-      synonyms: [
-        { term: "price in", nuance_ja: "市場が情報を価格に織り込むこと。対象が価格に限定される分 bake in より狭いが、金融文脈ではこちらの方が精密で通りがいい。" },
-        { term: "factor in", nuance_ja: "判断の際に「考慮に入れる」こと。まだ切り離して調整できる余地があり、bake in の「もう分離できない」という不可逆性はない。" }
-      ],
-      explanation_ja: "ケーキに卵を混ぜて焼いてしまえば、もう卵だけ取り出すことはできない、という比喩が核心で、この不可逆性が factor in との決定的な違いになる。金融では受動態の \"already baked in\"（すでに織り込み済み）が圧倒的に頻出し、「その材料で今から買っても遅い」という投資判断の含意まで一言で運んでくれる。一方で \"bake in a buffer\"（バッファを織り込む）のように、意図的に良いものを組み込む中立から肯定寄りの使い方も普通にあり、文脈によって色が変わる語であることに注意したい。"
-    },
-    {
-      phrase: "loop someone in",
-      meaning_en: "to include someone in an ongoing conversation or information flow so that they are no longer left out",
-      meaning_ja: "（進行中の話に）誰かを加える、情報共有の輪に入れる",
-      examples: [
-        "I'm looping in Priya from tax — she'll need to weigh in on the structure before we sign anything.",
-        "Sorry, I should have looped you in earlier; here's the whole thread for context."
-      ],
-      synonyms: [
-        { term: "bring someone up to speed", nuance_ja: "すでに関与している人に、遅れている分の情報を追いつかせること。loop in は輪の外にいた人を新たに加える行為で、対象の立場が違う。" },
-        { term: "cc someone", nuance_ja: "単にメールの宛先に加える機械的な行為。loop in は「今後の議論に参加してもらう」という意図まで含む点で温度が違う。" }
-      ],
-      explanation_ja: "情報が回る「輪（loop）」に人を入れる、というイメージそのままで、メール本文の冒頭に \"Looping in Ken\" と一行書いて新しい参加者を紹介するのは英語圏のビジネスメールの定番作法。派生表現の \"keep me in the loop\"（引き続き共有して）と \"be out of the loop\"（蚊帳の外だ）も極めて頻出で、この三点セットを押さえると情報共有を巡る会話がまるごとカバーできる。既出の close the loop が「案件を完結させる」ことなのに対し、こちらは「人を加える」ことで、同じ loop でも意味が全く異なる点に注意。"
-    }
-  ],
-  todayQuiz: [
-    { question: "Nobody wanted to ___ the subject of layoffs until after the earnings call was over.", choices: ["broach", "parlay", "sandbag", "socialize"], answerIndex: 0, explanation: "\"Broach\" specifically means to raise a difficult or sensitive subject for the first time — exactly the tension described here. \"Bring up\" would be neutral and lose that discomfort." },
-    { question: "Every division head submits a deliberately conservative Q1 forecast so they can comfortably beat it and collect a bonus. This practice is called ___.", choices: ["padding the numbers", "sandbagging", "parlaying", "stress-testing"], answerIndex: 1, explanation: "\"Sandbagging\" is deliberately understating what you can achieve so the eventual result looks impressive. \"Padding the numbers\" is the opposite — inflating figures to look better now." },
-    { question: "Announcing a hiring freeze in the same week the executive bonus pool was disclosed created terrible ___.", choices: ["optics", "table stakes", "prerequisites", "sanity checks"], answerIndex: 0, explanation: "\"Optics\" refers to how a decision is likely to be perceived publicly, independent of whether it was defensible on the merits." },
-    { question: "Two additional rate cuts are already ___ the current bond price, so there may be limited upside from here.", choices: ["factored out of", "baked into", "papered over", "socialized with"], answerIndex: 1, explanation: "\"Baked into\" means built in so firmly it cannot be separated out — the standard way to say the market has already absorbed an expectation. \"Factor in\" would imply it is still adjustable." },
-    { question: "Which expression describes something that is merely the minimum needed to compete, offering no advantage on its own?", choices: ["a non-starter", "table stakes", "a hard stop", "a sanity check"], answerIndex: 1, explanation: "\"Table stakes\" are the minimum requirements just to be in the game. A \"non-starter\" is a proposal with no chance of succeeding at all — a different idea entirely." },
-    { question: "The client canceled the review, so you're ___ for the weekend deliverable after all.", choices: ["on the hook", "off the hook", "in the loop", "up against it"], answerIndex: 1, explanation: "\"Off the hook\" means released from an obligation. \"On the hook\" would mean you are still stuck with the responsibility, which contradicts \"canceled.\"" },
-    { question: "Once the internal emails leaked, the CEO's position became ___ and he resigned within the week.", choices: ["thorny", "cagey", "untenable", "buttoned-up"], answerIndex: 2, explanation: "\"Untenable\" describes a position that can no longer be defended or maintained. In press coverage this word often signals that a resignation is imminent." },
-    { question: "The emergency loan does nothing about the underlying insolvency; it just ___.", choices: ["papers over the cracks", "has its work cut out", "is the tail wagging the dog", "loops them in"], answerIndex: 0, explanation: "To \"paper over the cracks\" is to hide a fundamental problem with a superficial fix. \"The tail wagging the dog\" would describe a minor element controlling a more important one." },
-    { question: "Management was noticeably ___ about the buyback timing, giving long answers that never actually addressed the question.", choices: ["buttoned-up", "cagey", "tight-lipped", "untenable"], answerIndex: 1, explanation: "\"Cagey\" means deliberately vague and guarded while still speaking. \"Tight-lipped\" would mean saying nothing at all, which contradicts \"long answers.\"" }
-  ]
-},
-{
   date: "2026-08-26",
   dateLabel: "2026年8月26日（水）",
   readTimeMin: 33,
@@ -2358,9 +2052,327 @@ const ENGLISH_REPORTS = [
     { question: "The pricing has to ___ between keeping the anchor client and not resetting the entire book lower.", choices: ["thread the needle", "move the needle", "split the difference", "clear the decks"], answerIndex: 0, explanation: "\"Thread the needle\" means finding the narrow path that satisfies conflicting requirements at once, and it takes \"between A and B.\" \"Move the needle\" is an unrelated idiom about producing a measurable change in a headline number." },
     { question: "Nothing else gets calendar time until the filing goes in. The instruction to the team is to ___.", choices: ["clear the decks", "put a pin in it", "swing for the fences", "split the difference"], answerIndex: 0, explanation: "\"Clear the decks\" comes from readying a warship for battle and means stripping away lesser work to concentrate on one imminent effort. \"Prioritise\" would describe ranking the work without actually removing anything from the schedule." }
   ]
+},
+{
+  date: "2026-09-03",
+  dateLabel: "2026年9月3日（木）",
+  readTimeMin: 33,
+  coreItems: [
+    {
+      type: "word", term: "inure", ipa: "/ɪˈnjʊr/", register: "フォーマル寄り・書き言葉/報道",
+      meaning_en: "to make someone so accustomed to something unpleasant that they stop reacting to it",
+      meaning_ja: "（つらいこと・不快なことに）慣れきってしまう、動じなくなる",
+      examples: [
+        "Twelve years on the trading desk had inured her to drawdowns that would have kept a first-year analyst awake all night.",
+        "You never really get inured to the smell at the fish market — you just stop mentioning it."
+      ],
+      synonyms: [
+        { term: "harden (to)", nuance_ja: "感情そのものを閉ざして冷たくなるという含みが強い。inure は反応が薄れるだけで、人格が硬化したとまでは言わない。" },
+        { term: "desensitize", nuance_ja: "心理学・メディア論の術語色が濃く、刺激への反応が鈍っていく過程を客観的に記述する。しばしば「本来は反応すべきなのに」という批判を伴う。" },
+        { term: "acclimate", nuance_ja: "新しい環境に順応すること。対象が不快である必要がなく、単なる適応を中立に述べる。" }
+      ],
+      explanation_ja: "語源は中英語の in + ure（use, work）で、原義は「使用に供する」。そこから「使い込んで慣らす」という意味に転じた。実際にはほぼ必ず受動態 be / become / get inured to の形で使い、目的語には苦痛・リスク・批判など望ましくないものが来る。注意すべきは法律文書の全く別の用法で、\"this indemnity shall inure to the benefit of the successors\" のように「（権利が）〜に帰属する」を意味する定型句として頻出する——契約書を読むときはこちらを想起できないと文意を取り違える。日常会話ではやや硬いが、金融やジャーナリズムの書き言葉では極めて自然に響く。"
+    },
+    {
+      type: "word", term: "jawbone", ipa: "/ˈdʒɔːboʊn/", register: "口語寄り・金融/政治報道で頻出",
+      meaning_en: "to pressure someone into acting by talking at them publicly and persistently rather than using formal authority",
+      meaning_ja: "（権限を使わず）口先の圧力で動かす、言葉で押し切る",
+      examples: [
+        "The central bank has been jawboning the currency higher for three months without spending a single dollar of reserves.",
+        "My landlord jawboned me into taking the smaller unit by describing the stairs in the other building about nine separate times."
+      ],
+      synonyms: [
+        { term: "browbeat", nuance_ja: "威圧と恐怖で屈服させる。相手が萎縮している点が核心で、jawbone のような「粘り強い説得」の含みはない。" },
+        { term: "lobby", nuance_ja: "制度化された正式な働きかけ。中立語で、非難の色も、しつこさの含みもない。" },
+        { term: "talk (someone) into", nuance_ja: "最も平易な口語で、単に説得して同意させたという結果だけを述べる。公開の場での圧力という含みは出ない。" }
+      ],
+      explanation_ja: "旧約聖書でサムソンがロバの顎の骨を武器に敵を倒した逸話と、「顎＝喋る器官」という連想が重なって生まれた語。1960年代、ジョンソン政権が物価抑制のために法規制ではなく演説と説得で経済界に圧力をかけた手法を jawboning と呼んだことで定着した。現在の金融では、中央銀行が実際に金利を動かさずに発言だけで市場を誘導することを指す業界標準語で、口を開くだけの公開市場操作という意味の \"open mouth operations\" という洒落た同義語もある。名詞形 jawboning のほうが目にする頻度は高い。日本語の「口先介入」がほぼ完全に対応する。"
+    },
+    {
+      type: "word", term: "couch (in)", ipa: "/kaʊtʃ/", register: "フォーマル・文書分析/報道",
+      meaning_en: "to express something in a particular kind of language, usually to soften or disguise what it actually says",
+      meaning_ja: "（ある言い回しで）表現する、〜の言葉に包んで言う",
+      examples: [
+        "The downgrade was couched in so much hedging language that you had to read the note twice to see they were telling clients to sell.",
+        "He couched the whole thing as a favor to me, but what he actually needed was the car back by Friday."
+      ],
+      synonyms: [
+        { term: "phrase", nuance_ja: "単に言葉を選んで述べること。中立で、本音を隠しているという含みは一切ない。" },
+        { term: "frame", nuance_ja: "どの角度から見せるかという解釈の設定に焦点。言語表現そのものより、聞き手の受け取り方を設計する行為を指す。" },
+        { term: "cloak", nuance_ja: "隠蔽の意図が明白で、はるかに強い非難。couch は婉曲や配慮のための言い換えにも中立的に使える。" }
+      ],
+      explanation_ja: "家具のソファと同語源で、フランス語 coucher（横たえる）に遡る。原義は「言葉の中に横たえて置く」で、そこから「ある表現の中に収めて述べる」という比喩が生まれた。実務ではほぼ常に受動態 be couched in の形で、後ろに言語の性質を表す名詞句が続く（couched in legalese / in vague terms / as a suggestion）。この語の価値は「表面の言い回しと中身は別物だ」という前提を一語で示せる点にあり、IR資料の含み、規制当局のコメント、人事評価の遠回しな指摘を批評的に語るときに最も切れる。褒め言葉として使うことはまずなく、書き手が距離を取って観察している合図になる。"
+    },
+    {
+      type: "word", term: "fester", ipa: "/ˈfestər/", register: "中立・日常会話とビジネス双方",
+      meaning_en: "(of a problem or bad feeling) to be left unaddressed and quietly grow worse over time",
+      meaning_ja: "（放置されて）こじれる、悪化していく",
+      examples: [
+        "The disagreement over territory allocation festered for two quarters and eventually cost us the two best people on the sales team.",
+        "Don't let it fester — just tell him the comment bothered you and it'll be over in ten seconds."
+      ],
+      synonyms: [
+        { term: "simmer", nuance_ja: "表面下でくすぶり続ける状態。噴出前の緊張を描くだけで、時間とともに悪化しているという含みは弱い。" },
+        { term: "escalate", nuance_ja: "規模や深刻度が段階的に上がること。放置が原因だという因果は含まず、当事者が動いた結果でも使える。" },
+        { term: "drag on", nuance_ja: "だらだらと長引くという時間の話に限られる。長引いた結果ひどくなったという悪化の含みはない。" }
+      ],
+      explanation_ja: "原義は傷口が化膿すること。比喩に転じても、この医学イメージが決定的に効いている——放置したこと自体が悪化の原因であり、時間が経てば自然に治るものではない、という含みが常にある。だから経営上の使いどころは明確で、対立、評判、技術的負債、未処理の苦情など「今なら小さいが放っておくと膿む」ものを指す。実務で最も使える形は使役の let ~ fester で、\"we let it fester\" は事後の反省として、\"don't let it fester\" は助言として、どちらも極めて自然。人間関係の話でも普通に使う日常語なので、硬い語ではない点も押さえておきたい。"
+    },
+    {
+      type: "idiom", term: "run out of runway", ipa: "", register: "口語・スタートアップ/投資で頻出",
+      meaning_en: "to reach the point where the remaining time or cash is no longer enough to get a plan off the ground",
+      meaning_ja: "（資金や時間が尽きて）離陸できないまま行き詰まる",
+      examples: [
+        "They had genuine traction, but they ran out of runway two quarters before the contract renewals would have proved the model worked.",
+        "I've got about three weeks of runway on this side project before someone notices I haven't shipped anything."
+      ],
+      synonyms: [
+        { term: "run out of steam", nuance_ja: "勢いや意欲が尽きること。原因が内側の失速にあり、外部資源の枯渇を指す runway とは責任の所在が違う。" },
+        { term: "burn through the cash", nuance_ja: "資金を使い切る過程に焦点があり、浪費への非難が入りやすい。時間切れという構造的な意味は薄い。" },
+        { term: "run out of road", nuance_ja: "英国寄りのほぼ同義表現。ただし「打つ手がなくなる」という手詰まり感が強く、離陸前という段階の含みはない。" }
+      ],
+      explanation_ja: "飛行機が離陸速度に達する前に滑走路が尽きる、という比喩。核心は「力不足」ではなく「時間切れ」で、あと少し滑走路があれば飛べたかもしれないという含みが残るのが重要な味わい。スタートアップ財務では runway が「手元資金が尽きるまでの月数」を指す完全に定量的な用語として定着しており、\"eighteen months of runway\" \"extend the runway\" のように数えられる名詞で使う。この定量用法から比喩表現に戻る形で日常会話にも広がり、今では締切やキャリアにも使える。resource の話であって能力の話ではない、という区別ができると使い分けを外さない。"
+    },
+    {
+      type: "idiom", term: "come home to roost", ipa: "", register: "中立・報道/評論で頻出",
+      meaning_en: "for the bad consequences of an earlier action to finally arrive and land on whoever caused it",
+      meaning_ja: "（過去の行いの）ツケが回ってくる、報いが返ってくる",
+      examples: [
+        "The covenants they negotiated away back in 2023 came home to roost the moment EBITDA slipped below plan.",
+        "All those all-nighters finally came home to roost — he's been flat on his back for a week."
+      ],
+      synonyms: [
+        { term: "catch up with (someone)", nuance_ja: "最も平易な口語で、主語は行いでも人でもよい。roost が持つ「必ず戻ってくる」という不可避性の響きは薄い。" },
+        { term: "backfire", nuance_ja: "意図と正反対の結果が出ること。多くは即座に、しかも一度きり。長い時間差で返ってくるという含みがない。" },
+        { term: "reap what you sow", nuance_ja: "聖書由来の道徳的な因果応報で、説教調に響く。第三者の失敗を淡々と描写する場面では重すぎる。" }
+      ],
+      explanation_ja: "完全形は \"chickens come home to roost\"——昼間に放した鶏は夕方には必ず自分の鶏小屋（roost）に戻ってくる、つまり自分の行いは必ず自分のところへ帰ってくる、という農村由来の比喩で、14世紀のチョーサーまで遡る古い表現。実務上の最重要ポイントは主語で、必ず「過去の判断・妥協・手抜き」が主語になり、人を主語にはしない。だから \"the decision came home to roost\" は自然だが \"he came home to roost\" は成立しない。省略形で使うのが今は普通だが、記事の見出しでは鶏を明示して皮肉を効かせることも多い。"
+    },
+    {
+      type: "idiom", term: "the bloom is off the rose", ipa: "", register: "中立・報道/投資コメンタリーで頻出",
+      meaning_en: "the early excitement about something has faded and its flaws are now plainly visible",
+      meaning_ja: "熱が冷めて、粗が見えてきた",
+      examples: [
+        "The bloom is off the rose on private credit — everyone still allocates to it, but nobody stands up and calls it a free lunch anymore.",
+        "Six weeks into the new job the bloom was off the rose, and honestly most of it was the ninety-minute commute."
+      ],
+      synonyms: [
+        { term: "lose its luster", nuance_ja: "輝きが失われるという穏やかで詩的な言い方。欠点が見えてきたというより、単に魅力が薄れた状態を指す。" },
+        { term: "the honeymoon is over", nuance_ja: "蜜月期間の終わり。新任の経営者や政権など「立場と任期」に結びつき、これから批判が始まる局面を指す点で射程が狭い。" },
+        { term: "wear off", nuance_ja: "効果や新鮮味が単に薄れること。完全に中立で、幻滅というニュアンスも評価の変化も含まない。" }
+      ],
+      explanation_ja: "咲ききったバラから最初の艶（bloom）が消える様子。この比喩の面白さは、対象そのものが劣化したとは限らない点にある——変わったのは見る側の熱狂であり、冷めた目で見れば最初からあった欠点が見えるようになっただけ、という認識の転換を指す。だから資産クラス、テクノロジー、話題の経営者、移住先の都市など、かつて持て囃されたものを一段引いて評価する文脈にぴたりとはまる。前置詞は必ず off で、動詞は is / came のどちらもよい。語調は落ち着いており、酷評ではなく「冷静に見直す段階に入った」という穏当な批評として使えるのが実務上の利点。"
+    },
+    {
+      type: "idiom", term: "grease the wheels", ipa: "", register: "口語・社内政治の話題で頻出（米）",
+      meaning_en: "to do something that makes a process move more smoothly, usually by easing people's resistance in advance",
+      meaning_ja: "（根回しなどで）話を通りやすくする、段取りを滑らかにする",
+      examples: [
+        "Sending a pre-read to the two skeptics on the committee greases the wheels far more than another slide in the deck ever will.",
+        "She brought pastries to the eight a.m. move-in meeting, which greased the wheels exactly as much as you'd expect."
+      ],
+      synonyms: [
+        { term: "pave the way", nuance_ja: "後続のために道そのものを作る下準備。規模が大きく、人の抵抗を和らげるという対人的な含みは弱い。" },
+        { term: "expedite", nuance_ja: "手続きを速めるというフォーマルで事務的な語。人間関係を整えたという含みは一切ない。" },
+        { term: "oil the wheels", nuance_ja: "英国版の同義表現。米国で使っても通じるが、やや文語的・英国的に響く。" }
+      ],
+      explanation_ja: "車輪に油をさして摩擦を減らす比喩で、米国では grease、英国では oil を使うのが基本。実務上の核心は、対象が「手続き」ではなく「人の抵抗」である点で、事前の一対一、味方作り、情報の先出しといった根回し全般を一語で表せる。ただし一つ大きな注意があり、文脈次第では賄賂の婉曲表現に転ぶ——grease someone's palm（袖の下を渡す）という近縁表現が存在するため、規制当局や外部の取引先が絡む話で使うと不必要な誤解を招く。社内の合意形成を語る場面に限定して使うのが安全で、その範囲であればごく自然な日常表現。"
+    },
+    {
+      type: "phrase", term: "Just to level-set, ...", ipa: "", register: "ビジネス口語・米企業の会議標準",
+      meaning_en: "said before restating shared facts so that everyone begins the discussion from the same baseline",
+      meaning_ja: "前提をそろえておくと、〜という状況です",
+      examples: [
+        "Just to level-set, we're at 4.2x net leverage today, and the covenant steps down to 4.0x in March.",
+        "Just to level-set — I've never touched this software before, so stop me if I'm asking something obvious."
+      ],
+      synonyms: [
+        { term: "Just so we're all on the same page, ...", nuance_ja: "平易で誰にでも通じる。事実の確認というより認識の一致を求める響きで、やや馴れ合い的に聞こえることもある。" },
+        { term: "For context, ...", nuance_ja: "背景情報を足すだけの前置き。全員の出発点をそろえるという会議運営上の機能はない。" },
+        { term: "By way of background, ...", nuance_ja: "フォーマルで一方向的な説明の合図。話が長くなる予告として受け取られやすい。" }
+      ],
+      explanation_ja: "測量や土木で地面を水平にならす level する作業から来た米企業語。実務価値は極めて具体的で、会議の冒頭にこれを置くと「まだ把握していない人がいる」という前提を場に作れるため、理解度に差がある参加者の面子を潰さずに前提を統一できる。逆に言えば、自分が知らないときにこれを言えば、質問ではなく確認の形を借りて情報を引き出せる。コーポレート・ジャーゴンとして揶揄されることもある語だが、米国の金融・コンサル・テック企業では完全に日常語として定着している。ハイフンつきの動詞 level-set のほか、名詞で \"a quick level-set\" とも言う。"
+    },
+    {
+      type: "phrase", term: "To your point, ...", ipa: "", register: "ビジネス口語・議論の橋渡し",
+      meaning_en: "used to connect what you are about to say back to something the other person just said",
+      meaning_ja: "おっしゃった点に関して言えば、〜",
+      examples: [
+        "To your point about concentration — the top three clients are 61% of revenue, and two of them renew in the same month.",
+        "To your point earlier, the parking really is the reason nobody wants that apartment."
+      ],
+      synonyms: [
+        { term: "Building on what you said, ...", nuance_ja: "積み上げる意図を明示する。丁寧だがやや長く説明的で、短い応酬のテンポには乗りにくい。" },
+        { term: "As you mentioned, ...", nuance_ja: "相手の発言を引用するだけ。そこから自分の主張へ進む推進力がなく、単なる確認で終わりやすい。" },
+        { term: "Picking up on that, ...", nuance_ja: "話題を引き取る合図。誰の発言かという帰属をやや曖昧にするので、相手を立てる効果は弱い。" }
+      ],
+      explanation_ja: "たった三語なのに強力なのは、自分の意見を相手の発言の延長線上に置けるからで、まったく新しい論点でも「あなたの指摘に応えている」という枠に収まる。結果として、反論であっても協調的に響くという不思議な効果がある。\"To your point about X\" と対象を明示すれば、相手の話を正確に聞いていた証明にもなり、信頼構築の効率がさらに上がる。似た形の \"to that point\" は自分自身の直前の発言を受ける場合に使い、\"to your point\" は必ず相手に帰属させる——この使い分けを間違えると手柄を横取りしたように聞こえるので注意。会議で最初に体得すべき橋渡し表現。"
+    },
+    {
+      type: "phrase", term: "I don't want to put words in your mouth.", ipa: "", register: "中立・交渉/1on1で頻出",
+      meaning_en: "said to check that you are representing someone's position accurately instead of assuming it",
+      meaning_ja: "勝手に代弁するつもりはないのですが、〜",
+      examples: [
+        "I don't want to put words in your mouth, but it sounds like the timeline is the real objection here, not the price.",
+        "I don't want to put words in your mouth — did you actually say you'd move, or am I inventing that?"
+      ],
+      synonyms: [
+        { term: "Correct me if I'm wrong, ...", nuance_ja: "誤りの訂正を求める汎用の前置き。相手の立場を自分が言語化しているという自覚は前面に出ない。" },
+        { term: "Am I reading that right?", nuance_ja: "自分の解釈の当否を問う。相手の発言そのものを要約し直すという行為の確認ではない。" },
+        { term: "Is that a fair characterization?", nuance_ja: "フォーマルで、要約の妥当性を正面から問う。会議録や交渉の記録に残る場面に向く。" }
+      ],
+      explanation_ja: "直訳は「あなたの口に言葉を入れたくない」で、他人の主張を勝手にでっち上げる行為への戒めが原義。実務での使い方が巧妙で、この前置きを置いてから相手がまだ明言していない本音を言語化してみせると、外れていれば安全に否定してもらえるし、当たっていれば議論が一気に核心へ進む——交渉相手の真の反対理由を掘り当てる定番の道具になっている。裏返しの \"you're putting words in my mouth\" は「そんなことは言っていない」という明確な抗議で、かなり強い。自分から先に断っておくことで、この抗議を先回りして無効化しているわけである。"
+    },
+    {
+      type: "phrase", term: "Reading between the lines, ...", ipa: "", register: "中立・分析/雑談どちらでも",
+      meaning_en: "used to state what you infer from what someone deliberately did not say outright",
+      meaning_ja: "行間を読むと、〜ということだと思います",
+      examples: [
+        "Reading between the lines of the guidance, they're preparing the market for a soft fourth quarter without ever having to say so.",
+        "Reading between the lines, I don't think she's planning to come back after the leave."
+      ],
+      synonyms: [
+        { term: "My read is that ...", nuance_ja: "自分の判断であることを前面に出す言い方。何を根拠にしたかは示さないので、行間という手がかりの含みは消える。" },
+        { term: "The subtext is ...", nuance_ja: "発言や文章の裏の意味を指す分析的な語。やや文芸批評的で、会話ではもったいぶって響くことがある。" },
+        { term: "If I had to guess, ...", nuance_ja: "根拠の弱さをあらかじめ認める謙譲表現。行間を読み解いたという自信は伴わない。" }
+      ],
+      explanation_ja: "行と行の間には何も書かれていない、それでも読み取る、という比喩。実務価値は責任の所在の設計にあり、「相手はこう言った」ではなく「自分はこう推測した」と明示できるため、読み違えていても相手を巻き込まずに済む。決算説明会での言い回しの含み、規制当局のトーンの変化、上司の遠回しな指摘を解読する場面で最も頻出する。文頭に置いて後続の推測全体を修飾する用法が基本で、対象を示すときは \"reading between the lines of the memo\" のように of を取る。同じ現象を相手の側から言えば、その発言は couched in careful language だったということになる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "anemic", ipa: "/əˈniːmɪk/", register: "中立・経済報道の定型語",
+      meaning_en: "weak and conspicuously lacking the strength or vitality that was expected",
+      meaning_ja: "（成長・需要などが）力強さを欠いた、精彩のない",
+      examples: [
+        "Volume growth was anemic in every region except Brazil, and management spent most of the call explaining why that's temporary.",
+        "The coffee at the new place is fine; the pastry selection is frankly anemic."
+      ],
+      synonyms: [
+        { term: "sluggish", nuance_ja: "動きの鈍さ・遅さに焦点。今は遅いだけで、加速の余地を残している響きがある。" },
+        { term: "lackluster", nuance_ja: "期待外れで冴えないという印象評価。数値だけでなくプレゼンや業績全般の見栄えにも広く使う。" },
+        { term: "muted", nuance_ja: "外的要因で低く抑えられているという含み。当事者の責任を問わない分、非難の色が最も薄い。" }
+      ],
+      explanation_ja: "貧血 anemia の形容詞。血が足りず生気がないという身体イメージがそのまま経済語に転用され、\"anemic growth\" \"anemic demand\" \"anemic returns\" は英字経済紙の完全な定型句になっている。sluggish との差は明確で、あちらが「遅い」なのに対し anemic は「そもそも力が入っていない」という質の弱さを指す——だから同じ低成長でも、回復期待を残したいなら sluggish、期待が持てないなら anemic を選ぶ。米国綴りは anemic、英国は anaemic。日常会話でも「中身がスカスカ」の意味で使えるが、対象をかなり手厳しく切り捨てる響きになる点は意識しておきたい。"
+    },
+    {
+      term: "outsized", ipa: "/ˈaʊtsaɪzd/", register: "中立・金融/報道で極めて頻出",
+      meaning_en: "far larger than the size or role of something would normally justify",
+      meaning_ja: "（規模に不釣り合いなほど）大きな、突出した",
+      examples: [
+        "A 2% position had an outsized effect on the quarter, which tells you more about the rest of the book than it does about that one name.",
+        "For a town of nine thousand people, the library has an outsized reputation."
+      ],
+      synonyms: [
+        { term: "disproportionate", nuance_ja: "比率の不均衡を指す語だが、実際にはほぼ常に「不当だ」という批判を伴う。中立に褒める用途には使えない。" },
+        { term: "inordinate", nuance_ja: "度を越して不適切だという判断が強く、フォーマル。\"an inordinate amount of time\" のように無駄への非難で使うのが典型。" },
+        { term: "oversized", nuance_ja: "物理的な寸法が大きいこと。服や家具には使えるが、影響力やリターンには使えない。" }
+      ],
+      explanation_ja: "元は「規格外の大きさ」を指す語だが、実務ではほぼ常に影響力・寄与度・リターンについて使う。最大の特徴は価値中立である点で、\"outsized returns\"（望ましい）と \"outsized risk\"（望ましくない）に同じ形で使える——ここが disproportionate との決定的な差で、あちらは批判の含みを避けにくい。したがって「小さいのに効いている」という事実だけを述べたいときの第一選択になる。日本語話者は oversized と混同しやすいが、あちらはサイズの話に限られるので、影響力に使うと誤用として耳につく。英国では d を落とした outsize の形も見かける。"
+    },
+    {
+      term: "sclerotic", ipa: "/skləˈrɑːtɪk/", register: "強い批判・書き言葉/経済誌",
+      meaning_en: "so rigid and slow-moving that it can no longer adapt to change",
+      meaning_ja: "硬直化した、動脈硬化を起こしたような",
+      examples: [
+        "The approval chain has gone sclerotic — eleven signatures for a hire we budgeted for last October.",
+        "Every league has one sclerotic rule that everybody complains about and nobody ever changes."
+      ],
+      synonyms: [
+        { term: "rigid", nuance_ja: "柔軟性がないという中立寄りの記述。規律や一貫性として肯定的に使える場合すらある。" },
+        { term: "calcified", nuance_ja: "石灰化した、の意で硬直の程度は近い。ただし慣習が固まって動かないという静的な描写で、機能不全の含みはやや弱い。" },
+        { term: "moribund", nuance_ja: "瀕死。硬直ではなく消滅寸前であることを指し、sclerotic よりはるかに強く、回復の余地を認めない。" }
+      ],
+      explanation_ja: "医学の動脈硬化 arteriosclerosis から来た比喩で、血管が硬くなって流れが滞る様子。経済誌が老いた官僚機構、硬直した労働市場、大企業の意思決定を批判する際の常套語として定着している。核心は「かつては機能していたものが硬くなった」という時間の含みで、最初から柔軟でなかったものにはやや使いにくい。かなり強い批判語なので、自社や取引先について公の場で口にすると角が立つ部類であり、基本的には書き言葉・第三者評として使うのが無難。名詞形 sclerosis も \"institutional sclerosis\"（組織の硬直化）という形で経済学の議論に出てくる。"
+    },
+    {
+      term: "breezy", ipa: "/ˈbriːzi/", register: "口語・日常会話で頻出",
+      meaning_en: "cheerfully casual and unbothered, sometimes more than the situation warrants",
+      meaning_ja: "軽やかで屈託のない、（時に）事の重大さを感じさせない",
+      examples: [
+        "The CFO was breezy about the covenant question, which made two people on the call more nervous rather than less.",
+        "She sent a breezy three-line reply and I've been rereading it all afternoon trying to decide if she's annoyed."
+      ],
+      synonyms: [
+        { term: "casual", nuance_ja: "形式ばらないという事実の記述。明るさや快活さといった感情のトーンまでは指定しない。" },
+        { term: "nonchalant", nuance_ja: "気にしていないように振る舞うこと。意図的な演技という含みが強く、内心は別だという疑いを残す。" },
+        { term: "flippant", nuance_ja: "軽薄で不真面目。明確な非難であり、breezy が持ちうる好意的な響きは完全に消える。" }
+      ],
+      explanation_ja: "そよ風 breeze の形容詞で、軽やかで抵抗を感じさせない様子を指す。二面性のある語なのが最大のポイントで、文章やプレゼンを評すれば「肩の力が抜けていて読みやすい」という褒め言葉になるが、深刻な話題への態度を評すれば「事の重大さがわかっていない」という批判になる。どちらに転ぶかは対象が深刻かどうかで決まるので、使う前に文脈を確かめること。決算説明会の描写では後者の意味で使われることが多く、経営陣の余裕が投資家には不安に映る、という微妙な力学を一語で表現できる。天候の文字通りの意味も現役なので、\"a breezy afternoon\" は単に風のある涼しい午後を指す。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "take a view on (something)",
+      meaning_en: "to form and commit to a judgment about something uncertain instead of waiting for certainty",
+      meaning_ja: "（不確実なことについて）自分なりの判断を固めて立場を取る",
+      examples: [
+        "We can't underwrite this without taking a view on where terminal margins settle, and no amount of diligence is going to hand us that number.",
+        "At some point you have to take a view on whether the neighborhood gentrifies, because the mortgage doesn't wait for you."
+      ],
+      synonyms: [
+        { term: "form a judgment", nuance_ja: "中立で説明的な言い方。判断を下したという事実は伝わるが、それに賭けて動くという覚悟の含みがない。" },
+        { term: "make a call", nuance_ja: "決断を下すという口語。判断の中身より「決めた」という行為そのものに焦点があり、後で当否を問われる響きが強い。" }
+      ],
+      explanation_ja: "投資業界で最も日常的に使われる表現の一つで、「確実な情報が得られない領域について、それでも立場を決める」という職業行為そのものを指す。決定的に重要なのは have a view（意見を持っている状態）と take a view（判断を下して行動の前提にする）の差で、後者には結果責任がついてくる——面接で \"what's your view on X?\" と聞かれたら、事実の列挙ではなく take a view した答えが期待されている。前置詞は on で固定。反対概念は \"stay agnostic\"（判断を留保する）で、この対で覚えると使い分けが定着する。もともと英国の金融用語だが、米国でも完全に通用する。"
+    },
+    {
+      phrase: "pull forward demand",
+      meaning_en: "to cause purchases that would have happened later to occur now, leaving a gap in future periods",
+      meaning_ja: "（需要を）前倒しで起こさせる、先食いする",
+      examples: [
+        "The subsidy pulled forward roughly two quarters of demand, so we should be modeling a genuinely weak first half next year.",
+        "The sale pulled forward my laptop purchase by about six months, which I assume was exactly the point."
+      ],
+      synonyms: [
+        { term: "front-load", nuance_ja: "前半に集中させること。需要に限らずコストや作業量にも使え、将来に穴が空くという含みは必ずしもない。" },
+        { term: "cannibalize future sales", nuance_ja: "同じ現象を将来の損失の側から描写する言い方。今期の好調を説明する文脈では使いにくい。" }
+      ],
+      explanation_ja: "需要の総量は増えておらず、時間軸上で手前に移動しただけ、という理解がこの表現の核心。増税前の駆け込み需要、補助金、大幅値引き、コロナ期の耐久財需要などを説明する際の必須語彙で、決算説明会では二つの立場から使われる——経営陣は好業績の持続性を問われたときに否定するために、アナリストは翌期の落ち込みを予測する根拠として。受動態の \"demand was pulled forward\" も同じくらい頻出で、ハイフンをつけた名詞形 \"a pull-forward\" も普通に使う。数字の話に聞こえるが、実際には「この好調は本物か」という判断を左右する定性的な論点である点が重要。"
+    },
+    {
+      phrase: "make a dent in (something)",
+      meaning_en: "to achieve a reduction or effect that is real but visibly small relative to the size of the problem",
+      meaning_ja: "（問題に対して）多少の効果は出す、少しは削る",
+      examples: [
+        "The cost program will make a dent in the run rate, but it doesn't change the fact that the plant is in the wrong country.",
+        "I made a dent in the inbox on the flight, and by Monday morning it looked exactly the same."
+      ],
+      synonyms: [
+        { term: "chip away at", nuance_ja: "少しずつ削り続けるという継続性に焦点。dent は一回の取り組みの効果が小さいことを指す点で時間感覚が違う。" },
+        { term: "move the needle", nuance_ja: "測定可能な変化を生むこと。dent より肯定的で、実際には否定形で「効かない」と言うために使われることが多い。" }
+      ],
+      explanation_ja: "硬い金属を殴って「へこみ」を一つ作る、という物理イメージ。核心は自己限定的な評価にあり、成果を認めながら同時に規模の不足を伝えられるという二重機能を持つ。だから実務で最頻出なのは否定形の \"barely made a dent\" で、対策の不十分さを人格攻撃にせずに指摘できる。前置詞は in で固定され、on にはならない。逆に想定以上に効いた場合は \"a serious dent\" \"a real dent\" と形容詞で強めるのが定型で、この幅を知っていると、同じ構文のまま評価の温度を自在に調整できる。"
+    },
+    {
+      phrase: "gain a foothold",
+      meaning_en: "to establish a small but secure initial position from which you can expand",
+      meaning_ja: "（市場・業界で）足がかりを築く",
+      examples: [
+        "We gained a foothold in Southeast Asia through a single logistics client, and everything since has come from referrals off that one relationship.",
+        "He gained a foothold in the industry doing unglamorous contract work, which is how most people actually get in."
+      ],
+      synonyms: [
+        { term: "get a foot in the door", nuance_ja: "参入の第一歩そのものに焦点を当てた口語。そこから広げていく足場という戦略的な含みは弱い。" },
+        { term: "establish a beachhead", nuance_ja: "上陸拠点を築くという軍事比喩で、規模が大きく攻勢の前段階という響き。企業戦略の議論には向くが日常会話では大げさ。" }
+      ],
+      explanation_ja: "登攀で足をかけられる岩の小さな出っ張り foothold から来た比喩で、体重を預けて次の一手に進むための最初の支点を指す。重要なのは規模の小ささではなく「確保されていて崩れない」という安定性で、そこから伸ばしていけることが前提になっている——だから一度きりの受注は foothold とは言いにくい。新規市場への参入、競合による侵食、業界へのキャリア参入で頻出する。動詞は gain / get / establish のいずれも自然で、失う場合は \"lose their foothold\"。似た形の foothold と stronghold は正反対で、後者は既に支配的な牙城を指すので混同しないこと。"
+    }
+  ],
+  todayQuiz: [
+    { question: "We can't wait for certainty on terminal margins — at some point we have to ___ and underwrite the deal.", choices: ["take a view", "have a view", "stay agnostic", "make a dent"], answerIndex: 0, explanation: "\"Take a view\" means committing to a judgment under uncertainty and building a decision on it. \"Have a view\" describes merely holding an opinion, with no obligation to act on it." },
+    { question: "The rebate program ___ demand rather than creating it, so next year's first half will look weak by comparison.", choices: ["pulled forward", "gained a foothold in", "greased the wheels of", "made a dent in"], answerIndex: 0, explanation: "\"Pull forward demand\" describes purchases moving earlier in time without the total increasing, which is exactly why a gap appears later. None of the other options describes redistribution across periods." },
+    { question: "Which word describes growth that is technically positive but conspicuously lacking the strength expected of it?", choices: ["anemic", "sclerotic", "breezy", "outsized"], answerIndex: 0, explanation: "\"Anemic\" borrows the medical image of thin blood to say the growth has no vitality in it. \"Sclerotic\" would describe rigidity and an inability to adapt, which is about flexibility rather than magnitude." },
+    { question: "A 2% position drove most of the quarter's return — an ___ contribution for something that small.", choices: ["outsized", "oversized", "inordinate", "anemic"], answerIndex: 0, explanation: "\"Outsized\" is the standard, value-neutral term for influence far greater than size would suggest, so it works for good outcomes and bad ones alike. \"Oversized\" refers to physical dimensions, and \"inordinate\" adds a judgment that the amount is improper." },
+    { question: "The downgrade was ___ in such careful language that most readers missed the recommendation entirely.", choices: ["couched", "inured", "festered", "jawboned"], answerIndex: 0, explanation: "\"Be couched in\" means expressed in a particular kind of language, usually to soften what is actually being said. \"Framed\" would refer to the angle of interpretation rather than the wording itself." },
+    { question: "The CFO was ___ about the covenant question, which left analysts more nervous rather than less.", choices: ["breezy", "sclerotic", "anemic", "inured"], answerIndex: 0, explanation: "\"Breezy\" describes a cheerful casualness that can read as failing to register how serious the matter is. \"Nonchalant\" would suggest indifference that is deliberately performed rather than genuinely light." },
+    { question: "The covenants they negotiated away three years ago ___ the moment EBITDA slipped below plan.", choices: ["came home to roost", "ran out of runway", "greased the wheels", "took a view"], answerIndex: 0, explanation: "The subject of \"come home to roost\" is always a past action whose consequences finally arrive and land on whoever caused them. \"Backfire\" would imply an immediate reversal of intent rather than a delayed reckoning." },
+    { question: "They had genuine traction, but they ___ two quarters before the renewals would have proved the model worked.", choices: ["ran out of runway", "ran out of steam", "came home to roost", "made a dent"], answerIndex: 0, explanation: "\"Run out of runway\" points to time and cash expiring before the plan could get off the ground, which fits a company that was still gaining traction. \"Run out of steam\" would blame a loss of internal momentum instead." },
+    { question: "Which opening lets you test your reading of someone's position without claiming they actually said it?", choices: ["I don't want to put words in your mouth, but ...", "To your point, ...", "Just to level-set, ...", "Reading between the lines of the filing, ..."], answerIndex: 0, explanation: "\"I don't want to put words in your mouth\" flags that you are about to articulate a position the other person has not stated, which invites them to correct it safely. \"To your point\" simply links your remark to something they did say, and \"level-set\" restates facts everyone already shares." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-02 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-03 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
