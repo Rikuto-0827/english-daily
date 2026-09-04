@@ -2504,9 +2504,324 @@ const ENGLISH_REPORTS = [
     { question: "The emergency loan does nothing about the underlying insolvency; it just ___.", choices: ["papers over the cracks", "has its work cut out", "is the tail wagging the dog", "loops them in"], answerIndex: 0, explanation: "To \"paper over the cracks\" is to hide a fundamental problem with a superficial fix. \"The tail wagging the dog\" would describe a minor element controlling a more important one." },
     { question: "Management was noticeably ___ about the buyback timing, giving long answers that never actually addressed the question.", choices: ["buttoned-up", "cagey", "tight-lipped", "untenable"], answerIndex: 1, explanation: "\"Cagey\" means deliberately vague and guarded while still speaking. \"Tight-lipped\" would mean saying nothing at all, which contradicts \"long answers.\"" }
   ]
+},
+{
+  date: "2026-08-26",
+  dateLabel: "2026年8月26日（水）",
+  readTimeMin: 33,
+  coreItems: [
+    {
+      type: "word", term: "belie", ipa: "/bɪˈlaɪ/", register: "フォーマル・報道／企業分析",
+      meaning_en: "to give a false impression of something, so that the surface appearance contradicts the underlying reality",
+      meaning_ja: "（見かけが実態と）裏腹である、〜という印象を裏切る",
+      examples: [
+        "The polished investor deck belies a balance sheet that is one bad quarter away from a covenant breach.",
+        "His steady voice belied how nervous he actually was walking into the final round."
+      ],
+      synonyms: [
+        { term: "contradict", nuance_ja: "論理的に「矛盾する」という中立的な語。belie が持つ「見た目と中身のズレ」という視覚的な質感はない。" },
+        { term: "mask", nuance_ja: "「意図的に隠す」という主体的な行為を含意する。belie は主語に隠す意図がなくても使える点が違う。" },
+        { term: "misrepresent", nuance_ja: "事実を誤って伝えるという行為への非難が強く、しばしば故意・不誠実さを示唆する。" }
+      ],
+      explanation_ja: "古英語の belēogan（〜について嘘をつく）に由来する語。用法が二つあり紛らわしいが、実際の英文記事では「XがYを belie する（Xの見かけからはYとは思えないが、実態はYだ）」という形が圧倒的に多い。The Economist や FT の企業分析記事の常連語で、書き手の「表面の数字に騙されるな」という視点を一語で伝えられる。学校英語ではまず習わないが、読めるだけでなく書けるようになると、分析コメントの解像度が一段上がる。"
+    },
+    {
+      type: "word", term: "winnow", ipa: "/ˈwɪnoʊ/", register: "ややフォーマル・選考／絞り込み",
+      meaning_en: "to reduce a large group of things or candidates to a smaller, better set by discarding the least suitable ones",
+      meaning_ja: "（多数の候補を）ふるいにかけて絞り込む",
+      examples: [
+        "We winnowed a list of forty potential targets down to five that actually clear our return threshold.",
+        "By the third round, they had winnowed 200 applicants down to a shortlist of six."
+      ],
+      synonyms: [
+        { term: "narrow down", nuance_ja: "最も汎用的で口語的。winnow が含む「価値の低いものを積極的に捨てる」という選別の厳しさは出ない。" },
+        { term: "filter", nuance_ja: "機械的・自動的な選別の響きがあり、人間の判断による取捨選択には winnow の方が自然。" },
+        { term: "cull", nuance_ja: "「間引く」という意味で、除去される側に焦点がある。winnow は残る側の質が上がることに焦点。" }
+      ],
+      explanation_ja: "収穫した穀物を風にさらし、軽い籾殻（chaff）を飛ばして重い実だけを残す農作業に由来する語で、\"separate the wheat from the chaff\" と同じイメージ体系にある。\"winnow down to ~\" の形が定型。ディールソーシングや採用プロセスの説明で使うと、単なる narrow down より「基準に照らして厳しく落とした」というプロフェッショナルな含みが出る。名詞形 winnowing も \"a brutal winnowing of fintech startups\" のように業界の淘汰を語る文脈で頻出する。"
+    },
+    {
+      type: "word", term: "predicate", ipa: "/ˈpredɪkeɪt/", register: "フォーマル・分析／契約（通常は受動態）",
+      meaning_en: "to base something entirely on a particular assumption or condition — almost always used as \"be predicated on\"",
+      meaning_ja: "〜を前提・土台として成り立たせる（「〜が前提だ」の形で使う）",
+      examples: [
+        "The entire LBO case is predicated on refinancing the mezzanine tranche in year three; if credit markets tighten, the returns collapse.",
+        "Their whole argument is predicated on the assumption that hybrid work is permanent, which nobody has actually proven."
+      ],
+      synonyms: [
+        { term: "be based on", nuance_ja: "最も一般的で中立的。predicate が持つ「それが崩れたら全体が成立しない」という論理的な重さはない。" },
+        { term: "hinge on", nuance_ja: "「〜次第で結果が決まる」という不確実性・振れ幅に焦点があり、前提そのものより変動リスクを強調する。" },
+        { term: "rest on", nuance_ja: "「〜に支えられている」という比喩で predicate に近いが、より口語的でやや文学的な響き。" }
+      ],
+      explanation_ja: "ラテン語 praedicare（公に述べる）に由来し、論理学の「述語（predicate）」と同語源。実務ではほぼ \"be predicated on\" の受動態でしか出会わないので、この形ごと丸暗記するのが効率的。モデルの前提や契約条件を議論する場で \"That's predicated on X\" と言えば、「それはXが成立して初めて意味を持つ」という条件付きの警告になり、相手を否定せずに前提を炙り出せる。名詞用法（文法用語）より、この動詞用法の方が実務での頻度は圧倒的に高い。"
+    },
+    {
+      type: "word", term: "slog", ipa: "/slɑːɡ/", register: "口語・ぼやき／共感を誘う",
+      meaning_en: "a long, tiring, unglamorous stretch of work that takes persistence rather than skill; also, to work steadily through such a task",
+      meaning_ja: "（長く地味で骨の折れる）しんどい作業・道のり／それを黙々とこなす",
+      examples: [
+        "Integration looks glamorous on paper, but the first eighteen months are a slog of reconciling two charts of accounts.",
+        "I finally finished the certification, though the last three months were an absolute slog."
+      ],
+      synonyms: [
+        { term: "grind", nuance_ja: "ほぼ同義でより米語的。\"the daily grind\" のように、日常的に反復される消耗を指すことが多い。" },
+        { term: "drudgery", nuance_ja: "「単調で価値の低い雑務」という侮蔑的な響きが強く、slog にある「やり切った」という達成の含みがない。" },
+        { term: "uphill battle", nuance_ja: "困難の原因が「抵抗・逆風」にある点が違う。slog はあくまで量と時間の重さを指す。" }
+      ],
+      explanation_ja: "元は「（ボクシングなどで）力任せに殴り続ける」という英国の俗語で、そこから「力技で押し通す長い労働」へ転じた。今や米国のオフィスでも完全に定着しており、\"It's been a slog\" は同僚の共感を誘う定番のぼやき。名詞・動詞どちらでも使え、\"slog through 300 pages of diligence materials\" のように through を伴う動詞用法も頻出。ネガティブな語だが不平不満というより「大変だったがやり遂げた」という誇りがにじむため、雑談で使っても印象が悪くならないのが便利なところ。"
+    },
+    {
+      type: "idiom", term: "move the chains", ipa: "", register: "口語・米国ビジネス（アメフト由来）",
+      meaning_en: "to make concrete, incremental progress that keeps an effort alive, rather than achieving a dramatic breakthrough",
+      meaning_ja: "着実に一歩前進する、次につながる具体的な進捗を出す",
+      examples: [
+        "We won't close the round this month, but two signed LOIs would move the chains.",
+        "Forget the moonshot ideas for now — I need something that moves the chains before the board meeting."
+      ],
+      synonyms: [
+        { term: "make headway", nuance_ja: "中立的でフォーマルな場でも使える「前進する」。スポーツ由来の泥臭い「一歩ずつ稼ぐ」感はない。" },
+        { term: "gain ground", nuance_ja: "競合との相対的な位置の改善を含意する点が違い、自分だけの進捗には使いにくい。" },
+        { term: "inch forward", nuance_ja: "進みの遅さそのものを強調する表現で、move the chains のような前向きな評価は伴わない。" }
+      ],
+      explanation_ja: "アメリカンフットボールで、4回の攻撃機会に10ヤード進むと first down となり、審判がサイドラインの距離測定用チェーンを前に動かすことに由来する。「派手なタッチダウンではないが、攻撃権を維持して前に進む」という、地味だが決定的に重要な進捗のイメージ。米国の経営層の会話で非常によく出る一方、アメフト文化のない地域の相手には通じにくいので、相手を選んで使う表現でもある。逆に会議で聞いた時に意味が取れると、話者の温度感（＝完璧を求めていない）を正確に読める。"
+    },
+    {
+      type: "idiom", term: "spin your wheels", ipa: "", register: "口語・自嘲的／状況批判",
+      meaning_en: "to put in a lot of effort without making any actual progress",
+      meaning_ja: "空回りする、労力ばかりかかって前に進まない",
+      examples: [
+        "We spun our wheels for six weeks waiting on legal, and the target signed with another buyer.",
+        "If you're spinning your wheels on the model, stop and ask which assumption is actually driving the answer."
+      ],
+      synonyms: [
+        { term: "tread water", nuance_ja: "「沈まないのが精一杯」という現状維持に焦点があり、努力の徒労感より停滞そのものを指す。" },
+        { term: "go around in circles", nuance_ja: "同じ議論を繰り返して結論に至らない、という議論のプロセスに特化した表現。" },
+        { term: "be stuck in neutral", nuance_ja: "そもそも動いていない状態を指し、spin your wheels の「必死に努力してはいる」という含みがない。" }
+      ],
+      explanation_ja: "雪やぬかるみにはまった車が、アクセルを踏んでもタイヤが空転するだけ、という光景に由来する米国発の表現。核心は「怠けている」のではなく「懸命に努力しているのに成果が出ていない」という点にあり、だからこそ人ではなく状況を批判する、角の立たない言い方になる。1on1 で \"I feel like I'm spinning my wheels on this\" と切り出せば、責任転嫁せずに助けを求められる。上司の立場なら、部下のこの一言を聞いた時が介入すべきサインだと覚えておくとよい。"
+    },
+    {
+      type: "idiom", term: "long in the tooth", ipa: "", register: "やや口語・報道／相場コメント",
+      meaning_en: "old, or having gone on so long that it is probably near the end of its natural life",
+      meaning_ja: "（相場や景気などが）長く続きすぎて終盤に来ている、老朽化した",
+      examples: [
+        "This bull market is getting long in the tooth — we're eleven years into an expansion that historically lasts seven.",
+        "The platform still works, but the interface is looking a bit long in the tooth next to what competitors ship."
+      ],
+      synonyms: [
+        { term: "past its prime", nuance_ja: "全盛期を過ぎたという評価に焦点。long in the tooth は「まだ機能してはいる」という含みを残せる点が違う。" },
+        { term: "aging", nuance_ja: "中立的で客観的な記述。ユーモラスな含みや「そろそろ終わる」という予測は伴わない。" },
+        { term: "overdue for a correction", nuance_ja: "相場文脈での意訳的な言い換え。継続期間の長さではなく、調整の必要性を直接述べる表現。" }
+      ],
+      explanation_ja: "馬の年齢を歯茎の後退具合（歳を取るほど歯が長く見える）で見極める馬市の習慣に由来し、\"Don't look a gift horse in the mouth\" と同じ発想の系譜にある。人に向けて使うと失礼になりうるが、景気サイクル、強気相場、製品、政権といったモノや状況に対しては金融メディアで極めて頻出。\"getting long in the tooth\" と進行形で使い、「まだ終わってはいないが、そろそろ怪しい」という絶妙な警戒感を出すのが典型的な用法。"
+    },
+    {
+      type: "idiom", term: "hold someone's feet to the fire", ipa: "", register: "口語・強め／ガバナンス文脈",
+      meaning_en: "to keep sustained pressure on someone so that they honor a commitment or take responsibility",
+      meaning_ja: "（約束を守らせるため）逃げ道を与えず厳しく追及し続ける",
+      examples: [
+        "The activist investor said he would hold management's feet to the fire on the ¥50 billion divestiture they promised last year.",
+        "Someone needs to hold the vendor's feet to the fire, or that migration deadline will slip a third time."
+      ],
+      synonyms: [
+        { term: "hold someone accountable", nuance_ja: "中立的でフォーマル。人事評価やガバナンスの標準語彙で、圧力の激しさや執拗さまでは表さない。" },
+        { term: "put pressure on someone", nuance_ja: "最も汎用的。継続性や「約束の履行を迫る」という具体的な目的は含意しない。" },
+        { term: "press someone", nuance_ja: "一回きりの追及にも使え、hold ~ feet to the fire ほどの粘り強さは感じさせない。" }
+      ],
+      explanation_ja: "中世に自白を強いるため足を火にかざしたという説に由来する、かなり物理的で強烈な比喩。実際にはユーモアを帯びた誇張として使われることが多く、取締役会、アクティビスト投資家、記者会見の報道で定番。形として特徴的なのは目的語が所有格を取る点（\"his feet\", \"management's feet\"）で、丸ごと型で覚えておくと口から出やすい。日本語の「ケツを叩く」に近い温度感だが、こちらは責任の所在を問う正当な圧力というニュアンスが強い。"
+    },
+    {
+      type: "phrase", term: "That tracks.", ipa: "", register: "口語・カジュアル（現代の相槌）",
+      meaning_en: "that is consistent with what I already know or would have expected, given everything else",
+      meaning_ja: "（今までの話と）辻褄が合うね、それなら納得だ",
+      examples: [
+        "\"Their CFO resigned three weeks before the restatement.\" \"Huh. That tracks.\"",
+        "You're saying churn spiked in the same quarter they raised prices 20%? Yeah, that tracks."
+      ],
+      synonyms: [
+        { term: "That adds up.", nuance_ja: "ほぼ同義だが、数字や計算の整合性というニュアンスがやや強く出る。" },
+        { term: "That figures.", nuance_ja: "「やっぱりね」という諦めや皮肉が混じる点が違い、相手や状況への軽い批判を含みうる。" },
+        { term: "That makes sense.", nuance_ja: "最も中立的で安全。誰にでも使えるが、that tracks のような今風でこなれた響きはない。" }
+      ],
+      explanation_ja: "\"track\"（一致して動く、平行する）から生まれた比較的新しい口語で、2010年代後半に米国の職場やSNSで一気に広まった。ポイントは「理解できる」ではなく「今聞いた話が、これまでに知っていた別の情報と符合する」という点にあり、パズルのピースがはまった瞬間に使う。短い相槌として単独で成立するので会議中のリアクションに便利。ややインフォーマルなので、社外のフォーマルな場では \"that's consistent with what we've been seeing\" に言い換えるとよい。"
+    },
+    {
+      type: "phrase", term: "take it offline", ipa: "", register: "ビジネス会議の定番（ファシリテーション）",
+      meaning_en: "to postpone a discussion so it can be handled separately, outside the current meeting",
+      meaning_ja: "（この場ではなく）後で個別に話しましょう",
+      examples: [
+        "Two of us are deep in the tax structuring detail and the other eight are lost — let's take it offline and report back tomorrow.",
+        "That's a fair point, but it's a rabbit hole. Can we take it offline after this call?"
+      ],
+      synonyms: [
+        { term: "park it", nuance_ja: "「いったん脇に置く」という一時停止に焦点で、別の場で必ず議論するという約束までは含まないことがある。" },
+        { term: "follow up separately", nuance_ja: "最も明快で誤解のないフォーマルな言い方。定型句の軽さがない分、丁寧に響く。" }
+      ],
+      explanation_ja: "電話会議の時代に「回線から離れて（offline で）話す」という比喩から生まれた表現で、皮肉にもオンライン会議全盛の今も現役。実質的には「その議論は参加者全員の時間を使う価値がない」という判断を、角を立てずに伝える politeness device として機能する。会議を時間内に終わらせたい場面での基本装備であり、使いこなせるとファシリテーターとしての評価が上がる。ただし多用すると「議論を封じている」と受け取られるので、必ず後で本当にフォローすることが条件。"
+    },
+    {
+      type: "phrase", term: "Let me play that back to you.", ipa: "", register: "ビジネス・交渉／傾聴の型",
+      meaning_en: "let me restate what you just said in my own words to confirm I have understood it correctly",
+      meaning_ja: "今おっしゃったことを、私の言葉で言い直して確認させてください",
+      examples: [
+        "Let me play that back to you: you'd accept the lower headline price if we drop the escrow to 5% and close by March. Is that right?",
+        "Before we move on, let me play back what I heard — you're not opposed to the hire, you're opposed to the timing."
+      ],
+      synonyms: [
+        { term: "Let me make sure I understand.", nuance_ja: "より平易で万能。相手の発言を「再生する」という能動的に要約する姿勢のニュアンスは薄い。" },
+        { term: "So what you're saying is...", nuance_ja: "一方的な決めつけに聞こえるリスクがあり、相手の同意を求める確認のトーンが弱い。" }
+      ],
+      explanation_ja: "録音を「再生する（play back）」という比喩で、交渉術やコンサルティングの研修では必ず教えられる技術。相手の主張を正確に言い換えて返すことで、①誤解の解消、②相手に「ちゃんと聞いてもらえた」と感じさせる、③論点を自分の言葉で再定義する、という三つの効果が同時に得られる。特に交渉では、playback する過程で条件の優先順位を自分に都合よく整理し直せるため、実は極めて戦略的な一言でもある。必ず \"Is that right?\" で締めて相手に同意させるところまでが型。"
+    },
+    {
+      type: "phrase", term: "above my pay grade", ipa: "", register: "口語・自嘲的／責任範囲の線引き",
+      meaning_en: "outside my level of authority, so it is not my decision to make",
+      meaning_ja: "私の職責を超えている（＝私が決められる話ではない）",
+      examples: [
+        "Whether we exit the Asia business entirely is above my pay grade — I can only tell you what the numbers say.",
+        "Don't ask me why they picked that vendor. That decision was well above my pay grade."
+      ],
+      synonyms: [
+        { term: "not my call", nuance_ja: "より直接的で短い。自嘲的なユーモアがない分、やや事務的で突き放した響きになる。" },
+        { term: "out of my hands", nuance_ja: "「すでに自分の手を離れた」という時間的経過を含意し、そもそも権限がない場合とは状況が違う。" }
+      ],
+      explanation_ja: "軍隊の給与等級（pay grade）に由来する米国発の表現で、「それは上の階級の人間が決める仕事だ」という含み。便利なのは、無知や無関心ではなく「組織上の役割の線引き」を理由に答えを避けられる点で、質問を角を立てずにかわせる。ただし意見を持っているのに繰り返すと責任回避と見なされるため、\"That's above my pay grade, but if you want my read, ...\" と続けて自分の見解を添えるのが賢い使い方。謙遜のポーズを取りながら実質的に意見を通す、というやや高等な話術にもなる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "granular", ipa: "/ˈɡrænjələr/", register: "ビジネス・データ分析の日常語",
+      meaning_en: "broken down into very small, specific details rather than presented at a summary level",
+      meaning_ja: "（データや説明の）粒度が細かい、細部まで分解された",
+      examples: [
+        "The 10-K only gives segment totals; we need something more granular to see which SKUs are actually carrying the margin.",
+        "I don't need a granular breakdown of every line item — just tell me whether we're over budget."
+      ],
+      synonyms: [
+        { term: "detailed", nuance_ja: "最も一般的だが、「大きな塊を細かい単位に分解した」という granular の構造的なニュアンスがない。" },
+        { term: "itemized", nuance_ja: "請求書や経費のように「項目ごとに列挙された」という会計的な意味に限定される。" },
+        { term: "fine-grained", nuance_ja: "ほぼ同義だがやや技術寄りで、データ設計やシステム権限の文脈で好まれる。" }
+      ],
+      explanation_ja: "「粒（granule）」から来た語で、砂糖の塊を細かい粒に砕くイメージ。データの「粒度」を表す語として、金融・コンサル・テックの会議では日常語に近いレベルで飛び交う。\"Can we get more granular?\"（もっと細かく見られる?）や \"at a granular level\" が定番の形。議論の解像度を上げる granular と、逆に全体像に戻す \"zoom out\" はセットで覚えると、会議中に視点の高さを自在に操れるようになる。"
+    },
+    {
+      term: "tenuous", ipa: "/ˈtenjuəs/", register: "フォーマル・分析／批評",
+      meaning_en: "weak and thin, and unlikely to hold up under scrutiny — used of links, claims, and positions",
+      meaning_ja: "（根拠や関係が）薄弱な、心もとない",
+      examples: [
+        "The link between the campaign spend and the revenue bump is tenuous at best — the timing also overlaps a competitor's stockout.",
+        "She has a tenuous grasp of the accounting, so keep the explanation at a high level."
+      ],
+      synonyms: [
+        { term: "flimsy", nuance_ja: "より口語的で軽蔑的。「すぐ壊れる安っぽさ」を強調し、相手の主張をはっきり見下す響きがある。" },
+        { term: "weak", nuance_ja: "最も一般的で中立的。tenuous が持つ「細い糸のように頼りない」という質感は出ない。" },
+        { term: "shaky", nuance_ja: "「不安定で崩れそう」という動きのイメージ。tenuous は静的な「薄さ・細さ」を指す点が違う。" }
+      ],
+      explanation_ja: "ラテン語 tenuis（薄い、細い）に由来し、英語の thin と同語源。物理的な「細さ」から「論理の細さ」へ転じた語で、\"a tenuous connection / a tenuous argument / a tenuous hold on power\" が典型的なコロケーション。特に \"tenuous at best\"（良く見積もっても薄弱）という定型句は、相手の主張を丁寧な語り口のまま致命的に切り捨てる表現として、アナリストレポートや学術的な議論で愛用される。感情的にならずに反論したい場面で威力を発揮する一語。"
+    },
+    {
+      term: "sanguine", ipa: "/ˈsæŋɡwɪn/", register: "フォーマル・金融メディア頻出",
+      meaning_en: "cheerfully confident about how something will turn out, especially when others see reason to worry",
+      meaning_ja: "（懸念材料があるのに）楽観的な、動じずに前向きな",
+      examples: [
+        "Management remains surprisingly sanguine about input costs, even though the futures curve says otherwise.",
+        "I'm a lot less sanguine than you are about how quickly that team can ship."
+      ],
+      synonyms: [
+        { term: "optimistic", nuance_ja: "最も中立的で汎用的。sanguine が持つ「不安材料があるのに落ち着き払っている」という含みはない。" },
+        { term: "upbeat", nuance_ja: "見通しの評価というより、話し方や雰囲気の明るさという態度の描写に使われる。" },
+        { term: "bullish", nuance_ja: "相場や特定の投資対象に対する強気に限定された専門用語で、人の気質には使わない。" }
+      ],
+      explanation_ja: "中世医学の四体液説に由来し、血液（ラテン語 sanguis）が優勢な人は快活で楽天的な気質になるとされたことから。melancholic や phlegmatic と並ぶ、古い体液説の名残が現代英語に残る好例。金融メディアでは \"remain sanguine about ~\" が決まり文句で、書き手が「その楽観には根拠が薄いのでは」と暗に疑っている場面で使われることが多いため、行間に軽い皮肉が漂う。自分で使う時も \"less sanguine\" という比較級の形にすると、相手を否定せずに慎重な見方を示せる。"
+    },
+    {
+      term: "chippy", ipa: "/ˈtʃɪpi/", register: "口語・空気の描写（米国、スポーツ由来）",
+      meaning_en: "irritable and quick to argue; describing an exchange that has turned noticeably tense and combative",
+      meaning_ja: "（やりとりが）とげとげしい、けんか腰の",
+      examples: [
+        "The Q&A got chippy when the analyst pushed a third time on the inventory write-down.",
+        "He's been a little chippy all week — I think the reorg news hit him harder than he let on."
+      ],
+      synonyms: [
+        { term: "testy", nuance_ja: "ほぼ同義でやや上品。短気で怒りっぽい状態を指し、chippy の「挑発し返す」好戦性までは含まない。" },
+        { term: "combative", nuance_ja: "よりフォーマルで、議論で積極的に戦う姿勢そのものを指す。感情的な苛立ちの含みは薄い。" },
+        { term: "prickly", nuance_ja: "「触れられると怒る」という受け身の敏感さに焦点があり、自分から仕掛ける印象は chippy より弱い。" }
+      ],
+      explanation_ja: "アイスホッケーで小競り合いの多い荒れた試合を chippy play と呼ぶスポーツ用語から一般化した口語で、\"a chip on one's shoulder\"（けんか腰の態度）とも響き合う。決算説明会の質疑や交渉が険悪化した様子を描写する時に、tense より生々しく、hostile ほど深刻ではない、絶妙な中間の温度を表せる。ネイティブが職場の空気を語る雑談で自然に出る一方、非ネイティブはまず使わないので、使いこなせると一気に語感が近づく一語。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "hold the line (on price)",
+      meaning_en: "to refuse to concede on a position — typically a price, budget, or standard — despite sustained pressure",
+      meaning_ja: "（値引きや譲歩の圧力に対して）一歩も引かずに基準を守り抜く",
+      examples: [
+        "We held the line on price through the entire renewal cycle, and gross margin came in 180 basis points ahead of plan.",
+        "The committee signaled it would hold the line on rates until core inflation is clearly below 3%."
+      ],
+      synonyms: [
+        { term: "stand firm", nuance_ja: "より一般的で、価格や予算といった具体的な守備対象を含意しない。姿勢そのものを指す。" },
+        { term: "refuse to budge", nuance_ja: "口語的で、粘り強さより「頑固で動かない」という印象が前に出る。" }
+      ],
+      explanation_ja: "敵の攻撃を受けても戦列（line）を崩さない、という軍事的な比喩。ビジネスでは特に価格交渉の文脈で定型化しており、\"hold the line on price / costs / headcount\" の形で頻出する。単に \"not discount\" と言うより「相当な圧力があったにもかかわらず耐えた」という組織的な規律の含みが出るのがポイントで、決算説明会で経営陣が価格決定力（pricing power）を誇示する際の常套句でもある。逆に \"couldn't hold the line on price\" と言えば、値引き圧力に屈したことを婉曲に認める告白になる。"
+    },
+    {
+      phrase: "carve out (a business / an exception)",
+      meaning_en: "to separate a specific unit, asset, or condition out of a larger whole so that it can be treated differently",
+      meaning_ja: "（事業や条件を）本体から切り出して別扱いにする",
+      examples: [
+        "They carved out the specialty chemicals unit and sold it to a sponsor at 9x EBITDA, keeping the commodity business.",
+        "We carved out an exception for existing customers, so the price increase only applies to new contracts."
+      ],
+      synonyms: [
+        { term: "spin off", nuance_ja: "既存株主に株式を分配して独立させるという特定の企業行動を指し、第三者への売却を伴う carve-out とは会計・税務上も別物。" },
+        { term: "separate out", nuance_ja: "中立的で汎用的だが、「価値のある部分を意図的に取り出す」という戦略性の含みは薄い。" }
+      ],
+      explanation_ja: "肉の塊からひと切れを切り分ける動作の比喩で、M&A実務では名詞形 \"carve-out\" が独立した用語として定着している（carve-out財務諸表、carve-out DDなど）。面白いのは、事業に使えば「本体から切り出して売却する」、契約や規則に使えば「例外規定を設ける」と、まったく異なる二つの実務文脈で同じ動詞が使われる点。どちらも「大きな全体から一部を意図的に別枠にする」という核のイメージは共通しているので、セットで押さえると混乱しない。"
+    },
+    {
+      phrase: "sharpen the pencil",
+      meaning_en: "to go back over an estimate or offer and revise it to be tighter, cheaper, or more competitive",
+      meaning_ja: "（見積もりや提示条件を）詰め直してもう一段良い数字を出す",
+      examples: [
+        "Their bid came in 12% above the second-round guidance, so we asked them to sharpen the pencil before the final meeting.",
+        "If you want this signed by quarter-end, someone on your side needs to sharpen the pencil on the implementation fee."
+      ],
+      synonyms: [
+        { term: "tighten the numbers", nuance_ja: "中立的で直接的。婉曲さがない分、要求としてやや直球に響く。" },
+        { term: "come back with a better number", nuance_ja: "最も平易で誤解がなく、交渉相手にも丁寧に聞こえる。定型句特有の含みはない。" }
+      ],
+      explanation_ja: "表計算ソフトのなかった時代、鉛筆を削り直して見積書を計算し直したことに由来する古い商習慣の名残。最大の効用は、「値下げしろ」という露骨な要求を「もう一度計算し直してみてほしい」という技術的で穏やかな依頼に包み替える婉曲表現（euphemism）として機能する点にある。言われた側は面子を保ったまま譲歩できるため、関係を壊さずに条件を動かせる。米国のB2B営業・調達の現場では今も現役の定番フレーズで、聞いたら「値下げ要求だ」と即座に読み替える必要がある。"
+    },
+    {
+      phrase: "land the plane",
+      meaning_en: "to bring a long or complex discussion, negotiation, or deal to a clean and decisive conclusion",
+      meaning_ja: "（長引いた議論や案件を）きちんと着地させて締めくくる",
+      examples: [
+        "We've been circling this valuation gap for two months — let's land the plane this week or walk away.",
+        "Great discussion, but we have nine minutes left. Can someone land the plane on the go/no-go decision?"
+      ],
+      synonyms: [
+        { term: "bring it home", nuance_ja: "最後の一押しでやり切るという意味で、着地の秩序よりも勢いと気合いを強調する。" },
+        { term: "close it out", nuance_ja: "事務的に「完了させる」ことに焦点があり、発散した議論を収束させる難しさの含みは薄い。" }
+      ],
+      explanation_ja: "飛行機は飛び続けること自体は難しくなく、本当に難しいのは無事に着陸させることだ、という比喩。論点が発散しがちな会議や、議論好きなチームに対して使われることが多く、\"He can't land the plane\" と言えば「話は面白いが結論を出せない人」という辛辣な人物評になる。米国の会議では \"Let's land this\" と短縮された形も頻出。時間切れ寸前の会議でこの一言を出せると、ファシリテーターとしての存在感が一気に増す。"
+    }
+  ],
+  todayQuiz: [
+    { question: "The polished investor deck ___ a balance sheet that is one bad quarter from a covenant breach.", choices: ["belies", "winnows", "predicates", "obviates"], answerIndex: 0, explanation: "\"Belie\" means to give a false impression — the attractive surface contradicts a much weaker underlying reality." },
+    { question: "We ___ a list of forty potential targets down to the five that actually cleared our return threshold.", choices: ["held the line on", "winnowed", "carved out", "played back"], answerIndex: 1, explanation: "\"Winnow (down to)\" means to reduce a large group by discarding the least suitable ones, leaving a higher-quality set." },
+    { question: "Six weeks of meetings and still no signed term sheet — we're just ___.", choices: ["moving the chains", "spinning our wheels", "landing the plane", "sharpening the pencil"], answerIndex: 1, explanation: "\"Spin your wheels\" means working hard with nothing to show for it. \"Move the chains\" is the opposite: real incremental progress." },
+    { question: "The entire return profile is ___ refinancing the mezzanine tranche in year three.", choices: ["predicated on", "carved out of", "chippy about", "long in the tooth"], answerIndex: 0, explanation: "\"Be predicated on\" means to be based entirely on an assumption or condition — if that condition fails, the whole case collapses." },
+    { question: "Management remains ___ about margins even though the futures curve points the other way.", choices: ["chippy", "tenuous", "sanguine", "granular"], answerIndex: 2, explanation: "\"Sanguine\" describes cheerful confidence held in spite of visible reasons to worry, and often carries a hint of the writer's skepticism." },
+    { question: "The vendor's quote came in 12% above budget, so procurement asked them to ___.", choices: ["hold the line", "sharpen the pencil", "land the plane", "carve it out"], answerIndex: 1, explanation: "\"Sharpen the pencil\" is a polite way of demanding a better price. \"Hold the line\" would mean refusing to move at all — the opposite of the request here." },
+    { question: "Eleven years into an expansion that historically lasts seven, commentators keep calling this cycle ___.", choices: ["above their pay grade", "long in the tooth", "a slog", "chippy"], answerIndex: 1, explanation: "\"Long in the tooth\" means something has run so long that it is probably near the end of its natural life — standard shorthand in market commentary." },
+    { question: "The link between the ad campaign and the revenue bump is ___ at best; the timing also overlaps a competitor's stockout.", choices: ["granular", "tenuous", "sanguine", "itemized"], answerIndex: 1, explanation: "\"Tenuous\" describes a claim or connection too thin to survive scrutiny. \"Tenuous at best\" is a standard, politely devastating way to dismiss weak reasoning." },
+    { question: "\"Their CFO resigned three weeks before the restatement.\" \"Huh — ___.\"", choices: ["that tracks", "that's above my pay grade", "let me play that back", "hold the line"], answerIndex: 0, explanation: "\"That tracks\" signals that a new fact fits neatly with what you already knew. It works as a short, informal reaction, not a request for clarification." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-03 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-04 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
