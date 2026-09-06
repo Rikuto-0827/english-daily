@@ -154,318 +154,6 @@ a{color:#0d6e6e}
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-08-27",
-  dateLabel: "2026年8月27日（木）",
-  readTimeMin: 33,
-  coreItems: [
-    {
-      type: "word", term: "equivocate", ipa: "/ɪˈkwɪvəkeɪt/", register: "フォーマル・批判的",
-      meaning_en: "to use deliberately vague or ambiguous language in order to avoid committing to a clear position or telling the whole truth",
-      meaning_ja: "言葉を濁す、はっきり答えずにごまかす",
-      examples: [
-        "Asked twice whether the buyback would continue at the current pace, the CFO equivocated for a full minute without ever saying yes or no.",
-        "Don't equivocate — if you can't make dinner on Friday, just tell me now and I'll move it."
-      ],
-      synonyms: [
-        { term: "hedge", nuance_ja: "「断定を避けて含みを持たせる」という実務的で中立的な語。リスク管理として正当な場合も多く、equivocate のような「答えから逃げている」という非難は含まない。" },
-        { term: "prevaricate", nuance_ja: "同じくフォーマルだが、曖昧さよりも「事実をずらして述べる＝嘘に近い」方向に重心がある。equivocate は嘘は言っていないが答えていない、という状態。" },
-        { term: "waffle", nuance_ja: "口語で「あれこれ言って決めきれない」優柔不断さに焦点。隠す意図というより能力や覚悟の不足に聞こえる。" }
-      ],
-      explanation_ja: "ラテン語の aequus（等しい）+ vocare（呼ぶ）で、「二通りに等しく解釈できるように言う」が語源。ポイントは、嘘をついているとは断定していないのに、明確に不誠実さを指摘できる点にある。決算コールの質疑やFOMC後の記者会見を論評する記事で \"management equivocated on guidance\" のような形で頻出し、書き手の不信感を一語で伝える。hedge が中立的に使えるのに対し、equivocate は常に否定的な評価語である点を押さえておくと使い分けを誤らない。"
-    },
-    {
-      type: "word", term: "cadence", ipa: "/ˈkeɪdəns/", register: "米国企業の口語（会議・運用）",
-      meaning_en: "the established rhythm or frequency at which a recurring activity — a meeting, a report, a product release — takes place",
-      meaning_ja: "（会議や報告などの）実施サイクル、定着したリズム・頻度",
-      examples: [
-        "Let's set a biweekly cadence for the portfolio review instead of pulling the whole team in every time a mark moves.",
-        "Once the baby arrived, our entire weekend cadence changed — groceries on Thursday, laundry on Sunday night."
-      ],
-      synonyms: [
-        { term: "rhythm", nuance_ja: "より一般的で音楽的・比喩的。組織の「運用ルールとして決めた頻度」という業務上の含みは持たない。" },
-        { term: "frequency", nuance_ja: "「何回やるか」という数量に焦点があり、cadence が持つ「予測可能なリズムとして定着している」という安心感のニュアンスがない。" },
-        { term: "schedule", nuance_ja: "個々の日時が決まっている計画表を指す。cadence は日時ではなく「間隔のパターン」を指す点が決定的に違う。" }
-      ],
-      explanation_ja: "元は音楽・詩の韻律や、行進の歩調を指す語。現代の米国企業では meeting cadence / reporting cadence / release cadence という形で完全に定着していて、非ネイティブが最も見落としやすいビジネス語彙の一つ。\"What's the cadence on this?\" と聞かれたら「これはどれくらいの頻度でやるんですか」の意味。単に \"how often\" と言うより、「継続的な運用として設計されている」という前提が伝わるため、体制を提案する場面で使うと一段プロらしく響く。"
-    },
-    {
-      type: "word", term: "hamstring", ipa: "/ˈhæmstrɪŋ/", register: "やや強い・批判的",
-      meaning_en: "to severely restrict the ability of a person or organization to act or succeed, usually by removing resources, authority, or flexibility",
-      meaning_ja: "（権限や資源を奪って）身動きを取れなくする、致命的に足を引っ張る",
-      examples: [
-        "The covenant package hamstrings management: no acquisition above $25 million without lender consent, in a market that is consolidating fast.",
-        "A hiring freeze announced three weeks before the product launch hamstrung the team from day one."
-      ],
-      synonyms: [
-        { term: "cripple", nuance_ja: "意味は近いがより強烈で、身体障害を連想させる語として近年は企業文書で避けられる傾向がある。hamstring の方が安全で洗練された選択。" },
-        { term: "constrain", nuance_ja: "「制約がある」という事実を中立的・フォーマルに述べるだけ。hamstring が持つ「本来できたはずのことができなくされた」という悔しさや非難は含まない。" },
-        { term: "handcuff", nuance_ja: "口語的で、規則や契約に「手錠をかけられた」という比喩。組織全体より個人の裁量が縛られる場面に馴染む。" }
-      ],
-      explanation_ja: "膝裏の腱（hamstring）を切って馬や家畜を走れなくした古い戦術に由来する動詞で、「殺しはしないが二度と走れない」という残酷な限定性がイメージの核。過去形・過去分詞は hamstrung であり、hamstringed とは言わないので注意（不規則変化を知っているだけで書き言葉の信頼感が変わる）。規制・融資条件・人員制約が事業の選択肢を奪う構図を批評する際、経済メディアで非常によく使われる。"
-    },
-    {
-      type: "word", term: "groundswell", ipa: "/ˈɡraʊndswel/", register: "ニュース英語・組織論",
-      meaning_en: "a rapid, broad build-up of support or feeling that arises from the bottom up rather than being organized from the top",
-      meaning_ja: "（草の根から自然に高まる）大きなうねり、支持の急速な広がり",
-      examples: [
-        "There was a genuine groundswell of support for the four-day week inside the firm months before HR ever put it on an agenda.",
-        "A groundswell of retail buying pushed the stock up 40% in a week with no company news to explain it."
-      ],
-      synonyms: [
-        { term: "momentum", nuance_ja: "「勢いがついている」という現在の状態に焦点。それが下から自然発生したのか、上から仕掛けられたのかという出自の含みはない。" },
-        { term: "surge", nuance_ja: "量の急増そのものを指し、数字の跳ね方の描写に向く。人々の感情や支持が広がっていく過程のニュアンスは薄い。" },
-        { term: "outcry", nuance_ja: "怒りや抗議に限定された高まりで、常に否定的。groundswell は肯定的な支持にも中立的にも使える点が大きく違う。" }
-      ],
-      explanation_ja: "遠くの嵐が生んだうねりが、風のない海面を静かに大きく持ち上げる海洋現象が語源。この語の魅力は「表面上は穏やかなのに、水面下ではすでに大きな力が動いていた」という含みを一語で運べる点にある。社内制度の変更、政策転換、消費者運動などを扱う記事で \"a groundswell of support / opposition / demand\" の形が定番。組織の中で自分が主導していない動きを説明するとき、\"there's a groundswell\" と言えば「誰かが号令をかけたわけではない」という重要な情報が同時に伝わる。"
-    },
-    {
-      type: "idiom", term: "boil the ocean", ipa: "", register: "コンサル発・会議で頻出",
-      meaning_en: "to attempt something so vast in scope that it becomes impractical; to try to solve everything at once instead of picking what matters",
-      meaning_ja: "風呂敷を広げすぎる、何もかも一度に解決しようとして頓挫する",
-      examples: [
-        "We don't need to boil the ocean here — model the three markets that drive 80% of the variance and get those right.",
-        "Reorganizing the entire kitchen before you start cooking is boiling the ocean. Just clear the counter."
-      ],
-      synonyms: [
-        { term: "bite off more than you can chew", nuance_ja: "「自分の能力を超えた量を引き受けた」という個人の力量の問題に焦点。boil the ocean は、そもそも設計として非現実的だという範囲設定への批判。" },
-        { term: "overengineer", nuance_ja: "解決策が必要以上に複雑だという技術的な批判で、対象範囲の広さそのものを問題にしているわけではない。" }
-      ],
-      explanation_ja: "海水をすべて沸騰させようとする不可能さの比喩で、マッキンゼーをはじめとする戦略コンサル業界から一般ビジネスに広まった定番句。実務上の最大の効用は、\"Let's not boil the ocean\" という一言で「分析範囲を現実的に絞ろう」という提案を、誰の努力も否定せずに切り出せる点にある。作業が発散しかけたキックオフ会議で使うと、進行を引き締めつつ角が立たない。"
-    },
-    {
-      type: "idiom", term: "be left holding the bag", ipa: "", register: "口語・やや強い不満",
-      meaning_en: "to end up bearing the blame, cost, or unpleasant consequences alone after everyone else has walked away",
-      meaning_ja: "他の関係者が逃げた後、一人で責任や損失を押し付けられる",
-      examples: [
-        "The sponsor sold down its entire stake at the IPO, and the crossover funds were left holding the bag when the stock broke issue by 40%.",
-        "Everyone agreed to split the cost of the rental, three of them backed out the week before, and I was left holding the bag."
-      ],
-      synonyms: [
-        { term: "take the fall", nuance_ja: "金銭的損失より「他人の代わりに非難や処分を引き受ける」ことに焦点。しばしば誰かが意図的に押し付けた含みがある。" },
-        { term: "be on the hook for", nuance_ja: "責任が自分にあるという事実を中立的に述べるだけで、「他人が逃げた」という不公平感は含まない。" },
-        { term: "carry the can", nuance_ja: "ほぼ同義の英国口語。米国のビジネス文脈ではまず使われないので、相手の出身地によって選ぶ。" }
-      ],
-      explanation_ja: "19世紀アメリカの新入りいじめ（snipe hunt）が有力な語源とされる。獲物を追い込むと言って新入りに袋（bag）を持たせて森で待たせ、他の全員は帰ってしまう、という悪ふざけだ。核心は「損をした」ことではなく「他の全員が先に抜け、自分だけが残された」という構図にあり、投資の文脈では出口のタイミング差で最後に買った投資家が損を被る状況を描写するのに極めてよく使われる。"
-    },
-    {
-      type: "idiom", term: "go down a rabbit hole", ipa: "", register: "口語・自嘲的にも使う",
-      meaning_en: "to get drawn into an increasingly detailed, time-consuming line of investigation that leads far from where you started",
-      meaning_ja: "調べ物などに深入りして抜け出せなくなる、脱線して沼にはまる",
-      examples: [
-        "I went down a rabbit hole on their related-party disclosures and lost the whole afternoon — though I did find a loan to the founder's brother.",
-        "Never look up a symptom at midnight. You'll go down a rabbit hole and convince yourself you have three rare diseases."
-      ],
-      synonyms: [
-        { term: "get sidetracked", nuance_ja: "単に脇道にそれること。rabbit hole が持つ「どんどん深く潜っていく」中毒的な引力の含みは薄く、時間の浪費の規模も小さく響く。" },
-        { term: "get bogged down", nuance_ja: "泥にはまって前に進めない停滞感が中心で、本人は苦しんでいる。rabbit hole は本人が夢中で掘り進んでいる点が決定的に違う。" }
-      ],
-      explanation_ja: "『不思議の国のアリス』でアリスがウサギの穴に落ち、別世界に迷い込む冒頭の場面が出典。既出の in the weeds と混同しやすいが、in the weeds は望まぬ細々した業務に埋もれる受動的な状態、rabbit hole は自分の興味で能動的に潜っていく脱線であり、後者には「面白かったんだけどね」という自嘲がにじむ。会議では \"that's a rabbit hole for another day\" と言えば、有益だが今は追わない論点を丁寧に棚上げできる。"
-    },
-    {
-      type: "idiom", term: "paint yourself into a corner", ipa: "", register: "戦略・交渉の論評",
-      meaning_en: "to take actions or make commitments that leave you with no good options later",
-      meaning_ja: "自分で自分の逃げ道をふさぎ、身動きの取れない状況に追い込む",
-      examples: [
-        "By publicly guaranteeing 20% growth for three straight years, management painted itself into a corner — any miss now reads as a credibility failure, not a bad quarter.",
-        "I told my landlord I'd definitely renew before I had looked at a single other apartment, which pretty much painted me into a corner on rent."
-      ],
-      synonyms: [
-        { term: "back yourself into a corner", nuance_ja: "ほぼ同義の変種で、外圧で追い詰められた場合にも使える。paint 版は「自分の判断の積み重ねが原因」という自業自得感がより強い。" },
-        { term: "box yourself in", nuance_ja: "選択肢が狭まった状態を端的に述べる中立的な表現で、失敗を責める調子は弱い。" }
-      ],
-      explanation_ja: "床にペンキを塗り進めていったら、気づいたときには出口までの塗っていない道がなくなり、乾くまで隅から動けなくなる、という情景が語源。重要なのは「一歩ずつは合理的に見えた判断の連鎖が、最後に自由を奪う」という時間的な構造で、単に stuck と言うより因果を含んだ批評になる。ガイダンス設定、公約、交渉での早すぎるコミットメントを論じる際の定番表現。"
-    },
-    {
-      type: "phrase", term: "to put a finer point on it", ipa: "", register: "ビジネス口語・やや上級",
-      meaning_en: "used before restating something you just said in a more precise or more blunt way",
-      meaning_ja: "もっと正確に言えば、はっきり言ってしまえば",
-      examples: [
-        "The integration is behind schedule. To put a finer point on it, we have not migrated a single customer account in eleven weeks.",
-        "They said they're 'exploring options.' To put a finer point on it, they're interviewing."
-      ],
-      synonyms: [
-        { term: "to be blunt", nuance_ja: "率直さの予告に特化しており、「精度を上げる」という含みはない。相手の発言を否定する前置きとしてはより対決的に響く。" },
-        { term: "more precisely", nuance_ja: "中立的でフォーマルな書き言葉向き。話し言葉として一拍置き、聞き手に身構えさせる演出効果はない。" }
-      ],
-      explanation_ja: "鉛筆の先を細く尖らせる比喩で、「解像度を上げる」感覚。実際の会話では、抽象的で角の立たない表現を一度置いてから、この前置きを挟んで具体的で厳しい事実を出す、という二段構えで使われることが多い。この構造のおかげで、いきなり厳しい数字を突きつけるより聞き手の防御反応を下げられる。否定形の \"not to put too fine a point on it\"（歯に衣着せずに言えば）も同じくらい頻出するので、セットで覚えておきたい。"
-    },
-    {
-      type: "phrase", term: "for what it's worth", ipa: "", register: "口語・メール（FWIW）",
-      meaning_en: "used to offer an opinion or piece of information while signaling that you are not insisting on its importance",
-      meaning_ja: "参考までに言うと、価値があるかは分からないけれど",
-      examples: [
-        "For what it's worth, the last two sponsors who looked at this asset both walked at the same diligence finding.",
-        "For what it's worth, I thought your section was the clearest thing anyone presented all day."
-      ],
-      synonyms: [
-        { term: "just my two cents", nuance_ja: "よりカジュアルで自己卑下が強く、フォーマルなメールではやや軽く響く。冗談めかしたトーンが混じる。" },
-        { term: "in my view", nuance_ja: "中立的に自分の意見だと示すだけで、「押し付けるつもりはない」という予防線としての機能はない。むしろ立場を明確にする表現。" }
-      ],
-      explanation_ja: "略記 FWIW としてメールやSlackで極めて頻繁に使われる定番表現。機能は二つあり、一つは本当に控えめな補足情報の提供、もう一つは強い意見や不都合な事実を「押し付けていない体」で会話に滑り込ませる高等戦術。後者の用法では、直後に来る内容がむしろ最も重要であることが多く、ネイティブは前置きの控えめさと中身の重さのギャップを聞き分けている。褒め言葉に付けると、社交辞令ではなく本心だという響きが出るのも面白い点。"
-    },
-    {
-      type: "phrase", term: "if push comes to shove", ipa: "", register: "口語・リスク管理の会話",
-      meaning_en: "if the situation deteriorates far enough to force a hard decision",
-      meaning_ja: "いざとなれば、最悪の場合には",
-      examples: [
-        "If push comes to shove, we can draw on the revolver to cover the payment, but I'd rather not signal stress to the banks this quarter.",
-        "If push comes to shove I'll drive down and pick it up myself, but let's see if the delivery works out first."
-      ],
-      synonyms: [
-        { term: "when the chips are down", nuance_ja: "既に状況が悪化した「その局面」で人や組織の真価が問われる、という含みが強い。if push comes to shove はまだ起きていない仮定の話である点が違う。" },
-        { term: "as a last resort", nuance_ja: "選択肢の順位を事務的に明示する表現で、緊迫感の演出がない。文書向き。" }
-      ],
-      explanation_ja: "push（押す）が shove（強く突き飛ばす）へとエスカレートしていく、という取っ組み合いの段階が語源。実務での使いどころは、プランBを口に出す前置きとしての機能にある。この一言を挟むことで「これは今の想定ではなく、悪化した場合の話です」という条件が明示され、資金繰りや撤退のような重い選択肢を、悲観論だと受け取られずにテーブルに載せられる。"
-    },
-    {
-      type: "phrase", term: "don't let perfect be the enemy of good", ipa: "", register: "実務・意思決定の場面",
-      meaning_en: "a reminder that insisting on an ideal outcome can stop you from achieving a workable one",
-      meaning_ja: "完璧を求めて動けなくなるより、まず十分に良いもので前に進もう",
-      examples: [
-        "The model still has three unresolved assumptions, but the bid is due tonight — let's not let perfect be the enemy of good.",
-        "Your draft is already better than most of what gets sent around here. Don't let perfect be the enemy of good; hit send."
-      ],
-      synonyms: [
-        { term: "good enough for government work", nuance_ja: "皮肉めいた口語で、品質への諦めを冗談にする表現。相手の仕事を軽んじていると取られるリスクがあり、目上には使いにくい。" },
-        { term: "ship it", nuance_ja: "テック業界の口語で、「不完全でもまず出す」という行動の指示。判断の理屈ではなく号令として機能する。" }
-      ],
-      explanation_ja: "ヴォルテールが引いたイタリアの諺 \"Le mieux est l'ennemi du bien\" が出典とされ、英語圏では意思決定を前に進めるための定番の殺し文句になっている。強力なのは、品質を軽視しているのではなく「完璧主義そのものがコストである」と論点を組み替えられる点。使う側に回れるようになると、細部にこだわって締切を落としがちなチームを、批判せずに動かせる。逆にこれを言われた側は、品質基準を守りたいなら \"agreed, but this one is a one-way door\"（これは後戻りできない判断だ）のように反論するのが定石。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "anodyne", ipa: "/ˈænədaɪn/", register: "フォーマル・辛辣な論評",
-      meaning_en: "deliberately bland and inoffensive, and therefore lacking any real content or force",
-      meaning_ja: "毒にも薬にもならない、当たり障りがなさすぎて中身がない",
-      examples: [
-        "The press release was so anodyne that three separate analysts asked the same unanswered question again on the call.",
-        "The spokesperson gave an anodyne answer about \"valuing all perspectives\" and moved straight to the next question."
-      ],
-      synonyms: [
-        { term: "bland", nuance_ja: "単に「味気ない・平凡だ」という中立的な評で、anodyne が持つ「角が立たないよう意図的に無害化した」という計算の含みがない。" },
-        { term: "innocuous", nuance_ja: "「害がない」ことに焦点があり、退屈さや空虚さまでは含意しない。むしろ危険視する必要がない、という擁護に使えることもある。" },
-        { term: "boilerplate", nuance_ja: "使い回しの定型文であることを批判する語。無害さではなく「型どおりで思考がない」点を突く。" }
-      ],
-      explanation_ja: "元は「鎮痛剤の」という医学用語で、ギリシャ語の an-（無）+ odyne（痛み）が語源。つまり「痛みを感じさせない＝誰も傷つけないが何も起こさない」という比喩が完璧に効いている。IR文書、政治家の声明、社内メモへの論評として英語メディアで頻出し、\"anodyne statement\" と書いた時点で書き手の失望が明確に伝わる。ネイティブでも使いこなす人は限られる語なので、決算資料の批評などで一語差し込めるとレベルが一段上がって聞こえる。"
-    },
-    {
-      term: "sticky", ipa: "/ˈstɪki/", register: "金融・経済の実務語",
-      meaning_en: "tending to persist or resist change — used of revenue, customers, prices, or inflation that stay in place rather than falling away",
-      meaning_ja: "（収益・顧客・物価などが）粘着的で下がりにくい、離れにくい",
-      examples: [
-        "Subscription revenue here is sticky: churn has run under 4% a year even through two price increases.",
-        "Services inflation has proven far stickier than goods inflation, which is why the committee is in no hurry to cut."
-      ],
-      synonyms: [
-        { term: "durable", nuance_ja: "「長く持続する」という素直な肯定評価。sticky が持つ「動かしたくても動かない」という慣性のニュアンス、特に物価に使ったときの厄介さは表せない。" },
-        { term: "entrenched", nuance_ja: "定着して動かない点は同じだが、ほぼ常に否定的で、既得権益や悪習に使われやすい。顧客基盤を褒める文脈には使えない。" },
-        { term: "persistent", nuance_ja: "中立的でフォーマル。経済統計の記述では sticky とほぼ交換可能だが、顧客や収益を形容する用法はない。" }
-      ],
-      explanation_ja: "マクロ経済学の sticky prices（価格の粘着性）が起源だが、現在はSaaS企業のIR資料や投資家向け説明で sticky revenue / sticky customers として最も多く目にする。同じ一語が、事業を語るときは「解約されにくい＝良いこと」、物価を語るときは「なかなか下がらない＝悪いこと」と正反対の評価になるのが最大の面白さで、意味は常に文脈が決める。運用会社のレターや中央銀行の議事要旨を読む上で外せない一語。"
-    },
-    {
-      term: "fraught", ipa: "/frɔːt/", register: "やや文語・分析的",
-      meaning_en: "filled with tension, difficulty, or risk; (of a relationship or process) strained and emotionally charged",
-      meaning_ja: "緊張をはらんだ、困難や危険に満ちた、厄介な",
-      examples: [
-        "Carve-out integrations are fraught: you inherit the people without the systems that used to support them.",
-        "Family holidays get fraught when everyone shows up with a different idea of how the week is supposed to go."
-      ],
-      synonyms: [
-        { term: "tense", nuance_ja: "その場の空気が張り詰めている状態に焦点。fraught が持つ「構造的にリスクや困難を内包している」という長期的な含みは薄い。" },
-        { term: "precarious", nuance_ja: "「不安定で崩れやすい」という物理的・財務的な危うさが中心で、感情的な緊張はほとんど含まない。" },
-        { term: "charged", nuance_ja: "感情が高ぶっている状態を指し、リスクや困難の含意はない。政治的に敏感な話題を形容する際によく使われる。" }
-      ],
-      explanation_ja: "古い動詞 fraught（船に積荷を積む）の過去分詞で、freight（貨物）と同語源。つまり「〜を積み込まれた」が原義であり、そこから \"fraught with risk / with difficulty / with tension\" という前置詞つきの定型が生まれた。近年は前置詞句を省いて \"the whole situation is fraught\" と単独で使う口語用法が定着しており、この単独用法を自然に出せるかどうかは語感の成熟度がよく表れるポイント。人間関係・交渉・統合プロセスなど、当事者の感情と実務リスクが絡み合う対象に最も馴染む。"
-    },
-    {
-      term: "middling", ipa: "/ˈmɪdlɪŋ/", register: "口語〜アナリスト文体",
-      meaning_en: "of moderate, unimpressive quality or size — neither good nor bad, with an implied undertone of disappointment",
-      meaning_ja: "可もなく不可もない、並の（さりげない失望を含む）",
-      examples: [
-        "Middling volume growth and middling pricing delivered exactly the middling quarter the buy side had already assumed.",
-        "The restaurant was middling — nothing actually wrong with it, but I wouldn't cross town for it again."
-      ],
-      synonyms: [
-        { term: "mediocre", nuance_ja: "明確に否定的で、批判の意図がはっきり出る。middling は「特筆すべきものがない」という淡々とした観察に留まり、angle が柔らかい。" },
-        { term: "average", nuance_ja: "純粋に統計的・中立的で、失望の含みがまったくない。事実の記述として使う語。" },
-        { term: "lackluster", nuance_ja: "「輝きがない」という期待外れ感が前面に出る。業績や公演の評で、期待値が高かったことを前提に使われやすい。" }
-      ],
-      explanation_ja: "元は綿花や農産物の等級づけで、最上級と最下級の間の等級を middling と呼んだ商取引用語。\"fair to middling\"（まあまあだね）という古い定型句として今も口語に残っている。実務での価値は、批判を明言せずに低い評価を伝えられる点にあり、アナリストが企業の四半期業績を三語で切り捨てるときの定番語彙。日本語の「まあまあ」に近いが、英語の middling はより明確に「期待には届いていない」側に傾いている点を押さえておきたい。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "unpack (a comment / an argument)",
-      meaning_en: "to break a compressed statement or idea into its components in order to examine what it actually contains",
-      meaning_ja: "（発言や議論を）分解して中身を丁寧に検討する",
-      examples: [
-        "You said the model is \"conservative\" — can we unpack that? Conservative on volume, on price, or on the exit multiple?",
-        "Let's unpack why the Q3 miss actually happened before we argue about whether to cut guidance."
-      ],
-      synonyms: [
-        { term: "break down", nuance_ja: "平易で汎用的。unpack が持つ「一見単純な一言の中に、実は複数の前提が詰め込まれている」という含みは出せない。" },
-        { term: "dig into", nuance_ja: "深掘りする姿勢に焦点があり、構成要素に分解して整理するという作業のイメージは薄い。" }
-      ],
-      explanation_ja: "スーツケースから中身を一つずつ取り出して並べる比喩。実務上の威力は、相手の主張を否定せずに検証できる点にある。\"I disagree\" と言えば対立になるが、\"let me unpack that\" と言えば「もっと理解したい」という協力的な姿勢のまま、曖昧な言葉の中身を白日の下に晒せる。学術・コンサル・心理療法の語彙から一般ビジネスに広がり、今では会議の定番。相手が便利な抽象語（synergy、conservative、strategic など）で逃げたときの最良の返しになる。"
-    },
-    {
-      phrase: "de-risk (a plan / a deal)",
-      meaning_en: "to restructure something so that the amount of downside exposure it carries is reduced",
-      meaning_ja: "（計画や案件の）リスクを構造的に減らす、下振れを抑える",
-      examples: [
-        "We de-risked the deal by moving half the consideration into an earnout tied to FY27 EBITDA.",
-        "Signing the anchor tenant before breaking ground de-risks the entire development."
-      ],
-      synonyms: [
-        { term: "hedge", nuance_ja: "金融商品などで反対のポジションを取る具体的な手法を指すことが多い。de-risk は取引や計画の設計そのものを作り替える、より広い行為。" },
-        { term: "mitigate", nuance_ja: "「既にあるリスクの影響を和らげる」という一般的な語で、構造を組み替えて曝露量そのものを減らすという含みは弱い。" }
-      ],
-      explanation_ja: "動詞 risk に接頭辞 de- を付けた比較的新しい造語だが、PE・インフラ投資・製薬開発の実務ではすでに完全に定着している。押さえるべきは「リスクをなくす」のではなく「リスクを移す・後ろ倒しにする・条件付きにする」という設計行為である点で、アーンアウト、マイルストーン払い、アンカーテナント契約などはすべて典型的な de-risking の手段。名詞形 de-risking も頻出し、近年は地政学の文脈で対中サプライチェーンの「デリスキング」としてニュース英語にも広がっている。"
-    },
-    {
-      phrase: "triage (requests / issues)",
-      meaning_en: "to rapidly sort competing demands by urgency so that limited capacity goes to what matters most first",
-      meaning_ja: "（要望や不具合を）緊急度で仕分けし、対応の優先順位をつける",
-      examples: [
-        "Before the committee meeting, let's triage the diligence findings into deal-breakers, price adjusters, and noise.",
-        "I spend the first twenty minutes of every Monday triaging my inbox before I open anything else."
-      ],
-      synonyms: [
-        { term: "prioritize", nuance_ja: "順位づけ一般を指す中立的な語。triage には「全部には対応できない」という資源制約と切迫感が前提として含まれる点が違う。" },
-        { term: "sort through", nuance_ja: "単に選り分ける作業を指すだけで、緊急度という軸も、捨てる判断も含意しない。" }
-      ],
-      explanation_ja: "ナポレオン戦争期の野戦病院で、負傷兵を「放っておいても助かる」「治療すれば助かる」「治療しても助からない」の三つに分けた軍医療の実務が語源（フランス語 trier＝選別する）。本質は優先順位づけではなく「切り捨てる対象を決める」冷徹な判断にあり、そこが prioritize との決定的な差。時間も人手も足りない状況を正確に描写できるため、DDの論点整理、障害対応、受信箱の処理まで、現代の実務のあらゆる場面で使われる。"
-    },
-    {
-      phrase: "true up (the numbers / an estimate)",
-      meaning_en: "to adjust a preliminary figure so that it matches the final actual amount once that becomes known",
-      meaning_ja: "（暫定値を）確定した実績に合わせて調整・精算する",
-      examples: [
-        "We'll book the accrual at 3% now and true it up once the final bonus pool is approved in March.",
-        "The working capital adjustment trues up the purchase price 90 days after closing, based on the completion accounts."
-      ],
-      synonyms: [
-        { term: "reconcile", nuance_ja: "二つの記録を突き合わせて差異を説明する作業そのものを指す。true up は、差異を埋めるために数字を動かす調整の側を指す。" },
-        { term: "adjust", nuance_ja: "汎用的で正しいが、「実績が判明したので合わせに行く」という会計・契約特有の文脈が消えてしまう。" }
-      ],
-      explanation_ja: "大工仕事で柱や建具をまっすぐ（true）に直す作業が語源で、「ずれているものを本来あるべき位置に合わせる」というイメージ。会計・M&A実務では名詞形 true-up が独立した用語として定着しており、true-up payment、true-up adjustment、working capital true-up のように使う。USCPA的には見積計上と実績確定の差異調整、M&A的にはクロージング後の運転資本調整がそのまま該当するので、概念は既に手の内にあるはず。あとは英語の現場でこの動詞が飛び交ったときに即座に反応できるかどうかだけ。"
-    }
-  ],
-  todayQuiz: [
-    { question: "The statement was so ___ that not a single reporter could find a headline in it.", choices: ["anodyne", "fraught", "sticky", "middling"], answerIndex: 0, explanation: "\"Anodyne\" means deliberately inoffensive and therefore empty. \"Middling\" would describe disappointing quality, not calculated blandness." },
-    { question: "Rather than model every SKU in every country, let's not ___ — take the three drivers that explain the variance and get those right.", choices: ["boil the ocean", "go down a rabbit hole", "true up the numbers", "paint ourselves into a corner"], answerIndex: 0, explanation: "\"Boil the ocean\" criticizes an impractically broad scope. A \"rabbit hole\" is depth on one tangent, not breadth across everything." },
-    { question: "By publicly guaranteeing 20% growth for three straight years, management ___.", choices: ["was left holding the bag", "painted itself into a corner", "went down a rabbit hole", "triaged the guidance"], answerIndex: 1, explanation: "\"Paint yourself into a corner\" means your own earlier commitments have removed your later options — exactly what a public guarantee does." },
-    { question: "Services inflation has proven far ___ than goods inflation, which is why the committee is in no hurry to cut.", choices: ["stickier", "more fraught", "more anodyne", "more middling"], answerIndex: 0, explanation: "\"Sticky\" describes prices or revenue that resist change. Applied to inflation it is a negative — the number will not come down." },
-    { question: "Asked twice whether guidance still held, the CFO ___: plenty of words, no answer either way.", choices: ["unpacked", "equivocated", "de-risked", "triaged"], answerIndex: 1, explanation: "\"Equivocate\" means to be deliberately ambiguous to avoid committing. \"Hedge\" would be the neutral version; \"equivocate\" carries clear disapproval." },
-    { question: "___, the last two buyers who looked at this asset both walked at the same diligence finding.", choices: ["To put a finer point on it", "For what it's worth", "If push comes to shove", "Don't let perfect be the enemy of good"], answerIndex: 1, explanation: "\"For what it's worth\" introduces information without insisting on it — often used to slip a heavy fact into the conversation gently." },
-    { question: "The covenant package ___ management: no acquisition above $25 million without lender consent, in a market that is consolidating fast.", choices: ["trues up", "unpacks", "hamstrings", "de-risks"], answerIndex: 2, explanation: "\"Hamstring\" means to strip away the freedom to act. Note the past form is \"hamstrung,\" never \"hamstringed.\"" },
-    { question: "We'll accrue the bonus at 3% now and ___ once the final pool is approved in March.", choices: ["triage it", "true it up", "unpack it", "hedge it"], answerIndex: 1, explanation: "\"True up\" means to adjust a provisional figure to the actual amount once it is known — standard accounting and deal language." },
-    { question: "There was a real ___ of support for the four-day week inside the firm months before leadership ever raised it.", choices: ["cadence", "groundswell", "triage", "backstop"], answerIndex: 1, explanation: "A \"groundswell\" is support that builds broadly from the bottom up. \"Cadence\" is the frequency of a recurring activity, not a wave of sentiment." },
-    { question: "There are still three unresolved assumptions, but the bid is due tonight — ___.", choices: ["let's not boil the ocean", "let's not let perfect be the enemy of good", "the numbers need a true-up", "we've been left holding the bag"], answerIndex: 1, explanation: "This phrase argues that insisting on an ideal answer would cost you a workable one. \"Boil the ocean\" would criticize scope, not the perfectionism blocking a deadline." }
-  ]
-},
-{
   date: "2026-08-28",
   dateLabel: "2026年8月28日（金）",
   readTimeMin: 33,
@@ -2357,9 +2045,328 @@ const ENGLISH_REPORTS = [
     { question: "HR called it '___,' which everyone on the floor correctly read as a fifteen percent layoff.", choices: ["right-sizing the org", "backstopping the org", "papering over the org", "keeping the lights on"], answerIndex: 0, explanation: "\"Right-size\" is corporate euphemism specifically for adjusting headcount, almost always downward. \"Backstop\" would mean providing a guarantee against failure, which is an unrelated meaning." },
     { question: "The committee ___ the acquisition in eleven minutes; the real decision had already been made over dinner the week before.", choices: ["rubber-stamped", "backstopped", "right-sized", "kept the lights on"], answerIndex: 0, explanation: "\"Rubber-stamp\" means approving something automatically without real scrutiny because the outcome was already decided. \"Backstop\" would mean providing a fallback guarantee, which is an unrelated meaning." }
   ]
+},
+{
+  date: "2026-09-06",
+  dateLabel: "2026年9月6日（日）",
+  readTimeMin: 33,
+  coreItems: [
+    {
+      type: "word", term: "bandwidth", ipa: "/ˈbændwɪdθ/", register: "ビジネス口語・IT由来、非常に頻出",
+      meaning_en: "the mental or organizational capacity available to take on additional work or attention, borrowed from the idea of data transmission capacity",
+      meaning_ja: "（仕事や関心を割り当てる）余力、キャパシティ",
+      examples: [
+        "I don't have the bandwidth to take on a third direct report this quarter, not with the audit running in parallel.",
+        "Once the kids are back in school I'll actually have the bandwidth to think about redoing the kitchen."
+      ],
+      synonyms: [
+        { term: "capacity", nuance_ja: "より中立的でフォーマルな語。物理的・制度的な処理能力全般を指し、bandwidth ほど「今、目の前の余力があるかどうか」という個人的で逼迫した響きは薄い。" },
+        { term: "headspace", nuance_ja: "精神的・感情的な余裕に焦点があり、bandwidth が持つ「タスクをさばく実務的な処理能力」という含みは弱い。" },
+        { term: "runway", nuance_ja: "残された時間的猶予（特に資金が尽きるまでの期間）を指すことが多く、同時に処理できる量という bandwidth の含みとは軸が違う。" }
+      ],
+      explanation_ja: "元はネットワーク工学で「一定時間内に伝送できるデータ量」を指す語だったが、1990年代以降、人間の注意力や処理能力を通信回線になぞらえる比喩として口語に定着した。核心は「同時にいくつのタスクを処理できるか」という有限のリソース感覚で、\"I don't have the bandwidth\" は単に忙しいというより「これ以上何かを載せる余地が物理的にない」という、やや技術寄りで角の立たない断り文句として機能する。似た語 headspace は感情的・精神的な余裕を指すのに対し、bandwidth はより実務的でタスク処理能力の話に限定される。ミーティングで新しいプロジェクトを打診されたときに \"Let me check my bandwidth\" と答えるのは、一度持ち帰って断る余地を残す定番の切り返しでもある。"
+    },
+    {
+      type: "word", term: "vanilla", ipa: "/vəˈnɪlə/", register: "金融・プロダクトの日常語（皮肉なし、単に「標準」の意）",
+      meaning_en: "plain, standard, or without special features — used approvingly or neutrally to mean a straightforward, unembellished version of something",
+      meaning_ja: "（オプションや仕様が）ごく標準的な、素の",
+      examples: [
+        "It's just a plain vanilla interest rate swap, nothing structured, nothing with an embedded option.",
+        "We ended up getting the vanilla version of the software — none of the add-ons, but it does everything we actually need."
+      ],
+      synonyms: [
+        { term: "standard", nuance_ja: "中立的で幅広く使える語だが、vanilla が持つ「あえて凝った仕様を避けた、シンプルさそのものへの安心感」というニュアンスは薄い。" },
+        { term: "plain", nuance_ja: "ほぼ同義だが単独で使うと「地味・つまらない」という否定的な含みが出やすい。plain vanilla とセットにすることで中立的な響きになる。" },
+        { term: "generic", nuance_ja: "しばしばブランドのない・没個性的という否定的な含みを伴い、vanilla のような「複雑さがなくて扱いやすい」という肯定的な響きは弱い。" }
+      ],
+      explanation_ja: "バニラアイスクリームが最も基本的で万人受けするフレーバーであることから、「装飾のない標準形」を指す比喩として定着した。金融の世界で最も頻出するのが plain vanilla という言い方で、デリバティブなどの金融商品が組み込みオプションや複雑な条件のない、教科書通りのシンプルな構造であることを指す——これは複雑な商品に比べてリスクが把握しやすいという安心感を伴う、実務上重要な区別。プロダクトやソフトウェアの文脈でも「特別なカスタマイズをしていない素の状態」を指して気軽に使え、否定的な含みは基本的にない。"
+    },
+    {
+      type: "word", term: "squishy", ipa: "/ˈskwɪʃi/", register: "口語・分析/データ批評（カジュアルだが実務でも通じる）",
+      meaning_en: "(of numbers, definitions, or arguments) imprecise, soft, and hard to pin down or verify, even though presented as if solid",
+      meaning_ja: "（数字・定義などが）ふわっとしていて根拠が怪しい、実は曖昧な",
+      examples: [
+        "The synergy number in that deck is pretty squishy — half of it is 'goodwill from combined culture,' whatever that means.",
+        "Her alibi felt squishy the moment you asked for a specific time."
+      ],
+      synonyms: [
+        { term: "vague", nuance_ja: "一般的で範囲の広い語。squishy が持つ「一見しっかりして見えるのに、押すと崩れる」という皮肉な含みは薄い。" },
+        { term: "soft (numbers)", nuance_ja: "金融でも定着した言い方で意味は近いが、squishy よりやや専門的で口語感が薄い。" },
+        { term: "hand-wavy", nuance_ja: "説明や論証の仕方そのものが大雑把・誤魔化し気味であることを指し、数字自体の正確さの話ではない場合にも使う。" }
+      ],
+      explanation_ja: "「グニャッと柔らかく形が定まらない」という触感を表す口語形容詞がそのまま比喩に転用され、データ分析やデューデリジェンスの場で「一見数字として提示されているが、実は前提や算出根拠が怪しい」という状況を指すのに使われる。似た語 soft numbers も金融で通用するが、squishy はより口語的で、時にユーモラスな響きを持ちながら鋭く痛いところを突く言い方になる。プレゼン資料の数字を質問攻めにするアナリストが \"that number feels squishy to me\" と言えば、「具体的な根拠を出してほしい」という遠回しな要求として機能する。"
+    },
+    {
+      type: "word", term: "gnarly", ipa: "/ˈnɑːrli/", register: "口語・技術/問題の難度を形容（元サーファー用語）",
+      meaning_en: "extremely difficult, complicated, or messy in a way that demands serious skill or effort to deal with",
+      meaning_ja: "（問題・状況が）超厄介な、手強い",
+      examples: [
+        "The tax implications of unwinding that structure across four jurisdictions turned out to be way gnarlier than anyone budgeted for.",
+        "That's a gnarly commute — two trains and a bus just to save fifteen minutes on rent."
+      ],
+      synonyms: [
+        { term: "thorny", nuance_ja: "よりフォーマルで、特に「扱いに慎重さを要する厄介な問題」を指す。gnarly ほどカジュアルではなく、若干知的な響きがある。" },
+        { term: "hairy", nuance_ja: "状況が急に危険・制御困難になった様子を指すことが多く、gnarly が持つ「構造自体が複雑で厄介」という静的な難しさとはやや違う。" },
+        { term: "messy", nuance_ja: "整理されていない・混乱している状態全般を指す広い語で、gnarly が持つ「高度な技術や根気を要するほどの難しさ」という含みは弱い。" }
+      ],
+      explanation_ja: "元々はサーファーやスケートボーダーの間で「危険なほど手強い波・技」を指す隠語として生まれた語で、そこから転じて一般に「対処するのに相当な技術や根気を要するほど厄介な問題」を指す口語表現として広がった。シリコンバレーのエンジニア文化を通じてビジネス英語にも浸透し、\"a gnarly bug\" \"a gnarly edge case\" のように技術的な難問を形容するのが定番になっている。似た語 thorny がフォーマルで知的な響きを持つのに対し、gnarly はカジュアルで、時に厄介さを面白がるようなニュアンスすら含む点が対照的。"
+    },
+    {
+      type: "idiom", term: "read the room", ipa: "", register: "口語・社会的空気を読む",
+      meaning_en: "to accurately sense the mood, mindset, or unspoken expectations of a group before saying or doing something",
+      meaning_ja: "（その場の）空気を読む",
+      examples: [
+        "He kept pushing for the expansion plan even as the room went quiet — someone needs to teach that guy to read the room.",
+        "I was going to make a joke about the delay, but I read the room and just apologized instead."
+      ],
+      synonyms: [
+        { term: "gauge the mood", nuance_ja: "より説明的でフォーマルな言い換え。read the room ほど瞬発的・直感的なニュアンスは薄い。" },
+        { term: "take the temperature", nuance_ja: "意図的に探りを入れる能動的な行為を指すことが多く、read the room が持つ「即座に感じ取る」直感的な速さとは少し違う。" },
+        { term: "pick up on the vibe", nuance_ja: "ほぼ同義のカジュアルな言い換えで、感覚的・雰囲気重視の響きがやや強い。" }
+      ],
+      explanation_ja: "演劇や講演の場で、話者が観客（room）の反応を見ながら間や内容を調整する、という比喩から一般化した表現。核心は「言葉にされていない空気や期待を、その場で瞬時に感じ取る」という直感的なスキルであり、これができない人を批判的に \"he can't read the room\" と評するのが定番の言い回し。日本語の「空気を読む」と驚くほど近い概念だが、英語では特にリーダーシップ論やコミュニケーション研修で「重要な対人スキルの一つ」として明示的に語られることが多い点が特徴的。反対に空気を読めない人は \"tone-deaf\" と形容されることも多く、二つの表現はセットで使われがち。"
+    },
+    {
+      type: "idiom", term: "move the needle", ipa: "", register: "ビジネス口語・成果測定で頻出",
+      meaning_en: "to make a difference that is large enough to actually be noticed or measured, as opposed to a negligible or cosmetic change",
+      meaning_ja: "（成果に）目に見える変化をもたらす、インパクトを与える",
+      examples: [
+        "Another two-percent discount isn't going to move the needle on a deal this size; we need to rethink the structure.",
+        "Going to the gym once a month isn't going to move the needle — you need at least three sessions a week."
+      ],
+      synonyms: [
+        { term: "make a dent in (something)", nuance_ja: "意味はほぼ重なる既出寄りの表現。move the needle はより測定・数値志向の響きが強く、KPIやパフォーマンス指標の文脈で好まれる。" },
+        { term: "make a real difference", nuance_ja: "平易で一般的な言い方。move the needle が持つ「計器の針が動くほどの、測定可能な変化」という具体的なイメージは薄い。" },
+        { term: "be a game changer", nuance_ja: "はるかに強く、根本的に状況を変えるレベルのインパクトを示唆する。move the needle は「多少なりとも意味のある変化」という控えめな水準でも使える。" }
+      ],
+      explanation_ja: "計測器の針 needle が実際に動くかどうかという物理的なイメージから来た表現で、KPIや業績指標が「誤差の範囲」ではなく実際に動くレベルの変化を指す。ビジネスの会議で「その施策は本当に意味があるのか」を問う際の定番のフレーズで、しばしば否定形 \"won't move the needle\" として、努力や予算に見合わない些細な施策を切り捨てる文脈で使われる。似た表現 make a dent とほぼ同じ意味だが、move the needle の方がより測定・数値志向の響きが強く、決算説明会やパフォーマンスレビューのような数字が支配する場で特に好まれる。"
+    },
+    {
+      type: "idiom", term: "put (something) on the back burner", ipa: "", register: "口語・優先順位付け",
+      meaning_en: "to deliberately deprioritize a task or plan for now, while continuing to work on more urgent things, without abandoning it entirely",
+      meaning_ja: "（物事を）後回しにする、優先順位を下げて棚上げする",
+      examples: [
+        "We put the rebrand on the back burner the minute the acquisition talks got serious — there's only so much bandwidth to go around.",
+        "The kitchen renovation has been on the back burner since the twins were born; we'll get to it eventually."
+      ],
+      synonyms: [
+        { term: "shelve (a plan)", nuance_ja: "より事実上の中止・撤回に近いニュアンスを持ちやすく、back burner が持つ「いずれ再開するつもりがある」という含みは弱い。" },
+        { term: "deprioritize", nuance_ja: "フォーマルで事務的な語。back burner が持つ、コンロの奥で鍋を置いたまま煮込み続けるという「完全には放置していない」比喩的な温かみはない。" },
+        { term: "punt on (a decision)", nuance_ja: "punt on は一回の決定そのものを先送りする行為を指すのに対し、back burner は進行中のプロジェクト全体の優先順位を下げて放置する状態を指す点が違う。" }
+      ],
+      explanation_ja: "キッチンのコンロで、今すぐ火を通す必要がある鍋は手前（front burner）に、まだ時間に余裕のある煮込み料理は奥の火（back burner）に置く、という家庭料理の光景がそのまま比喩になった表現。核心は完全に見捨てたわけではなく、「優先度は下げつつも、いずれ手をつけるつもりがある」という含みにあり、shelve のような事実上の撤回とは温度感が違う。プロジェクト管理や人事評価の場面で、限られたリソースをどこに割り振るかを説明する際の定番表現で、\"that's on the back burner for now\" と言えば、相手に対して「無視しているわけではない」という安心感を与えながら優先順位の低さを伝えられる。"
+    },
+    {
+      type: "idiom", term: "throw spaghetti at the wall", ipa: "", register: "口語・戦略なき試行錯誤を形容",
+      meaning_en: "to try many different approaches quickly and somewhat randomly, without a clear strategy, to see which one happens to work",
+      meaning_ja: "（戦略もなく）手当たり次第に試す、当たるまで色々やってみる",
+      examples: [
+        "Our marketing this quarter has basically been throwing spaghetti at the wall — five campaigns, no shared thesis, and we'll just double down on whichever one sticks.",
+        "I don't have a real plan for the seating chart yet, I'm just throwing spaghetti at the wall until something looks right."
+      ],
+      synonyms: [
+        { term: "trial and error", nuance_ja: "より中立的・体系的な響きを持ち、throw spaghetti at the wall が持つ「行き当たりばったりで戦略性が薄い」という若干批判的なニュアンスは弱い。" },
+        { term: "experiment", nuance_ja: "肯定的でフォーマルな語。仮説やプロセスの整った検証を示唆し、spaghetti の持つ場当たり感はない。" },
+        { term: "wing it", nuance_ja: "準備不足のまま即興で乗り切ることを指し、複数の選択肢を並行して試すという spaghetti の含みとは少し違う。" }
+      ],
+      explanation_ja: "茹でたスパゲッティを壁に投げつけて、くっついたものが「茹で上がった証拠」とする（実際には俗説とされる）調理の言い伝えから来た表現で、「どれが上手くいくか分からないまま、とにかく複数試してみる」戦略なき試行錯誤を指す。スタートアップの初期マーケティングや、方向性が定まっていないブレインストーミングの場面を自嘲気味に描写するのによく使われ、\"spaghetti strategy\" という名詞句としても定着している。trial and error より砕けていて、暗に「もっと考えてから動くべきだったのでは」という軽い批判を含むことが多い点が特徴。"
+    },
+    {
+      type: "phrase", term: "paper over (a problem / a disagreement)", ipa: "", register: "ビジネス口語・批判的",
+      meaning_en: "to make a problem or disagreement look resolved or less serious than it really is, without actually fixing it",
+      meaning_ja: "（問題・対立を）表面的に取り繕う、覆い隠す",
+      examples: [
+        "The joint statement papered over a pretty serious disagreement about pricing that's going to resurface at the next board meeting.",
+        "They papered over the argument for the holidays, but nobody actually apologized."
+      ],
+      synonyms: [
+        { term: "gloss over", nuance_ja: "「軽く触れるだけで済ませる」ことに焦点があり、papering over が持つ「意図的に見た目を取り繕う」という積極性はやや弱い。" },
+        { term: "smooth over", nuance_ja: "対立の角を取って関係を穏便にすることに焦点があり、必ずしも問題を隠蔽したという含みは強くない。" },
+        { term: "whitewash", nuance_ja: "はるかに強く、都合の悪い事実を意図的に隠蔽・美化するという非難の色が濃い。" }
+      ],
+      explanation_ja: "壁の亀裂の上から壁紙（paper）を貼って見た目だけ直す、という比喩から来た表現で、核心は「根本的な問題は手つかずのまま、表面だけを取り繕う」という点にある。企業の合同声明や、家族間の対立が「一時的に丸く収まったように見える」場面を批判的に描写するのに使われ、しばしば「いずれまた表面化するだろう」という含みを伴う。似た語 gloss over が「軽く流す・深入りしない」という消極的な回避を指すのに対し、paper over は「見た目を能動的に取り繕う」というやや作為的なニュアンスが強い。"
+    },
+    {
+      type: "phrase", term: "front-load (the work / the costs)", ipa: "", register: "プロジェクト管理・財務の実務語",
+      meaning_en: "to schedule a disproportionate share of the effort, cost, or risk at the beginning of a process rather than spreading it evenly",
+      meaning_ja: "（作業・費用などを）前倒しで集中させる",
+      examples: [
+        "We front-loaded the due diligence so the tough questions come up in week one, not two days before signing.",
+        "I front-loaded the packing this time — everything except the toiletries was done a week before the trip."
+      ],
+      synonyms: [
+        { term: "front-run", nuance_ja: "全く別の意味（他者に先んじて情報や機会を利用する、しばしば不公正な含み）で使われることが多く、混同しないよう注意。" },
+        { term: "get ahead of schedule", nuance_ja: "単純にスケジュールより早く進むことを指し、front-load が持つ「意図的に負荷を前半に集中させる設計」という含みはない。" },
+        { term: "weight (something) toward the start", nuance_ja: "説明的な言い換えで意味は近いが、front-load ほど簡潔で定着した専門語の響きはない。" }
+      ],
+      explanation_ja: "プロジェクト管理や財務モデリングの用語で、作業量・コスト・リスクを均等に配分するのではなく、意図的に初期段階に集中させる設計を指す。デューデリジェンスで難しい論点を早期に洗い出しておく、契約の支払いを前半に多く設定する、教育プログラムの負荷を序盤に寄せるなど、「後になって想定外の負担が発生するのを避けるために、あえて最初にきつくする」という戦略的な意図を伴うことが多い。似たスペルの front-run とは全く意味が異なるので混同注意——front-run は情報の非対称性を利用して先回りするという、しばしば不正の含みを持つ別の概念。"
+    },
+    {
+      type: "phrase", term: "punt on (a decision)", ipa: "", register: "口語・意思決定の先延ばし（米式フットボール由来）",
+      meaning_en: "to defer or avoid making a decision for now, typically passing the issue along or leaving it for someone else or a later time",
+      meaning_ja: "（決定を）先送りにする、判断を留保する",
+      examples: [
+        "The committee punted on the pricing question and kicked it to a working group that won't report back until Q3.",
+        "We punted on picking a venue and just let my sister decide since she actually knows the city."
+      ],
+      synonyms: [
+        { term: "defer", nuance_ja: "フォーマルな中立語で、punt on が持つ「本来は決めるべきなのに、あえて手放した」という若干の無責任さのニュアンスは弱い。" },
+        { term: "kick the can down the road", nuance_ja: "意味は近いが、kick the can は「繰り返し先送りにして問題が悪化する」プロセス全体を指すことが多く、punt on は一回の意思決定の場面に使うことが多い。" },
+        { term: "pass the buck", nuance_ja: "責任を他人に押し付けるという非難の色がより強く、punt on の「単に判断を保留する」という軽さより攻撃的。" }
+      ],
+      explanation_ja: "アメリカンフットボールで、攻撃側が前進を諦めてボールを蹴って（punt）相手に攻撃権を譲る戦術から来た表現。核心は「今この場で決めることを放棄し、決定権や問題そのものを先送り・他者に委ねる」という点で、kick the can down the road ほど「問題が雪だるま式に悪化する」という重さはなく、もっと軽く「今回はパスします」という日常的な判断保留にも使える。ビジネスの会議で \"let's punt on that until next week\" と言えば、深刻な批判ではなく実務的な優先順位づけとして自然に受け取られる、使い勝手のよい表現。"
+    },
+    {
+      type: "phrase", term: "nickel-and-dime (someone)", ipa: "", register: "口語・批判的（少額の出費/請求への不満）",
+      meaning_en: "to charge, criticize, or negotiate over many small amounts in a way that feels petty and adds up to real frustration or cost",
+      meaning_ja: "（少額の出費・要求で）ちまちま負担させる、こまごま消耗させる",
+      examples: [
+        "The hotel nickel-and-dimes you for everything — the wifi, the safe, the gym, all separate line items that weren't in the quoted rate.",
+        "Stop nickel-and-diming the vendor over every line item; we're going to lose the relationship over three hundred dollars."
+      ],
+      synonyms: [
+        { term: "chip away at (someone)", nuance_ja: "対象を徐々に消耗させるという点で似るが、nickel-and-dime は特に「少額の課金・要求の積み重ね」という金銭的な文脈に限定される。" },
+        { term: "squeeze", nuance_ja: "より強く一方的な圧力を示唆し、必ずしも少額を積み重ねる形とは限らない。" },
+        { term: "be petty about", nuance_ja: "態度そのものへの批判に焦点があり、nickel-and-dime が持つ「実際に小口の請求・交渉が積み重なる」という具体的な行為の含みは弱い。" }
+      ],
+      explanation_ja: "アメリカの少額硬貨 nickel（5セント）と dime（10セント）から来た表現で、一つ一つは些細でも積み重なると無視できない負担になる、という不満を描写する。ホテルやサブスクリプションサービスが基本料金以外に細かい追加料金を次々と課してくる状況や、交渉相手が大きな論点ではなく些末な項目に固執してくる場面を批判的に指すのに使われる。動詞としても \"they nickel-and-dimed us on the closing costs\" のように過去形で使え、態度そのものより「実際に細かい請求・要求が積み重なった」という具体的な体験を語る点が chip away at との違い。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "finicky", ipa: "/fəˈnɪki/", register: "口語・批判/中立（人にもモノにも使う）",
+      meaning_en: "excessively fussy or hard to please, requiring an unusual degree of care or precision to satisfy",
+      meaning_ja: "（人・機械などが）気難しい、扱いにくいほど神経質な",
+      examples: [
+        "The client is finicky about formatting in a way that has nothing to do with the actual analysis — three different font sizes got rejected before he approved the deck.",
+        "This old espresso machine is finicky; you have to tamp it exactly right or it just spits everywhere."
+      ],
+      synonyms: [
+        { term: "fussy", nuance_ja: "ほぼ同義でより日常的。finicky はやや技術的な文脈（機械・データ・仕様）にも自然になじむ。" },
+        { term: "particular", nuance_ja: "中立的で、こだわりが正当であることを示唆する場合にも使える。finicky は度が過ぎているという軽い非難を伴うことが多い。" },
+        { term: "high-maintenance", nuance_ja: "人に対して使うことが多く、感情面・関係面での手間のかかりやすさを指す。finicky はより具体的な基準や仕様へのこだわりを指す。" }
+      ],
+      explanation_ja: "元々は食べ物の好き嫌いが激しい人を描写する語だったが、今では人にも機械にもデータにも使える汎用的な形容詞になっている。核心は「求められる精度や配慮の水準が通常より高く、少しでも外れると機嫌を損ねる、あるいは正常に動作しない」という点で、批判的だが high-maintenance ほど人格全体を否定する強さはない。古い機械やソフトウェアの不安定さを \"finicky\" と形容するのは非常に自然で、IT分野の実務でもよく耳にする。"
+    },
+    {
+      term: "threadbare", ipa: "/ˈθredˌbeər/", register: "比喩的・批判的（フォーマルな書き言葉でも使われる）",
+      meaning_en: "(of an excuse, argument, or plan) worn thin from overuse and no longer convincing or substantial",
+      meaning_ja: "（言い訳・議論などが）使い古されて説得力を失った、すり切れた",
+      examples: [
+        "The 'market conditions' excuse is getting pretty threadbare at this point — three quarters in a row is a pattern, not bad luck.",
+        "His alibi was threadbare the second time he told it, with two of the details flipped."
+      ],
+      synonyms: [
+        { term: "flimsy", nuance_ja: "元々薄くて弱いことを指し、threadbare が持つ「以前は通用していたが使い古されて摩耗した」という時間経過の含みはない。" },
+        { term: "worn-out", nuance_ja: "ほぼ同義の平易な言い換えだが、threadbare の持つ「布がすり切れる」という具体的な質感の比喩性はやや薄れる。" },
+        { term: "hollow", nuance_ja: "中身が最初から欠けている（言葉と実質が伴わない）ことに焦点があり、繰り返し使われて摩耗したという含みは必須ではない。" }
+      ],
+      explanation_ja: "生地が擦り切れて糸(thread)がむき出しになり、もはや布としての機能を果たさなくなった状態を指す語がそのまま比喩に転用され、「繰り返し使われすぎて、もはや誰も信じない言い訳や議論」を描写する。決算説明会で経営陣が同じ言い訳を繰り返す場面や、嘘をつく人が同じ話を何度も語るうちにほころびが見える場面を批判的に指すのに使われ、flimsy が「元々弱い」ことを指すのに対し、threadbare は「かつては機能していたが、使われすぎて摩耗した」という時間経過の含みが決定的に異なる。"
+    },
+    {
+      term: "slapdash", ipa: "/ˈslæpdæʃ/", register: "口語・批判的（仕事の質を評する）",
+      meaning_en: "done hastily and carelessly, with little attention to detail or planning, in a way that shows in the sloppy result",
+      meaning_ja: "やっつけの、雑でずさんな",
+      examples: [
+        "The report was clearly slapdash — two slides still had placeholder text, and the numbers on page four didn't tie to the appendix.",
+        "The landlord did a slapdash paint job right before the showing; you can see the roller marks in the hallway light."
+      ],
+      synonyms: [
+        { term: "sloppy", nuance_ja: "ほぼ同義で頻度も高い平易な語。slapdash はやや文語的で、特に「急いで作ったこと自体」への言及を含みやすい。" },
+        { term: "haphazard", nuance_ja: "計画性の欠如・場当たり感に焦点があり、必ずしも急いで雑に作られたという速度の含みは伴わない。" },
+        { term: "half-assed", nuance_ja: "既出の half-baked に近い、非常にカジュアルで下品寄りの言い方。フォーマルな文書には全く使えない。" }
+      ],
+      explanation_ja: "擬音語的な slap（バシャッと叩きつける）+ dash（さっと走り書きする）という語構成から、「急いで、注意を払わずに仕上げた」様子をそのまま音で表現したような語。核心は仕上がりの雑さだけでなく、「十分な時間や労力をかけなかった」という過程への非難も含む点で、単に sloppy（雑）と言うよりも「急いで手を抜いた」という原因まで示唆する。フォーマルな書き言葉でも十分通用する語で、批評や監査報告書のような文脈でも違和感なく使える。"
+    },
+    {
+      term: "cushy", ipa: "/ˈkʊʃi/", register: "口語・やや皮肉（楽な仕事や待遇を評する）",
+      meaning_en: "easy, comfortable, and undemanding in a way that seems enviable or almost too good, often implying little effort is required",
+      meaning_ja: "楽で待遇のいい、うらやましいほど楽な",
+      examples: [
+        "He landed a cushy advisory role with a six-figure retainer and, as far as anyone can tell, one call a month.",
+        "Housesitting for them is a cushy gig — free rent in exchange for feeding one very lazy cat."
+      ],
+      synonyms: [
+        { term: "comfortable", nuance_ja: "中立的で幅広く使える語。cushy が持つ「うらやましいほど楽で、少し出来すぎている」という皮肉っぽい響きは薄い。" },
+        { term: "plum (job/assignment)", nuance_ja: "「特に望ましい役得のポジション」に焦点があり、待遇の良さよりも「競争率が高く手に入れにくい役得」という含みが強い。" },
+        { term: "easy", nuance_ja: "単純に労力が少ないことを指す平易な語で、cushy が持つ「待遇や条件面まで含めて恵まれている」という総合的な響きはない。" }
+      ],
+      explanation_ja: "クッション cushion から派生したとされる語で、「座り心地の良いクッションに座っているような、楽で快適な状態」を仕事や待遇に転用した口語表現。核心は単に「楽」というだけでなく、「その楽さが待遇の良さと結びついていて、他人から見るとうらやましい、あるいは少しずるいとすら感じられる」という含みにある。退職後の顧問職や、労力の割に報酬が良いアルバイトなどを形容するのに使われ、しばしば軽い皮肉やちょっとした嫉妬を伴って語られる点が、単に easy や comfortable と言うのとは違う。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "run point on (a project)",
+      meaning_en: "to take direct, hands-on responsibility for leading and coordinating a specific project or initiative",
+      meaning_ja: "（プロジェクトの）陣頭指揮を執る、主担当になる",
+      examples: [
+        "I'll run point on the vendor negotiation since I already have the relationship with their procurement lead.",
+        "Someone needs to run point on the move — coordinating three trucks and two elevators isn't going to organize itself."
+      ],
+      synonyms: [
+        { term: "spearhead", nuance_ja: "よりフォーマルで、しばしば新しい取り組みを最初に主導するという開拓的な響きを持つ。run point はより実務的な日々の調整役に焦点がある。" },
+        { term: "own (a project)", nuance_ja: "責任の所在を明確にする語で近い意味だが、run point が持つ「実際に現場を動かして調整する」という能動的な行動の含みはやや弱い。" }
+      ],
+      explanation_ja: "軍隊の斥候（point man）が部隊の先頭に立って進路を確認する役割から来た表現で、ビジネスでは「その案件について最前線に立ち、実務的な調整と意思決定を担う担当者になる」ことを指す。単に責任者として名前が挙がるだけでなく、実際に日々のやり取りや調整を回す実務担当という含みが強く、\"who's running point on this?\" は会議で実務上の窓口を確認する際の定番の聞き方になっている。"
+    },
+    {
+      phrase: "get ahead of (the story / an issue)",
+      meaning_en: "to proactively address or communicate about a problem before it becomes public or spirals out of control",
+      meaning_ja: "（問題が表面化する前に）先手を打つ、機先を制する",
+      examples: [
+        "Legal wants to get ahead of the story and put out a statement before the journalist's piece even runs.",
+        "I texted my parents to get ahead of it before my sister could tell them her version of what happened at dinner."
+      ],
+      synonyms: [
+        { term: "preempt", nuance_ja: "よりフォーマルでやや戦略的・冷静な響き。get ahead of は危機管理やPRの現場でより口語的に使われる。" },
+        { term: "stay ahead of the curve", nuance_ja: "トレンドや変化への一般的な対応の早さを指すことが多く、get ahead of が持つ「特定の問題・報道への防御的な先手」という切迫感は薄い。" }
+      ],
+      explanation_ja: "危機管理広報（クライシスPR）の定番用語で、悪いニュースや批判が外部から広まる前に、自ら情報を開示・説明することで主導権を握る戦略を指す。核心は受け身で対応するのではなく、能動的にタイミングと語り方をコントロールしようとする姿勢にあり、\"get ahead of the story\" は特にメディア対応の文脈で決まり文句のように使われる。家族間のちょっとした気まずい話題を、誰かに先に伝えられる前に自分から説明しておく、という日常的な場面にも自然に応用できる。"
+    },
+    {
+      phrase: "connect the dots",
+      meaning_en: "to see or explain how separate pieces of information relate to each other, revealing a pattern or conclusion that wasn't obvious before",
+      meaning_ja: "（点在する情報を）つなぎ合わせて全体像を見出す",
+      examples: [
+        "Once you connect the dots between the hiring freeze and the delayed product launch, the budget story makes a lot more sense.",
+        "It took me a week to connect the dots and realize both friends had been talking about the same guy the whole time."
+      ],
+      synonyms: [
+        { term: "piece together", nuance_ja: "ほぼ同義で、より段階的・時間をかけた推理の過程を強調する。connect the dots はひらめきの瞬間により焦点がある。" },
+        { term: "join the dots", nuance_ja: "英国式の言い方で意味は同一。" }
+      ],
+      explanation_ja: "子供向けの「点つなぎ」パズル（数字順に点を線で結ぶと絵が現れる）から来た表現で、一見バラバラに見える情報や出来事が、実はつながっていて一つの意味のある全体像を作っている、という発見の瞬間を指す。分析・戦略の文脈で「個々のデータポイントは知っていたが、それらの関係性を見抜けていなかった」ことを指摘する際によく使われ、\"failure to connect the dots\" は組織が持っている情報を統合できずに問題を見逃した、という批判の定番フレーズにもなっている。"
+    },
+    {
+      phrase: "throw money at (a problem)",
+      meaning_en: "to try to solve a problem simply by spending more, without a clear strategy, often implying the approach is unlikely to actually fix the root cause",
+      meaning_ja: "（根本的な戦略なしに）とにかくお金をつぎ込んで解決しようとする",
+      examples: [
+        "Throwing money at the churn problem with bigger discounts didn't work, because customers were leaving over the product, not the price.",
+        "You can't throw money at a bad relationship and expect a nicer vacation to fix it."
+      ],
+      synonyms: [
+        { term: "pour resources into", nuance_ja: "より中立的でフォーマル。throw money at が持つ「戦略性を欠いた、やや無駄な支出」という批判的な含みは弱い。" },
+        { term: "buy your way out of (a problem)", nuance_ja: "「本来の努力や改善を避けて金銭で解決しようとする」という含みがより強く、throw money at より皮肉が強い。" }
+      ],
+      explanation_ja: "「投げつける throw」という乱暴な動詞が示す通り、狙いを定めず、とにかく資金を投入すれば問題が解決するだろうという安易な発想を批判的に描写する表現。核心は「根本原因への理解や戦略がないまま支出だけを増やす」という点にあり、しばしば否定形 \"you can't just throw money at this\" として、より深い分析や構造的な変化が必要だと主張する際に使われる。経営会議で人員増強や予算増額を提案された際に、この表現を使って「それだけでは解決しない」と釘を刺すのは非常に典型的な使い方。"
+    }
+  ],
+  todayQuiz: [
+    { question: "I don't have the ___ to take on a third direct report this quarter, not with the audit running in parallel.", choices: ["bandwidth", "headspace", "runway", "moat"], answerIndex: 0, explanation: "\"Bandwidth\" specifically refers to the practical capacity to handle additional tasks. \"Headspace\" refers to emotional or mental room rather than task-processing capacity." },
+    { question: "It's just a plain ___ interest rate swap, nothing structured or exotic.", choices: ["vanilla", "generic", "standard", "squishy"], answerIndex: 0, explanation: "\"Plain vanilla\" is the fixed financial term for an unstructured, straightforward instrument. \"Generic\" carries a negative, brandless connotation that this term does not." },
+    { question: "The synergy number in that deck is pretty ___ — half of it is 'goodwill from combined culture.'", choices: ["squishy", "vague", "hand-wavy", "gnarly"], answerIndex: 0, explanation: "\"Squishy\" specifically implies a number that looks solid but falls apart under scrutiny. \"Gnarly\" describes something difficult or messy to deal with, not something whose accuracy is questionable." },
+    { question: "Which word specifically implies that a problem requires serious skill or effort to untangle, rather than simply being disorganized?", choices: ["gnarly", "messy", "vague", "squishy"], answerIndex: 0, explanation: "\"Gnarly\" specifically implies a level of complexity that demands real skill or effort to resolve. \"Messy\" just means disorganized, without necessarily implying that unusual skill is required." },
+    { question: "He kept pushing his proposal even as the room went quiet — he really can't ___.", choices: ["read the room", "move the needle", "punt on it", "connect the dots"], answerIndex: 0, explanation: "\"Read the room\" means to sense the unspoken mood of a group. \"Move the needle\" describes making a measurable impact, an unrelated meaning." },
+    { question: "Another two-percent discount won't ___ on a deal this size; we need a different structure.", choices: ["move the needle", "read the room", "get ahead of the story", "run point"], answerIndex: 0, explanation: "\"Move the needle\" specifically means making a difference large enough to be measured. \"Run point\" means taking hands-on leadership of something, an unrelated meaning." },
+    { question: "The committee ___ the pricing question and kicked it to a working group that won't report back until Q3 — a single, low-stakes deferral rather than a recurring pattern.", choices: ["punted on", "kicked the can down the road on", "papered over", "nickel-and-dimed"], answerIndex: 0, explanation: "\"Punt on\" fits a single, relatively low-stakes deferral to a working group. \"Kick the can down the road\" implies a repeated pattern of deferral that lets a problem worsen over time, a heavier framing than this sentence describes." },
+    { question: "The joint statement ___ a serious pricing disagreement that's going to resurface at the next board meeting.", choices: ["papered over", "front-loaded", "punted on", "nickel-and-dimed"], answerIndex: 0, explanation: "\"Paper over\" means making a problem look resolved on the surface without actually fixing it. \"Front-load\" means concentrating effort or cost at the start of a process, an unrelated meaning." },
+    { question: "The client is ___ about formatting in a way that has nothing to do with the actual analysis.", choices: ["finicky", "particular", "high-maintenance", "threadbare"], answerIndex: 0, explanation: "\"Finicky\" implies an excessive, borderline unreasonable standard of care, fitting fussiness over formatting unrelated to substance. \"Particular\" is neutral and can describe justified preferences rather than excessive fussiness." },
+    { question: "Once you ___ between the hiring freeze and the delayed launch, the budget story makes a lot more sense.", choices: ["connect the dots", "get ahead of the story", "run point", "throw money at it"], answerIndex: 0, explanation: "\"Connect the dots\" means seeing how separate pieces of information relate to reveal a pattern. \"Get ahead of the story\" means proactively addressing an issue before it becomes public, an unrelated meaning." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-04 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-06 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
