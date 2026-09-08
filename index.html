@@ -154,320 +154,6 @@ a{color:#0d6e6e}
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-08-28",
-  dateLabel: "2026年8月28日（金）",
-  readTimeMin: 33,
-  coreItems: [
-    {
-      type: "word", term: "whipsaw", ipa: "/ˈwɪpsɔː/", register: "相場・組織運営（通常は受動態）",
-      meaning_en: "to hurt someone through two sharp movements in opposite directions, so that they lose on the way out and lose again on the way back",
-      meaning_ja: "（急反転で）行きも帰りもやられる、往復で損をさせる",
-      examples: [
-        "Funds that cut equity exposure on the tariff headline and bought back a week later were whipsawed twice in ten days.",
-        "Two reorganizations in a single year have whipsawed the team — nobody is sure whose approval they actually need anymore."
-      ],
-      synonyms: [
-        { term: "get caught on the wrong side", nuance_ja: "一方向の判断ミスで損をしたことを指す。whipsawの核心である「反対方向への二度の反転で二重に損をした」という往復の構造を含まない。" },
-        { term: "yo-yo", nuance_ja: "上下動を繰り返す動きそのものを描く語で、被害者の存在は必ずしも含意しない。whipsawは「その動きで誰かが実際に損をした」という結果まで必ず含む。" },
-        { term: "seesaw", nuance_ja: "二者が交互に優劣を入れ替える往復を中立的に述べる語。痛みや損害のニュアンスはなく、人を目的語に取る他動詞としては使えない。" }
-      ],
-      explanation_ja: "二人がかりで押し引きして木を切る大型の横挽きのこぎり（whipsaw）が語源で、前に引かれても後ろに引かれても木は削られる、という構図がそのまま比喩になっている。だから単なる「損をした」ではなく「どちらに動いても損をする挟み撃ち」を指す語で、用法はほぼ受動態の be whipsawed に固定される。主語に立つのは投資家・企業・従業員といった振り回される側で、市場の文脈では損切り直後に反発し、追いかけて買った直後にまた下げる、という最悪の往復を一語で言い切れる。組織の文脈でも方針が二転三転して現場が消耗する状況に同じ形で使える。"
-    },
-    {
-      type: "word", term: "dovetail", ipa: "/ˈdʌvteɪl/", register: "提案・組織設計（ややフォーマル）",
-      meaning_en: "to fit together with something else so precisely that the two function as one, with no gap and no overlap",
-      meaning_ja: "（二つの計画や事業が）過不足なくぴたりと噛み合う",
-      examples: [
-        "The bolt-on dovetails with our existing distribution: same customers, same logistics, and almost no overlap in the product range.",
-        "Her sabbatical dovetailed with the school holidays, which was either excellent planning or excellent luck."
-      ],
-      synonyms: [
-        { term: "align with", nuance_ja: "方向性が一致していることを述べる広い語。dovetailが主張する「凹凸が噛み合って一つの機能を果たす」という物理的な相補性までは含まない。" },
-        { term: "complement", nuance_ja: "互いの弱点を補い合う関係に焦点がある。dovetailはそれに加えて「継ぎ目が見えないほど正確に合う」という精度の高さを強調する。" },
-        { term: "mesh with", nuance_ja: "歯車が噛み合う比喩で、動きながら協調し続ける日々の相性を表す。一度きりの構造的な適合を語るdovetailとは時間軸が違う。" }
-      ],
-      explanation_ja: "木工の蟻継ぎ、つまり鳩の尾（dove + tail）の形に削った凹凸を組み合わせ、釘も接着剤もなしに外れなくする接合技法が語源。したがって「なんとなく相性がいい」ではなく「設計上ぴたりと合う」ことを主張する語で、M&Aのシナジー説明や組織再編の趣旨説明で好まれる。基本形は自動詞の dovetail with 〜 だが、他動詞で dovetail A with B（AをBに噛み合わせる）とも言える。褒め言葉としての力が強い分、実際には重複が多い案件に使うと後で反証されやすいので、根拠とセットで使いたい。"
-    },
-    {
-      type: "word", term: "bristle", ipa: "/ˈbrɪsəl/", register: "会議・交渉（相手の反応の描写）",
-      meaning_en: "to show a flash of visible irritation or defensiveness at something that has been said, often without saying so directly",
-      meaning_ja: "気色ばむ、むっとして身構える",
-      examples: [
-        "The CFO bristled at the word \"aggressive\" — it was the only moment all afternoon when he interrupted anyone.",
-        "He bristles whenever someone calls it a hobby rather than a business."
-      ],
-      synonyms: [
-        { term: "take offense", nuance_ja: "気分を害したという内面の状態を述べる語。bristleは「表情や姿勢に出た」という観察可能な反応そのものを描く点が決定的に違う。" },
-        { term: "get defensive", nuance_ja: "身構えて弁明を始める一連の振る舞い全体を指す。bristleは反応の最初の一瞬に焦点があり、その後どうしたかまでは含まない。" },
-        { term: "recoil", nuance_ja: "嫌悪や恐怖で後ずさる反応で、感情の向きが「引く」。bristleは毛を逆立てて向かっていく姿勢なので、方向が正反対になる。" }
-      ],
-      explanation_ja: "動物が警戒したときに剛毛（bristle）を逆立てる動作が語源で、猫の背中が一瞬ふくらむあの反応を人間に当てはめた語。したがって怒りそのものではなく「怒りの兆候が体に出た瞬間」を描くのが本義で、観察者の視点から書かれるのが普通になる。前置詞は at で固定し、bristle at a suggestion / at the implication の形で使う。議事メモや報告メールで「相手が不快に感じた」という事実を、断定的に非難せずに伝えられる外交的な便利語でもある。"
-    },
-    {
-      type: "word", term: "grandstand", ipa: "/ˈɡrænstænd/", register: "会議・政治報道（批判的）",
-      meaning_en: "to behave showily in order to impress an audience rather than to address the problem at hand",
-      meaning_ja: "（周囲の受けを狙って）派手に振る舞う、点数稼ぎをする",
-      examples: [
-        "Two directors spent the whole session grandstanding for the founder instead of asking a single question about the covenant package.",
-        "The hearing wasn't an investigation so much as an afternoon of grandstanding for the cameras."
-      ],
-      synonyms: [
-        { term: "play to the gallery", nuance_ja: "英国寄りで、大衆受けを狙う点は同じだがやや古風で演劇的な響き。現代の米国ビジネス・政治報道ではgrandstandのほうが圧倒的に一般的。" },
-        { term: "showboat", nuance_ja: "スポーツ由来で「自分の技量を見せびらかす」ことに焦点がある。grandstandが伴う「正義や大義を語ってみせる」という偽善的な色合いは薄い。" },
-        { term: "posture", nuance_ja: "交渉上の強気な立場を演じることを指し、聴衆を必要としない。grandstandは見ている第三者がいて初めて成立する点が違う。" }
-      ],
-      explanation_ja: "競技場の観客席（grandstand）に向かってプレーする、という比喩が語源。核心は「観客がいる」ことにあり、取締役会、公聴会、全社会議のように第三者の目がある場でのみ成立する批判語になる。実際には名詞形 grandstanding のほうが出現頻度が高く、\"this is pure grandstanding\" は中身のないパフォーマンスだと切り捨てる定型句。相手の主張の内容ではなく動機を疑う強い語なので、面と向かって使えばほぼ確実に関係が悪化する点は意識しておきたい。"
-    },
-    {
-      type: "idiom", term: "a shot across the bow", ipa: "", register: "交渉・競争戦略・報道",
-      meaning_en: "a deliberate warning that stops short of doing real damage, intended to show what you are prepared to do next",
-      meaning_ja: "警告としての一撃、本気度を示すための威嚇（本格的な攻撃の手前）",
-      examples: [
-        "Cutting price in two test markets was a shot across the bow — they wanted us to know they could fund a national war if we forced it.",
-        "The letter from the landlord's lawyer wasn't really about the fence. It was a shot across the bow."
-      ],
-      synonyms: [
-        { term: "a warning shot", nuance_ja: "ほぼ同義でより平易。a shot across the bowが持つ「相手に見える形で、あえて外して撃った」という作法めいた演出感はやや薄い。" },
-        { term: "a signal of intent", nuance_ja: "中立的でフォーマルな言い方。敵対関係を前提としないため、脅しの含みが必要な場面では弱すぎる。" }
-      ],
-      explanation_ja: "帆船時代の海戦の作法で、相手の船首（bow）の前方の海面にわざと外して砲弾を撃ち、「止まれ、次は当てる」と伝えた慣行が語源。したがって核心は「当てないこと」にあり、実害が出た時点でこの表現は使えなくなる。価格競争、訴訟前の通知書、規制当局の含みのあるコメントなど、次の段階が存在する脅しに幅広く使える。動詞形の fire a shot across someone's bow も同じくらい頻繁に見かける形。"
-    },
-    {
-      type: "idiom", term: "not have a dog in this fight", ipa: "", register: "口語（米国色が強い・中立性の表明）",
-      meaning_en: "to have no personal stake in a dispute, and therefore no reason to prefer either outcome",
-      meaning_ja: "この件に利害関係がない、どちらに転んでも自分は困らない",
-      examples: [
-        "I don't have a dog in this fight — I wasn't on either deal team — so take what follows as a genuinely outside read.",
-        "Honestly, I don't have a dog in this fight. Pick whichever restaurant you two can agree on."
-      ],
-      synonyms: [
-        { term: "be neutral", nuance_ja: "立場を取らないという態度そのものを述べる語。この表現が含む「そもそも利害がないから公平でいられる」という理由の説明までは含まない。" },
-        { term: "have no skin in the game", nuance_ja: "自分の資産やリスクを賭けていないことを指し、しばしば「だから意見に重みがない」という否定的な評価に転じる。dogの表現は逆に中立性の担保として肯定的に使う。" }
-      ],
-      explanation_ja: "闘犬に自分の犬を出していない者は勝敗に賭けがない、という米南部由来の比喩。用途はほぼ一つで、意見を述べる前に「私の見方にバイアスはない」と宣言する免責の前置きとして使う。形が似た have no skin in the game とは評価の向きが正反対で、あちらは「リスクを負っていない者の意見は軽い」という批判に使われることが多いので、混同すると意図と逆の印象を与えかねない。動物を闘わせる連想を嫌い、近年は I don't have a horse in this race と言い換える人も増えている。"
-    },
-    {
-      type: "idiom", term: "pour cold water on (something)", ipa: "", register: "会議・決算説明・報道",
-      meaning_en: "to respond to an idea or an expectation in a way that deliberately reduces enthusiasm for it",
-      meaning_ja: "（案や期待に）冷や水を浴びせる、水を差す",
-      examples: [
-        "Management poured cold water on the buyback question before the analyst had even finished asking it.",
-        "I was excited about the road trip until my brother poured cold water on it with a five-minute speech about gas prices."
-      ],
-      synonyms: [
-        { term: "downplay", nuance_ja: "重要性を実際より小さく見せる操作に焦点があり、相手の熱意を冷ますことが目的とは限らない。中立的な調整としても使える点が違う。" },
-        { term: "shoot down", nuance_ja: "提案そのものを却下することで、決定としての強さがはるかに上。pour cold water onは案を残したまま温度だけ下げる、より穏やかな手つきを指す。" },
-        { term: "temper expectations", nuance_ja: "フォーマルで、期待値を現実的な水準に整えるという建設的な含みがある。冷や水を浴びせられた側の不快さは伴わない。" }
-      ],
-      explanation_ja: "熱くなっているものに水をかけて冷ます、という日本語の「水を差す」とほぼ同じ発想の表現で、throw cold water on とも言い意味の差はほとんどない。押さえるべきは目的語で、人ではなく idea / plan / speculation / rumours といった「熱を持った話」を取るのが原則。決算説明会で過度な期待を打ち消す経営陣の発言を報じる定番でもあり、\"management poured cold water on M&A speculation\" のような一文は英字紙で頻繁に目にする。冷ましはするが否定しきってはいない、という中間の強さを表せるのがこの表現の実用的な価値。"
-    },
-    {
-      type: "idiom", term: "at arm's length", ipa: "", register: "法務・税務・ガバナンス（術語としても口語としても）",
-      meaning_en: "at a deliberate distance, so that closeness or influence cannot affect the terms of a dealing or a relationship",
-      meaning_ja: "一定の距離を置いて、独立当事者間の（なれ合いのない）条件で",
-      examples: [
-        "The lease is with an entity the founder's family controls, so the rent has to be set at arm's length or the auditors will have questions.",
-        "He's a friend, but I've kept him at arm's length ever since he started asking what the fund was buying."
-      ],
-      synonyms: [
-        { term: "keep someone at a distance", nuance_ja: "個人的な親密さを避ける対人関係にのみ使う。at arm's lengthが持つ、取引条件の公正さを担保するという制度的・法的な意味は持たない。" },
-        { term: "independent", nuance_ja: "関係の不在を静的に述べる形容詞。at arm's lengthは「近い関係が現に存在するのに、あえて距離を保っている」という緊張感を前提とする点が違う。" }
-      ],
-      explanation_ja: "腕を伸ばした距離、つまり触れも触れられもしない間合い、という身体感覚から来た表現で、法務・税務では an arm's-length transaction（独立第三者間取引）という厳密な術語として定着している。移転価格税制や関連当事者取引の議論でこの語が出たら、論点は「価格が市場水準か」に移ったと読んでよい。一方で日常会話の \"keep someone at arm's length\"（あの人とは深入りしない）は完全に対人的な用法で、同じ表現が専門用語と日常語の両方で現役という珍しい例になっている。名詞の前に置くときはハイフンを入れて arm's-length と綴るのが正式。"
-    },
-    {
-      type: "phrase", term: "I'm not wedded to it", ipa: "", register: "会議・口語（歩み寄りの合図）",
-      meaning_en: "used to say that you proposed something but are genuinely willing to change or drop it",
-      meaning_ja: "「この案に固執するつもりはない」（提案しつつ柔軟さを示す）",
-      examples: [
-        "I used twelve percent because it matched the peer set, but I'm not wedded to it — bring me a better anchor and I'll change it.",
-        "I suggested Thursday, but I'm not wedded to it if the weekend works better for everyone."
-      ],
-      synonyms: [
-        { term: "I'm flexible on that", nuance_ja: "調整の余地があることを軽く伝える一般的な言い方。not wedded toが持つ「自分の案だが愛着はない」という自己相対化の含みは弱い。" },
-        { term: "I don't feel strongly about it", nuance_ja: "そもそも意見の強度が低いことを示す。not wedded toは「根拠があって出した案だが、より良い根拠があれば譲る」という知的な誠実さの表明になる点が違う。" }
-      ],
-      explanation_ja: "wed（結婚する）の過去分詞を使い、その案と添い遂げるつもりはないと言うことで執着のなさを示す表現。実務上の価値は、提案の中身と提案者の面子を切り離せる点にあり、これを一言添えるだけで相手が反論しやすくなり議論が前に進む。ほぼ必ず否定形で使い、肯定の I'm wedded to it は自嘲か他者への批判になる。物を主語にした \"the model is wedded to a single growth assumption\"（このモデルは一つの前提に縛られている）という比喩的な用法も覚えておくと応用が利く。"
-    },
-    {
-      type: "phrase", term: "for my money", ipa: "", register: "口語（意見表明・やや米国寄り）",
-      meaning_en: "used before stating an opinion, especially a judgment about which of several options is best",
-      meaning_ja: "「私に言わせれば」「私ならこちらを取る」",
-      examples: [
-        "For my money, the second target is the better business — lower margins, but the revenue actually repeats.",
-        "For my money, nothing they've released since has come close to the first album."
-      ],
-      synonyms: [
-        { term: "in my view", nuance_ja: "中立的で書き言葉にも使える標準形。for my moneyが持つ「複数の候補を比べたうえで自分ならこれを推す」という比較の含みはない。" },
-        { term: "if you ask me", nuance_ja: "やや押しの強い口語で、しばしば不満や苦言の前置きになる。for my moneyは推薦に使われることが多く、トーンが明るい点が対照的。" }
-      ],
-      explanation_ja: "実際に金を賭けるなら、という発想から生まれた表現だが、現代の用法に金銭的な要素はまったく残っておらず、純粋な意見の前置きとして働く。特徴は比較の場面に強いことで、候補が複数ある中から一つを推すときに最も自然に響く。位置はほぼ文頭に固定で、カンマで区切って本題に入る形が定型。口語寄りなので社内メールや会話では自然だが、正式な報告書では in our view に置き換えるのが無難。"
-    },
-    {
-      type: "phrase", term: "I could go either way", ipa: "", register: "会議・口語（拮抗の表明）",
-      meaning_en: "used to say that you see the arguments as evenly balanced and would accept either outcome",
-      meaning_ja: "「どちらの結論もあり得ると思う」（優劣がつけられない）",
-      examples: [
-        "On whether we lever it at four and a half turns or five, I could go either way — it depends entirely on what you believe about the refinancing window.",
-        "I could go either way on dessert, so order whatever you want and I'll steal some."
-      ],
-      synonyms: [
-        { term: "I'm on the fence", nuance_ja: "決めきれずに迷っている状態に焦点があり、優柔不断な響きを伴うことがある。I could go either wayは「両案とも成立する」という分析としての引き分けを述べ、迷いの色は薄い。" },
-        { term: "it's a coin flip", nuance_ja: "どちらを選んでも根拠がないという突き放した言い方。話し手が判断を引き受ける姿勢は感じられず、責任の所在が曖昧になる。" }
-      ],
-      explanation_ja: "自分はどちらの側にも転べる、という比喩で、肝心なのは「決められない」ではなく「どちらにも十分な理屈がある」と述べている点。だから会議で使っても無責任には響かず、むしろ論点が本当に拮抗していることを示す誠実な発言として受け取られる。主語を変えた it could go either way は「結果がどちらに転ぶか分からない」という予測の話になり、意味がまるで違うので混同に注意。前置詞は on を取り、I could go either way on the timing の形で覚えると即使える。"
-    },
-    {
-      type: "phrase", term: "we're talking past each other", ipa: "", register: "議論・調停（噛み合わなさの指摘）",
-      meaning_en: "used to point out that two people are arguing without engaging with what the other is actually claiming",
-      meaning_ja: "「議論が噛み合っていない」（互いに別のことを論じている）",
-      examples: [
-        "I think we're talking past each other — you're arguing about whether the synergies are achievable, and I'm arguing about when they land.",
-        "After twenty minutes we realized we'd been talking past each other: he meant his brother's wedding, and I meant ours."
-      ],
-      synonyms: [
-        { term: "be at cross purposes", nuance_ja: "そもそも目指しているものが食い違っている状態を指す。talk past each otherは目的が同じでも論点だけがずれている場合に使える点で適用範囲が広い。" },
-        { term: "not be on the same page", nuance_ja: "前提や認識の共有ができていないことを穏やかに指す表現。会話が実際に空転しているという現在進行の状況までは描かない。" }
-      ],
-      explanation_ja: "互いの言葉が相手を素通りして飛んでいく、というイメージの表現で、ドイツ語 aneinander vorbeireden の発想がそのまま英語に定着したという説もある。優れているのは、どちらが正しいかを判定せずに「今この瞬間の噛み合わなさ」だけを指摘できる点で、誰の面子も潰さずに議論を仕切り直せる。ほぼ必ず進行形で使い、直後に「あなたはXを、私はYを論じている」と論点を並べて示すのが定型の流れになる。一方向を指す \"you're talking past my question\" も可能だが、こちらは相手を責める色がはっきり出る。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "wonky", ipa: "/ˈwɑːŋki/", register: "政策・分析（米国口語・英国では別義）",
-      meaning_en: "absorbed in technical detail and policy mechanics to a degree most people would find excessive",
-      meaning_ja: "専門的な細部に踏み込みすぎた、理屈っぽく数字寄りの",
-      examples: [
-        "This gets a little wonky, but the entire valuation gap comes down to how the two companies capitalize software development costs.",
-        "He hosts a wonderfully wonky podcast about municipal water pricing, and somehow it's the best thing I listen to."
-      ],
-      synonyms: [
-        { term: "technical", nuance_ja: "専門的であることを中立に述べる語。wonkyが伴う「本人が楽しんで細部に入り込んでいる」という愛嬌のあるニュアンスはない。" },
-        { term: "in the weeds", nuance_ja: "細部に埋もれて全体を見失っている状態への批判で、明確に否定的。wonkyは自嘲にも称賛にも使え、評価の向きが固定されていない点が違う。" },
-        { term: "esoteric", nuance_ja: "内輪にしか通じない難解さを指し、閉鎖性への非難が含まれる。wonkyの対象は公開された政策や数字であり、秘匿性の含みはない。" }
-      ],
-      explanation_ja: "policy wonk（政策オタク）から派生した米国口語で、ワシントンの政策コミュニティを中心に一般語化した。最大の特徴は評価が固定していないことで、自分で \"this gets a bit wonky\" と前置きすれば聞き手への親切な予告になり、他人に向ければ「細かすぎる」という軽い揶揄にもなる。一方、英国英語の wonky はまったく別語源で「ぐらついている、いびつな」（a wonky chair）を意味するため、英国人相手に米国語義で使うと通じないか誤解される。同じ綴りで大西洋を挟んで意味が割れている、実用上やや危険な語でもある。"
-    },
-    {
-      term: "beleaguered", ipa: "/bɪˈliːɡərd/", register: "報道英語（企業・人物の枕詞）",
-      meaning_en: "under sustained pressure and criticism from several directions at once, and visibly struggling to cope",
-      meaning_ja: "四面楚歌の、内外から叩かれて苦境にある",
-      examples: [
-        "The beleaguered lender has lost three CFOs in eighteen months and now trades at a third of book value.",
-        "The beleaguered manager somehow kept his job through a nine-game losing streak."
-      ],
-      synonyms: [
-        { term: "embattled", nuance_ja: "ほぼ同義で交換可能な場面が多いが、戦って抵抗しているという能動的な姿勢がやや強い。beleagueredは包囲されて消耗している受け身の色が濃い。" },
-        { term: "troubled", nuance_ja: "問題を抱えていることを広く述べる穏当な語。beleagueredが必ず含む「四方から同時に攻められている」という圧力の方向性を持たない。" },
-        { term: "under fire", nuance_ja: "特定の批判を浴びている一時的な局面に焦点がある。beleagueredは長期にわたって消耗している継続的な状態を指し、時間軸が違う。" }
-      ],
-      explanation_ja: "leaguer は「包囲陣」を意味する古いオランダ語由来の語で、原義は城を包囲された状態。四方を囲まれてじりじり消耗するという含みが今も核心に残っている。報道英語では the beleaguered bank / the beleaguered CEO のように名詞の直前に置く枕詞としての用法が圧倒的で、この位置で見かけたら「この会社は既に厳しい」という書き手の評価が織り込まれていると読める。自社について使えばかなり強い自己批判になるため、実務では第三者を語る場面に限るのが安全。"
-    },
-    {
-      term: "dogged", ipa: "/ˈdɔːɡɪd/", register: "報道・人物評（肯定的）",
-      meaning_en: "persistent in a slow, stubborn way that continues long after most people would have given up",
-      meaning_ja: "粘り強い、しつこいほど食らいついて離れない",
-      examples: [
-        "It took two years of dogged follow-up with the sellers' advisers before they finally opened the data room to us.",
-        "Her dogged refusal to accept the first three answers is the only reason the story ever ran."
-      ],
-      synonyms: [
-        { term: "tenacious", nuance_ja: "掴んで離さない強さを称える語で、才気や機敏さも連想させる。doggedは泥臭く単調に続ける鈍重さを含む点で手触りが違う。" },
-        { term: "persistent", nuance_ja: "最も一般的で中立的な語。doggedが持つ「常人ならとうに諦めている」という時間の長さと苦行めいた響きはない。" },
-        { term: "relentless", nuance_ja: "容赦なく攻め続ける圧の強さに焦点があり、追われる側の不快さを含意することが多い。doggedは追う側の忍耐を称える語で、視点が逆になる。" }
-      ],
-      explanation_ja: "犬が獲物に食らいついて離さない姿が語源で、賢さではなく粘りのほうを称える語。最大の落とし穴は発音で、動詞 dog の過去形 dogged（/dɔːɡd/、一音節）とは違い、形容詞は必ず二音節の /ˈdɔːɡɪd/ と読む。同じ現象は aged、learned、blessed にも起きるので、この四語はまとめて覚えると効率がいい。実際の出現頻度では副詞の doggedly（\"she doggedly refused to sign\"）のほうが高く、こちらも同じ二音節読みになる。"
-    },
-    {
-      term: "janky", ipa: "/ˈdʒæŋki/", register: "テック・口語（かなりカジュアル）",
-      meaning_en: "of poor or unreliable quality; working, but visibly held together badly",
-      meaning_ja: "作りが雑で当てにならない、動くには動くがガタガタの",
-      examples: [
-        "The reporting pipeline is janky — it runs, but somebody has to restart it by hand every third Monday.",
-        "We booked the cheap flight and got a janky little plane with duct tape on the tray table."
-      ],
-      synonyms: [
-        { term: "clunky", nuance_ja: "重くて洗練されていない使い勝手の悪さに焦点がある。動きはするが不格好という意味で、jankyの「いつ壊れてもおかしくない」という不安定さは含まない。" },
-        { term: "flaky", nuance_ja: "動いたり動かなかったりする再現性のなさに限定される語。jankyはそれに加えて、作りの雑さという原因のほうまで示唆する。" },
-        { term: "shoddy", nuance_ja: "手抜き仕事としての品質の低さを非難する、より道義的で強い語。jankyには「まあ動いているからいいか」という諦め混じりの軽さがある。" }
-      ],
-      explanation_ja: "語源ははっきりしないが、2000年代以降の米国口語、とりわけソフトウェア開発の現場から一般に広がった比較的新しい形容詞。核心は「壊れている」ではなく「動いてはいるが、いつ壊れてもおかしくない雑さ」で、社内システムや暫定的な回避策を語るときの定番になっている。かなりカジュアルなので、社内チャットや立ち話では自然でも、顧客向けの文書や正式なレビューでは unreliable や poorly built に言い換えるべき語。使えると距離が縮まる一方、使う場所を間違えると軽く見られる、典型的なレジスター依存語でもある。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "take a haircut",
-      meaning_en: "to accept a reduction in the value of what you are owed or what you hold, usually as the price of getting a deal done",
-      meaning_ja: "（債権額や価格の）カットを受け入れる、目減りを飲む",
-      examples: [
-        "The junior lenders took a thirty percent haircut to keep the restructuring out of court.",
-        "If you want it sold this quarter rather than next spring, you're going to have to take a haircut on the asking price."
-      ],
-      synonyms: [
-        { term: "take a write-down", nuance_ja: "会計上の帳簿価額を切り下げる正式な処理の話。take a haircutは当事者が交渉の結果として損失を飲んだ、という合意のニュアンスを伴う。" },
-        { term: "take a hit", nuance_ja: "損失を被ったことを広く指す口語。haircutのように「元本や請求額から一定率を削られる」という定量的な構造は含まない。" }
-      ],
-      explanation_ja: "元は証券担保の掛け目、つまり担保評価を市場価格より低く見積もる割合を指した金融の術語で、髪を切っても頭は残る、という比喩から来ている。実務では債務再編、ディストレスト投資、価格交渉の三場面で頻出し、\"a 30% haircut\" のように率とセットで使うのが標準形。重要なのは全損ではないことで、削られはするが回収は残るという含みが必ずある。動詞は take のほか accept、impose（課す側）、apply も使われ、受け身の \"lenders were asked to accept a haircut\" も定番の形。"
-    },
-    {
-      phrase: "stand up (a team / a process)",
-      meaning_en: "to create something from nothing and get it actually operating, typically a team, a function, or a process",
-      meaning_ja: "（組織や仕組みを）ゼロから立ち上げて稼働させる",
-      examples: [
-        "We stood up a separate integration office within three weeks of signing, staffed half from each side.",
-        "It took them a weekend to stand up a working prototype and about a year to make it safe."
-      ],
-      synonyms: [
-        { term: "set up", nuance_ja: "最も一般的で対象を選ばない語。stand upが含む「短期間で、実際に動く状態まで持っていく」という速度と実働性の強調はない。" },
-        { term: "spin up", nuance_ja: "テック寄りで、サーバーやインスタンスを起動する語感が残る。人の組織よりシステムや環境を対象にするほうが自然に響く。" }
-      ],
-      explanation_ja: "米軍で新編部隊を実戦可能な状態にすることを stand up a unit と言ったのが起源で、そこからコンサルティングと事業会社の現場に広がった。set up との違いは「実際に機能し始めるところまで」を含意する点で、箱だけ作って動いていない状態には使いにくい。対義語は stand down（部隊を解散する、活動を停止する）で、\"we stood the task force down after close\" のように使える。ディールの統合作業、規制対応の体制構築、新規事業の立ち上げを語る場面で、set up より一段プロらしく響く。"
-    },
-    {
-      phrase: "pencil in (a date / a number)",
-      meaning_en: "to record something provisionally, on the shared understanding that it can still be changed",
-      meaning_ja: "（日程や数字を）仮置きする、鉛筆書きで入れておく",
-      examples: [
-        "Let's pencil in eight percent for now and revisit it once the channel data comes back.",
-        "I've penciled you in for Thursday at four, but tell me if something better comes up."
-      ],
-      synonyms: [
-        { term: "put a placeholder in", nuance_ja: "中身が未定であることを明示する語で、その数字や日程に根拠がないことを前提とする。pencil inは一応の根拠はあるが確定ではない、という一段先の状態を指す。" },
-        { term: "tentatively schedule", nuance_ja: "フォーマルで、日程にしか使えない。pencil inのように財務モデルの前提数値を仮置きする用法には対応できない。" }
-      ],
-      explanation_ja: "鉛筆なら消せるがインクは消せない、という筆記具の対比がそのまま比喩になった表現で、対になる \"let's ink it\" や \"is that in pencil or in ink?\" も実際に使われる。日程調整の I'll pencil you in が最も有名だが、財務モデルの前提数値を仮に置くときにも同じくらい自然に使えるのが実務上の価値。相手の予定を押さえながら拘束はしない、という配慮を一語で伝えられるため、丁寧さの調整装置としても働く。受け身の \"you're penciled in for the 12th\" もよく見る形で、英国綴りでは pencilled と l が重なる。"
-    },
-    {
-      phrase: "gold-plate (a solution / a requirement)",
-      meaning_en: "to add features, controls, or refinements well beyond what is actually required, at a cost that is out of proportion to the benefit",
-      meaning_ja: "必要以上に作り込む、過剰品質にする",
-      examples: [
-        "We gold-plated the compliance build — three quarters of those controls appear nowhere in the regulation itself.",
-        "He gold-plated the kitchen renovation to the point where he'll never get the money back if he sells."
-      ],
-      synonyms: [
-        { term: "over-engineer", nuance_ja: "技術的に複雑にしすぎることに焦点があり、対象は設計や仕組み。gold-plateは費用対効果に見合わない贅沢という経済的な批判の色が濃い。" },
-        { term: "scope creep", nuance_ja: "要件がなし崩しに膨らむ現象そのものを指す名詞で、誰かの意図的な判断とは限らない。gold-plateは作り手が能動的に盛り込んだ行為を指す。" }
-      ],
-      explanation_ja: "金メッキ（gold plating）を施す、つまり機能とは無関係な装飾に金をかける、という比喩。プロジェクト管理の世界では正式な用語として定着しており、避けるべき行為として教科書に名指しで挙げられる。規制の文脈でも重要で、EU立法を国内法化する際に各国が独自の上乗せ規制を加える現象は英国で gold-plating と呼ばれ、政策論争の語彙になっている。字面は褒め言葉に見えるが常に批判語である点が、この表現の一番の落とし穴。"
-    }
-  ],
-  todayQuiz: [
-    { question: "The fund cut its equity exposure on the tariff headline, then bought back a week later just before the second selloff — it was ___ twice in ten days.", choices: ["whipsawed", "gold-plated", "dovetailed", "penciled in"], answerIndex: 0, explanation: "\"Whipsaw\" describes losing twice because a price moved sharply one way and then reversed. The word requires two opposite movements, so a single bad call in one direction would not qualify." },
-    { question: "The acquisition ___ our existing distribution almost perfectly: the same customers, the same logistics, and virtually no overlapping products.", choices: ["bristles at", "dovetails with", "pours cold water on", "stands up"], answerIndex: 1, explanation: "\"Dovetail with\" comes from a joinery technique and claims that two things fit together so precisely that they function as one. It asserts structural fit, not merely general agreement of direction." },
-    { question: "The CFO ___ at the word \"aggressive\" — it was the only moment all afternoon when he interrupted anyone.", choices: ["bristled", "grandstanded", "dovetailed", "penciled"], answerIndex: 0, explanation: "To \"bristle at\" something is to show a flash of visible irritation, taken from an animal raising its hackles. It describes the observable reaction rather than the internal feeling, which is why it suits a written account of a meeting." },
-    { question: "The hearing produced no new facts — three hours of ___ for the cameras.", choices: ["grandstanding", "gold-plating", "talking past each other", "standing up"], answerIndex: 0, explanation: "\"Grandstanding\" is performing for an audience instead of addressing the problem, and it requires that an audience exist, which a televised hearing supplies. \"Talking past each other\" would mean the participants failed to engage with one another's arguments, which is a different failure." },
-    { question: "Management ___ the buyback question before the analyst had even finished asking it.", choices: ["poured cold water on", "fired a shot across the bow of", "was not wedded to", "stood up"], answerIndex: 0, explanation: "\"Pour cold water on something\" means to deliberately reduce enthusiasm for an idea or expectation, and it takes the hot topic as its object rather than a person. A shot across the bow would be a warning to a rival, not a response to a question." },
-    { question: "Cutting price in two small test markets was ___: no real damage done, but a clear signal that they could fund a national price war if we pushed them.", choices: ["a shot across the bow", "a haircut", "an arm's-length transaction", "a wonky detail"], answerIndex: 0, explanation: "\"A shot across the bow\" is a warning that deliberately stops short of causing harm, from the naval practice of firing ahead of a ship rather than at it. Once real damage is done, the phrase no longer applies." },
-    { question: "I wasn't on either deal team, so ___ — read what follows as a genuinely outside view.", choices: ["I don't have a dog in this fight", "I'm not wedded to it", "I could go either way", "we're talking past each other"], answerIndex: 0, explanation: "\"I don't have a dog in this fight\" says you have no stake in the outcome, which is offered as a guarantee of impartiality. \"I could go either way\" would be a claim about the balance of the arguments, not about your own interest." },
-    { question: "The lease is with an entity the founder's family controls, so the rent has to be set ___ or the auditors will have questions.", choices: ["at arm's length", "at a haircut", "in pencil", "under fire"], answerIndex: 0, explanation: "\"At arm's length\" means on the terms a genuinely independent party would have agreed to. It is the standard test applied to related-party dealings precisely because the parties involved are not independent." },
-    { question: "I used twelve percent because it matched the peer set, but ___ — bring me a better anchor and I'll change it.", choices: ["I'm not wedded to it", "I don't have a dog in this fight", "for my money", "it cuts both ways"], answerIndex: 0, explanation: "\"I'm not wedded to it\" signals that you had a reason for a proposal but will give it up for a better one. It separates the idea from the person who made it, which makes disagreement easier for everyone else in the room." },
-    { question: "The ___ lender has lost three CFOs in eighteen months and now trades at a third of book value.", choices: ["beleaguered", "dogged", "wonky", "janky"], answerIndex: 0, explanation: "\"Beleaguered\" means besieged from several directions and struggling under sustained pressure; it is standard news-English placed immediately before the noun. \"Dogged\" is complimentary and describes stubborn persistence, not distress." },
-    { question: "Two years of ___ follow-up with the sellers' advisers finally got us into the data room.", choices: ["dogged", "beleaguered", "janky", "arm's-length"], answerIndex: 0, explanation: "\"Dogged\" praises persistence that continues long after most people would have stopped. Note the pronunciation: as an adjective it has two syllables, /ˈdɔːɡɪd/, unlike the one-syllable past tense of the verb." },
-    { question: "The reporting pipeline is ___ — it runs, but somebody has to restart it by hand every third Monday.", choices: ["janky", "wonky", "dogged", "beleaguered"], answerIndex: 0, explanation: "\"Janky\" describes something that works but is visibly held together badly and cannot be relied on. In American usage \"wonky\" means absorbed in technical detail; only in British English does it mean unsteady or misaligned." }
-  ]
-},
-{
   date: "2026-08-29",
   dateLabel: "2026年8月29日（土）",
   readTimeMin: 33,
@@ -2364,9 +2050,327 @@ const ENGLISH_REPORTS = [
     { question: "The client is ___ about formatting in a way that has nothing to do with the actual analysis.", choices: ["finicky", "particular", "high-maintenance", "threadbare"], answerIndex: 0, explanation: "\"Finicky\" implies an excessive, borderline unreasonable standard of care, fitting fussiness over formatting unrelated to substance. \"Particular\" is neutral and can describe justified preferences rather than excessive fussiness." },
     { question: "Once you ___ between the hiring freeze and the delayed launch, the budget story makes a lot more sense.", choices: ["connect the dots", "get ahead of the story", "run point", "throw money at it"], answerIndex: 0, explanation: "\"Connect the dots\" means seeing how separate pieces of information relate to reveal a pattern. \"Get ahead of the story\" means proactively addressing an issue before it becomes public, an unrelated meaning." }
   ]
+},
+{
+  date: "2026-09-07",
+  dateLabel: "2026年9月7日（月）",
+  readTimeMin: 32,
+  coreItems: [
+    {
+      type: "word", term: "germane", ipa: "/dʒərˈmeɪn/", register: "会議・議論（フォーマル、やや書き言葉寄り）",
+      meaning_en: "relevant and directly connected to the matter currently being discussed, especially used to say something does or does not belong in the conversation",
+      meaning_ja: "（議論の対象と）直接関係がある、本題に即した",
+      examples: [
+        "Let's keep the discussion germane to the covenant terms — the pricing debate can wait for the next session.",
+        "I don't think your brother-in-law's opinion on crypto is germane to whether we refinance the mortgage."
+      ],
+      synonyms: [
+        { term: "relevant", nuance_ja: "germaneよりカジュアルで汎用的。germaneは「今まさに議論されている論点」との結びつきを強調する、より書き言葉的で選別的な語。" },
+        { term: "pertinent", nuance_ja: "ほぼ同義でフォーマル度も近いが、pertinentは「情報や事実」に使われることが多く、germaneは「発言・論点・質問」に使われる頻度が高い。" },
+        { term: "relevant to the matter at hand", nuance_ja: "説明的な言い換えで自然な会話では長すぎる。germaneはこれを一語で言い切れる。" }
+      ],
+      explanation_ja: "中世英語で「同じ血筋の、近親の」を意味した語が語源で、\"german cousin\"（実の従兄弟）にその名残がある。血縁の近さの比喩が「議論との近さ」に転用され、現在は議事の脱線を穏やかに指摘する語として定着している。会議で司会者が \"Is that germane?\" と言えば、遠回しに「それは今の論点と関係ない」と釘を刺す合図になる。否定形 not germane / germane to nothing のほうが実務では出現頻度が高く、脱線した発言をやんわり止める便利な一語。"
+    },
+    {
+      type: "word", term: "upshot", ipa: "/ˈʌpʃɒt/", register: "要約・結論（口語〜ビジネス両方、フォーマル度中）",
+      meaning_en: "the final result or main conclusion of a discussion, process, or series of events, especially after a lot of detail has been laid out",
+      meaning_ja: "結局のところの結論、要するに行き着く先",
+      examples: [
+        "We can debate the multiple all afternoon, but the upshot is the same: at this price, the deal doesn't clear our hurdle rate.",
+        "The upshot of the whole renovation saga is that we're a month behind and ten grand over budget."
+      ],
+      synonyms: [
+        { term: "bottom line", nuance_ja: "ほぼ同義でビジネス色が強い。upshotはあらゆる状況（雑談・歴史的経緯）に使える中立語で、bottom lineは主に損益や意思決定の文脈に限られる。" },
+        { term: "the takeaway", nuance_ja: "「学びとして持ち帰るべき点」に焦点があり、教訓めいたニュアンス。upshotは単に「結果として何が起きたか」を述べるだけで教訓性は含意しない。" },
+        { term: "net result", nuance_ja: "フォーマルで計算的な響き。upshotのほうが口語としての自然さがあり、日常会話でも違和感なく使える。" }
+      ],
+      explanation_ja: "元はアーチェリー用語で、一連の射撃の最後の一矢（up + shot）を指し、そこから「一連の出来事の最終的な結果」という意味に転じた。文頭で \"The upshot is...\" と切り出すと、長い説明を要約して結論だけを先に伝える合図になり、特に込み入った経緯を報告する場面で重宝する。似た働きの bottom line が数字寄りなのに対し、upshotは人間関係のもつれや交渉の顛末など、数字に還元できない話にも自然に使える点が実務上の使い分けどころ。"
+    },
+    {
+      type: "word", term: "voracious", ipa: "/vəˈreɪʃəs/", register: "描写語（フォーマル〜中間、やや文学的な響き）",
+      meaning_en: "having or showing a very great appetite for something, especially in a way that seems impossible to satisfy",
+      meaning_ja: "貪欲な、飽くなき（食欲・欲求について）",
+      examples: [
+        "The fund built a reputation as a voracious acquirer of mid-market SaaS businesses, closing eleven bolt-ons in eighteen months.",
+        "My nephew is a voracious reader — he finished the entire series before we'd even wrapped up dinner."
+      ],
+      synonyms: [
+        { term: "insatiable", nuance_ja: "「満たされない」ことそのものに焦点があり、しばしば否定的な含みを持つ。voraciousは「量の多さ・勢いの強さ」を強調し、文脈次第で称賛にも使える中立性がある。" },
+        { term: "ravenous", nuance_ja: "本来は「飢えて猛烈に空腹な」を指す身体的な語。voraciousは比喩として知識欲や事業拡大意欲にも自然に使えるが、ravenousを比喩に使うとやや大げさに響く。" },
+        { term: "hungry for (something)", nuance_ja: "平易でカジュアル。voraciousはより書き言葉的で、形容する対象への強い賛嘆または警戒のニュアンスを持たせられる。" }
+      ],
+      explanation_ja: "ラテン語 vorare（貪り食う）に由来し、voreという語根は devour（貪り食う）や carnivorous（肉食の）とも親戚関係にある。文字通りの食欲だけでなく、読書欲・買収意欲・情報欲など「尽きることのない欲求」全般に使えるのが実務上の価値で、特に企業のM&A戦略を描写する記事で \"a voracious acquirer\" という定型句をよく見かける。良い意味にも悪い意味にも転びうる語で、文脈がその欲求を賞賛しているのか警戒しているのかを決める点に注意したい。"
+    },
+    {
+      type: "word", term: "insidious", ipa: "/ɪnˈsɪdiəs/", register: "リスク・問題の描写（フォーマル、警告的）",
+      meaning_en: "proceeding or spreading in a gradual, subtle way that causes serious harm before it is noticed",
+      meaning_ja: "気づかぬうちに深刻な害を及ぼす、じわじわと蝕むような",
+      examples: [
+        "Scope creep is insidious — no single change feels like a big deal, and then one day you're three months behind with nobody able to say exactly why.",
+        "The most insidious part of the layoffs wasn't the announcement, it was the six months of rumors that preceded it."
+      ],
+      synonyms: [
+        { term: "gradual", nuance_ja: "単に「徐々に」という速度を述べるだけで、害の深刻さや気づかれにくさという含意はない。" },
+        { term: "covert", nuance_ja: "「意図的に隠された」ことに焦点があり、行為主体の意図を前提とする。insidiousはプロセスや現象そのものが持つ性質を描写でき、悪意ある主体を必要としない。" },
+        { term: "creeping", nuance_ja: "近い響きだが口語的でやや軽い。insidiousはより深刻な害（健康・組織崩壊・財務悪化）を伴う場面向けのフォーマルな語。" }
+      ],
+      explanation_ja: "ラテン語 insidiae（待ち伏せ、罠）に由来し、狩人が獲物に気づかれないよう身を潜めて待つイメージが核にある。したがって単に「徐々に」ではなく「気づいたときには手遅れになっている」という時間差の恐ろしさを含意するのが決定的な違い。医学（病気の進行）と金融・組織論（リスクの蓄積、文化の腐敗）の両方で頻出し、\"the risk is insidious rather than acute\"（急性ではなく静かに蓄積するリスクだ）という言い回しはリスク管理の議論で定番になっている。"
+    },
+    {
+      type: "idiom", term: "cut from the same cloth", ipa: "", register: "人物評（中立〜やや口語、人物比較）",
+      meaning_en: "to share the same essential character, values, or style as another person, often used to note a strong resemblance in temperament rather than appearance",
+      meaning_ja: "（気質・価値観が）同じ生地から裁たれた、根っこが同じタイプの人間",
+      examples: [
+        "The new CFO and the founder are cut from the same cloth — both obsessive about unit economics and allergic to PowerPoint.",
+        "She and her mother are cut from the same cloth: neither one of them can walk past a yard sale without stopping."
+      ],
+      synonyms: [
+        { term: "two peas in a pod", nuance_ja: "親密さや行動を共にする様子に焦点があり、性格的な類似というよりは「いつも一緒にいる」ニュアンスが強い。cut from the same clothは初対面でも見抜ける気質の根本的な一致を指す。" },
+        { term: "birds of a feather", nuance_ja: "「類は友を呼ぶ」に近く、似た者同士が集まる現象を述べる。cut from the same clothは二者間の比較そのものに焦点があり、集団形成の含意はない。" },
+        { term: "similar in nature", nuance_ja: "説明的で平板な言い換え。イディオムが持つ生地・仕立てという具体的なイメージの喚起力がない。" }
+      ],
+      explanation_ja: "仕立屋が一反の生地（cloth）から複数の服を裁断すると、生地の質も柄も当然同じになる、という比喩が語源。したがって単なる「似ている」ではなく「根本的な素材が同じだから似ているのは当然だ」という納得感を伴うのが特徴。人物の外見ではなく気質・価値観・仕事のスタイルについて使うのが原則で、\"they're cut from the same cloth\" は褒め言葉にも皮肉にも使える両義的な表現。逆に「正反対のタイプ」を言いたいときは \"cut from a different cloth\" と否定せず対比形で使うのが自然。"
+    },
+    {
+      type: "idiom", term: "bite the bullet", ipa: "", register: "決断・実行（口語、意志の強さを示す）",
+      meaning_en: "to force yourself to do something difficult, unpleasant, or painful that you have been avoiding, because it can no longer be postponed",
+      meaning_ja: "覚悟を決めて（痛みを伴うことを）実行する、腹をくくる",
+      examples: [
+        "We finally bit the bullet and restated two years of financials rather than let the discrepancy linger into the audit.",
+        "I bit the bullet and told my roommate the arrangement wasn't working — three months too late, honestly."
+      ],
+      synonyms: [
+        { term: "grin and bear it", nuance_ja: "苦痛を我慢して耐え忍ぶことに焦点があり、能動的な決断や行動の開始は含意しない。bite the bulletは「先延ばしにしていた行動をついに起こす」という決断の瞬間を指す。" },
+        { term: "take the plunge", nuance_ja: "新しい挑戦への飛び込みを表し、必ずしも苦痛や不快を伴わない（ポジティブな決断にも使える）。bite the bulletは対象が明確に「嫌なこと・痛みを伴うこと」である点が違う。" },
+        { term: "suck it up", nuance_ja: "非常にカジュアルで、しばしば命令形で使われ相手を突き放す響きがある。bite the bulletはより中立的で、自分自身の決断を描写する際にも違和感なく使える。" }
+      ],
+      explanation_ja: "麻酔のなかった時代の外傷外科手術で、患者が痛みに耐えるために弾丸を歯で噛みしめた、という逸話が語源とされる（史実としての裏付けには諸説あるが、語源説話として広く流布している）。核心は「避けられない苦痛を先延ばしにするのをやめて、今それに立ち向かう」という決断のタイミングで、単なる我慢とは違い必ず能動的な一歩を伴う。人員削減、値上げ、謝罪など、先送りするほど傷が深くなるタイプの意思決定を報じる際の定番表現。"
+    },
+    {
+      type: "idiom", term: "pull the rug out from under (someone)", ipa: "", register: "裏切り・急な撤退（やや強い、被害者視点）",
+      meaning_en: "to suddenly withdraw support, resources, or an agreement from someone, leaving them in a much worse position than they expected to be in",
+      meaning_ja: "（突然）はしごを外す、後ろ盾を急に取り払って窮地に陥れる",
+      examples: [
+        "The lead investor verbally committed to the round and then pulled the rug out from under us two days before close.",
+        "Just when the kids had settled into the new school, the company transferred him again — it felt like the rug had been pulled out from under the whole family."
+      ],
+      synonyms: [
+        { term: "leave someone in the lurch", nuance_ja: "助けを必要としている人を見捨てて放置することに焦点があり、必ずしも「直前まで支援していたのに急に」という落差は含意しない。pull the rug outは支援があった状態からの急転直下を強調する。" },
+        { term: "back out at the last minute", nuance_ja: "直前でのキャンセルという行為自体を淡々と述べる中立的な言い方。イディオムのほうが「相手を意図的に不安定にした」という非難のニュアンスが強い。" },
+        { term: "blindside someone", nuance_ja: "予告なく不意打ちすることに焦点があり、必ずしも「支援の撤回」という具体的な内容は含まない。pull the rug outは常に「頼りにしていた足場を奪う」という構造を持つ。" }
+      ],
+      explanation_ja: "立っている人の足元の絨毯を急に引き抜けば、その人はバランスを崩して倒れる、という視覚的に鮮明な比喩が語源。したがって「単に断る」のではなく「それまで確かにあった支えを土壇場で失わせる」という落差の大きさが核心にあり、被害者側の視点で語られることがほとんど。資金調達、提携解消、家族の急な方針転換など、事前の期待と現実の落差が大きい場面で強い感情を込めて使われる。受動態 have the rug pulled out from under you の形も同じくらい頻出する。"
+    },
+    {
+      type: "idiom", term: "give someone a run for their money", ipa: "", register: "競争描写（好意的〜中立、称賛を含む）",
+      meaning_en: "to compete against someone so strongly and skillfully that their eventual win is far from easy or guaranteed",
+      meaning_ja: "（相手に）苦戦させるほどの好勝負をする、あわやというところまで追い詰める",
+      examples: [
+        "The incumbent kept its market share, but the new entrant's pricing gave it a real run for its money in the first two quarters.",
+        "My grandmother still gives everyone a run for their money at Scrabble — she's ninety-one and merciless."
+      ],
+      synonyms: [
+        { term: "put up a good fight", nuance_ja: "敗北を前提としつつ健闘したことを述べる。give someone a run for their moneyは勝敗が実際にどちらに転ぶか分からないほどの接戦だったという含意がより強い。" },
+        { term: "keep someone on their toes", nuance_ja: "気を抜けない緊張状態を保たせることに焦点があり、必ずしも直接対決の文脈である必要はない。このイディオムは明確な競争・勝負の場面に限定される。" },
+        { term: "be a worthy competitor", nuance_ja: "説明的でフォーマル。イディオムのほうが「お金を賭けた勝負」という比喩の生き生きとした響きを保っている。" }
+      ],
+      explanation_ja: "賭けレースで、本命馬が楽勝すると思われた相手に「賭け金分は働かせた（＝簡単には勝たせなかった）」という競馬由来の比喩。したがって主役は常に「本来なら楽に勝つはずだった側」で、その相手を苦しめた挑戦者を主語にして使うのが基本形。皮肉ではなく素直な称賛の響きを持つ表現で、格下と目されていた競合やスタートアップが健闘したことを報じる際の定番。人物だけでなく製品やチームにも使え、\"the new model gives the market leader a run for its money\" のような形も自然。"
+    },
+    {
+      type: "phrase", term: "give me the headline", ipa: "", register: "会議・報告（口語、時間節約を求める合図）",
+      meaning_en: "a request for the single most important point or conclusion first, before any supporting detail, background, or explanation",
+      meaning_ja: "結論（一番大事な一行）だけ先に教えて、というリクエスト",
+      examples: [
+        "I've got four minutes before my next call — give me the headline and send the deck for the rest.",
+        "Don't walk me through the whole inspection report. Just give me the headline: is the roof going to hold another winter or not?"
+      ],
+      synonyms: [
+        { term: "cut to the chase", nuance_ja: "前置きを飛ばして本題に入れという指示全般を指し、必ずしも「一文で要約せよ」とは限らない。give me the headlineはニュース記事の見出しのように「結論を一行で」という具体的な形式を求める点が違う。" },
+        { term: "what's the tl;dr", nuance_ja: "ネット由来のスラングでカジュアル度が高く、文章やチャット向き。give me the headlineは対面や電話の会議でも自然に使える口頭表現。" },
+        { term: "bottom-line it for me", nuance_ja: "ほぼ同義で交換可能。headlineのほうが新聞の見出しという視覚的な比喩を保っており、bottom-line itはより会計・数字寄りの響きがある。" }
+      ],
+      explanation_ja: "新聞の見出し（headline）が本文を読まなくても要点が分かるように作られていることからの比喩。多忙な経営陣やクライアントとの短い時間で情報を伝える必要があるビジネス現場で、詳細説明の前に結論を要求する定型句として定着している。似た bottom-line it for me が数字の結論を求めるのに対し、give me the headlineはニュース性・重大性のある結論全般（数字に限らない）を求められる点で汎用性が高い。会議の冒頭でファシリテーターが自分から \"Let's start with headlines, then dig into detail.\" と使うことも多い。"
+    },
+    {
+      type: "phrase", term: "run the traps", ipa: "", register: "調査・根回し（フォーマル寄りのビジネス俗語、米国色）",
+      meaning_en: "to quickly check with all the relevant people or sources on a matter before committing to a position or making a decision",
+      meaning_ja: "（決める前に）関係者・情報源をひと通り当たって確認する",
+      examples: [
+        "Before we tell the board this is a done deal, let me run the traps with legal and compliance — I don't want a surprise in the room.",
+        "I ran the traps with a couple of friends who work in publishing before I signed with that agent."
+      ],
+      synonyms: [
+        { term: "do due diligence", nuance_ja: "フォーマルで手続き的、法務・財務の正式な調査プロセスを指すことが多い。run the trapsはより非公式で、電話やチャットでの手早い確認という軽さがある。" },
+        { term: "touch base with everyone", nuance_ja: "単に連絡を取ることに焦点があり、確認や検証という目的は必ずしも含意しない。run the trapsは「懸念や反応を探る」という調査的な目的が明確にある。" },
+        { term: "sound people out", nuance_ja: "人の反応や意見を探るという点で近いが、run the trapsは複数の情報源を網羅的に回るという「もれなく確認する」ニュアンスが強い。" }
+      ],
+      explanation_ja: "もともと猟や罠猟（trapping）で仕掛けた罠を一通り見回って確認する行為が語源とされ、米国のロビイングや政治スタッフの世界でよく使われてきた俗語がビジネス・投資の現場にも広がった表現。単に「聞いてみる」のではなく「決定や発表の前に、反対意見や見落としがないか関係各所を漏れなく点検する」という予防的な確認作業を指すのが核心。取締役会や重要な発表の直前に、根回しや裏取りを済ませたことを手短に伝える一言として便利。"
+    },
+    {
+      type: "phrase", term: "put some meat on the bones", ipa: "", register: "企画・提案の評価（口語、建設的な催促）",
+      meaning_en: "to add substance, detail, and evidence to an idea or plan that currently exists only in outline or rough form",
+      meaning_ja: "（骨組みだけの案に）肉付けする、具体的な中身を足す",
+      examples: [
+        "The strategy slide is fine as a headline, but the investment committee is going to want more meat on the bones before we take this further.",
+        "I like the idea for the trip — now let's put some meat on the bones: dates, budget, who's actually coming."
+      ],
+      synonyms: [
+        { term: "flesh out", nuance_ja: "ほぼ同義で交換可能。put meat on the bonesのほうが「骨組み」という比喩を保っているぶん口語としての鮮やかさがあり、flesh outはやや中立的で書き言葉にも馴染む。" },
+        { term: "add more detail", nuance_ja: "説明的で平板。イディオムが持つ「今はまだ骨だけの状態だ」という現状への評価のニュアンスがない。" },
+        { term: "build it out", nuance_ja: "プロダクトやシステムの構築文脈で使われることが多く汎用性が高いが、「不十分な計画に具体性を足す」という評価的な響きは put meat on the bonesほど強くない。" }
+      ],
+      explanation_ja: "骨格（bones）だけの状態に肉（meat）をつけて実体のある姿にする、という身体の比喩がそのまま使われている。単なる「詳細を追加する」ではなく、「今の案は概略・骨格の段階に過ぎず、意思決定にはまだ足りない」という評価を暗に含む点が実務上のポイントで、投資委員会やクライアントへのプレゼン準備の場面で頻繁に使われる。骨組み自体は悪くないという前提のもとでの建設的な催促であり、根本から作り直せという意味の back to the drawing board とは温度感が大きく異なる。"
+    },
+    {
+      type: "phrase", term: "put a bow on it", ipa: "", register: "完了・仕上げ（口語、達成感を伴う）",
+      meaning_en: "to finish a piece of work neatly and present it as complete, especially adding the final polish that makes it ready to hand over",
+      meaning_ja: "きれいに仕上げて（プレゼントのリボンをかけるように）完成させる",
+      examples: [
+        "The model's basically done — give it one more pass for typos and we can put a bow on it before the 5pm send.",
+        "We spent the whole weekend on the nursery and finally put a bow on it Sunday night, twenty minutes before the baby arrived."
+      ],
+      synonyms: [
+        { term: "wrap it up", nuance_ja: "ほぼ同義でより一般的だが、put a bow on itは「見た目にも美しく仕上げて誰かに渡す」という贈り物のような丁寧さの含意がある。" },
+        { term: "put the finishing touches on", nuance_ja: "フォーマルで説明的。イディオムのほうがカジュアルな達成感と満足感を込めやすい。" },
+        { term: "call it done", nuance_ja: "完了を宣言するだけの語で、仕上がりの美しさや丁寧さへの言及はない。put a bow on itは仕上がりのクオリティへの誇りが含まれる。" }
+      ],
+      explanation_ja: "プレゼントの箱にリボン（bow）をかけて完成させる仕草がそのまま比喩になっており、単に「終わらせる」のではなく「見栄えよく、渡せる状態に整えて終わらせる」という仕上げの丁寧さを強調するのが特徴。資料や提案書を仕上げる場面はもちろん、プロジェクトの最終盤で \"let's put a bow on this\" と言えば、細部を詰めて完成品として送り出そうという前向きな一言になる。似た wrap it up が単純な終了宣言なのに対し、こちらは仕上がりへのちょっとした誇りや満足感を伝えられる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "unctuous", ipa: "/ˈʌŋktʃuəs/", register: "人物評（強い批判、フォーマル寄り）",
+      meaning_en: "excessively flattering or ingratiating in a way that feels insincere and self-serving, often noted with distaste",
+      meaning_ja: "媚びへつらうような、いやらしいほど愛想のいい（不快感を伴う）",
+      examples: [
+        "The account rep was so unctuous about our 'visionary leadership' that half the room started checking their phones.",
+        "He gets unctuous around anyone who might promote him and forgets you exist the moment they leave the room."
+      ],
+      synonyms: [
+        { term: "obsequious", nuance_ja: "ほぼ同義でフォーマル度が近いが、obsequiousは「服従的なへつらい」により焦点があり、目上への過剰な追従を指すことが多い。unctuousは油っぽい質感の比喩から来ており、必ずしも上下関係を前提としない。" },
+        { term: "smarmy", nuance_ja: "口語で近い響きだが、unctuousよりもさらにカジュアルで軽蔑的。ビジネス文書ではunctuousのほうが自然に使える。" },
+        { term: "ingratiating", nuance_ja: "中立寄りで「気に入られようとする」行動そのものを述べるが、unctuousほど強い不快感・軽蔑の含みは持たない。" }
+      ],
+      explanation_ja: "ラテン語 unguere（油を塗る）に由来し、unguent（軟膏）と同じ語根を持つ。文字通り「油っぽい」から転じて、人当たりが良すぎて逆に胡散臭い、という感触を表す語になった。営業担当やコンサルタントが過剰にお世辞を言う場面、あるいは上司にだけ態度が変わる同僚を描写する際に好んで使われる、かなり辛辣な評価語である点に注意したい。"
+    },
+    {
+      term: "quixotic", ipa: "/kwɪkˈsɒtɪk/", register: "事業評・人物評（やや文学的、批判と敬意が混在）",
+      meaning_en: "extremely idealistic or ambitious to the point of being impractical, often admirable in spirit but unlikely to succeed",
+      meaning_ja: "現実離れして理想主義的な、無謀なほど大志を抱いた",
+      examples: [
+        "Launching a direct challenger to the incumbent card networks with an eight-person team was a quixotic bet, even if the thesis was right.",
+        "His quixotic plan to renovate the whole house himself lasted about as long as the first weekend."
+      ],
+      synonyms: [
+        { term: "idealistic", nuance_ja: "中立的で理想を追い求める姿勢一般を指す。quixoticはそこに「実現可能性の低さ」という評価が明確に加わる点が違う。" },
+        { term: "overambitious", nuance_ja: "野心が過大であることへの批判に焦点があり、quixoticが持つロマンチックで憎めない響きは薄い。" },
+        { term: "pie-in-the-sky", nuance_ja: "カジュアルで、実現性のなさをやや馬鹿にした調子がある。quixoticはより文学的・フォーマルで、失敗しても敬意を込めて語れる余地を残す。" }
+      ],
+      explanation_ja: "セルバンテスの小説『ドン・キホーテ』の主人公が風車を巨人と思い込んで突撃する場面に由来し、「高潔だが現実を見誤った挑戦」を指す文学由来の語。単なる無謀さではなく、動機の純粋さや志の高さへの一定の敬意を込められるのが他の批判語との違いで、失敗した挑戦者を切り捨てずに評価するときに便利。スタートアップの野心的すぎる事業計画や、政治家の実現困難な公約を評する記事で頻出する。"
+    },
+    {
+      term: "insular", ipa: "/ˈɪnsjələ/", register: "組織文化・地域評（批判的、構造への言及）",
+      meaning_en: "having or showing a closed, inward-looking attitude that resists outside ideas, people, or influence",
+      meaning_ja: "閉鎖的な、内輪だけで固まって外部を受け入れない",
+      examples: [
+        "The engineering team had grown insular after years of remote work — new hires said it took months just to learn who to ask for what.",
+        "Growing up on a small island made her wary of how insular a community can become without really noticing it."
+      ],
+      synonyms: [
+        { term: "parochial", nuance_ja: "視野の狭さ・関心の狭さに焦点があり、地理的・文化的な視野の限定性を指すことが多い。insularは「外部との接触や新しい影響を積極的に拒む」閉鎖性そのものに焦点がある。" },
+        { term: "clannish", nuance_ja: "内輪びいきや排他的な仲間意識を指し、しばしば特定の集団への強い忠誠心を伴う。insularはより中立的で、単に外部から孤立している状態そのものを描写できる。" },
+        { term: "cliquish", nuance_ja: "学校や職場の小集団が排他的にまとまる様子を指す口語的な語。insularは組織全体や地域社会など、より大きな単位にも使える点が異なる。" }
+      ],
+      explanation_ja: "ラテン語 insula（島）に由来し、島国・孤島のように外部から物理的に隔絶された状態がそのまま比喩に転用された語。したがって単なる「視野が狭い」ではなく「外の世界との接触自体が乏しく、それに気づいてすらいない」という孤立の構造を指すのが核心。組織文化の分析で「長年同じメンバーで固まったチームが外部のベストプラクティスを取り入れなくなる」現象を評する際によく使われ、批判的だが個人の性格ではなく環境・構造への言及として使えるのが便利な点。"
+    },
+    {
+      term: "vexed", ipa: "/vɛkst/", register: "問題・論点の描写（フォーマル、長期化した厄介さ）",
+      meaning_en: "(of a question, issue, or problem) difficult, much debated, and repeatedly causing frustration without a clear resolution",
+      meaning_ja: "（問題・論点が）長年議論されてきて厄介な、頭を悩ませ続ける",
+      examples: [
+        "How to value the earnout has been a vexed question since the LOI — nobody wants to be the one who blinks first.",
+        "Who pays for the shared driveway repair is a vexed topic between the two households, and has been for a decade."
+      ],
+      synonyms: [
+        { term: "thorny", nuance_ja: "ほぼ同義で交換可能な頻出語。vexedは問題が「人を悩ませ続けてきた」という時間的な蓄積・反復性をやや強く含意し、thornyは単純に扱いにくさそのものを指す。" },
+        { term: "contentious", nuance_ja: "対立や論争を伴うことに焦点があり、複数の立場が明確に争っている状況を指す。vexedは必ずしも対立を前提とせず、単に答えが出しにくい難問という含意でも使える。" },
+        { term: "unresolved", nuance_ja: "未解決という状態のみを述べる中立語。vexedはそこに「関係者を苛立たせ続けてきた」という感情的な重みを加える。" }
+      ],
+      explanation_ja: "動詞 vex（苛立たせる、悩ませる）の過去分詞形が形容詞化した語で、\"a vexed question\" のように問題そのものを修飾する定型的な使い方がほとんど。単に難しいだけでなく「何度も議論されてきたのに一向に解決しない」という履歴の長さを暗示するのが実務上のポイントで、契約書の解釈の食い違いや、家族間の長年の懸案事項など、繰り返し蒸し返される類の問題を指すのに向いている。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "hold water",
+      meaning_en: "(of an argument, explanation, or plan) to be logically sound and able to withstand scrutiny, without gaps or contradictions",
+      meaning_ja: "（議論・説明が）筋が通っている、検証に耐える",
+      examples: [
+        "Their explanation for the revenue recognition change doesn't hold water once you actually read the footnote.",
+        "It sounded like a good excuse for missing the flight, but it didn't hold water once she checked the departure board."
+      ],
+      synonyms: [
+        { term: "make sense", nuance_ja: "一般的で汎用的な語。hold waterは特に「厳しく検証された場合にも耐えられるか」という試験的なニュアンスを含む点が異なる。" },
+        { term: "stand up to scrutiny", nuance_ja: "ほぼ同義でよりフォーマル。hold waterは口語としての手軽さがあり、日常会話でも自然。" }
+      ],
+      explanation_ja: "ひびの入った容器は水を注いでもすぐに漏れてしまう、という比喩が語源で、論理の「漏れ」を水漏れにたとえている。肯定文よりも否定文（doesn't hold water）で使われる頻度が圧倒的に高く、相手の説明や言い訳の欠陥を指摘する際の定番表現になっている。監査や契約交渉で「その説明では通らない」と言いたいときに、直接的な非難を避けつつ論理の弱さを指摘できる便利な一言。"
+    },
+    {
+      phrase: "sweeten the deal",
+      meaning_en: "to make an offer more attractive by adding extra benefits, concessions, or incentives, usually in response to hesitation from the other side",
+      meaning_ja: "（相手の渋りに対応して）条件を上乗せして魅力的にする",
+      examples: [
+        "When the seller hesitated at the price, we sweetened the deal with a longer transition period and an earnout kicker.",
+        "The dealership sweetened the deal with free floor mats and an extended warranty once they saw we were about to walk."
+      ],
+      synonyms: [
+        { term: "add an incentive", nuance_ja: "説明的で中立的な言い方。sweeten the dealはより口語的で、交渉のドラマ性を感じさせる。" },
+        { term: "throw in extras", nuance_ja: "カジュアルでほぼ同義。sweeten the dealは特に「相手の抵抗・躊躇に応じて」条件を良くするという文脈の含みがより明確。" }
+      ],
+      explanation_ja: "「甘くする（sweeten）」という感覚的な比喩がそのまま使われており、条件面での譲歩や追加特典を「もっと飲み込みやすくする」というイメージで捉えている。M&A交渉、住宅購入、車の販売など、相手が難色を示した直後に条件を改善する場面で自然に使われ、単なる add benefits より交渉の緊張感や駆け引きのニュアンスを伝えられる。"
+    },
+    {
+      phrase: "call the shots",
+      meaning_en: "to be the person who makes the key decisions and controls how something is done, especially by virtue of authority or seniority",
+      meaning_ja: "実権を握って指示を出す、決定権者として仕切る",
+      examples: [
+        "On paper it's a joint venture, but everyone in the room knows who's actually calling the shots.",
+        "Once the kids got old enough to have opinions about dinner, I stopped calling the shots in this house."
+      ],
+      synonyms: [
+        { term: "be in charge", nuance_ja: "一般的で中立的な語。call the shotsはビリヤードや射撃に由来する口語的な鮮やかさがあり、実務会話でより自然に響く。" },
+        { term: "run the show", nuance_ja: "ほぼ同義で交換可能。call the shotsは特に「個々の決定・指示」に焦点があり、run the showは「全体の運営」により焦点がある。" }
+      ],
+      explanation_ja: "ビリヤードで次にどのポケットに玉を入れるかを事前に宣言する「コールショット」というルール、あるいは射撃の号令に由来するとされる語源説がある。誰が実質的な決定権を持っているかを指摘する際の定番表現で、肩書き上の権限と実際の力関係が一致しない状況（\"on paper it's X, but Y is calling the shots\"）を皮肉交じりに描写するのに特に向いている。"
+    },
+    {
+      phrase: "cut a check",
+      meaning_en: "to issue a payment, especially used informally to describe the actual act of paying money that has been agreed or promised",
+      meaning_ja: "（実際に）小切手を切る、支払いを実行する",
+      examples: [
+        "The board approved the bonus pool in March, but finance didn't actually cut the checks until the end of April.",
+        "Talk is cheap around here — when he actually cut a check for the Little League team, people noticed."
+      ],
+      synonyms: [
+        { term: "issue payment", nuance_ja: "フォーマルで事務的。cut a checkは口語としての具体性とアメリカ的な響きが強く、実際に金銭が動いた瞬間を強調するニュアンスがある。" },
+        { term: "write a check", nuance_ja: "ほぼ同義で日常的。cut a checkはやや業務的・組織的な支払い（給与、ボーナス、精算など）を指す頻度が高く、個人間のwrite a checkよりビジネス寄りの響き。" }
+      ],
+      explanation_ja: "昔の機械式小切手発行機（チェックライター）が金額を紙に刻印（cut）していたことに由来するとされる表現。「合意した」「承認した」というだけでなく、実際にお金が動く最終段階を指すのが核心で、\"they said yes, but did they actually cut the check?\" のように、口約束と実行の間のギャップを指摘する場面で特に効果的に使われる。"
+    }
+  ],
+  todayQuiz: [
+    { question: "During the board meeting, the chair interrupted a tangential comment by asking, 'Is that really ___ to the acquisition timeline?'", choices: ["germane", "voracious", "insidious", "unctuous"], answerIndex: 0, explanation: "\"Germane\" means directly relevant to the matter currently being discussed, and is the standard word for questioning whether a comment belongs in the conversation. The other choices describe appetite, gradual harm, and false flattery, none of which fit here." },
+    { question: "My business partner and I disagree about almost everything operationally, but deep down we're ___ — we both walked away from stable jobs because we couldn't stand being told what to build.", choices: ["cut from the same cloth", "two peas in a pod", "given a run for our money", "pulling the rug out from under each other"], answerIndex: 0, explanation: "\"Cut from the same cloth\" points to a shared underlying temperament even where surface opinions differ. \"Two peas in a pod\" implies closeness and constant togetherness, not an underlying character match despite visible disagreement." },
+    { question: "After six months of delaying the layoffs in hopes the market would turn around, the CEO finally ___ and cut 15% of staff.", choices: ["bit the bullet", "jumped the gun", "pulled the rug out from under everyone", "called the shots"], answerIndex: 0, explanation: "\"Bite the bullet\" means forcing yourself to do something painful that you had been postponing. \"Jump the gun\" would mean acting too early, which is the opposite of six months of delay." },
+    { question: "We had a verbal agreement on the lease renewal, so when the landlord suddenly raised the rent 40% right before signing, it felt like he had ___.", choices: ["pulled the rug out from under us", "given us a run for our money", "put a bow on it", "cut a check"], answerIndex: 0, explanation: "\"Pull the rug out from under someone\" describes a sudden withdrawal of an expected arrangement, leaving the other side worse off than they'd been led to believe. \"Cut a check\" refers to issuing payment, which is unrelated." },
+    { question: "Burnout is particularly ___ because it doesn't announce itself with one bad day — it accumulates for months before anyone, including the person experiencing it, notices.", choices: ["insidious", "voracious", "quixotic", "vexed"], answerIndex: 0, explanation: "\"Insidious\" describes harm that spreads gradually and is only recognized once serious damage has been done. \"Vexed\" describes a long-debated problem, not a silently accumulating one." },
+    { question: "Everyone in the office could tell the new hire was being ___ with the managing director, laughing loudly at jokes that weren't funny and offering to carry his bags.", choices: ["unctuous", "insular", "vexed", "germane"], answerIndex: 0, explanation: "\"Unctuous\" describes insincere, self-serving flattery aimed at someone with power. \"Insular\" describes closed-off group behavior, which does not fit an individual's flattery toward one person." },
+    { question: "Before we present this restructuring plan to the full board, I want to ___ with HR and legal so we're not blindsided by an objection in the room.", choices: ["run the traps", "give me the headline", "put a bow on it", "hold water"], answerIndex: 0, explanation: "\"Run the traps\" means checking with all relevant people before committing to a position, exactly the preparatory step described here. \"Put a bow on it\" refers to finishing something neatly, not gathering input in advance." },
+    { question: "The vendor's justification for the price increase — blaming a 'one-time supply issue' for the third year in a row — simply doesn't ___.", choices: ["hold water", "sweeten the deal", "call the shots", "cut a check"], answerIndex: 0, explanation: "\"Hold water\" means an explanation is logically sound under scrutiny; a repeated 'one-time' excuse fails that test. \"Sweeten the deal\" refers to improving an offer's terms, an unrelated meaning." },
+    { question: "The deck has a strong headline slide, but the appendix is still just three bullet points — before we send it to the IC, we need to ___.", choices: ["put some meat on the bones", "put a bow on it", "sweeten the deal", "cut a check"], answerIndex: 0, explanation: "\"Put some meat on the bones\" means adding substance to a plan that is currently only an outline, which fits a deck still missing detail. \"Put a bow on it\" implies the work is essentially finished and just needs final polish, not this case." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-06 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-07 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
