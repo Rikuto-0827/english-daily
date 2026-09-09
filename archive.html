@@ -3760,9 +3760,330 @@ const ENGLISH_REPORTS = [
     { question: "The renewal notice ___ when the account was transferred between two teams and neither one owned it.", choices: ["fell through the cracks", "was muddied", "came out of left field", "balked"], answerIndex: 0, explanation: "\"Fall through the cracks\" points at a gap in the process rather than at an individual's laziness, which is why it suits blameless post-mortems. The idiom is fixed in the plural, so \"fall through a crack\" sounds wrong." },
     { question: "I disagree about the covenant level, but ___ — let's go with three times and move on.", choices: ["that's not a hill I want to die on", "help me understand", "where do you land on this", "I want to be respectful of your time"], answerIndex: 0, explanation: "\"That's not a hill I want to die on\" simultaneously records your disagreement and concedes the point, signalling a sense of proportion. Reversing it into \"this is the hill I'm going to die on\" makes it a rare and forceful declaration instead." }
   ]
+},
+{
+  date: "2026-08-30",
+  dateLabel: "2026年8月30日（日）",
+  readTimeMin: 34,
+  coreItems: [
+    {
+      type: "word", term: "stymie", ipa: "/ˈstaɪmi/", register: "中立・ビジネス/報道で頻出",
+      meaning_en: "to block someone's plan or progress so that it cannot move forward",
+      meaning_ja: "（計画・進行を）阻む、行き詰まらせる",
+      examples: [
+        "Diligence was stymied for three weeks because the seller's data room was missing every one of the customer contracts.",
+        "We were going to repaint the whole apartment this weekend, but the rain stymied that pretty quickly."
+      ],
+      synonyms: [
+        { term: "thwart", nuance_ja: "「相手の企てを未然に打ち砕く」というドラマチックな響き。悪意ある計画を阻止する文脈に馴染み、stymie の「結果として手詰まりになった」という無機質さとは温度が違う。" },
+        { term: "stall", nuance_ja: "進行が「止まる」こと自体に焦点があり、原因が誰かの妨害とは限らない。自然に失速した場合にも使える点が決定的に違う。" },
+        { term: "hamper", nuance_ja: "「動きを鈍らせる」で、完全停止ではなく部分的な制約。stymie は基本的に前へ進めない状態を指す。" }
+      ],
+      explanation_ja: "ゴルフ由来の語。19世紀のゴルフでは、相手のボールが自分とカップの間に止まって打つ線を塞がれた状態を stymie と呼び、これが「行く手を塞がれる」比喩に転じた。1952年のルール改正でゴルフからは消えた概念なのに、言葉だけが日常語として生き残った珍しい例。実務では受動態の \"be stymied by ~\" が圧倒的に多く、規制・データ不足・キーパーソンの不在など、悪意はないが動かせない障害を挙げるときに自然に響く。人を主語にして \"I'm stymied\" と言えば「お手上げだ」という軽い降参の表明にもなる。"
+    },
+    {
+      type: "word", term: "upend", ipa: "/ʌpˈend/", register: "中立・ビジネス報道の定番",
+      meaning_en: "to overturn something completely, changing the way it has always worked",
+      meaning_ja: "（前提・秩序・業界構造を）根底からひっくり返す",
+      examples: [
+        "Stablecoin settlement could upend the correspondent banking model that has stood for forty years.",
+        "One phone call from the hospital upended our whole summer."
+      ],
+      synonyms: [
+        { term: "disrupt", nuance_ja: "スタートアップ業界の宣伝文句として手垢がつき、しばしば肯定的・自賛的に響く。upend は価値判断を含まない分、書き言葉で使いやすい。" },
+        { term: "overturn", nuance_ja: "判決・決定・法律など「公式なもの」を無効にする文脈が中心。業界構造や人生のような漠然とした対象には座りが悪い。" },
+        { term: "transform", nuance_ja: "変化の方向が改善であることを暗に示し、時間をかけた変貌を指す。upend が持つ「元の形が壊れる」という破壊性はない。" }
+      ],
+      explanation_ja: "文字通りは「end（端）を up（上）にする」＝物を逆さに立てる動作で、テーブルを縦に起こす、コップを伏せるといった物理的な意味が先にあった。そこから「上下が入れ替わるほどの根本的変化」という比喩に広がり、今では The Economist や WSJ の見出しで最頻出級の動詞になっている。disrupt が宣伝用語として消耗した結果、同じ内容をより品よく言える upend が書き手に好まれるようになった、という経緯も知っておくと使い分けが楽になる。目的語には expectations, assumptions, the industry, someone's life など「安定していたはずのもの」が来るのが定石。"
+    },
+    {
+      type: "word", term: "telegraph", ipa: "/ˈtelɪɡræf/", register: "中立・口語でも書き言葉でも",
+      meaning_en: "to reveal your intention in advance, usually without meaning to",
+      meaning_ja: "（意図・次の一手を）先読みされる形で事前に示してしまう",
+      examples: [
+        "The Fed had telegraphed the cut so clearly for six weeks that the actual announcement barely moved the curve.",
+        "He telegraphs every joke — you can see him grinning before he even gets to the setup."
+      ],
+      synonyms: [
+        { term: "signal", nuance_ja: "中立で、意図的に伝える場合が中心。telegraph が持つ「バレバレ」「読まれてしまう」という含みはない。" },
+        { term: "tip your hand", nuance_ja: "ポーカー由来の口語イディオムで、常に「うっかり手の内を漏らす」失策の意味。中央銀行が意図的に事前告知する場面には使えない。" },
+        { term: "foreshadow", nuance_ja: "出来事や描写が後の展開を暗示する文学寄りの語で、主語は人の意図ではなく物事のほう。" }
+      ],
+      explanation_ja: "電信で先に伝わってしまうイメージが元だが、決定的に広めたのはボクシングで、打つ前に肩や目線で動きが読まれることを telegraph a punch と言った。ここから「意図が読まれる」ニュアンスが定着したので、基本はネガティブ寄りの語。ただし金融では例外的に中立〜肯定で使われ、中央銀行が市場を驚かせないよう政策変更を事前に織り込ませることを \"a well-telegraphed hike\" と表現する。この二面性を押さえておくと、スポーツ記事と FOMC の記事で同じ語に出会っても混乱しない。"
+    },
+    {
+      type: "word", term: "backstop", ipa: "/ˈbækstɑːp/", register: "フォーマル・金融実務",
+      meaning_en: "a last-resort support arranged in advance in case the primary plan fails; also, to provide such support",
+      meaning_ja: "（万一に備えた）最終的な支え・引受保証。～を最終保証する",
+      examples: [
+        "The sponsor agreed to backstop the rights issue, so the company gets the full amount even if shareholders don't take up their allocation.",
+        "My parents aren't paying my rent, but they're the backstop if I lose the contract."
+      ],
+      synonyms: [
+        { term: "safety net", nuance_ja: "社会保障のような人道的・制度的な響きが強く、契約上の引受義務という具体性はない。" },
+        { term: "guarantee", nuance_ja: "法的な保証そのもの。backstop は「一次的な仕組みが不発だった場合にだけ発動する」という順序を含意する点が違う。" },
+        { term: "fallback", nuance_ja: "単なる「次善策」で、資金や支援の裏付けという意味は含まない。" }
+      ],
+      explanation_ja: "野球で捕手の後ろに立つ防護ネット（バックネット）が原義で、「後逸したボールを最後に受け止めるもの」というイメージがそのまま金融に移った。増資の引受、ブリッジローン、政府による預金保護など「一次調達が不発でも結果を保証する」仕組みを指し、名詞・動詞のどちらでも使える。実務では \"fully backstopped\"（満額保証済み）が案件の確度を示す重要なシグナルとして頻出する。日常会話に持ち込んでも通じるが、多少ビジネス臭のする言い回しに聞こえる。"
+    },
+    {
+      type: "idiom", term: "throw a wrench in the works", ipa: "", register: "口語・米（英では spanner）",
+      meaning_en: "to disrupt a plan that was running smoothly by introducing one unexpected problem",
+      meaning_ja: "順調に進んでいた計画に横やりを入れる、狂わせる",
+      examples: [
+        "The antitrust second request threw a wrench in the works — we had a signing date, and now we're looking at another nine months.",
+        "We had the whole trip booked, and then my passport renewal threw a wrench in the works."
+      ],
+      synonyms: [
+        { term: "derail", nuance_ja: "より深刻で、計画が完全に脱線して元に戻らない含み。throw a wrench は遅延と混乱にとどまることが多い。" },
+        { term: "complicate matters", nuance_ja: "フォーマルで中立。障害が一つ増えたという事実だけを述べ、比喩的な生々しさがない。" },
+        { term: "upset the applecart", nuance_ja: "古風で英国的な響き。既存の安定を乱すことに焦点があり、進行中の計画を止めるイメージは弱い。" }
+      ],
+      explanation_ja: "動いている機械の歯車にレンチを放り込めば全部止まる、という産業革命期の生々しい情景が元で、19世紀の労働争議のサボタージュを連想させる語でもある。米国では wrench、英国・豪州では spanner を使うので、相手に合わせて言い換えると自然。要注意なのは主語で、問題そのものを主語にする（The lawsuit threw a wrench in the works）のが定型であり、人を主語にすると「わざと邪魔をした」という非難のニュアンスが出る。in the works の部分を in the plan などと言う人もいるが、works の形が最も定着している。"
+    },
+    {
+      type: "idiom", term: "go to bat for (someone)", ipa: "", register: "口語・米国ビジネスで頻出",
+      meaning_en: "to publicly use your own standing to defend or support someone, at some cost to yourself",
+      meaning_ja: "（自分の立場を賭けて）人のために掛け合う、擁護する",
+      examples: [
+        "She went to bat for me in the promotion committee when nobody else in the room knew my work.",
+        "I'll go to bat for the extra headcount, but I need the utilization numbers to be airtight before I walk in there."
+      ],
+      synonyms: [
+        { term: "advocate for", nuance_ja: "フォーマルで中立。政策や制度にも使え、「自分が損をするリスクを負う」という含みはない。" },
+        { term: "stick up for", nuance_ja: "より口語的で、いじめや口論から守るような対等・私的な場面に馴染む。社内政治の重みは出ない。" },
+        { term: "vouch for", nuance_ja: "人の人物や能力を「請け合う」ことに限定され、積極的に働きかける行動までは含まない。" }
+      ],
+      explanation_ja: "野球で代打（pinch hitter）として打席に立つ姿が元の比喩で、「他人のために自分がリスクを取って打席に入る」という構図が核心。だからこそ上司が部下のために社内政治で身を張る文脈で最もよく使われ、アメリカのマネジメント語彙として重要度が高い。for の後ろには人が来る形が基本で、\"go to bat for the proposal\" のように事柄も置けるが、人の場合ほど自然ではない。感謝を伝える \"thanks for going to bat for me\" は、単なる助力ではなく「庇ってくれたこと」への謝辞として響く。"
+    },
+    {
+      type: "idiom", term: "rubber-stamp (something)", ipa: "", register: "中立〜批判的・ガバナンス",
+      meaning_en: "to approve something automatically, without any real scrutiny",
+      meaning_ja: "（実質的な審査をせず）形式的に承認する、追認するだけ",
+      examples: [
+        "The committee is supposed to challenge management, but in practice it rubber-stamps whatever the CEO brings in.",
+        "Don't expect a real discussion tonight — the residents' meeting is just there to rubber-stamp the budget."
+      ],
+      synonyms: [
+        { term: "approve", nuance_ja: "完全に中立で、審査があったかどうかを含意しない。rubber-stamp には常に「見ていない」という批判が付く。" },
+        { term: "wave through", nuance_ja: "検問を素通りさせるイメージで意味は近いが、より口語的・英国寄り。制度の形骸化より、その場の甘い判断を指す。" },
+        { term: "sign off on", nuance_ja: "責任者が正式に承認を与えるという中立的な実務表現。ちゃんと目を通したという含みがある点でほぼ正反対。" }
+      ],
+      explanation_ja: "ゴム印をポンと押すだけ、という官僚仕事の情景がそのまま比喩になったもので、名詞（a rubber stamp）でも動詞（to rubber-stamp）でも使える。人に対して \"He's just a rubber stamp\" と言うと「承認するだけの飾りの役職」という強い侮辱になるため、社内で口にするときは注意が必要。取締役会の実効性、監査委員会の独立性、規制当局の甘さを論じる記事では定番の批判語なので、コーポレートガバナンスの英文を読むなら必須。逆に自社を説明する場面では \"this is not a rubber-stamp process\" と否定形で使い、審査の実質性を強調するのが定石。"
+    },
+    {
+      type: "idiom", term: "a fly in the ointment", ipa: "", register: "やや上品な口語・書き言葉でも可",
+      meaning_en: "one small drawback that spoils an otherwise good situation",
+      meaning_ja: "全体は良いのに一つだけ台無しにする難点、玉に瑕",
+      examples: [
+        "The asset quality is excellent and the deposit base is sticky; the only fly in the ointment is a pension deficit nobody wants to talk about.",
+        "Great apartment, great price — the fly in the ointment is that the nearest station is a twenty-five minute walk."
+      ],
+      synonyms: [
+        { term: "a sticking point", nuance_ja: "交渉で合意を妨げている争点を指し、解決すべき対象。fly in the ointment は交渉事とは限らず、単に価値を下げる欠点を指す。" },
+        { term: "a catch", nuance_ja: "口語的で、「うますぎる話に隠された条件」という含み。相手が意図的に伏せていたというニュアンスが出やすい。" },
+        { term: "a drawback", nuance_ja: "中立で事務的な「欠点」。全体が優れているという前提も、それが台無しになるという劇的さもない。" }
+      ],
+      explanation_ja: "旧約聖書「伝道の書」の一節（死んだ蠅が香油を腐らせる）に由来する、聖書英語が日常に残った典型例。核心は「全体が非常に良い」ことが前提にある点で、もともと欠点だらけの案件に使うと意味が通らない。実務では the only fly in the ointment という形で、好意的な評価を述べたうえで一点だけ懸念を挙げる気の利いた前置きとして機能する。やや古風な響きがあるので多用すると気取って聞こえるが、投資委員会や取締役会の口頭コメントでは今も普通に耳にする。"
+    },
+    {
+      type: "phrase", term: "I'll defer to you on that", ipa: "", register: "フォーマル寄り・会議で丁寧",
+      meaning_en: "a polite way of saying you will accept the other person's judgment because the question falls in their area",
+      meaning_ja: "その点はあなたの判断にお任せします",
+      examples: [
+        "You've run three of these carve-outs and I haven't run any, so I'll defer to you on the timeline.",
+        "I'll defer to you on the wine — you're the one who actually remembers what we ordered last time."
+      ],
+      synonyms: [
+        { term: "That's your call", nuance_ja: "より口語的で、対等〜やや突き放した響き。相手の権限を認めるだけで、専門性への敬意はあまり込められない。" },
+        { term: "You know better than I do", nuance_ja: "謙遜が前面に出る言い方。敬意は強く伝わるが、場合によっては大げさ・お世辞に聞こえる。" },
+        { term: "I'm happy to go with your read on it", nuance_ja: "くだけた同意の表明で、defer のように「権限の所在を明示する」硬さがない。" }
+      ],
+      explanation_ja: "defer to は「敬意を払って自分の意見を引っ込める」というラテン語由来のフォーマルな動詞で、「延期する」の defer とは同綴りの別語。重要なのは、負けを認めているのではなく「この論点の持ち主はあなただ」と役割分担を宣言している点で、だから使っても弱くは見えない。むしろ自分の専門領域では譲らず、他人の領域では素直に譲る人は成熟していると評価される。on の後ろに具体的な論点（on the timeline, on the accounting treatment）を必ず添えると、譲る範囲が限定されて一段とプロらしく響く。"
+    },
+    {
+      type: "phrase", term: "Where does that leave us?", ipa: "", register: "中立・会議の要所で",
+      meaning_en: "a question asking what the practical consequence of what was just said is for our position or next step",
+      meaning_ja: "で、我々としてはどうなるのか／どう動くべきか？",
+      examples: [
+        "So the lender won't extend and the buyer won't raise the price. Where does that leave us?",
+        "Both of our first choices for the venue are booked that weekend. Where does that leave us?"
+      ],
+      synonyms: [
+        { term: "So what's the takeaway?", nuance_ja: "情報の要点を求める言い方で、自分たちの立場や次の行動への含意までは必ずしも問わない。" },
+        { term: "What are our options?", nuance_ja: "選択肢の列挙をはっきり要求する。Where does that leave us? はまず現在地の確認から入る点が違う。" },
+        { term: "So where do we go from here?", nuance_ja: "ほぼ同義だが次の一歩に重心があり、現状評価の段階を飛ばしている。" }
+      ],
+      explanation_ja: "議論が事実の応酬で膠着したとき、それを意思決定の軌道に引き戻すための定番の一言で、英語圏の会議では司会役やシニアがよく口にする。leave us の us が効いていて、抽象論ではなく「我々の立場」に話を引き寄せる働きがある。誰も責めずに議論の停滞を指摘できるので、政治的に安全な進行ツールとして覚えておく価値が高い。応用として us を差し替えた \"Where does that leave the timeline?\" のような形も頻出で、悪い前提が何に効いてくるかを確認するときに便利。"
+    },
+    {
+      type: "phrase", term: "for the avoidance of doubt", ipa: "", register: "非常にフォーマル・契約書/メール",
+      meaning_en: "a formal signal that what follows is being stated explicitly so that the preceding point cannot be misread",
+      meaning_ja: "誤解のないように明記すると、念のため明確にしておくと",
+      examples: [
+        "For the avoidance of doubt, the fee is payable whether or not the transaction closes.",
+        "For the avoidance of doubt, I'm not asking anyone to work this weekend — Monday morning is fine."
+      ],
+      synonyms: [
+        { term: "To be clear", nuance_ja: "圧倒的に口語的で汎用性が高い。会話でも使え、法的な重々しさがまったくない。" },
+        { term: "To reiterate", nuance_ja: "既に述べたことの繰り返しである点を強調する語で、新たに明示的な条件を足す場合には使えない。" },
+        { term: "Just to confirm", nuance_ja: "相手に確認を求める含みがあり、こちらが一方的に解釈を固定する響きにはならない。" }
+      ],
+      explanation_ja: "英米の契約書で最も頻出する定型句の一つで、直前の条項が両様に読めるとき、片方の読み方を封じるために置かれる。実務上の価値は、契約を読む側に回ったときに「起草者もここが争点になると分かっていた」というサインとして読み取れる点にある。ビジネスメールに転用すると、丁寧でありながら有無を言わせない強さが出るので、条件や範囲を確定させたい場面で効果的。ただし日常の雑談で使うと弁護士の物真似のように響くため、二つ目の例文のように少しユーモアを込めて使うのが実際の運用に近い。"
+    },
+    {
+      type: "phrase", term: "if memory serves", ipa: "", register: "上品な口語・やや文語的",
+      meaning_en: "an aside meaning 'if I am remembering correctly', used before a detail you are fairly but not fully sure of",
+      meaning_ja: "記憶が正しければ、確か",
+      examples: [
+        "If memory serves, we passed on this same company in 2023 because the founder wouldn't take a minority partner.",
+        "If memory serves, you were the one who swore you'd never move back to Chicago."
+      ],
+      synonyms: [
+        { term: "If I recall correctly", nuance_ja: "ほぼ同義でより中立的・一般的。メールでは IIRC と略されるほど日常に浸透している。" },
+        { term: "Correct me if I'm wrong", nuance_ja: "相手に訂正を促す姿勢が強く、自分の記憶の確度についての言及ではない。" },
+        { term: "I could be wrong, but", nuance_ja: "記憶に限らず判断全般の留保に使え、より防御的で自信のなさが前面に出る。" }
+      ],
+      explanation_ja: "serve は「役に立つ、機能する」の意で、直訳すれば「記憶が私に仕えてくれるなら」。やや古風で文語的な響きがあり、それが逆に知的で落ち着いた印象を与えるため、会議やインタビューで細部を持ち出すときの前置きとして重宝される。実務的な効用は、事実誤認だったときの保険をかけつつ発言の価値は下げない、という絶妙なバランスにある。文頭に置くのが基本だが、文末に \"— 2019, if memory serves\" と添える形も洒落ていて頻出。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "mercurial", ipa: "/mɜːrˈkjʊriəl/",
+      meaning_en: "prone to sudden and unpredictable changes of mood or position",
+      meaning_ja: "気分や態度が変わりやすく読めない、移り気な",
+      examples: [
+        "The founder is brilliant but mercurial — the term sheet he loved on Tuesday was an insult by Friday.",
+        "My brother is mercurial about restaurants; he'll rave about a place for a month and then refuse to go back."
+      ],
+      synonyms: [
+        { term: "volatile", nuance_ja: "市場や情勢など人以外にも広く使い、人に使うと「怒り出しかねない」という物騒さが前に出る。mercurial にはある種の才気や魅力の含みがある。" },
+        { term: "temperamental", nuance_ja: "「怒りっぽくて扱いにくい」という実務上の面倒さに焦点。機械や道具の調子が不安定なことにも使える。" },
+        { term: "capricious", nuance_ja: "気まぐれさが「理由なき恣意性」として響き、権限を持つ人の不当な決定を批判する場面に馴染む。" }
+      ],
+      explanation_ja: "ローマ神メルクリウス（俊敏で移ろいやすい伝令の神）と、常温で流れ続ける金属 mercury（水銀）の両方から来た語で、「つかみどころがない」というイメージが二重に効いている。人物評として使うと単なる非難ではなく「才能はあるが不安定」という複雑な敬意が混ざるのが特徴で、創業者やスター経営者、名将の描写で頻出する。市場や価格に使うなら volatile のほうが自然なので、mercurial は基本的に人に使うと覚えておくと安全。"
+    },
+    {
+      term: "unwieldy", ipa: "/ʌnˈwiːldi/",
+      meaning_en: "too large, complex, or awkwardly structured to be handled or managed efficiently",
+      meaning_ja: "大きすぎ・複雑すぎて扱いにくい、持て余す",
+      examples: [
+        "A fifteen-person steering committee is unwieldy; nothing gets decided until we cut it to five.",
+        "The new suitcase looks great, but it's unwieldy on stairs — I nearly took someone out at the station."
+      ],
+      synonyms: [
+        { term: "cumbersome", nuance_ja: "「重くて煩雑」という負担感が中心で、手続きや書式に使いやすい。unwieldy は特に「サイズや構造ゆえに制御しきれない」点に焦点がある。" },
+        { term: "bloated", nuance_ja: "不必要に膨れ上がったという批判が明確で、削るべきだという含意が強い。unwieldy は規模そのものが正当な場合にも使える。" },
+        { term: "clunky", nuance_ja: "口語的で、動作のぎこちなさやデザインの野暮ったさを指す。UI やソフトウェアの批評で最もよく使われる。" }
+      ],
+      explanation_ja: "古語 wield（武器などを自在に振るう）の否定形で、原義は「大きすぎて振り回せない剣」。この語源を知っていると、「サイズや構造そのものが操作性を奪っている」という核心が一発で腑に落ちる。組織設計、委員会、法規制、コードベース、ポートフォリオなど、規模の肥大が意思決定を鈍らせる話題で頻出し、\"an unwieldy structure\" は英文ビジネス記事の定番コロケーション。物理的な荷物にも比喩的な組織にも同じ感覚で使えるのが便利な点。"
+    },
+    {
+      term: "heavy-handed", ipa: "/ˌhevi ˈhændɪd/",
+      meaning_en: "using more force, control, or bluntness than the situation calls for",
+      meaning_ja: "強引で不器用な、手加減を知らない、高圧的な",
+      examples: [
+        "The regulator's heavy-handed response to a minor reporting error cost the bank two years of goodwill.",
+        "Telling a twenty-eight-year-old what time to be home is a bit heavy-handed, don't you think?"
+      ],
+      synonyms: [
+        { term: "draconian", nuance_ja: "罰則や規制の厳しさが常軌を逸しているという強い非難。heavy-handed には「加減ができない」という技量の問題も含まれる。" },
+        { term: "authoritarian", nuance_ja: "権威主義という政治的な性格づけで、一回の対応ではなく体質や思想そのものを指す。" },
+        { term: "overbearing", nuance_ja: "人柄として「威圧的で押しつけがましい」ことを指し、個別の措置ではなく態度への評価。" }
+      ],
+      explanation_ja: "手綱さばきの乱暴な乗り手、あるいは力任せの職人といった「加減ができない手つき」が原義で、そこから対応の不器用な過剰さ全般に広がった。批判の核心は厳しさそのものではなく「バランスを欠いている」ことなので、正当に厳しい措置には使えないのが使い分けの鍵。規制、経営、育児、編集、演出など対象は非常に広く、\"a heavy-handed approach\" や \"heavy-handed regulation\" が定番の形。批評の世界では「表現が露骨すぎる（伏線が見え見えなど）」という意味でも使われ、この用法を知っていると映画やドラマの感想が一段深くなる。"
+    },
+    {
+      term: "buoyant", ipa: "/ˈbɔɪənt/",
+      meaning_en: "staying strong or rising despite downward pressure — used of markets, demand, or a person's mood",
+      meaning_ja: "（相場・需要が）底堅く上向きの。（気分が）浮き立った",
+      examples: [
+        "Demand for the notes stayed buoyant even after the rating agency put the issuer on watch.",
+        "She came back from the interview buoyant, which is not how she usually comes back from interviews."
+      ],
+      synonyms: [
+        { term: "resilient", nuance_ja: "打撃を受けた後に戻ってくる回復力に焦点。buoyant は下押し圧力の下でも高い水準を保つ、あるいは上昇基調にあることを指す。" },
+        { term: "robust", nuance_ja: "「頑丈で崩れない」という強度の話で、水準の高さを冷静に述べる語。上向きの勢いという含みはない。" },
+        { term: "upbeat", nuance_ja: "気分や見通しの明るさに限定される口語で、市場や需要そのものの強さを表すことはできない。" }
+      ],
+      explanation_ja: "浮力（buoyancy）の形容詞形で、「押し沈めようとしても浮き上がってくる」という物理イメージがそのまま比喩になっている。金融では株価・需要・住宅市場・雇用など、悪材料があっても水準が落ちないものを描写する定番語で、\"buoyant demand\" は経済記事の頻出コロケーション。人に使うと「気分が浮き立っている」という明るい意味になり、対義語は文字通り沈んだ気分を表す deflated や downcast。発音が英米で割れる代表格でもあり、米では /ˈbuːjənt/ と読む人がかなり多い。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "drum up (support / business)",
+      meaning_en: "to actively generate interest, support, or new business through deliberate effort",
+      meaning_ja: "（支持・需要・仕事を）働きかけて掘り起こす、かき集める",
+      examples: [
+        "The sponsor spent six weeks drumming up support among the top twenty holders before going public with the proposal.",
+        "He's been drumming up business at every alumni event since he went independent."
+      ],
+      synonyms: [
+        { term: "generate", nuance_ja: "中立でビジネス文書向き。drum up にある「足で稼ぐ、地道に働きかける」という泥臭さがない。" },
+        { term: "rally (support)", nuance_ja: "すでに味方である人々を「結集させる」ことに焦点があり、ゼロから関心を掘り起こすニュアンスは薄い。" }
+      ],
+      explanation_ja: "町の広場で太鼓を叩いて人を集めた（あるいは軍が新兵を募った）情景が語源で、「自然に集まるのを待たず、自分から音を立てて集める」という能動性が核心。だから成り行きで増えた需要には使えず、必ず誰かの努力が前提になる。相性のいい目的語はほぼ決まっていて、support, business, interest, enthusiasm, publicity が代表格。ややインフォーマルなので正式な IR 文書よりは会話や社内メール向きだが、報道記事では普通に使われる。"
+    },
+    {
+      phrase: "chip away at (something)",
+      meaning_en: "to reduce or weaken something gradually through small, repeated efforts",
+      meaning_ja: "少しずつ削り取る、地道に切り崩す",
+      examples: [
+        "We're not going to refinance our way out of this — we chip away at the leverage about two turns a year.",
+        "Constant last-minute schedule changes chip away at whatever trust the team had left."
+      ],
+      synonyms: [
+        { term: "erode", nuance_ja: "主語が意図を持たない自然な力であることが多く、時間経過による摩耗を指す。chip away at は誰かが意図的に繰り返す行為。" },
+        { term: "whittle down", nuance_ja: "数量を「絞り込む」ことに特化し、候補者リストや在庫を減らす文脈が中心。信頼や優位性のような抽象物には使いにくい。" }
+      ],
+      explanation_ja: "石や木を鑿（のみ）で少しずつ欠いていく作業が原義で、一撃では割れないものを反復で崩すイメージ。面白いのは使い道が二方向にあることで、良い意味では「借金・課題・差を地道に減らす」（chip away at the debt / at the lead）、悪い意味では「信頼・利益率・優位性がじわじわ削られる」（chip away at margins / at credibility）となる。どちらの場合も at が必須で、chip away the debt とは言わない。決算説明会で経営陣が漸進的な改善を説明するときの定番表現でもある。"
+    },
+    {
+      phrase: "carry weight",
+      meaning_en: "to have real influence on how others judge or decide something",
+      meaning_ja: "（意見・肩書きなどが）重みを持つ、影響力がある",
+      examples: [
+        "In this committee, the risk officer's objection carries more weight than anything the deal team says.",
+        "A recommendation from her carries weight — she hasn't given one in three years."
+      ],
+      synonyms: [
+        { term: "hold sway", nuance_ja: "「領域全体を支配する影響力を持つ」という強い言い方。個々の意見の説得力という意味では使わない。" },
+        { term: "count for something", nuance_ja: "口語的で、「無駄ではない・それなりに評価される」という控えめな言い方。" }
+      ],
+      explanation_ja: "天秤の皿にどれだけ重みを加えるか、という計量のイメージが元で、だからこそ比較級と相性が抜群にいい（carries more weight than ~ が最頻出の形）。主語には意見、証言、推薦状、肩書き、署名など「判断材料として提出されるもの」が来るのが自然で、人そのものを主語にしたいなら have influence を使う。否定形の \"carries very little weight\" は、相手の主張を全否定せずに軽視を伝えられる外交的な言い回し。冠詞は付けず無冠詞で使う点も固定されている。"
+    },
+    {
+      phrase: "tee up (a decision / a discussion)",
+      meaning_en: "to prepare something so that others can act on it immediately with minimal effort",
+      meaning_ja: "（判断・議論を）すぐ処理できる形に整えて差し出す、お膳立てする",
+      examples: [
+        "Tee up the decision for the Thursday board call — one page, three options, and your recommendation at the top.",
+        "I teed up the conversation with her over lunch so you wouldn't have to start from zero."
+      ],
+      synonyms: [
+        { term: "set up", nuance_ja: "汎用的で準備一般を指す。tee up が持つ「あとは相手が一振りするだけ」という詰めの含みは弱い。" },
+        { term: "lay the groundwork", nuance_ja: "より長い時間をかけた地ならしを指し、直後の意思決定を前提としない。" }
+      ],
+      explanation_ja: "ゴルフでボールをティーに乗せる動作が原義で、「打ちやすい高さに置いてあげる」という気配りのイメージが核心。したがって単なる準備ではなく「相手が最小の労力で決断・発言できる状態にする」ことを指し、シニアに上げる資料や根回しの説明で極めてよく使われる。目的語は decision, discussion, question, vote, meeting など「これから起こる場」であって、モノには使わない。米国のオフィスでは日常語として完全に定着しているが、ゴルフ由来なので硬い文書では set up や prepare に置き換わることも多い。"
+    }
+  ],
+  todayQuiz: [
+    { question: "The seller's incomplete data room ___ diligence for three weeks, and the signing date slipped.", choices: ["stymied", "telegraphed", "upended", "backstopped"], answerIndex: 0, explanation: "\"Stymie\" means to block progress so that it cannot continue, and it usually takes an obstacle rather than a person as its subject. \"Upend\" would claim the process was overturned entirely rather than merely held up." },
+    { question: "Which sentence uses \"telegraph\" the way a native speaker would?", choices: ["The Fed telegraphed the cut weeks in advance, so markets barely reacted.", "The Fed telegraphed the market about the coming cut.", "Analysts telegraphed a cut in their year-end note.", "We should telegraph for a rate cut next quarter."], answerIndex: 0, explanation: "\"Telegraph\" takes the intention or move as its object, never the audience, and its subject must be the party that will actually act. Analysts predict or forecast a cut; only the central bank can telegraph one." },
+    { question: "Stablecoin settlement could ___ a correspondent banking model that has worked the same way for forty years.", choices: ["upend", "stymie", "chip away at", "rubber-stamp"], answerIndex: 0, explanation: "\"Upend\" describes an overturning so complete that the old structure no longer holds, which fits replacing a forty-year-old model. \"Chip away at\" would suggest gradual erosion rather than a decisive break." },
+    { question: "The sponsor agreed to ___ the rights issue, so the company receives the full amount even if shareholders do not subscribe.", choices: ["backstop", "tee up", "drum up", "carry weight for"], answerIndex: 0, explanation: "A backstop is support arranged in advance that takes effect only if the primary route fails, which is exactly what an underwritten rights issue provides. The other options describe preparing, generating interest, or having influence." },
+    { question: "Nobody else in the room knew my work, and she ___ me in the promotion committee.", choices: ["went to bat for", "deferred to", "teed up", "rubber-stamped"], answerIndex: 0, explanation: "\"Go to bat for someone\" means spending your own standing to argue on their behalf, which is what happens in a promotion committee. \"Defer to\" would mean accepting someone else's judgment, the opposite of actively arguing." },
+    { question: "The committee is meant to challenge management, but in practice it simply ___ whatever the CEO puts in front of it.", choices: ["rubber-stamps", "chips away at", "tees up", "drums up"], answerIndex: 0, explanation: "\"Rubber-stamp\" always carries the criticism that approval was given without genuine scrutiny, which is the point of the contrast with \"challenge.\" A neutral verb such as \"approve\" would lose that judgment." },
+    { question: "The credit is strong and the deposit base is sticky; the only ___ is an unfunded pension liability.", choices: ["fly in the ointment", "wrench in the works", "rubber stamp", "backstop"], answerIndex: 0, explanation: "\"A fly in the ointment\" requires the surrounding situation to be genuinely good and names the single flaw that spoils it. \"Throw a wrench in the works\" describes disrupting a plan in motion, not a defect in something otherwise attractive." },
+    { question: "He is undeniably talented, but ___ — the structure he championed on Monday is the one he attacks on Thursday.", choices: ["mercurial", "unwieldy", "heavy-handed", "buoyant"], answerIndex: 0, explanation: "\"Mercurial\" describes unpredictable swings in mood or position and, unlike \"volatile,\" leaves room for admiration of the person's ability. The other adjectives describe things that are hard to manage, excessively forceful, or holding up well." },
+    { question: "Fining the bank the maximum amount for a single late filing struck many observers as ___.", choices: ["heavy-handed", "unwieldy", "buoyant", "mercurial"], answerIndex: 0, explanation: "\"Heavy-handed\" criticises a response as disproportionate rather than merely strict, so it fits a maximum penalty for a minor lapse. It would not apply to a severe measure the situation genuinely warranted." },
+    { question: "Demand for the notes stayed ___ even after the rating agency put the issuer on watch.", choices: ["buoyant", "unwieldy", "mercurial", "heavy-handed"], answerIndex: 0, explanation: "\"Buoyant\" describes something that stays up despite downward pressure, straight from the physics of buoyancy. \"Resilient\" would emphasise recovering after a fall rather than never sinking in the first place." },
+    { question: "We cannot refinance our way out of the balance sheet; we ___ the leverage about two turns a year.", choices: ["chip away at", "drum up", "tee up", "carry weight for"], answerIndex: 0, explanation: "\"Chip away at\" describes deliberate, repeated small reductions and always requires the preposition \"at.\" \"Drum up\" would mean generating something new rather than gradually reducing an existing burden." },
+    { question: "___, the fee is payable whether or not the transaction closes.", choices: ["For the avoidance of doubt", "If memory serves", "Where does that leave us", "I'll defer to you on that"], answerIndex: 0, explanation: "\"For the avoidance of doubt\" introduces a point stated explicitly so that the preceding terms cannot be misread, which is why it is standard in contracts. \"If memory serves\" hedges a recollection, which makes no sense for a binding term." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-08 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-09 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
