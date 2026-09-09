@@ -154,327 +154,6 @@ a{color:#0d6e6e}
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-08-30",
-  dateLabel: "2026年8月30日（日）",
-  readTimeMin: 34,
-  coreItems: [
-    {
-      type: "word", term: "stymie", ipa: "/ˈstaɪmi/", register: "中立・ビジネス/報道で頻出",
-      meaning_en: "to block someone's plan or progress so that it cannot move forward",
-      meaning_ja: "（計画・進行を）阻む、行き詰まらせる",
-      examples: [
-        "Diligence was stymied for three weeks because the seller's data room was missing every one of the customer contracts.",
-        "We were going to repaint the whole apartment this weekend, but the rain stymied that pretty quickly."
-      ],
-      synonyms: [
-        { term: "thwart", nuance_ja: "「相手の企てを未然に打ち砕く」というドラマチックな響き。悪意ある計画を阻止する文脈に馴染み、stymie の「結果として手詰まりになった」という無機質さとは温度が違う。" },
-        { term: "stall", nuance_ja: "進行が「止まる」こと自体に焦点があり、原因が誰かの妨害とは限らない。自然に失速した場合にも使える点が決定的に違う。" },
-        { term: "hamper", nuance_ja: "「動きを鈍らせる」で、完全停止ではなく部分的な制約。stymie は基本的に前へ進めない状態を指す。" }
-      ],
-      explanation_ja: "ゴルフ由来の語。19世紀のゴルフでは、相手のボールが自分とカップの間に止まって打つ線を塞がれた状態を stymie と呼び、これが「行く手を塞がれる」比喩に転じた。1952年のルール改正でゴルフからは消えた概念なのに、言葉だけが日常語として生き残った珍しい例。実務では受動態の \"be stymied by ~\" が圧倒的に多く、規制・データ不足・キーパーソンの不在など、悪意はないが動かせない障害を挙げるときに自然に響く。人を主語にして \"I'm stymied\" と言えば「お手上げだ」という軽い降参の表明にもなる。"
-    },
-    {
-      type: "word", term: "upend", ipa: "/ʌpˈend/", register: "中立・ビジネス報道の定番",
-      meaning_en: "to overturn something completely, changing the way it has always worked",
-      meaning_ja: "（前提・秩序・業界構造を）根底からひっくり返す",
-      examples: [
-        "Stablecoin settlement could upend the correspondent banking model that has stood for forty years.",
-        "One phone call from the hospital upended our whole summer."
-      ],
-      synonyms: [
-        { term: "disrupt", nuance_ja: "スタートアップ業界の宣伝文句として手垢がつき、しばしば肯定的・自賛的に響く。upend は価値判断を含まない分、書き言葉で使いやすい。" },
-        { term: "overturn", nuance_ja: "判決・決定・法律など「公式なもの」を無効にする文脈が中心。業界構造や人生のような漠然とした対象には座りが悪い。" },
-        { term: "transform", nuance_ja: "変化の方向が改善であることを暗に示し、時間をかけた変貌を指す。upend が持つ「元の形が壊れる」という破壊性はない。" }
-      ],
-      explanation_ja: "文字通りは「end（端）を up（上）にする」＝物を逆さに立てる動作で、テーブルを縦に起こす、コップを伏せるといった物理的な意味が先にあった。そこから「上下が入れ替わるほどの根本的変化」という比喩に広がり、今では The Economist や WSJ の見出しで最頻出級の動詞になっている。disrupt が宣伝用語として消耗した結果、同じ内容をより品よく言える upend が書き手に好まれるようになった、という経緯も知っておくと使い分けが楽になる。目的語には expectations, assumptions, the industry, someone's life など「安定していたはずのもの」が来るのが定石。"
-    },
-    {
-      type: "word", term: "telegraph", ipa: "/ˈtelɪɡræf/", register: "中立・口語でも書き言葉でも",
-      meaning_en: "to reveal your intention in advance, usually without meaning to",
-      meaning_ja: "（意図・次の一手を）先読みされる形で事前に示してしまう",
-      examples: [
-        "The Fed had telegraphed the cut so clearly for six weeks that the actual announcement barely moved the curve.",
-        "He telegraphs every joke — you can see him grinning before he even gets to the setup."
-      ],
-      synonyms: [
-        { term: "signal", nuance_ja: "中立で、意図的に伝える場合が中心。telegraph が持つ「バレバレ」「読まれてしまう」という含みはない。" },
-        { term: "tip your hand", nuance_ja: "ポーカー由来の口語イディオムで、常に「うっかり手の内を漏らす」失策の意味。中央銀行が意図的に事前告知する場面には使えない。" },
-        { term: "foreshadow", nuance_ja: "出来事や描写が後の展開を暗示する文学寄りの語で、主語は人の意図ではなく物事のほう。" }
-      ],
-      explanation_ja: "電信で先に伝わってしまうイメージが元だが、決定的に広めたのはボクシングで、打つ前に肩や目線で動きが読まれることを telegraph a punch と言った。ここから「意図が読まれる」ニュアンスが定着したので、基本はネガティブ寄りの語。ただし金融では例外的に中立〜肯定で使われ、中央銀行が市場を驚かせないよう政策変更を事前に織り込ませることを \"a well-telegraphed hike\" と表現する。この二面性を押さえておくと、スポーツ記事と FOMC の記事で同じ語に出会っても混乱しない。"
-    },
-    {
-      type: "word", term: "backstop", ipa: "/ˈbækstɑːp/", register: "フォーマル・金融実務",
-      meaning_en: "a last-resort support arranged in advance in case the primary plan fails; also, to provide such support",
-      meaning_ja: "（万一に備えた）最終的な支え・引受保証。～を最終保証する",
-      examples: [
-        "The sponsor agreed to backstop the rights issue, so the company gets the full amount even if shareholders don't take up their allocation.",
-        "My parents aren't paying my rent, but they're the backstop if I lose the contract."
-      ],
-      synonyms: [
-        { term: "safety net", nuance_ja: "社会保障のような人道的・制度的な響きが強く、契約上の引受義務という具体性はない。" },
-        { term: "guarantee", nuance_ja: "法的な保証そのもの。backstop は「一次的な仕組みが不発だった場合にだけ発動する」という順序を含意する点が違う。" },
-        { term: "fallback", nuance_ja: "単なる「次善策」で、資金や支援の裏付けという意味は含まない。" }
-      ],
-      explanation_ja: "野球で捕手の後ろに立つ防護ネット（バックネット）が原義で、「後逸したボールを最後に受け止めるもの」というイメージがそのまま金融に移った。増資の引受、ブリッジローン、政府による預金保護など「一次調達が不発でも結果を保証する」仕組みを指し、名詞・動詞のどちらでも使える。実務では \"fully backstopped\"（満額保証済み）が案件の確度を示す重要なシグナルとして頻出する。日常会話に持ち込んでも通じるが、多少ビジネス臭のする言い回しに聞こえる。"
-    },
-    {
-      type: "idiom", term: "throw a wrench in the works", ipa: "", register: "口語・米（英では spanner）",
-      meaning_en: "to disrupt a plan that was running smoothly by introducing one unexpected problem",
-      meaning_ja: "順調に進んでいた計画に横やりを入れる、狂わせる",
-      examples: [
-        "The antitrust second request threw a wrench in the works — we had a signing date, and now we're looking at another nine months.",
-        "We had the whole trip booked, and then my passport renewal threw a wrench in the works."
-      ],
-      synonyms: [
-        { term: "derail", nuance_ja: "より深刻で、計画が完全に脱線して元に戻らない含み。throw a wrench は遅延と混乱にとどまることが多い。" },
-        { term: "complicate matters", nuance_ja: "フォーマルで中立。障害が一つ増えたという事実だけを述べ、比喩的な生々しさがない。" },
-        { term: "upset the applecart", nuance_ja: "古風で英国的な響き。既存の安定を乱すことに焦点があり、進行中の計画を止めるイメージは弱い。" }
-      ],
-      explanation_ja: "動いている機械の歯車にレンチを放り込めば全部止まる、という産業革命期の生々しい情景が元で、19世紀の労働争議のサボタージュを連想させる語でもある。米国では wrench、英国・豪州では spanner を使うので、相手に合わせて言い換えると自然。要注意なのは主語で、問題そのものを主語にする（The lawsuit threw a wrench in the works）のが定型であり、人を主語にすると「わざと邪魔をした」という非難のニュアンスが出る。in the works の部分を in the plan などと言う人もいるが、works の形が最も定着している。"
-    },
-    {
-      type: "idiom", term: "go to bat for (someone)", ipa: "", register: "口語・米国ビジネスで頻出",
-      meaning_en: "to publicly use your own standing to defend or support someone, at some cost to yourself",
-      meaning_ja: "（自分の立場を賭けて）人のために掛け合う、擁護する",
-      examples: [
-        "She went to bat for me in the promotion committee when nobody else in the room knew my work.",
-        "I'll go to bat for the extra headcount, but I need the utilization numbers to be airtight before I walk in there."
-      ],
-      synonyms: [
-        { term: "advocate for", nuance_ja: "フォーマルで中立。政策や制度にも使え、「自分が損をするリスクを負う」という含みはない。" },
-        { term: "stick up for", nuance_ja: "より口語的で、いじめや口論から守るような対等・私的な場面に馴染む。社内政治の重みは出ない。" },
-        { term: "vouch for", nuance_ja: "人の人物や能力を「請け合う」ことに限定され、積極的に働きかける行動までは含まない。" }
-      ],
-      explanation_ja: "野球で代打（pinch hitter）として打席に立つ姿が元の比喩で、「他人のために自分がリスクを取って打席に入る」という構図が核心。だからこそ上司が部下のために社内政治で身を張る文脈で最もよく使われ、アメリカのマネジメント語彙として重要度が高い。for の後ろには人が来る形が基本で、\"go to bat for the proposal\" のように事柄も置けるが、人の場合ほど自然ではない。感謝を伝える \"thanks for going to bat for me\" は、単なる助力ではなく「庇ってくれたこと」への謝辞として響く。"
-    },
-    {
-      type: "idiom", term: "rubber-stamp (something)", ipa: "", register: "中立〜批判的・ガバナンス",
-      meaning_en: "to approve something automatically, without any real scrutiny",
-      meaning_ja: "（実質的な審査をせず）形式的に承認する、追認するだけ",
-      examples: [
-        "The committee is supposed to challenge management, but in practice it rubber-stamps whatever the CEO brings in.",
-        "Don't expect a real discussion tonight — the residents' meeting is just there to rubber-stamp the budget."
-      ],
-      synonyms: [
-        { term: "approve", nuance_ja: "完全に中立で、審査があったかどうかを含意しない。rubber-stamp には常に「見ていない」という批判が付く。" },
-        { term: "wave through", nuance_ja: "検問を素通りさせるイメージで意味は近いが、より口語的・英国寄り。制度の形骸化より、その場の甘い判断を指す。" },
-        { term: "sign off on", nuance_ja: "責任者が正式に承認を与えるという中立的な実務表現。ちゃんと目を通したという含みがある点でほぼ正反対。" }
-      ],
-      explanation_ja: "ゴム印をポンと押すだけ、という官僚仕事の情景がそのまま比喩になったもので、名詞（a rubber stamp）でも動詞（to rubber-stamp）でも使える。人に対して \"He's just a rubber stamp\" と言うと「承認するだけの飾りの役職」という強い侮辱になるため、社内で口にするときは注意が必要。取締役会の実効性、監査委員会の独立性、規制当局の甘さを論じる記事では定番の批判語なので、コーポレートガバナンスの英文を読むなら必須。逆に自社を説明する場面では \"this is not a rubber-stamp process\" と否定形で使い、審査の実質性を強調するのが定石。"
-    },
-    {
-      type: "idiom", term: "a fly in the ointment", ipa: "", register: "やや上品な口語・書き言葉でも可",
-      meaning_en: "one small drawback that spoils an otherwise good situation",
-      meaning_ja: "全体は良いのに一つだけ台無しにする難点、玉に瑕",
-      examples: [
-        "The asset quality is excellent and the deposit base is sticky; the only fly in the ointment is a pension deficit nobody wants to talk about.",
-        "Great apartment, great price — the fly in the ointment is that the nearest station is a twenty-five minute walk."
-      ],
-      synonyms: [
-        { term: "a sticking point", nuance_ja: "交渉で合意を妨げている争点を指し、解決すべき対象。fly in the ointment は交渉事とは限らず、単に価値を下げる欠点を指す。" },
-        { term: "a catch", nuance_ja: "口語的で、「うますぎる話に隠された条件」という含み。相手が意図的に伏せていたというニュアンスが出やすい。" },
-        { term: "a drawback", nuance_ja: "中立で事務的な「欠点」。全体が優れているという前提も、それが台無しになるという劇的さもない。" }
-      ],
-      explanation_ja: "旧約聖書「伝道の書」の一節（死んだ蠅が香油を腐らせる）に由来する、聖書英語が日常に残った典型例。核心は「全体が非常に良い」ことが前提にある点で、もともと欠点だらけの案件に使うと意味が通らない。実務では the only fly in the ointment という形で、好意的な評価を述べたうえで一点だけ懸念を挙げる気の利いた前置きとして機能する。やや古風な響きがあるので多用すると気取って聞こえるが、投資委員会や取締役会の口頭コメントでは今も普通に耳にする。"
-    },
-    {
-      type: "phrase", term: "I'll defer to you on that", ipa: "", register: "フォーマル寄り・会議で丁寧",
-      meaning_en: "a polite way of saying you will accept the other person's judgment because the question falls in their area",
-      meaning_ja: "その点はあなたの判断にお任せします",
-      examples: [
-        "You've run three of these carve-outs and I haven't run any, so I'll defer to you on the timeline.",
-        "I'll defer to you on the wine — you're the one who actually remembers what we ordered last time."
-      ],
-      synonyms: [
-        { term: "That's your call", nuance_ja: "より口語的で、対等〜やや突き放した響き。相手の権限を認めるだけで、専門性への敬意はあまり込められない。" },
-        { term: "You know better than I do", nuance_ja: "謙遜が前面に出る言い方。敬意は強く伝わるが、場合によっては大げさ・お世辞に聞こえる。" },
-        { term: "I'm happy to go with your read on it", nuance_ja: "くだけた同意の表明で、defer のように「権限の所在を明示する」硬さがない。" }
-      ],
-      explanation_ja: "defer to は「敬意を払って自分の意見を引っ込める」というラテン語由来のフォーマルな動詞で、「延期する」の defer とは同綴りの別語。重要なのは、負けを認めているのではなく「この論点の持ち主はあなただ」と役割分担を宣言している点で、だから使っても弱くは見えない。むしろ自分の専門領域では譲らず、他人の領域では素直に譲る人は成熟していると評価される。on の後ろに具体的な論点（on the timeline, on the accounting treatment）を必ず添えると、譲る範囲が限定されて一段とプロらしく響く。"
-    },
-    {
-      type: "phrase", term: "Where does that leave us?", ipa: "", register: "中立・会議の要所で",
-      meaning_en: "a question asking what the practical consequence of what was just said is for our position or next step",
-      meaning_ja: "で、我々としてはどうなるのか／どう動くべきか？",
-      examples: [
-        "So the lender won't extend and the buyer won't raise the price. Where does that leave us?",
-        "Both of our first choices for the venue are booked that weekend. Where does that leave us?"
-      ],
-      synonyms: [
-        { term: "So what's the takeaway?", nuance_ja: "情報の要点を求める言い方で、自分たちの立場や次の行動への含意までは必ずしも問わない。" },
-        { term: "What are our options?", nuance_ja: "選択肢の列挙をはっきり要求する。Where does that leave us? はまず現在地の確認から入る点が違う。" },
-        { term: "So where do we go from here?", nuance_ja: "ほぼ同義だが次の一歩に重心があり、現状評価の段階を飛ばしている。" }
-      ],
-      explanation_ja: "議論が事実の応酬で膠着したとき、それを意思決定の軌道に引き戻すための定番の一言で、英語圏の会議では司会役やシニアがよく口にする。leave us の us が効いていて、抽象論ではなく「我々の立場」に話を引き寄せる働きがある。誰も責めずに議論の停滞を指摘できるので、政治的に安全な進行ツールとして覚えておく価値が高い。応用として us を差し替えた \"Where does that leave the timeline?\" のような形も頻出で、悪い前提が何に効いてくるかを確認するときに便利。"
-    },
-    {
-      type: "phrase", term: "for the avoidance of doubt", ipa: "", register: "非常にフォーマル・契約書/メール",
-      meaning_en: "a formal signal that what follows is being stated explicitly so that the preceding point cannot be misread",
-      meaning_ja: "誤解のないように明記すると、念のため明確にしておくと",
-      examples: [
-        "For the avoidance of doubt, the fee is payable whether or not the transaction closes.",
-        "For the avoidance of doubt, I'm not asking anyone to work this weekend — Monday morning is fine."
-      ],
-      synonyms: [
-        { term: "To be clear", nuance_ja: "圧倒的に口語的で汎用性が高い。会話でも使え、法的な重々しさがまったくない。" },
-        { term: "To reiterate", nuance_ja: "既に述べたことの繰り返しである点を強調する語で、新たに明示的な条件を足す場合には使えない。" },
-        { term: "Just to confirm", nuance_ja: "相手に確認を求める含みがあり、こちらが一方的に解釈を固定する響きにはならない。" }
-      ],
-      explanation_ja: "英米の契約書で最も頻出する定型句の一つで、直前の条項が両様に読めるとき、片方の読み方を封じるために置かれる。実務上の価値は、契約を読む側に回ったときに「起草者もここが争点になると分かっていた」というサインとして読み取れる点にある。ビジネスメールに転用すると、丁寧でありながら有無を言わせない強さが出るので、条件や範囲を確定させたい場面で効果的。ただし日常の雑談で使うと弁護士の物真似のように響くため、二つ目の例文のように少しユーモアを込めて使うのが実際の運用に近い。"
-    },
-    {
-      type: "phrase", term: "if memory serves", ipa: "", register: "上品な口語・やや文語的",
-      meaning_en: "an aside meaning 'if I am remembering correctly', used before a detail you are fairly but not fully sure of",
-      meaning_ja: "記憶が正しければ、確か",
-      examples: [
-        "If memory serves, we passed on this same company in 2023 because the founder wouldn't take a minority partner.",
-        "If memory serves, you were the one who swore you'd never move back to Chicago."
-      ],
-      synonyms: [
-        { term: "If I recall correctly", nuance_ja: "ほぼ同義でより中立的・一般的。メールでは IIRC と略されるほど日常に浸透している。" },
-        { term: "Correct me if I'm wrong", nuance_ja: "相手に訂正を促す姿勢が強く、自分の記憶の確度についての言及ではない。" },
-        { term: "I could be wrong, but", nuance_ja: "記憶に限らず判断全般の留保に使え、より防御的で自信のなさが前面に出る。" }
-      ],
-      explanation_ja: "serve は「役に立つ、機能する」の意で、直訳すれば「記憶が私に仕えてくれるなら」。やや古風で文語的な響きがあり、それが逆に知的で落ち着いた印象を与えるため、会議やインタビューで細部を持ち出すときの前置きとして重宝される。実務的な効用は、事実誤認だったときの保険をかけつつ発言の価値は下げない、という絶妙なバランスにある。文頭に置くのが基本だが、文末に \"— 2019, if memory serves\" と添える形も洒落ていて頻出。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "mercurial", ipa: "/mɜːrˈkjʊriəl/",
-      meaning_en: "prone to sudden and unpredictable changes of mood or position",
-      meaning_ja: "気分や態度が変わりやすく読めない、移り気な",
-      examples: [
-        "The founder is brilliant but mercurial — the term sheet he loved on Tuesday was an insult by Friday.",
-        "My brother is mercurial about restaurants; he'll rave about a place for a month and then refuse to go back."
-      ],
-      synonyms: [
-        { term: "volatile", nuance_ja: "市場や情勢など人以外にも広く使い、人に使うと「怒り出しかねない」という物騒さが前に出る。mercurial にはある種の才気や魅力の含みがある。" },
-        { term: "temperamental", nuance_ja: "「怒りっぽくて扱いにくい」という実務上の面倒さに焦点。機械や道具の調子が不安定なことにも使える。" },
-        { term: "capricious", nuance_ja: "気まぐれさが「理由なき恣意性」として響き、権限を持つ人の不当な決定を批判する場面に馴染む。" }
-      ],
-      explanation_ja: "ローマ神メルクリウス（俊敏で移ろいやすい伝令の神）と、常温で流れ続ける金属 mercury（水銀）の両方から来た語で、「つかみどころがない」というイメージが二重に効いている。人物評として使うと単なる非難ではなく「才能はあるが不安定」という複雑な敬意が混ざるのが特徴で、創業者やスター経営者、名将の描写で頻出する。市場や価格に使うなら volatile のほうが自然なので、mercurial は基本的に人に使うと覚えておくと安全。"
-    },
-    {
-      term: "unwieldy", ipa: "/ʌnˈwiːldi/",
-      meaning_en: "too large, complex, or awkwardly structured to be handled or managed efficiently",
-      meaning_ja: "大きすぎ・複雑すぎて扱いにくい、持て余す",
-      examples: [
-        "A fifteen-person steering committee is unwieldy; nothing gets decided until we cut it to five.",
-        "The new suitcase looks great, but it's unwieldy on stairs — I nearly took someone out at the station."
-      ],
-      synonyms: [
-        { term: "cumbersome", nuance_ja: "「重くて煩雑」という負担感が中心で、手続きや書式に使いやすい。unwieldy は特に「サイズや構造ゆえに制御しきれない」点に焦点がある。" },
-        { term: "bloated", nuance_ja: "不必要に膨れ上がったという批判が明確で、削るべきだという含意が強い。unwieldy は規模そのものが正当な場合にも使える。" },
-        { term: "clunky", nuance_ja: "口語的で、動作のぎこちなさやデザインの野暮ったさを指す。UI やソフトウェアの批評で最もよく使われる。" }
-      ],
-      explanation_ja: "古語 wield（武器などを自在に振るう）の否定形で、原義は「大きすぎて振り回せない剣」。この語源を知っていると、「サイズや構造そのものが操作性を奪っている」という核心が一発で腑に落ちる。組織設計、委員会、法規制、コードベース、ポートフォリオなど、規模の肥大が意思決定を鈍らせる話題で頻出し、\"an unwieldy structure\" は英文ビジネス記事の定番コロケーション。物理的な荷物にも比喩的な組織にも同じ感覚で使えるのが便利な点。"
-    },
-    {
-      term: "heavy-handed", ipa: "/ˌhevi ˈhændɪd/",
-      meaning_en: "using more force, control, or bluntness than the situation calls for",
-      meaning_ja: "強引で不器用な、手加減を知らない、高圧的な",
-      examples: [
-        "The regulator's heavy-handed response to a minor reporting error cost the bank two years of goodwill.",
-        "Telling a twenty-eight-year-old what time to be home is a bit heavy-handed, don't you think?"
-      ],
-      synonyms: [
-        { term: "draconian", nuance_ja: "罰則や規制の厳しさが常軌を逸しているという強い非難。heavy-handed には「加減ができない」という技量の問題も含まれる。" },
-        { term: "authoritarian", nuance_ja: "権威主義という政治的な性格づけで、一回の対応ではなく体質や思想そのものを指す。" },
-        { term: "overbearing", nuance_ja: "人柄として「威圧的で押しつけがましい」ことを指し、個別の措置ではなく態度への評価。" }
-      ],
-      explanation_ja: "手綱さばきの乱暴な乗り手、あるいは力任せの職人といった「加減ができない手つき」が原義で、そこから対応の不器用な過剰さ全般に広がった。批判の核心は厳しさそのものではなく「バランスを欠いている」ことなので、正当に厳しい措置には使えないのが使い分けの鍵。規制、経営、育児、編集、演出など対象は非常に広く、\"a heavy-handed approach\" や \"heavy-handed regulation\" が定番の形。批評の世界では「表現が露骨すぎる（伏線が見え見えなど）」という意味でも使われ、この用法を知っていると映画やドラマの感想が一段深くなる。"
-    },
-    {
-      term: "buoyant", ipa: "/ˈbɔɪənt/",
-      meaning_en: "staying strong or rising despite downward pressure — used of markets, demand, or a person's mood",
-      meaning_ja: "（相場・需要が）底堅く上向きの。（気分が）浮き立った",
-      examples: [
-        "Demand for the notes stayed buoyant even after the rating agency put the issuer on watch.",
-        "She came back from the interview buoyant, which is not how she usually comes back from interviews."
-      ],
-      synonyms: [
-        { term: "resilient", nuance_ja: "打撃を受けた後に戻ってくる回復力に焦点。buoyant は下押し圧力の下でも高い水準を保つ、あるいは上昇基調にあることを指す。" },
-        { term: "robust", nuance_ja: "「頑丈で崩れない」という強度の話で、水準の高さを冷静に述べる語。上向きの勢いという含みはない。" },
-        { term: "upbeat", nuance_ja: "気分や見通しの明るさに限定される口語で、市場や需要そのものの強さを表すことはできない。" }
-      ],
-      explanation_ja: "浮力（buoyancy）の形容詞形で、「押し沈めようとしても浮き上がってくる」という物理イメージがそのまま比喩になっている。金融では株価・需要・住宅市場・雇用など、悪材料があっても水準が落ちないものを描写する定番語で、\"buoyant demand\" は経済記事の頻出コロケーション。人に使うと「気分が浮き立っている」という明るい意味になり、対義語は文字通り沈んだ気分を表す deflated や downcast。発音が英米で割れる代表格でもあり、米では /ˈbuːjənt/ と読む人がかなり多い。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "drum up (support / business)",
-      meaning_en: "to actively generate interest, support, or new business through deliberate effort",
-      meaning_ja: "（支持・需要・仕事を）働きかけて掘り起こす、かき集める",
-      examples: [
-        "The sponsor spent six weeks drumming up support among the top twenty holders before going public with the proposal.",
-        "He's been drumming up business at every alumni event since he went independent."
-      ],
-      synonyms: [
-        { term: "generate", nuance_ja: "中立でビジネス文書向き。drum up にある「足で稼ぐ、地道に働きかける」という泥臭さがない。" },
-        { term: "rally (support)", nuance_ja: "すでに味方である人々を「結集させる」ことに焦点があり、ゼロから関心を掘り起こすニュアンスは薄い。" }
-      ],
-      explanation_ja: "町の広場で太鼓を叩いて人を集めた（あるいは軍が新兵を募った）情景が語源で、「自然に集まるのを待たず、自分から音を立てて集める」という能動性が核心。だから成り行きで増えた需要には使えず、必ず誰かの努力が前提になる。相性のいい目的語はほぼ決まっていて、support, business, interest, enthusiasm, publicity が代表格。ややインフォーマルなので正式な IR 文書よりは会話や社内メール向きだが、報道記事では普通に使われる。"
-    },
-    {
-      phrase: "chip away at (something)",
-      meaning_en: "to reduce or weaken something gradually through small, repeated efforts",
-      meaning_ja: "少しずつ削り取る、地道に切り崩す",
-      examples: [
-        "We're not going to refinance our way out of this — we chip away at the leverage about two turns a year.",
-        "Constant last-minute schedule changes chip away at whatever trust the team had left."
-      ],
-      synonyms: [
-        { term: "erode", nuance_ja: "主語が意図を持たない自然な力であることが多く、時間経過による摩耗を指す。chip away at は誰かが意図的に繰り返す行為。" },
-        { term: "whittle down", nuance_ja: "数量を「絞り込む」ことに特化し、候補者リストや在庫を減らす文脈が中心。信頼や優位性のような抽象物には使いにくい。" }
-      ],
-      explanation_ja: "石や木を鑿（のみ）で少しずつ欠いていく作業が原義で、一撃では割れないものを反復で崩すイメージ。面白いのは使い道が二方向にあることで、良い意味では「借金・課題・差を地道に減らす」（chip away at the debt / at the lead）、悪い意味では「信頼・利益率・優位性がじわじわ削られる」（chip away at margins / at credibility）となる。どちらの場合も at が必須で、chip away the debt とは言わない。決算説明会で経営陣が漸進的な改善を説明するときの定番表現でもある。"
-    },
-    {
-      phrase: "carry weight",
-      meaning_en: "to have real influence on how others judge or decide something",
-      meaning_ja: "（意見・肩書きなどが）重みを持つ、影響力がある",
-      examples: [
-        "In this committee, the risk officer's objection carries more weight than anything the deal team says.",
-        "A recommendation from her carries weight — she hasn't given one in three years."
-      ],
-      synonyms: [
-        { term: "hold sway", nuance_ja: "「領域全体を支配する影響力を持つ」という強い言い方。個々の意見の説得力という意味では使わない。" },
-        { term: "count for something", nuance_ja: "口語的で、「無駄ではない・それなりに評価される」という控えめな言い方。" }
-      ],
-      explanation_ja: "天秤の皿にどれだけ重みを加えるか、という計量のイメージが元で、だからこそ比較級と相性が抜群にいい（carries more weight than ~ が最頻出の形）。主語には意見、証言、推薦状、肩書き、署名など「判断材料として提出されるもの」が来るのが自然で、人そのものを主語にしたいなら have influence を使う。否定形の \"carries very little weight\" は、相手の主張を全否定せずに軽視を伝えられる外交的な言い回し。冠詞は付けず無冠詞で使う点も固定されている。"
-    },
-    {
-      phrase: "tee up (a decision / a discussion)",
-      meaning_en: "to prepare something so that others can act on it immediately with minimal effort",
-      meaning_ja: "（判断・議論を）すぐ処理できる形に整えて差し出す、お膳立てする",
-      examples: [
-        "Tee up the decision for the Thursday board call — one page, three options, and your recommendation at the top.",
-        "I teed up the conversation with her over lunch so you wouldn't have to start from zero."
-      ],
-      synonyms: [
-        { term: "set up", nuance_ja: "汎用的で準備一般を指す。tee up が持つ「あとは相手が一振りするだけ」という詰めの含みは弱い。" },
-        { term: "lay the groundwork", nuance_ja: "より長い時間をかけた地ならしを指し、直後の意思決定を前提としない。" }
-      ],
-      explanation_ja: "ゴルフでボールをティーに乗せる動作が原義で、「打ちやすい高さに置いてあげる」という気配りのイメージが核心。したがって単なる準備ではなく「相手が最小の労力で決断・発言できる状態にする」ことを指し、シニアに上げる資料や根回しの説明で極めてよく使われる。目的語は decision, discussion, question, vote, meeting など「これから起こる場」であって、モノには使わない。米国のオフィスでは日常語として完全に定着しているが、ゴルフ由来なので硬い文書では set up や prepare に置き換わることも多い。"
-    }
-  ],
-  todayQuiz: [
-    { question: "The seller's incomplete data room ___ diligence for three weeks, and the signing date slipped.", choices: ["stymied", "telegraphed", "upended", "backstopped"], answerIndex: 0, explanation: "\"Stymie\" means to block progress so that it cannot continue, and it usually takes an obstacle rather than a person as its subject. \"Upend\" would claim the process was overturned entirely rather than merely held up." },
-    { question: "Which sentence uses \"telegraph\" the way a native speaker would?", choices: ["The Fed telegraphed the cut weeks in advance, so markets barely reacted.", "The Fed telegraphed the market about the coming cut.", "Analysts telegraphed a cut in their year-end note.", "We should telegraph for a rate cut next quarter."], answerIndex: 0, explanation: "\"Telegraph\" takes the intention or move as its object, never the audience, and its subject must be the party that will actually act. Analysts predict or forecast a cut; only the central bank can telegraph one." },
-    { question: "Stablecoin settlement could ___ a correspondent banking model that has worked the same way for forty years.", choices: ["upend", "stymie", "chip away at", "rubber-stamp"], answerIndex: 0, explanation: "\"Upend\" describes an overturning so complete that the old structure no longer holds, which fits replacing a forty-year-old model. \"Chip away at\" would suggest gradual erosion rather than a decisive break." },
-    { question: "The sponsor agreed to ___ the rights issue, so the company receives the full amount even if shareholders do not subscribe.", choices: ["backstop", "tee up", "drum up", "carry weight for"], answerIndex: 0, explanation: "A backstop is support arranged in advance that takes effect only if the primary route fails, which is exactly what an underwritten rights issue provides. The other options describe preparing, generating interest, or having influence." },
-    { question: "Nobody else in the room knew my work, and she ___ me in the promotion committee.", choices: ["went to bat for", "deferred to", "teed up", "rubber-stamped"], answerIndex: 0, explanation: "\"Go to bat for someone\" means spending your own standing to argue on their behalf, which is what happens in a promotion committee. \"Defer to\" would mean accepting someone else's judgment, the opposite of actively arguing." },
-    { question: "The committee is meant to challenge management, but in practice it simply ___ whatever the CEO puts in front of it.", choices: ["rubber-stamps", "chips away at", "tees up", "drums up"], answerIndex: 0, explanation: "\"Rubber-stamp\" always carries the criticism that approval was given without genuine scrutiny, which is the point of the contrast with \"challenge.\" A neutral verb such as \"approve\" would lose that judgment." },
-    { question: "The credit is strong and the deposit base is sticky; the only ___ is an unfunded pension liability.", choices: ["fly in the ointment", "wrench in the works", "rubber stamp", "backstop"], answerIndex: 0, explanation: "\"A fly in the ointment\" requires the surrounding situation to be genuinely good and names the single flaw that spoils it. \"Throw a wrench in the works\" describes disrupting a plan in motion, not a defect in something otherwise attractive." },
-    { question: "He is undeniably talented, but ___ — the structure he championed on Monday is the one he attacks on Thursday.", choices: ["mercurial", "unwieldy", "heavy-handed", "buoyant"], answerIndex: 0, explanation: "\"Mercurial\" describes unpredictable swings in mood or position and, unlike \"volatile,\" leaves room for admiration of the person's ability. The other adjectives describe things that are hard to manage, excessively forceful, or holding up well." },
-    { question: "Fining the bank the maximum amount for a single late filing struck many observers as ___.", choices: ["heavy-handed", "unwieldy", "buoyant", "mercurial"], answerIndex: 0, explanation: "\"Heavy-handed\" criticises a response as disproportionate rather than merely strict, so it fits a maximum penalty for a minor lapse. It would not apply to a severe measure the situation genuinely warranted." },
-    { question: "Demand for the notes stayed ___ even after the rating agency put the issuer on watch.", choices: ["buoyant", "unwieldy", "mercurial", "heavy-handed"], answerIndex: 0, explanation: "\"Buoyant\" describes something that stays up despite downward pressure, straight from the physics of buoyancy. \"Resilient\" would emphasise recovering after a fall rather than never sinking in the first place." },
-    { question: "We cannot refinance our way out of the balance sheet; we ___ the leverage about two turns a year.", choices: ["chip away at", "drum up", "tee up", "carry weight for"], answerIndex: 0, explanation: "\"Chip away at\" describes deliberate, repeated small reductions and always requires the preposition \"at.\" \"Drum up\" would mean generating something new rather than gradually reducing an existing burden." },
-    { question: "___, the fee is payable whether or not the transaction closes.", choices: ["For the avoidance of doubt", "If memory serves", "Where does that leave us", "I'll defer to you on that"], answerIndex: 0, explanation: "\"For the avoidance of doubt\" introduces a point stated explicitly so that the preceding terms cannot be misread, which is why it is standard in contracts. \"If memory serves\" hedges a recollection, which makes no sense for a binding term." }
-  ]
-},
-{
   date: "2026-09-02",
   dateLabel: "2026年9月2日（水）",
   readTimeMin: 33,
@@ -2372,9 +2051,332 @@ const ENGLISH_REPORTS = [
     { question: "We could have kept debating the acquisition price forever, but with the target's other suitor circling, the CEO finally ___ and signed at the ask price.", choices: ["pulled the trigger", "hedged his bets", "put out feelers", "raised eyebrows"], answerIndex: 0, explanation: "\"Pull the trigger\" means making the final decision to proceed after hesitation, fitting the pressure that forced action. \"Hedge your bets\" means spreading commitment across options, the opposite of committing fully." },
     { question: "Rather than commit fully to one supplier, the procurement team decided to ___ and split the contract between two vendors at very different price points.", choices: ["hedge their bets", "put out feelers", "move the goalposts", "keep the vendors at arm's length"], answerIndex: 0, explanation: "\"Hedge your bets\" means spreading commitment across multiple options to reduce risk, matching the decision to split between two vendors. \"Put out feelers\" means testing reactions informally, not splitting a contract." }
   ]
+},
+{
+  date: "2026-09-09",
+  dateLabel: "2026年9月9日（水）",
+  readTimeMin: 33,
+  coreItems: [
+    {
+      type: "word", term: "fungible", ipa: "/ˈfʌndʒəbl/", register: "経済・法務用語（フォーマル、代替可能性を議論する場面）",
+      meaning_en: "able to be replaced by an identical unit of the same kind, such that individual units are interchangeable and one unit is as good as another",
+      meaning_ja: "代替可能な、個々の単位に区別がない（同種のものと交換しても価値が変わらない）",
+      examples: [
+        "Cash is perfectly fungible, but the board argued that reputational capital isn't — you can't just swap in a new brand and expect the same trust.",
+        "He kept insisting all his exes were basically fungible, which was, unsurprisingly, not something any of them wanted to hear."
+      ],
+      synonyms: [
+        { term: "interchangeable", nuance_ja: "「互いに置き換え可能」という一般的な性質を指す平易な語。fungibleは特に経済学・法律の文脈で、同種の単位（通貨・商品・株式など）が完全に等価であることを指す専門的な響きが強い。" },
+        { term: "substitutable", nuance_ja: "ある物を別の物で代用できることを指す、より分析的・学術的な語。fungibleは「代用できる」だけでなく「区別する意味がない」という等価性そのものを強調する。" },
+        { term: "generic", nuance_ja: "「特色がなく画一的」という否定的なニュアンスを持ちうる。fungibleは中立的・技術的な語で、必ずしも質の低さを含意しない。" }
+      ],
+      explanation_ja: "ラテン語 fungi（果たす、遂行する）に由来し、もともとは法律用語として「消費・使用によって同種の別のもので返還できる財」（お金や穀物など）を指した。仮想通貨の文脈で「NFT（non-fungible token）」という語が普及したことで、対義語である non-fungible を通じてこの単語自体も一気に一般に知られるようになった。ビジネスでは「予算はfungibleかどうか」（部門間で流用できるか）を議論する場面や、人材やポジションを「代替可能かどうか」で評価する、やや冷徹な場面でも使われる。"
+    },
+    {
+      type: "word", term: "impute", ipa: "/ɪmˈpjuːt/", register: "会計・非難のニュアンス両方で使うフォーマル語",
+      meaning_en: "to attribute a quality, value, or fact to someone or something, often indirectly or on the basis of assumption rather than direct evidence",
+      meaning_ja: "（直接の証拠なしに）帰属させる、（推定に基づき）〜のせいにする／算入する",
+      examples: [
+        "For tax purposes, the IRS will impute a reasonable interest rate on that interest-free loan from your parents, whether any interest actually changed hands or not.",
+        "I don't think it's fair to impute bad intentions to him just because the email came across a little blunt."
+      ],
+      synonyms: [
+        { term: "attribute", nuance_ja: "性質や原因を「〜に帰する」ことを指す中立的で一般的な語。imputeは特に「証拠が乏しいのに推定で当てはめる」というニュアンスや、会計上「みなし計算する」という技術的な用法が強い。" },
+        { term: "ascribe", nuance_ja: "attributeとほぼ同義でややフォーマル。imputeは非難や疑念を伴う文脈（悪意を勝手に当てはめる等）で使われる頻度が高く、より否定的な響きを持ちやすい。" },
+        { term: "attribute blame to", nuance_ja: "単に責任の所在を述べる表現。imputeはその判断が推測・間接的な根拠に基づいていることを含意し、「本当にそうかは分からないが」という留保のニュアンスを残す。" }
+      ],
+      explanation_ja: "ラテン語 imputare（計算に入れる、勘定する）に由来し、会計の「計上する」という発想がそのまま残っている語。会計・税務の世界では「imputed interest」（みなし利息）や「imputed income」（帰属所得）のように、実際にはやり取りされていない価値を計算上存在するものとして扱う専門用語として頻出し、USCPA試験でもおなじみの概念。日常会話に転用すると、相手の発言や行動に、本人が意図していないかもしれない意味や動機を勝手に当てはめる、というやや踏み込んだニュアンスを持つ。"
+    },
+    {
+      type: "word", term: "vitiate", ipa: "/ˈvɪʃieɪt/", register: "法務・契約文書（フォーマル、書き言葉）",
+      meaning_en: "to spoil, weaken, or destroy the legal force, validity, or effectiveness of something, often because of a hidden flaw or wrongdoing",
+      meaning_ja: "（契約・議論などの）効力・妥当性を損なう、無効にする",
+      examples: [
+        "Any material misrepresentation in the disclosure schedule would vitiate the seller's right to the earnout, according to the indemnification clause.",
+        "One dishonest moment can vitiate years of trust — that's the part he still doesn't seem to get."
+      ],
+      synonyms: [
+        { term: "invalidate", nuance_ja: "契約や主張を「無効にする」という結果そのものを指す、より直接的で一般的な語。vitiateはその無効化が「隠れた欠陥・不正」によってもたらされたという原因面を強調する、より文語的な語。" },
+        { term: "undermine", nuance_ja: "徐々に弱体化させるという広い意味で使え、必ずしも法的な無効を意味しない。vitiateは特に契約・同意・議論など「効力を持つはずだったもの」が根本から損なわれることを指す。" },
+        { term: "nullify", nuance_ja: "手続き上・公式に無効を宣言することを指すことが多い、フォーマルな語。vitiateはより広く、質的な劣化・腐食によって効力が失われる過程そのものを描写できる。" }
+      ],
+      explanation_ja: "ラテン語 vitiare（傷つける、汚す）、vitium（欠陥、悪徳）に由来し、viceやvicious（悪徳、凶暴）と同じ語根を持つ。契約書や訴訟関連の文書で「詐欺・強迫・錯誤があれば合意はvitiateされる（効力を失う）」という形で頻出し、法学部やロースクールの英語教材にもよく登場する。日常的な議論でも、一つの不正・欺瞞が、それまで積み上げてきた信頼や合意の正当性を根こそぎ損なう、というやや重々しい響きで使われる。"
+    },
+    {
+      type: "word", term: "recalcitrant", ipa: "/rɪˈkælsɪtrənt/", register: "交渉・組織描写（フォーマル、強い非難）",
+      meaning_en: "stubbornly resistant to authority, guidance, or discipline, especially in a way that actively obstructs cooperation",
+      meaning_ja: "反抗的で強情な、指示や規律に頑として従わない",
+      examples: [
+        "A handful of recalcitrant board members blocked the merger vote for months, even after every other stakeholder had signed off.",
+        "The vet said the dog wasn't aggressive, just recalcitrant — he simply refuses to do anything he doesn't feel like doing."
+      ],
+      synonyms: [
+        { term: "intransigent", nuance_ja: "既出（このシリーズで以前登場）。intransigentは主に「交渉での譲歩拒否」に焦点があるのに対し、recalcitrantはより広く「権威・規律・指示への反抗」全般を指し、組織内の反対勢力や躾の効かない人・動物にも使える。" },
+        { term: "unruly", nuance_ja: "より口語的で、子供や群衆など「統制が効かない」状態を指すことが多い。recalcitrantはより書き言葉的で、意図的・頑固な抵抗というニュアンスが強い。" },
+        { term: "defiant", nuance_ja: "公然と反抗する態度そのものを指す、やや称賛的にも使える語（不当な権威への抵抗を美化する文脈など）。recalcitrantはほぼ常に否定的で、協調や進展を妨げる厄介さを非難する。" }
+      ],
+      explanation_ja: "ラテン語 recalcitrare（後ろ足で蹴る）に由来し、calx（かかと）と同語源。抵抗するラバや馬が後ろ足で蹴り上げる様子がそのまま「頑として言うことを聞かない」という比喩になっている点が印象的。組織の変革やM&Aのプロセスで、一部の反対勢力が最後まで抵抗し続ける状況を描写する報道記事で頻出し、\"a recalcitrant minority shareholder\" のように、少数派が全体の意思決定を妨げる構図を批判的に描く際の定番語。"
+    },
+    {
+      type: "idiom", term: "let the cat out of the bag", ipa: "", register: "うっかり口を滑らせる（口語、やや非難含み）",
+      meaning_en: "to reveal a secret, often accidentally or before the intended time, spoiling a planned surprise or announcement",
+      meaning_ja: "（うっかり）秘密を漏らす、計画より早くばらしてしまう",
+      examples: [
+        "HR hadn't announced the reorg yet, but someone in finance let the cat out of the bag during a Slack thread on Friday.",
+        "We were planning to surprise her with the trip, but her sister let the cat out of the bag two weeks early."
+      ],
+      synonyms: [
+        { term: "spill the beans", nuance_ja: "ほぼ同義で交換可能な口語表現。let the cat out of the bagは「意図せず、うっかり」漏らしたというニュアンスがやや強く、spill the beansはやや意図的な暴露（問い詰められて白状する等）にも使いやすい。" },
+        { term: "leak (information)", nuance_ja: "組織的・意図的な情報漏洩を指すことが多い、ニュース報道でも使われる中立的な語。イディオムはより個人的でカジュアルな場面での「うっかり」に焦点がある。" },
+        { term: "give the game away", nuance_ja: "特に「隠していた計画・意図がばれてしまう」ことに焦点がある英国寄りの表現。let the cat out of the bagはより一般的で秘密の中身を問わず広く使える。" }
+      ],
+      explanation_ja: "中世の市場で子豚を袋に入れて売る際、悪徳業者がこっそり安い猫にすり替えて売ろうとしたが、袋を開けたら猫が飛び出して詐欺がばれた、という逸話が語源とされる（諸説あり）。組織の非公式な発表や誕生日パーティーのサプライズなど、本来は然るべきタイミングで発表されるはずだったことが早期に、しばしば不注意でばれてしまう状況にぴったりの表現で、誰が\"let the cat out of the bag\"したのかと、少し茶化した調子で使われることも多い。"
+    },
+    {
+      type: "idiom", term: "read someone the riot act", ipa: "", register: "強い叱責（口語、上下関係のある場面）",
+      meaning_en: "to reprimand someone severely and angrily for their unacceptable behavior, often as a final warning before consequences follow",
+      meaning_ja: "（人を）厳しく叱りつける、最後通牒的にきつく注意する",
+      examples: [
+        "The client read our account manager the riot act after the invoice went out with last quarter's pricing by mistake.",
+        "Dad read us the riot act when he found out we'd had people over while he was away."
+      ],
+      synonyms: [
+        { term: "give someone a dressing-down", nuance_ja: "ほぼ同義の英国寄りの口語表現。read someone the riot actは「これ以上繰り返せば深刻な結果が伴う」という最終警告のニュアンスがやや強く出やすい。" },
+        { term: "chew someone out", nuance_ja: "よりアメリカ口語的でカジュアル。read someone the riot actは元が公的な法令（Riot Act）に由来するため、やや形式張った、権威をもって叱る響きを保っている。" },
+        { term: "reprimand", nuance_ja: "フォーマルで事務的な語（人事・軍隊などの公式な譴責にも使う）。イディオムのほうが感情的な激しさや対面での迫力を生き生きと伝える。" }
+      ],
+      explanation_ja: "1714年に英国で制定された実際の法律「暴動取締法（Riot Act）」に由来し、当局が群衆に解散を命じる際にこの法令を読み上げ、従わなければ実力行使も辞さないと警告したことが語源。単なる注意ではなく「これ以上の違反は許さない」という公的な重みを帯びた最終警告のニュアンスが核心にあり、クライアントや上司が明確なミスに対して感情的かつ本気で叱責する場面にぴったりの表現。親が子供を叱る家庭的な場面にも違和感なく転用できる、意外と守備範囲の広い言い回し。"
+    },
+    {
+      type: "idiom", term: "have a chip on your shoulder", ipa: "", register: "人物評（やや批判的、防衛的な態度を指摘）",
+      meaning_en: "to have a persistent feeling of resentment or a need to prove oneself, often stemming from a past slight or perceived disadvantage",
+      meaning_ja: "（過去の屈辱や不利な立場から）根に持っている、変に突っかかりやすい、必要以上に肩肘を張っている",
+      examples: [
+        "He's clearly got a chip on his shoulder about not having an MBA — he brings it up unprompted in almost every strategy meeting.",
+        "She grew up with nothing and still has a bit of a chip on her shoulder about it, even now that she's clearly made it."
+      ],
+      synonyms: [
+        { term: "be defensive", nuance_ja: "特定の場面で防御的な態度を取ることを指す、より一時的で状況依存の語。have a chip on your shoulderは過去の経験に根ざした、より持続的な性格傾向・心理状態を指す。" },
+        { term: "hold a grudge", nuance_ja: "特定の相手や出来事に対する恨みに焦点がある。chip on your shoulderはより漠然とした「証明したい・見返したい」という全般的な構えを指し、特定の相手を必要としない。" },
+        { term: "have something to prove", nuance_ja: "動機そのもの（証明したい欲求）を中立的に述べる語。chip on your shoulderはそこに「根に持っている・突っかかりやすい」という否定的な色合いを加える。" }
+      ],
+      explanation_ja: "19世紀のアメリカで、喧嘩を売りたい若者が肩に木片（chip）を乗せ、「これを叩き落とせるものなら叩き落としてみろ」と挑発した慣習に由来するとされる。単に自信がないのではなく、見下されたことへの根深い不満と、それを見返してやりたいという闘争心が入り混じった複雑な心理状態を的確に描写できる点が便利で、たたき上げの経営者や、特定の学歴・出自にコンプレックスを持つ同僚を評する際に、やや辛口だが的を射た表現としてよく使われる。"
+    },
+    {
+      type: "idiom", term: "that ship has sailed", ipa: "", register: "手遅れの指摘（口語、諦めを促す）",
+      meaning_en: "used to say that an opportunity has already passed and it is now too late to act on it or change the outcome",
+      meaning_ja: "（機会が）もう過ぎ去った、今さら手遅れだ",
+      examples: [
+        "You could've negotiated a better severance package before signing, but that ship has sailed now.",
+        "I know you wanted to switch majors senior year, but honestly, that ship has sailed at this point."
+      ],
+      synonyms: [
+        { term: "it's too late", nuance_ja: "単に時機を逸したという事実を平板に述べる語。that ship has sailedは「もう戻れない」という物理的な比喩を伴い、諦めを促す響きがより強く、時に皮肉やからかいの調子も帯びる。" },
+        { term: "the window has closed", nuance_ja: "特定の限られた機会（応募期間や交渉期間など）が終了したことを指す、よりビジネス的でフォーマルな表現。イディオムのほうが口語的で感情的な諦めのニュアンスを伝えやすい。" },
+        { term: "you missed the boat", nuance_ja: "ほぼ同じ船の比喩を使うが、相手個人の「乗り遅れ」に焦点があり、やや責める響きが強い。that ship has sailedは状況そのものが変えられないことを述べ、必ずしも相手を責めない中立性がある。" }
+      ],
+      explanation_ja: "文字通り「船はすでに港を出てしまった」という情景がそのまま「もう取り返しがつかない、後戻りできない」という意味に転じた表現。交渉や意思決定の場面で、過去に遡って条件を変えたいという相手の希望を、角を立てずに、しかしきっぱりと退ける際に便利な言い回しで、\"I hear you, but that ship has sailed\" のように共感を示しつつも現実的な線引きをする際によく使われる。"
+    },
+    {
+      type: "phrase", term: "I hear what you're saying, but ...", ipa: "", register: "丁寧な反論の前置き（ビジネス会話、フォーマル寄り）",
+      meaning_en: "used to acknowledge that you have understood someone's point before politely disagreeing with it or raising a counterpoint",
+      meaning_ja: "おっしゃることは分かりますが（丁重に反対意見を切り出す前置き）",
+      examples: [
+        "I hear what you're saying, but I don't think we can commit to that timeline without pulling resources off the other launch.",
+        "I hear what you're saying, but honestly, I still think we should just tell her the truth."
+      ],
+      synonyms: [
+        { term: "I understand your point, but ...", nuance_ja: "ほぼ同義でよりフォーマル。I hear what you're sayingは共感的な響きがやや強く、相手の感情面にも配慮している印象を与えやすい。" },
+        { term: "That's fair, but ...", nuance_ja: "より簡潔でカジュアル。相手の意見を一理あると一段階認めたうえで反論する点は同じだが、こちらのほうが軽い相槌に近く、深い共感の表明としては弱い。" },
+        { term: "With all due respect, ...", nuance_ja: "反対意見の前置きとしてはより強く、時に皮肉や苛立ちを含意することがある。I hear what you're sayingはより中立的で純粋な傾聴の姿勢を示す。" }
+      ],
+      explanation_ja: "反対意見を述べる前に、まず相手の主張を「聞いた・理解した」と明示的に承認することで、対立を和らげるクッション表現の代表格。何もクッションなしにいきなり \"but\" で反論すると相手の意見を無視したように響きかねない場面で、特に会議やクライアント対応など上下関係や利害が絡む場面で重宝する。ただし多用すると「結局は反対するための儀式的な前置き」と受け取られ、皮肉っぽく聞こえるリスクもあるため、本当に相手の論点を汲み取った上で使うのが望ましい。"
+    },
+    {
+      type: "phrase", term: "Let's take a step back.", ipa: "", register: "議論の仕切り直し（ビジネス会話、中立〜フォーマル）",
+      meaning_en: "used to suggest pausing a detailed discussion in order to reconsider the broader context or bigger picture before continuing",
+      meaning_ja: "一旦引いて全体像を見てみましょう（議論を大局的に立て直す提案）",
+      examples: [
+        "Before we argue about which vendor is cheaper, let's take a step back — do we even need to outsource this at all?",
+        "Let's take a step back for a second. Are we fighting about the wallpaper, or is this actually about something else?"
+      ],
+      synonyms: [
+        { term: "Let's zoom out.", nuance_ja: "カメラのズームの比喩を使ったよりカジュアルな言い方で、意味はほぼ同じ。take a step backのほうがやや広く定着した表現で、フォーマルな会議でも自然に使える。" },
+        { term: "Let's look at the big picture.", nuance_ja: "「全体像を見る」という結果に焦点がある。take a step backは「今の議論から一旦離れる」という動作・姿勢の変化そのものを強調する点がやや異なる。" },
+        { term: "Let's park the details for a second.", nuance_ja: "細部の議論を一時停止することに焦点がある、より限定的な言い方。take a step backは視点そのものを引くという、より根本的な仕切り直しを提案する。" }
+      ],
+      explanation_ja: "議論が細部（vendor選びの価格差など）に入り込みすぎて、そもそもの前提（外注すべきかどうか）を見失っている場面で、進行を一度止めて視点をリセットするための定番フレーズ。カップルの喧嘩でも、表面的な口論の裏にある本当の争点に気づかせる際にそのまま使えるほど汎用性が高く、感情的にヒートアップした会議の空気を落ち着かせる、進行管理者的な一言としても機能する。"
+    },
+    {
+      type: "phrase", term: "at your earliest convenience", ipa: "", register: "フォーマルなビジネスメール（丁寧だが催促の含みもありうる）",
+      meaning_en: "a formal way of asking someone to do something as soon as they reasonably can, often used in written requests or reminders",
+      meaning_ja: "ご都合のよろしいときに、なるべく早めに（丁寧だが暗に急かすニュアンスを含むことも）",
+      examples: [
+        "Could you please review the attached NDA at your earliest convenience? We're hoping to close by the end of the week.",
+        "Please send over your availability at your earliest convenience so we can lock in the interview slot."
+      ],
+      synonyms: [
+        { term: "as soon as possible", nuance_ja: "直接的で緊急性を明示する言い方。at your earliest convenienceは表面上は相手のペースを尊重しているように見せつつ、実質的には同じ緊急性を丁寧に包んで伝える、ビジネスメール特有の婉曲表現。" },
+        { term: "when you get a chance", nuance_ja: "より軽く、本当に急ぎでない場合に使われることが多いカジュアルな言い方。at your earliest convenienceはフォーマルな文書に典型的で、しばしば締め切りが背後にあることを匂わせる。" },
+        { term: "by [specific date]", nuance_ja: "具体的な期限を明示する、曖昧さのない言い方。at your earliest convenienceはあえて具体的な期限を書かずに丁寧さを保ちながら早めの対応を促す、婉曲さを持つ。" }
+      ],
+      explanation_ja: "表面上は「あなたの都合に合わせます」という相手本位の丁寧な言い回しでありながら、実際にはビジネスメールの定型句として「できるだけ早く対応してほしい」という催促の意味合いで使われることがほとんどという、英語の婉曲表現の面白い一例。特に返信が遅れている相手へのリマインダーメールで使われると、丁寧さの中にやんわりとした苛立ちや催促が滲むことがあり、ネイティブはこの二重性を承知の上で使い分けている。フォーマルな取引先とのやり取りでは今でも定番の締めくくり方の一つ。"
+    },
+    {
+      type: "phrase", term: "for lack of a better word", ipa: "", register: "適切な言葉が見つからない際のヘッジ（口語〜ビジネス会話）",
+      meaning_en: "used to introduce a word or phrase that the speaker feels is not perfectly accurate or elegant, but is the best available way to describe something",
+      meaning_ja: "他に適切な言い方が見つからないので（あえてこの言葉を使うが）、いわば",
+      examples: [
+        "The integration has been, for lack of a better word, messy — nobody quite knows who owns what anymore.",
+        "He's been, for lack of a better word, difficult to work with since the promotion."
+      ],
+      synonyms: [
+        { term: "so to speak", nuance_ja: "比喩的・非字義的な表現を使ったことを示す一般的なヘッジ。for lack of a better wordは特に「もっと良い表現があるかもしれないが見つからない」という語彙選択の限界を明示するニュアンスが強い。" },
+        { term: "if you will", nuance_ja: "やや気取った言い回しを使ったことを和らげる、フォーマルで文語的なヘッジ。for lack of a better wordはより率直に「これが精一杯の表現だ」という実用的な弁明のニュアンスを持つ。" },
+        { term: "to put it bluntly", nuance_ja: "率直さそのものを予告する表現で、婉曲さを放棄する宣言に近い。for lack of a better wordは逆に、選んだ言葉が本意より強すぎたり不正確だったりするかもしれないという留保を示す。" }
+      ],
+      explanation_ja: "率直に言いにくいこと（相手の欠点や状況の悪さなど）を口にする直前に挟むことで、本当はもっと的確な言葉があるはずだが今は思いつかないので許してほしい、という予防線を張るための便利なヘッジ表現。ネガティブな評価やきわどい形容詞（messy, difficult, awkwardなど）の直前に置かれることが多く、正直さと配慮のバランスを取りたい場面、たとえば人事評価や進捗報告で厳しいことを言わざるを得ないときに重宝する。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "obtuse", ipa: "/əbˈtjuːs/", register: "批判的（理解力の欠如、しばしば故意の鈍さを非難）",
+      meaning_en: "slow to understand something obvious, sometimes in a way that seems deliberate rather than genuinely accidental",
+      meaning_ja: "察しが悪い、わざとらしいほど鈍い（理解しようとしない）",
+      examples: [
+        "I've explained the pricing logic three times now — either he's being deliberately obtuse, or he really doesn't want to agree to it.",
+        "Am I being obtuse, or does nobody else find it weird that the numbers changed overnight with no explanation?"
+      ],
+      synonyms: [
+        { term: "dense", nuance_ja: "より口語的でカジュアルな侮辱に近く、単純な理解力の低さを指すことが多い。obtuseは「本当は理解できるはずなのにわざと理解しない」という戦略的な鈍さを匂わせる点でより辛辣。" },
+        { term: "slow on the uptake", nuance_ja: "反応や理解が遅いこと全般を指す、比較的穏やかな口語表現。obtuseはより書き言葉的でフォーマル、かつ非難の色合いが強い。" },
+        { term: "willfully ignorant", nuance_ja: "意図的に知ろうとしない姿勢を明確に非難する、より直接的な言い方。obtuseはやや遠回しに同じニュアンスを匂わせる、皮肉の効いた婉曲表現。" }
+      ],
+      explanation_ja: "幾何学の「鈍角（obtuse angle）」と同じ語源で、「鋭くない」という物理的な性質が「頭の切れが悪い」という比喩に転じた語。単なる無知や理解力不足を責めるのではなく、これだけ説明しても分からないふりをしているのではないかという、相手の誠実さそのものへの疑いを込めて使われるのが特徴で、\"Am I being obtuse, or...?\" という自虐的な前置きで使うと、遠回しに相手の理解力（あるいは誠実さ）を皮肉る、ネイティブらしい嫌味な言い回しになる。"
+    },
+    {
+      term: "punctilious", ipa: "/pʌŋkˈtɪliəs/", register: "称賛と皮肉の両方に使える（フォーマル、細部への異常なこだわり）",
+      meaning_en: "showing extreme, almost excessive attention to detail, correctness, and formal rules of behavior or procedure",
+      meaning_ja: "細部・形式に異常なほど几帳面な、儀礼にうるさい",
+      examples: [
+        "Our outside counsel is punctilious to a fault — every footnote gets cross-referenced twice before he'll sign off on anything.",
+        "She's punctilious about seating arrangements at every family dinner, down to who sits next to whom."
+      ],
+      synonyms: [
+        { term: "meticulous", nuance_ja: "既出。meticulousは主に作業の正確さ・徹底ぶりへの称賛として中立的に使われることが多いのに対し、punctiliousは形式・礼儀・手続きへのこだわりに焦点があり、しばしば「そこまでやるか」という皮肉を伴う。" },
+        { term: "fastidious", nuance_ja: "既出。fastidiousは好み・清潔さ・質へのうるささを指すことが多く、対象は物や環境にも及ぶ。punctiliousは主に規則・礼儀・手続き上の正しさへのこだわりに限定される。" },
+        { term: "by-the-book", nuance_ja: "規則通りに物事を進めることを指す口語表現。punctiliousはそれに加えて「儀礼的な細部」まで含む、より格式張ったニュアンスを持つ。" }
+      ],
+      explanation_ja: "ラテン語 punctum（点）に由来し、punctual（時間に正確な）と同語源。一点一点を几帳面に押さえるという語源のイメージがそのまま、契約書の細部から会食の席次まで、あらゆる形式的な正しさにこだわる性格を描写する語として残っている。称賛としても皮肉としても使える両義性が特徴で、法務・監査など細部の正確さが命の職種の人物を評する際には純粋な賛辞になりうる一方、日常生活で使うと「そこまで気にする？」という若干呆れたニュアンスを帯びやすい。"
+    },
+    {
+      term: "obstreperous", ipa: "/əbˈstrepərəs/", register: "口語（子供・部下・顧客などの反抗的な騒がしさを非難）",
+      meaning_en: "noisy, unruly, and difficult to control, often in a way that actively resists authority or instructions",
+      meaning_ja: "手に負えないほど騒がしく反抗的な、言うことを聞かない",
+      examples: [
+        "The town hall got obstreperous fast once the layoff numbers were announced — people were shouting over each other within minutes.",
+        "My nephew turns obstreperous the second he's overtired, and there's no negotiating with him at that point."
+      ],
+      synonyms: [
+        { term: "unruly", nuance_ja: "統制が効かない状態を指す、より一般的で穏やかな語。obstreperousはそこに「騒々しさ・声高な抵抗」という聴覚的な要素が加わり、より劇的で強い響きを持つ。" },
+        { term: "rowdy", nuance_ja: "主に酔っ払いや若者集団などの騒がしい振る舞いを指す、カジュアルな口語表現。obstreperousはよりフォーマルな語彙で、会議や公聴会など本来秩序があるべき場での混乱にも使われる。" },
+        { term: "recalcitrant", nuance_ja: "本日のセットで既出。recalcitrantは静かでも頑固に抵抗する態度を指せるのに対し、obstreperousは必ず「騒々しさ・声の大きさ」を伴う抵抗である点が異なる。" }
+      ],
+      explanation_ja: "ラテン語 ob-（〜に逆らって）+ strepere（騒ぐ、音を立てる）に由来し、語構成そのものが「逆らって騒ぎ立てる」様子を体現している。株主総会やタウンホールミーティングなど、本来は秩序立って進行するはずの場が怒号や野次で収拾がつかなくなる状況を描写する報道記事で頻出し、単なる「反抗的」ではなく「うるさく」反抗している、という聴覚的な混乱のイメージが核心にある。"
+    },
+    {
+      term: "conciliatory", ipa: "/kənˈsɪliətɔːri/", register: "交渉・声明の描写（フォーマル、対立緩和の意図を評価）",
+      meaning_en: "intended or likely to end a disagreement or reduce hostility by making concessions or showing willingness to compromise",
+      meaning_ja: "融和的な、歩み寄りの姿勢を示す（対立を和らげようとする）",
+      examples: [
+        "The CEO's memo after the walkout was notably conciliatory, dropping the earlier language about 'unacceptable disruption' entirely.",
+        "He showed up at her door with coffee and a conciliatory 'I was out of line yesterday' — which, to be fair, worked."
+      ],
+      synonyms: [
+        { term: "placatory", nuance_ja: "相手の怒りを鎮めることに焦点がある、やや古風でフォーマルな語。conciliatoryはより広く、和解や合意形成に向けた姿勢全般を指し、必ずしも相手が怒っている前提を必要としない。" },
+        { term: "diplomatic", nuance_ja: "対立を避け角を立てない話し方・振る舞い全般を指す、より広い意味の語。conciliatoryは特に対立が既に起きた後、それを和らげようとする歩み寄りの動きに焦点がある。" },
+        { term: "accommodating", nuance_ja: "相手の要望に応じる柔軟さ全般を指す、日常的でやや広い語。conciliatoryは交渉・対立の文脈に限定され、公式声明や交渉戦略を評する、よりフォーマルな響きを持つ。" }
+      ],
+      explanation_ja: "conciliate（懐柔する、和解させる）の形容詞形で、ラテン語 conciliare（結びつける、和解させる）に由来する。労使交渉や国家間の外交、あるいは炎上した企業の謝罪声明を報じる記事で、それまでの強硬な姿勢から一転して歩み寄りを見せた変化を評する際の定番語で、\"a conciliatory tone\" という言い回しは、対立をこれ以上エスカレートさせたくないという意図が言葉選びに滲み出ていることを的確に伝える。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "pull rank",
+      meaning_en: "to use one's superior position, authority, or seniority to force others to comply, especially when a request wouldn't otherwise be justified on its own merits",
+      meaning_ja: "地位・権限を振りかざす、職位を盾に押し通す",
+      examples: [
+        "She didn't want to pull rank, but after twenty minutes of debate she just said 'we're doing it my way' and ended the meeting.",
+        "He never pulls rank with the interns — he'd rather convince them than just order them around."
+      ],
+      synonyms: [
+        { term: "throw your weight around", nuance_ja: "より広く、地位に限らず影響力や資源の大きさを振りかざすことを指す口語表現。pull rankは特に組織内の階級・肩書きという明確な上下関係に基づく点で、より具体的。" },
+        { term: "invoke your authority", nuance_ja: "フォーマルで手続き的な言い方。pull rankはより口語的で、正当な理由づけをすっ飛ばして地位だけで押し切る、というやや否定的なニュアンスを伴いやすい。" }
+      ],
+      explanation_ja: "軍隊で階級（rank）が上の者が下の者に有無を言わさず命令を下せる、という組織構造がそのまま比喩になった表現。ビジネスの文脈では、本来なら議論や合意形成で決めるべきことを、上司が単に肩書きの力で押し通す場面を指し、しばしば「本当はもっと良いやり方があったのに」という批判的なニュアンスを伴う。逆に \"she never pulls rank\" のように否定形で使うと、権威を持ちながらもそれに頼らないリーダーシップを称賛する言い方になる。"
+    },
+    {
+      phrase: "grandfather in",
+      meaning_en: "to allow an existing person, agreement, or practice to remain exempt from a new rule or requirement that applies to everyone else going forward",
+      meaning_ja: "（新ルール導入時に）既存のものだけ例外的に旧条件のまま認める、既得権として存続させる",
+      examples: [
+        "Employees hired before 2020 were grandfathered in under the old pension plan; everyone after that goes on the new 401(k)-only structure.",
+        "The city changed the zoning law, but grandfathered in the businesses that were already operating under the old rules."
+      ],
+      synonyms: [
+        { term: "exempt (someone/something)", nuance_ja: "一般的に「適用除外にする」ことを指す中立語。grandfather inは特に「新ルール施行前から既に存在していたから」という時間的な正当性に基づく、より限定的な文脈で使われる。" },
+        { term: "carve out an exception for", nuance_ja: "特定の対象のために個別に例外規定を設けることを指す、より意図的・交渉的な響きを持つ表現。grandfather inは制度設計の一部として組み込まれた、より制度的・自動的な例外という含意がある。" }
+      ],
+      explanation_ja: "米国南部の州で、かつて祖父（grandfather）が投票権を持っていた者の子孫は新しい識字テストなどを免除するという、実際には人種差別的な意図を持つ条項（grandfather clause）に由来する、やや複雑な歴史的背景を持つ表現。現在ではその出自を意識されないまま、規制・料金体系・社内制度の変更時に「既存の契約者・従業員だけは旧条件のまま据え置く」という、実務上非常に頻出する中立的な意味で使われている。保険・年金・不動産のゾーニング規制などの文脈で特によく登場する。"
+    },
+    {
+      phrase: "carry the day",
+      meaning_en: "to ultimately win or prevail, especially when an argument, proposal, or side succeeds despite facing opposition or competing options",
+      meaning_ja: "（議論・提案が）最終的に勝ちを収める、押し切って通る",
+      examples: [
+        "The bears had the stronger data going in, but the bulls' argument about pent-up demand ultimately carried the day at the investment committee.",
+        "Grandma's suggestion of a beach wedding carried the day, even though half the family had been pushing for a big church ceremony."
+      ],
+      synonyms: [
+        { term: "win out", nuance_ja: "より口語的でシンプルに「最終的に勝つ」ことを指す。carry the dayはやや文語的で、複数の意見・提案が競い合った末に一つが優勢になったという、議論のプロセス全体を意識させる響きがある。" },
+        { term: "prevail", nuance_ja: "フォーマルで中立的な語。carry the dayはより臨場感があり、特定の会議や議論という「その日その場」での決着を強調するニュアンスを持つ。" }
+      ],
+      explanation_ja: "元々は戦場の比喩で、激しい戦闘（the day＝その日の戦い）を制した側を指した表現が、議論や投票、提案の場での勝利全般に転用された。投資委員会でブル派とベア派が対立する場面や、家族会議で意見が割れた末に一つの案が採用される場面など、複数の立場がせめぎ合った末の決着を描写するのにぴったりで、単に\"win\"と言うよりも議論の応酬があった末の勝利という劇的な含みを持たせられる。"
+    },
+    {
+      phrase: "set the record straight",
+      meaning_en: "to correct a misunderstanding, rumor, or inaccurate account by stating the true facts clearly and publicly",
+      meaning_ja: "誤解・誤報を正す、事実関係をはっきりさせる",
+      examples: [
+        "The CFO issued a statement to set the record straight after the rumor about a second round of layoffs started circulating internally.",
+        "I just want to set the record straight — I never said I wasn't coming to the wedding, I said I might be late."
+      ],
+      synonyms: [
+        { term: "correct the record", nuance_ja: "より事務的・公式な響きを持つ言い方で、報道機関や公的機関の訂正発表などでよく使われる。set the record straightはより口語的で、個人的な誤解を正す場面にも自然に使える。" },
+        { term: "clear up the confusion", nuance_ja: "誤解の解消というプロセス・結果に焦点がある、やや穏やかな言い方。set the record straightは「事実はこうだ」と断定的に述べる、より強い主張のニュアンスを持つ。" }
+      ],
+      explanation_ja: "「記録（record）を真っ直ぐに正す」という語構成そのものが意味を体現しており、法廷や議事録など公式な記録の訂正という発想がルーツにある。噂や誤報が広まってしまった後に、当事者が公にあるいは個人的に本当はこうだったと事実を明確にする場面で使われ、\"let me set the record straight\" と切り出すと、その後に続く発言に「これが決定版の真実だ」という重みと確信を持たせる効果がある。"
+    }
+  ],
+  todayQuiz: [
+    { question: "The audit report noted that cash and short-term investments are considered ___ for netting purposes, so shifting funds between the two accounts right before the balance sheet date raised no red flags.", choices: ["fungible", "recalcitrant", "vitiated", "obtuse"], answerIndex: 0, explanation: "\"Fungible\" describes interchangeable units where one is as good as another, matching cash and short-term investments. \"Recalcitrant\" describes stubborn resistance, unrelated to interchangeability of assets." },
+    { question: "Since the loan from her parents carried no stated interest, the IRS will ___ a market rate on it for tax purposes, even though no cash ever actually changed hands.", choices: ["impute", "vitiate", "grandfather in", "carry the day"], answerIndex: 0, explanation: "\"Impute\" means to attribute a value based on assumption rather than an actual transaction, exactly what happens with imputed interest. \"Vitiate\" means to spoil the validity of something, not to assign a notional value." },
+    { question: "Discovering that the guarantee had been signed without board authority would likely ___ the entire indemnification clause.", choices: ["vitiate", "impute", "set the record straight", "pull rank"], answerIndex: 0, explanation: "\"Vitiate\" means to undermine the legal validity of something because of a hidden flaw, fitting a clause signed without proper authority. \"Impute\" means to attribute a quality or value to something, not to invalidate it." },
+    { question: "One ___ minority shareholder held out for six months after every other stakeholder had already signed off on the deal.", choices: ["recalcitrant", "conciliatory", "punctilious", "fungible"], answerIndex: 0, explanation: "\"Recalcitrant\" describes stubborn resistance to going along with the group, fitting the lone holdout. \"Conciliatory\" describes a willingness to compromise, the opposite of refusing to sign for six months." },
+    { question: "Someone on the deal team ___ over dinner, and by Monday half the office already knew about the acquisition that hadn't been announced yet.", choices: ["let the cat out of the bag", "read the client the riot act", "carried the day", "pulled rank"], answerIndex: 0, explanation: "\"Let the cat out of the bag\" means to reveal a secret, often accidentally, matching an unintended disclosure over dinner. \"Read someone the riot act\" means to scold them severely, unrelated to leaking information." },
+    { question: "After the vendor missed the deadline for the third time, procurement finally ___, making it clear there would be no fourth chance.", choices: ["read them the riot act", "let the cat out of the bag", "grandfathered them in", "set the record straight"], answerIndex: 0, explanation: "\"Read someone the riot act\" means to reprimand them severely as a final warning, fitting a third missed deadline. \"Grandfather in\" means to exempt an existing party from a new rule, unrelated to scolding a vendor." },
+    { question: "He's clearly got a ___ about never having finished his MBA — he brings it up unprompted in almost every strategy meeting.", choices: ["chip on his shoulder", "conciliatory tone", "punctilious streak", "fungible mindset"], answerIndex: 0, explanation: "\"Have a chip on your shoulder\" describes a persistent resentment or need to prove oneself from a past slight, matching the unprompted mentions of his degree. \"Conciliatory tone\" describes an effort to reduce conflict, unrelated to resentment." },
+    { question: "You could have negotiated equity instead of a signing bonus, but ___ — the offer's already signed.", choices: ["that ship has sailed", "he pulled rank", "she's punctilious", "they grandfathered it in"], answerIndex: 0, explanation: "\"That ship has sailed\" means an opportunity has already passed and it's too late to change it, matching a signed offer. \"He pulled rank\" describes using authority to force compliance, unrelated to a missed timing window." },
+    { question: "I know you disagree with the new commission structure — ___, but the numbers really don't support keeping the old one.", choices: ["I hear what you're saying", "let's take a step back", "for lack of a better word", "at your earliest convenience"], answerIndex: 0, explanation: "\"I hear what you're saying\" acknowledges the other person's point before politely disagreeing, matching the sentence structure that follows with \"but.\" \"At your earliest convenience\" is a request for prompt action, not a disagreement cushion." },
+    { question: "Instead of debating which font to use on slide 12, can we ___ and ask whether this deck even answers the client's actual question?", choices: ["take a step back", "set the record straight", "grandfather this in", "pull rank"], answerIndex: 0, explanation: "\"Let's take a step back\" suggests pausing a detailed discussion to reconsider the bigger picture, fitting a pivot away from font details. \"Set the record straight\" means correcting a factual misunderstanding, unrelated to reprioritizing a discussion." },
+    { question: "Every footnote in his models is cross-referenced twice and formatted identically — some call it thorough, others call it ___.", choices: ["punctilious", "obstreperous", "recalcitrant", "conciliatory"], answerIndex: 0, explanation: "\"Punctilious\" describes extreme, almost excessive attention to detail and correctness, matching the double-checked footnotes. \"Obstreperous\" describes noisy, unruly resistance, unrelated to attention to detail." },
+    { question: "The board's first statement after the walkout was combative; the second, three days later, was noticeably more ___.", choices: ["conciliatory", "obtuse", "obstreperous", "recalcitrant"], answerIndex: 0, explanation: "\"Conciliatory\" describes a tone intended to reduce hostility and show willingness to compromise, matching the softened second statement. \"Obtuse\" describes slowness to understand, unrelated to a change in tone." },
+    { question: "Rather than debate the point on its merits, the senior partner just ___, and the associates dropped the objection.", choices: ["pulled rank", "carried the day", "grandfathered it in", "set the record straight"], answerIndex: 0, explanation: "\"Pull rank\" means using one's superior position to force compliance rather than persuade, matching how the associates simply dropped their objection. \"Carry the day\" means to ultimately win an argument, which doesn't capture the use of authority itself." },
+    { question: "It was a close vote, but the argument that the merger would save jobs rather than cut them ultimately ___.", choices: ["carried the day", "pulled rank", "grandfathered in", "set the record straight"], answerIndex: 0, explanation: "\"Carry the day\" means to ultimately prevail after competing options were considered, matching the winning argument in a close vote. \"Set the record straight\" means correcting a factual error, not winning a vote." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-08 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-09 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
