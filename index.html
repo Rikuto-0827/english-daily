@@ -154,308 +154,6 @@ a{color:#0d6e6e}
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-04",
-  dateLabel: "2026年9月4日（金）",
-  readTimeMin: 33,
-  coreItems: [
-    {
-      type: "word", term: "conflate", ipa: "/kənˈfleɪt/", register: "フォーマル・分析/批評",
-      meaning_en: "to mistakenly treat two or more distinct things as if they were the same, obscuring an important difference",
-      meaning_ja: "（本来別のものを）混同する、一緒くたにする",
-      examples: [
-        "The board keeps conflating revenue growth with market share gains, and those two things have actually been moving in opposite directions.",
-        "People conflate being busy with being productive, and my calendar this week is proof you can be both and neither."
-      ],
-      synonyms: [
-        { term: "confuse", nuance_ja: "より平易な日常語で、単なる勘違い・混乱を指すことも多く、二つの別物を一つに融合させたという含みは弱い。" },
-        { term: "equate", nuance_ja: "中立的で、意図的に同等だと主張する場合にも使える。conflate のように「本来区別すべきなのに誤って混同した」という批判の含みは必須ではない。" },
-        { term: "muddle", nuance_ja: "口語で、全体的にごちゃごちゃにしてしまう様子を指す。特定の二つの概念を融合させたという焦点の明確さはない。" }
-      ],
-      explanation_ja: "ラテン語 conflare（一緒に吹いて溶かし合わせる、con-＋flare「吹く」）に由来し、元は金属を溶解して混ぜる冶金のイメージだった。そこから、本来別々であるべき二つの概念や事象を、区別せずに一つのものとして扱ってしまう誤りを指すようになった。学術論文や経営分析で頻出するのは「AとBには相関があるように見えるが、実際には別の要因で動いている」ことを指摘する場面で、日本語の「混同する」よりもやや知的で分析的な響きがある。似た語 equate は必ずしも誤りを意味せず意図的な等値主張にも使えるが、conflate は基本的に「区別すべきなのに区別できていない」という批判を含む。受動態 be conflated with の形も新聞記事でよく見る。"
-    },
-    {
-      type: "word", term: "moat", ipa: "/moʊt/", register: "投資・経営戦略で頻出（Buffett由来）",
-      meaning_en: "a durable structural advantage that protects a company's profits from being eroded by competitors",
-      meaning_ja: "（競合の侵入を防ぐ）持続的な競争優位性、参入障壁",
-      examples: [
-        "The real moat here isn't the technology, it's the switching costs once a hospital's records are locked into the platform.",
-        "Their whole brand is basically the moat — you can copy the recipe, but you can't copy forty years of being the place people propose."
-      ],
-      synonyms: [
-        { term: "competitive advantage", nuance_ja: "経営学の教科書用語で範囲が広く、一時的な優位も含む。moat が持つ「時間が経っても崩れにくい」という耐久性の含みは弱い。" },
-        { term: "barrier to entry", nuance_ja: "新規参入者から見た障壁を指す語で視点が逆。moat は既存企業の側から見た利益の守りやすさを指す。" },
-        { term: "edge", nuance_ja: "カジュアルで漠然としており、規模も持続性も小さめの優位を指すことが多い。" }
-      ],
-      explanation_ja: "元は城を囲む「堀」を指す語だが、投資の世界ではウォーレン・バフェットが1990年代の株主向け書簡で多用したことで「競合が容易に模倣・侵食できない持続的な優位性」を意味する定番の比喩として定着した。ブランド、規制、ネットワーク効果、スイッチングコストなど堀の正体はさまざまだが、共通するのは時間が経っても崩れにくいという耐久性の含み——これが単なる competitive advantage との決定的な違いで、後者は一時的な優位も含む幅広い語。エクイティ調査のレポートでは \"wide moat\" \"narrow moat\" \"moat is eroding\" のように堀の幅や状態を形容する言い方が定番化しており、モーニングスターは実際に企業を moat の広さで格付けする独自の評価軸まで持っている。カジュアルな会話でも「あの店の強みは立地じゃなくて常連客だよ」のような文脈で気軽に使える便利な比喩。"
-    },
-    {
-      type: "word", term: "hemorrhage", ipa: "/ˈhemərɪdʒ/", register: "報道・決算コメンタリーで頻出、やや大げさ",
-      meaning_en: "to lose something, especially money or customers, rapidly, uncontrollably, and in large quantity",
-      meaning_ja: "（資金・顧客などを）大量に、歯止めなく失う",
-      examples: [
-        "The unit was hemorrhaging about four million a month by the time anyone above VP level actually looked at the numbers.",
-        "We're hemorrhaging subscribers to the free tier of the competitor, and nobody wants to be the one who says the price is the problem."
-      ],
-      synonyms: [
-        { term: "bleed (cash)", nuance_ja: "同じ身体比喩だが hemorrhage より深刻度が一段低く、日常的な業績表現としてより頻繁に使われる。" },
-        { term: "burn through", nuance_ja: "中立的な運用語（burn rate）で、意図的な資金消費にも使える。制御不能で失っているという緊迫感はない。" },
-        { term: "shed (customers/staff)", nuance_ja: "中立〜意図的な削減にも使える語で、危機感や制御不能というニュアンスを伴わない。" }
-      ],
-      explanation_ja: "医学用語の出血 hemorrhage（ギリシャ語 haima「血」＋rhegnynai「破れる」）がそのまま経済・経営の比喩に転用された語で、単に失うのではなく、制御を失った状態で急速かつ大量に失っているという緊迫感が核心にある。決算コメンタリーや報道で \"hemorrhaging cash\" \"hemorrhaging market share\" のように使われ、bleed よりも一段深刻で劇的な響きを持つ。動詞としても名詞（a hemorrhage of ...）としても使え、名詞形は「（人材などの）大量流出」を指す見出し語としても頻出する。米国綴りは hemorrhage、英国綴りは haemorrhage で、a を落とさないよう注意。"
-    },
-    {
-      type: "word", term: "capitulate", ipa: "/kəˈpɪtʃuleɪt/", register: "フォーマル・市場報道/交渉",
-      meaning_en: "to stop resisting and give in to pressure, especially after holding out for a long time",
-      meaning_ja: "（長く抵抗した末に）屈服する、白旗を上げる",
-      examples: [
-        "Sellers finally capitulated in the last hour of trading, and the index gave back three weeks of gains in about forty minutes.",
-        "After six rounds of \"final offers,\" the landlord capitulated and knocked two hundred off the rent."
-      ],
-      synonyms: [
-        { term: "concede", nuance_ja: "より穏やかで、一点だけ譲るという場合にも使える。長期の抵抗の末に、という時間の含みは必須ではない。" },
-        { term: "surrender", nuance_ja: "軍事由来で範囲が広く、完全な敗北という枠組みが強い。金融・交渉限定の専門色は capitulate ほど濃くない。" },
-        { term: "cave", nuance_ja: "口語で意味はほぼ同じだが、分析記事のような書き言葉には砕けすぎる。" }
-      ],
-      explanation_ja: "ラテン語 capitulum（章、見出し）に由来し、元は条件を章立てして取り決める降伏交渉の手続きを指した語だった。そこから、条件について合意する行為そのものよりも「抵抗をやめて相手の要求を受け入れる」という結果に意味の重心が移っていった。市場報道では \"seller capitulation\" \"capitulation selling\" のように、長く持ちこたえていた投資家がついに損切りに走る局面を指す専門用語として定着しており、しばしば相場の底を示唆する逆張りのシグナルとしても言及される。日常会話の cave（くじける、折れる）と意味は近いが、capitulate は「長期間の抵抗の末に」という時間軸の含みが必須である点が違う——一瞬で折れた場合には使いにくい。"
-    },
-    {
-      type: "idiom", term: "kick the tires", ipa: "", register: "口語・デューデリジェンス初期段階で頻出",
-      meaning_en: "to check something over informally before committing, especially in the early, non-binding stage of due diligence",
-      meaning_ja: "（契約前に）ざっと様子を見る、試しに当たりをつける",
-      examples: [
-        "We're just kicking the tires on the Denver asset right now — nothing's been sent to IC yet.",
-        "Before you sign a two-year lease, kick the tires on the neighborhood at eleven p.m. on a Friday, not just Sunday morning."
-      ],
-      synonyms: [
-        { term: "do initial due diligence", nuance_ja: "フォーマルで正確な用語だが、「まだ本気で検討していない」という予防線のニュアンスは出ない。" },
-        { term: "take a look under the hood", nuance_ja: "より踏み込んだ技術的・実務的な検証を示唆し、kick the tires より深い段階を指す。" },
-        { term: "window shop", nuance_ja: "買う気が全くない冷やかしを指し、kick the tires が持つ「本気の可能性は残っている」含みがない。" }
-      ],
-      explanation_ja: "中古車を買う前に、実際にタイヤを蹴って空気圧やコンディションをざっと確認する、という消費者の習慣的行動から生まれた表現。核心は「本格的な検査ではなく、表面的で予備的な確認」という点にあり、投資・M&Aの世界では正式なデューデリジェンスの前段階、まだ本気度が固まっていない初期接触の段階を指すのに使われる。\"just kicking the tires\" と just を伴うことが非常に多く、これによって「まだ何も約束していない」という予防線を張れる便利な表現になっている。日常会話でも、賃貸物件や新しいガジェットを本気で検討する前の「とりあえず見てみる」段階を指してカジュアルに使える。"
-    },
-    {
-      type: "idiom", term: "a stalking horse", ipa: "", register: "M&A/破産法・政治報道で頻出",
-      meaning_en: "a bid or candidate put forward to set a baseline and draw out real offers or opposition, without necessarily being intended to win",
-      meaning_ja: "（本命を引き出すための）当て馬、呼び水入札",
-      examples: [
-        "The private equity firm came in as the stalking horse bidder in bankruptcy court, which set the floor price everyone else had to beat.",
-        "Half of us suspect he's a stalking horse candidate for the board seat, just there to split the vote."
-      ],
-      synonyms: [
-        { term: "placeholder bid", nuance_ja: "手続き的・機械的な語で、他の入札者をあぶり出すという戦略的な含みが弱い。" },
-        { term: "decoy", nuance_ja: "最初から勝つ気が全くない完全な囮を指す。stalking horse は誰も上回らなければそのまま落札する現実的な可能性を残す。" },
-        { term: "front-runner", nuance_ja: "意味が正反対で、本命として先頭を走る候補を指す。基準を作るための当て馬ではない。" }
-      ],
-      explanation_ja: "元来は狩猟用語で、猟師が馬の陰に隠れて獲物に気づかれずに近づく際の「盾代わりの馬」を指した——馬自体を仕留めるのが目的ではなく、本命に近づくための道具という点が語源の核心。破産法や企業買収の実務では、破産企業の資産売却で最初に名乗り出る入札者を stalking horse bidder と呼び、その価格が競売の下限（フロア）を設定する役割を果たす。政治の文脈でも、本命候補のために票を割ったり世論を測ったりする「当て馬候補」に使われる。decoy との違いは重要で、decoy は最初から勝つ気がない完全な囮を指すのに対し、stalking horse は誰も上回らなければそのまま落札・当選する現実的な可能性を残している点にある。M&Aやプライベートエクイティの会話で使えると、実務を理解している印象を強く与える語。"
-    },
-    {
-      type: "idiom", term: "herding cats", ipa: "", register: "口語・組織運営の愚痴で頻出",
-      meaning_en: "attempting to coordinate a group of people who are each determined to do their own thing, an effort that feels close to futile",
-      meaning_ja: "（てんでばらばらな人々をまとめる）猫の群れを追うような、収拾のつかない状態",
-      examples: [
-        "Getting sign-off from twelve country heads on one deck is like herding cats — three of them will change their answer after the meeting ends.",
-        "Planning a reunion with people in six time zones who all reply to texts differently is herding cats."
-      ],
-      synonyms: [
-        { term: "wrangling", nuance_ja: "苦労はしつつも最終的にはある程度うまくいくニュアンスを残し、herding cats ほどの絶望感はない。" },
-        { term: "corralling", nuance_ja: "物理的な囲い込みの語感が強く中立的で、herding cats 特有のユーモラスな諦め感は薄い。" },
-        { term: "keeping everyone on the same page", nuance_ja: "目指す結果そのものを指す表現で、そこに至る混沌としたプロセス自体を描写する語ではない。" }
-      ],
-      explanation_ja: "猫は犬と違って群れで統率された行動を取らない動物だという観察から生まれた比較的新しい米語表現で、1980〜90年代にIT業界やコンサルティングで広まったとされる。核心は「各自が独立して自分のやりたいようにやる」人々をまとめようとする徒労感で、命令や強制が効きにくい専門職・多国籍チーム・ボランティア組織などを率いる場面で特に頻出する。似た表現 wrangling が最終的にはある程度うまくいくニュアンスを残すのに対し、herding cats はほとんど諦めに近いユーモラスな響きを持つのが特徴。1995年のEDS（Electronic Data Systems）のスーパーボウルCM「Herding Cats」で一般に広く知られるようになり、以来ビジネス英語の定番比喩として完全に定着している。深刻な愚痴というより、自嘲を交えた軽い笑いを誘う言い方である点も押さえておきたい。"
-    },
-    {
-      type: "idiom", term: "circle the wagons", ipa: "", register: "中立〜批判的・危機対応で頻出（米）",
-      meaning_en: "to adopt a defensive, closed-ranks posture as a group when facing external criticism or threat",
-      meaning_ja: "（外部からの攻撃・批判に対して）身内で結束を固める、防御態勢を敷く",
-      examples: [
-        "The moment the short report came out, the whole leadership team circled the wagons and stopped taking analyst calls for a week.",
-        "Whenever a relative criticizes one sibling, the rest of the family circles the wagons instantly, even if they agreed with the criticism five minutes earlier."
-      ],
-      synonyms: [
-        { term: "close ranks", nuance_ja: "軍事由来でやや英国的・フォーマル。団結の表明に焦点があり、積極的な防御行動の含みは弱い。" },
-        { term: "batten down the hatches", nuance_ja: "航海由来で、来る嵐に備えて全般的に備える様子を指す。批判に対する防御という対人的な焦点はない。" },
-        { term: "hunker down", nuance_ja: "困難な時期を受動的にやり過ごすことを指し、身内の結束という積極的な要素が薄い。" }
-      ],
-      explanation_ja: "西部開拓時代、幌馬車隊が襲撃を受けた際に馬車を輪の形に並べて内側に人と家畜を避難させた、という（史実としての正確さには諸説あるものの）西部劇のイメージから来た表現。核心は「外部からの脅威に対して、内部の意見の違いを一旦脇に置いて結束する」という点で、平時なら対立していたはずの身内同士が、批判にさらされた瞬間だけ団結する様子を皮肉交じりに描写することが多い。企業がスキャンダルや空売りレポートに直面したときの経営陣の反応を語る場面で頻出し、しばしば「本来向き合うべき問題への対応を避けて防御姿勢に入っただけ」という批判的な含みを伴う。家族や友人グループなど、規模の小さい人間関係にも自然に使える表現。"
-    },
-    {
-      type: "phrase", term: "Bottom line up front, ...", ipa: "", register: "ビジネス口語・米企業（軍由来のBLUF）",
-      meaning_en: "said before stating the conclusion or main point immediately, before any supporting detail",
-      meaning_ja: "結論から先に言うと、〜",
-      examples: [
-        "Bottom line up front: we're not going to hit the March date, and the reason is the vendor, not our team.",
-        "Bottom line up front, I think we should take the smaller apartment — everything else is just me justifying it."
-      ],
-      synonyms: [
-        { term: "The short version is, ...", nuance_ja: "長い話を圧縮するという含みで、必ずしも結論を先頭に置く構造を意味しない。" },
-        { term: "Cutting to the chase, ...", nuance_ja: "前置きを省く態度全般を指す。BLUF が持つ「結論→根拠」という意識的な構成の含みは弱い。" },
-        { term: "To sum up, ...", nuance_ja: "議論の締めくくりで使う語で、話す前に結論を置くという冒頭の合図としては使えない。" }
-      ],
-      explanation_ja: "米軍の文書作法 BLUF（Bottom Line Up Front）に由来し、報告書は結論から書き、根拠や詳細は後に続けるべきだという原則を指す。民間のビジネス、特に忙しい経営陣向けのメールや会議で輸入され、\"BLUF:\" とメール冒頭に太字で書く企業も少なくない。日本語の「結論から言うと」に近いが、英語圏では特に、背景説明から入りがちな話し方への意識的な対抗策として使われる点が特徴——聞き手の時間を尊重する姿勢の表明でもある。口頭で使う場合は \"Bottom line up front, ...\" とそのまま前置きにして良い。似た表現 \"cutting to the chase\" が単に前置きを省略する態度を指すのに対し、BLUF は結論→根拠という構造そのものを意識的に選んでいるという含みがあり、より方法論的な響きを持つ。"
-    },
-    {
-      type: "phrase", term: "Let's park that (for now).", ipa: "", register: "ビジネス口語・会議ファシリテーション",
-      meaning_en: "said to set an issue aside deliberately without resolving it, so the current discussion can continue",
-      meaning_ja: "それは一旦保留にしましょう",
-      examples: [
-        "Let's park that for now — it's a real question, but it'll derail the budget conversation if we open it today.",
-        "Let's park the venue debate and just lock the date; we can fight about location next week."
-      ],
-      synonyms: [
-        { term: "Let's table that.", nuance_ja: "米語では park と同義だが、英語では逆に「今すぐ議題に載せる」を意味するため国際的な場では誤解の危険がある。" },
-        { term: "Let's shelve that.", nuance_ja: "無期限、あるいは事実上の棚上げ・撤回を示唆しやすく、同じ会議内で戻ってくる前提が弱い。" },
-        { term: "Let's put a pin in that.", nuance_ja: "意味・使用場面ともほぼ同じ非常によく使われる代替表現で、park よりやや口語的。" }
-      ],
-      explanation_ja: "駐車場に車を停める park のイメージから、議題や意見を「今は扱わないが後で戻ってくる」という前提で一時的に脇に置く、という会議運営の定番表現になった。決定的なのは「捨てる」のではなく「保留する」という含みで、この一言があることで発言者は自分の意見が無視されたのではなく単に順番待ちをしていると理解できる——ファシリテーションの技術として非常に有効。似た表現 table はアメリカでは「棚上げにする（後回し）」を意味する一方、イギリスでは正反対に「今すぐ議題に載せる」を意味するため、国際的な会議では誤解を招くリスクがある。その点 park や put a pin in はどちらの英語圏でも意味がぶれないので安全に使える。ホワイトボードに実際に \"parking lot\"（後で扱う論点を書き出す欄）を設ける会議進行手法もよく知られている。"
-    },
-    {
-      type: "phrase", term: "I'll take that offline.", ipa: "", register: "ビジネス口語・会議運営の定番",
-      meaning_en: "said to move a specific, narrow, or tangential discussion out of the main meeting and into a separate follow-up",
-      meaning_ja: "それは別途（この場を離れて）お話ししましょう",
-      examples: [
-        "That's a great question about the legacy contracts, but let's take it offline — it only affects two of the twelve people on this call.",
-        "I'll take that offline with you after — I don't think anyone else on this thread needs to watch us argue about fonts."
-      ],
-      synonyms: [
-        { term: "Let's follow up separately.", nuance_ja: "より一般的で無色な言い方。全体の時間から話題を外すという含みは弱い。" },
-        { term: "Let's park that.", nuance_ja: "同じ場のアジェンダに後で戻る前提。offline は完全に別の場（1対1など）へ会話ごと移す点が違う。" },
-        { term: "Ping me after.", nuance_ja: "かなり砕けた言い方で、非公式なメッセージでのやり取りを示唆する。" }
-      ],
-      explanation_ja: "通信・システムが「オフラインになる」ことから転じて、大人数の会議やメールスレッドという「オンラインの場」から話題を切り離し、少人数で別途扱う、という意味の企業スラングとして定着した。使いどころの核心は、その話題が全員の時間を使う価値がないと暗に示しながらも無視しているわけではないと伝えられる点にあり、会議の脱線を防ぐ最も角の立たない方法の一つ。ただし多用すると「結局オフラインで話した後、誰にも共有されない」という不満を招きやすく、実際に社内アンケートで揶揄の対象になることもある定番のコーポレート・ジャーゴンでもある。\"let's park that\" との違いは明確で、park はその場のアジェンダに戻ってくることを想定するのに対し、offline は完全に別の場（1対1や小グループ）に会話ごと移すことを意味する。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "onerous", ipa: "/ˈɑːnərəs/", register: "フォーマル・契約/規制文書で頻出",
-      meaning_en: "involving a heavy burden of obligation, effort, or responsibility that makes something unpleasant to carry out",
-      meaning_ja: "（義務・負担が）重くのしかかる、煩わしいほど重い",
-      examples: [
-        "The reporting requirements in the new covenant package are onerous enough that we're pricing in an extra analyst just to keep up with them.",
-        "Splitting custody every other week sounded fine on paper; the logistics turned out to be more onerous than either of them expected."
-      ],
-      synonyms: [
-        { term: "burdensome", nuance_ja: "より日常的な語感で、onerous が持つ契約書的・ほぼ法律用語のような硬さは薄い。" },
-        { term: "taxing", nuance_ja: "精神的・肉体的な消耗に焦点があり、義務として課された負担という含みは弱い。" },
-        { term: "punishing", nuance_ja: "はるかに強く、ほとんど過酷・不当なレベルの負担を示唆する。" }
-      ],
-      explanation_ja: "ラテン語 onus（重荷、責任）に由来し、英語の \"the onus is on you\"（責任はあなたにある）と語源を共有する。契約書や規制文書で \"extremely / unduly onerous\" のように使われることが非常に多く、単に「大変だ」ではなく「（契約・規制などによって）義務として課された重さ」という受動的な含みが核心にある。日常会話でも使えるが、家事や雑用のような具体的な作業よりも、責任や手続き、義務のように抽象的で継続的な負担を指すときに最も自然に響く。似た語 burdensome より一段フォーマルで、法律・金融文書に馴染む語感を持つ。"
-    },
-    {
-      term: "cavalier", ipa: "/ˌkævəˈlɪr/", register: "批判的・フォーマル寄り",
-      meaning_en: "showing a careless or offhand disregard for something that actually deserves serious concern",
-      meaning_ja: "無頓着な、（重要なことを）軽く扱う",
-      examples: [
-        "He was remarkably cavalier about the covenant breach, like it was a rounding error instead of a default trigger.",
-        "She's cavalier about deadlines in a way that works great until the one time it really doesn't."
-      ],
-      synonyms: [
-        { term: "nonchalant", nuance_ja: "より中立的で、単に落ち着いた態度を指すこともある。cavalier は常に「それは不適切だ」という非難を含む。" },
-        { term: "flippant", nuance_ja: "発言の軽薄さ・ふざけた口調に焦点があり、態度全般を指す cavalier より対象が狭い。" },
-        { term: "reckless", nuance_ja: "はるかに強く、実際の危険や害が及ぶ可能性を示唆する。cavalier は態度の話であり結果の深刻さまでは含まない。" }
-      ],
-      explanation_ja: "17世紀イングランド内戦で国王側についた騎士階級 Cavalier（優雅で気取った、時に軽薄な貴族のイメージ）に由来する固有名詞が、そのまま一般形容詞に転じた語。核心は「本来真剣に受け止めるべきことを、まるでどうでもいいことのように軽く扱う」という態度への批判で、対象への配慮や責任感の欠如を暗に非難している。決算説明会でリスクについて cavalier な発言をした経営者を評す、というように第三者評として使われることが多く、本人が自分を cavalier だと形容することはまずない。似た語 nonchalant は単に落ち着いた態度を中立的に描写することもできるのに対し、cavalier は常に「それは不適切だ」という価値判断を含む点が決定的に違う。"
-    },
-    {
-      term: "myopic", ipa: "/maɪˈɑːpɪk/", register: "批判的・戦略/経営論",
-      meaning_en: "focused so narrowly on the short term or immediate details that the larger, longer-term picture is missed",
-      meaning_ja: "近視眼的な、目先しか見えていない",
-      examples: [
-        "Cutting the training budget to hit this quarter's number is a classically myopic move that we'll be paying for in attrition by next spring.",
-        "It's myopic to pick the apartment based only on rent — factor in the ninety-minute commute before you sign."
-      ],
-      synonyms: [
-        { term: "short-sighted", nuance_ja: "ほぼ同義でより口語的な言い換え。使用場面はより幅広い。" },
-        { term: "narrow-minded", nuance_ja: "考え方・意見への閉鎖性を指し、時間軸の話ではない点が myopic と明確に違う。" },
-        { term: "parochial", nuance_ja: "視野や経験の狭さ・地方性を指し、長期的視点の欠如という時間の含みは薄い。" }
-      ],
-      explanation_ja: "医学用語の近視 myopia の形容詞で、遠くのものがぼやけて近くしか見えない状態がそのまま比喩に転用された。経営論・政策論での使われ方はほぼ一貫しており、短期的な数字や目先の利益を優先するあまり、長期的な持続可能性や副作用を見落とす判断を批判する際の定番語になっている。似た語 short-sighted はほぼ同義でより口語的、narrow-minded は視野の狭さでも「考え方・意見への閉鎖性」を指し時間軸の話ではない点が明確に違う。四半期決算至上主義（quarterly capitalism）への批判でしばしば添えられる形容詞で、\"myopic focus on quarterly earnings\" は経営学の教科書にも出てくるほぼ定型のフレーズ。皮肉なことに、この語を使う側自身が長期的視点を自称している、という含みも一緒についてくる。"
-    },
-    {
-      term: "brittle", ipa: "/ˈbrɪtl/", register: "中立〜批判的・組織/システム論の比喩",
-      meaning_en: "appearing stable under normal conditions but likely to fail suddenly and completely under unexpected stress",
-      meaning_ja: "（見かけは安定していても）もろい、少しの衝撃で一気に壊れる",
-      examples: [
-        "The whole supply chain looked fine until one port closure showed everyone how brittle it actually was.",
-        "His confidence is brittle — one pointed question in a meeting and he's rattled for the rest of the day."
-      ],
-      synonyms: [
-        { term: "fragile", nuance_ja: "壊れやすいもの全般を指す広い語。brittle が持つ「硬くて粘らず、突然折れる」という質感の含みは弱い。" },
-        { term: "unstable", nuance_ja: "常時ぐらついている継続的な不安定さを指し、平常時は安定して見えるという brittle の含みとは違う。" },
-        { term: "precarious", nuance_ja: "状況そのものが崩壊の際にあることを指し、対象の内的な構造的弱さよりも位置取りの危うさに焦点がある。" }
-      ],
-      explanation_ja: "物理的に「硬いが、力を加えると粘らずに突然折れる」性質を指す語で、しなやかに曲がる ductile（延性のある）との対比が本来の意味。組織論やシステム論への転用で重要なのは「平常時には全く問題なく機能して見える」という点で、脆さは表面化しておらず、想定外の衝撃が加わって初めて露呈するという時間差がこの語の面白さ。サプライチェーン、ITシステム、人間の自信や人間関係など、普段は安定して見えるが一点に負荷が集中すると一気に破綻するものを描写するのに使われる。似た語 fragile は常に壊れやすいという静的な状態を指すのに対し、brittle は「壊れるまでは持ちこたえる」という強度と「壊れたら修復が効かない」という突然性の両方を含意する点が異なる。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "backstop (a deal / a loan)",
-      meaning_en: "to provide a fallback guarantee that ensures something goes through or doesn't fail, even if the primary plan falls apart",
-      meaning_ja: "（契約・融資などを）最終的な保証で下支えする",
-      examples: [
-        "The bank agreed to backstop the bond offering, so even in the worst case the company gets its financing.",
-        "My uncle backstopped the down payment, which is the only reason the offer got accepted before the open house crowd showed up."
-      ],
-      synonyms: [
-        { term: "underwrite", nuance_ja: "保険・証券引受など制度化された手続きを指す専門語で、backstop より対象が狭い。" },
-        { term: "guarantee", nuance_ja: "平易な語で、backstop が持つ「主たる計画が崩れた場合の最終防衛線」という含みは弱い。" }
-      ],
-      explanation_ja: "元は野球で、捕手の後方に構えて逸れたボールを止める防護ネット backstop から来た語——最終防衛ライン、最後の砦というイメージがそのまま金融に転用された。核心は「通常はその出番が来ないことを期待しつつ、万一の場合に備える保証」という点にあり、政府や中央銀行、大株主などが最終的な支え手として控えている構造を指す。\"government backstop\" \"backstop facility\" のように名詞としても頻出し、動詞としては \"backstop the offering\" \"backstop the loan\" のように使う。似た語 underwrite は保険や証券引受という制度化された手続きを指す専門用語であるのに対し、backstop はより広く「最後の保証人がいる」という構造そのものを指せる汎用性の高い語。"
-    },
-    {
-      phrase: "rubber-stamp (a decision / an approval)",
-      meaning_en: "to approve something automatically and without real scrutiny, typically because the outcome was already a foregone conclusion",
-      meaning_ja: "（実質的な審査なしに）機械的に承認する、追認するだけ",
-      examples: [
-        "The committee rubber-stamped the acquisition in eleven minutes; the real decision had already been made over dinner the week before.",
-        "Landlords in this building basically rubber-stamp whoever the current tenant vouches for."
-      ],
-      synonyms: [
-        { term: "approve pro forma", nuance_ja: "会計寄りのフォーマルな言い方で、rubber-stamp が持つ「本来あるべき審査が形骸化している」という批判的な響きは弱い。" },
-        { term: "sign off on", nuance_ja: "中立的な承認全般を指し、その承認が最初から結論ありきだったという含みは必須ではない。" }
-      ],
-      explanation_ja: "書類にゴム印を押すだけの単純作業から生まれた比喩で、審査機関が実質的な検討を行わず機械的に承認だけを行う様子を批判的に描写する。ガバナンス論では、取締役会が経営陣の提案を追認するだけの機能不全（a rubber-stamp board）を批判する定番語として頻出し、独立した監督機能が働いていないという深刻な指摘になる。名詞としても \"the board is just a rubber stamp\" のように使い、組織そのものを揶揄する表現にもなる。承認する側の主体性のなさを描く点が核心で、承認された内容そのものの是非への評価は含まない。"
-    },
-    {
-      phrase: "right-size (the team / the organization)",
-      meaning_en: "to adjust the size of a team or organization to match actual needs, often used as a softened way of describing cuts",
-      meaning_ja: "（組織・人員を）適正規模に調整する（実質的な人員削減の婉曲表現であることが多い）",
-      examples: [
-        "HR called it 'right-sizing the org,' which everyone on the floor correctly translated as a fifteen percent layoff.",
-        "We right-sized the guest list from two hundred to sixty once we saw the venue quote."
-      ],
-      synonyms: [
-        { term: "downsize", nuance_ja: "削減という事実を直接的に名指す語。right-size はそれを和らげた企業婉曲語である。" },
-        { term: "streamline", nuance_ja: "プロセスや構造の効率化に焦点があり、必ずしも人員削減を意味しない。" }
-      ],
-      explanation_ja: "1990年代のリストラクチャリング・ブームの中で生まれた企業ジャーゴンで、downsize（人員削減）という直接的な語の持つ否定的な響きを和らげるために作られた婉曲表現。建前上は「適正な規模に調整する」という中立的な響きを装うが、実際にはほぼ常に人員削減・コスト削減の文脈で使われ、従業員の間では皮肉交じりに受け止められることが多い——だからこそ経営陣がこの語を使うと「本当のことをオブラートに包んでいる」というシグナルとして読まれる。まれに人員増強の文脈でも理論上使えるが、実務ではほぼ一方向、つまり削減の意味でしか使われない。企業の社内用語を読み解く記事では downsize / rightsize / streamline / restructure が同じ現象を指す婉曲表現の連続体として並べて紹介されることが多い。"
-    },
-    {
-      phrase: "keep the lights on",
-      meaning_en: "to keep a business or operation running at a minimally functional level, without investing in growth or improvement",
-      meaning_ja: "（最低限）事業を存続させる、食いつなぐ",
-      examples: [
-        "This contract isn't exciting, but it's what keeps the lights on while we build the product we actually want to sell.",
-        "For the first two years the restaurant barely kept the lights on, and then a food blogger showed up on a random Tuesday."
-      ],
-      synonyms: [
-        { term: "stay afloat", nuance_ja: "船の比喩で「沈没＝倒産」を避けるという危機感がやや強く、keep the lights on より切迫している。" },
-        { term: "break even", nuance_ja: "収支がちょうど釣り合う状態を指す精密な会計用語で、生存そのものへの含みは薄い。" }
-      ],
-      explanation_ja: "文字通り「電気を点けたままにしておく」——つまり事業を完全に停止させずに最低限の運営を続ける、という状態を指す口語比喩。核心は、成長や新規投資の話ではなく、生存そのものが目的化している状態を指す点にあり、しばしば「本来やりたいことができていない」という物足りなさや我慢のニュアンスを伴う。スタートアップが黒字化前に既存事業の売上だけで食いつないでいる状況や、赤字部門が撤退を免れる最低ラインの説明としてよく使われる。似た表現 stay afloat が「沈没＝倒産」を避けるという船の比喩でやや危機感が強いのに対し、keep the lights on はより地味で日常的な「なんとか回っている」という平常運転に近いニュアンスを持つ。"
-    }
-  ],
-  todayQuiz: [
-    { question: "The board keeps ___ revenue growth with market share gains, but the two have actually been moving in opposite directions.", choices: ["conflating", "equating", "muddling", "confusing"], answerIndex: 0, explanation: "\"Conflate\" specifically implies mistakenly treating two distinct things as one, which fits a criticism of the board's flawed reasoning. \"Equate\" is more neutral and can describe a deliberate, even valid, comparison rather than an error." },
-    { question: "Analysts kept describing the company's real ___ as its switching costs, not its underlying technology.", choices: ["moat", "barrier to entry", "edge", "advantage"], answerIndex: 0, explanation: "\"Moat\" specifically implies a durable, hard-to-erode defense of profits from an incumbent's point of view. \"Barrier to entry\" describes the same structure from a newcomer's perspective, not the incumbent's protection." },
-    { question: "The firm wasn't trying to win the auction — it came in as the ___ to set a floor price for the real buyers.", choices: ["stalking horse", "front-runner", "decoy", "placeholder bid"], answerIndex: 0, explanation: "A \"stalking horse\" bid genuinely could win if nobody outbids it, while still serving to set a baseline price. \"Decoy\" implies there was never any real chance of it winning at all." },
-    { question: "Getting sign-off from twelve country heads on one deck is like ___ — three of them change their answer after every meeting.", choices: ["herding cats", "circling the wagons", "kicking the tires", "moving the goalposts"], answerIndex: 0, explanation: "\"Herding cats\" describes the near-futile effort of coordinating people who each insist on doing their own thing. \"Circling the wagons\" describes a group defending itself from outside criticism, not internal coordination chaos." },
-    { question: "___ : we're not going to hit the March date, and the vendor is the reason, not our team.", choices: ["Bottom line up front", "Let's park that", "I'll take that offline", "Playing devil's advocate"], answerIndex: 0, explanation: "\"Bottom line up front\" leads with the conclusion before any supporting detail, which matches a statement that opens with the verdict. \"Let's park that\" would defer the topic rather than state a conclusion about it." },
-    { question: "Which word specifically criticizes a decision for prioritizing short-term numbers at the expense of the long-term picture, rather than describing closed-mindedness about ideas?", choices: ["myopic", "narrow-minded", "parochial", "cavalier"], answerIndex: 0, explanation: "\"Myopic\" targets a narrow time horizon specifically. \"Narrow-minded\" criticizes closed-mindedness toward opinions or ideas, which is a different axis entirely." },
-    { question: "HR called it '___,' which everyone on the floor correctly read as a fifteen percent layoff.", choices: ["right-sizing the org", "backstopping the org", "papering over the org", "keeping the lights on"], answerIndex: 0, explanation: "\"Right-size\" is corporate euphemism specifically for adjusting headcount, almost always downward. \"Backstop\" would mean providing a guarantee against failure, which is an unrelated meaning." },
-    { question: "The committee ___ the acquisition in eleven minutes; the real decision had already been made over dinner the week before.", choices: ["rubber-stamped", "backstopped", "right-sized", "kept the lights on"], answerIndex: 0, explanation: "\"Rubber-stamp\" means approving something automatically without real scrutiny because the outcome was already decided. \"Backstop\" would mean providing a fallback guarantee, which is an unrelated meaning." }
-  ]
-},
-{
   date: "2026-09-06",
   dateLabel: "2026年9月6日（日）",
   readTimeMin: 33,
@@ -2371,9 +2069,328 @@ const ENGLISH_REPORTS = [
     { question: "They didn't just assume the acquisition would close — they ___, selling off two profitable divisions to fund it before signing was even final.", choices: ["bet the farm on it", "banked on it", "hit their numbers", "front-ran it"], answerIndex: 0, explanation: "\"Bet the farm on it\" fits committing resources so completely that failure would be catastrophic, matching the sale of profitable divisions to fund an unclosed deal. \"Bank on it\" describes mere reliance on an expectation, without the same scale of irreversible risk." },
     { question: "Analysts dread the earnings call Q&A because the CEO turns ___ at even mildly critical questions, once telling a reporter to 'do his homework next time.'", choices: ["irascible", "obsequious", "parsimonious", "unencumbered"], answerIndex: 0, explanation: "\"Irascible\" describes being easily angered, which fits a CEO who snaps at mildly critical questions. \"Obsequious\" means excessively eager to please, the opposite of the hostility described here." }
   ]
+},
+{
+  date: "2026-09-14",
+  dateLabel: "2026年9月14日（月）",
+  readTimeMin: 33,
+  coreItems: [
+    {
+      type: "word", term: "gaslight", ipa: "/ˈɡæslaɪt/", register: "口語・心理操作/対人関係で頻出（近年は職場でも使用）",
+      meaning_en: "to manipulate someone into doubting their own perception, memory, or judgment, typically to avoid accountability or gain control",
+      meaning_ja: "相手に自分の記憶や認識を疑わせるよう仕向け、責任逃れや支配のために事実を歪めること（精神的な操作）",
+      examples: [
+        "After the VP flatly denied ever approving the budget cut — even though the email thread proved otherwise — half the team started to wonder if they were the ones misremembering; that's textbook gaslighting.",
+        "My roommate insists she never agreed to split the rent evenly, even though we have a text thread from move-in day proving it — I'm starting to think she's gaslighting me."
+      ],
+      synonyms: [
+        { term: "manipulate", nuance_ja: "「操る」全般を指す中立的な語で、gaslightより意味が広く、必ずしも『相手に現実を疑わせる』という要素を含まない。gaslightはmanipulateの中でも特に『事実の否定・記憶への疑念植え付け』に特化した強い語。" },
+        { term: "mislead", nuance_ja: "誤った情報で一時的に誤解させる、というニュアンスで、gaslightほど執拗・体系的ではなく、心理的支配の含意も薄い。" },
+        { term: "deceive", nuance_ja: "単に『欺く』という一般語で、gaslightのような『相手の正気・記憶そのものを疑わせる』継続的な操作のニュアンスはない。" }
+      ],
+      explanation_ja: "gaslightは1944年の映画『ガス燈（Gaslight）』が語源で、夫が妻を精神的に追い詰めるために家中のガス灯を意図的に薄暗くしながら『そんなことはしていない、あなたの気のせいだ』と言い張る筋書きに由来する。2016年前後から一般語彙として爆発的に普及し、2022年にはMerriam-Websterの「今年の単語」にも選ばれた。職場でも『あの上司、前に言ったことと違うことを言って、こっちが記憶違いしてるみたいに扱ってくる』という状況を指して普通に使われる、非常にネイティブ度の高い語。日本語の『しらばっくれる』よりもずっと『相手の認知そのものを歪めようとする悪意』が強調される点がポイント。"
+    },
+    {
+      type: "word", term: "bellwether", ipa: "/ˈbelweðər/", register: "金融・市場分析で頻出（フォーマル寄り）",
+      meaning_en: "a person, company, or indicator that signals a broader trend, often used to predict future direction",
+      meaning_ja: "市場や業界全体の先行指標となる企業・指標・人物（「風見鶏」的存在）",
+      examples: [
+        "FedEx is often treated as a bellwether for the broader economy, since its shipping volumes tend to move before official GDP data comes out.",
+        "Everyone in the friend group watches how Sarah reacts to a new restaurant — she's kind of the bellwether for whether the rest of us will actually like it."
+      ],
+      synonyms: [
+        { term: "indicator", nuance_ja: "単に『指標』という中立語で、bellwetherが持つ『他より先に動く』『群れの先頭に立つ羊』という比喩的な先導性のニュアンスはない。" },
+        { term: "barometer", nuance_ja: "『気圧計』由来で『現状を測る』ニュアンスが強く、bellwetherほど『将来の方向性を予測する先行性』は強調されない。" },
+        { term: "harbinger", nuance_ja: "『予兆・前触れ』という意味で、より文語的・不吉な出来事の前触れとして使われることが多く、bellwetherのように継続的に追跡する『指標としての企業/株』という金融的含意は薄い。" }
+      ],
+      explanation_ja: "bellwetherは中世の牧羊文化に由来する語で、群れの先頭を歩む去勢羊（wether）の首に鈴（bell）をつけて、羊飼いが群れ全体の動きを把握したことから来ている。金融メディアでは「bellwether stock」「bellwether state（大統領選の先行指標州、オハイオ州など）」のように頻出し、決算シーズンにアナリストが真っ先にFedExやJPMorganの決算を注目する理由もここにある。日常会話でも『あの人の反応を見れば全体の空気が分かる』という意味で人に対しても使え、意外と応用範囲が広い。"
+    },
+    {
+      type: "word", term: "boondoggle", ipa: "/ˈbuːndɑːɡl/", register: "口語・皮肉／政治・企業の無駄遣い批判で頻出",
+      meaning_en: "a wasteful, pointless project or expenditure that produces little or no real value, often one that persists due to bureaucracy or vanity",
+      meaning_ja: "税金や予算の無駄遣いとなっている、実質的な価値のない事業・プロジェクト（皮肉を込めて使う）",
+      examples: [
+        "The company spent eighteen months and $4 million building an internal app that three people ended up using — the board is now calling it a boondoggle.",
+        "Renovating the office lobby for the third time in five years, while the sales team shares desks, feels like a total boondoggle."
+      ],
+      synonyms: [
+        { term: "waste", nuance_ja: "一般的な『無駄』を指す語で、boondoggleのような『組織の面子や官僚的惰性で継続してしまう、皮肉な響きのプロジェクト』という含意はない。" },
+        { term: "fiasco", nuance_ja: "『大失敗』を指し、結果の悲惨さに焦点があるのに対し、boondoggleは『最初から無駄だと分かっていたのに続けられている』という構造的な皮肉に焦点がある。" },
+        { term: "pork-barrel project", nuance_ja: "政治文脈で『地元利益誘導のための予算』を指す、より専門的・政治的な言い方。boondoggleはビジネス・行政どちらでも幅広く使える口語。" }
+      ],
+      explanation_ja: "boondoggleはもともと1920年代のボーイスカウトの革ひも細工（実用性のない手作り紐飾り）を指す語だったが、1935年のニューヨーク・タイムズの記事で『政府が無駄な仕事に税金を使っている』という文脈で使われて以降、行政・企業の無駄遣いを揶揄する定番語になった。決算説明会やニュースで「another government boondoggle」のように使われることが多く、やや皮肉・軽蔑のトーンを伴う。日本語の『税金の無駄遣い』『壮大な無駄プロジェクト』に近いが、boondoggleという語感自体にどこか間抜けさ・滑稽さが漂うのが特徴。"
+    },
+    {
+      type: "word", term: "kerfuffle", ipa: "/kərˈfʌfl/", register: "口語・軽い騒動を茶化して言う（英でも米でも使用）",
+      meaning_en: "a commotion or fuss, usually about something relatively minor, often used with a hint of amusement or mild exasperation",
+      meaning_ja: "（大した問題ではないのに起きた）ちょっとした騒動・揉め事（やや面白がって、または呆れて使う）",
+      examples: [
+        "There was a whole kerfuffle in the finance team over who forgot to CC compliance on the wire approval — turned out to be a non-issue.",
+        "We had a minor kerfuffle at the dinner party when two people showed up with the exact same bottle of wine."
+      ],
+      synonyms: [
+        { term: "commotion", nuance_ja: "より中立的でフォーマルにも使える『騒ぎ』。kerfuffleほど『実は大したことない』という茶化しのニュアンスは薄い。" },
+        { term: "fuss", nuance_ja: "『大げさに騒ぐこと』を指し、しばしば『そんなに騒ぐ必要ある？』という批判のニュアンスを伴う。kerfuffleより単純で口語的。" },
+        { term: "brouhaha", nuance_ja: "kerfuffleより規模が大きく、メディアやSNSを巻き込むような『世間を騒がせる出来事』に使われることが多い一方、kerfuffleはオフィス内・身内レベルの小さな揉め事に使うことが多い。" }
+      ],
+      explanation_ja: "kerfuffleはスコットランド・ゲール語の『乱れる』を意味する語に由来すると言われ、20世紀半ばからイギリス英語で定着した後、今ではアメリカのビジネス英語でも普通に使われる。決算発表後のちょっとした社内トラブルや、SNSでの軽い炎上騒ぎなどを「a bit of a kerfuffle」と表現すると、深刻さを和らげつつユーモアを効かせられる、便利な語。ネイティブは本当に深刻な事態には使わず、あくまで『笑い話にできる程度の騒動』に限定して使う点に注意。"
+    },
+    {
+      type: "idiom", term: "drink from a firehose", ipa: "", register: "口語・オンボーディング/情報過多を形容（米ビジネス）",
+      meaning_en: "to be exposed to an overwhelming amount of information or work all at once, more than one can realistically absorb",
+      meaning_ja: "一度に処理しきれないほど大量の情報や業務を浴びせられること（消防ホースの水を口で飲もうとするイメージ）",
+      examples: [
+        "My first two weeks at the bank felt like drinking from a firehose — thirty Bloomberg shortcuts, four internal systems, and a 200-page compliance manual, all before my first live trade.",
+        "Moving to a new country and trying to learn the tax system, the healthcare system, and a new language at the same time is drinking from a firehose."
+      ],
+      synonyms: [
+        { term: "overwhelmed", nuance_ja: "状態を説明する形容詞で中立的。drink from a firehoseは『情報の物理的な奔流』という視覚的比喩を伴い、特に新人研修やオンボーディングの文脈で好まれる決まり文句。" },
+        { term: "thrown into the deep end", nuance_ja: "『準備不足のまま難しい状況に放り込まれる』という点は共通するが、こちらは『経験・スキル不足への不安』に焦点があり、drink from a firehoseは『情報量そのものの多さ』に焦点がある。" },
+        { term: "information overload", nuance_ja: "ビジネス用語としてより中立的・分析的な言い方。drink from a firehoseの方が口語的で、体験の苦しさを生々しく伝える表現。" }
+      ],
+      explanation_ja: "この表現はアメリカの新人研修文化、特にシリコンバレーの企業文化から広まったとされ、『消防ホースから直接水を飲もうとしたら溺れる』という誰でも想像できるイメージに基づく。新卒や中途入社の初日〜数週間を語るときの定番フレーズで、『大変だったけど乗り越えた』という前向きなニュアンスで使われることが多い。日本語の『情報の洪水』に近いが、英語では必ず『drink from』という能動的な動作として語られる点が特徴的。"
+    },
+    {
+      type: "idiom", term: "catch a falling knife", ipa: "", register: "投資・トレーディング俗語（警告的、強い比喩）",
+      meaning_en: "to buy an asset while its price is still sharply declining, based on the mistaken belief that it has hit bottom — often used as a warning against doing so",
+      meaning_ja: "まだ下落し続けている資産を『底値だろう』と思い込んで買ってしまうこと（大怪我をする危険な行為として警告的に使う）",
+      examples: [
+        "I told him not to buy more shares after the 40% drop — you don't want to catch a falling knife, and there was no telling if the bad news was even fully priced in yet.",
+        "Buying a house in a neighborhood where prices are still sliding every month is like catching a falling knife — wait for it to actually land."
+      ],
+      synonyms: [
+        { term: "buy the dip", nuance_ja: "こちらは『下落局面で買う』という行為自体を中立〜肯定的に指す一般的な投資用語。catch a falling knifeはその中でも『まだ底が見えていないのに買ってしまう危険な行為』を特に警告する際に使う、否定的な含みの強い表現。" },
+        { term: "bottom-fish", nuance_ja: "『底値だと判断して買い漁る』という意味で、catch a falling knifeより肯定的・戦略的なニュアンスを持ち、成功を前提に語られることが多い。" },
+        { term: "average down", nuance_ja: "下落中の銘柄を買い増して平均取得単価を下げる、という具体的な投資テクニックを指す中立語。catch a falling knifeはそのリスクの高さを強調する比喩的・警告的な言い方。" }
+      ],
+      explanation_ja: "この表現はウォール街のトレーダー文化から生まれた比喩で、『落ちてくるナイフを空中でつかもうとすれば手を切る』という直感的なイメージに基づく。株価が急落している最中に『そろそろ底値だろう』と手を出して、さらに下落して大損する、という多くの投資家が経験する失敗パターンを戒める決まり文句として、投資銀行やヘッジファンドの現場で頻繁に使われる。日常生活でも『まだ状況が悪化し続けているのに早まって手を出す』場面全般に応用でき、非常に使い勝手の良い比喩。"
+    },
+    {
+      type: "idiom", term: "cut and run", ipa: "", register: "口語〜報道・撤退の決断を形容（やや批判的にも中立にも使う）",
+      meaning_en: "to abandon a difficult or losing situation abruptly, rather than staying to see it through or fix it",
+      meaning_ja: "苦しい状況や負けが込んだ案件から、最後までやり通さずに急に手を引くこと（批判的にも、賢明な判断としても使われる）",
+      examples: [
+        "After the third round of layoffs failed to stop the cash burn, the board decided to cut and run and sold the division for a fraction of what they'd paid for it.",
+        "We should have cut and run on that apartment renovation after the contractor missed the second deadline, instead of throwing another $15,000 at it."
+      ],
+      synonyms: [
+        { term: "pull the plug", nuance_ja: "『（プロジェクトなどを）中止する』という意思決定行為そのものに焦点があり、比較的中立的。cut and runは『本来は最後まで責任を持つべきなのに、逃げるように撤退する』という道義的なニュアンスをより強く含む。" },
+        { term: "bail", nuance_ja: "非常にカジュアルな口語で、日常のあらゆる場面（約束をドタキャンするなど）に使える軽い語。cut and runはより深刻な、金銭的・戦略的撤退の文脈で使われることが多い。" },
+        { term: "throw in the towel", nuance_ja: "『諦める』という降参のニュアンスが強く、ボクシング由来で『これ以上戦えない』という消耗が背景にある。cut and runは『まだ戦えるかもしれないが、損切りのために逃げる』という戦略的撤退のニュアンスがより強い。" }
+      ],
+      explanation_ja: "cut and runはもともと帆船時代の航海用語で、緊急時に錨を下ろすロープを切って（cut）、錨を回収する時間を惜しんですぐに出航する（run）ことを指した。転じて『撤退の準備に時間をかけず、すぐに逃げるように手を引く』という意味の慣用句になった。政治報道では軍事撤退を批判的に語る際によく使われ、ビジネスでは『損切りすべきタイミングで潔く撤退する』という文脈でも使われるため、話者の立場によって評価が変わる点が面白い語。"
+    },
+    {
+      type: "idiom", term: "have a leg up (on someone)", ipa: "", register: "口語・競争優位を形容（中立〜好意的）",
+      meaning_en: "to have an advantage over others, often due to prior experience, connections, or a head start",
+      meaning_ja: "経験・人脈・先行者利益などにより、他者よりも一歩優位に立っていること",
+      examples: [
+        "Having worked in leveraged finance before business school gave her a leg up on classmates during recruiting — she already spoke the language of the interviewers.",
+        "Growing up bilingual gave him a leg up on the other expats when he moved to Tokyo for the rotational program; he wasn't starting from zero."
+      ],
+      synonyms: [
+        { term: "an edge", nuance_ja: "ほぼ同義だが、an edgeはより抽象的・戦略的な優位性（技術力、情報など）を指すことが多く、have a leg upは『他人と比べて一歩前にいる』という位置関係の比喩がより具体的。" },
+        { term: "a head start", nuance_ja: "『時間的に先に始めている』という意味に限定されがちで、have a leg upはスキルや人脈など、時間以外の要因による優位性も広くカバーする。" },
+        { term: "an advantage", nuance_ja: "最も一般的で中立的な語。have a leg upは口語的で、しばしば『ちょっとしたきっかけで得た優位』という謙虚なニュアンスを伴う。" }
+      ],
+      explanation_ja: "have a leg up on someoneは、乗馬の際に他人に足を支えてもらって馬に乗る（『leg up』してもらう）動作に由来する、文字通り『一歩踏み台を借りて上がる』イメージの慣用句。就職活動やビジネススクールのリクルーティングの文脈で非常によく使われ、『unfair advantage（不当な優位性）』というほど強くはなく、『ちょっと有利』程度のニュアンスで気軽に使える。日本語の『一歩リードしている』に近いが、英語では常に『他者との比較』が明示される点が特徴。"
+    },
+    {
+      type: "phrase", term: "Can we double-click on that?", ipa: "", register: "ビジネス口語・コンサル/テック系企業で頻出（比較的新しい表現）",
+      meaning_en: "a request to explore a point in more depth, borrowed from the computer action of double-clicking to open a file",
+      meaning_ja: "ある論点についてもっと詳しく掘り下げてほしい、という依頼（PCの「ダブルクリックして開く」動作からの比喩、比較的新しいビジネス表現）",
+      examples: [
+        "You mentioned churn is 'stabilizing' — can we double-click on that? What's actually driving the change month over month?",
+        "Before we move on, can we double-click on why you decided to turn down the offer? That seems like the real story here."
+      ],
+      synonyms: [
+        { term: "Can you elaborate on that?", nuance_ja: "最も標準的でフォーマルにも使える言い方。double-clickの方がテック/コンサル業界的でカジュアル、かつ『表面をクリックして中身を開く』という視覚的な比喩の面白さがある。" },
+        { term: "Let's dig into that.", nuance_ja: "ほぼ同義だが、dig intoの方が古くからある一般的な口語表現。double-clickは2010年代以降に広まった、より『今どき』な響きを持つ。" },
+        { term: "Can you unpack that?", nuance_ja: "『複雑な内容を要素分解して説明してほしい』というニュアンスがやや強く、double-clickは単純に『もっと深く』という掘り下げの依頼に近い。" }
+      ],
+      explanation_ja: "『double-click on』はコンピューターのファイルをダブルクリックして開く動作からの比喩で、2010年代以降、特にコンサルティングファームやテック企業のミーティングで急速に広まった表現。従来の『dig into』や『drill down into』と意味はほぼ同じだが、あえてこの表現を使うことで『デジタルネイティブ的な、今どきのビジネスパーソン』という空気を醸し出せる（皮肉交じりに使われることもある）。IELTSや学校英語では絶対に教わらないが、2020年代のアメリカのオフィスでは非常によく耳にする表現。"
+    },
+    {
+      type: "phrase", term: "Let's take the temperature on this before we decide.", ipa: "", register: "ビジネス口語・意思決定前の合意形成で頻出",
+      meaning_en: "a suggestion to informally gauge people's opinions or comfort level on an issue before committing to a decision",
+      meaning_ja: "正式に決定する前に、関係者の意見や温度感を非公式に確認しようという提案",
+      examples: [
+        "Before we present this restructuring plan to the full committee, let's take the temperature on this with a couple of the regional heads first.",
+        "Let's take the temperature on this with your parents before we announce the wedding date — you don't want to blindside them."
+      ],
+      synonyms: [
+        { term: "Let's socialize this.", nuance_ja: "意味は近いが、こちらは『提案を関係者に先出しして反応を見る』というより広い意思決定前プロセス全般を指す。take the temperatureは特に『賛否の温度感』という感情面にフォーカスしている。" },
+        { term: "Let's do a gut check.", nuance_ja: "『直感的にどう感じるか確認しよう』という個人の内的な感覚に焦点があり、take the temperatureは複数人の集団的な空気・意見分布を確認するニュアンスが強い。" },
+        { term: "Let's feel it out.", nuance_ja: "より曖昧でカジュアルな言い方。take the temperatureは体温計の比喩により『どのくらい賛成/反対か』という度合いを測るイメージがより明確。" }
+      ],
+      explanation_ja: "『take the temperature』は体温計で熱を測る行為からの比喩で、『組織やチームの感情的な状態・賛否の度合いを測る』という意味でビジネスでは非常によく使われる。フォーマルな意思決定プロセスの前段階として、日本の根回しに近い機能を果たす表現で、日本のビジネス文化との親和性も高い。『take the temperature of the room』という言い方もよく使われ、会議の空気全体を指す場合はof the roomを付けることが多い。"
+    },
+    {
+      type: "phrase", term: "I don't love it, but I can live with it.", ipa: "", register: "口語・交渉/意思決定での消極的合意を示す定番表現",
+      meaning_en: "an expression of reluctant acceptance — not enthusiastic agreement, but a willingness to go along with a decision",
+      meaning_ja: "積極的には賛成できないが、受け入れて前に進める用意はある、という消極的合意を示す表現",
+      examples: [
+        "The revised term sheet caps our upside more than I'd like, but I don't love it, I can live with it — let's not blow up the deal over two points of equity.",
+        "Moving the wedding to a Sunday instead of a Saturday — I don't love it, but I can live with it, since half the guests can't take a Friday off anyway."
+      ],
+      synonyms: [
+        { term: "I can get on board with that.", nuance_ja: "より前向きで、消極的というより積極的に近い納得を示す。I don't love it, but I can live with itは明確に『不満は残っている』ことを表明した上での妥協。" },
+        { term: "It's not ideal, but it'll do.", nuance_ja: "似たニュアンスだが、こちらは決定そのものの品質への評価に焦点があり、I can live with itは自分がその決定を『受け入れられるかどうか』という自分側の心理状態に焦点がある。" },
+        { term: "I'll defer to the group on this.", nuance_ja: "自分の意見を明示せず、集団の判断に委ねるという受動的な姿勢。I don't love it, but I can live with itは自分の不満をはっきり表明した上で妥協する、より率直な態度。" }
+      ],
+      explanation_ja: "この表現は交渉やチームでの意思決定において、『100%賛成ではないが、これ以上議論を長引かせるよりは前に進めたい』という非常に実務的でネイティブらしい態度を示す定番フレーズ。全会一致を装わずに、不満を正直に表明しつつも建設的に妥協する、というアメリカのビジネス文化における『健全な合意形成』のモデルケースとも言える言い方。日本語の『不本意ながら了承します』よりも、もう少し軽く・カジュアルに使われる。"
+    },
+    {
+      type: "phrase", term: "That's a nice-to-have, not a need-to-have.", ipa: "", register: "ビジネス口語・優先順位付け/予算査定で頻出",
+      meaning_en: "a way of classifying something as optional or desirable but not essential, often used to deprioritize a request",
+      meaning_ja: "それは『あれば嬉しいもの』であって『なくてはならないもの』ではない、と優先順位を下げる際の定番表現",
+      examples: [
+        "A dedicated data science hire is a nice-to-have, not a need-to-have, right now — we don't even have clean data for them to work with yet.",
+        "A pool is a nice-to-have, not a need-to-have, for this house search — let's not eliminate good options over it."
+      ],
+      synonyms: [
+        { term: "That's not mission-critical.", nuance_ja: "『事業の成否に直結しない』という、より深刻度の高い判断基準を示す表現。nice-to-have/need-to-haveは日常の優先順位付けにも使える、より軽いトーン。" },
+        { term: "That's low priority.", nuance_ja: "単に優先順位の順番を述べる中立的な言い方。nice-to-have vs need-to-haveの対比表現は『そもそも必要かどうか』という二択の枠組みを提示する点でより説得力を持つ。" },
+        { term: "It's a want, not a need.", nuance_ja: "ほぼ同義でより口語的・日常的。nice-to-have/need-to-haveの方がビジネス文書や予算会議など、ややフォーマルな場面で好まれる定型句。" }
+      ],
+      explanation_ja: "nice-to-have（あれば嬉しいもの）とneed-to-have（絶対に必要なもの、must-haveとも言う）は、プロダクト開発や予算策定の現場で要件に優先順位をつけるための基本的な語彙セットで、MBAのプロダクトマネジメント系の授業でも頻出する。この対比をそのままセリフとして使う『That's a nice-to-have, not a need-to-have』は、丁寧に、しかし明確に相手の要望を却下・後回しにする際の便利な定型文で、角を立てずに優先順位を伝えられる点がビジネス英語として優秀。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "indefatigable", ipa: "/ˌɪndɪˈfætɪɡəbl/", register: "称賛・フォーマル（人物評、仕事ぶりを称える）",
+      meaning_en: "never tiring, persisting with energy and determination despite obstacles or long hours",
+      meaning_ja: "疲れを知らない、どんな困難や長時間労働にもめげずに粘り強く取り組む様子（称賛の意味合いが強い）",
+      examples: [
+        "Our associate pulled three consecutive all-nighters finalizing the model and still showed up sharp for the partner meeting — genuinely indefatigable.",
+        "My grandmother is eighty-three and still gardens for six hours a day; she's the most indefatigable person I know."
+      ],
+      synonyms: [
+        { term: "tireless", nuance_ja: "意味はほぼ同じだが、indefatigableよりやや平易でカジュアルな響き。indefatigableはフォーマルな推薦状やプロフィール紹介などで好まれる。" },
+        { term: "relentless", nuance_ja: "『やり続ける』という意味では近いが、relentlessは対象への圧力・容赦なさを強調し、時に批判的なニュアンス（しつこい）にもなりうる。indefatigableは純粋に称賛の語。" },
+        { term: "dogged", nuance_ja: "『粘り強い』という点で似るが、doggedは『困難にも関わらず頑固に食らいつく』という執着寄りのニュアンスがあり、indefatigableの『エネルギーが尽きない』という体力的な含意は薄い。" }
+      ],
+      explanation_ja: "indefatigableはラテン語の『fatigare（疲れさせる）』にin-（否定）とde-を重ねた語で、文字通り『疲れさせることができない』という成り立ち。推薦状や訃報記事（obituary）で『an indefatigable advocate for ~』のように使われることが多く、フォーマルな称賛語として便利。発音がやや難しく（in-di-FAT-i-gə-bl）、ネイティブでも噛むことがあるが、使いこなせると語彙力の高さを印象づけられる一語。"
+    },
+    {
+      term: "cantankerous", ipa: "/kænˈtæŋkərəs/", register: "口語・やや愛嬌を含む批判（年配者の気難しさを形容することが多い）",
+      meaning_en: "habitually irritable, argumentative, and difficult to deal with, often in a way that is exasperating but not entirely unsympathetic",
+      meaning_ja: "気難しくて怒りっぽく、何かにつけて文句を言う性格（やや呆れつつも憎めない、というニュアンスを含むことが多い）",
+      examples: [
+        "Our audit partner is famously cantankerous — he'll reject a footnote three times just to make you defend the wording — but nobody questions his judgment.",
+        "My upstairs neighbor is a cantankerous old man who bangs on the ceiling if we so much as laugh too loudly after 9pm."
+      ],
+      synonyms: [
+        { term: "irritable", nuance_ja: "一時的な機嫌の悪さを指すことが多く、cantankerousのような『生まれつき・慢性的に気難しい性格』という持続的特徴の含意は弱い。" },
+        { term: "grumpy", nuance_ja: "より軽くカジュアルで、子供に対しても使える柔らかい語。cantankerousはより強く、大人（特に年配者）の頑固さを形容する場面で使われることが多い。" },
+        { term: "irascible", nuance_ja: "怒りっぽさに焦点があり、cantankerousよりフォーマルで文語的。cantankerousは口語で『あの人ほんと気難しいよね』と気軽に使える点が異なる。" }
+      ],
+      explanation_ja: "cantankerousの語源ははっきりしないが、18世紀アイルランド英語の『contack（争い）』が関係しているとされる。ネイティブがこの語を使うとき、多くの場合『嫌いだから言っている』というより『扱いにくいけど、まあそういう人だから』という一種の愛情や諦めを込めていることが多い。会計士・弁護士・頑固な祖父母など、能力はあるが気難しい人物を評する際の定番語で、日本語の『気難しい』よりも少し『面倒だけど憎めない』トーンが強い点を意識するとよい。"
+    },
+    {
+      term: "insouciant", ipa: "/ɪnˈsuːsiənt/", register: "フォーマル寄り・やや文学的（人物の態度を評する、賛否両方に使える）",
+      meaning_en: "showing a casual, carefree lack of concern, often in a situation where more worry or seriousness might be expected",
+      meaning_ja: "本来もっと心配・真剣であるべき場面で見せる、屈託のない・無頓着な態度（賞賛にも批判にも使える）",
+      examples: [
+        "The CFO gave an almost insouciant shrug when asked about the covenant breach, as if it were a scheduling conflict rather than a default event.",
+        "She has this insouciant way of walking into a final round interview like it's a coffee chat — I can't tell if it's confidence or denial."
+      ],
+      synonyms: [
+        { term: "nonchalant", nuance_ja: "ほぼ同義だが、nonchalantの方がやや口語的で使用頻度も高い。insouciantはよりフォーマル・文学的な響きを持ち、書き言葉やや皮肉な評論で好まれる。" },
+        { term: "indifferent", nuance_ja: "『関心がない』という中立的な語で、insouciantが持つ『あえて気にしていないように振る舞う軽やかさ・スタイル』というニュアンスは薄い。" },
+        { term: "blasé", nuance_ja: "『慣れすぎて無感動』というニュアンスが強く、飽き・退屈が背景にあることが多い。insouciantは必ずしも『慣れ』が原因ではなく、生来の気質として描かれることが多い。" }
+      ],
+      explanation_ja: "insouciantはフランス語の『souci（心配）』にin-（否定）をつけた語がそのまま英語に借用されたもので、フランス語由来の語らしく、どこか洗練された・スタイリッシュな響きを持つ。決算説明会でCFOが深刻な質問に対して妙に軽い態度を取ったときの描写や、危機的状況でも動じない人物を描くときに使われる。日本語の『飄々とした』に近いニュアンスで、褒め言葉にも『不謹慎だ』という批判にもなりうる、文脈依存の高い語。"
+    },
+    {
+      term: "petulant", ipa: "/ˈpetʃələnt/", register: "批判的・人物評（子供っぽい苛立ちを非難するニュアンス）",
+      meaning_en: "childishly irritable or sulky, especially in response to being told no or not getting one's way",
+      meaning_ja: "思い通りにならないときに見せる、子供じみた不機嫌さ・すねた態度（非難のニュアンスを強く含む）",
+      examples: [
+        "When the board rejected his pet acquisition, the CEO sent a petulant email accusing everyone of 'lacking vision' — not a great look for someone making seven figures.",
+        "My little brother got petulant and refused to speak to anyone at dinner because he didn't get to pick the restaurant."
+      ],
+      synonyms: [
+        { term: "sulky", nuance_ja: "『不機嫌に黙り込む』という受動的な態度を指すことが多く、petulantより静かなニュアンス。petulantはより『声に出して不満を言う・当たり散らす』能動的な子供っぽさを含む。" },
+        { term: "irritable", nuance_ja: "一般的な『イライラしやすさ』を指し、petulantのような『思い通りにならないことへの子供じみた反応』という特定の状況設定はない。" },
+        { term: "childish", nuance_ja: "より直接的・強い非難で、大人げなさ全般を指す。petulantはその中でも特に『すねる・不貞腐れる』という具体的な態度に焦点を絞った語。" }
+      ],
+      explanation_ja: "petulantはラテン語の『petere（求める）』に由来し、もともとは『生意気な・厚かましい』という意味だったが、次第に『思い通りにならないときの子供っぽい不機嫌さ』を指すようになった。ビジネス文脈では、地位のある大人（役員や取引先の担当者）が些細なことで機嫌を損ねた際に、あえて『子供っぽい』と評してその未熟さを皮肉る効果がある。日本語の『すねる』『拗ねる』に近いが、petulantには明確な『非難』のトーンが常に伴う点に注意。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "torpedo a deal",
+      meaning_en: "to deliberately or effectively destroy a business deal or negotiation before it can be completed",
+      meaning_ja: "（意図的に、あるいは結果的に）取引や交渉を破談に追い込むこと",
+      examples: [
+        "A single line in the reps-and-warranties section, buried on page 80, ended up torpedoing a deal that had taken eight months to negotiate.",
+        "Bringing up his ex at the family dinner completely torpedoed any chance of a peaceful evening."
+      ],
+      synonyms: [
+        { term: "kill a deal", nuance_ja: "ほぼ同義だが中立的・単純な表現。torpedo a dealは『魚雷で沈める』という比喩から、より劇的・突発的な破壊のイメージを伴う。" },
+        { term: "sink a deal", nuance_ja: "torpedo a dealと非常に近い船由来の比喩表現だが、torpedoの方が『意図的な攻撃』のニュアンスがより強く、sinkは自然に沈んでいくような、やや受動的な失敗にも使える。" }
+      ],
+      explanation_ja: "torpedo（魚雷）という軍事用語を比喩的にビジネスに転用した表現で、『取引という船を、水面下から突然の一撃で沈める』というダイナミックなイメージを伴う。M&Aの現場では、デューデリジェンスで見つかった重大な問題（訴訟リスクや簿外債務など）が土壇場で取引全体を破談させる状況を指してよく使われる。日常会話でも、ちょっとした失言や行動が計画全体を台無しにする場面に気軽に転用できる、汎用性の高い表現。"
+    },
+    {
+      phrase: "poach talent (from a competitor)",
+      meaning_en: "to lure away skilled employees from another company, often by offering better pay or opportunities",
+      meaning_ja: "（給与や待遇の良さを提示して）競合他社から優秀な人材を引き抜くこと",
+      examples: [
+        "The boutique advisory firm poached three senior bankers from Goldman in a single quarter by offering carry on every deal they closed.",
+        "Our favorite barista got poached by the coffee shop across the street — they offered her a raise and free health insurance."
+      ],
+      synonyms: [
+        { term: "headhunt", nuance_ja: "より中立的でプロフェッショナルな採用行為全般を指し、必ずしも『競合から』という含意はない。poachは明確に『特定の競合他社から奪う』という対抗的なニュアンスを含む。" },
+        { term: "steal (an employee)", nuance_ja: "poachよりもさらにカジュアルで、やや非難めいたニュアンスが強い。poachはビジネス誌や決算説明でも普通に使われる、比較的中立度の高い語。" }
+      ],
+      explanation_ja: "poach（密猟する）はもともと『他人の土地で無断で狩猟する』という意味で、それが『他社の人材を無断で奪う』という比喩に転用された。テック業界やコンサル業界では、競合から人材を引き抜き合う『poaching war』が日常的に起きており、契約書にはそれを禁止する『non-solicitation clause（人材引き抜き禁止条項）』が定番で盛り込まれるほど、ビジネス上重要な概念となっている。日常会話でも、お気に入りの美容師やバリスタが他店に移った、というような軽い文脈でもよく使われる。"
+    },
+    {
+      phrase: "whitewash a scandal",
+      meaning_en: "to cover up or downplay wrongdoing in order to make it appear less serious than it actually is",
+      meaning_ja: "不祥事の深刻さを隠したり、実際より軽く見せかけたりすること（隠蔽・ごまかし）",
+      examples: [
+        "The internal report was widely criticized as an attempt to whitewash the scandal, since it never mentioned who signed off on the falsified figures.",
+        "The HOA's summary of the embezzlement completely whitewashed the scandal, describing a six-figure theft as an 'accounting discrepancy.'"
+      ],
+      synonyms: [
+        { term: "cover up (a scandal)", nuance_ja: "『隠す』という行為そのものに焦点があり、より直接的で強い非難のニュアンス。whitewashは『表面を白く塗って綺麗に見せる』という比喩から、体裁を取り繕う巧妙さのニュアンスが加わる。" },
+        { term: "sweep (something) under the rug", nuance_ja: "『見えないところに押し込んで無視する』という消極的な隠蔽を指すのに対し、whitewashは『積極的に体裁の良い説明を作り上げる』という、より能動的な操作のニュアンスを持つ。" }
+      ],
+      explanation_ja: "whitewashはもともと石灰を水で溶いた白い塗料で建物の壁を塗る行為を指す語で、『みすぼらしい壁を白く塗って綺麗に見せかける』というイメージから『不都合な真実を体裁よく塗り隠す』という比喩的意味に発展した。企業の内部調査報告書や政府の公式報告書が、責任の所在を曖昧にしたまま『問題は解決した』と結論づける際に、批判的な文脈で使われることが非常に多い。日本語の『もみ消す』に近いが、whitewashには『表面上は綺麗に取り繕う』という視覚的なニュアンスがより強く残っている。"
+    },
+    {
+      phrase: "move markets",
+      meaning_en: "to cause a significant, often immediate change in the price or direction of financial markets",
+      meaning_ja: "（発言や指標、ニュースなどが）市場価格や相場の方向性を大きく動かすこと",
+      examples: [
+        "A single offhand comment from the Fed chair about 'patience' was enough to move markets, sending the ten-year yield down eight basis points in minutes.",
+        "It's a small biotech, but a single FDA decision next month could move markets for the whole sector."
+      ],
+      synonyms: [
+        { term: "roil markets", nuance_ja: "『市場を混乱させる、荒立てる』という意味で、move marketsよりもネガティブ・不安定さを伴う動きに限定される。move marketsは上昇・下落どちらの方向にも中立的に使える。" },
+        { term: "spook investors", nuance_ja: "投資家心理という『人』の反応に焦点があるのに対し、move marketsは価格・指数という『結果』そのものに焦点がある、より客観的な言い方。" }
+      ],
+      explanation_ja: "move marketsは金融報道で極めて頻出する表現で、『market-moving news（相場を動かすニュース）』という形容詞的な使い方も非常によく見る。中央銀行総裁の一言や、大企業のCEOのツイート一つが実際に数十億ドル規模の資産価格を動かすことがあるため、『market-moving event』が何かを見極める力は金融業界で働く上で重要なスキルとされる。日常会話への転用は少ないが、金融ニュースを読む・話す上では避けて通れない基本表現。"
+    }
+  ],
+  todayQuiz: [
+    { question: "After being told for the third time that the deadline 'was always next Friday' — despite a written email confirming Monday — Maria began to genuinely doubt her own memory. Her manager was ___ her.", choices: ["gaslighting", "misleading", "mentoring", "briefing"], answerIndex: 0, explanation: "Gaslighting specifically means making someone doubt their own memory or sanity, not just giving false information. \"Misleading\" is too mild here — the key detail is that Maria started questioning her own perception, which is the defining feature of gaslighting." },
+    { question: "Because Alcoa reports earnings before nearly every other major industrial company each quarter, analysts often treat its results as a ___ for the broader economy.", choices: ["bellwether", "harbinger", "windfall", "backstop"], answerIndex: 0, explanation: "A bellwether is an indicator tracked because it tends to move before a broader trend — neutral and used for good or bad news alike. \"Harbinger\" usually implies an ominous sign specifically, which doesn't fit this neutral, purely predictive context." },
+    { question: "The task force spent two years and $12 million producing a 400-page strategy document that was never implemented and now sits in a drawer — a classic ___.", choices: ["boondoggle", "fiasco", "kerfuffle", "windfall"], answerIndex: 0, explanation: "A boondoggle is a wasteful project that quietly persists and produces no real value. \"Fiasco\" implies a dramatic, visible failure, which doesn't match a project that just fizzled out unnoticed; \"kerfuffle\" is far too small-scale for a two-year, $12 million effort." },
+    { question: "Even after the stock dropped 60% with no bottom in sight and the company still hadn't resolved its debt covenant issues, he kept buying more shares — friends warned he was trying to ___.", choices: ["catch a falling knife", "buy the dip", "cut and run", "hedge his bets"], answerIndex: 0, explanation: "\"Catch a falling knife\" specifically warns against buying an asset that is still actively declining with no confirmed bottom. \"Buy the dip\" is more neutral and doesn't carry that warning about an ongoing, unresolved decline." },
+    { question: "The private equity firm still believed the turnaround plan could work in theory, but after burning through two extra years of runway, they chose to sell the portfolio company at a steep loss rather than commit more capital — a decision to ___.", choices: ["cut and run", "throw in the towel", "double-click on it", "torpedo the deal"], answerIndex: 0, explanation: "\"Cut and run\" fits a calculated, strategic withdrawal from a position that might theoretically still work — the firm chose to abandon it rather than being simply worn down. \"Throw in the towel\" implies exhaustion and total defeat, which doesn't match \"still believed it could work.\"" },
+    { question: "Having interned at the target company the summer before the case competition, our team had ___ on every other team walking in blind.", choices: ["a leg up", "an edge", "table stakes", "a bellwether"], answerIndex: 0, explanation: "\"Have a leg up on (someone)\" is the natural set phrase for a comparative advantage over specific named others (\"on every other team\"). \"An edge\" is more abstract and doesn't pair as naturally with \"on every other team\" in this idiomatic construction." },
+    { question: "In the all-hands, the CEO said user growth was 'soft in EMEA' and immediately moved to the next slide. An analyst in the audience raised her hand and asked, 'Can we ___ on that? Soft compared to what?'", choices: ["double-click", "circle back", "level-set", "table stakes"], answerIndex: 0, explanation: "\"Double-click on\" means to probe a vague statement more deeply right now. \"Circle back\" means returning to the topic later, which contradicts asking immediately; \"level-set\" means aligning shared understanding, not requesting more detail." },
+    { question: "When the vendor asked if same-day customer support was required for the pilot program, the product lead replied, 'That's ___ — let's launch without it and revisit in Phase 2.'", choices: ["a nice-to-have, not a need-to-have", "mission-critical", "a bellwether", "a boondoggle"], answerIndex: 0, explanation: "\"Nice-to-have, not a need-to-have\" is used precisely to deprioritize something as non-essential while launching without it. \"Mission-critical\" means the opposite — essential to success — which contradicts the decision to launch without it." },
+    { question: "When the board rejected his pet acquisition, the CEO sent a ___ email accusing everyone of 'lacking vision' — a strange look for someone in his position.", choices: ["petulant", "sulky", "insouciant", "indefatigable"], answerIndex: 0, explanation: "Petulant captures the childish, actively complaining reaction to being told no, which fits \"sent an email accusing everyone.\" \"Sulky\" implies a quieter, withdrawn reaction rather than an outward, accusatory email." },
+    { question: "A single line in the reps-and-warranties section, buried on page 80, ended up ___ a deal that had taken eight months to negotiate.", choices: ["torpedoing", "poaching", "whitewashing", "moving markets on"], answerIndex: 0, explanation: "\"Torpedo a deal\" means to destroy a negotiation, which fits a single clause derailing eight months of work. \"Poach\" relates to hiring away talent, and \"whitewash\" relates to covering up wrongdoing — neither fits destroying a negotiation." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-13 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-14 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
