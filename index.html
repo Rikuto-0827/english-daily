@@ -154,325 +154,6 @@ a{color:#0d6e6e}
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-06",
-  dateLabel: "2026年9月6日（日）",
-  readTimeMin: 33,
-  coreItems: [
-    {
-      type: "word", term: "bandwidth", ipa: "/ˈbændwɪdθ/", register: "ビジネス口語・IT由来、非常に頻出",
-      meaning_en: "the mental or organizational capacity available to take on additional work or attention, borrowed from the idea of data transmission capacity",
-      meaning_ja: "（仕事や関心を割り当てる）余力、キャパシティ",
-      examples: [
-        "I don't have the bandwidth to take on a third direct report this quarter, not with the audit running in parallel.",
-        "Once the kids are back in school I'll actually have the bandwidth to think about redoing the kitchen."
-      ],
-      synonyms: [
-        { term: "capacity", nuance_ja: "より中立的でフォーマルな語。物理的・制度的な処理能力全般を指し、bandwidth ほど「今、目の前の余力があるかどうか」という個人的で逼迫した響きは薄い。" },
-        { term: "headspace", nuance_ja: "精神的・感情的な余裕に焦点があり、bandwidth が持つ「タスクをさばく実務的な処理能力」という含みは弱い。" },
-        { term: "runway", nuance_ja: "残された時間的猶予（特に資金が尽きるまでの期間）を指すことが多く、同時に処理できる量という bandwidth の含みとは軸が違う。" }
-      ],
-      explanation_ja: "元はネットワーク工学で「一定時間内に伝送できるデータ量」を指す語だったが、1990年代以降、人間の注意力や処理能力を通信回線になぞらえる比喩として口語に定着した。核心は「同時にいくつのタスクを処理できるか」という有限のリソース感覚で、\"I don't have the bandwidth\" は単に忙しいというより「これ以上何かを載せる余地が物理的にない」という、やや技術寄りで角の立たない断り文句として機能する。似た語 headspace は感情的・精神的な余裕を指すのに対し、bandwidth はより実務的でタスク処理能力の話に限定される。ミーティングで新しいプロジェクトを打診されたときに \"Let me check my bandwidth\" と答えるのは、一度持ち帰って断る余地を残す定番の切り返しでもある。"
-    },
-    {
-      type: "word", term: "vanilla", ipa: "/vəˈnɪlə/", register: "金融・プロダクトの日常語（皮肉なし、単に「標準」の意）",
-      meaning_en: "plain, standard, or without special features — used approvingly or neutrally to mean a straightforward, unembellished version of something",
-      meaning_ja: "（オプションや仕様が）ごく標準的な、素の",
-      examples: [
-        "It's just a plain vanilla interest rate swap, nothing structured, nothing with an embedded option.",
-        "We ended up getting the vanilla version of the software — none of the add-ons, but it does everything we actually need."
-      ],
-      synonyms: [
-        { term: "standard", nuance_ja: "中立的で幅広く使える語だが、vanilla が持つ「あえて凝った仕様を避けた、シンプルさそのものへの安心感」というニュアンスは薄い。" },
-        { term: "plain", nuance_ja: "ほぼ同義だが単独で使うと「地味・つまらない」という否定的な含みが出やすい。plain vanilla とセットにすることで中立的な響きになる。" },
-        { term: "generic", nuance_ja: "しばしばブランドのない・没個性的という否定的な含みを伴い、vanilla のような「複雑さがなくて扱いやすい」という肯定的な響きは弱い。" }
-      ],
-      explanation_ja: "バニラアイスクリームが最も基本的で万人受けするフレーバーであることから、「装飾のない標準形」を指す比喩として定着した。金融の世界で最も頻出するのが plain vanilla という言い方で、デリバティブなどの金融商品が組み込みオプションや複雑な条件のない、教科書通りのシンプルな構造であることを指す——これは複雑な商品に比べてリスクが把握しやすいという安心感を伴う、実務上重要な区別。プロダクトやソフトウェアの文脈でも「特別なカスタマイズをしていない素の状態」を指して気軽に使え、否定的な含みは基本的にない。"
-    },
-    {
-      type: "word", term: "squishy", ipa: "/ˈskwɪʃi/", register: "口語・分析/データ批評（カジュアルだが実務でも通じる）",
-      meaning_en: "(of numbers, definitions, or arguments) imprecise, soft, and hard to pin down or verify, even though presented as if solid",
-      meaning_ja: "（数字・定義などが）ふわっとしていて根拠が怪しい、実は曖昧な",
-      examples: [
-        "The synergy number in that deck is pretty squishy — half of it is 'goodwill from combined culture,' whatever that means.",
-        "Her alibi felt squishy the moment you asked for a specific time."
-      ],
-      synonyms: [
-        { term: "vague", nuance_ja: "一般的で範囲の広い語。squishy が持つ「一見しっかりして見えるのに、押すと崩れる」という皮肉な含みは薄い。" },
-        { term: "soft (numbers)", nuance_ja: "金融でも定着した言い方で意味は近いが、squishy よりやや専門的で口語感が薄い。" },
-        { term: "hand-wavy", nuance_ja: "説明や論証の仕方そのものが大雑把・誤魔化し気味であることを指し、数字自体の正確さの話ではない場合にも使う。" }
-      ],
-      explanation_ja: "「グニャッと柔らかく形が定まらない」という触感を表す口語形容詞がそのまま比喩に転用され、データ分析やデューデリジェンスの場で「一見数字として提示されているが、実は前提や算出根拠が怪しい」という状況を指すのに使われる。似た語 soft numbers も金融で通用するが、squishy はより口語的で、時にユーモラスな響きを持ちながら鋭く痛いところを突く言い方になる。プレゼン資料の数字を質問攻めにするアナリストが \"that number feels squishy to me\" と言えば、「具体的な根拠を出してほしい」という遠回しな要求として機能する。"
-    },
-    {
-      type: "word", term: "gnarly", ipa: "/ˈnɑːrli/", register: "口語・技術/問題の難度を形容（元サーファー用語）",
-      meaning_en: "extremely difficult, complicated, or messy in a way that demands serious skill or effort to deal with",
-      meaning_ja: "（問題・状況が）超厄介な、手強い",
-      examples: [
-        "The tax implications of unwinding that structure across four jurisdictions turned out to be way gnarlier than anyone budgeted for.",
-        "That's a gnarly commute — two trains and a bus just to save fifteen minutes on rent."
-      ],
-      synonyms: [
-        { term: "thorny", nuance_ja: "よりフォーマルで、特に「扱いに慎重さを要する厄介な問題」を指す。gnarly ほどカジュアルではなく、若干知的な響きがある。" },
-        { term: "hairy", nuance_ja: "状況が急に危険・制御困難になった様子を指すことが多く、gnarly が持つ「構造自体が複雑で厄介」という静的な難しさとはやや違う。" },
-        { term: "messy", nuance_ja: "整理されていない・混乱している状態全般を指す広い語で、gnarly が持つ「高度な技術や根気を要するほどの難しさ」という含みは弱い。" }
-      ],
-      explanation_ja: "元々はサーファーやスケートボーダーの間で「危険なほど手強い波・技」を指す隠語として生まれた語で、そこから転じて一般に「対処するのに相当な技術や根気を要するほど厄介な問題」を指す口語表現として広がった。シリコンバレーのエンジニア文化を通じてビジネス英語にも浸透し、\"a gnarly bug\" \"a gnarly edge case\" のように技術的な難問を形容するのが定番になっている。似た語 thorny がフォーマルで知的な響きを持つのに対し、gnarly はカジュアルで、時に厄介さを面白がるようなニュアンスすら含む点が対照的。"
-    },
-    {
-      type: "idiom", term: "read the room", ipa: "", register: "口語・社会的空気を読む",
-      meaning_en: "to accurately sense the mood, mindset, or unspoken expectations of a group before saying or doing something",
-      meaning_ja: "（その場の）空気を読む",
-      examples: [
-        "He kept pushing for the expansion plan even as the room went quiet — someone needs to teach that guy to read the room.",
-        "I was going to make a joke about the delay, but I read the room and just apologized instead."
-      ],
-      synonyms: [
-        { term: "gauge the mood", nuance_ja: "より説明的でフォーマルな言い換え。read the room ほど瞬発的・直感的なニュアンスは薄い。" },
-        { term: "take the temperature", nuance_ja: "意図的に探りを入れる能動的な行為を指すことが多く、read the room が持つ「即座に感じ取る」直感的な速さとは少し違う。" },
-        { term: "pick up on the vibe", nuance_ja: "ほぼ同義のカジュアルな言い換えで、感覚的・雰囲気重視の響きがやや強い。" }
-      ],
-      explanation_ja: "演劇や講演の場で、話者が観客（room）の反応を見ながら間や内容を調整する、という比喩から一般化した表現。核心は「言葉にされていない空気や期待を、その場で瞬時に感じ取る」という直感的なスキルであり、これができない人を批判的に \"he can't read the room\" と評するのが定番の言い回し。日本語の「空気を読む」と驚くほど近い概念だが、英語では特にリーダーシップ論やコミュニケーション研修で「重要な対人スキルの一つ」として明示的に語られることが多い点が特徴的。反対に空気を読めない人は \"tone-deaf\" と形容されることも多く、二つの表現はセットで使われがち。"
-    },
-    {
-      type: "idiom", term: "move the needle", ipa: "", register: "ビジネス口語・成果測定で頻出",
-      meaning_en: "to make a difference that is large enough to actually be noticed or measured, as opposed to a negligible or cosmetic change",
-      meaning_ja: "（成果に）目に見える変化をもたらす、インパクトを与える",
-      examples: [
-        "Another two-percent discount isn't going to move the needle on a deal this size; we need to rethink the structure.",
-        "Going to the gym once a month isn't going to move the needle — you need at least three sessions a week."
-      ],
-      synonyms: [
-        { term: "make a dent in (something)", nuance_ja: "意味はほぼ重なる既出寄りの表現。move the needle はより測定・数値志向の響きが強く、KPIやパフォーマンス指標の文脈で好まれる。" },
-        { term: "make a real difference", nuance_ja: "平易で一般的な言い方。move the needle が持つ「計器の針が動くほどの、測定可能な変化」という具体的なイメージは薄い。" },
-        { term: "be a game changer", nuance_ja: "はるかに強く、根本的に状況を変えるレベルのインパクトを示唆する。move the needle は「多少なりとも意味のある変化」という控えめな水準でも使える。" }
-      ],
-      explanation_ja: "計測器の針 needle が実際に動くかどうかという物理的なイメージから来た表現で、KPIや業績指標が「誤差の範囲」ではなく実際に動くレベルの変化を指す。ビジネスの会議で「その施策は本当に意味があるのか」を問う際の定番のフレーズで、しばしば否定形 \"won't move the needle\" として、努力や予算に見合わない些細な施策を切り捨てる文脈で使われる。似た表現 make a dent とほぼ同じ意味だが、move the needle の方がより測定・数値志向の響きが強く、決算説明会やパフォーマンスレビューのような数字が支配する場で特に好まれる。"
-    },
-    {
-      type: "idiom", term: "put (something) on the back burner", ipa: "", register: "口語・優先順位付け",
-      meaning_en: "to deliberately deprioritize a task or plan for now, while continuing to work on more urgent things, without abandoning it entirely",
-      meaning_ja: "（物事を）後回しにする、優先順位を下げて棚上げする",
-      examples: [
-        "We put the rebrand on the back burner the minute the acquisition talks got serious — there's only so much bandwidth to go around.",
-        "The kitchen renovation has been on the back burner since the twins were born; we'll get to it eventually."
-      ],
-      synonyms: [
-        { term: "shelve (a plan)", nuance_ja: "より事実上の中止・撤回に近いニュアンスを持ちやすく、back burner が持つ「いずれ再開するつもりがある」という含みは弱い。" },
-        { term: "deprioritize", nuance_ja: "フォーマルで事務的な語。back burner が持つ、コンロの奥で鍋を置いたまま煮込み続けるという「完全には放置していない」比喩的な温かみはない。" },
-        { term: "punt on (a decision)", nuance_ja: "punt on は一回の決定そのものを先送りする行為を指すのに対し、back burner は進行中のプロジェクト全体の優先順位を下げて放置する状態を指す点が違う。" }
-      ],
-      explanation_ja: "キッチンのコンロで、今すぐ火を通す必要がある鍋は手前（front burner）に、まだ時間に余裕のある煮込み料理は奥の火（back burner）に置く、という家庭料理の光景がそのまま比喩になった表現。核心は完全に見捨てたわけではなく、「優先度は下げつつも、いずれ手をつけるつもりがある」という含みにあり、shelve のような事実上の撤回とは温度感が違う。プロジェクト管理や人事評価の場面で、限られたリソースをどこに割り振るかを説明する際の定番表現で、\"that's on the back burner for now\" と言えば、相手に対して「無視しているわけではない」という安心感を与えながら優先順位の低さを伝えられる。"
-    },
-    {
-      type: "idiom", term: "throw spaghetti at the wall", ipa: "", register: "口語・戦略なき試行錯誤を形容",
-      meaning_en: "to try many different approaches quickly and somewhat randomly, without a clear strategy, to see which one happens to work",
-      meaning_ja: "（戦略もなく）手当たり次第に試す、当たるまで色々やってみる",
-      examples: [
-        "Our marketing this quarter has basically been throwing spaghetti at the wall — five campaigns, no shared thesis, and we'll just double down on whichever one sticks.",
-        "I don't have a real plan for the seating chart yet, I'm just throwing spaghetti at the wall until something looks right."
-      ],
-      synonyms: [
-        { term: "trial and error", nuance_ja: "より中立的・体系的な響きを持ち、throw spaghetti at the wall が持つ「行き当たりばったりで戦略性が薄い」という若干批判的なニュアンスは弱い。" },
-        { term: "experiment", nuance_ja: "肯定的でフォーマルな語。仮説やプロセスの整った検証を示唆し、spaghetti の持つ場当たり感はない。" },
-        { term: "wing it", nuance_ja: "準備不足のまま即興で乗り切ることを指し、複数の選択肢を並行して試すという spaghetti の含みとは少し違う。" }
-      ],
-      explanation_ja: "茹でたスパゲッティを壁に投げつけて、くっついたものが「茹で上がった証拠」とする（実際には俗説とされる）調理の言い伝えから来た表現で、「どれが上手くいくか分からないまま、とにかく複数試してみる」戦略なき試行錯誤を指す。スタートアップの初期マーケティングや、方向性が定まっていないブレインストーミングの場面を自嘲気味に描写するのによく使われ、\"spaghetti strategy\" という名詞句としても定着している。trial and error より砕けていて、暗に「もっと考えてから動くべきだったのでは」という軽い批判を含むことが多い点が特徴。"
-    },
-    {
-      type: "phrase", term: "paper over (a problem / a disagreement)", ipa: "", register: "ビジネス口語・批判的",
-      meaning_en: "to make a problem or disagreement look resolved or less serious than it really is, without actually fixing it",
-      meaning_ja: "（問題・対立を）表面的に取り繕う、覆い隠す",
-      examples: [
-        "The joint statement papered over a pretty serious disagreement about pricing that's going to resurface at the next board meeting.",
-        "They papered over the argument for the holidays, but nobody actually apologized."
-      ],
-      synonyms: [
-        { term: "gloss over", nuance_ja: "「軽く触れるだけで済ませる」ことに焦点があり、papering over が持つ「意図的に見た目を取り繕う」という積極性はやや弱い。" },
-        { term: "smooth over", nuance_ja: "対立の角を取って関係を穏便にすることに焦点があり、必ずしも問題を隠蔽したという含みは強くない。" },
-        { term: "whitewash", nuance_ja: "はるかに強く、都合の悪い事実を意図的に隠蔽・美化するという非難の色が濃い。" }
-      ],
-      explanation_ja: "壁の亀裂の上から壁紙（paper）を貼って見た目だけ直す、という比喩から来た表現で、核心は「根本的な問題は手つかずのまま、表面だけを取り繕う」という点にある。企業の合同声明や、家族間の対立が「一時的に丸く収まったように見える」場面を批判的に描写するのに使われ、しばしば「いずれまた表面化するだろう」という含みを伴う。似た語 gloss over が「軽く流す・深入りしない」という消極的な回避を指すのに対し、paper over は「見た目を能動的に取り繕う」というやや作為的なニュアンスが強い。"
-    },
-    {
-      type: "phrase", term: "front-load (the work / the costs)", ipa: "", register: "プロジェクト管理・財務の実務語",
-      meaning_en: "to schedule a disproportionate share of the effort, cost, or risk at the beginning of a process rather than spreading it evenly",
-      meaning_ja: "（作業・費用などを）前倒しで集中させる",
-      examples: [
-        "We front-loaded the due diligence so the tough questions come up in week one, not two days before signing.",
-        "I front-loaded the packing this time — everything except the toiletries was done a week before the trip."
-      ],
-      synonyms: [
-        { term: "front-run", nuance_ja: "全く別の意味（他者に先んじて情報や機会を利用する、しばしば不公正な含み）で使われることが多く、混同しないよう注意。" },
-        { term: "get ahead of schedule", nuance_ja: "単純にスケジュールより早く進むことを指し、front-load が持つ「意図的に負荷を前半に集中させる設計」という含みはない。" },
-        { term: "weight (something) toward the start", nuance_ja: "説明的な言い換えで意味は近いが、front-load ほど簡潔で定着した専門語の響きはない。" }
-      ],
-      explanation_ja: "プロジェクト管理や財務モデリングの用語で、作業量・コスト・リスクを均等に配分するのではなく、意図的に初期段階に集中させる設計を指す。デューデリジェンスで難しい論点を早期に洗い出しておく、契約の支払いを前半に多く設定する、教育プログラムの負荷を序盤に寄せるなど、「後になって想定外の負担が発生するのを避けるために、あえて最初にきつくする」という戦略的な意図を伴うことが多い。似たスペルの front-run とは全く意味が異なるので混同注意——front-run は情報の非対称性を利用して先回りするという、しばしば不正の含みを持つ別の概念。"
-    },
-    {
-      type: "phrase", term: "punt on (a decision)", ipa: "", register: "口語・意思決定の先延ばし（米式フットボール由来）",
-      meaning_en: "to defer or avoid making a decision for now, typically passing the issue along or leaving it for someone else or a later time",
-      meaning_ja: "（決定を）先送りにする、判断を留保する",
-      examples: [
-        "The committee punted on the pricing question and kicked it to a working group that won't report back until Q3.",
-        "We punted on picking a venue and just let my sister decide since she actually knows the city."
-      ],
-      synonyms: [
-        { term: "defer", nuance_ja: "フォーマルな中立語で、punt on が持つ「本来は決めるべきなのに、あえて手放した」という若干の無責任さのニュアンスは弱い。" },
-        { term: "kick the can down the road", nuance_ja: "意味は近いが、kick the can は「繰り返し先送りにして問題が悪化する」プロセス全体を指すことが多く、punt on は一回の意思決定の場面に使うことが多い。" },
-        { term: "pass the buck", nuance_ja: "責任を他人に押し付けるという非難の色がより強く、punt on の「単に判断を保留する」という軽さより攻撃的。" }
-      ],
-      explanation_ja: "アメリカンフットボールで、攻撃側が前進を諦めてボールを蹴って（punt）相手に攻撃権を譲る戦術から来た表現。核心は「今この場で決めることを放棄し、決定権や問題そのものを先送り・他者に委ねる」という点で、kick the can down the road ほど「問題が雪だるま式に悪化する」という重さはなく、もっと軽く「今回はパスします」という日常的な判断保留にも使える。ビジネスの会議で \"let's punt on that until next week\" と言えば、深刻な批判ではなく実務的な優先順位づけとして自然に受け取られる、使い勝手のよい表現。"
-    },
-    {
-      type: "phrase", term: "nickel-and-dime (someone)", ipa: "", register: "口語・批判的（少額の出費/請求への不満）",
-      meaning_en: "to charge, criticize, or negotiate over many small amounts in a way that feels petty and adds up to real frustration or cost",
-      meaning_ja: "（少額の出費・要求で）ちまちま負担させる、こまごま消耗させる",
-      examples: [
-        "The hotel nickel-and-dimes you for everything — the wifi, the safe, the gym, all separate line items that weren't in the quoted rate.",
-        "Stop nickel-and-diming the vendor over every line item; we're going to lose the relationship over three hundred dollars."
-      ],
-      synonyms: [
-        { term: "chip away at (someone)", nuance_ja: "対象を徐々に消耗させるという点で似るが、nickel-and-dime は特に「少額の課金・要求の積み重ね」という金銭的な文脈に限定される。" },
-        { term: "squeeze", nuance_ja: "より強く一方的な圧力を示唆し、必ずしも少額を積み重ねる形とは限らない。" },
-        { term: "be petty about", nuance_ja: "態度そのものへの批判に焦点があり、nickel-and-dime が持つ「実際に小口の請求・交渉が積み重なる」という具体的な行為の含みは弱い。" }
-      ],
-      explanation_ja: "アメリカの少額硬貨 nickel（5セント）と dime（10セント）から来た表現で、一つ一つは些細でも積み重なると無視できない負担になる、という不満を描写する。ホテルやサブスクリプションサービスが基本料金以外に細かい追加料金を次々と課してくる状況や、交渉相手が大きな論点ではなく些末な項目に固執してくる場面を批判的に指すのに使われる。動詞としても \"they nickel-and-dimed us on the closing costs\" のように過去形で使え、態度そのものより「実際に細かい請求・要求が積み重なった」という具体的な体験を語る点が chip away at との違い。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "finicky", ipa: "/fəˈnɪki/", register: "口語・批判/中立（人にもモノにも使う）",
-      meaning_en: "excessively fussy or hard to please, requiring an unusual degree of care or precision to satisfy",
-      meaning_ja: "（人・機械などが）気難しい、扱いにくいほど神経質な",
-      examples: [
-        "The client is finicky about formatting in a way that has nothing to do with the actual analysis — three different font sizes got rejected before he approved the deck.",
-        "This old espresso machine is finicky; you have to tamp it exactly right or it just spits everywhere."
-      ],
-      synonyms: [
-        { term: "fussy", nuance_ja: "ほぼ同義でより日常的。finicky はやや技術的な文脈（機械・データ・仕様）にも自然になじむ。" },
-        { term: "particular", nuance_ja: "中立的で、こだわりが正当であることを示唆する場合にも使える。finicky は度が過ぎているという軽い非難を伴うことが多い。" },
-        { term: "high-maintenance", nuance_ja: "人に対して使うことが多く、感情面・関係面での手間のかかりやすさを指す。finicky はより具体的な基準や仕様へのこだわりを指す。" }
-      ],
-      explanation_ja: "元々は食べ物の好き嫌いが激しい人を描写する語だったが、今では人にも機械にもデータにも使える汎用的な形容詞になっている。核心は「求められる精度や配慮の水準が通常より高く、少しでも外れると機嫌を損ねる、あるいは正常に動作しない」という点で、批判的だが high-maintenance ほど人格全体を否定する強さはない。古い機械やソフトウェアの不安定さを \"finicky\" と形容するのは非常に自然で、IT分野の実務でもよく耳にする。"
-    },
-    {
-      term: "threadbare", ipa: "/ˈθredˌbeər/", register: "比喩的・批判的（フォーマルな書き言葉でも使われる）",
-      meaning_en: "(of an excuse, argument, or plan) worn thin from overuse and no longer convincing or substantial",
-      meaning_ja: "（言い訳・議論などが）使い古されて説得力を失った、すり切れた",
-      examples: [
-        "The 'market conditions' excuse is getting pretty threadbare at this point — three quarters in a row is a pattern, not bad luck.",
-        "His alibi was threadbare the second time he told it, with two of the details flipped."
-      ],
-      synonyms: [
-        { term: "flimsy", nuance_ja: "元々薄くて弱いことを指し、threadbare が持つ「以前は通用していたが使い古されて摩耗した」という時間経過の含みはない。" },
-        { term: "worn-out", nuance_ja: "ほぼ同義の平易な言い換えだが、threadbare の持つ「布がすり切れる」という具体的な質感の比喩性はやや薄れる。" },
-        { term: "hollow", nuance_ja: "中身が最初から欠けている（言葉と実質が伴わない）ことに焦点があり、繰り返し使われて摩耗したという含みは必須ではない。" }
-      ],
-      explanation_ja: "生地が擦り切れて糸(thread)がむき出しになり、もはや布としての機能を果たさなくなった状態を指す語がそのまま比喩に転用され、「繰り返し使われすぎて、もはや誰も信じない言い訳や議論」を描写する。決算説明会で経営陣が同じ言い訳を繰り返す場面や、嘘をつく人が同じ話を何度も語るうちにほころびが見える場面を批判的に指すのに使われ、flimsy が「元々弱い」ことを指すのに対し、threadbare は「かつては機能していたが、使われすぎて摩耗した」という時間経過の含みが決定的に異なる。"
-    },
-    {
-      term: "slapdash", ipa: "/ˈslæpdæʃ/", register: "口語・批判的（仕事の質を評する）",
-      meaning_en: "done hastily and carelessly, with little attention to detail or planning, in a way that shows in the sloppy result",
-      meaning_ja: "やっつけの、雑でずさんな",
-      examples: [
-        "The report was clearly slapdash — two slides still had placeholder text, and the numbers on page four didn't tie to the appendix.",
-        "The landlord did a slapdash paint job right before the showing; you can see the roller marks in the hallway light."
-      ],
-      synonyms: [
-        { term: "sloppy", nuance_ja: "ほぼ同義で頻度も高い平易な語。slapdash はやや文語的で、特に「急いで作ったこと自体」への言及を含みやすい。" },
-        { term: "haphazard", nuance_ja: "計画性の欠如・場当たり感に焦点があり、必ずしも急いで雑に作られたという速度の含みは伴わない。" },
-        { term: "half-assed", nuance_ja: "既出の half-baked に近い、非常にカジュアルで下品寄りの言い方。フォーマルな文書には全く使えない。" }
-      ],
-      explanation_ja: "擬音語的な slap（バシャッと叩きつける）+ dash（さっと走り書きする）という語構成から、「急いで、注意を払わずに仕上げた」様子をそのまま音で表現したような語。核心は仕上がりの雑さだけでなく、「十分な時間や労力をかけなかった」という過程への非難も含む点で、単に sloppy（雑）と言うよりも「急いで手を抜いた」という原因まで示唆する。フォーマルな書き言葉でも十分通用する語で、批評や監査報告書のような文脈でも違和感なく使える。"
-    },
-    {
-      term: "cushy", ipa: "/ˈkʊʃi/", register: "口語・やや皮肉（楽な仕事や待遇を評する）",
-      meaning_en: "easy, comfortable, and undemanding in a way that seems enviable or almost too good, often implying little effort is required",
-      meaning_ja: "楽で待遇のいい、うらやましいほど楽な",
-      examples: [
-        "He landed a cushy advisory role with a six-figure retainer and, as far as anyone can tell, one call a month.",
-        "Housesitting for them is a cushy gig — free rent in exchange for feeding one very lazy cat."
-      ],
-      synonyms: [
-        { term: "comfortable", nuance_ja: "中立的で幅広く使える語。cushy が持つ「うらやましいほど楽で、少し出来すぎている」という皮肉っぽい響きは薄い。" },
-        { term: "plum (job/assignment)", nuance_ja: "「特に望ましい役得のポジション」に焦点があり、待遇の良さよりも「競争率が高く手に入れにくい役得」という含みが強い。" },
-        { term: "easy", nuance_ja: "単純に労力が少ないことを指す平易な語で、cushy が持つ「待遇や条件面まで含めて恵まれている」という総合的な響きはない。" }
-      ],
-      explanation_ja: "クッション cushion から派生したとされる語で、「座り心地の良いクッションに座っているような、楽で快適な状態」を仕事や待遇に転用した口語表現。核心は単に「楽」というだけでなく、「その楽さが待遇の良さと結びついていて、他人から見るとうらやましい、あるいは少しずるいとすら感じられる」という含みにある。退職後の顧問職や、労力の割に報酬が良いアルバイトなどを形容するのに使われ、しばしば軽い皮肉やちょっとした嫉妬を伴って語られる点が、単に easy や comfortable と言うのとは違う。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "run point on (a project)",
-      meaning_en: "to take direct, hands-on responsibility for leading and coordinating a specific project or initiative",
-      meaning_ja: "（プロジェクトの）陣頭指揮を執る、主担当になる",
-      examples: [
-        "I'll run point on the vendor negotiation since I already have the relationship with their procurement lead.",
-        "Someone needs to run point on the move — coordinating three trucks and two elevators isn't going to organize itself."
-      ],
-      synonyms: [
-        { term: "spearhead", nuance_ja: "よりフォーマルで、しばしば新しい取り組みを最初に主導するという開拓的な響きを持つ。run point はより実務的な日々の調整役に焦点がある。" },
-        { term: "own (a project)", nuance_ja: "責任の所在を明確にする語で近い意味だが、run point が持つ「実際に現場を動かして調整する」という能動的な行動の含みはやや弱い。" }
-      ],
-      explanation_ja: "軍隊の斥候（point man）が部隊の先頭に立って進路を確認する役割から来た表現で、ビジネスでは「その案件について最前線に立ち、実務的な調整と意思決定を担う担当者になる」ことを指す。単に責任者として名前が挙がるだけでなく、実際に日々のやり取りや調整を回す実務担当という含みが強く、\"who's running point on this?\" は会議で実務上の窓口を確認する際の定番の聞き方になっている。"
-    },
-    {
-      phrase: "get ahead of (the story / an issue)",
-      meaning_en: "to proactively address or communicate about a problem before it becomes public or spirals out of control",
-      meaning_ja: "（問題が表面化する前に）先手を打つ、機先を制する",
-      examples: [
-        "Legal wants to get ahead of the story and put out a statement before the journalist's piece even runs.",
-        "I texted my parents to get ahead of it before my sister could tell them her version of what happened at dinner."
-      ],
-      synonyms: [
-        { term: "preempt", nuance_ja: "よりフォーマルでやや戦略的・冷静な響き。get ahead of は危機管理やPRの現場でより口語的に使われる。" },
-        { term: "stay ahead of the curve", nuance_ja: "トレンドや変化への一般的な対応の早さを指すことが多く、get ahead of が持つ「特定の問題・報道への防御的な先手」という切迫感は薄い。" }
-      ],
-      explanation_ja: "危機管理広報（クライシスPR）の定番用語で、悪いニュースや批判が外部から広まる前に、自ら情報を開示・説明することで主導権を握る戦略を指す。核心は受け身で対応するのではなく、能動的にタイミングと語り方をコントロールしようとする姿勢にあり、\"get ahead of the story\" は特にメディア対応の文脈で決まり文句のように使われる。家族間のちょっとした気まずい話題を、誰かに先に伝えられる前に自分から説明しておく、という日常的な場面にも自然に応用できる。"
-    },
-    {
-      phrase: "connect the dots",
-      meaning_en: "to see or explain how separate pieces of information relate to each other, revealing a pattern or conclusion that wasn't obvious before",
-      meaning_ja: "（点在する情報を）つなぎ合わせて全体像を見出す",
-      examples: [
-        "Once you connect the dots between the hiring freeze and the delayed product launch, the budget story makes a lot more sense.",
-        "It took me a week to connect the dots and realize both friends had been talking about the same guy the whole time."
-      ],
-      synonyms: [
-        { term: "piece together", nuance_ja: "ほぼ同義で、より段階的・時間をかけた推理の過程を強調する。connect the dots はひらめきの瞬間により焦点がある。" },
-        { term: "join the dots", nuance_ja: "英国式の言い方で意味は同一。" }
-      ],
-      explanation_ja: "子供向けの「点つなぎ」パズル（数字順に点を線で結ぶと絵が現れる）から来た表現で、一見バラバラに見える情報や出来事が、実はつながっていて一つの意味のある全体像を作っている、という発見の瞬間を指す。分析・戦略の文脈で「個々のデータポイントは知っていたが、それらの関係性を見抜けていなかった」ことを指摘する際によく使われ、\"failure to connect the dots\" は組織が持っている情報を統合できずに問題を見逃した、という批判の定番フレーズにもなっている。"
-    },
-    {
-      phrase: "throw money at (a problem)",
-      meaning_en: "to try to solve a problem simply by spending more, without a clear strategy, often implying the approach is unlikely to actually fix the root cause",
-      meaning_ja: "（根本的な戦略なしに）とにかくお金をつぎ込んで解決しようとする",
-      examples: [
-        "Throwing money at the churn problem with bigger discounts didn't work, because customers were leaving over the product, not the price.",
-        "You can't throw money at a bad relationship and expect a nicer vacation to fix it."
-      ],
-      synonyms: [
-        { term: "pour resources into", nuance_ja: "より中立的でフォーマル。throw money at が持つ「戦略性を欠いた、やや無駄な支出」という批判的な含みは弱い。" },
-        { term: "buy your way out of (a problem)", nuance_ja: "「本来の努力や改善を避けて金銭で解決しようとする」という含みがより強く、throw money at より皮肉が強い。" }
-      ],
-      explanation_ja: "「投げつける throw」という乱暴な動詞が示す通り、狙いを定めず、とにかく資金を投入すれば問題が解決するだろうという安易な発想を批判的に描写する表現。核心は「根本原因への理解や戦略がないまま支出だけを増やす」という点にあり、しばしば否定形 \"you can't just throw money at this\" として、より深い分析や構造的な変化が必要だと主張する際に使われる。経営会議で人員増強や予算増額を提案された際に、この表現を使って「それだけでは解決しない」と釘を刺すのは非常に典型的な使い方。"
-    }
-  ],
-  todayQuiz: [
-    { question: "I don't have the ___ to take on a third direct report this quarter, not with the audit running in parallel.", choices: ["bandwidth", "headspace", "runway", "moat"], answerIndex: 0, explanation: "\"Bandwidth\" specifically refers to the practical capacity to handle additional tasks. \"Headspace\" refers to emotional or mental room rather than task-processing capacity." },
-    { question: "It's just a plain ___ interest rate swap, nothing structured or exotic.", choices: ["vanilla", "generic", "standard", "squishy"], answerIndex: 0, explanation: "\"Plain vanilla\" is the fixed financial term for an unstructured, straightforward instrument. \"Generic\" carries a negative, brandless connotation that this term does not." },
-    { question: "The synergy number in that deck is pretty ___ — half of it is 'goodwill from combined culture.'", choices: ["squishy", "vague", "hand-wavy", "gnarly"], answerIndex: 0, explanation: "\"Squishy\" specifically implies a number that looks solid but falls apart under scrutiny. \"Gnarly\" describes something difficult or messy to deal with, not something whose accuracy is questionable." },
-    { question: "Which word specifically implies that a problem requires serious skill or effort to untangle, rather than simply being disorganized?", choices: ["gnarly", "messy", "vague", "squishy"], answerIndex: 0, explanation: "\"Gnarly\" specifically implies a level of complexity that demands real skill or effort to resolve. \"Messy\" just means disorganized, without necessarily implying that unusual skill is required." },
-    { question: "He kept pushing his proposal even as the room went quiet — he really can't ___.", choices: ["read the room", "move the needle", "punt on it", "connect the dots"], answerIndex: 0, explanation: "\"Read the room\" means to sense the unspoken mood of a group. \"Move the needle\" describes making a measurable impact, an unrelated meaning." },
-    { question: "Another two-percent discount won't ___ on a deal this size; we need a different structure.", choices: ["move the needle", "read the room", "get ahead of the story", "run point"], answerIndex: 0, explanation: "\"Move the needle\" specifically means making a difference large enough to be measured. \"Run point\" means taking hands-on leadership of something, an unrelated meaning." },
-    { question: "The committee ___ the pricing question and kicked it to a working group that won't report back until Q3 — a single, low-stakes deferral rather than a recurring pattern.", choices: ["punted on", "kicked the can down the road on", "papered over", "nickel-and-dimed"], answerIndex: 0, explanation: "\"Punt on\" fits a single, relatively low-stakes deferral to a working group. \"Kick the can down the road\" implies a repeated pattern of deferral that lets a problem worsen over time, a heavier framing than this sentence describes." },
-    { question: "The joint statement ___ a serious pricing disagreement that's going to resurface at the next board meeting.", choices: ["papered over", "front-loaded", "punted on", "nickel-and-dimed"], answerIndex: 0, explanation: "\"Paper over\" means making a problem look resolved on the surface without actually fixing it. \"Front-load\" means concentrating effort or cost at the start of a process, an unrelated meaning." },
-    { question: "The client is ___ about formatting in a way that has nothing to do with the actual analysis.", choices: ["finicky", "particular", "high-maintenance", "threadbare"], answerIndex: 0, explanation: "\"Finicky\" implies an excessive, borderline unreasonable standard of care, fitting fussiness over formatting unrelated to substance. \"Particular\" is neutral and can describe justified preferences rather than excessive fussiness." },
-    { question: "Once you ___ between the hiring freeze and the delayed launch, the budget story makes a lot more sense.", choices: ["connect the dots", "get ahead of the story", "run point", "throw money at it"], answerIndex: 0, explanation: "\"Connect the dots\" means seeing how separate pieces of information relate to reveal a pattern. \"Get ahead of the story\" means proactively addressing an issue before it becomes public, an unrelated meaning." }
-  ]
-},
-{
   date: "2026-09-07",
   dateLabel: "2026年9月7日（月）",
   readTimeMin: 32,
@@ -2388,9 +2069,328 @@ const ENGLISH_REPORTS = [
     { question: "When the board rejected his pet acquisition, the CEO sent a ___ email accusing everyone of 'lacking vision' — a strange look for someone in his position.", choices: ["petulant", "sulky", "insouciant", "indefatigable"], answerIndex: 0, explanation: "Petulant captures the childish, actively complaining reaction to being told no, which fits \"sent an email accusing everyone.\" \"Sulky\" implies a quieter, withdrawn reaction rather than an outward, accusatory email." },
     { question: "A single line in the reps-and-warranties section, buried on page 80, ended up ___ a deal that had taken eight months to negotiate.", choices: ["torpedoing", "poaching", "whitewashing", "moving markets on"], answerIndex: 0, explanation: "\"Torpedo a deal\" means to destroy a negotiation, which fits a single clause derailing eight months of work. \"Poach\" relates to hiring away talent, and \"whitewash\" relates to covering up wrongdoing — neither fits destroying a negotiation." }
   ]
+},
+{
+  date: "2026-09-15",
+  dateLabel: "2026年9月15日（火）",
+  readTimeMin: 33,
+  coreItems: [
+    {
+      type: "word", term: "kludge", ipa: "/klʌdʒ/", register: "口語・エンジニアリング/業務プロセス批評",
+      meaning_en: "an inelegant but workable solution or fix, cobbled together to solve an immediate problem rather than done properly",
+      meaning_ja: "場当たり的だが一応動く、継ぎ接ぎの解決策",
+      examples: [
+        "The reconciliation process is basically a kludge — three people manually copy numbers between two systems that were never designed to talk to each other.",
+        "We taped a kludge together to get the presentation working five minutes before the client call, but someone needs to fix it properly next week."
+      ],
+      synonyms: [
+        { term: "workaround", nuance_ja: "より中立的で技術寄りの語。kludge が持つ『本来は褒められたものではない、無理やり感』という含みは薄く、単に代替手段を指すだけのことも多い。" },
+        { term: "band-aid fix", nuance_ja: "『一時しのぎで本質的な問題は未解決』という点を強調する言い方で、kludge よりも『いずれ剥がれる』という一時性への焦点が強い。" },
+        { term: "patchwork", nuance_ja: "複数の応急処置を継ぎ接ぎした結果、全体として統一性がなくなっている状態を指すことが多く、単発の一つの解決策を指す kludge より範囲が広い。" }
+      ],
+      explanation_ja: "kludge（またはkluge）という語の語源は諸説あるが、1960年代のコンピュータ工学のスラングとして定着し、『動くには動くが、美しくも堅牢でもない、その場しのぎの実装』を指す軽蔑と自嘲の入り混じった語として使われてきた。エンジニアが自分の書いたコードを謙遜して \"it's a total kludge, but it works\" と言うのは定番のフレーズで、動くことは認めつつも誇れる設計ではないという自己批評のニュアンスを含む。近年ではIT以外の業務プロセスにも転用され、Excelとメールを手作業でつなぎ合わせたような非効率な運用フローを指して使われることも増えている。発音は \"klooj\" と伸ばす人と \"kluhj\" と短く言う人がいて、綴りも kludge/kluge 両方が使われる、やや不安定な語でもある。"
+    },
+    {
+      type: "word", term: "gravitas", ipa: "/ˈɡrævɪtɑːs/", register: "フォーマル〜中立・人物評で頻出",
+      meaning_en: "a serious, dignified manner or presence that commands respect and makes people take someone or something seriously",
+      meaning_ja: "（人や発言に備わる）重み、貫禄、威厳",
+      examples: [
+        "The board wanted someone with the gravitas to sit across from activist investors and not flinch — a first-time CEO wasn't going to cut it.",
+        "She's brilliant on paper, but she doesn't yet have the gravitas to command a room full of skeptical clients."
+      ],
+      synonyms: [
+        { term: "authority", nuance_ja: "地位や権限に由来する『発言力』を指すことが多く、gravitas が持つ『存在そのものが醸し出す重み』という人格的な質感は薄い。" },
+        { term: "presence", nuance_ja: "より広く『場を支配する存在感』全般を指し、必ずしも真剣さや威厳を伴わない（明るく人を惹きつける存在感にも使える）点で gravitas と異なる。" },
+        { term: "stature", nuance_ja: "実績や評判の積み重ねによる『社会的な格』を指すことが多く、gravitas のような『その場での立ち振る舞いの重み』という即時的な質感は薄い。" }
+      ],
+      explanation_ja: "ラテン語で『重さ』を意味する gravitas は、古代ローマにおいて指導者に不可欠とされた美徳の一つで、軽々しく振る舞わない、動じない落ち着きを指した。現代のビジネス英語では、特に経営幹部や取締役候補を評する際に『実力はあるが、まだ gravitas が足りない』という言い方で使われることが多く、これは能力やスキルの不足ではなく、部屋の空気を支配し人を黙らせるような『貫禄』が欠けているという、やや測りにくい人物評価の軸を指す。昇進や役員登用の議論で、履歴書には書けないこの種の資質が決め手になることも少なくない。"
+    },
+    {
+      type: "word", term: "bespoke", ipa: "/bɪˈspoʊk/", register: "フォーマル〜中立、金融・プロダクトで頻出（英国発だが米国ビジネス英語にも定着）",
+      meaning_en: "custom-made or tailored specifically to an individual client's or situation's needs, rather than standardized or off-the-shelf",
+      meaning_ja: "オーダーメイドの、特注の（vanilla の対極にある概念）",
+      examples: [
+        "The private bank put together a bespoke hedging structure for the founder instead of pushing him into one of their off-the-shelf products.",
+        "Forget the template — the client wants a fully bespoke onboarding plan built around their specific compliance requirements."
+      ],
+      synonyms: [
+        { term: "custom", nuance_ja: "より中立的で使用範囲の広い語。bespoke が持つ『高級感・一点物としての丁寧さ』というニュアンスは薄く、単に既製品でないという事実を述べるだけのことが多い。" },
+        { term: "tailored", nuance_ja: "『既存のものを個別に調整した』という含みがあり、bespoke ほど『ゼロから作り上げた』という徹底ぶりは強調されない。" },
+        { term: "made-to-order", nuance_ja: "製造業や飲食店などでも使われる実務的な語で、bespoke が持つ英国の仕立て服由来の高級感や洗練された響きは薄い。" }
+      ],
+      explanation_ja: "bespoke はロンドンのサヴィル・ロウ（Savile Row）の仕立て屋文化に由来する語で、生地を『話しておく（be spoken for）』——つまり客のために取り置いておくという慣習から来たとされる、由緒あるスーツ仕立ての専門用語だった。そこから転じて、金融商品やソフトウェア、コンサルティングサービスなど『既製品ではなく、特定の顧客のためにゼロから設計されたもの』全般を指す語として、特にプライベートバンキングやM&Aアドバイザリーの文脈で好んで使われるようになった。vanilla が『標準的でシンプル』を意味するのとちょうど対極にあり、複雑な条件やカスタマイズを伴う商品性を、しばしば誇らしげに形容する語でもある。米国よりも英国発のビジネス英語で特に好まれるが、米系の投資銀行でも普通に使われる。"
+    },
+    {
+      type: "word", term: "churlish", ipa: "/ˈtʃɜːrlɪʃ/", register: "フォーマル〜文語寄り、やや皮肉を込めた人物批評",
+      meaning_en: "rude, ill-mannered, or ungracious in a mean-spirited way, especially in response to something that would normally call for graciousness",
+      meaning_ja: "無愛想で意地悪な、（本来礼を尽くすべき場面で）無礼な",
+      examples: [
+        "It would be churlish not to acknowledge how much the ops team scrambled to hit this deadline, even if the final numbers aren't perfect.",
+        "He gave a churlish one-word reply to the retirement toast, which soured the mood in the room instantly."
+      ],
+      synonyms: [
+        { term: "rude", nuance_ja: "非常に一般的で直接的な語。churlish が持つ『本来なら感謝や礼儀を示すべき場面での、不釣り合いな無愛想さ』という文脈的な皮肉は薄い。" },
+        { term: "ungracious", nuance_ja: "churlish とほぼ同義だが、より穏やかでフォーマルな響き。churlish の方が語感として若干強く、時に滑稽味を帯びる。" },
+        { term: "surly", nuance_ja: "不機嫌さや無口さに焦点があり、churlish が含む『礼を欠いた振る舞い』という対人的な失礼さの含みはやや弱い。" }
+      ],
+      explanation_ja: "churlish の語源は中英語の churl（自由農民、後に『無骨な田舎者』を意味するようになった語）に遡り、洗練さに欠ける粗野な振る舞いを指した。現代では『It would be churlish to ...』という定型句で最もよく使われ、これは『本来なら当然感謝・称賛すべき状況で、あえてケチをつけたり不満を述べたりするのは意地が悪い』という含みを持つ、やや持って回った言い回しである。日常の悪口というより、フォーマルなスピーチや記事の中で、礼を欠いた反応を上品に批判する際に好んで使われる、書き言葉寄りの語彙。"
+    },
+    {
+      type: "idiom", term: "burn the midnight oil", ipa: "", register: "口語〜中立、働きすぎを形容する定番表現",
+      meaning_en: "to work late into the night, especially to finish something under time pressure",
+      meaning_ja: "夜遅くまで（仕事や勉強で）根を詰める",
+      examples: [
+        "The deal team has been burning the midnight oil all week trying to get the fairness opinion finalized before the signing.",
+        "I burned the midnight oil studying for the CPA exam every night for two months straight."
+      ],
+      synonyms: [
+        { term: "pull an all-nighter", nuance_ja: "『一晩まるごと徹夜する』という、より極端で明確な終夜作業を指す。burn the midnight oil は『夜遅くまで』という程度で、必ずしも朝まで起きているとは限らない。" },
+        { term: "work late", nuance_ja: "中立的で平易な言い方。burn the midnight oil が持つ、ろうそくの灯りで夜遅くまで働いた時代を思わせる、やや詩的・古風な響きはない。" },
+        { term: "grind (it out)", nuance_ja: "時間帯よりも『苦しい努力を延々と続ける』という忍耐そのものに焦点があり、必ずしも夜間に限定されない。" }
+      ],
+      explanation_ja: "電気のない時代、夜遅くまで働く人はろうそくやランプの油（oil）を『燃やして』灯りを確保していたことに由来する、非常に古い表現。現代では電気が当たり前だが、比喩としては『通常の勤務時間を超えて夜遅くまで根を詰めて働く』という意味でそのまま生き続けている。IBやコンサルの繁忙期を語る際の定番表現で、しばしば誇りと自虐が半々に混じったニュアンスで使われる——「大変だったけど頑張った」という武勇伝的な響きを持つことが多い。"
+    },
+    {
+      type: "idiom", term: "cut your teeth (on something)", ipa: "", register: "口語〜中立、経歴・キャリア初期を語る際に頻出",
+      meaning_en: "to gain one's first significant experience or develop one's basic skills by doing something, especially early in a career",
+      meaning_ja: "（キャリアなどの初期に）経験を積む、腕を磨く",
+      examples: [
+        "She cut her teeth doing distressed debt analysis at a boutique shop before moving to a bulge-bracket bank.",
+        "He cut his teeth writing scrappy internal tools before he ever touched production code at a big tech company."
+      ],
+      synonyms: [
+        { term: "get one's start", nuance_ja: "単に『そこでキャリアを始めた』という事実を述べるだけで、cut your teeth が持つ『苦労しながらスキルを鍛えた』という含みは薄い。" },
+        { term: "come up (through)", nuance_ja: "組織内での昇進の道のりを指すことが多く、特定のスキルの習得というより、どのルートを経て今のポジションに至ったかに焦点がある。" },
+        { term: "learn the ropes", nuance_ja: "基本的な業務のやり方を覚えるという初歩的な段階を指すことが多く、cut your teeth が含む『試練を通じて実力をつけた』という達成感のニュアンスはやや弱い。" }
+      ],
+      explanation_ja: "赤ん坊が歯が生え始める（teething）ときに何かを噛んで痛みを紛らわせる様子から転じて、『駆け出しの時期に苦労しながら基礎を身につける』という意味の比喩表現になった。履歴書やインタビューで自分のキャリアの原点を語る際に非常によく使われ、\"I cut my teeth at ...\" という形で、その経験がいかに自分を鍛えたかを誇りを持って語る文脈で登場することが多い。単に『そこで働いた』ではなく、『そこで揉まれて実力の土台ができた』という含みが核心にある。"
+    },
+    {
+      type: "idiom", term: "smell a rat", ipa: "", register: "口語、疑念を表す定番表現",
+      meaning_en: "to sense that something is wrong or dishonest, even without concrete proof yet",
+      meaning_ja: "何か怪しいと感づく、不正の匂いを嗅ぎ取る",
+      examples: [
+        "The auditor smelled a rat the moment three consecutive quarters showed exactly the same gross margin to the decimal point.",
+        "I smelled a rat when the landlord suddenly wanted the deposit wired to a 'temporary' account."
+      ],
+      synonyms: [
+        { term: "be suspicious", nuance_ja: "一般的で直接的な言い方。smell a rat が持つ『具体的な証拠はまだないが、勘や経験から怪しいと察知する』という直感的なニュアンスは薄い。" },
+        { term: "sense something's off", nuance_ja: "ほぼ同義のカジュアルな言い換えで、smell a rat ほど断定的な『不正・欺瞞の匂い』という強い含みは弱い。" },
+        { term: "have one's doubts", nuance_ja: "より穏やかで漠然とした疑念を指し、smell a rat が持つ『何かたくらまれている』という能動的な警戒感は弱い。" }
+      ],
+      explanation_ja: "ネズミの姿は見えなくても、その臭いで存在を察知できるというイメージから生まれた表現で、16世紀から使われている息の長いイディオム。核心は『まだ証拠は掴んでいないが、経験や勘から何か不正・欺瞞があると直感的に察知する』という点にあり、デューデリジェンスや監査の場面で、数字の整合性が良すぎる、説明が微妙に噛み合わないといった違和感を表現するのに好んで使われる。しばしば \"something smells fishy\" という類似表現とセットで使われ、どちらも『嗅覚』の比喩で不正への勘を表現する点が共通している。"
+    },
+    {
+      type: "idiom", term: "throw someone a bone", ipa: "", register: "口語、譲歩・小さな見返りを与える文脈",
+      meaning_en: "to give someone a small concession, favor, or reward — often a minor one — especially to placate them or acknowledge their effort",
+      meaning_ja: "（大したことではないが）ちょっとした譲歩・見返りを与える、骨を投げてやる",
+      examples: [
+        "Management knew they couldn't approve the full budget, so they threw the team a bone by fast-tracking the smaller headcount request instead.",
+        "Throw the intern a bone and let her present one slide — she did most of the research anyway."
+      ],
+      synonyms: [
+        { term: "give someone a consolation prize", nuance_ja: "『本来欲しかったものではない、代わりの何か』という含みがより明確で、throw someone a bone よりもやや直接的にがっかり感を伴う。" },
+        { term: "make a concession", nuance_ja: "よりフォーマルで交渉論的な語。throw someone a bone が持つ、犬に骨を放るような『上から与える』軽いニュアンスは薄い。" },
+        { term: "cut someone some slack", nuance_ja: "『基準を緩めて大目に見る』という意味で、何かを積極的に与える throw someone a bone とは方向性が異なる。" }
+      ],
+      explanation_ja: "犬に骨を投げ与えて機嫌を取る様子がそのまま比喩になった表現で、『本当に重要なものは与えないが、相手が満足するくらいの小さな見返りを渡す』という、やや上から目線のニュアンスを含む。組織における意思決定の文脈で、要求のすべては通せないが、部分的な譲歩をして相手の面子を保たせたり不満を和らげたりする場面でよく使われる。動物の比喩を使っている点で若干くだけた響きがあり、フォーマルな文書よりも社内の会話や愚痴の中で使われることが多い。"
+    },
+    {
+      type: "phrase", term: "have your ducks in a row", ipa: "", register: "口語〜中立、準備が整っていることを示す",
+      meaning_en: "to be well organized and fully prepared, with everything in the right order before proceeding",
+      meaning_ja: "準備万端整っている、段取りがきちんとできている",
+      examples: [
+        "Before you walk into that negotiation, make sure you have your ducks in a row — term sheet, comps, and a clear walk-away number.",
+        "We can't file the paperwork yet; legal still doesn't have all their ducks in a row."
+      ],
+      synonyms: [
+        { term: "be squared away", nuance_ja: "軍隊由来の言い方で、整理整頓されている状態そのものを指すことが多く、have your ducks in a row が持つ『複数の要素を順序立てて揃える』という段取りのイメージはやや薄い。" },
+        { term: "have everything lined up", nuance_ja: "ほぼ同義の平易な言い換えで、アヒルの比喩が持つ愛嬌のある口語的な響きはない。" },
+        { term: "be buttoned up", nuance_ja: "細部まで抜け漏れなく仕上がっている、という完成度の高さに焦点があり、have your ducks in a row よりもフォーマルな文脈でも使いやすい。" }
+      ],
+      explanation_ja: "アヒルの親子が一列に整然と並んで歩く様子に由来するとされる表現で（諸説あり、ボウリングのピンの俗称に由来するという説もある）、複数の要素をきちんと順序立てて準備しておく状態を指す、視覚的で親しみやすいイディオム。ビジネスの場では、プレゼンや交渉、規制当局への提出などの『本番』を控えて、必要な資料や合意事項がすべて揃っているかを確認する文脈で頻繁に使われる。カジュアルな響きだが、役員会議のような場でも普通に使われるほど定着している。"
+    },
+    {
+      type: "phrase", term: "take something with a grain of salt", ipa: "", register: "口語〜中立、懐疑的な受け止め方を示す",
+      meaning_en: "to regard something — especially a claim, prediction, or piece of information — with skepticism and not accept it as entirely reliable",
+      meaning_ja: "（話・情報を）鵜呑みにせず、割り引いて聞く",
+      examples: [
+        "Take management's growth projections with a grain of salt — they've missed their own guidance three quarters running.",
+        "I'd take that review with a grain of salt; it looks like it was written by someone who's never actually used the product."
+      ],
+      synonyms: [
+        { term: "be skeptical of", nuance_ja: "直接的でフォーマルな言い方。take ... with a grain of salt が持つ『完全に否定はしないが、割り引いて受け止める』という程よい距離感のニュアンスはやや薄い。" },
+        { term: "not take at face value", nuance_ja: "『表面的な言葉通りには受け取らない』という点に焦点があり、grain of salt が含む『適度な懐疑心を持ちつつ、話自体は聞く』という穏やかさはやや弱い。" },
+        { term: "read between the lines", nuance_ja: "情報の裏にある本当の意味を読み取る行為を指し、単に情報の信頼性を割り引く take with a grain of salt とは焦点が異なる。" }
+      ],
+      explanation_ja: "古代ローマの解毒剤の伝説に由来するとされ、毒を少量の塩と一緒に飲めば効果が和らぐという故事から、『情報をそのまま鵜呑みにせず、少し疑いの目を持って受け止める』という意味の慣用句になった。核心は『完全に嘘だと切り捨てるわけではないが、100%は信じない』という程よい距離感にあり、アナリストのレーティングやマネジメントのガイダンス、噂話など、話半分に聞くべき情報全般に対して幅広く使われる。ビジネスでもニュースでも日常会話でも自然に使える、非常に汎用性の高い表現。"
+    },
+    {
+      type: "phrase", term: "twist someone's arm", ipa: "", register: "口語、強めの説得・軽い催促",
+      meaning_en: "to persuade or pressure someone into doing something they were initially reluctant to do",
+      meaning_ja: "（相手を）強く説得する、無理に頼み込む",
+      examples: [
+        "He didn't want to present at the town hall, but the VP twisted his arm and now he's up first.",
+        "\"Do you want another slice?\" \"Well, if you twist my arm...\" — meaning he clearly wanted it all along."
+      ],
+      synonyms: [
+        { term: "pressure someone into", nuance_ja: "より直接的でネガティブな響きが強く、twist someone's arm が時に持つ軽い冗談めいたニュアンス（\"if you twist my arm\" のように）はない。" },
+        { term: "talk someone into", nuance_ja: "説得の過程そのもの（言葉で口説く）に焦点があり、twist someone's arm が持つ『物理的比喩による圧力』のニュアンスはやや弱い。" },
+        { term: "lean on someone", nuance_ja: "より地位や権力を使った圧力を示唆することが多く、twist someone's arm よりもやや威圧的・組織的な響きを持つ。" }
+      ],
+      explanation_ja: "文字通り腕をねじり上げて痛みで従わせる、という物理的な強制のイメージから来た表現だが、実際の使用ではほとんどの場合、深刻な強制ではなく『少し強めにお願いして説得する』という軽いニュアンスで使われる。特に \"if you twist my arm\" という決まり文句は、本当は誘いに乗り気なのに、わざと渋々応じているふりをするユーモラスな返し方として定番になっている。ビジネスの場でも、気乗りしない同僚に発表を頼み込んだり、値引きを渋る相手に少し圧力をかけたりする場面で、深刻になりすぎずに使える便利な表現。"
+    },
+    {
+      type: "phrase", term: "let's not reinvent the wheel", ipa: "", register: "口語〜中立、業務効率化を促す定番フレーズ",
+      meaning_en: "used to suggest that a new solution shouldn't be built from scratch when a proven one already exists",
+      meaning_ja: "（既にある解決策があるのだから）車輪の再発明はやめよう、ゼロから作り直す必要はない",
+      examples: [
+        "Before we design a brand-new onboarding flow, let's not reinvent the wheel — the London office already built something similar last year.",
+        "Let's not reinvent the wheel on the vendor contract; just start from the template legal already approved."
+      ],
+      synonyms: [
+        { term: "use what's already out there", nuance_ja: "平易で直接的な言い方。reinvent the wheel が持つ、『車輪という既に完成された発明』を再び一から作る無駄さという比喩的な説得力はない。" },
+        { term: "build on existing work", nuance_ja: "既存の成果を土台にするという前向きな姿勢を強調する言い方で、let's not reinvent the wheel ほど『無駄を避けよう』という直接的な忠告の響きは強くない。" },
+        { term: "don't start from scratch", nuance_ja: "ほぼ同義だが、車輪の比喩が持つ『歴史的に何度も検証済みの完成形』という含みはなく、より直接的な表現。" }
+      ],
+      explanation_ja: "車輪は人類史上最も基本的で完成された発明の一つとされ、それを『再び一から発明する』ことの無駄さを比喩にした表現。会議やプロジェクトの初期段階で、誰かが既存のテンプレートやプロセス、他部署の成功事例を参照せずにゼロから作ろうとしているときに、効率化を促す忠告として非常によく使われる。単なる時間の節約だけでなく、『既に他の人が試行錯誤して磨き上げたものを尊重しよう』という含みもあり、社内のナレッジ共有やベストプラクティスの活用を促す文脈で頻出する。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "garrulous", ipa: "/ˈɡærələs/", register: "フォーマル〜文語寄り、やや皮肉を込めた人物評",
+      meaning_en: "excessively talkative, especially about trivial matters, in a way that can be tiresome to listen to",
+      meaning_ja: "（つまらないことについて）やたらとおしゃべりな、口数が多すぎる",
+      examples: [
+        "The garrulous cab driver gave me his entire life story before we'd even left the airport parking lot.",
+        "He's a talented analyst, but he gets garrulous in client meetings and eats up half the allotted time before anyone else can speak."
+      ],
+      synonyms: [
+        { term: "talkative", nuance_ja: "中立的で日常的な語。garrulous が持つ『くどくど話しすぎてうんざりされる』という否定的なニュアンスは薄い。" },
+        { term: "chatty", nuance_ja: "親しみやすく軽い響きの語で、garrulous ほどの過剰さ・くどさへの批判的含みはない。" },
+        { term: "long-winded", nuance_ja: "話が長く要点が定まらないことに焦点があり、garrulous が指す『話題を問わずとにかく喋り続ける』性質とはやや軸が異なる。" }
+      ],
+      explanation_ja: "ラテン語で『おしゃべりな』を意味する garrire に由来し、単に話好きというより『必要以上に喋りすぎて、聞き手をうんざりさせる』という否定的な評価を含む、やや文語的な語。日常会話よりも人物評やプロフィール記事、フォーマルな文章の中で使われることが多く、口語では単に \"talkative\" や \"chatty\" が好まれる。ビジネスの場では、会議の持ち時間を独占してしまうタイプの同僚や、雑談が止まらない取引先を、やや皮肉を込めて評する際に便利な語彙。"
+    },
+    {
+      term: "ebullient", ipa: "/ɪˈbʌliənt/", register: "フォーマル〜中立、活気・熱量を形容",
+      meaning_en: "overflowing with enthusiasm, energy, or excitement, often in a way that's contagious to others",
+      meaning_ja: "溢れんばかりに元気で熱気に満ちた、はつらつとした",
+      examples: [
+        "The new CEO's ebullient energy at the town hall was a stark contrast to her predecessor's flat, scripted delivery.",
+        "She came back from the client pitch absolutely ebullient — apparently they loved the deck."
+      ],
+      synonyms: [
+        { term: "enthusiastic", nuance_ja: "一般的で幅広く使える語。ebullient が持つ『抑えきれずに溢れ出す』という身体的・感覚的な高揚感の強さはない。" },
+        { term: "exuberant", nuance_ja: "ほぼ同義で、活力やエネルギーが外に溢れ出る様子を指す点で近いが、ebullient の方がやや知的・フォーマルな文脈でも使われやすい。" },
+        { term: "upbeat", nuance_ja: "より控えめで日常的な語。ebullient ほどの強い高揚感や沸き立つようなエネルギーの含みはない。" }
+      ],
+      explanation_ja: "ラテン語で『沸き立つ（ebullire）』を語源とし、文字通り液体が泡立って溢れ出すイメージから、人の感情やエネルギーが抑えきれないほど溢れ出ている様子を指す語になった。決算発表後の強気なCEOの態度や、良いニュースを受け取った直後のチームの雰囲気など、『明らかに機嫌が良く、それが周囲にも伝わってくる』という状況を描写するのに好んで使われる。squishy や gnarly のような口語的な語とは対照的に、ebullient はやや書き言葉的でフォーマルな響きを持ちつつも、ネガティブな含みは一切ない、褒め言葉として安全に使える語。"
+    },
+    {
+      term: "querulous", ipa: "/ˈkwerələs/", register: "フォーマル〜文語寄り、不満がましい態度を批判的に形容",
+      meaning_en: "habitually complaining in a whining, peevish way, often over minor grievances",
+      meaning_ja: "（ささいなことに）文句がましい、愚痴っぽい",
+      examples: [
+        "The querulous tone of his emails — always some new minor complaint about scheduling — has started to wear on the whole team.",
+        "My grandfather gets querulous about the smallest changes to his routine, like the pharmacy moving his refill day by one."
+      ],
+      synonyms: [
+        { term: "whiny", nuance_ja: "よりカジュアルで子供っぽい響きを持つ語。querulous はフォーマルな文章でも使える点で異なる。" },
+        { term: "grumbling", nuance_ja: "不満をぶつぶつ呟く行為そのものに焦点があり、querulous が指す『慢性的で性格的な不満がましさ』という持続的な性質の含みはやや弱い。" },
+        { term: "peevish", nuance_ja: "ほぼ同義で機嫌の悪さ・いらだちを強調するが、querulous の方が『不満を言葉にして訴える』という行為への焦点がやや強い。" }
+      ],
+      explanation_ja: "ラテン語で『訴える、不満を言う（queri）』に由来し、法的な『苦情を申し立てる』という語源のニュアンスを今も残しつつ、日常語としては『取るに足らないことにいちいち文句をつける』性格や態度を指す、やや文語的な語になった。単発の愚痴ではなく、その人の慢性的な性質や、その時の話し方・トーン全体を評する際に使われることが多く、人物描写や評伝、フォーマルな記事の中でよく見かける。口語では \"whiny\" や \"grumpy\" が好まれるため、querulous を使うこと自体がやや教養的で皮肉めいた響きを持つ。"
+    },
+    {
+      term: "sanctimonious", ipa: "/ˌsæŋktɪˈmoʊniəs/", register: "フォーマル〜文語、強い皮肉・批判を込めた人物評",
+      meaning_en: "making a show of being morally superior to others, in a way that comes across as hypocritical or self-righteous",
+      meaning_ja: "偽善的に道徳ぶった、聖人ぶった、お説教くさい",
+      examples: [
+        "It was a little sanctimonious for him to lecture the team on work-life balance right after sending three emails at 2 a.m.",
+        "The op-ed had a sanctimonious tone, as if the author had never once made a compliance mistake in his career."
+      ],
+      synonyms: [
+        { term: "self-righteous", nuance_ja: "ほぼ同義で最も近い語だが、sanctimonious の方が『宗教的・道徳的な聖人ぶり』という語源的な皮肉のニュアンスがやや強く残る。" },
+        { term: "preachy", nuance_ja: "より口語的で、説教くさく話す態度そのものに焦点があり、sanctimonious が含む『偽善』という強い非難のニュアンスはやや弱い。" },
+        { term: "holier-than-thou", nuance_ja: "口語的な決まり文句で、意味はほぼ重なるが、sanctimonious よりもさらにくだけた響きを持つ。" }
+      ],
+      explanation_ja: "ラテン語で『神聖な（sanctus）』を語源とし、本来は『聖なる、敬虔な』という肯定的な意味を持っていた語だが、時代とともに『本当は聖人でもないのに、聖人であるかのように振る舞う』という皮肉・非難の意味に転じた、典型的な語義の反転を経た語。核心は単なる『お説教くさい』を超えて、『その人自身が同じ基準を満たしていない偽善』を暗に指摘する点にあり、SNSでの道徳的な発言（いわゆる virtue signaling）を批判する文脈でも頻繁に使われる。ビジネスの場では、自分は例外だと思っているかのように部下にルールを説く上司や、都合よく倫理を振りかざす発言を評する際に、かなり強い非難のニュアンスを持って使われる。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "clear the runway (for something)",
+      meaning_en: "to remove obstacles or competing priorities so that something can proceed smoothly and quickly",
+      meaning_ja: "（何かが円滑に進むよう）障害を取り除く、道を整える",
+      examples: [
+        "Leadership cleared the runway for the migration project by pausing every other engineering initiative for the quarter.",
+        "Once compliance signed off, it cleared the runway for the deal to close within the week."
+      ],
+      synonyms: [
+        { term: "pave the way (for)", nuance_ja: "『道を舗装する』という比喩で、未来に向けて準備を整えるという点で近いが、clear the runway ほど『邪魔なものを積極的に取り除く』という排除のニュアンスは強くない。" },
+        { term: "remove obstacles", nuance_ja: "直接的で説明的な言い方。clear the runway が持つ、飛行機が離陸するような『一気に加速して進む』という勢いのイメージはない。" }
+      ],
+      explanation_ja: "飛行機が離陸する前に滑走路（runway）に障害物がないことを確認する、という航空の比喩から来た表現で、組織やプロジェクトが『あとは進むだけ』という状態になるよう、事前に障害や競合する優先事項を取り除く行為を指す。単に許可を出すというより、『他の物事を意図的に脇にどけてリソースや注目を空ける』という能動的な調整のニュアンスが強く、経営陣が重要プロジェクトのために他の取り組みを一時停止させるような場面でよく使われる。"
+    },
+    {
+      phrase: "build in a buffer",
+      meaning_en: "to intentionally add extra time, resources, or margin into a plan or estimate to absorb unexpected delays or errors",
+      meaning_ja: "（計画・見積もりに）余裕・バッファーをあらかじめ組み込んでおく",
+      examples: [
+        "Always build in a buffer when you're quoting a delivery date to a client — the last three projects all slipped for reasons no one could have predicted.",
+        "We built in a two-week buffer before the regulatory filing deadline in case the auditors come back with more questions."
+      ],
+      synonyms: [
+        { term: "pad the estimate", nuance_ja: "似た意味だが、しばしば『実際より多めに見せる』というやや操作的なニュアンスを含み、build in a buffer が持つ『正当なリスク管理』という中立的な響きより批判的に聞こえることがある。" },
+        { term: "leave some wiggle room", nuance_ja: "より口語的でカジュアルな言い方。build in a buffer ほど計画段階での意図的・体系的な組み込みという実務的な響きは強くない。" }
+      ],
+      explanation_ja: "エンジニアリングや会計における『緩衝材（buffer）』という概念をスケジュールや予算の管理に転用した表現で、想定外の遅延やミスを吸収できるだけの余裕を、計画の設計段階からあらかじめ織り込んでおくことを指す。プロジェクトマネジメントや財務予測の文脈で非常に頻繁に使われ、経験の浅いマネージャーがタイトすぎるスケジュールを組んで後で謝ることになる、という失敗談とセットで語られることも多い。単なる楽観のなさではなく、『不確実性を前提にした賢明な計画術』として肯定的に語られる。"
+    },
+    {
+      phrase: "move in lockstep (with)",
+      meaning_en: "to act, change, or proceed in exact, closely coordinated unison with another party, with no independent deviation",
+      meaning_ja: "（他者・他社と）足並みを完全に揃えて動く、歩調を合わせる",
+      examples: [
+        "The three central banks moved in lockstep on the rate decision, which surprised markets that had expected at least one dissent.",
+        "Regional offices don't always move in lockstep with headquarters, which is part of why the rollout timeline keeps slipping."
+      ],
+      synonyms: [
+        { term: "be aligned (with)", nuance_ja: "方向性や目標が一致しているという、より緩やかな一致を指し、lockstep が含む『一糸乱れぬ、ほぼ同時の動き』という緊密さはない。" },
+        { term: "keep pace with", nuance_ja: "『遅れずについていく』という追従のニュアンスが強く、lockstep が示す『対等な立場での完全な同期』という含みとは少し異なる。" }
+      ],
+      explanation_ja: "lockstep はもともと軍隊の行進で、兵士たちが互いの体を密着させるほど正確に歩調を合わせて進む様式を指す語で、そこから転じて『複数の主体が独立した判断の余地なく、完全に同期して動く』ことを指す比喩になった。中央銀行の協調利上げや、複数の規制当局が足並みを揃えて発表するといった、金融・政策の文脈で特によく使われる。しばしば『足並みが揃わない』ことの裏返しとして \"not moving in lockstep\" という否定形で使われ、組織間の足並みの乱れを指摘する際にも便利。"
+    },
+    {
+      phrase: "hold your nerve",
+      meaning_en: "to remain calm and stick to one's plan or position under pressure, without panicking or backing down",
+      meaning_ja: "（プレッシャー下でも）動じず、平静を保つ、腹を括って持ちこたえる",
+      examples: [
+        "The fund held its nerve through the drawdown and didn't sell a single position, which is exactly why the year-end return looks the way it does.",
+        "You need to hold your nerve in a negotiation like this — the first person to flinch usually gives up the most ground."
+      ],
+      synonyms: [
+        { term: "stay calm", nuance_ja: "中立的で一般的な言い方。hold your nerve が持つ『崩れそうなプレッシャーの中で、意志の力でなんとか持ちこたえる』という緊迫感はない。" },
+        { term: "keep your composure", nuance_ja: "ほぼ同義でよりフォーマルな響きを持つが、hold your nerve ほど『崩れる寸前まで追い込まれている』という切迫した文脈は前提としない。" },
+        { term: "stand your ground", nuance_ja: "立場や意見を譲らないことに焦点があり、hold your nerve が指す『内面的な冷静さを保つ』という精神状態そのものへの焦点とはやや異なる。" }
+      ],
+      explanation_ja: "英国発祥の表現で、恐怖や緊張で神経（nerve）が崩れそうになる状況を『持ちこたえる（hold）』というイメージから来ている。株式市場が急落する局面で狼狽売りをせずに我慢する投資家や、厳しい交渉で相手のブラフに動じない交渉担当者など、『パニックになって早まった行動を取りたくなる衝動に打ち勝つ』という文脈で頻出する。特にトレーディングや投資の世界では、下落局面で \"holding your nerve\" できるかどうかがパフォーマンスを大きく左右する、実務的にも重要な精神的スキルとして語られる。"
+    }
+  ],
+  todayQuiz: [
+    { question: "The finance team's month-end close still relies on a ___ where an intern manually re-keys numbers from one system into another that was never built to receive them.", choices: ["kludge", "workaround", "band-aid fix", "patchwork"], answerIndex: 0, explanation: "Kludge specifically emphasizes an inelegant, jury-rigged solution that technically works but wasn't designed properly, which fits a manual re-keying process. \"Workaround\" is more neutral and doesn't carry the same connotation of clumsiness." },
+    { question: "The board passed over the brilliant but junior candidate, saying he lacked the ___ to face down activist investors in a live negotiation.", choices: ["gravitas", "authority", "presence", "stature"], answerIndex: 0, explanation: "Gravitas refers to a weighty, dignified seriousness of manner that makes people take someone seriously in high-stakes moments. \"Authority\" stems from formal power or title, which a talented junior candidate could still lack in a different sense." },
+    { question: "Rather than push the founder into one of their standard hedging products, the private bank built a fully ___ structure around his specific concentrated stock position.", choices: ["bespoke", "custom", "tailored", "made-to-order"], answerIndex: 0, explanation: "Bespoke carries the polished, high-end connotation of something designed from scratch for one client, fitting private banking language. \"Made-to-order\" sounds more like a manufacturing or restaurant term and lacks that same register." },
+    { question: "After the team worked through the weekend to save the launch, it would be ___ not to at least send a thank-you note, even if the final product still has bugs.", choices: ["churlish", "ungracious", "surly", "rude"], answerIndex: 0, explanation: "\"It would be churlish not to...\" is the standard idiomatic construction for criticizing an unfairly ungracious reaction to something that deserves thanks. \"Surly\" describes a sullen, bad-tempered manner rather than this specific failure to show due gratitude." },
+    { question: "Before joining the hedge fund, she ___ doing credit analysis at a small regional bank, which is where she learned to read a balance sheet cold.", choices: ["cut her teeth", "burned the midnight oil", "smelled a rat", "threw herself a bone"], answerIndex: 0, explanation: "\"Cut your teeth\" specifically describes gaining foundational experience early in a career. \"Burn the midnight oil\" refers to working late hours, which is unrelated to where someone first developed their skills." },
+    { question: "The auditor couldn't point to a specific error yet, but three quarters of suspiciously identical gross margins to the decimal point made her ___.", choices: ["smell a rat", "have her doubts", "sense something's off", "be suspicious"], answerIndex: 0, explanation: "\"Smell a rat\" specifically conveys a sharp, almost instinctive detection of dishonesty based on circumstantial evidence, matching the vivid, specific trigger described. \"Have her doubts\" is vaguer and doesn't carry that same sense of an active, sharpened suspicion of wrongdoing." },
+    { question: "Every week he emails HR about a new minor grievance — the thermostat, the parking assignment, the font on the internal wiki — earning him a reputation as the office's most ___ complainer.", choices: ["querulous", "garrulous", "ebullient", "sanctimonious"], answerIndex: 0, explanation: "Querulous specifically describes a habitual, whining tendency to complain about minor grievances, which matches the pattern of small recurring complaints. Garrulous describes excessive talkativeness in general, not specifically a complaining tone." },
+    { question: "His lecture on the importance of protecting personal time rang especially ___ given that he had sent the team eleven emails between midnight and 3 a.m. the night before.", choices: ["sanctimonious", "preachy", "querulous", "ebullient"], answerIndex: 0, explanation: "Sanctimonious captures not just a moralizing tone but the specific hypocrisy of preaching a standard the speaker himself violates, which fits the midnight emails detail. \"Preachy\" describes the moralizing tone alone without necessarily implying that hypocrisy." },
+    { question: "Even as the portfolio dropped another eight percent in a single session, the fund ___ and didn't sell a single position.", choices: ["held its nerve", "stayed calm", "stood its ground", "kept its composure"], answerIndex: 0, explanation: "\"Hold your nerve\" is the idiomatic phrase specifically used in trading and investing contexts for resisting the urge to panic-sell under pressure. \"Stand your ground\" implies defending a position or opinion against opposition, not enduring financial pressure without flinching." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-14 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-15 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
