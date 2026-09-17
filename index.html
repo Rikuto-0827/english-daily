@@ -154,324 +154,6 @@ a{color:#0d6e6e}
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-07",
-  dateLabel: "2026年9月7日（月）",
-  readTimeMin: 32,
-  coreItems: [
-    {
-      type: "word", term: "germane", ipa: "/dʒərˈmeɪn/", register: "会議・議論（フォーマル、やや書き言葉寄り）",
-      meaning_en: "relevant and directly connected to the matter currently being discussed, especially used to say something does or does not belong in the conversation",
-      meaning_ja: "（議論の対象と）直接関係がある、本題に即した",
-      examples: [
-        "Let's keep the discussion germane to the covenant terms — the pricing debate can wait for the next session.",
-        "I don't think your brother-in-law's opinion on crypto is germane to whether we refinance the mortgage."
-      ],
-      synonyms: [
-        { term: "relevant", nuance_ja: "germaneよりカジュアルで汎用的。germaneは「今まさに議論されている論点」との結びつきを強調する、より書き言葉的で選別的な語。" },
-        { term: "pertinent", nuance_ja: "ほぼ同義でフォーマル度も近いが、pertinentは「情報や事実」に使われることが多く、germaneは「発言・論点・質問」に使われる頻度が高い。" },
-        { term: "relevant to the matter at hand", nuance_ja: "説明的な言い換えで自然な会話では長すぎる。germaneはこれを一語で言い切れる。" }
-      ],
-      explanation_ja: "中世英語で「同じ血筋の、近親の」を意味した語が語源で、\"german cousin\"（実の従兄弟）にその名残がある。血縁の近さの比喩が「議論との近さ」に転用され、現在は議事の脱線を穏やかに指摘する語として定着している。会議で司会者が \"Is that germane?\" と言えば、遠回しに「それは今の論点と関係ない」と釘を刺す合図になる。否定形 not germane / germane to nothing のほうが実務では出現頻度が高く、脱線した発言をやんわり止める便利な一語。"
-    },
-    {
-      type: "word", term: "upshot", ipa: "/ˈʌpʃɒt/", register: "要約・結論（口語〜ビジネス両方、フォーマル度中）",
-      meaning_en: "the final result or main conclusion of a discussion, process, or series of events, especially after a lot of detail has been laid out",
-      meaning_ja: "結局のところの結論、要するに行き着く先",
-      examples: [
-        "We can debate the multiple all afternoon, but the upshot is the same: at this price, the deal doesn't clear our hurdle rate.",
-        "The upshot of the whole renovation saga is that we're a month behind and ten grand over budget."
-      ],
-      synonyms: [
-        { term: "bottom line", nuance_ja: "ほぼ同義でビジネス色が強い。upshotはあらゆる状況（雑談・歴史的経緯）に使える中立語で、bottom lineは主に損益や意思決定の文脈に限られる。" },
-        { term: "the takeaway", nuance_ja: "「学びとして持ち帰るべき点」に焦点があり、教訓めいたニュアンス。upshotは単に「結果として何が起きたか」を述べるだけで教訓性は含意しない。" },
-        { term: "net result", nuance_ja: "フォーマルで計算的な響き。upshotのほうが口語としての自然さがあり、日常会話でも違和感なく使える。" }
-      ],
-      explanation_ja: "元はアーチェリー用語で、一連の射撃の最後の一矢（up + shot）を指し、そこから「一連の出来事の最終的な結果」という意味に転じた。文頭で \"The upshot is...\" と切り出すと、長い説明を要約して結論だけを先に伝える合図になり、特に込み入った経緯を報告する場面で重宝する。似た働きの bottom line が数字寄りなのに対し、upshotは人間関係のもつれや交渉の顛末など、数字に還元できない話にも自然に使える点が実務上の使い分けどころ。"
-    },
-    {
-      type: "word", term: "voracious", ipa: "/vəˈreɪʃəs/", register: "描写語（フォーマル〜中間、やや文学的な響き）",
-      meaning_en: "having or showing a very great appetite for something, especially in a way that seems impossible to satisfy",
-      meaning_ja: "貪欲な、飽くなき（食欲・欲求について）",
-      examples: [
-        "The fund built a reputation as a voracious acquirer of mid-market SaaS businesses, closing eleven bolt-ons in eighteen months.",
-        "My nephew is a voracious reader — he finished the entire series before we'd even wrapped up dinner."
-      ],
-      synonyms: [
-        { term: "insatiable", nuance_ja: "「満たされない」ことそのものに焦点があり、しばしば否定的な含みを持つ。voraciousは「量の多さ・勢いの強さ」を強調し、文脈次第で称賛にも使える中立性がある。" },
-        { term: "ravenous", nuance_ja: "本来は「飢えて猛烈に空腹な」を指す身体的な語。voraciousは比喩として知識欲や事業拡大意欲にも自然に使えるが、ravenousを比喩に使うとやや大げさに響く。" },
-        { term: "hungry for (something)", nuance_ja: "平易でカジュアル。voraciousはより書き言葉的で、形容する対象への強い賛嘆または警戒のニュアンスを持たせられる。" }
-      ],
-      explanation_ja: "ラテン語 vorare（貪り食う）に由来し、voreという語根は devour（貪り食う）や carnivorous（肉食の）とも親戚関係にある。文字通りの食欲だけでなく、読書欲・買収意欲・情報欲など「尽きることのない欲求」全般に使えるのが実務上の価値で、特に企業のM&A戦略を描写する記事で \"a voracious acquirer\" という定型句をよく見かける。良い意味にも悪い意味にも転びうる語で、文脈がその欲求を賞賛しているのか警戒しているのかを決める点に注意したい。"
-    },
-    {
-      type: "word", term: "insidious", ipa: "/ɪnˈsɪdiəs/", register: "リスク・問題の描写（フォーマル、警告的）",
-      meaning_en: "proceeding or spreading in a gradual, subtle way that causes serious harm before it is noticed",
-      meaning_ja: "気づかぬうちに深刻な害を及ぼす、じわじわと蝕むような",
-      examples: [
-        "Scope creep is insidious — no single change feels like a big deal, and then one day you're three months behind with nobody able to say exactly why.",
-        "The most insidious part of the layoffs wasn't the announcement, it was the six months of rumors that preceded it."
-      ],
-      synonyms: [
-        { term: "gradual", nuance_ja: "単に「徐々に」という速度を述べるだけで、害の深刻さや気づかれにくさという含意はない。" },
-        { term: "covert", nuance_ja: "「意図的に隠された」ことに焦点があり、行為主体の意図を前提とする。insidiousはプロセスや現象そのものが持つ性質を描写でき、悪意ある主体を必要としない。" },
-        { term: "creeping", nuance_ja: "近い響きだが口語的でやや軽い。insidiousはより深刻な害（健康・組織崩壊・財務悪化）を伴う場面向けのフォーマルな語。" }
-      ],
-      explanation_ja: "ラテン語 insidiae（待ち伏せ、罠）に由来し、狩人が獲物に気づかれないよう身を潜めて待つイメージが核にある。したがって単に「徐々に」ではなく「気づいたときには手遅れになっている」という時間差の恐ろしさを含意するのが決定的な違い。医学（病気の進行）と金融・組織論（リスクの蓄積、文化の腐敗）の両方で頻出し、\"the risk is insidious rather than acute\"（急性ではなく静かに蓄積するリスクだ）という言い回しはリスク管理の議論で定番になっている。"
-    },
-    {
-      type: "idiom", term: "cut from the same cloth", ipa: "", register: "人物評（中立〜やや口語、人物比較）",
-      meaning_en: "to share the same essential character, values, or style as another person, often used to note a strong resemblance in temperament rather than appearance",
-      meaning_ja: "（気質・価値観が）同じ生地から裁たれた、根っこが同じタイプの人間",
-      examples: [
-        "The new CFO and the founder are cut from the same cloth — both obsessive about unit economics and allergic to PowerPoint.",
-        "She and her mother are cut from the same cloth: neither one of them can walk past a yard sale without stopping."
-      ],
-      synonyms: [
-        { term: "two peas in a pod", nuance_ja: "親密さや行動を共にする様子に焦点があり、性格的な類似というよりは「いつも一緒にいる」ニュアンスが強い。cut from the same clothは初対面でも見抜ける気質の根本的な一致を指す。" },
-        { term: "birds of a feather", nuance_ja: "「類は友を呼ぶ」に近く、似た者同士が集まる現象を述べる。cut from the same clothは二者間の比較そのものに焦点があり、集団形成の含意はない。" },
-        { term: "similar in nature", nuance_ja: "説明的で平板な言い換え。イディオムが持つ生地・仕立てという具体的なイメージの喚起力がない。" }
-      ],
-      explanation_ja: "仕立屋が一反の生地（cloth）から複数の服を裁断すると、生地の質も柄も当然同じになる、という比喩が語源。したがって単なる「似ている」ではなく「根本的な素材が同じだから似ているのは当然だ」という納得感を伴うのが特徴。人物の外見ではなく気質・価値観・仕事のスタイルについて使うのが原則で、\"they're cut from the same cloth\" は褒め言葉にも皮肉にも使える両義的な表現。逆に「正反対のタイプ」を言いたいときは \"cut from a different cloth\" と否定せず対比形で使うのが自然。"
-    },
-    {
-      type: "idiom", term: "bite the bullet", ipa: "", register: "決断・実行（口語、意志の強さを示す）",
-      meaning_en: "to force yourself to do something difficult, unpleasant, or painful that you have been avoiding, because it can no longer be postponed",
-      meaning_ja: "覚悟を決めて（痛みを伴うことを）実行する、腹をくくる",
-      examples: [
-        "We finally bit the bullet and restated two years of financials rather than let the discrepancy linger into the audit.",
-        "I bit the bullet and told my roommate the arrangement wasn't working — three months too late, honestly."
-      ],
-      synonyms: [
-        { term: "grin and bear it", nuance_ja: "苦痛を我慢して耐え忍ぶことに焦点があり、能動的な決断や行動の開始は含意しない。bite the bulletは「先延ばしにしていた行動をついに起こす」という決断の瞬間を指す。" },
-        { term: "take the plunge", nuance_ja: "新しい挑戦への飛び込みを表し、必ずしも苦痛や不快を伴わない（ポジティブな決断にも使える）。bite the bulletは対象が明確に「嫌なこと・痛みを伴うこと」である点が違う。" },
-        { term: "suck it up", nuance_ja: "非常にカジュアルで、しばしば命令形で使われ相手を突き放す響きがある。bite the bulletはより中立的で、自分自身の決断を描写する際にも違和感なく使える。" }
-      ],
-      explanation_ja: "麻酔のなかった時代の外傷外科手術で、患者が痛みに耐えるために弾丸を歯で噛みしめた、という逸話が語源とされる（史実としての裏付けには諸説あるが、語源説話として広く流布している）。核心は「避けられない苦痛を先延ばしにするのをやめて、今それに立ち向かう」という決断のタイミングで、単なる我慢とは違い必ず能動的な一歩を伴う。人員削減、値上げ、謝罪など、先送りするほど傷が深くなるタイプの意思決定を報じる際の定番表現。"
-    },
-    {
-      type: "idiom", term: "pull the rug out from under (someone)", ipa: "", register: "裏切り・急な撤退（やや強い、被害者視点）",
-      meaning_en: "to suddenly withdraw support, resources, or an agreement from someone, leaving them in a much worse position than they expected to be in",
-      meaning_ja: "（突然）はしごを外す、後ろ盾を急に取り払って窮地に陥れる",
-      examples: [
-        "The lead investor verbally committed to the round and then pulled the rug out from under us two days before close.",
-        "Just when the kids had settled into the new school, the company transferred him again — it felt like the rug had been pulled out from under the whole family."
-      ],
-      synonyms: [
-        { term: "leave someone in the lurch", nuance_ja: "助けを必要としている人を見捨てて放置することに焦点があり、必ずしも「直前まで支援していたのに急に」という落差は含意しない。pull the rug outは支援があった状態からの急転直下を強調する。" },
-        { term: "back out at the last minute", nuance_ja: "直前でのキャンセルという行為自体を淡々と述べる中立的な言い方。イディオムのほうが「相手を意図的に不安定にした」という非難のニュアンスが強い。" },
-        { term: "blindside someone", nuance_ja: "予告なく不意打ちすることに焦点があり、必ずしも「支援の撤回」という具体的な内容は含まない。pull the rug outは常に「頼りにしていた足場を奪う」という構造を持つ。" }
-      ],
-      explanation_ja: "立っている人の足元の絨毯を急に引き抜けば、その人はバランスを崩して倒れる、という視覚的に鮮明な比喩が語源。したがって「単に断る」のではなく「それまで確かにあった支えを土壇場で失わせる」という落差の大きさが核心にあり、被害者側の視点で語られることがほとんど。資金調達、提携解消、家族の急な方針転換など、事前の期待と現実の落差が大きい場面で強い感情を込めて使われる。受動態 have the rug pulled out from under you の形も同じくらい頻出する。"
-    },
-    {
-      type: "idiom", term: "give someone a run for their money", ipa: "", register: "競争描写（好意的〜中立、称賛を含む）",
-      meaning_en: "to compete against someone so strongly and skillfully that their eventual win is far from easy or guaranteed",
-      meaning_ja: "（相手に）苦戦させるほどの好勝負をする、あわやというところまで追い詰める",
-      examples: [
-        "The incumbent kept its market share, but the new entrant's pricing gave it a real run for its money in the first two quarters.",
-        "My grandmother still gives everyone a run for their money at Scrabble — she's ninety-one and merciless."
-      ],
-      synonyms: [
-        { term: "put up a good fight", nuance_ja: "敗北を前提としつつ健闘したことを述べる。give someone a run for their moneyは勝敗が実際にどちらに転ぶか分からないほどの接戦だったという含意がより強い。" },
-        { term: "keep someone on their toes", nuance_ja: "気を抜けない緊張状態を保たせることに焦点があり、必ずしも直接対決の文脈である必要はない。このイディオムは明確な競争・勝負の場面に限定される。" },
-        { term: "be a worthy competitor", nuance_ja: "説明的でフォーマル。イディオムのほうが「お金を賭けた勝負」という比喩の生き生きとした響きを保っている。" }
-      ],
-      explanation_ja: "賭けレースで、本命馬が楽勝すると思われた相手に「賭け金分は働かせた（＝簡単には勝たせなかった）」という競馬由来の比喩。したがって主役は常に「本来なら楽に勝つはずだった側」で、その相手を苦しめた挑戦者を主語にして使うのが基本形。皮肉ではなく素直な称賛の響きを持つ表現で、格下と目されていた競合やスタートアップが健闘したことを報じる際の定番。人物だけでなく製品やチームにも使え、\"the new model gives the market leader a run for its money\" のような形も自然。"
-    },
-    {
-      type: "phrase", term: "give me the headline", ipa: "", register: "会議・報告（口語、時間節約を求める合図）",
-      meaning_en: "a request for the single most important point or conclusion first, before any supporting detail, background, or explanation",
-      meaning_ja: "結論（一番大事な一行）だけ先に教えて、というリクエスト",
-      examples: [
-        "I've got four minutes before my next call — give me the headline and send the deck for the rest.",
-        "Don't walk me through the whole inspection report. Just give me the headline: is the roof going to hold another winter or not?"
-      ],
-      synonyms: [
-        { term: "cut to the chase", nuance_ja: "前置きを飛ばして本題に入れという指示全般を指し、必ずしも「一文で要約せよ」とは限らない。give me the headlineはニュース記事の見出しのように「結論を一行で」という具体的な形式を求める点が違う。" },
-        { term: "what's the tl;dr", nuance_ja: "ネット由来のスラングでカジュアル度が高く、文章やチャット向き。give me the headlineは対面や電話の会議でも自然に使える口頭表現。" },
-        { term: "bottom-line it for me", nuance_ja: "ほぼ同義で交換可能。headlineのほうが新聞の見出しという視覚的な比喩を保っており、bottom-line itはより会計・数字寄りの響きがある。" }
-      ],
-      explanation_ja: "新聞の見出し（headline）が本文を読まなくても要点が分かるように作られていることからの比喩。多忙な経営陣やクライアントとの短い時間で情報を伝える必要があるビジネス現場で、詳細説明の前に結論を要求する定型句として定着している。似た bottom-line it for me が数字の結論を求めるのに対し、give me the headlineはニュース性・重大性のある結論全般（数字に限らない）を求められる点で汎用性が高い。会議の冒頭でファシリテーターが自分から \"Let's start with headlines, then dig into detail.\" と使うことも多い。"
-    },
-    {
-      type: "phrase", term: "run the traps", ipa: "", register: "調査・根回し（フォーマル寄りのビジネス俗語、米国色）",
-      meaning_en: "to quickly check with all the relevant people or sources on a matter before committing to a position or making a decision",
-      meaning_ja: "（決める前に）関係者・情報源をひと通り当たって確認する",
-      examples: [
-        "Before we tell the board this is a done deal, let me run the traps with legal and compliance — I don't want a surprise in the room.",
-        "I ran the traps with a couple of friends who work in publishing before I signed with that agent."
-      ],
-      synonyms: [
-        { term: "do due diligence", nuance_ja: "フォーマルで手続き的、法務・財務の正式な調査プロセスを指すことが多い。run the trapsはより非公式で、電話やチャットでの手早い確認という軽さがある。" },
-        { term: "touch base with everyone", nuance_ja: "単に連絡を取ることに焦点があり、確認や検証という目的は必ずしも含意しない。run the trapsは「懸念や反応を探る」という調査的な目的が明確にある。" },
-        { term: "sound people out", nuance_ja: "人の反応や意見を探るという点で近いが、run the trapsは複数の情報源を網羅的に回るという「もれなく確認する」ニュアンスが強い。" }
-      ],
-      explanation_ja: "もともと猟や罠猟（trapping）で仕掛けた罠を一通り見回って確認する行為が語源とされ、米国のロビイングや政治スタッフの世界でよく使われてきた俗語がビジネス・投資の現場にも広がった表現。単に「聞いてみる」のではなく「決定や発表の前に、反対意見や見落としがないか関係各所を漏れなく点検する」という予防的な確認作業を指すのが核心。取締役会や重要な発表の直前に、根回しや裏取りを済ませたことを手短に伝える一言として便利。"
-    },
-    {
-      type: "phrase", term: "put some meat on the bones", ipa: "", register: "企画・提案の評価（口語、建設的な催促）",
-      meaning_en: "to add substance, detail, and evidence to an idea or plan that currently exists only in outline or rough form",
-      meaning_ja: "（骨組みだけの案に）肉付けする、具体的な中身を足す",
-      examples: [
-        "The strategy slide is fine as a headline, but the investment committee is going to want more meat on the bones before we take this further.",
-        "I like the idea for the trip — now let's put some meat on the bones: dates, budget, who's actually coming."
-      ],
-      synonyms: [
-        { term: "flesh out", nuance_ja: "ほぼ同義で交換可能。put meat on the bonesのほうが「骨組み」という比喩を保っているぶん口語としての鮮やかさがあり、flesh outはやや中立的で書き言葉にも馴染む。" },
-        { term: "add more detail", nuance_ja: "説明的で平板。イディオムが持つ「今はまだ骨だけの状態だ」という現状への評価のニュアンスがない。" },
-        { term: "build it out", nuance_ja: "プロダクトやシステムの構築文脈で使われることが多く汎用性が高いが、「不十分な計画に具体性を足す」という評価的な響きは put meat on the bonesほど強くない。" }
-      ],
-      explanation_ja: "骨格（bones）だけの状態に肉（meat）をつけて実体のある姿にする、という身体の比喩がそのまま使われている。単なる「詳細を追加する」ではなく、「今の案は概略・骨格の段階に過ぎず、意思決定にはまだ足りない」という評価を暗に含む点が実務上のポイントで、投資委員会やクライアントへのプレゼン準備の場面で頻繁に使われる。骨組み自体は悪くないという前提のもとでの建設的な催促であり、根本から作り直せという意味の back to the drawing board とは温度感が大きく異なる。"
-    },
-    {
-      type: "phrase", term: "put a bow on it", ipa: "", register: "完了・仕上げ（口語、達成感を伴う）",
-      meaning_en: "to finish a piece of work neatly and present it as complete, especially adding the final polish that makes it ready to hand over",
-      meaning_ja: "きれいに仕上げて（プレゼントのリボンをかけるように）完成させる",
-      examples: [
-        "The model's basically done — give it one more pass for typos and we can put a bow on it before the 5pm send.",
-        "We spent the whole weekend on the nursery and finally put a bow on it Sunday night, twenty minutes before the baby arrived."
-      ],
-      synonyms: [
-        { term: "wrap it up", nuance_ja: "ほぼ同義でより一般的だが、put a bow on itは「見た目にも美しく仕上げて誰かに渡す」という贈り物のような丁寧さの含意がある。" },
-        { term: "put the finishing touches on", nuance_ja: "フォーマルで説明的。イディオムのほうがカジュアルな達成感と満足感を込めやすい。" },
-        { term: "call it done", nuance_ja: "完了を宣言するだけの語で、仕上がりの美しさや丁寧さへの言及はない。put a bow on itは仕上がりのクオリティへの誇りが含まれる。" }
-      ],
-      explanation_ja: "プレゼントの箱にリボン（bow）をかけて完成させる仕草がそのまま比喩になっており、単に「終わらせる」のではなく「見栄えよく、渡せる状態に整えて終わらせる」という仕上げの丁寧さを強調するのが特徴。資料や提案書を仕上げる場面はもちろん、プロジェクトの最終盤で \"let's put a bow on this\" と言えば、細部を詰めて完成品として送り出そうという前向きな一言になる。似た wrap it up が単純な終了宣言なのに対し、こちらは仕上がりへのちょっとした誇りや満足感を伝えられる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "unctuous", ipa: "/ˈʌŋktʃuəs/", register: "人物評（強い批判、フォーマル寄り）",
-      meaning_en: "excessively flattering or ingratiating in a way that feels insincere and self-serving, often noted with distaste",
-      meaning_ja: "媚びへつらうような、いやらしいほど愛想のいい（不快感を伴う）",
-      examples: [
-        "The account rep was so unctuous about our 'visionary leadership' that half the room started checking their phones.",
-        "He gets unctuous around anyone who might promote him and forgets you exist the moment they leave the room."
-      ],
-      synonyms: [
-        { term: "obsequious", nuance_ja: "ほぼ同義でフォーマル度が近いが、obsequiousは「服従的なへつらい」により焦点があり、目上への過剰な追従を指すことが多い。unctuousは油っぽい質感の比喩から来ており、必ずしも上下関係を前提としない。" },
-        { term: "smarmy", nuance_ja: "口語で近い響きだが、unctuousよりもさらにカジュアルで軽蔑的。ビジネス文書ではunctuousのほうが自然に使える。" },
-        { term: "ingratiating", nuance_ja: "中立寄りで「気に入られようとする」行動そのものを述べるが、unctuousほど強い不快感・軽蔑の含みは持たない。" }
-      ],
-      explanation_ja: "ラテン語 unguere（油を塗る）に由来し、unguent（軟膏）と同じ語根を持つ。文字通り「油っぽい」から転じて、人当たりが良すぎて逆に胡散臭い、という感触を表す語になった。営業担当やコンサルタントが過剰にお世辞を言う場面、あるいは上司にだけ態度が変わる同僚を描写する際に好んで使われる、かなり辛辣な評価語である点に注意したい。"
-    },
-    {
-      term: "quixotic", ipa: "/kwɪkˈsɒtɪk/", register: "事業評・人物評（やや文学的、批判と敬意が混在）",
-      meaning_en: "extremely idealistic or ambitious to the point of being impractical, often admirable in spirit but unlikely to succeed",
-      meaning_ja: "現実離れして理想主義的な、無謀なほど大志を抱いた",
-      examples: [
-        "Launching a direct challenger to the incumbent card networks with an eight-person team was a quixotic bet, even if the thesis was right.",
-        "His quixotic plan to renovate the whole house himself lasted about as long as the first weekend."
-      ],
-      synonyms: [
-        { term: "idealistic", nuance_ja: "中立的で理想を追い求める姿勢一般を指す。quixoticはそこに「実現可能性の低さ」という評価が明確に加わる点が違う。" },
-        { term: "overambitious", nuance_ja: "野心が過大であることへの批判に焦点があり、quixoticが持つロマンチックで憎めない響きは薄い。" },
-        { term: "pie-in-the-sky", nuance_ja: "カジュアルで、実現性のなさをやや馬鹿にした調子がある。quixoticはより文学的・フォーマルで、失敗しても敬意を込めて語れる余地を残す。" }
-      ],
-      explanation_ja: "セルバンテスの小説『ドン・キホーテ』の主人公が風車を巨人と思い込んで突撃する場面に由来し、「高潔だが現実を見誤った挑戦」を指す文学由来の語。単なる無謀さではなく、動機の純粋さや志の高さへの一定の敬意を込められるのが他の批判語との違いで、失敗した挑戦者を切り捨てずに評価するときに便利。スタートアップの野心的すぎる事業計画や、政治家の実現困難な公約を評する記事で頻出する。"
-    },
-    {
-      term: "insular", ipa: "/ˈɪnsjələ/", register: "組織文化・地域評（批判的、構造への言及）",
-      meaning_en: "having or showing a closed, inward-looking attitude that resists outside ideas, people, or influence",
-      meaning_ja: "閉鎖的な、内輪だけで固まって外部を受け入れない",
-      examples: [
-        "The engineering team had grown insular after years of remote work — new hires said it took months just to learn who to ask for what.",
-        "Growing up on a small island made her wary of how insular a community can become without really noticing it."
-      ],
-      synonyms: [
-        { term: "parochial", nuance_ja: "視野の狭さ・関心の狭さに焦点があり、地理的・文化的な視野の限定性を指すことが多い。insularは「外部との接触や新しい影響を積極的に拒む」閉鎖性そのものに焦点がある。" },
-        { term: "clannish", nuance_ja: "内輪びいきや排他的な仲間意識を指し、しばしば特定の集団への強い忠誠心を伴う。insularはより中立的で、単に外部から孤立している状態そのものを描写できる。" },
-        { term: "cliquish", nuance_ja: "学校や職場の小集団が排他的にまとまる様子を指す口語的な語。insularは組織全体や地域社会など、より大きな単位にも使える点が異なる。" }
-      ],
-      explanation_ja: "ラテン語 insula（島）に由来し、島国・孤島のように外部から物理的に隔絶された状態がそのまま比喩に転用された語。したがって単なる「視野が狭い」ではなく「外の世界との接触自体が乏しく、それに気づいてすらいない」という孤立の構造を指すのが核心。組織文化の分析で「長年同じメンバーで固まったチームが外部のベストプラクティスを取り入れなくなる」現象を評する際によく使われ、批判的だが個人の性格ではなく環境・構造への言及として使えるのが便利な点。"
-    },
-    {
-      term: "vexed", ipa: "/vɛkst/", register: "問題・論点の描写（フォーマル、長期化した厄介さ）",
-      meaning_en: "(of a question, issue, or problem) difficult, much debated, and repeatedly causing frustration without a clear resolution",
-      meaning_ja: "（問題・論点が）長年議論されてきて厄介な、頭を悩ませ続ける",
-      examples: [
-        "How to value the earnout has been a vexed question since the LOI — nobody wants to be the one who blinks first.",
-        "Who pays for the shared driveway repair is a vexed topic between the two households, and has been for a decade."
-      ],
-      synonyms: [
-        { term: "thorny", nuance_ja: "ほぼ同義で交換可能な頻出語。vexedは問題が「人を悩ませ続けてきた」という時間的な蓄積・反復性をやや強く含意し、thornyは単純に扱いにくさそのものを指す。" },
-        { term: "contentious", nuance_ja: "対立や論争を伴うことに焦点があり、複数の立場が明確に争っている状況を指す。vexedは必ずしも対立を前提とせず、単に答えが出しにくい難問という含意でも使える。" },
-        { term: "unresolved", nuance_ja: "未解決という状態のみを述べる中立語。vexedはそこに「関係者を苛立たせ続けてきた」という感情的な重みを加える。" }
-      ],
-      explanation_ja: "動詞 vex（苛立たせる、悩ませる）の過去分詞形が形容詞化した語で、\"a vexed question\" のように問題そのものを修飾する定型的な使い方がほとんど。単に難しいだけでなく「何度も議論されてきたのに一向に解決しない」という履歴の長さを暗示するのが実務上のポイントで、契約書の解釈の食い違いや、家族間の長年の懸案事項など、繰り返し蒸し返される類の問題を指すのに向いている。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "hold water",
-      meaning_en: "(of an argument, explanation, or plan) to be logically sound and able to withstand scrutiny, without gaps or contradictions",
-      meaning_ja: "（議論・説明が）筋が通っている、検証に耐える",
-      examples: [
-        "Their explanation for the revenue recognition change doesn't hold water once you actually read the footnote.",
-        "It sounded like a good excuse for missing the flight, but it didn't hold water once she checked the departure board."
-      ],
-      synonyms: [
-        { term: "make sense", nuance_ja: "一般的で汎用的な語。hold waterは特に「厳しく検証された場合にも耐えられるか」という試験的なニュアンスを含む点が異なる。" },
-        { term: "stand up to scrutiny", nuance_ja: "ほぼ同義でよりフォーマル。hold waterは口語としての手軽さがあり、日常会話でも自然。" }
-      ],
-      explanation_ja: "ひびの入った容器は水を注いでもすぐに漏れてしまう、という比喩が語源で、論理の「漏れ」を水漏れにたとえている。肯定文よりも否定文（doesn't hold water）で使われる頻度が圧倒的に高く、相手の説明や言い訳の欠陥を指摘する際の定番表現になっている。監査や契約交渉で「その説明では通らない」と言いたいときに、直接的な非難を避けつつ論理の弱さを指摘できる便利な一言。"
-    },
-    {
-      phrase: "sweeten the deal",
-      meaning_en: "to make an offer more attractive by adding extra benefits, concessions, or incentives, usually in response to hesitation from the other side",
-      meaning_ja: "（相手の渋りに対応して）条件を上乗せして魅力的にする",
-      examples: [
-        "When the seller hesitated at the price, we sweetened the deal with a longer transition period and an earnout kicker.",
-        "The dealership sweetened the deal with free floor mats and an extended warranty once they saw we were about to walk."
-      ],
-      synonyms: [
-        { term: "add an incentive", nuance_ja: "説明的で中立的な言い方。sweeten the dealはより口語的で、交渉のドラマ性を感じさせる。" },
-        { term: "throw in extras", nuance_ja: "カジュアルでほぼ同義。sweeten the dealは特に「相手の抵抗・躊躇に応じて」条件を良くするという文脈の含みがより明確。" }
-      ],
-      explanation_ja: "「甘くする（sweeten）」という感覚的な比喩がそのまま使われており、条件面での譲歩や追加特典を「もっと飲み込みやすくする」というイメージで捉えている。M&A交渉、住宅購入、車の販売など、相手が難色を示した直後に条件を改善する場面で自然に使われ、単なる add benefits より交渉の緊張感や駆け引きのニュアンスを伝えられる。"
-    },
-    {
-      phrase: "call the shots",
-      meaning_en: "to be the person who makes the key decisions and controls how something is done, especially by virtue of authority or seniority",
-      meaning_ja: "実権を握って指示を出す、決定権者として仕切る",
-      examples: [
-        "On paper it's a joint venture, but everyone in the room knows who's actually calling the shots.",
-        "Once the kids got old enough to have opinions about dinner, I stopped calling the shots in this house."
-      ],
-      synonyms: [
-        { term: "be in charge", nuance_ja: "一般的で中立的な語。call the shotsはビリヤードや射撃に由来する口語的な鮮やかさがあり、実務会話でより自然に響く。" },
-        { term: "run the show", nuance_ja: "ほぼ同義で交換可能。call the shotsは特に「個々の決定・指示」に焦点があり、run the showは「全体の運営」により焦点がある。" }
-      ],
-      explanation_ja: "ビリヤードで次にどのポケットに玉を入れるかを事前に宣言する「コールショット」というルール、あるいは射撃の号令に由来するとされる語源説がある。誰が実質的な決定権を持っているかを指摘する際の定番表現で、肩書き上の権限と実際の力関係が一致しない状況（\"on paper it's X, but Y is calling the shots\"）を皮肉交じりに描写するのに特に向いている。"
-    },
-    {
-      phrase: "cut a check",
-      meaning_en: "to issue a payment, especially used informally to describe the actual act of paying money that has been agreed or promised",
-      meaning_ja: "（実際に）小切手を切る、支払いを実行する",
-      examples: [
-        "The board approved the bonus pool in March, but finance didn't actually cut the checks until the end of April.",
-        "Talk is cheap around here — when he actually cut a check for the Little League team, people noticed."
-      ],
-      synonyms: [
-        { term: "issue payment", nuance_ja: "フォーマルで事務的。cut a checkは口語としての具体性とアメリカ的な響きが強く、実際に金銭が動いた瞬間を強調するニュアンスがある。" },
-        { term: "write a check", nuance_ja: "ほぼ同義で日常的。cut a checkはやや業務的・組織的な支払い（給与、ボーナス、精算など）を指す頻度が高く、個人間のwrite a checkよりビジネス寄りの響き。" }
-      ],
-      explanation_ja: "昔の機械式小切手発行機（チェックライター）が金額を紙に刻印（cut）していたことに由来するとされる表現。「合意した」「承認した」というだけでなく、実際にお金が動く最終段階を指すのが核心で、\"they said yes, but did they actually cut the check?\" のように、口約束と実行の間のギャップを指摘する場面で特に効果的に使われる。"
-    }
-  ],
-  todayQuiz: [
-    { question: "During the board meeting, the chair interrupted a tangential comment by asking, 'Is that really ___ to the acquisition timeline?'", choices: ["germane", "voracious", "insidious", "unctuous"], answerIndex: 0, explanation: "\"Germane\" means directly relevant to the matter currently being discussed, and is the standard word for questioning whether a comment belongs in the conversation. The other choices describe appetite, gradual harm, and false flattery, none of which fit here." },
-    { question: "My business partner and I disagree about almost everything operationally, but deep down we're ___ — we both walked away from stable jobs because we couldn't stand being told what to build.", choices: ["cut from the same cloth", "two peas in a pod", "given a run for our money", "pulling the rug out from under each other"], answerIndex: 0, explanation: "\"Cut from the same cloth\" points to a shared underlying temperament even where surface opinions differ. \"Two peas in a pod\" implies closeness and constant togetherness, not an underlying character match despite visible disagreement." },
-    { question: "After six months of delaying the layoffs in hopes the market would turn around, the CEO finally ___ and cut 15% of staff.", choices: ["bit the bullet", "jumped the gun", "pulled the rug out from under everyone", "called the shots"], answerIndex: 0, explanation: "\"Bite the bullet\" means forcing yourself to do something painful that you had been postponing. \"Jump the gun\" would mean acting too early, which is the opposite of six months of delay." },
-    { question: "We had a verbal agreement on the lease renewal, so when the landlord suddenly raised the rent 40% right before signing, it felt like he had ___.", choices: ["pulled the rug out from under us", "given us a run for our money", "put a bow on it", "cut a check"], answerIndex: 0, explanation: "\"Pull the rug out from under someone\" describes a sudden withdrawal of an expected arrangement, leaving the other side worse off than they'd been led to believe. \"Cut a check\" refers to issuing payment, which is unrelated." },
-    { question: "Burnout is particularly ___ because it doesn't announce itself with one bad day — it accumulates for months before anyone, including the person experiencing it, notices.", choices: ["insidious", "voracious", "quixotic", "vexed"], answerIndex: 0, explanation: "\"Insidious\" describes harm that spreads gradually and is only recognized once serious damage has been done. \"Vexed\" describes a long-debated problem, not a silently accumulating one." },
-    { question: "Everyone in the office could tell the new hire was being ___ with the managing director, laughing loudly at jokes that weren't funny and offering to carry his bags.", choices: ["unctuous", "insular", "vexed", "germane"], answerIndex: 0, explanation: "\"Unctuous\" describes insincere, self-serving flattery aimed at someone with power. \"Insular\" describes closed-off group behavior, which does not fit an individual's flattery toward one person." },
-    { question: "Before we present this restructuring plan to the full board, I want to ___ with HR and legal so we're not blindsided by an objection in the room.", choices: ["run the traps", "give me the headline", "put a bow on it", "hold water"], answerIndex: 0, explanation: "\"Run the traps\" means checking with all relevant people before committing to a position, exactly the preparatory step described here. \"Put a bow on it\" refers to finishing something neatly, not gathering input in advance." },
-    { question: "The vendor's justification for the price increase — blaming a 'one-time supply issue' for the third year in a row — simply doesn't ___.", choices: ["hold water", "sweeten the deal", "call the shots", "cut a check"], answerIndex: 0, explanation: "\"Hold water\" means an explanation is logically sound under scrutiny; a repeated 'one-time' excuse fails that test. \"Sweeten the deal\" refers to improving an offer's terms, an unrelated meaning." },
-    { question: "The deck has a strong headline slide, but the appendix is still just three bullet points — before we send it to the IC, we need to ___.", choices: ["put some meat on the bones", "put a bow on it", "sweeten the deal", "cut a check"], answerIndex: 0, explanation: "\"Put some meat on the bones\" means adding substance to a plan that is currently only an outline, which fits a deck still missing detail. \"Put a bow on it\" implies the work is essentially finished and just needs final polish, not this case." }
-  ]
-},
-{
   date: "2026-09-08",
   dateLabel: "2026年9月8日（火）",
   readTimeMin: 33,
@@ -2388,9 +2070,330 @@ const ENGLISH_REPORTS = [
     { question: "His lecture on the importance of protecting personal time rang especially ___ given that he had sent the team eleven emails between midnight and 3 a.m. the night before.", choices: ["sanctimonious", "preachy", "querulous", "ebullient"], answerIndex: 0, explanation: "Sanctimonious captures not just a moralizing tone but the specific hypocrisy of preaching a standard the speaker himself violates, which fits the midnight emails detail. \"Preachy\" describes the moralizing tone alone without necessarily implying that hypocrisy." },
     { question: "Even as the portfolio dropped another eight percent in a single session, the fund ___ and didn't sell a single position.", choices: ["held its nerve", "stayed calm", "stood its ground", "kept its composure"], answerIndex: 0, explanation: "\"Hold your nerve\" is the idiomatic phrase specifically used in trading and investing contexts for resisting the urge to panic-sell under pressure. \"Stand your ground\" implies defending a position or opinion against opposition, not enduring financial pressure without flinching." }
   ]
+},
+{
+  date: "2026-09-17",
+  dateLabel: "2026年9月17日（木）",
+  readTimeMin: 33,
+  coreItems: [
+    {
+      type: "word", term: "caveat", ipa: "/ˈkæviæt/", register: "会議・契約（フォーマル寄り、条件を一つ添える場面）",
+      meaning_en: "a warning or qualification attached to a statement or agreement, pointing out a limitation, exception, or condition that the listener should keep in mind",
+      meaning_ja: "但し書き、留保条件（本題に付け加える一言の警告・例外事項）",
+      examples: [
+        "I'll sign off on the projection, with one caveat: it assumes the renewal rate holds above ninety percent.",
+        "She said she'd help me move this weekend, with the caveat that she might have to leave early for a family thing."
+      ],
+      synonyms: [
+        { term: "qualification", nuance_ja: "ほぼ同義でよりフォーマル・学術的。caveatのほうが口語の会議でも自然に使え、警告のニュアンスがやや強い。" },
+        { term: "disclaimer", nuance_ja: "法的・公式な免責文言を指すことが多く、書面や契約書に付随する定型的な響き。caveatは口頭でも気軽に一つだけ条件を添える場合に使える。" },
+        { term: "fine print", nuance_ja: "契約書の小さな文字で書かれた注意事項という具体的なイメージ。caveatは一文で述べる単一の留保点を指し、fine printのような網羅的な詳細群ではない。" }
+      ],
+      explanation_ja: "ラテン語で「気をつけよ（let him beware）」という警告の命令形がそのまま英語の名詞になった語。ビジネスの現場では \"one caveat\" として、ある結論や合意に対してただ一つだけ注意すべき条件・前提を添えるときの定番の切り出し方として使われる。同意や称賛を先に述べてから \"...with one caveat\" と続けることで、相手の面子を潰さずに懸念点を伝えられる、実務上非常に便利な緩衝材のような一語。複数形 caveats を使えば、留保点が一つではなく複数あることも簡潔に示せる。"
+    },
+    {
+      type: "word", term: "underpin", ipa: "/ˌʌndərˈpɪn/", register: "分析・議論（フォーマル、構造・前提への言及）",
+      meaning_en: "to form the basis or foundation for something, providing the essential support that makes it possible or valid, often used for arguments, strategies, or systems",
+      meaning_ja: "（議論・戦略・仕組みなどを）根底で支える、裏付ける",
+      examples: [
+        "The whole valuation is underpinned by an assumption that churn stays flat for the next three years.",
+        "Their friendship is underpinned by a shared habit of showing up for each other during the bad years, not just the good ones."
+      ],
+      synonyms: [
+        { term: "support", nuance_ja: "汎用的で中立的な語。underpinは「土台として存在しなければ全体が崩れる」という構造的な必須性をより強く含意する。" },
+        { term: "substantiate", nuance_ja: "主張や数字を証拠によって裏付けるという検証寄りの語。underpinは証拠というより構造的な基盤・前提そのものを指す点が異なる。" },
+        { term: "anchor", nuance_ja: "動きを固定する比喩がより強く、変動を抑える安定装置のニュアンス。underpinは静的な基盤・支持構造そのものを指すことが多い。" }
+      ],
+      explanation_ja: "建築で建物の基礎（foundation）を補強・支持する工事を指す専門用語がそのまま比喩に転じ、目に見える結論や成果の裏にある「見えない土台」を指す語になった。決算資料や投資メモで \"the thesis is underpinned by...\" という形が頻出し、結論そのものより前提・仮定の妥当性に読者の注意を向けさせる効果がある。受動態で使われる頻度が非常に高く、能動態 \"X underpins Y\" よりも \"Y is underpinned by X\" の形で、支える側を後半に置く語順が自然に響く。"
+    },
+    {
+      type: "word", term: "circumspect", ipa: "/ˈsɜːrkəmspɛkt/", register: "発言・行動の描写（フォーマル、リスクを見越した慎重さ）",
+      meaning_en: "careful and cautious about what one says or does, especially by considering the possible consequences before acting, typically in a situation with some risk or uncertainty",
+      meaning_ja: "用心深い、慎重な（リスクを見越して発言・行動を控えめにする）",
+      examples: [
+        "The CFO has been circumspect about giving any specific guidance until the refinancing closes.",
+        "I'd be circumspect about mentioning the job offer to your current boss before you've actually decided."
+      ],
+      synonyms: [
+        { term: "cautious", nuance_ja: "一般的で幅広く使える中立語。circumspectは特に「発言」に対して使われる頻度が高く、失言のリスクを避けるための慎重さを強調する。" },
+        { term: "guarded", nuance_ja: "感情や情報を意図的に隠す、防御的な響きが強い。circumspectはより思慮深く先を見越した慎重さで、必ずしも隠し立てを含意しない。" },
+        { term: "discreet", nuance_ja: "秘密や機密情報の扱いに焦点があり、口の堅さを指す。circumspectは発言内容そのものの選び方・タイミングの慎重さを指す点が異なる。" }
+      ],
+      explanation_ja: "ラテン語 circum（周りを）+ specere（見る）が語源で、文字通り「周囲を見回す」姿から「あらゆる方向のリスクを見てから動く」という意味に発展した。IR（投資家向け広報）担当者やM&A交渉中の経営陣が、確定していない情報について発言を控える場面を描写する際に好んで使われるフォーマルな語。単なる cautious よりも「先読みして言葉を選んでいる」という知的な慎重さのニュアンスを伝えられるのが実務上の価値。"
+    },
+    {
+      type: "word", term: "acerbic", ipa: "/əˈsɜːrbɪk/", register: "論評・人物評（辛辣な機知を伴う批判）",
+      meaning_en: "(of a comment, tone, or person) sharply critical or biting in a witty but unkind way, often making the target feel foolish",
+      meaning_ja: "辛辣な、痛烈に皮肉な（機知に富むが手厳しい物言い）",
+      examples: [
+        "The analyst's acerbic note called the guidance 'aspirational at best, fictional at worst.'",
+        "My aunt has this acerbic sense of humor that makes family dinners either hilarious or deeply uncomfortable, depending on who's sitting across from her."
+      ],
+      synonyms: [
+        { term: "scathing", nuance_ja: "非難の強さ・激しさに焦点があり、機知やユーモアは必ずしも伴わない。acerbicは「毒舌だが知的で切れ味がある」という機知の要素が強い。" },
+        { term: "caustic", nuance_ja: "「腐食性の」という化学的比喩そのままに、relentlessに人を傷つける響きが強い。acerbicのほうがやや軽妙で、社交の場でも許容される皮肉のトーンを指せる。" },
+        { term: "biting", nuance_ja: "批判の鋭さ一般を指す平易な語。acerbicはより文語的で、レビューや論評など書き言葉での辛辣な論調を描写するのに向いている。" }
+      ],
+      explanation_ja: "ラテン語 acerbus（酸っぱい、渋い）に由来し、未熟な果実の刺すような酸味が、人の物言いの「刺すような辛辣さ」に転用された。単に怒っているのではなく、機知や言葉選びの巧みさを伴った手厳しさを指すのが核心で、アナリストのレポートや映画評論など、賢さと毒舌が同居する文章を評する際に定番の語。人柄そのものを形容する場合は、周囲から一目置かれつつも近寄りがたい人物像を暗示することが多い。"
+    },
+    {
+      type: "idiom", term: "not have a leg to stand on", ipa: "", register: "議論・法的立場（強い、弁解の余地なし）",
+      meaning_en: "to have no valid justification, evidence, or excuse for one's position, especially in an argument, negotiation, or legal dispute",
+      meaning_ja: "（議論・立場において）拠り所となる根拠が全くない、弁解の余地がない",
+      examples: [
+        "Once they found the email where we'd agreed to the delay in writing, we didn't have a leg to stand on in the dispute.",
+        "You can't complain about the noise from the new bar when you signed a lease across the street from a nightlife district — you don't have a leg to stand on."
+      ],
+      synonyms: [
+        { term: "have no case", nuance_ja: "法律的・フォーマルな響きが強く、正式な訴訟や公式な議論の文脈に限定されやすい。not have a leg to stand onはより口語的で日常の口論にも使える。" },
+        { term: "be on shaky ground", nuance_ja: "根拠が「弱い」ことを指すが、完全にゼロとは限らない余地を残す。not have a leg to stand onは弁解の余地が全くないという、より断定的な状態を指す。" },
+        { term: "have nothing to back it up", nuance_ja: "説明的で平板な言い換え。イディオムのほうが「片足で立とうとしても崩れる」という視覚的なイメージの喚起力を保っている。" }
+      ],
+      explanation_ja: "文字通り「立つための脚が一本もない」、つまり体を支える土台自体が存在しないという身体的な比喩から来ている。単に「間違っている」のではなく、反論しようにも拠り所となる根拠が構造的に何一つないという、議論における完全な脆弱さを表すのが核心。契約書の文言や証拠が相手に決定的に不利な状況を描写する際、弁護士や交渉担当者が好んで使う定型表現で、たいてい否定文の形でしか使われない。"
+    },
+    {
+      type: "idiom", term: "raise the bar", ipa: "", register: "成果・水準の評価（好意的、称賛を含む）",
+      meaning_en: "to increase the standard or level of performance that is expected or required, often making it harder for others to compete or keep up",
+      meaning_ja: "水準を引き上げる、基準を高くする（後に続く者へのハードルを上げる）",
+      examples: [
+        "The new associate's model quality raised the bar for the whole team — nobody wants to hand in something sloppy next to that.",
+        "Once one neighbor put up professional holiday lights, he single-handedly raised the bar for the entire street."
+      ],
+      synonyms: [
+        { term: "set a new standard", nuance_ja: "説明的でやや中立的。raise the barは「以前より高くなった」という比較の動きそのものを強調する動的な表現。" },
+        { term: "up the ante", nuance_ja: "賭け金を吊り上げる比喩で、リスクや投入するものそのものを増やす含みが強い。raise the barは要求される水準・品質の基準に焦点があり、必ずしもリスク増大は含意しない。" },
+        { term: "push the envelope", nuance_ja: "限界そのものに挑戦し、範囲や可能性を広げることに焦点がある。raise the barは既存の尺度上で単純に「基準が上がった」ことを述べる点が異なる。" }
+      ],
+      explanation_ja: "陸上競技の走り高跳びやリンボーダンスで、バー（bar）の高さを物理的に上げていく様子がそのまま比喩になった表現。誰か一人の卓越した成果が、以降その分野・チーム全体の期待水準そのものを引き上げてしまう、という連鎖的な効果を描写するのに向いている。褒め言葉として使われることが多いが、\"the bar has been raised\" と受動態で使えば、後に続く人へのプレッシャーの高まりを客観的に描写することもできる。"
+    },
+    {
+      type: "idiom", term: "wait for the other shoe to drop", ipa: "", register: "不安・予感の描写（口語、悪い続報を警戒）",
+      meaning_en: "to anticipate an unpleasant or negative event that seems likely to happen soon, especially after an initial piece of bad news or an unresolved situation",
+      meaning_ja: "（悪いことの続きが来るのではと）身構えて待つ、次の一撃を警戒する",
+      examples: [
+        "After the first round of layoffs, half the office has just been waiting for the other shoe to drop on their own team.",
+        "The inspection found one crack in the foundation, and now we're just waiting for the other shoe to drop before we make an offer on the house."
+      ],
+      synonyms: [
+        { term: "brace for impact", nuance_ja: "衝撃そのものへの物理的・心理的な身構えを指し、必ずしも「次に何が来るか分からない不安な待機」という含みはない。wait for the other shoe to dropは、既に一つ悪い知らせがあり続報を恐れて待つという時系列の構造を持つ。" },
+        { term: "anticipate bad news", nuance_ja: "説明的で直接的。イディオムが持つ、靴が片方ずつ床に落ちる音を待つという生活感のある比喩の面白みがない。" },
+        { term: "see the writing on the wall", nuance_ja: "既に結末がほぼ確定していると悟ることに焦点があり、不確実な「まだ来ていない一撃」を待つ緊張感は薄い。" }
+      ],
+      explanation_ja: "アパートの上の階の住人が靴を脱ぐ音（一足目がドスンと落ちる音）を聞いた下の階の住人が、もう一足がいつ落ちるかとつい身構えてしまう、というニューヨークの集合住宅生活に由来する逸話が語源とされる。単なる不安ではなく「一つ目の悪い兆候が既にあり、二つ目が来るのは時間の問題だと感じている」という具体的な心理状態を描写するのに向いている。レイオフ、業績警告、家族の健康問題など、悪い知らせが立て続けに来ることが多い状況全般で自然に使われる。"
+    },
+    {
+      type: "idiom", term: "jump through hoops", ipa: "", register: "手続き・要求への不満（口語、やや皮肉）",
+      meaning_en: "to go through a series of difficult, complicated, or seemingly unnecessary steps or requirements in order to achieve something",
+      meaning_ja: "（不必要に感じるほど）面倒な手続きを次々とこなす、無理難題を乗り越える",
+      examples: [
+        "We had to jump through so many compliance hoops just to open a corporate bank account in that country.",
+        "The airline made us jump through hoops for a refund that should have taken five minutes."
+      ],
+      synonyms: [
+        { term: "go through red tape", nuance_ja: "官僚的な書類手続きそのものに焦点がある。jump through hoopsはより広く、書類に限らず人為的に課された条件全般（承認、テスト、条件クリアなど）を指せる。" },
+        { term: "clear hurdles", nuance_ja: "克服すべき障害という中立的な響き。jump through hoopsは「本質的には不必要かもしれない」という苛立ちや皮肉のニュアンスをより強く含む。" },
+        { term: "tick boxes", nuance_ja: "形式的なチェックリストを埋めるだけの作業という、やや軽視したニュアンス。jump through hoopsは労力や忍耐を要する一連のプロセス全体を指す点でより大がかりな響きがある。" }
+      ],
+      explanation_ja: "サーカスの動物が調教師の指示で次々と輪（hoop）をくぐり抜ける芸に由来し、人が誰かの決めた恣意的な条件に従わされている様子を、やや皮肉を込めて描写する表現。単に「難しい」のではなく「本当に必要なのか疑わしい形式的な条件を、相手の言うがままにいくつもクリアさせられる」という不満のニュアンスを含むのが核心。ビザ申請、返金手続き、社内承認フローなど、官僚的でフラストレーションの溜まるプロセスを愚痴る際の定番表現。"
+    },
+    {
+      type: "phrase", term: "I stand corrected.", ipa: "", register: "議論・訂正（口語〜フォーマル、率直に非を認める）",
+      meaning_en: "a short, direct way of admitting that you were wrong about something after receiving new information, often used to gracefully concede a point in a discussion",
+      meaning_ja: "訂正します、私が間違っていました（新事実を受けての率直な非を認める一言）",
+      examples: [
+        "I said the covenant test was quarterly — I stand corrected, it's actually tested monthly.",
+        "I stand corrected: apparently my sister did tell me about the move, I just wasn't listening."
+      ],
+      synonyms: [
+        { term: "You're right, I was wrong.", nuance_ja: "直接的で率直だが、やや幼稚・単調に響くこともある。I stand correctedはより簡潔でフォーマルな場でも品よく非を認められる定型句。" },
+        { term: "My mistake.", nuance_ja: "カジュアルで軽い響き、小さなミスに向く。I stand correctedは議論や事実確認の場で、相手の指摘によって考えを改めたことを明確に示す、やや儀礼的な響きがある。" },
+        { term: "Fair enough, I was off on that.", nuance_ja: "口語的で友好的。I stand correctedのほうが簡潔で、フォーマルな会議やメールでもそのまま使える万能さがある。" }
+      ],
+      explanation_ja: "法廷で判決や訂正が確定し、それ以上争わず「その通りに立つ（stand）」という司法的な響きを残した表現で、現在では日常会話・ビジネスの両方で使われる簡潔な非の認め方として定着している。言い訳や長い説明を挟まずに一言で誤りを認められるため、会議中に指摘を受けた際、話の流れを止めずに次に進める便利なフレーズ。皮肉っぽく使うことも可能で、些細な指摘に対してわざと大げさにこの表現を使うと、軽いユーモアとしても機能する。"
+    },
+    {
+      type: "phrase", term: "Let's sleep on it.", ipa: "", register: "意思決定の保留（口語、翌日まで即断を避ける）",
+      meaning_en: "a suggestion to postpone a decision until the next day, allowing time to think it over calmly rather than deciding immediately under pressure",
+      meaning_ja: "一晩考えよう、その場では決めずに寝かせよう",
+      examples: [
+        "The term sheet looks solid, but this is a ten-year commitment — let's sleep on it and reconvene tomorrow morning.",
+        "We both liked the apartment, but it's a huge decision, so we told the agent we'd sleep on it."
+      ],
+      synonyms: [
+        { term: "take some time to think it over", nuance_ja: "説明的で中立、期間の長さは曖昧。let's sleep on itは具体的に「一晩」という短い区切りを示し、翌日には答えを出すという前提がある。" },
+        { term: "give it some more thought", nuance_ja: "熟考すること自体に焦点があり、必ずしも時間の区切りを示さない。let's sleep on itは「今すぐ決めない」という即断回避の意図がより明確。" },
+        { term: "hold off on deciding", nuance_ja: "決定の保留そのものを事務的に述べる。イディオムのほうが「一晩寝かせることで冷静な判断ができる」という感覚的な信頼のニュアンスを伝えられる。" }
+      ],
+      explanation_ja: "睡眠が思考を整理し、感情的な勢いを鎮めてくれるという経験則がそのまま定型句になった表現で、重要な決断ほど即答を避けるべきだという知恵を一言で伝えられる。プレッシャーの強い交渉の場で、その場の空気に流されて即決するのを避けたいときに、角を立てずに時間を稼げる便利な一言。翌日改めて連絡することを暗に約束する表現でもあるため、使った後に本当に翌日フォローアップするのが礼儀とされる。"
+    },
+    {
+      type: "phrase", term: "Just so we're clear, ...", ipa: "", register: "確認・念押し（会議、誤解防止のための前置き）",
+      meaning_en: "a phrase used to introduce a direct restatement of a point, condition, or expectation, in order to remove any possible ambiguity before proceeding",
+      meaning_ja: "念のため確認ですが、〜（誤解のないようはっきりさせておきたい点を切り出す前置き）",
+      examples: [
+        "Just so we're clear, this quote doesn't include installation — that's a separate line item.",
+        "Just so we're clear, I'm not lending you the car again after what happened last time."
+      ],
+      synonyms: [
+        { term: "To confirm, ...", nuance_ja: "事務的で中立的な確認の切り出し方。just so we're clearはやや強めのトーンを持ち、誤解や後からの言い逃れを防ぎたいという意図がより明確に伝わる。" },
+        { term: "For the avoidance of doubt, ...", nuance_ja: "契約書や公式文書で使われるフォーマルな定型句。just so we're clearは口頭の会話でも自然に使える、より口語的なバージョン。" },
+        { term: "Let's make sure we're on the same page:", nuance_ja: "双方の理解を揃えることに焦点があり、対話的なニュアンスが強い。just so we're clearは話者側から一方的に条件を明確化する響きがやや強い。" }
+      ],
+      explanation_ja: "曖昧さを残したまま話を進めると後で「言った・言わない」の水掛け論になりかねない、という実務上のリスクを未然に防ぐための前置き表現。特に金額・範囲・責任の所在など、後から誤解が生じやすい条件を伝える直前に置かれることが多く、やや念押しの強さを伴う。家庭内の約束事や友人関係の境界線を明確にする場面でも使われ、ビジネスに限らず「これ以上は譲れない」という一線を引く合図としても機能する。"
+    },
+    {
+      type: "phrase", term: "Let's not get ahead of ourselves.", ipa: "", register: "楽観の抑制（会議・日常、先走りを戒める）",
+      meaning_en: "a suggestion to slow down and avoid assuming or planning for a future outcome before it is actually confirmed, especially when a group is getting overly optimistic or hasty",
+      meaning_ja: "先走らないようにしよう、まだ気が早い（確定前に浮かれたり計画を進めすぎたりするのを戒める）",
+      examples: [
+        "The term sheet isn't signed yet, so let's not get ahead of ourselves and start hiring for the new office.",
+        "I know the second date went well, but let's not get ahead of ourselves and start planning a trip together."
+      ],
+      synonyms: [
+        { term: "Let's not count our chickens before they hatch.", nuance_ja: "同じ意味を持つ古典的なことわざで、より比喩的・文学的。let's not get ahead of ourselvesはより直接的で、現代のビジネス会話にも自然になじむ。" },
+        { term: "One step at a time.", nuance_ja: "プロセス全体を段階的に進めるべきという一般的な助言。let's not get ahead of ourselvesは特に「まだ確定していないことを前提に浮かれている」状況への戒めという文脈がより明確。" },
+        { term: "Let's not jump the gun.", nuance_ja: "早まった行動そのものを戒める点で近いが、jump the gunは「行動を起こすタイミング」に焦点があり、get ahead of ourselvesは「期待や計画の先走り」という心理面により焦点がある。" }
+      ],
+      explanation_ja: "集団やチームが良い兆候に浮かれて、まだ確定していない未来を前提に話を進めてしまう状況を、一歩引いて冷静にたしなめる表現。楽観的な空気に水を差すというより、浮かれすぎたチームを現実に引き戻す優しいブレーキ役として使われることが多く、言った本人も同じくらい期待している場合がほとんど。投資委員会が好感触を示した直後や、交際が順調なカップルの会話など、期待と現実のギャップが後で痛手になりうる場面で先回りして使われる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "flippant", ipa: "/ˈflɪpənt/", register: "人物評・発言評（批判的、不謹慎さを非難）",
+      meaning_en: "treating a serious matter with a casual or disrespectful lack of seriousness, especially in a way that seems inappropriate given the situation",
+      meaning_ja: "軽薄な、不真面目に茶化すような（真剣であるべき場面での不謹慎さ）",
+      examples: [
+        "His flippant 'we'll figure it out' response didn't exactly reassure the board about the compliance gap.",
+        "She made a flippant joke about the diagnosis, and I couldn't tell if it was her way of coping or if she really wasn't taking it seriously."
+      ],
+      synonyms: [
+        { term: "glib", nuance_ja: "口先だけの滑らかさ・浅はかな説得力に焦点がある。flippantは「真剣さが求められる場面でわざと軽く扱う」という不謹慎さそのものに焦点がある。" },
+        { term: "dismissive", nuance_ja: "相手の懸念や意見を軽視・却下する態度に焦点がある。flippantは態度そのものの軽さ・ふざけた調子を指し、必ずしも相手を無視しているとは限らない。" },
+        { term: "cavalier", nuance_ja: "リスクや結果への無頓着さ・傲慢さに焦点がある。flippantは主に「口調・言い方」の軽さを指し、態度全体の傲慢さまでは含意しない。" }
+      ],
+      explanation_ja: "深刻な話題やリスクの大きい状況に対して、まるで大したことがないかのように軽く受け流す態度を批判的に描写する語。単に「冗談っぽい」のではなく、「この場面でその軽さは不適切だ」という周囲の違和感・非難を伴うのが核心で、危機対応や謝罪の場面で経営陣の発言がflippantだと報じられると、それだけで評判に傷がつく。友人や家族との会話でも、深刻な相談に対して軽い返しをしてしまった相手を評する際に使える便利な一語。"
+    },
+    {
+      term: "unabashed", ipa: "/ˌʌnəˈbæʃt/", register: "人物評（中立〜好意的、気後れのなさを称える）",
+      meaning_en: "showing no embarrassment, guilt, or shame about something that might normally be expected to cause it, often used to describe openly and confidently expressed opinions or desires",
+      meaning_ja: "悪びれない、恥じることなく堂々とした（普通なら気後れするようなことを平然と示す）",
+      examples: [
+        "She's an unabashed advocate for raising prices even when the sales team pushes back — she just doesn't flinch.",
+        "He's an unabashed fan of reality TV and will talk about last night's episode in any meeting if you let him."
+      ],
+      synonyms: [
+        { term: "unapologetic", nuance_ja: "ほぼ同義で交換可能な頻出語。unabashedはやや文語的で、感情の乱れの欠如（気後れのなさ）そのものに焦点がある。" },
+        { term: "shameless", nuance_ja: "道徳的な非難を伴うことが多く、否定的な文脈で使われやすい。unabashedはより中立的〜好意的に使え、率直さや自信を称える文脈でも自然。" },
+        { term: "brazen", nuance_ja: "図々しさ・厚かましさへの批判が強く、他者への配慮の欠如を非難するニュアンス。unabashedは単に「気にしない」という心理状態を指し、必ずしも他者への迷惑を含意しない。" }
+      ],
+      explanation_ja: "動詞 abash（恥じ入らせる、うろたえさせる）の否定形が形容詞化した語で、本来なら気恥ずかしさや躊躇を感じるはずの場面で、それが全く見られない様子を指す。批判的にも好意的にも使える中立性が実務上の強みで、\"an unabashed fan of X\" のように、少し変わった趣味や強い意見を悪びれずに公言する人物を、むしろ好感を持って描写する際によく使われる。似た brazen が図々しさへの非難を含むのに対し、unabashedは単純な気後れのなさを指すため、褒め言葉としても違和感なく使える。"
+    },
+    {
+      term: "exorbitant", ipa: "/ɪɡˈzɔːrbɪtənt/", register: "価格・料金の評価（強い批判、法外さを非難）",
+      meaning_en: "(of a price, fee, or demand) unreasonably or excessively high, far beyond what is considered fair or normal",
+      meaning_ja: "法外な、途方もなく高い（相場からかけ離れた価格・要求）",
+      examples: [
+        "The exorbitant overdraft fees on that account were basically why we switched banks.",
+        "Renewing the lease at that exorbitant rate didn't make sense once we ran the numbers against buying."
+      ],
+      synonyms: [
+        { term: "excessive", nuance_ja: "汎用的で中立的な「行き過ぎ」を指す語。exorbitantは特に価格・料金・要求の文脈で使われる頻度が圧倒的に高く、より強い非難のニュアンスを持つ。" },
+        { term: "extortionate", nuance_ja: "恐喝（extortion）を連想させ、意図的に不当な利益を得ようとしているという非難がより強い。exorbitantは意図の有無に関わらず単に金額が異常に高いことを指せる。" },
+        { term: "steep", nuance_ja: "口語的で軽いニュアンス、価格が高めという程度の指摘に留まる。exorbitantはより強く、常識を逸脱したレベルの高さを非難する響きを持つ。" }
+      ],
+      explanation_ja: "ラテン語 exorbitare（軌道から外れる）に由来し、正常な範囲・軌道を大きく逸脱しているという比喩がそのまま「異常な高値」に転用された語。単に高いのではなく「相場や常識という軌道から完全に外れている」という強い非難を含むのが核心で、銀行手数料、違約金、独占的な業者の料金など、選択の余地が少ない状況で足元を見られていると感じる場面で特によく使われる。日常会話でも駐車場代や空港の飲食店の値段など、明らかに割高な料金への不満を表現する際に効果的。"
+    },
+    {
+      term: "austere", ipa: "/ɔːˈstɪr/", register: "様式・政策・生活の評価（フォーマル、贅沢の排除）",
+      meaning_en: "severely simple, strict, or without any luxury or comfort, whether describing a style, a way of life, or a set of policies",
+      meaning_ja: "簡素で厳格な、贅沢を排した（様式・生活・政策について）",
+      examples: [
+        "The government's austere budget proposal cuts discretionary spending across nearly every department.",
+        "His apartment is almost monastically austere — a bed, a desk, and nothing on the walls."
+      ],
+      synonyms: [
+        { term: "stark", nuance_ja: "見た目の飾り気のなさ・冷たさに焦点があり、視覚的な印象を強く指す。austereはライフスタイルや政策など、より広い範囲の「贅沢の排除」を指せる。" },
+        { term: "spartan", nuance_ja: "古代スパルタの厳格な鍛錬生活に由来し、意図的な自己鍛錬・耐乏のニュアンスが強い。austereはより一般的で、必ずしも鍛錬の意図を含意しない。" },
+        { term: "frugal", nuance_ja: "個人の倹約志向という前向きな響きが強い。austereはより厳格・冷厳な印象を与え、政策や様式など組織的な文脈でも自然に使える。" }
+      ],
+      explanation_ja: "ギリシャ語 austeros（渋い、厳しい）に由来し、渋み・厳しさの感覚がそのまま「贅肉のない厳格さ」に転用された語。財政緊縮策を指す \"austerity measures\" という定型句で経済ニュースに頻出し、個人の生活様式（ミニマリスト的な暮らし）から国家の政策まで幅広いスケールで使えるのが特徴。単なる「質素」ではなく、本来あってもよいはずの快適さ・余裕をあえて排除しているという意志的なニュアンスを含む点が、単に貧しいことを指す語との違い。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "surface an issue",
+      meaning_en: "to bring a hidden or previously unnoticed problem to the attention of others, especially so it can be addressed before it becomes bigger",
+      meaning_ja: "（隠れていた）問題を表面化させる、明るみに出す",
+      examples: [
+        "The junior analyst surfaced an issue with the debt schedule that would have thrown off the whole model if it had gone unnoticed until closing.",
+        "I want to surface a concern about the venue before we send the invitations, not after."
+      ],
+      synonyms: [
+        { term: "raise a red flag", nuance_ja: "警告として強い危険信号を発するニュアンスが強い。surface an issueはより中立的で、必ずしも深刻な危険を意味せず、単に見過ごされていた点を指摘する場合にも使える。" },
+        { term: "flag a concern", nuance_ja: "ほぼ同義で交換可能。surface an issueはより「隠れていたものを表に出す」という発見・可視化のプロセスに焦点がある。" }
+      ],
+      explanation_ja: "水面下（under the surface）に隠れていたものを水面上（surface）に浮かび上がらせる、という視覚的な比喩がそのまま動詞化された表現。単に「言う」のではなく、それまで誰も気づいていなかった、あるいは意図的に見過ごされていた問題を初めて可視化するというニュアンスが核心にある。デューデリジェンスやコードレビューなど、詳細を精査する過程で見つかった見落としを報告する際の定番表現で、非難のトーンを抑えつつ建設的に問題提起できる便利な言い方。"
+    },
+    {
+      phrase: "whiteboard an idea",
+      meaning_en: "to informally sketch out, diagram, or think through an idea together with others, typically in an early and unpolished stage before it becomes a formal plan",
+      meaning_ja: "（ホワイトボードを使うように）アイデアを気軽に図解しながら一緒に練る",
+      examples: [
+        "Before we build a full deck, let's just whiteboard the idea and see if the unit economics even make sense.",
+        "We ended up whiteboarding the whole seating chart for the wedding at the kitchen table because the spreadsheet wasn't cutting it."
+      ],
+      synonyms: [
+        { term: "brainstorm", nuance_ja: "アイデアの数を出すこと自体に焦点があり、必ずしも図解や構造化を伴わない。whiteboard an ideaは図や矢印で関係性を可視化しながら考えるという、より視覚的・構造的な作業を指す。" },
+        { term: "sketch out", nuance_ja: "ほぼ同義で汎用的。whiteboard an ideaは特にオフィス・スタートアップ文化に根ざした比喩で、複数人が集まって議論しながら描く共同作業のニュアンスが強い。" }
+      ],
+      explanation_ja: "実際のホワイトボードにマーカーで図やフローチャートを描きながらアイデアを練るオフィス文化がそのまま動詞化された、比較的新しいビジネス俗語。パワーポイントやスプレッドシートのような「仕上がった」ツールを使う前段階の、ラフで気軽な思考のプロセスを指すのが核心で、\"let's not build a deck yet, let's just whiteboard it\" のように、まだ固まっていないアイデアに時間をかけすぎないよう促す場面で便利に使われる。物理的なホワイトボードがなくても、紙やオンラインツールを使う場合にも比喩として使われる。"
+    },
+    {
+      phrase: "cherry-pick (the data)",
+      meaning_en: "to selectively choose only the examples, data points, or facts that support a particular conclusion, while ignoring evidence that would contradict it",
+      meaning_ja: "（都合のいい）データ・事例だけをつまみ食いする",
+      examples: [
+        "The vendor's case study cherry-picks the three clients who saw huge returns and says nothing about the dozen who churned.",
+        "You can't cherry-pick the one week the diet worked and ignore the two months it didn't."
+      ],
+      synonyms: [
+        { term: "be selective with", nuance_ja: "中立的で穏やかな言い方。cherry-pickは意図的に都合の良いものだけを選び、不利な情報を隠しているという非難のニュアンスがより強い。" },
+        { term: "skew the data", nuance_ja: "データそのものを歪めて見せることに焦点がある。cherry-pickはデータを歪めるのではなく、真実の一部だけを選んで全体像を隠すという手口の違いがある。" }
+      ],
+      explanation_ja: "熟したチェリーだけを選んで摘み取り、傷んだものは木に残しておくという果樹園での行為が、都合の良い事実だけを選び取る比喩に転用された表現。データや事例そのものは嘘ではないのに、選び方によって全体像を歪めているという、統計・レポート作成における典型的な誤魔化しの手口を指すのが核心。投資家向け資料やマーケティング資料の信頼性を検証する際、\"which data points were left out\" を問う視点とセットでよく語られる、批判的思考の基本語彙。"
+    },
+    {
+      phrase: "lowball (an offer)",
+      meaning_en: "to intentionally offer a price, salary, or amount that is significantly lower than what is fair or expected, especially as an opening negotiating tactic",
+      meaning_ja: "（意図的に）不当に低い金額を提示する、足元を見た安値をふっかける",
+      examples: [
+        "They lowballed us on the initial offer, clearly expecting us to negotiate up from there.",
+        "The contractor lowballed the estimate to win the bid and then added 'unexpected' costs once the work had started."
+      ],
+      synonyms: [
+        { term: "undercut", nuance_ja: "競合他社より安く価格設定することで市場での優位を狙う戦略的な語。lowballは特定の相手個人・取引に対して不当に低い金額を提示することに焦点がある。" },
+        { term: "shortchange", nuance_ja: "支払うべき金額よりも少なく渡す、不正な少なさそのものに焦点がある。lowballは初回提示額の低さ、つまり交渉の駆け引きとしての戦術を指す点が異なる。" }
+      ],
+      explanation_ja: "野球やボウリングで意図的に低く投げる・転がすというスポーツ用語が、交渉で意図的に低い数字を「投げてくる」比喩に転じたとされる語。単に「安い」のではなく、相手の足元を見て、あるいは交渉の出発点として意図的・戦略的に低い金額を提示するという駆け引きの意図が核心にある。給与交渉、不動産取引、フリーランスの見積もりなど、初回提示額を額面通り受け取ってはいけない場面を警戒する際によく使われる語で、動詞としても名詞（a lowball offer）としても頻出する。"
+    }
+  ],
+  todayQuiz: [
+    { question: "The board signed off on the acquisition, with one ___: the earn-out calculation still needs to be re-run once Q4 numbers close.", choices: ["caveat", "underpinning", "impasse", "disclaimer"], answerIndex: 0, explanation: "\"Caveat\" is the standard word for a single condition or qualification attached to an otherwise settled agreement. \"Disclaimer\" usually refers to a formal, often legal, statement of non-responsibility rather than a specific negotiated condition." },
+    { question: "The whole retention thesis in this deck is ___ by a single assumption about renewal rates that nobody on the deal team has actually pressure-tested.", choices: ["underpinned", "surfaced", "cherry-picked", "whiteboarded"], answerIndex: 0, explanation: "\"Underpin\" means to form the structural basis or foundation for a conclusion or plan. \"Surface\" means to reveal a previously hidden problem, an unrelated meaning here." },
+    { question: "Given how sensitive the restructuring talks are, legal has told everyone to stay ___ in any written communication until the announcement is final.", choices: ["circumspect", "flippant", "unabashed", "acerbic"], answerIndex: 0, explanation: "\"Circumspect\" means deliberately careful and cautious about what one says because of the risk involved. \"Flippant\" would mean treating the sensitive situation with inappropriate casualness, the opposite of what's being asked for." },
+    { question: "Everyone else praised the pitch politely, but her ___ remark — 'cute deck, shame about the unit economics' — was the line people actually quoted afterward.", choices: ["acerbic", "flippant", "circumspect", "austere"], answerIndex: 0, explanation: "\"Acerbic\" describes a sharply critical comment that is also witty and memorable. \"Flippant\" would describe an inappropriately casual, non-serious tone rather than a pointed, cutting remark." },
+    { question: "Once he admitted by email that he'd known about the defect before closing, he didn't ___ in the indemnification dispute.", choices: ["have a leg to stand on", "raise the bar", "jump through hoops", "wait for the other shoe to drop"], answerIndex: 0, explanation: "\"Not have a leg to stand on\" means to have no valid justification left for one's position, exactly the situation created by his own written admission. \"Raise the bar\" refers to increasing a standard of performance, an unrelated meaning." },
+    { question: "Ever since one associate started turning in flawless first drafts, the rest of the team has felt real pressure to keep up — she's basically ___ for the whole group.", choices: ["raised the bar", "jumped through hoops", "had a leg to stand on", "cherry-picked the data"], answerIndex: 0, explanation: "\"Raise the bar\" means to increase the expected standard of performance for everyone else. \"Jump through hoops\" describes going through complicated, often unnecessary steps, an unrelated meaning." },
+    { question: "After the first office closure was announced, employees at the other two locations have just been ___, assuming theirs is next.", choices: ["waiting for the other shoe to drop", "jumping through hoops", "getting ahead of themselves", "raising the bar"], answerIndex: 0, explanation: "\"Wait for the other shoe to drop\" means to anticipate a second piece of bad news after an initial unpleasant event. \"Get ahead of themselves\" would mean assuming a positive outcome prematurely, an unrelated and opposite tone." },
+    { question: "Getting reimbursed by that insurer meant three phone calls, two notarized forms, and a fax — literally having to ___ for a claim that should have been automatic.", choices: ["jump through hoops", "raise the bar", "sleep on it", "stand corrected"], answerIndex: 0, explanation: "\"Jump through hoops\" describes being forced through a series of difficult, often unnecessary steps to accomplish something simple. \"Sleep on it\" means to delay a decision overnight, an unrelated meaning." },
+    { question: "Even clients used to paying a premium for expertise raised eyebrows at the consultancy's ___ day rate.", choices: ["exorbitant", "austere", "unabashed", "circumspect"], answerIndex: 0, explanation: "\"Exorbitant\" specifically describes a price or fee that is unreasonably high. \"Austere\" describes something severely simple or without luxury, which does not fit a description of a high price." },
+    { question: "Facing a revenue shortfall, the company announced a surprisingly ___ budget for next year, cutting travel, offsites, and nearly all discretionary spend.", choices: ["austere", "exorbitant", "flippant", "acerbic"], answerIndex: 0, explanation: "\"Austere\" describes a style, policy, or budget that is strict and stripped of any luxury or comfort. \"Exorbitant\" describes something unreasonably expensive, the opposite of a cost-cutting budget." },
+    { question: "The case study only features the three clients who saw huge ROI and says nothing about the dozen who churned — a clear case of ___ the data.", choices: ["cherry-picking", "surfacing", "underpinning", "lowballing"], answerIndex: 0, explanation: "\"Cherry-pick\" means to selectively present only the favorable examples while omitting contradictory evidence. \"Surface\" means to bring a hidden problem to light, the opposite intent." },
+    { question: "Their opening offer on the house was almost insulting, but our agent said it was just a classic ___ meant to test how motivated we were to sell.", choices: ["lowball offer", "cherry-picked offer", "austere offer", "caveat"], answerIndex: 0, explanation: "\"Lowball\" describes an intentionally low opening offer used as a negotiating tactic. \"Caveat\" refers to a qualification attached to an agreement, an unrelated meaning." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-15 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-17 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
