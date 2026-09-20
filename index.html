@@ -120,6 +120,65 @@ a{color:#0d6e6e}
 .btn.primary{background:#0f3d3a;color:#fff;border-color:#0f3d3a}
 .btn.primary:hover{background:#134e4a}
 #footer-note{font-size:11px;color:#a8a190;margin-top:14px;line-height:1.7}
+
+/* Progress tracking */
+.meta-tag{font-size:11.5px;background:#fef3c7;color:#92400e;padding:4px 11px;border-radius:20px;font-weight:700}
+.day-study-btn{margin-left:auto;padding:8px 14px;border-radius:9px;font-size:12px;font-weight:700;cursor:pointer;border:1.5px solid #14b8a6;background:#f0fdfa;color:#0f3d3a}
+.day-study-btn:hover{background:#ccfbf1}
+.day-study-btn.done{background:#d1fae5;border-color:#10b981}
+.prog-box{background:#fff;border-radius:14px;padding:18px 19px;box-shadow:0 1px 6px rgba(0,0,0,.06);border:1px solid #efe9dc;border-left:5px solid #14b8a6}
+.prog-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:12px}
+@media(max-width:600px){.prog-stats{grid-template-columns:repeat(2,1fr)}}
+.prog-tile{background:#f8faf9;border-radius:10px;padding:10px 12px;text-align:center}
+.prog-tile .n{font-size:22px;font-weight:800;color:#0f3d3a;line-height:1.2}
+.prog-tile .l{font-size:10.5px;color:#7a7364;margin-top:2px}
+.prog-tile.ok .n{color:#15803d}
+.prog-tile.part .n{color:#b45309}
+.prog-tile.none .n{color:#b91c1c}
+.prog-bar{height:10px;background:#eef2f0;border-radius:6px;overflow:hidden}
+.prog-bar-fill{height:100%;background:linear-gradient(90deg,#14b8a6,#0d9488)}
+.prog-bar-lbl{font-size:11.5px;color:#7a7364;margin:6px 0 12px}
+.prog-today{font-size:12.5px;color:#374151;background:#f0fdfa;border-radius:8px;padding:9px 12px;margin-bottom:12px;line-height:1.7}
+.prog-cal-title{font-size:11px;font-weight:700;color:#8a8371;margin-bottom:6px}
+.prog-cal{display:grid;grid-template-columns:repeat(14,1fr);gap:4px;margin-bottom:12px}
+@media(max-width:760px){.prog-cal{grid-template-columns:repeat(7,1fr)}}
+.cal-cell{border-radius:8px;padding:5px 2px;text-align:center;background:#f3f4f6;border:1px solid #e5e7eb}
+.cal-cell .cal-d{font-size:11px;font-weight:700;color:#374151}
+.cal-cell .cal-w{font-size:9.5px;color:#9ca3af}
+.cal-cell .cal-m{font-size:10px;margin-top:2px;color:#9ca3af}
+.cal-cell.hit{background:#dcfce7;border-color:#86efac}
+.cal-cell.hit .cal-m{color:#15803d;font-weight:700}
+.cal-cell.miss{background:#fef2f2;border-color:#fecaca}
+.cal-cell.miss .cal-m{color:#dc2626}
+.cal-cell.today{border-color:#14b8a6;border-width:2px}
+.cal-cell.wk .cal-w{color:#b45309}
+.prog-detail{margin-top:8px}
+.prog-detail summary{cursor:pointer;font-size:12px;font-weight:700;color:#0f3d3a;background:#eef2f0;padding:8px 12px;border-radius:8px;list-style:none;user-select:none}
+.prog-detail summary::-webkit-details-marker{display:none}
+.prog-detail summary::marker{content:''}
+.prog-detail[open] summary{background:#d7f5ef}
+.tbl-scroll{overflow-x:auto}
+.prog-tbl{width:100%;border-collapse:collapse;margin-top:8px;font-size:12px}
+.prog-tbl th,.prog-tbl td{padding:5px 8px;border-bottom:1px solid #f1f5f9;text-align:left}
+.prog-tbl th{font-size:10.5px;color:#8a8371}
+.prog-mgmt{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 6px;font-size:12px}
+.btn.small{padding:6px 12px;font-size:12px;border-radius:8px}
+.study-btn{border:1.5px solid #d9d3c2;background:#fff;color:#3a352b;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;cursor:pointer;white-space:nowrap;flex:0 0 auto}
+.study-btn:hover{border-color:#14b8a6}
+.study-btn.done{background:#d1fae5;border-color:#10b981;color:#065f46}
+.study-btn.mastered{background:#fef9c3;border-color:#eab308;color:#854d0e}
+.study-btn.done.mastered{background:#d1fae5;border-color:#10b981;color:#065f46}
+.vc-topl{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.rv-help{font-size:12px;color:#7a7364;margin:6px 0 10px;line-height:1.7}
+.rv-row{background:#fff;border:1px solid #efe9dc;border-radius:12px;padding:12px 14px;margin-bottom:8px}
+.rv-row-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.rv-term{font-size:16px;font-weight:800;color:#1f2937}
+.rv-intro{font-size:10.5px;color:#a8a190;margin-left:auto}
+.rv-ans{margin-top:8px}
+.rv-ans summary{cursor:pointer;font-size:11.5px;font-weight:700;color:#0f3d3a;background:#eef2f0;padding:6px 12px;border-radius:8px;list-style:none;display:inline-block;user-select:none}
+.rv-ans summary::-webkit-details-marker{display:none}
+.rv-ans summary::marker{content:''}
+.rv-ans[open] summary{background:#d7f5ef;margin-bottom:8px}
 </style>
 </head>
 <body>
@@ -146,332 +205,13 @@ a{color:#0d6e6e}
     <a class="btn" href="https://github.com/Rikuto-0827/english-daily" target="_blank" rel="noopener">GitHub</a>
   </div>
   <div id="footer-note">
-    公開ページには直近7日分のみを表示しています。それより前のデータは自動的に archive.html に移動され、削除されることはありません。全期間のデータはいつでもCSVでダウンロードできます。🔊ボタンはブラウザ内蔵の音声合成機能（Web Speech API）を使用しており、音声ファイルは一切保存していません（追加データ容量ゼロ）。
+    公開ページには直近7日分のみを表示しています。それより前のデータは自動的に archive.html に移動され、削除されることはありません。全期間のデータ（学習回数つき）はいつでもCSVでダウンロードできます。平日は新規表現、土日は復習に専念します。学習進捗はこのブラウザ内に保存されます。🔊ボタンはブラウザ内蔵の音声合成機能（Web Speech API）を使用しており、音声ファイルは一切保存していません（追加データ容量ゼロ）。
   </div>
 </div>
 
 <script>
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
-{
-  date: "2026-09-08",
-  dateLabel: "2026年9月8日（火）",
-  readTimeMin: 33,
-  coreItems: [
-    {
-      type: "word", term: "cursory", ipa: "/ˈkɜːrsəri/", register: "レビュー・確認の描写（中立〜やや批判的、フォーマル）",
-      meaning_en: "done quickly and without giving enough attention to detail, often implying the review was too hasty to be reliable",
-      meaning_ja: "（確認・検討が）大まかで急ぎの、注意不足な",
-      examples: [
-        "A cursory read of the term sheet would have caught the missing anti-dilution clause, but nobody had time before the call.",
-        "He gave my resume a cursory glance and asked if I'd ever actually managed a P&L."
-      ],
-      synonyms: [
-        { term: "perfunctory", nuance_ja: "義務的にこなしただけという「やる気のなさ」に焦点があり、心のこもらなさを強調する。cursoryは単に「速すぎて浅い」ことを指し、必ずしも意欲の欠如を含意しない。" },
-        { term: "superficial", nuance_ja: "表面的で深みがないことそのものを指す一般語。cursoryは特に「時間をかけなかった」という速度の要因に焦点がある点が異なる。" },
-        { term: "hasty", nuance_ja: "急いで行われたこと全般を指す口語的な語。cursoryはレビュー・検査・一瞥など「情報を精査する行為」に使われる頻度が特に高い、より書き言葉的な語。" }
-      ],
-      explanation_ja: "ラテン語 cursus（走ること）に由来し、courier（急使）やcurrent（流れ）と同じ語根を持つ。「走りながら見た」というイメージそのままに、立ち止まってじっくり検討する時間を取らなかった、という含意が核心にある。監査やデューデリジェンスの文脈で \"a cursory review missed X\" と言えば、単なる不注意ではなく「本来かけるべき時間をかけなかった」という手続き上の落ち度を指摘する響きになる。"
-    },
-    {
-      type: "word", term: "specious", ipa: "/ˈspiːʃəs/", register: "議論の批判（フォーマル、辛辣）",
-      meaning_en: "appearing to be true, reasonable, or attractive at first glance, but actually false or misleading once examined closely",
-      meaning_ja: "一見もっともらしいが実は誤っている、見かけ倒しの（議論・理由）",
-      examples: [
-        "The argument that the layoffs would boost morale by 'removing dead weight' turned out to be specious once three of the top performers were let go by mistake.",
-        "It's a specious comparison — you can't say the neighborhood is safer just because fewer people report crimes."
-      ],
-      synonyms: [
-        { term: "fallacious", nuance_ja: "論理学的に「誤った推論構造を持つ」ことを指す、より技術的でフォーマルな語。speciousは論理の誤りよりも「表面的な魅力・もっともらしさ」に焦点がある。" },
-        { term: "misleading", nuance_ja: "受け手を誤解させる効果そのものを指す中立的な語。speciousは「一見説得力があるように見える」という見た目の巧妙さを強く含意する点が異なる。" },
-        { term: "disingenuous", nuance_ja: "話し手の意図的な不誠実さに焦点がある。speciousは論の構造そのものの欠陥を指し、必ずしも話し手が意図的に騙そうとしたとは限らない。" }
-      ],
-      explanation_ja: "ラテン語 speciosus（見栄えの良い、美しい）に由来し、species（外見、種類）と同語源。もともとは単に「見栄えが良い」という肯定的な意味だったが、時代とともに「見た目は良いが中身が伴わない」という否定的な意味に転じた語義変化の代表例。監査報告書や政策論争の分析記事で \"a specious argument\" と言えば、一見筋が通っているようで実は精査に耐えないロジックを鋭く切り捨てる響きになる。"
-    },
-    {
-      type: "word", term: "intransigent", ipa: "/ɪnˈtrænsɪdʒənt/", register: "交渉描写（フォーマル、強い批判）",
-      meaning_en: "refusing absolutely to change one's position or compromise, even when doing so would clearly be reasonable",
-      meaning_ja: "頑として譲らない、一切妥協しない（交渉・立場について）",
-      examples: [
-        "The union stayed intransigent on the pension freeze right up until the strike deadline, and the company blinked first.",
-        "My father-in-law is intransigent about Thanksgiving being at his house — we haven't even tried suggesting otherwise in years."
-      ],
-      synonyms: [
-        { term: "obstinate", nuance_ja: "個人の性格としての頑固さを指す一般語で、必ずしも交渉や対立の文脈を必要としない。intransigentは特に「立場・交渉での譲歩拒否」という政治的・組織的な文脈で使われる頻度が高い。" },
-        { term: "uncompromising", nuance_ja: "ほぼ同義だが中立的にも肯定的にも使える（信念を曲げない、という称賛にもなりうる）。intransigentはほぼ常に否定的で、交渉を膠着させる頑なさへの非難を含む。" },
-        { term: "inflexible", nuance_ja: "柔軟性の欠如全般を指す穏やかな語。intransigentはより強く、対話の余地そのものを拒む頑迷さを表す。" }
-      ],
-      explanation_ja: "ラテン語 in-（否定）+ transigere（取引する、和解する）に由来し、文字通り「取引・妥協することを拒む」という語構成そのものが意味を体現している。政治交渉や労使交渉の報道で頻出し、\"the two sides remain intransigent\" という言い回しは、対話が完全に行き詰まっている状態を簡潔に伝える定番表現。個人の性格描写にも転用でき、家族間の意地の張り合いを少し大げさに、しかしユーモラスに表現する際にも便利。"
-    },
-    {
-      type: "word", term: "unassuming", ipa: "/ˌʌnəˈsjuːmɪŋ/", register: "人物評（好意的、控えめさへの称賛）",
-      meaning_en: "modest and not seeking attention, in a way that often understates real ability, wealth, or achievement",
-      meaning_ja: "控えめで気取らない、それでいて実力を隠している（人物について）",
-      examples: [
-        "The fund's biggest LP is this unassuming guy in a fifteen-year-old Honda — you'd never guess he's written nine-figure checks.",
-        "She's completely unassuming about being fluent in five languages; you only find out by accident, months into knowing her."
-      ],
-      synonyms: [
-        { term: "modest", nuance_ja: "謙虚さそのものを指す一般語。unassumingはさらに「実力や地位を周囲に誤解されるほど控えめ」という、意外性を伴うニュアンスが強い。" },
-        { term: "humble", nuance_ja: "内面的な謙虚さ・慢心のなさを指すことが多い。unassumingは外見や振る舞いが目立たないことに焦点があり、内面の徳性というより外的な印象を描写する。" },
-        { term: "understated", nuance_ja: "ものや振る舞いのスタイルが控えめで誇示しないことを指し、人にもモノにも使える。unassumingは主に人物の性格や態度を指す点で使用範囲がやや狭い。" }
-      ],
-      explanation_ja: "assume（思い込む、僭称する）の否定形として、「自分を大きく見せようとしない」という語構成そのものが意味の核心にある。ビジネスの文脈では、肩書きや財力に見合わない控えめな振る舞いをする人物を描写する際の定番語で、しばしば「見た目とのギャップ」が驚きとともに語られる。似たunderstatedがモノや空間のスタイルにも使えるのに対し、unassumingはほぼ常に人物そのものの性格を形容する点で使い分けたい。"
-    },
-    {
-      type: "idiom", term: "kick the can down the road", ipa: "", register: "先送り批判（やや口語、政策・意思決定への批判）",
-      meaning_en: "to postpone dealing with a difficult problem, usually leaving it for someone else or a later time to resolve, instead of addressing it now",
-      meaning_ja: "（問題を）先送りする、その場しのぎで解決を後回しにする",
-      examples: [
-        "Extending the covenant waiver for another quarter is just kicking the can down the road — the leverage problem doesn't fix itself.",
-        "We keep kicking the can down the road on the roof repair, and every winter it gets a little more expensive."
-      ],
-      synonyms: [
-        { term: "punt on (something)", nuance_ja: "アメリカンフットボールのpunt（攻撃権を放棄して蹴る）に由来する口語表現で、単発の先送りを指すことが多い。kick the can down the roadは「繰り返し先送りにしてきた」という反復性・慢性化のニュアンスがより強い。" },
-        { term: "put off", nuance_ja: "単純に延期することを指す中立語。kick the can down the roadは「本質的な解決を避け続けている」という批判的な含みを常に持つ。" },
-        { term: "defer the decision", nuance_ja: "フォーマルで事務的。イディオムのほうが「問題は消えていない、いずれ誰かが払う」という皮肉な視点を鮮明に伝えられる。" }
-      ],
-      explanation_ja: "子供が道端の空き缶を蹴って前に進める遊びが語源で、缶（問題）は消えずただ少し先に移動するだけ、という視覚的な比喩がそのまま核心を成す。財政赤字や年金問題など、政治家が痛みを伴う決定を先延ばしにする状況を批判する報道で特に頻出する表現で、2008年の金融危機以降の財政政策論争で一気に一般化した。個人の生活でも「本質的な問題を先送りにしているだけ」という含意で自然に使える。"
-    },
-    {
-      type: "idiom", term: "have skin in the game", ipa: "", register: "利害関係の描写（中立〜好意的、投資・意思決定文脈で頻出）",
-      meaning_en: "to have a personal, financial, or other significant stake in the outcome of something, which gives you a genuine incentive to see it succeed",
-      meaning_ja: "（自ら）身銭を切っている、利害関係者として当事者意識を持っている",
-      examples: [
-        "The board wanted management to have real skin in the game, so half the equity grant vests only if the exit multiple clears 3x.",
-        "It's easy to give advice about renovations when you don't have any skin in the game — you're not the one paying the contractor."
-      ],
-      synonyms: [
-        { term: "have a stake in (something)", nuance_ja: "利害関係を持つこと全般を指す中立的な言い方。have skin in the gameは特に「自らの資産やリスクを賭けている」という身体的・金銭的な痛みの伴うコミットメントを強調する。" },
-        { term: "be invested in (something)", nuance_ja: "感情的・時間的な投資も含む広い意味で使え、必ずしも金銭を意味しない。イディオムはより具体的に「損をしうる立場にある」ことを指す。" },
-        { term: "have a vested interest", nuance_ja: "しばしば利己的・偏った動機を示唆する、やや批判的な響きを持つことがある。skin in the gameはむしろ「本気度・当事者意識の証」として肯定的に使われることが多い。" }
-      ],
-      explanation_ja: "投資家ウォーレン・バフェットが好んで使ったとされ、後に統計学者ナシーム・タレブが著書のタイトルにも使ったことで金融・経営の世界で一気に定着した表現。単に関係者であるだけでなく、「失敗すれば自分自身も損をする」という痛みを伴う当事者性が核心にある。経営陣への株式報酬の設計思想を説明する際の定番フレーズで、\"management needs skin in the game\" は責任と報酬を一致させるべきだという主張を一言で表せる。"
-    },
-    {
-      type: "idiom", term: "keep someone at arm's length", ipa: "", register: "関係性の描写（中立〜やや冷淡、意図的な距離感）",
-      meaning_en: "to deliberately avoid becoming too close, friendly, or involved with someone, often to maintain objectivity, caution, or emotional distance",
-      meaning_ja: "（意図的に）一定の距離を保つ、深く関わらないようにする",
-      examples: [
-        "As the auditor, she has to keep the client's finance team at arm's length — too much familiarity starts to look like a conflict of interest.",
-        "After the divorce, he kept most of his old college friends at arm's length for almost a year."
-      ],
-      synonyms: [
-        { term: "keep one's distance", nuance_ja: "より一般的で身体的な距離にも心理的な距離にも使える。arm's lengthはビジネス・法律の文脈で「利害関係を避けるための意図的な距離」という含意が特に強い（独立当事者間取引arm's length transactionもこの語から）。" },
-        { term: "steer clear of (someone)", nuance_ja: "積極的に関わりを避けることに焦点があり、しばしば警戒や嫌悪のニュアンスを伴う。keep at arm's lengthはより中立的で、必ずしも相手への否定的感情を含意しない。" },
-        { term: "keep someone out of the loop", nuance_ja: "情報共有から排除することに特化した表現。arm's lengthは情報だけでなく感情的・関係的な距離全般を指す、より広い概念。" }
-      ],
-      explanation_ja: "「腕の長さ」という物理的な距離の比喩がそのまま使われており、殴られない程度の安全な距離、というニュアンスが根底にある。会計・法務の世界では arm's length transaction（独立当事者間取引）という定型句として、利害関係者同士でも公正な市場価格で取引したことを示す専門用語にもなっている。人間関係の文脈では、親しくなりすぎることで判断が曇るのを避けたい場面や、感情的に距離を置きたい場面の両方で自然に使える。"
-    },
-    {
-      type: "idiom", term: "move the needle", ipa: "", register: "成果の評価（ビジネス口語、インパクトの有無を問う）",
-      meaning_en: "to make a meaningful, measurable difference to an outcome, especially used to question whether an effort was significant enough to matter",
-      meaning_ja: "（成果・指標に）実質的な影響を与える、目に見える変化を起こす",
-      examples: [
-        "We spent three weeks on the landing page redesign, but conversion barely moved — it just didn't move the needle the way we hoped.",
-        "One good workout a week isn't going to move the needle if the diet doesn't change too."
-      ],
-      synonyms: [
-        { term: "make a difference", nuance_ja: "一般的で汎用的な語。move the needleは計器の針（needle）という視覚的比喩を保ち、特に「測定可能な指標への影響」を問う、データドリブンな響きが強い。" },
-        { term: "have an impact", nuance_ja: "ほぼ同義でフォーマル。イディオムのほうがビジネスの日常会話で軽妙に使え、しばしば疑問文・否定文（didn't move the needle）で「期待したほどの効果がなかった」と評する場面で使われる。" },
-        { term: "tip the scales", nuance_ja: "均衡している状況をどちらかに決定的に傾けることを指し、対立や競争の文脈でより自然。move the needleは競争がなくても、単に指標の改善そのものを指せる点が異なる。" }
-      ],
-      explanation_ja: "アナログ計器の針（needle）がわずかでも動けば数値に変化があったと分かる、という視覚的なイメージがそのまま比喩になっている。スタートアップやマーケティングの文脈で、小さな施策が全体の売上やKPIに実際に影響したかどうかを問う際の決まり文句として非常に高頻度で使われ、\"does this actually move the needle?\" は施策の優先順位付けを議論する会議で頻出する一言。逆に大きな影響があった場合は \"this really moved the needle\" と肯定形でも自然に使える。"
-    },
-    {
-      type: "phrase", term: "table stakes", ipa: "", register: "競争力評価（ビジネス俗語、カジノ由来）",
-      meaning_en: "the minimum requirements needed just to be considered a credible competitor, which alone are not enough to guarantee success",
-      meaning_ja: "（競争に参加するための）最低限の必要条件、それだけでは勝てない前提条件",
-      examples: [
-        "A mobile app is table stakes for a retail bank now — it doesn't differentiate you, it just keeps you in the conversation.",
-        "Showing up on time and knowing the material is table stakes for this job; what actually gets you promoted is different."
-      ],
-      synonyms: [
-        { term: "the bare minimum", nuance_ja: "単に最低限の基準であることを指す平易な言い方。table stakesは「それを満たさないと土俵にすら上がれない」という競争参加の前提条件というニュアンスがより明確。" },
-        { term: "a prerequisite", nuance_ja: "フォーマルで手続き的な語。table stakesはポーカーのテーブルに座るための最低賭け金という比喩を保ち、ビジネスの競争感をより生き生きと伝える。" },
-        { term: "the cost of entry", nuance_ja: "ほぼ同義で交換可能。table stakesのほうが口語としての親しみやすさがあり、カジュアルな戦略ディスカッションでより自然に使われる。" }
-      ],
-      explanation_ja: "ポーカーなどのカードゲームで、テーブルに着いて勝負に参加するために最低限賭けなければならない金額（table stakes）がそのままビジネス比喩に転用された語。核心は「それを持っているから勝てるわけではなく、持っていないと勝負にすら参加できない」という前提条件の低さと必須性の高さの組み合わせで、戦略資料で機能や条件を「差別化要因」と「table stakes」に仕分ける作業は製品戦略の議論で頻繁に行われる。"
-    },
-    {
-      type: "phrase", term: "back-of-the-envelope", ipa: "", register: "概算・試算（ビジネス口語、精度より速さを重視）",
-      meaning_en: "(of a calculation or estimate) done quickly and roughly, using simple assumptions, to get a rough sense of the numbers rather than a precise answer",
-      meaning_ja: "（計算・試算が）封筒の裏でできる程度の簡易な、ざっくりとした",
-      examples: [
-        "Before we build the full model, let's just do a back-of-the-envelope calculation — at this churn rate, do we even get to breakeven?",
-        "My back-of-the-envelope math says the move would save us about four hundred a month, but I haven't accounted for the deposit."
-      ],
-      synonyms: [
-        { term: "rough estimate", nuance_ja: "単に精度が低いことを述べる中立語。back-of-the-envelopeは「その場ですぐに、簡単な道具もなしで計算した」という即興性・手軽さをより強く含意する。" },
-        { term: "ballpark figure", nuance_ja: "ほぼ同義で交換可能な口語表現。back-of-the-envelopeは「計算のプロセス自体が簡略である」ことに焦点があり、ballpark figureは「結果の数字がおおよそである」ことに焦点がある。" },
-        { term: "quick and dirty", nuance_ja: "計算に限らず作業全般の粗さを指す、より広い意味を持つ口語表現。back-of-the-envelopeは主に数値の試算に限定して使われる。" }
-      ],
-      explanation_ja: "正式な計算機や表計算ソフトを使わず、手元にあった封筒の裏に走り書きで概算する、という具体的な情景がそのまま語になっている。投資判断や事業計画の初期段階で、精密なモデルを作る前に「そもそも桁が合っているか」を素早く確認する場面で頻出し、\"let's sanity-check this with a back-of-the-envelope calculation\" のように、精度よりスピードと大まかな方向性の確認を優先する場面で使われる。"
-    },
-    {
-      type: "phrase", term: "move the goalposts", ipa: "", register: "不公正な変更への批判（やや強い、スポーツ由来）",
-      meaning_en: "to unfairly change the criteria for success or the rules of an agreement after it has already begun, usually making it harder to achieve",
-      meaning_ja: "（合意後に）ゴールの基準・条件を勝手に変える、後出しでルールを変更する",
-      examples: [
-        "First they said close the round and we'd get the bonus, now it's 'close the round and hit Q3 revenue too' — they keep moving the goalposts.",
-        "I finished everything on the original list, and now there's a new list. At some point you have to say they're just moving the goalposts."
-      ],
-      synonyms: [
-        { term: "change the rules midway", nuance_ja: "説明的で平板な言い方。move the goalpostsはサッカーのゴールポストを勝手にずらすという鮮明なイメージを保ち、不公正さへの苛立ちをより強く伝える。" },
-        { term: "raise the bar", nuance_ja: "基準を（正当に）引き上げることを指し、必ずしも不公正さを含意しない。むしろ肯定的に使われることも多い。move the goalpostsは常に「合意を後から一方的に変えた」という非難のニュアンスを持つ。" },
-        { term: "shift the target", nuance_ja: "中立的で、目標が変わったという事実のみを述べる。イディオムのほうが「意図的にずるく変更された」という被害者側の視点を明確に含む。" }
-      ],
-      explanation_ja: "サッカーの試合中に一方のチームだけゴールポストを動かせば、相手が得点するのが不可能になる、という露骨な不公正さの比喩から生まれた表現。単に基準が変わったのではなく「合意した時点のルールのもとで努力してきたのに、後から一方的に条件を変えられた」という理不尽さを訴える際に使われるのが核心で、雇用契約、業績目標、交渉の条件変更など、約束が反故にされたと感じる場面で強い不満とともに使われる。"
-    },
-    {
-      type: "phrase", term: "read the tea leaves", ipa: "", register: "予測・分析（やや文学的、確実な根拠のない推測）",
-      meaning_en: "to try to predict what will happen in the future by interpreting small, ambiguous, or indirect signs, often without any hard confirmation",
-      meaning_ja: "（曖昧な兆候から）先行きを読み取ろうとする、状況証拠から推測する",
-      examples: [
-        "Nobody's officially announced the layoffs, but if you read the tea leaves — the frozen hiring, the canceled offsite — it's not looking good.",
-        "I've been reading the tea leaves on my landlord's mood all week to figure out if it's a good time to ask about the lease renewal."
-      ],
-      synonyms: [
-        { term: "read the signs", nuance_ja: "ほぼ同義で平易。read the tea leavesは占い（お茶の葉占い）という具体的なイメージを保ち、根拠が薄い中での推測というニュアンスをより強く伝える。" },
-        { term: "connect the dots", nuance_ja: "個別の情報を組み合わせて全体像を理解することに焦点があり、必ずしも未来予測を意味しない。read the tea leavesは特に「これから何が起こるか」という将来予測に使われる。" },
-        { term: "speculate", nuance_ja: "フォーマルで中立的な語。イディオムのほうが「確たる証拠はないが、状況証拠を拾い集めている」という手探り感を鮮やかに表現できる。" }
-      ],
-      explanation_ja: "茶葉を飲み干した後にカップの底に残った葉の模様を見て運勢を占う、ヴィクトリア朝時代からの占いの習慣が語源。公式発表がない中で、断片的な兆候（採用凍結、幹部の退職、オフィスの空席など）をつなぎ合わせて先行きを推測する状況を指すのに最適で、決算前のアナリストが公開情報の断片から業績を予想する場面や、社内の空気から人事異動を予測する場面など、確証はないが無視できない兆候がある状況で好んで使われる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "lackluster", ipa: "/ˈlækˌlʌstər/", register: "業績評（中立〜批判的、報道・レビューで頻出）",
-      meaning_en: "lacking energy, brilliance, or impressive quality; noticeably unimpressive compared to what was expected or hoped for",
-      meaning_ja: "精彩を欠く、パッとしない（業績・パフォーマンスについて）",
-      examples: [
-        "Same-store sales were lackluster for the third straight quarter, and the stock sold off on the print.",
-        "The sequel was a lackluster follow-up to a movie everyone had loved — competent, but nothing you'd remember a week later."
-      ],
-      synonyms: [
-        { term: "underwhelming", nuance_ja: "期待に対して不足していたという「ギャップ」に焦点がある。lackluster は結果そのものの「輝きのなさ・活気のなさ」を指す点で、期待値の話をしなくても単体で使える。" },
-        { term: "mediocre", nuance_ja: "「並程度の質」を評する、より直接的で辛辣な語。lackluster はより婉曲的で、報道記事などでよく使われる控えめな批判の響きを持つ。" },
-        { term: "tepid", nuance_ja: "温度の比喩（生ぬるい）を使い、反応や熱意の弱さに焦点がある。lackluster は結果や業績そのものの質を指すことが多く、対象がやや異なる。" }
-      ],
-      explanation_ja: "luster（光沢、輝き）の欠如（lack）という語構成そのものが意味を体現しており、文字通り「光を失った」状態を業績や作品の評価に転用した語。決算発表の報道で最も頻出する形容詞の一つで、\"lackluster earnings\" や \"a lackluster quarter\" は数字が悪いというより「悪くはないが良くもない、期待外れ」という微妙なトーンを伝えるのに便利。強く非難するというより、静かな失望を表現する語である点が実務上のポイント。"
-    },
-    {
-      term: "entrenched", ipa: "/ɪnˈtrentʃt/", register: "構造・権力の描写（フォーマル、変化への抵抗を含意）",
-      meaning_en: "firmly established and very difficult to change or remove, especially referring to a position of power, a belief, or a practice that has existed for a long time",
-      meaning_ja: "深く根付いた、既得権化して動かしがたい（権力・慣行・考え方について）",
-      examples: [
-        "The old guard's grip on the committee was so entrenched that even the founder struggled to push through the new bylaws.",
-        "Some of these entrenched habits — checking email before you're even out of bed — are harder to break than people admit."
-      ],
-      synonyms: [
-        { term: "established", nuance_ja: "単に「確立している」ことを述べる中立語で、必ずしも変化への抵抗や既得権益の含意はない。entrenchedはそこに「動かすのが困難」というニュアンスを強く加える。" },
-        { term: "ingrained", nuance_ja: "習慣や信念が深く染み込んでいることを指し、主に個人の内面（思考パターン・癖）に使われることが多い。entrenchedは組織・権力構造など、より社会的・構造的な対象にも使われる。" },
-        { term: "deep-rooted", nuance_ja: "ほぼ同義で植物の比喩を使う点が似ている。entrenchedは塹壕（trench）という軍事比喩から、より「防御的に立てこもって動かない」という能動的な抵抗のニュアンスを持つ。" }
-      ],
-      explanation_ja: "塹壕（trench）を掘って陣地に立てこもるという軍事用語が語源で、単に「長く続いている」のではなく「守りを固めて動こうとしない」という能動的な抵抗のイメージを核に持つ。コーポレートガバナンスの議論で \"entrenched management\"（保身に走る経営陣）という定型句が頻出し、株主が経営陣の交代を求めても既得権益を持つ側が抵抗する構図を描写するのに使われる。個人の習慣や社会の慣習にも転用でき、変えようとする側の視点から見た「頑固な現状維持」を表す。"
-    },
-    {
-      term: "brash", ipa: "/bræʃ/", register: "人物評（やや批判的だが自信・エネルギーの含意も）",
-      meaning_en: "confident and self-assured in a bold, sometimes tactless or overbearing way, often lacking the caution or subtlety that comes with experience",
-      meaning_ja: "生意気なほど自信満々な、遠慮のない（ときに配慮に欠ける）",
-      examples: [
-        "The brash new trader made three calls in his first week that would've gotten anyone else fired — and two of them paid off.",
-        "She came across as brash in the interview, cutting off the panel twice, but honestly the confidence wasn't entirely misplaced."
-      ],
-      synonyms: [
-        { term: "cocky", nuance_ja: "より口語的でほぼ常に否定的、自信が過剰で鼻につく響きが強い。brashはエネルギーや大胆さへの一定の評価（称賛にもなりうる）を残す点が異なる。" },
-        { term: "brazen", nuance_ja: "恥知らずなほど厚かましい、という強い非難を含み、しばしば不正や図々しい行為を指す。brashは主に態度・話し方の大胆さを指し、必ずしも不正や恥知らずな行為を伴わない。" },
-        { term: "audacious", nuance_ja: "大胆さを称賛のニュアンスで捉えることが多いフォーマルな語。brashはより口語的で、大胆さの中に配慮の欠如という欠点も同時に指摘する両義的な語。" }
-      ],
-      explanation_ja: "もともと金属などが「もろい、壊れやすい」という意味だった語が、人の態度における「向こう見ずな性急さ」に転じたとされる。単なる自信家（confident）と違い、経験の浅さや配慮のなさを暗に指摘しつつも、そのエネルギーや大胆さを完全に否定はしない両義性が特徴で、若手トレーダーや新興企業の創業者を評する記事で「危なっかしいが目が離せない」人物像を描く際に好んで使われる。"
-    },
-    {
-      term: "understated", ipa: "/ˌʌndərˈsteɪtɪd/", register: "様式・演出の評（好意的、上質さの含意）",
-      meaning_en: "quietly elegant, effective, or impressive without being showy, flashy, or drawing unnecessary attention to itself",
-      meaning_ja: "控えめで上品な、さりげなく質の高い（派手さを避けた）",
-      examples: [
-        "The pitch deck was refreshingly understated — no stock photos, no buzzwords, just the numbers and a clear thesis.",
-        "He wore an understated navy suit to the interview while everyone else showed up looking like they were attending a wedding."
-      ],
-      synonyms: [
-        { term: "subtle", nuance_ja: "気づかれにくい、繊細であることそのものを指す一般語。understatedは特に「もっと目立たせることもできたのに、あえて控えめにしている」という選択の含意がある。" },
-        { term: "low-key", nuance_ja: "カジュアルで肩の力が抜けた雰囲気を指すことが多い。understatedはより洗練さ・上質さの含意が強く、フォーマルな場面の描写にも自然に使える。" },
-        { term: "unpretentious", nuance_ja: "気取りのなさ・見栄を張らないことに焦点がある。understatedは見せ方・演出のスタイルそのものを評する語で、必ずしも人の性格を指すとは限らない。" }
-      ],
-      explanation_ja: "understate（控えめに述べる、過小に表現する）の過去分詞が形容詞化した語で、本来伝えられる価値や質を意図的に誇張せず抑えて見せる、という選択のニュアンスが核心にある。高級ブランドのデザイン哲学やプレゼン資料の作り方を評する文脈で好んで使われ、\"understated elegance\"（さりげない上質さ）という定型句は、派手な演出に頼らずとも伝わる質の高さを表す褒め言葉として頻出する。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "pull the trigger",
-      meaning_en: "to make the final decision to go ahead with something, especially after a period of hesitation or deliberation",
-      meaning_ja: "（最終的に）決断して実行に移す、ゴーサインを出す",
-      examples: [
-        "We'd been circling the acquisition for eight months, and the board finally pulled the trigger the week the target's valuation dropped.",
-        "I kept refreshing the listing for a month before I finally pulled the trigger and made an offer."
-      ],
-      synonyms: [
-        { term: "make the call", nuance_ja: "決定を下すこと全般を指す中立的な語。pull the triggerは特に「長い迷いの末についに実行に移す」という決断の瞬間の緊張感をより強く伝える。" },
-        { term: "greenlight (something)", nuance_ja: "承認・許可を与えるという管理的な視点が強い。pull the triggerは実行する当事者自身の心理的なためらいと決断そのものに焦点がある。" }
-      ],
-      explanation_ja: "銃の引き金（trigger）を引く瞬間の比喩で、それまでの狙いや逡巡がどうであれ、引いた瞬間にもう後戻りできない、という不可逆性のイメージが核心にある。M&Aや投資の意思決定でためらいの期間が長かったことを前提にした表現で、\"we finally pulled the trigger\" は単なる決定報告以上に、その決断にどれだけの逡巡があったかを暗に伝える。"
-    },
-    {
-      phrase: "hedge your bets",
-      meaning_en: "to reduce your risk of loss by spreading your commitment across multiple options rather than fully committing to just one",
-      meaning_ja: "（一つに賭けきらず）リスク分散する、両方に保険をかけておく",
-      examples: [
-        "Instead of picking one vendor, we hedged our bets and ran a six-month pilot with two, even though it cost more upfront.",
-        "She hedged her bets by accepting the job offer but not giving notice at her old firm until the paperwork was actually signed."
-      ],
-      synonyms: [
-        { term: "diversify", nuance_ja: "投資用語としてより専門的・中立的で、主に資産や事業の分散を指す。hedge your betsはより口語的で、投資に限らず人生の選択全般（進路、恋愛、仕事）にも使える。" },
-        { term: "keep your options open", nuance_ja: "特定の選択を先延ばしにして自由度を保つことに焦点がある。hedge your betsは選択を先延ばしにするのではなく、複数の選択に同時にリソースを割く点が異なる。" }
-      ],
-      explanation_ja: "金融のヘッジ取引（相殺的なポジションを取ってリスクを打ち消す）がそのまま賭け事の比喩（bet）と結びついた表現で、金融出身者には特に直感的に理解しやすい語源を持つ。一つの選択に全てを賭けて外れるリスクを避け、複数の選択肢に分散してコミットする戦略全般を指し、キャリア選択や交渉戦略など金融以外の文脈にも自然に転用される、実務で非常に汎用性の高い表現。"
-    },
-    {
-      phrase: "put out feelers",
-      meaning_en: "to make discreet, informal inquiries to test people's reactions or interest before making a formal move or commitment",
-      meaning_ja: "（正式に動く前に）さりげなく反応を探る、非公式に打診してみる",
-      examples: [
-        "Before we formally announce the merger talks, someone should put out feelers with the key clients to gauge how they'd react.",
-        "I've just been putting out feelers about other roles — nothing serious yet, just seeing what's out there."
-      ],
-      synonyms: [
-        { term: "test the waters", nuance_ja: "反応を試すこと全般を指す一般的な比喩。put out feelersは昆虫の触角（feeler）のイメージから、特に「人の反応・感情を探る」という対人的な打診に焦点がある。" },
-        { term: "sound someone out", nuance_ja: "特定の相手一人に的を絞って意見を尋ねることを指すことが多い。put out feelersは複数の相手に対して同時に、より広く反応を探る場面で使われやすい。" }
-      ],
-      explanation_ja: "昆虫が触角（feeler）を伸ばして周囲の状況を探る様子がそのまま比喩になっており、正式な行動を起こす前に、相手にどう受け止められるかをそっと探る慎重さが核心にある。人事異動や組織再編、価格改定などを正式発表する前に、キーパーソンの反応を非公式に確認しておく場面で頻出し、\"quietly putting out feelers\" という言い回しは、まだ何も決まっていないことを強調しつつ情報収集していることを伝える便利な表現。"
-    },
-    {
-      phrase: "raise eyebrows",
-      meaning_en: "to cause surprise, mild disapproval, or suspicion among observers, without necessarily provoking open criticism",
-      meaning_ja: "（人々の）眉をひそめさせる、驚きや軽い不信感を引き起こす",
-      examples: [
-        "The CEO's pay package raised eyebrows even among board members who'd approved it, once the actual numbers were reported.",
-        "Bringing his ex to the wedding raised more than a few eyebrows among the family."
-      ],
-      synonyms: [
-        { term: "cause a stir", nuance_ja: "より大きく目に見える反応（騒ぎ、話題）を指すことが多い。raise eyebrowsはより静かで控えめな驚き・懐疑の表情を指し、公然とした批判には至らない反応を表す。" },
-        { term: "turn heads", nuance_ja: "主に見た目の魅力や意外性による注目を指し、肯定的な文脈でも使われる。raise eyebrowsはほぼ常に軽い疑念や違和感を伴う、やや否定的なニュアンス。" }
-      ],
-      explanation_ja: "驚きや疑いを感じたときに人が無意識に眉を上げる表情がそのまま慣用句になっており、声に出した批判ではなく、表情という非言語的な反応に焦点があるのが特徴。声高な非難には至らないが「何かおかしい」と感じさせる程度の違和感を表すのに最適で、役員報酬や不自然な人事、時期尚早に見える発表など、明確な不正ではないが疑問符がつく事柄を報じる記事で頻出する。"
-    }
-  ],
-  todayQuiz: [
-    { question: "The compliance officer admitted her review of the wire transfer logs had been ___ at best, given she'd had only twenty minutes before the deadline.", choices: ["cursory", "specious", "intransigent", "unassuming"], answerIndex: 0, explanation: "\"Cursory\" describes a review done too quickly to be thorough, matching the twenty-minute time pressure. \"Specious\" describes an argument that looks valid but isn't, not how a review was conducted." },
-    { question: "The claim that raising prices would boost customer loyalty by making the brand feel 'more exclusive' sounded plausible in the room, but turned out to be ___ once churn data came in.", choices: ["specious", "cursory", "unassuming", "entrenched"], answerIndex: 0, explanation: "\"Specious\" fits an argument that seemed convincing at first but was disproven by evidence. \"Cursory\" describes a hasty review, not a flawed argument." },
-    { question: "Extending the loan covenant waiver by another quarter instead of restructuring the debt is really just ___ — the underlying leverage problem is still there.", choices: ["kicking the can down the road", "having skin in the game", "moving the needle", "reading the tea leaves"], answerIndex: 0, explanation: "\"Kick the can down the road\" means postponing a real solution instead of addressing it. \"Having skin in the game\" refers to holding a personal stake in an outcome, unrelated to delay." },
-    { question: "The board insisted that founders keep a meaningful chunk of unvested equity after the sale, so they'd continue to ___ through the transition period.", choices: ["have skin in the game", "keep the company at arm's length", "move the goalposts", "hedge their bets"], answerIndex: 0, explanation: "\"Have skin in the game\" fits a structure designed to give founders a real financial stake in the outcome. \"Keep at arm's length\" means the opposite — maintaining distance rather than stake." },
-    { question: "As the deal's independent valuator, he had to ___ from both the buyer and the seller to avoid any appearance of bias.", choices: ["keep himself at arm's length", "put out feelers", "move the needle", "pull the trigger"], answerIndex: 0, explanation: "\"Keep at arm's length\" describes maintaining deliberate distance to preserve objectivity, exactly the independence required of a valuator. \"Put out feelers\" means informally testing reactions, unrelated to avoiding bias." },
-    { question: "A well-designed onboarding flow isn't going to win you the account anymore — at this point it's just ___ for any serious B2B SaaS product.", choices: ["table stakes", "a back-of-the-envelope calculation", "moving the goalposts", "lackluster"], answerIndex: 0, explanation: "\"Table stakes\" describes the baseline requirement to be considered credible, fitting something that no longer differentiates a product. \"Back-of-the-envelope\" describes a rough calculation, an unrelated meaning." },
-    { question: "First the landlord said a co-signer would be enough, then he asked for three months' deposit too — at some point you have to call it what it is: he's ___.", choices: ["moving the goalposts", "reading the tea leaves", "putting out feelers", "hedging his bets"], answerIndex: 0, explanation: "\"Move the goalposts\" describes unfairly changing agreed-upon requirements after the fact, matching the landlord's added demands. \"Reading the tea leaves\" means guessing at the future from vague signs, unrelated here." },
-    { question: "Quarterly revenue technically beat estimates by a hair, but the guidance cut made the whole print feel ___ rather than reassuring.", choices: ["lackluster", "entrenched", "brash", "understated"], answerIndex: 0, explanation: "\"Lackluster\" fits results that are technically fine but unimpressive and disappointing overall. \"Entrenched\" describes deeply established power or habits, not the tone of an earnings report." },
-    { question: "We could have kept debating the acquisition price forever, but with the target's other suitor circling, the CEO finally ___ and signed at the ask price.", choices: ["pulled the trigger", "hedged his bets", "put out feelers", "raised eyebrows"], answerIndex: 0, explanation: "\"Pull the trigger\" means making the final decision to proceed after hesitation, fitting the pressure that forced action. \"Hedge your bets\" means spreading commitment across options, the opposite of committing fully." },
-    { question: "Rather than commit fully to one supplier, the procurement team decided to ___ and split the contract between two vendors at very different price points.", choices: ["hedge their bets", "put out feelers", "move the goalposts", "keep the vendors at arm's length"], answerIndex: 0, explanation: "\"Hedge your bets\" means spreading commitment across multiple options to reduce risk, matching the decision to split between two vendors. \"Put out feelers\" means testing reactions informally, not splitting a contract." }
-  ]
-},
 {
   date: "2026-09-09",
   dateLabel: "2026年9月9日（水）",
@@ -2391,9 +2131,19 @@ const ENGLISH_REPORTS = [
     { question: "The case study only features the three clients who saw huge ROI and says nothing about the dozen who churned — a clear case of ___ the data.", choices: ["cherry-picking", "surfacing", "underpinning", "lowballing"], answerIndex: 0, explanation: "\"Cherry-pick\" means to selectively present only the favorable examples while omitting contradictory evidence. \"Surface\" means to bring a hidden problem to light, the opposite intent." },
     { question: "Their opening offer on the house was almost insulting, but our agent said it was just a classic ___ meant to test how motivated we were to sell.", choices: ["lowball offer", "cherry-picked offer", "austere offer", "caveat"], answerIndex: 0, explanation: "\"Lowball\" describes an intentionally low opening offer used as a negotiating tactic. \"Caveat\" refers to a qualification attached to an agreement, an unrelated meaning." }
   ]
+},
+{
+  date: "2026-09-20",
+  dateLabel: "2026年9月20日（日）",
+  mode: "review",
+  readTimeMin: 25,
+  coreItems: [],
+  adjectives: [],
+  collocations: [],
+  todayQuiz: []
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-17 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-20 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
@@ -2408,8 +2158,98 @@ const TYPE_META = {
   collocation: { label: '実務コロケーション', badge: 'b-collo', border: 'tp-collo' }
 };
 
+/* ── 日付ユーティリティ ── */
+const DOW_JA = ['日','月','火','水','木','金','土'];
+function pad2(n){ return (n<10?'0':'')+n; }
+function dateStr(d){ return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.getDate()); }
+function todayStr(){ return dateStr(new Date()); }
+function jaDateLabel(d){ return d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日（'+DOW_JA[d.getDay()]+'）'; }
+
+/* ── 学習進捗（localStorage：表現ごとに「学習した日付」を記録。回数＝日付の数。目標3回） ── */
+const TARGET_COUNT = 3;
+const PROGRESS_KEY = 'englishDailyProgress_v1';
+let PROGRESS = { log: {}, settings: { reviewSize: 30 } };
+
+function loadProgress(){
+  try{
+    const raw = localStorage.getItem(PROGRESS_KEY);
+    if(!raw) return;
+    const p = JSON.parse(raw);
+    if(p && p.log && typeof p.log === 'object'){ PROGRESS.log = p.log; }
+    if(p && p.settings){ PROGRESS.settings = Object.assign(PROGRESS.settings, p.settings); }
+  }catch(e){}
+}
+function saveProgress(){
+  try{ localStorage.setItem(PROGRESS_KEY, JSON.stringify(PROGRESS)); }catch(e){}
+}
+function itemId(it){ return String(it.term || it.phrase || '').toLowerCase().replace(/\s+/g,' ').trim(); }
+function logOf(id){ return PROGRESS.log[id] || []; }
+function countOf(id){ return logOf(id).length; }
+function countBeforeToday(id){ const t = todayStr(); return logOf(id).filter(function(d){ return d !== t; }).length; }
+function studiedToday(id){ return logOf(id).indexOf(todayStr()) >= 0; }
+function setToday(id, want){
+  const t = todayStr();
+  const arr = logOf(id).slice();
+  const i = arr.indexOf(t);
+  if(want && i < 0){ arr.push(t); arr.sort(); }
+  if(!want && i >= 0){ arr.splice(i, 1); }
+  if(arr.length){ PROGRESS.log[id] = arr; } else { delete PROGRESS.log[id]; }
+}
+function dots(n){
+  let s = '';
+  for(let i=0;i<TARGET_COUNT;i++){ s += (i < n ? '●' : '○'); }
+  return s;
+}
+
+/* ── 全表現の一覧（初出日つき・重複排除）。アーカイブ取得後に全期間へ拡張される ── */
+let UNIVERSE = [];
+function buildUniverse(reports){
+  const map = new Map();
+  function add(it, meta, date){
+    const id = itemId(it);
+    if(!id || map.has(id)) return;
+    map.set(id, { id: id, term: it.term || it.phrase, item: it, meta: meta, introDate: date });
+  }
+  reports.slice().sort(function(a,b){ return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); }).forEach(function(r){
+    (r.coreItems||[]).forEach(function(it){ add(it, TYPE_META[it.type] || TYPE_META.word, r.date); });
+    (r.adjectives||[]).forEach(function(it){ add(it, TYPE_META.adjective, r.date); });
+    (r.collocations||[]).forEach(function(it){ add(it, TYPE_META.collocation, r.date); });
+  });
+  return Array.from(map.values());
+}
+
+/* ── 表示用レポート一覧。土日で当日エントリが未生成でも、復習デーのタブをその場で用意する ── */
+function getReports(){
+  const arr = ENGLISH_REPORTS.slice();
+  const now = new Date();
+  const ds = dateStr(now);
+  const w = now.getDay();
+  if((w === 0 || w === 6) && !arr.some(function(r){ return r.date === ds; })){
+    arr.push({ date: ds, dateLabel: jaDateLabel(now), mode: 'review', virtual: true, readTimeMin: 25, coreItems: [], adjectives: [], collocations: [], todayQuiz: [] });
+  }
+  return arr;
+}
+const REPORTS = getReports();
+let currentIdx = REPORTS.length - 1;
+
+/* ── 描画パーツ ── */
 function renderSpeakBtn(text, sizeClass){
   return '<button type="button" class="spk-btn'+(sizeClass?' '+sizeClass:'')+'" data-speak="'+esc(text)+'" aria-label="Play pronunciation">🔊</button>';
+}
+
+function studyBtnHtml(id){
+  return '<button type="button" class="study-btn" data-id="'+esc(id)+'" title="クリックで「今日学習した」を記録／取り消し"></button>';
+}
+function updateStudyBtn(btn){
+  const id = btn.getAttribute('data-id');
+  const n = countOf(id);
+  const done = studiedToday(id);
+  btn.classList.toggle('done', done);
+  btn.classList.toggle('mastered', n >= TARGET_COUNT);
+  btn.textContent = (done ? '✓ 記録済み ' : '＋ 学習した ') + dots(Math.min(n, TARGET_COUNT)) + ' ' + n + '/' + TARGET_COUNT;
+}
+function updateAllStudyBtns(){
+  document.querySelectorAll('.study-btn').forEach(updateStudyBtn);
 }
 
 function renderSynonyms(syns){
@@ -2426,19 +2266,42 @@ function renderExamples(exs){
   }).join('') + '</div>';
 }
 
-function renderVCard(it, meta){
-  const termText = it.term || it.phrase;
-  return '<div class="vcard '+meta.border+'">' +
-    '<div class="vc-top"><span class="vc-badge '+meta.badge+'">'+meta.label+'</span>'+(it.register?'<span class="vc-reg">'+esc(it.register)+'</span>':'')+'</div>' +
-    '<div class="vc-term">'+esc(termText)+(it.ipa?'<span class="vc-ipa">'+esc(it.ipa)+'</span>':'')+renderSpeakBtn(termText)+'</div>' +
-    (it.meaning_en?'<div class="vc-def"><span class="vc-def-lbl">Definition</span>'+esc(it.meaning_en)+'</div>':'') +
+function renderCardBody(it){
+  return (it.meaning_en?'<div class="vc-def"><span class="vc-def-lbl">Definition</span>'+esc(it.meaning_en)+'</div>':'') +
     renderExamples(it.examples) +
     renderSynonyms(it.synonyms) +
     '<details class="ja-details"><summary>🇯🇵 日本語訳・解説を見る</summary>' +
       '<div class="vc-mean-ja">'+esc(it.meaning_ja)+'</div>' +
       '<div class="vc-expl"><div class="vc-expl-lbl">🔍 深掘り解説</div><p>'+esc(it.explanation_ja)+'</p></div>' +
-    '</details>' +
+    '</details>';
+}
+
+function renderVCard(it, meta){
+  const termText = it.term || it.phrase;
+  return '<div class="vcard '+meta.border+'">' +
+    '<div class="vc-top"><span class="vc-topl"><span class="vc-badge '+meta.badge+'">'+meta.label+'</span>'+(it.register?'<span class="vc-reg">'+esc(it.register)+'</span>':'')+'</span>'+studyBtnHtml(itemId(it))+'</div>' +
+    '<div class="vc-term">'+esc(termText)+(it.ipa?'<span class="vc-ipa">'+esc(it.ipa)+'</span>':'')+renderSpeakBtn(termText)+'</div>' +
+    renderCardBody(it) +
     '</div>';
+}
+
+function renderReviewRow(u){
+  return '<div class="rv-row"><div class="rv-row-top">' +
+    '<span class="vc-badge '+u.meta.badge+'">'+u.meta.label+'</span>' +
+    '<span class="rv-term">'+esc(u.term)+'</span>'+renderSpeakBtn(u.term,'small') +
+    '<span class="rv-intro">初出 '+esc(u.introDate.slice(5))+'</span>' + studyBtnHtml(u.id) +
+    '</div>' +
+    '<details class="rv-ans"><summary>答えを見る</summary>'+renderCardBody(u.item)+'</details></div>';
+}
+
+/* ── クイズ ── */
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i=a.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [a[i],a[j]] = [a[j],a[i]];
+  }
+  return a;
 }
 
 function renderQuiz(qs, prefix){
@@ -2467,28 +2330,242 @@ function answerQuiz(qid, chosenIdx, answerIdx){
   document.getElementById(qid+'-expl').classList.add('show');
 }
 
-function renderPanel(r, idx){
-  const html =
-    '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'</div><div class="meta-time">⏱ 目安 '+r.readTimeMin+'分</div></div>' +
-    '<div class="section"><div class="sec-title">🧠 今日のコア表現（単語・イディオム・フレーズ）</div><div class="card-grid">' +
-      r.coreItems.map(function(it){ return renderVCard(it, TYPE_META[it.type]); }).join('') + '</div></div>' +
-    '<div class="section"><div class="sec-title">✨ 知っておきたいネイティブ形容詞</div><div class="card-grid">' +
-      r.adjectives.map(function(it){ return renderVCard(it, TYPE_META.adjective); }).join('') + '</div></div>' +
-    '<div class="section"><div class="sec-title">🤝 実務でよく使うコロケーション</div><div class="card-grid">' +
-      r.collocations.map(function(it){ return renderVCard(it, TYPE_META.collocation); }).join('') + '</div></div>' +
-    '<div class="section"><div class="sec-title">📝 Today\'s Quiz（本日のクイズ・全問英語）</div>' +
-      renderQuiz(r.todayQuiz, 'today-'+idx) + '</div>';
-  return html;
+function buildMeaningQuiz(items, poolAll, n){
+  const withMeaning = poolAll.filter(function(p){ return p.item.meaning_en; });
+  const picks = shuffle(items.filter(function(u){ return u.item.meaning_en; })).slice(0, n);
+  return picks.map(function(u){
+    const correct = u.item.meaning_en;
+    const distractors = shuffle(withMeaning.filter(function(p){ return p.item.meaning_en !== correct; })).slice(0,3).map(function(p){ return p.item.meaning_en; });
+    const choices = shuffle([correct].concat(distractors));
+    return { question: 'Which of the following best matches the meaning of "'+u.term+'"?', choices: choices, answerIndex: choices.indexOf(correct), explanation: 'Correct answer: '+correct };
+  });
 }
 
-let currentIdx = ENGLISH_REPORTS.length - 1;
+/* ── 復習キュー（土日）：3回未満を「回数が少ない順 → 初出が古い順」で最大N件 ── */
+function reviewQueue(){
+  const size = parseInt(PROGRESS.settings.reviewSize, 10) || 30;
+  return UNIVERSE.filter(function(u){ return countBeforeToday(u.id) < TARGET_COUNT; })
+    .sort(function(a,b){
+      const ca = countBeforeToday(a.id), cb = countBeforeToday(b.id);
+      if(ca !== cb) return ca - cb;
+      return a.introDate < b.introDate ? -1 : (a.introDate > b.introDate ? 1 : 0);
+    })
+    .slice(0, size);
+}
+
+function entryItems(r){
+  const list = [];
+  (r.coreItems||[]).forEach(function(it){ list.push(it); });
+  (r.adjectives||[]).forEach(function(it){ list.push(it); });
+  (r.collocations||[]).forEach(function(it){ list.push(it); });
+  return list;
+}
+function currentDayIds(){
+  const r = REPORTS[currentIdx];
+  if(r.mode === 'review') return reviewQueue().map(function(u){ return u.id; });
+  return entryItems(r).map(itemId);
+}
+function updateDayBtn(){
+  const b = document.querySelector('.day-study-btn');
+  if(!b) return;
+  const ids = currentDayIds();
+  const all = ids.length > 0 && ids.every(studiedToday);
+  const review = REPORTS[currentIdx].mode === 'review';
+  b.classList.toggle('done', all);
+  b.textContent = all ? '↩ 今日の記録を取り消す' : ('✓ ' + (review ? '復習リスト' : 'この日の全項目') + 'を学習済みにする（' + ids.length + '件）');
+}
+function toggleDay(){
+  const ids = currentDayIds();
+  const all = ids.length > 0 && ids.every(studiedToday);
+  ids.forEach(function(id){ setToday(id, !all); });
+  saveProgress();
+  updateAllStudyBtns();
+  updateDayBtn();
+  refreshProgress();
+}
+
+/* ── 進捗セクション（各日のレポート先頭） ── */
+function renderCalendar(){
+  const studied = {};
+  Object.keys(PROGRESS.log).forEach(function(id){ PROGRESS.log[id].forEach(function(d){ studied[d] = (studied[d]||0) + 1; }); });
+  const now = new Date();
+  let cells = '';
+  for(let i=13;i>=0;i--){
+    const d = new Date(now.getFullYear(), now.getMonth(), now.getDate()-i);
+    const ds = dateStr(d);
+    const w = d.getDay();
+    const wk = (w === 0 || w === 6);
+    const n = studied[ds] || 0;
+    let cls = 'cal-cell';
+    let mark;
+    if(n > 0){ cls += ' hit'; mark = n + '件'; }
+    else if(i === 0){ cls += ' today'; mark = '—'; }
+    else { cls += ' miss'; mark = '未記録'; }
+    if(wk) cls += ' wk';
+    cells += '<div class="'+cls+'"><div class="cal-d">'+(d.getMonth()+1)+'/'+d.getDate()+'</div><div class="cal-w">'+DOW_JA[w]+(wk?'·復習':'')+'</div><div class="cal-m">'+mark+'</div></div>';
+  }
+  return '<div class="prog-cal-title">直近14日の学習記録（「未記録」の日が漏れです。記録はこの機能の追加日以降のみ）</div><div class="prog-cal">'+cells+'</div>';
+}
+
+function renderProgressInner(r){
+  const N = UNIVERSE.length;
+  let done3 = 0, part = 0, none = 0, sum = 0;
+  UNIVERSE.forEach(function(u){
+    const c = countOf(u.id);
+    sum += Math.min(c, TARGET_COUNT);
+    if(c >= TARGET_COUNT) done3++; else if(c > 0) part++; else none++;
+  });
+  const pct = N ? Math.round(sum / (N * TARGET_COUNT) * 100) : 0;
+
+  let todayLine;
+  if(r.mode === 'review'){
+    const q = reviewQueue();
+    const doneQ = q.filter(function(u){ return studiedToday(u.id); }).length;
+    todayLine = '🔁 今日は復習デー：復習リスト ' + q.length + ' 件中、今日記録済み ' + doneQ + ' 件。まず英語から意味を思い出し、「答えを見る」で確認 → 「学習した」を記録します。';
+  } else {
+    const items = entryItems(r);
+    const ones = items.filter(function(it){ return countOf(itemId(it)) >= 1; }).length;
+    const threes = items.filter(function(it){ return countOf(itemId(it)) >= TARGET_COUNT; }).length;
+    todayLine = '📅 この日の表現 ' + items.length + ' 件：1回以上学習済み ' + ones + ' 件 / 3回達成 ' + threes + ' 件。学習したら各カードの「学習した」か右上のボタンで記録します（週末の復習デーが2〜3回目の機会です）。';
+  }
+
+  const pending = UNIVERSE.filter(function(u){ return countOf(u.id) < TARGET_COUNT; }).sort(function(a,b){
+    const ca = countOf(a.id), cb = countOf(b.id);
+    if(ca !== cb) return ca - cb;
+    return a.introDate < b.introDate ? -1 : (a.introDate > b.introDate ? 1 : 0);
+  });
+  const shown = pending.slice(0, 40);
+  const rows = shown.map(function(u){
+    const c = countOf(u.id);
+    const last = logOf(u.id).slice(-1)[0] || '—';
+    return '<tr><td>'+esc(u.term)+'</td><td>'+esc(u.introDate.slice(5))+'</td><td>'+dots(Math.min(c,TARGET_COUNT))+' '+c+'/'+TARGET_COUNT+'</td><td>'+esc(last.length>5?last.slice(5):last)+'</td></tr>';
+  }).join('');
+  const more = pending.length > shown.length ? '<div class="rv-help">…ほか '+(pending.length-shown.length)+' 件（復習デーの復習リストが少ない順・古い順に消化します）</div>' : '';
+
+  const sizeOpts = [20,30,40,60].map(function(v){
+    return '<option value="'+v+'"'+((parseInt(PROGRESS.settings.reviewSize,10)||30)===v?' selected':'')+'>'+v+'件</option>';
+  }).join('');
+
+  return '<div class="sec-title">📊 学習進捗（目標：各表現 '+TARGET_COUNT+' 回）</div>' +
+    '<div class="prog-box">' +
+      '<div class="prog-stats">' +
+        '<div class="prog-tile"><div class="n">'+N+'</div><div class="l">累計の表現数</div></div>' +
+        '<div class="prog-tile ok"><div class="n">'+done3+'</div><div class="l">'+TARGET_COUNT+'回達成</div></div>' +
+        '<div class="prog-tile part"><div class="n">'+part+'</div><div class="l">1〜'+(TARGET_COUNT-1)+'回</div></div>' +
+        '<div class="prog-tile none"><div class="n">'+none+'</div><div class="l">未学習</div></div>' +
+      '</div>' +
+      '<div class="prog-bar"><div class="prog-bar-fill" style="width:'+pct+'%"></div></div>' +
+      '<div class="prog-bar-lbl">全体の達成率 '+pct+'%（累計 '+sum+' / 目標 '+(N*TARGET_COUNT)+' 回）</div>' +
+      '<div class="prog-today">'+esc(todayLine)+'</div>' +
+      renderCalendar() +
+      '<details class="prog-detail"><summary>📋 要復習リスト（'+TARGET_COUNT+'回未満：'+pending.length+' 件）</summary>' +
+        (pending.length ? '<div class="tbl-scroll"><table class="prog-tbl"><thead><tr><th>表現</th><th>初出</th><th>回数</th><th>最終学習日</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+more : '<div class="rv-help">すべての表現が'+TARGET_COUNT+'回に達しています 🎉</div>') +
+      '</details>' +
+      '<details class="prog-detail"><summary>⚙ 進捗データの管理・設定</summary>' +
+        '<div class="prog-mgmt">' +
+          '<button type="button" class="btn small" onclick="exportProgress()">進捗をJSONで保存</button>' +
+          '<label class="btn small">JSONを読み込む<input type="file" accept=".json,application/json" style="display:none" onchange="importProgress(event)"></label>' +
+          '<button type="button" class="btn small" onclick="resetProgress()">進捗をリセット</button>' +
+          '<label>復習リストの件数 <select onchange="setReviewSize(this.value)">'+sizeOpts+'</select></label>' +
+        '</div>' +
+        '<div class="rv-help">進捗はこのブラウザ内（localStorage）に保存されます。端末を変える場合は「JSONで保存」→「読み込む」で移せます。CSVダウンロードにも学習回数が含まれます。</div>' +
+      '</details>' +
+    '</div>';
+}
+
+function refreshProgress(){
+  const el = document.getElementById('progress-section');
+  if(!el) return;
+  const opens = [].map.call(el.querySelectorAll('details.prog-detail'), function(d){ return d.open; });
+  el.innerHTML = renderProgressInner(REPORTS[currentIdx]);
+  el.querySelectorAll('details.prog-detail').forEach(function(d, i){ d.open = !!opens[i]; });
+}
+
+function exportProgress(){
+  const data = { version: 1, exportedAt: new Date().toISOString(), log: PROGRESS.log, settings: PROGRESS.settings };
+  const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'english_daily_progress.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+function importProgress(ev){
+  const f = ev.target.files && ev.target.files[0];
+  if(!f) return;
+  const rd = new FileReader();
+  rd.onload = function(){
+    try{
+      const p = JSON.parse(rd.result);
+      if(!p || typeof p.log !== 'object') throw new Error('bad file');
+      Object.keys(p.log).forEach(function(id){
+        const merged = logOf(id).concat(p.log[id]).filter(function(d, i, a){ return typeof d === 'string' && a.indexOf(d) === i; }).sort();
+        if(merged.length) PROGRESS.log[id] = merged;
+      });
+      if(p.settings){ PROGRESS.settings = Object.assign(PROGRESS.settings, p.settings); }
+      saveProgress();
+      renderAll();
+      alert('進捗を読み込みました（既存の記録とは日付単位で統合しています）。');
+    }catch(e){
+      alert('読み込めませんでした。「進捗をJSONで保存」で作ったファイルを選んでください。');
+    }
+  };
+  rd.readAsText(f);
+}
+function resetProgress(){
+  if(!confirm('学習進捗をすべてリセットします。よろしいですか？（元に戻せません。先にJSON保存をおすすめします）')) return;
+  PROGRESS.log = {};
+  saveProgress();
+  renderAll();
+}
+function setReviewSize(v){
+  PROGRESS.settings.reviewSize = parseInt(v, 10) || 30;
+  saveProgress();
+  renderAll();
+}
+
+/* ── パネル描画 ── */
+function renderPanel(r, idx){
+  const review = (r.mode === 'review');
+  const head =
+    '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'</div>' +
+    (review ? '<div class="meta-tag">🔁 復習デー（新規なし）</div>' : '') +
+    '<div class="meta-time">⏱ 目安 '+(r.readTimeMin||20)+'分</div>' +
+    '<button type="button" class="day-study-btn"></button></div>' +
+    '<div class="section" id="progress-section">'+renderProgressInner(r)+'</div>';
+
+  if(review){
+    const q = reviewQueue();
+    const rows = q.length ? q.map(renderReviewRow).join('') : '<div class="rv-help">復習が必要な表現はありません 🎉（全表現が'+TARGET_COUNT+'回達成済み）</div>';
+    const quiz = q.length ? buildMeaningQuiz(q, UNIVERSE, 10) : [];
+    return head +
+      '<div class="section"><div class="sec-title">🔁 今日の復習リスト（'+TARGET_COUNT+'回未満を、回数が少ない順・初出が古い順に '+q.length+' 件）</div>' +
+        '<div class="rv-help">見出し語から意味を思い出す → 「答えを見る」で確認 → 「学習した」を記録。土日は新しい表現を追加しません。</div>' + rows + '</div>' +
+      '<div class="section"><div class="sec-title">📝 復習クイズ（この復習リストから・全問英語）</div>' +
+        (quiz.length ? renderQuiz(quiz, 'wk-'+idx) + '<button type="button" class="btn" onclick="renderAll()">🔄 別の問題で出題する</button>' : '<div class="rv-help">クイズにできる表現がまだありません。</div>') +
+      '</div>';
+  }
+
+  return head +
+    '<div class="section"><div class="sec-title">🧠 今日のコア表現（単語・イディオム・フレーズ）</div><div class="card-grid">' +
+      (r.coreItems||[]).map(function(it){ return renderVCard(it, TYPE_META[it.type] || TYPE_META.word); }).join('') + '</div></div>' +
+    '<div class="section"><div class="sec-title">✨ 知っておきたいネイティブ形容詞</div><div class="card-grid">' +
+      (r.adjectives||[]).map(function(it){ return renderVCard(it, TYPE_META.adjective); }).join('') + '</div></div>' +
+    '<div class="section"><div class="sec-title">🤝 実務でよく使うコロケーション</div><div class="card-grid">' +
+      (r.collocations||[]).map(function(it){ return renderVCard(it, TYPE_META.collocation); }).join('') + '</div></div>' +
+    '<div class="section"><div class="sec-title">📝 Today\'s Quiz（本日のクイズ・全問英語）</div>' +
+      renderQuiz(r.todayQuiz||[], 'today-'+idx) + '</div>';
+}
 
 function renderTabs(){
   const nav = document.getElementById('tab-nav-inner');
-  nav.innerHTML = ENGLISH_REPORTS.map(function(r, i){
+  nav.innerHTML = REPORTS.map(function(r, i){
     const d = new Date(r.date+'T00:00:00');
-    const dow = ['日','月','火','水','木','金','土'][d.getDay()];
-    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+r.date.slice(5)+'<span class="dow">'+dow+'曜</span></button>';
+    const dow = DOW_JA[d.getDay()];
+    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+r.date.slice(5)+'<span class="dow">'+dow+'曜'+(r.mode==='review'?'·復習':'')+'</span></button>';
   }).join('');
 }
 
@@ -2500,12 +2577,14 @@ function selectDay(i){
 
 function renderAll(){
   const panels = document.getElementById('panels');
-  const r = ENGLISH_REPORTS[currentIdx];
+  const r = REPORTS[currentIdx];
   panels.innerHTML = '<div class="report-panel active">' + renderPanel(r, currentIdx) + '</div>';
   const totalToday = ENGLISH_REPORTS.reduce(function(s, x){
-    return s + x.coreItems.length + x.adjectives.length + x.collocations.length;
+    return s + entryItems(x).length;
   }, 0);
   document.getElementById('stat-badge').textContent = '直近7日で ' + totalToday + ' 表現を掲載中';
+  updateAllStudyBtns();
+  updateDayBtn();
 }
 
 /* ── Pronunciation audio (Web Speech API — no audio files, zero extra data) ── */
@@ -2521,32 +2600,22 @@ function speak(text){
   window.speechSynthesis.speak(u);
 }
 document.addEventListener('click', function(e){
-  const btn = e.target.closest('.spk-btn');
-  if(!btn) return;
-  speak(btn.getAttribute('data-speak'));
+  const spk = e.target.closest('.spk-btn');
+  if(spk){ speak(spk.getAttribute('data-speak')); return; }
+  const sb = e.target.closest('.study-btn');
+  if(sb){
+    const id = sb.getAttribute('data-id');
+    setToday(id, !studiedToday(id));
+    saveProgress();
+    updateAllStudyBtns();
+    updateDayBtn();
+    refreshProgress();
+    return;
+  }
+  if(e.target.closest('.day-study-btn')){ toggleDay(); }
 });
 
-/* ── Review quiz (spaced repetition pool, English only) ── */
-function flattenPool(reports, excludeLastOf){
-  const pool = [];
-  reports.forEach(function(r){
-    if(r.date === excludeLastOf) return;
-    r.coreItems.forEach(function(it){ pool.push({ label: it.term, meaning: it.meaning_en }); });
-    r.adjectives.forEach(function(it){ pool.push({ label: it.term, meaning: it.meaning_en }); });
-    r.collocations.forEach(function(it){ pool.push({ label: it.phrase, meaning: it.meaning_en }); });
-  });
-  return pool.filter(function(p){ return p.meaning; });
-}
-
-function shuffle(arr){
-  const a = arr.slice();
-  for(let i=a.length-1;i>0;i--){
-    const j = Math.floor(Math.random()*(i+1));
-    [a[i],a[j]] = [a[j],a[i]];
-  }
-  return a;
-}
-
+/* ── アーカイブ取得（全期間の復習・CSV用） ── */
 async function fetchArchiveReports(){
   try{
     const res = await fetch('archive.html', {cache:'no-store'});
@@ -2559,34 +2628,33 @@ async function fetchArchiveReports(){
     return [];
   }
 }
+let _archiveP = null;
+function loadArchive(){
+  if(!_archiveP) _archiveP = fetchArchiveReports();
+  return _archiveP;
+}
 
+/* ── ページ下部のReview Quiz（3回未満の表現を優先して出題） ── */
 async function startReview(){
   document.getElementById('rv-pre').style.display = 'none';
   const body = document.getElementById('rv-body');
   body.innerHTML = '<div id="rv-empty">Loading...</div>';
 
-  const archiveReports = await fetchArchiveReports();
+  const archiveReports = await loadArchive();
   const latestDate = ENGLISH_REPORTS[ENGLISH_REPORTS.length-1].date;
-  const allReports = archiveReports.concat(ENGLISH_REPORTS);
-  const pool = flattenPool(allReports, latestDate);
+  const uni = buildUniverse(archiveReports.concat(ENGLISH_REPORTS));
+  const pool = uni.filter(function(u){ return u.introDate !== latestDate && u.item.meaning_en; });
 
   if(pool.length < 4){
     body.innerHTML = '<div id="rv-empty">まだ復習コンテンツが十分にありません。学習日数が増えると、ここに過去の表現の復習クイズ（英語）が表示されます。</div>';
     return;
   }
-
-  const picks = shuffle(pool).slice(0, Math.min(8, pool.length));
-  const questions = picks.map(function(item){
-    const distractors = shuffle(pool.filter(function(p){ return p.meaning !== item.meaning; })).slice(0,3).map(function(p){ return p.meaning; });
-    const choices = shuffle([item.meaning].concat(distractors));
-    const answerIndex = choices.indexOf(item.meaning);
-    return { question: 'Which of the following best matches the meaning of "'+item.label+'"?', choices: choices, answerIndex: answerIndex, explanation: 'Correct answer: '+item.meaning };
-  });
-
-  body.innerHTML = renderQuiz(questions, 'review');
+  const pending = pool.filter(function(u){ return countOf(u.id) < TARGET_COUNT; });
+  const base = pending.length >= 4 ? pending : pool;
+  body.innerHTML = renderQuiz(buildMeaningQuiz(base, pool, 8), 'review');
 }
 
-/* ── CSV export ── */
+/* ── CSV export（学習回数・学習日つき） ── */
 function csvField(s){
   const v = (s===undefined||s===null) ? '' : String(s);
   return '"' + v.replace(/"/g,'""') + '"';
@@ -2594,35 +2662,27 @@ function csvField(s){
 
 function entryToRows(r){
   const rows = [];
-  r.coreItems.forEach(function(it){
-    rows.push([r.date, TYPE_META[it.type].label, it.term, it.meaning_en, it.meaning_ja,
-      it.examples.join(' / '),
+  function push(cat, term, it){
+    const id = itemId(it);
+    rows.push([r.date, cat, term, it.meaning_en||'', it.meaning_ja,
+      (it.examples||[]).join(' / '),
       (it.synonyms||[]).map(function(s){ return s.term+':'+s.nuance_ja; }).join(' ; '),
-      it.explanation_ja]);
-  });
-  r.adjectives.forEach(function(it){
-    rows.push([r.date, '形容詞', it.term, it.meaning_en, it.meaning_ja,
-      it.examples.join(' / '),
-      (it.synonyms||[]).map(function(s){ return s.term+':'+s.nuance_ja; }).join(' ; '),
-      it.explanation_ja]);
-  });
-  r.collocations.forEach(function(it){
-    rows.push([r.date, 'コロケーション', it.phrase, it.meaning_en||'', it.meaning_ja,
-      it.examples.join(' / '),
-      (it.synonyms||[]).map(function(s){ return s.term+':'+s.nuance_ja; }).join(' ; '),
-      it.explanation_ja]);
-  });
+      it.explanation_ja, countOf(id), logOf(id).join(' ')]);
+  }
+  (r.coreItems||[]).forEach(function(it){ push((TYPE_META[it.type]||TYPE_META.word).label, it.term, it); });
+  (r.adjectives||[]).forEach(function(it){ push('形容詞', it.term, it); });
+  (r.collocations||[]).forEach(function(it){ push('コロケーション', it.phrase, it); });
   return rows;
 }
 
 async function exportCsv(){
-  const archiveReports = await fetchArchiveReports();
+  const archiveReports = await loadArchive();
   const allReports = archiveReports.concat(ENGLISH_REPORTS);
-  const header = ['date','category','term','meaning_en','meaning_ja','examples','synonyms','explanation_ja'];
+  const header = ['date','category','term','meaning_en','meaning_ja','examples','synonyms','explanation_ja','study_count','study_dates'];
   let rows = [header];
   allReports.forEach(function(r){ rows = rows.concat(entryToRows(r)); });
   const csv = rows.map(function(row){ return row.map(csvField).join(','); }).join('\r\n');
-  const blob = new Blob(["﻿"+csv], {type:'text/csv;charset=utf-8;'});
+  const blob = new Blob(["\uFEFF"+csv], {type:'text/csv;charset=utf-8;'});
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
@@ -2633,8 +2693,17 @@ async function exportCsv(){
   URL.revokeObjectURL(url);
 }
 
+/* ── 起動 ── */
+loadProgress();
+UNIVERSE = buildUniverse(ENGLISH_REPORTS);
 renderTabs();
 renderAll();
+loadArchive().then(function(arch){
+  if(arch && arch.length){
+    UNIVERSE = buildUniverse(arch.concat(ENGLISH_REPORTS));
+    renderAll();
+  }
+});
 </script>
 </body>
 </html>
