@@ -6003,7 +6003,14 @@ function card(term, meaningEn, meaningJa, exs, explJa, syns){
 
 function renderPanel(r){
   if(r.mode === 'review'){
-    return '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'（復習デー）</div></div><div id="empty-note">この日は復習デーのため、新規の表現はありません（復習内容は公開ページの進捗・復習リストで管理）。</div>';
+    const ps = (r.passages||[]).map(function(p){
+      return '<div class="vcard" style="margin-bottom:12px"><div class="vc-term">'+esc(p.title||'')+(p.genre?' <span style="font-size:11px;color:#6d28d9">['+esc(p.genre)+']</span>':'')+'</div>' +
+        '<div class="vc-ex"><p>'+esc(String(p.text||'').replace(/\{\{([^|}]+)\|([^}]+)\}\}/g,'$1')).replace(/\n/g,'<br>')+'</p></div>' +
+        (p.translation_ja?'<div class="vc-expl"><p>'+esc(p.translation_ja).replace(/\n/g,'<br>')+'</p></div>':'')+'</div>';
+    }).join('');
+    return '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'（復習デー）</div></div>' +
+      (ps ? (r.scopeLabel?'<div class="vc-grammar" style="margin-bottom:10px">対象：'+esc(r.scopeLabel)+'</div>':'') + ps
+          : '<div id="empty-note">この日は復習デーのため、新規の表現はありません。</div>');
   }
   return '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'</div></div>' +
     '<div class="section"><div class="sec-title">コア表現</div><div class="card-grid">' +
