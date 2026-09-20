@@ -2354,7 +2354,7 @@ function rebuildAll(){
 
 /* ── 表示用レポート一覧。土日で当日エントリが未生成でも、復習デーのタブをその場で用意する ── */
 function getReports(){
-  const arr = ENGLISH_REPORTS.slice();
+  const arr = ENGLISH_REPORTS.slice().sort(function(a,b){ return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); });
   const now = new Date();
   const ds = dateStr(now);
   const w = now.getDay();
