@@ -179,6 +179,23 @@ a{color:#0d6e6e}
 .rv-ans summary::-webkit-details-marker{display:none}
 .rv-ans summary::marker{content:''}
 .rv-ans[open] summary{background:#d7f5ef;margin-bottom:8px}
+
+/* Daily-record chips, calendar, review passages */
+.cnt-chip{font-size:11px;font-weight:700;color:#7a7364;background:#f3f4f6;padding:3px 9px;border-radius:12px;white-space:nowrap;flex:0 0 auto}
+.cnt-chip.mastered{background:#fef9c3;color:#854d0e}
+.cal-cell.none{background:#f9fafb;border-style:dashed}
+.cal-cell.none .cal-m{color:#d1d5db}
+.tab-btn .ck{color:#16a34a;font-weight:800;margin-left:3px}
+.psg{background:#fff;border:1px solid #efe9dc;border-left:5px solid #7c3aed;border-radius:12px;padding:16px 18px;margin-bottom:14px}
+.psg-head{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.psg-no{font-size:11px;font-weight:800;color:#a8a190}
+.psg-title{font-size:14.5px;font-weight:800;color:#1f2937}
+.psg-genre{font-size:10px;font-weight:700;background:#f5f3ff;color:#6d28d9;padding:2px 9px;border-radius:20px}
+.psg-text{font-size:14px;line-height:2;color:#25211b}
+mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font-weight:700;cursor:help}
+.psg-chips{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
+.tchip{font-size:11px;background:#f5f3ff;color:#5b21b6;padding:2px 9px;border-radius:12px;cursor:help}
+.psg-ja{font-size:13px;color:#4b4638;line-height:1.9}
 </style>
 </head>
 <body>
@@ -2137,6 +2154,45 @@ const ENGLISH_REPORTS = [
   dateLabel: "2026年9月20日（日）",
   mode: "review",
   readTimeMin: 25,
+  scopeLabel: "9/7〜9/13に初出の表現 60件",
+  passages: [
+    {
+      title: "Following Up on the Meridian Earn-Out",
+      genre: "Business Email",
+      text: "Subject: Following up on the Meridian earn-out\n\nHi Daniel,\n\nQuick note before the 3pm call — let's keep this {{germane|germane}} to the earn-out dispute rather than reopening the whole agreement. The {{upshot|upshot}} of yesterday's session is that their counsel still won't confirm who actually {{calls the shots|call the shots}} on their side; every proposal gets kicked upstairs and comes back diluted.\n\nIf you talk to them first, just {{give me the headline|give me the headline}} afterward — I don't need the play-by-play. My read is that we'll eventually have to {{bite the bullet|bite the bullet}} and offer a modest cash top-up to {{sweeten the deal|sweeten the deal}}, because their argument that the KPI definition was ambiguous simply doesn't {{hold water|hold water}} once you reread Schedule 4.2.\n\nYou and I are {{cut from the same cloth|cut from the same cloth}} on this: neither of us wants to drag it into Q4. Once legal signs off, finance can {{cut a check|cut a check}} within 48 hours, and we can finally {{put a bow on it|put a bow on it}} before the holidays.\n\nTalk soon,\nPriya",
+      translation_ja: "件名: Meridianのアーンアウトについてのフォローアップ\n\nダニエルへ\n\n3時の電話の前に手短に一点。アーンアウトの争点に話を絞ってください、契約全体を蒸し返さないように。昨日のセッションで分かったのは、先方の弁護士がいまだに誰が実権を握っているのか明言しないという点です。提案のたびに上に上げられて、薄められて戻ってきます。\n\n先方とまず話すなら、後で結論だけ教えてください。詳しい経緯は要りません。私の見立てでは、結局は腹をくくって少額の現金上乗せで条件を甘くすることになりそうです。KPIの定義が曖昧だったという先方の主張は、スケジュール4.2をもう一度読めば筋が通らないからです。\n\nこの件については私たちは根っこが同じタイプです。どちらも第4四半期に長引かせたくない。法務のサインが出れば経理は48時間以内に小切手を切れます。年末休暇の前にきれいに仕上げてしまいましょう。\n\nそれでは、\nプリヤ"
+    },
+    {
+      title: "Competitive Review — Thursday",
+      genre: "Meeting Recap",
+      text: "Attendees flagged that Solera Capital has become a {{voracious|voracious}} acquirer in our space, closing three bolt-ons since June, and its new fund is giving our platform {{a real run for its money|give someone a run for their money}} on pricing. Marcus raised a more {{insidious|insidious}} risk: our two top reps have gone quiet on renewal calls, and we agreed someone should quietly {{run the traps|run the traps}} with HR before the board update.\n\nOn strategy, Elena's expansion plan is still {{quixotic|quixotic}} — ambitious and admirable, but about a year ahead of the balance sheet. We asked her to {{put some meat on the bones|put some meat on the bones}} before January: real headcount, real timeline. Two culture notes surfaced too: engineering has grown {{insular|insular}}, resisting input from the new product hires, and several people find the new VP {{unctuous|unctuous}} toward leadership but dismissive otherwise.\n\nNobody wants the vendor renewal to turn into another {{vexed|vexed}} negotiation like last year's three-month standoff, and procurement should not let the vendor {{pull the rug out from under them|pull the rug out from under (someone)}} again by changing terms at the last minute.",
+      translation_ja: "会議メモ — 競合レビュー（木曜）\n\n出席者から、Solera Capitalが当業界で貪欲な買収者になっているとの指摘がありました。6月以降すでに3件の小型買収を完了しており、新しいミッドマーケットファンドは価格面で我々のプラットフォームに苦戦させるほどの好勝負を仕掛けてきています。マーカスはより厄介なリスクを提起しました。トップ営業2名が更新の電話で口数が減っており、取締役会の報告前に静かにHRと確認すべきだと合意しました。\n\n戦略面では、エレナの拡張計画は依然として現実離れした理想主義のままです — 志は立派ですが、財務状況より1年ほど先を行っています。1月までに具体的な人員計画と時間軸で肉付けするよう依頼しました。組織文化についても2点浮上しました。エンジニアリングチームは閉鎖的になっており新しいプロダクト採用者の意見を受け入れず、新任VPは上には愛想がいいのに他には冷淡だと感じている人が複数いました。\n\nベンダー更新契約が、去年のような3か月も長引く厄介な交渉に戻るのは避けたいところです。調達チームが直前になって条件を変えられ、土壇場ではしごを外されるようなことが二度とないようにすべきです。"
+    },
+    {
+      title: "Caldwell Foods Rejects Revised Bid",
+      genre: "News Brief",
+      text: "MARKET BRIEF — Caldwell Foods rejects revised bid\n\nCaldwell Foods' board rejected a sweetened offer from Harrow Industrial on Tuesday, calling the buyer's timeline argument \"{{specious|specious}}\" and warning that only a {{cursory|cursory}} review of the synergy assumptions would have caught the gap. Caldwell has remained {{intransigent|intransigent}} on price since talks began in July, and people close to the company say management wants to {{keep Harrow at arm's length|keep someone at arm's length}} until a formal process is announced.\n\nThe company's founder, famously {{unassuming|unassuming}} for someone who built a nine-figure business from a single Ohio plant, issued a short statement blaming Harrow's \"{{brash|brash}}\" negotiating style for the breakdown. Analysts are split: Caldwell's stock has been {{lackluster|lackluster}} for two straight quarters, and some argue management is too {{entrenched|entrenched}} in the founding family to consider a fair deal at any price.\n\nHarrow's own guidance was notably {{understated|understated}}, hinting only that it \"continues to evaluate its options\" — market watchers expect the buyer to {{pull the trigger|pull the trigger}} on a hostile tender offer within weeks if talks stay frozen.",
+      translation_ja: "市場速報 — Caldwell Foods、修正オファーを拒否\n\nCaldwell Foodsの取締役会は火曜日、Harrow Industrialからの条件引き上げ後のオファーを拒否し、買い手のタイムライン主張を「見かけ倒し」と評した。合成効果の前提をざっと確認しただけでもこのギャップには気づけたはずだと警告している。Caldwellは7月の協議開始以来、価格について一切譲らない姿勢を貫いており、正式なプロセスが発表されるまでHarrowとは距離を置くつもりだと関係者は語る。\n\n同社の創業者は、オハイオ州の一工場から9桁規模の事業を築いた人物にしては珍しく控えめな性格で知られるが、今回は短い声明でHarrowの「高慢な」交渉姿勢が決裂の原因だと非難した。アナリストの反応は割れている。Caldwellの株価は2四半期連続で精彩を欠いており、経営陣が創業家に固執しすぎてどんな価格でも公正な取引を検討できないでいるとの見方もある。\n\nHarrowの発表は控えめなトーンにとどまり、「引き続き選択肢を検討している」とだけ示唆した。交渉が凍りついたままなら、数週間以内に買い手が敵対的TOBに踏み切るだろうと市場は見ている。"
+    },
+    {
+      title: "After the Audit",
+      genre: "Dialogue",
+      text: "\"Did you hear the board {{read Danny the riot act|read someone the riot act}} after the audit?\"\n\"Yeah. Apparently someone {{let the cat out of the bag|let the cat out of the bag}} about the expense reports before he could explain himself.\"\n\"{{I hear what you're saying, but|I hear what you're saying, but ...}} he's been {{recalcitrant|recalcitrant}} about submitting receipts for a year. This isn't new.\"\n\"Sure, but the accusation that he falsified numbers could {{vitiate|vitiate}} the whole internal review if it turns out to be wrong — nobody should {{impute|impute}} intent without proof.\"\n\"Fair. Though honestly, cash and points aren't {{fungible|fungible}} the way he treated them, and that's most of the problem.\"\n\"He's always had {{a bit of a chip on his shoulder|have a chip on your shoulder}} about being the only VP without an MBA, like he has something to prove.\"\n\"Maybe. But at this point {{that ship has sailed|that ship has sailed}} — HR's already involved.\"\n\"Still, I'd {{hedge my bets|hedge your bets}} before assuming he's finished here. He's survived worse.\"",
+      translation_ja: "「監査のあと、取締役会がダニーをこっぴどく叱ったって聞いた？」\n「うん。誰かが彼が釈明する前に経費精算の件をうっかり漏らしたみたいだよ」\n「言いたいことは分かるけど、彼はここ1年、領収書の提出をずっと渋ってたじゃない。今に始まったことじゃないよ」\n「そうだけど、数字を改ざんしたっていう疑いが間違いだった場合、内部レビュー全体を台無しにしかねない。証拠もなく悪意があったと決めつけるのはよくない」\n「それはそうね。でも正直、彼は現金とポイントを同じものみたいに扱ってたから、それがそもそも問題の大半だと思う」\n「彼はMBAを持ってない唯一の副社長だってことに、ずっと何か引け目を感じてたみたいだしね。何かを証明したがってる感じ」\n「かもね。でもこの段階まで来たらもう手遅れよ。人事はもう動いてる」\n「それでも、彼がここで終わりだと決めつけるのは慎重にしたほうがいいと思う。もっとひどい状況も乗り越えてきた人だから」"
+    },
+    {
+      title: "Expense Policy Update",
+      genre: "Internal Memo",
+      text: "INTERNAL MEMO — Expense Policy Update\n\nBefore the new travel policy rolls out next month, {{let's take a step back|Let's take a step back.}} and acknowledge that last year's rollout was rocky. Please review the attached summary {{at your earliest convenience|at your earliest convenience}} and send comments by Friday.\n\nA few notes from the working group. The finance team was, {{for lack of a better word|for lack of a better word}}, blunt in last year's emails, and that tone won't be repeated. We also heard that one director tried to {{pull rank|pull rank}} to get an exception approved outside the system; going forward, no exceptions will be made regardless of title. Please stay {{punctilious|punctilious}} about attaching receipts for anything over $75 — that one rule isn't changing.\n\nBookings already approved before October 1 will be {{grandfathered in|grandfather in}} under the old policy, so nobody currently traveling needs to resubmit anything. During review sessions, please be {{conciliatory|conciliatory}} rather than {{obstreperous|obstreperous}} when raising objections — loud pushback in the all-hands rarely {{carries the day|carry the day}} the way a written comment does. And if a clause genuinely reads as {{obtuse|obtuse}}, tell us exactly which line; \"make it simpler\" alone isn't actionable feedback.\n\nThanks for your patience as we get this right.",
+      translation_ja: "社内メモ — 経費規定の更新について\n\n来月の新しい出張規定の展開の前に、一度立ち止まって、昨年の展開がうまくいかなかったことを認めておきたいと思います。添付の概要を早めに確認のうえ、金曜までにコメントを送ってください。\n\nワーキンググループからいくつか補足します。経理チームは昨年のメール対応で、率直に言えば言葉が厳しすぎました。今回はそうならないようにします。また、あるディレクターが承認システムを飛ばして役職を盾に例外を通そうとしたケースがありました。今後は役職に関係なく例外は一切認めません。75ドルを超える支出については、これまで通り領収書添付を厳格に守ってください。この規定は変わりません。\n\n10月1日より前に承認済みの予約は旧規定のまま適用対象として引き継がれるので、現在出張中の人が何かを再提出する必要はありません。レビューの場では、反発するより歩み寄る姿勢でお願いします。全体会議での大声の反発が、書面でのコメントほど議論を動かすことはめったにありません。また、条文が本当に分かりにくいと感じたら、具体的にどの一文か教えてください。「もっと簡潔に」というだけのフィードバックでは対応できません。\n\nご協力に感謝します。"
+    },
+    {
+      title: "The Thursday I Wrote the Letter",
+      genre: "Personal Essay",
+      text: "Let me {{set the record straight|set the record straight}}: I didn't quit because of one bad quarter. I'd been {{dragging my feet|drag your feet}} on the decision for almost two years, half-hoping the role would change shape on its own if I just waited long enough.\n\nLooking back, I think I let my own habits {{ossify|ossify}} — the same commute, the same Tuesday meeting, the same three sentences I used to {{obfuscate|obfuscate}} how bored I actually was whenever someone asked how work was going. I'd {{vacillate|vacillate}} between drafting a resignation letter on a Sunday night and deleting it by Monday morning, over and over, for months.\n\nTo {{bury the lede|bury the lede}} slightly less: what actually pushed me over the edge wasn't the job at all, it was watching a friend {{throw in the towel|throw in the towel}} on her own stalled career and admit, out loud, that she'd been {{keeping her doubts close to the vest|keep something close to the vest}} for a year. I didn't want to {{abscond|abscond}} the moment something better came along instead of just leaving properly, the way she wished she had.\n\nSo one Thursday I told myself, {{let's take a beat|Let's take a beat.}}, wrote the letter, and didn't delete it.",
+      translation_ja: "はっきりさせておきたいのだけれど、私が辞めたのは一度の悪い四半期のせいではない。決断をほぼ2年間先延ばしにしていた。放っておけば役割のほうが勝手に変わってくれるのではないかと、半分期待しながら。\n\n振り返ると、自分の習慣を固まらせてしまっていたのだと思う。同じ通勤路、同じ火曜のミーティング、仕事はどうかと聞かれるたびに実はどれほど退屈しているかをごまかすために使っていた同じ3つの決まり文句。辞表を日曜の夜に書いては月曜の朝に消す、というのを何か月も繰り返し、気持ちが揺れ動いていた。\n\n本題を少しだけ先延ばしにせずに言うと、私の背中を押したのは仕事そのものではなく、友人が自分の停滞したキャリアに匙を投げ、1年間ずっと不安を胸の内にしまい込んでいたと打ち明けるのを見たことだった。彼女が本当はそうしたかったと悔やんでいたように、何か良い話が来るまでこっそり逃げ出すのではなく、きちんと辞めたかった。\n\nだからある木曜日、自分に「一呼吸置こう」と言い聞かせて手紙を書き、そのまま消さなかった。"
+    }
+  ],
   coreItems: [],
   adjectives: [],
   collocations: [],
@@ -2165,10 +2221,12 @@ function dateStr(d){ return d.getFullYear()+'-'+pad2(d.getMonth()+1)+'-'+pad2(d.
 function todayStr(){ return dateStr(new Date()); }
 function jaDateLabel(d){ return d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.getDate()+'日（'+DOW_JA[d.getDay()]+'）'; }
 
-/* ── 学習進捗（localStorage：表現ごとに「学習した日付」を記録。回数＝日付の数。目標3回） ── */
+/* ── 学習進捗 ──
+   基本は「日次」：各日のレポート（平日=新規12表現 / 土日=復習文章の対象表現）を読み終えたら、その日を1回「完了」にする。
+   完了した日に含まれる全表現が +1回。ほかに、取りこぼしリストの個別チェック（log）も +1回として数える。目標は各表現3回。 */
 const TARGET_COUNT = 3;
 const PROGRESS_KEY = 'englishDailyProgress_v1';
-let PROGRESS = { log: {}, settings: { reviewSize: 30 } };
+let PROGRESS = { days: {}, log: {}, settings: { reviewSize: 30 } };
 
 function loadProgress(){
   try{
@@ -2176,18 +2234,18 @@ function loadProgress(){
     if(!raw) return;
     const p = JSON.parse(raw);
     if(p && p.log && typeof p.log === 'object'){ PROGRESS.log = p.log; }
+    if(p && p.days && typeof p.days === 'object'){ PROGRESS.days = p.days; }
     if(p && p.settings){ PROGRESS.settings = Object.assign(PROGRESS.settings, p.settings); }
   }catch(e){}
 }
 function saveProgress(){
   try{ localStorage.setItem(PROGRESS_KEY, JSON.stringify(PROGRESS)); }catch(e){}
 }
-function itemId(it){ return String(it.term || it.phrase || '').toLowerCase().replace(/\s+/g,' ').trim(); }
+function normId(s){ return String(s||'').toLowerCase().replace(/\s+/g,' ').trim(); }
+function itemId(it){ return normId(it.term || it.phrase); }
 function logOf(id){ return PROGRESS.log[id] || []; }
-function countOf(id){ return logOf(id).length; }
-function countBeforeToday(id){ const t = todayStr(); return logOf(id).filter(function(d){ return d !== t; }).length; }
 function studiedToday(id){ return logOf(id).indexOf(todayStr()) >= 0; }
-function setToday(id, want){
+function setAdhocToday(id, want){
   const t = todayStr();
   const arr = logOf(id).slice();
   const i = arr.indexOf(t);
@@ -2201,8 +2259,44 @@ function dots(n){
   return s;
 }
 
-/* ── 全表現の一覧（初出日つき・重複排除）。アーカイブ取得後に全期間へ拡張される ── */
+/* ── レポート・表現一覧 ── */
+function mergeReports(arch, live){
+  const map = {};
+  (arch||[]).forEach(function(r){ map[r.date] = r; });
+  (live||[]).forEach(function(r){ map[r.date] = r; });
+  return Object.keys(map).sort().map(function(d){ return map[d]; });
+}
+let ALL_REPORTS = ENGLISH_REPORTS.slice();
+
+function entryItems(r){
+  const list = [];
+  (r.coreItems||[]).forEach(function(it){ list.push(it); });
+  (r.adjectives||[]).forEach(function(it){ list.push(it); });
+  (r.collocations||[]).forEach(function(it){ list.push(it); });
+  return list;
+}
+const TOKEN_RE = /\{\{([^|}]+)\|([^}]+)\}\}/g;
+function passageTokens(text){
+  const out = [];
+  const re = new RegExp(TOKEN_RE.source, 'g');
+  let m;
+  while((m = re.exec(text || '')) !== null){ out.push({ surface: m[1], term: m[2] }); }
+  return out;
+}
+function plainPassage(text){ return String(text||'').replace(new RegExp(TOKEN_RE.source, 'g'), '$1'); }
+function entryIdSet(r){
+  const set = new Set();
+  if(r.mode === 'review'){
+    (r.passages||[]).forEach(function(p){ passageTokens(p.text).forEach(function(t){ set.add(normId(t.term)); }); });
+  } else {
+    entryItems(r).forEach(function(it){ set.add(itemId(it)); });
+  }
+  return set;
+}
+function usesEntryCompletion(r){ return r.mode !== 'review' || (r.passages && r.passages.length > 0); }
+
 let UNIVERSE = [];
+let UMAP = {};
 function buildUniverse(reports){
   const map = new Map();
   function add(it, meta, date){
@@ -2216,6 +2310,46 @@ function buildUniverse(reports){
     (r.collocations||[]).forEach(function(it){ add(it, TYPE_META.collocation, r.date); });
   });
   return Array.from(map.values());
+}
+
+/* 露出回数 = 完了済みの日（その日に含まれる表現）＋ 取りこぼしリストの個別チェック */
+let EXPO = {};
+let EXPO_PRE = {};
+function allEntries(){ return mergeReports(ALL_REPORTS, REPORTS); }
+function rebuildExposure(){
+  EXPO = {};
+  EXPO_PRE = {};
+  const t = todayStr();
+  allEntries().forEach(function(r){
+    const d = PROGRESS.days[r.date];
+    if(!d) return;
+    entryIdSet(r).forEach(function(id){
+      EXPO[id] = (EXPO[id]||0) + 1;
+      if(d.doneAt !== t) EXPO_PRE[id] = (EXPO_PRE[id]||0) + 1;
+    });
+  });
+  Object.keys(PROGRESS.log).forEach(function(id){
+    const a = PROGRESS.log[id];
+    EXPO[id] = (EXPO[id]||0) + a.length;
+    EXPO_PRE[id] = (EXPO_PRE[id]||0) + a.filter(function(d){ return d !== t; }).length;
+  });
+}
+function countOf(id){ return EXPO[id] || 0; }
+function countBeforeToday(id){ return EXPO_PRE[id] || 0; }
+function studyDatesOf(id){
+  const ds = [];
+  allEntries().forEach(function(r){
+    const d = PROGRESS.days[r.date];
+    if(d && entryIdSet(r).has(id)) ds.push(d.doneAt);
+  });
+  logOf(id).forEach(function(x){ ds.push(x); });
+  return ds.sort();
+}
+function rebuildAll(){
+  UNIVERSE = buildUniverse(ALL_REPORTS);
+  UMAP = {};
+  UNIVERSE.forEach(function(u){ UMAP[u.id] = u; });
+  rebuildExposure();
 }
 
 /* ── 表示用レポート一覧。土日で当日エントリが未生成でも、復習デーのタブをその場で用意する ── */
@@ -2237,6 +2371,7 @@ function renderSpeakBtn(text, sizeClass){
   return '<button type="button" class="spk-btn'+(sizeClass?' '+sizeClass:'')+'" data-speak="'+esc(text)+'" aria-label="Play pronunciation">🔊</button>';
 }
 
+/* 個別チェックボタン（取りこぼしリスト用） */
 function studyBtnHtml(id){
   return '<button type="button" class="study-btn" data-id="'+esc(id)+'" title="クリックで「今日学習した」を記録／取り消し"></button>';
 }
@@ -2248,8 +2383,18 @@ function updateStudyBtn(btn){
   btn.classList.toggle('mastered', n >= TARGET_COUNT);
   btn.textContent = (done ? '✓ 記録済み ' : '＋ 学習した ') + dots(Math.min(n, TARGET_COUNT)) + ' ' + n + '/' + TARGET_COUNT;
 }
+/* 読み取り専用の回数チップ（日次記録の平日カード用） */
+function cntChipHtml(id){
+  return '<span class="cnt-chip" data-id="'+esc(id)+'" title="この表現の学習回数（完了した日の数）"></span>';
+}
+function updateCntChip(el){
+  const n = countOf(el.getAttribute('data-id'));
+  el.classList.toggle('mastered', n >= TARGET_COUNT);
+  el.textContent = dots(Math.min(n, TARGET_COUNT)) + ' ' + n + '/' + TARGET_COUNT;
+}
 function updateAllStudyBtns(){
   document.querySelectorAll('.study-btn').forEach(updateStudyBtn);
+  document.querySelectorAll('.cnt-chip').forEach(updateCntChip);
 }
 
 function renderSynonyms(syns){
@@ -2279,7 +2424,7 @@ function renderCardBody(it){
 function renderVCard(it, meta){
   const termText = it.term || it.phrase;
   return '<div class="vcard '+meta.border+'">' +
-    '<div class="vc-top"><span class="vc-topl"><span class="vc-badge '+meta.badge+'">'+meta.label+'</span>'+(it.register?'<span class="vc-reg">'+esc(it.register)+'</span>':'')+'</span>'+studyBtnHtml(itemId(it))+'</div>' +
+    '<div class="vc-top"><span class="vc-topl"><span class="vc-badge '+meta.badge+'">'+meta.label+'</span>'+(it.register?'<span class="vc-reg">'+esc(it.register)+'</span>':'')+'</span>'+cntChipHtml(itemId(it))+'</div>' +
     '<div class="vc-term">'+esc(termText)+(it.ipa?'<span class="vc-ipa">'+esc(it.ipa)+'</span>':'')+renderSpeakBtn(termText)+'</div>' +
     renderCardBody(it) +
     '</div>';
@@ -2292,6 +2437,40 @@ function renderReviewRow(u){
     '<span class="rv-intro">初出 '+esc(u.introDate.slice(5))+'</span>' + studyBtnHtml(u.id) +
     '</div>' +
     '<details class="rv-ans"><summary>答えを見る</summary>'+renderCardBody(u.item)+'</details></div>';
+}
+
+/* ── 復習文章（土日） ── */
+function renderPassageHtml(text){
+  const re = new RegExp(TOKEN_RE.source, 'g');
+  const src = String(text||'');
+  let html = '', last = 0, m;
+  while((m = re.exec(src)) !== null){
+    html += esc(src.slice(last, m.index));
+    const u = UMAP[normId(m[2])];
+    const tip = m[2] + (u && u.item.meaning_ja ? ' : ' + u.item.meaning_ja : '');
+    html += '<mark class="tgt" title="'+esc(tip)+'">'+esc(m[1])+'</mark>';
+    last = re.lastIndex;
+  }
+  html += esc(src.slice(last));
+  return html.replace(/\n/g, '<br>');
+}
+function renderPassage(p, i){
+  const seen = {};
+  const chips = passageTokens(p.text).filter(function(t){
+    const id = normId(t.term);
+    if(seen[id]) return false;
+    seen[id] = true;
+    return true;
+  }).map(function(t){
+    const u = UMAP[normId(t.term)];
+    return '<span class="tchip" title="'+esc(u && u.item.meaning_ja ? u.item.meaning_ja : '')+'">'+esc(t.term)+'</span>';
+  }).join('');
+  return '<div class="psg">' +
+    '<div class="psg-head"><span class="psg-no">#'+(i+1)+'</span><span class="psg-title">'+esc(p.title||'')+'</span>'+(p.genre?'<span class="psg-genre">'+esc(p.genre)+'</span>':'')+renderSpeakBtn(plainPassage(p.text),'small')+'</div>' +
+    '<div class="psg-text">'+renderPassageHtml(p.text)+'</div>' +
+    '<div class="psg-chips">'+chips+'</div>' +
+    (p.translation_ja ? '<details class="ja-details"><summary>🇯🇵 日本語訳を見る</summary><div class="psg-ja">'+esc(p.translation_ja).replace(/\n/g,'<br>')+'</div></details>' : '') +
+    '</div>';
 }
 
 /* ── クイズ ── */
@@ -2341,10 +2520,11 @@ function buildMeaningQuiz(items, poolAll, n){
   });
 }
 
-/* ── 復習キュー（土日）：3回未満を「回数が少ない順 → 初出が古い順」で最大N件 ── */
-function reviewQueue(){
+/* ── 取りこぼしリスト：3回未満を「回数が少ない順 → 初出が古い順」で最大N件（excludeIds は除外） ── */
+function reviewQueue(excludeIds){
   const size = parseInt(PROGRESS.settings.reviewSize, 10) || 30;
-  return UNIVERSE.filter(function(u){ return countBeforeToday(u.id) < TARGET_COUNT; })
+  const ex = excludeIds || {};
+  return UNIVERSE.filter(function(u){ return !ex[u.id] && countBeforeToday(u.id) < TARGET_COUNT; })
     .sort(function(a,b){
       const ca = countBeforeToday(a.id), cb = countBeforeToday(b.id);
       if(ca !== cb) return ca - cb;
@@ -2353,41 +2533,52 @@ function reviewQueue(){
     .slice(0, size);
 }
 
-function entryItems(r){
-  const list = [];
-  (r.coreItems||[]).forEach(function(it){ list.push(it); });
-  (r.adjectives||[]).forEach(function(it){ list.push(it); });
-  (r.collocations||[]).forEach(function(it){ list.push(it); });
-  return list;
-}
-function currentDayIds(){
-  const r = REPORTS[currentIdx];
-  if(r.mode === 'review') return reviewQueue().map(function(u){ return u.id; });
-  return entryItems(r).map(itemId);
+/* ── 日次の完了記録 ── */
+function currentDayAdhocIds(){
+  return reviewQueue().map(function(u){ return u.id; });
 }
 function updateDayBtn(){
   const b = document.querySelector('.day-study-btn');
   if(!b) return;
-  const ids = currentDayIds();
-  const all = ids.length > 0 && ids.every(studiedToday);
-  const review = REPORTS[currentIdx].mode === 'review';
-  b.classList.toggle('done', all);
-  b.textContent = all ? '↩ 今日の記録を取り消す' : ('✓ ' + (review ? '復習リスト' : 'この日の全項目') + 'を学習済みにする（' + ids.length + '件）');
+  const r = REPORTS[currentIdx];
+  if(usesEntryCompletion(r)){
+    const d = PROGRESS.days[r.date];
+    const n = entryIdSet(r).size;
+    b.classList.toggle('done', !!d);
+    b.textContent = d ? ('↩ 完了を取り消す（完了日 ' + d.doneAt.slice(5) + '）')
+                      : ('✓ ' + (r.mode === 'review' ? 'この復習' : 'この日の学習') + 'を完了にする（' + n + '表現が+1回）');
+  } else {
+    const ids = currentDayAdhocIds();
+    const all = ids.length > 0 && ids.every(studiedToday);
+    b.classList.toggle('done', all);
+    b.textContent = all ? '↩ 今日の記録を取り消す' : ('✓ 復習リストを学習済みにする（' + ids.length + '件）');
+  }
 }
 function toggleDay(){
-  const ids = currentDayIds();
-  const all = ids.length > 0 && ids.every(studiedToday);
-  ids.forEach(function(id){ setToday(id, !all); });
+  const r = REPORTS[currentIdx];
+  if(usesEntryCompletion(r)){
+    if(PROGRESS.days[r.date]) delete PROGRESS.days[r.date];
+    else PROGRESS.days[r.date] = { doneAt: todayStr() };
+  } else {
+    const ids = currentDayAdhocIds();
+    const all = ids.length > 0 && ids.every(studiedToday);
+    ids.forEach(function(id){ setAdhocToday(id, !all); });
+  }
   saveProgress();
+  rebuildExposure();
+  renderTabs();
   updateAllStudyBtns();
   updateDayBtn();
   refreshProgress();
 }
 
 /* ── 進捗セクション（各日のレポート先頭） ── */
+function findEntry(ds){
+  for(let i=0;i<REPORTS.length;i++){ if(REPORTS[i].date === ds) return REPORTS[i]; }
+  for(let j=0;j<ALL_REPORTS.length;j++){ if(ALL_REPORTS[j].date === ds) return ALL_REPORTS[j]; }
+  return null;
+}
 function renderCalendar(){
-  const studied = {};
-  Object.keys(PROGRESS.log).forEach(function(id){ PROGRESS.log[id].forEach(function(d){ studied[d] = (studied[d]||0) + 1; }); });
   const now = new Date();
   let cells = '';
   for(let i=13;i>=0;i--){
@@ -2395,16 +2586,17 @@ function renderCalendar(){
     const ds = dateStr(d);
     const w = d.getDay();
     const wk = (w === 0 || w === 6);
-    const n = studied[ds] || 0;
+    const e = findEntry(ds);
     let cls = 'cal-cell';
     let mark;
-    if(n > 0){ cls += ' hit'; mark = n + '件'; }
-    else if(i === 0){ cls += ' today'; mark = '—'; }
-    else { cls += ' miss'; mark = '未記録'; }
+    if(!e){ cls += ' none'; mark = '配信なし'; }
+    else if(PROGRESS.days[ds]){ cls += ' hit'; mark = '✓ 完了'; }
+    else if(i === 0){ cls += ' today'; mark = '未完了'; }
+    else { cls += ' miss'; mark = '未学習'; }
     if(wk) cls += ' wk';
     cells += '<div class="'+cls+'"><div class="cal-d">'+(d.getMonth()+1)+'/'+d.getDate()+'</div><div class="cal-w">'+DOW_JA[w]+(wk?'·復習':'')+'</div><div class="cal-m">'+mark+'</div></div>';
   }
-  return '<div class="prog-cal-title">直近14日の学習記録（「未記録」の日が漏れです。記録はこの機能の追加日以降のみ）</div><div class="prog-cal">'+cells+'</div>';
+  return '<div class="prog-cal-title">直近14日の学習記録（緑＝完了 / 赤＝配信されたのに未学習＝漏れ / 破線＝配信なし。記録はこの機能の追加日以降のみ）</div><div class="prog-cal">'+cells+'</div>';
 }
 
 function renderProgressInner(r){
@@ -2417,16 +2609,18 @@ function renderProgressInner(r){
   });
   const pct = N ? Math.round(sum / (N * TARGET_COUNT) * 100) : 0;
 
+  const doneDays = allEntries().filter(function(x){ return PROGRESS.days[x.date]; }).length;
   let todayLine;
-  if(r.mode === 'review'){
-    const q = reviewQueue();
-    const doneQ = q.filter(function(u){ return studiedToday(u.id); }).length;
-    todayLine = '🔁 今日は復習デー：復習リスト ' + q.length + ' 件中、今日記録済み ' + doneQ + ' 件。まず英語から意味を思い出し、「答えを見る」で確認 → 「学習した」を記録します。';
+  if(r.mode === 'review' && usesEntryCompletion(r)){
+    const ids = entryIdSet(r);
+    todayLine = '🔁 復習デー：この日の復習対象は ' + ids.size + ' 表現（文章 ' + (r.passages||[]).length + ' 本）。文章を読み（黄色マーカー＝対象表現）、読み終えたら右上の「この復習を完了にする」を1回押すと、対象の全表現が +1回 になります。' + (r.scopeLabel ? '（対象：' + r.scopeLabel + '）' : '');
+  } else if(r.mode === 'review'){
+    todayLine = '🔁 復習デー：この日の復習文章はまだ配信されていません。それまでは下の「復習リスト（3回未満）」を個別に確認できます。';
   } else {
     const items = entryItems(r);
     const ones = items.filter(function(it){ return countOf(itemId(it)) >= 1; }).length;
     const threes = items.filter(function(it){ return countOf(itemId(it)) >= TARGET_COUNT; }).length;
-    todayLine = '📅 この日の表現 ' + items.length + ' 件：1回以上学習済み ' + ones + ' 件 / 3回達成 ' + threes + ' 件。学習したら各カードの「学習した」か右上のボタンで記録します（週末の復習デーが2〜3回目の機会です）。';
+    todayLine = '📅 この日の表現 ' + items.length + ' 件（1回以上 ' + ones + ' 件 / 3回達成 ' + threes + ' 件）。学習が終わったら右上の「この日の学習を完了にする」を1回押すだけで、この日の全表現が +1回 になります（単語ごとの記録は不要）。';
   }
 
   const pending = UNIVERSE.filter(function(u){ return countOf(u.id) < TARGET_COUNT; }).sort(function(a,b){
@@ -2437,16 +2631,16 @@ function renderProgressInner(r){
   const shown = pending.slice(0, 40);
   const rows = shown.map(function(u){
     const c = countOf(u.id);
-    const last = logOf(u.id).slice(-1)[0] || '—';
+    const last = studyDatesOf(u.id).slice(-1)[0] || '—';
     return '<tr><td>'+esc(u.term)+'</td><td>'+esc(u.introDate.slice(5))+'</td><td>'+dots(Math.min(c,TARGET_COUNT))+' '+c+'/'+TARGET_COUNT+'</td><td>'+esc(last.length>5?last.slice(5):last)+'</td></tr>';
   }).join('');
-  const more = pending.length > shown.length ? '<div class="rv-help">…ほか '+(pending.length-shown.length)+' 件（復習デーの復習リストが少ない順・古い順に消化します）</div>' : '';
+  const more = pending.length > shown.length ? '<div class="rv-help">…ほか '+(pending.length-shown.length)+' 件</div>' : '';
 
   const sizeOpts = [20,30,40,60].map(function(v){
     return '<option value="'+v+'"'+((parseInt(PROGRESS.settings.reviewSize,10)||30)===v?' selected':'')+'>'+v+'件</option>';
   }).join('');
 
-  return '<div class="sec-title">📊 学習進捗（目標：各表現 '+TARGET_COUNT+' 回）</div>' +
+  return '<div class="sec-title">📊 学習進捗（目標：各表現 '+TARGET_COUNT+' 回・日次記録）</div>' +
     '<div class="prog-box">' +
       '<div class="prog-stats">' +
         '<div class="prog-tile"><div class="n">'+N+'</div><div class="l">累計の表現数</div></div>' +
@@ -2455,7 +2649,7 @@ function renderProgressInner(r){
         '<div class="prog-tile none"><div class="n">'+none+'</div><div class="l">未学習</div></div>' +
       '</div>' +
       '<div class="prog-bar"><div class="prog-bar-fill" style="width:'+pct+'%"></div></div>' +
-      '<div class="prog-bar-lbl">全体の達成率 '+pct+'%（累計 '+sum+' / 目標 '+(N*TARGET_COUNT)+' 回）</div>' +
+      '<div class="prog-bar-lbl">全体の達成率 '+pct+'%（累計 '+sum+' / 目標 '+(N*TARGET_COUNT)+' 回）・完了した日 '+doneDays+' 日</div>' +
       '<div class="prog-today">'+esc(todayLine)+'</div>' +
       renderCalendar() +
       '<details class="prog-detail"><summary>📋 要復習リスト（'+TARGET_COUNT+'回未満：'+pending.length+' 件）</summary>' +
@@ -2466,9 +2660,9 @@ function renderProgressInner(r){
           '<button type="button" class="btn small" onclick="exportProgress()">進捗をJSONで保存</button>' +
           '<label class="btn small">JSONを読み込む<input type="file" accept=".json,application/json" style="display:none" onchange="importProgress(event)"></label>' +
           '<button type="button" class="btn small" onclick="resetProgress()">進捗をリセット</button>' +
-          '<label>復習リストの件数 <select onchange="setReviewSize(this.value)">'+sizeOpts+'</select></label>' +
+          '<label>取りこぼしリストの件数 <select onchange="setReviewSize(this.value)">'+sizeOpts+'</select></label>' +
         '</div>' +
-        '<div class="rv-help">進捗はこのブラウザ内（localStorage）に保存されます。端末を変える場合は「JSONで保存」→「読み込む」で移せます。CSVダウンロードにも学習回数が含まれます。</div>' +
+        '<div class="rv-help">進捗はこのブラウザ内（localStorage）に保存されます。端末を変える場合は「JSONで保存」→「読み込む」で移せます。CSVダウンロードにも学習回数・学習日が含まれます。</div>' +
       '</details>' +
     '</div>';
 }
@@ -2482,7 +2676,7 @@ function refreshProgress(){
 }
 
 function exportProgress(){
-  const data = { version: 1, exportedAt: new Date().toISOString(), log: PROGRESS.log, settings: PROGRESS.settings };
+  const data = { version: 2, exportedAt: new Date().toISOString(), days: PROGRESS.days, log: PROGRESS.log, settings: PROGRESS.settings };
   const blob = new Blob([JSON.stringify(data, null, 2)], {type:'application/json'});
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
@@ -2500,15 +2694,20 @@ function importProgress(ev){
   rd.onload = function(){
     try{
       const p = JSON.parse(rd.result);
-      if(!p || typeof p.log !== 'object') throw new Error('bad file');
-      Object.keys(p.log).forEach(function(id){
+      if(!p || (typeof p.log !== 'object' && typeof p.days !== 'object')) throw new Error('bad file');
+      Object.keys(p.log || {}).forEach(function(id){
         const merged = logOf(id).concat(p.log[id]).filter(function(d, i, a){ return typeof d === 'string' && a.indexOf(d) === i; }).sort();
         if(merged.length) PROGRESS.log[id] = merged;
       });
+      Object.keys(p.days || {}).forEach(function(d){
+        if(!PROGRESS.days[d] && p.days[d] && typeof p.days[d].doneAt === 'string') PROGRESS.days[d] = { doneAt: p.days[d].doneAt };
+      });
       if(p.settings){ PROGRESS.settings = Object.assign(PROGRESS.settings, p.settings); }
       saveProgress();
+      rebuildExposure();
+      renderTabs();
       renderAll();
-      alert('進捗を読み込みました（既存の記録とは日付単位で統合しています）。');
+      alert('進捗を読み込みました（既存の記録とは統合しています）。');
     }catch(e){
       alert('読み込めませんでした。「進捗をJSONで保存」で作ったファイルを選んでください。');
     }
@@ -2517,8 +2716,11 @@ function importProgress(ev){
 }
 function resetProgress(){
   if(!confirm('学習進捗をすべてリセットします。よろしいですか？（元に戻せません。先にJSON保存をおすすめします）')) return;
+  PROGRESS.days = {};
   PROGRESS.log = {};
   saveProgress();
+  rebuildExposure();
+  renderTabs();
   renderAll();
 }
 function setReviewSize(v){
@@ -2538,15 +2740,34 @@ function renderPanel(r, idx){
     '<div class="section" id="progress-section">'+renderProgressInner(r)+'</div>';
 
   if(review){
-    const q = reviewQueue();
-    const rows = q.length ? q.map(renderReviewRow).join('') : '<div class="rv-help">復習が必要な表現はありません 🎉（全表現が'+TARGET_COUNT+'回達成済み）</div>';
-    const quiz = q.length ? buildMeaningQuiz(q, UNIVERSE, 10) : [];
-    return head +
-      '<div class="section"><div class="sec-title">🔁 今日の復習リスト（'+TARGET_COUNT+'回未満を、回数が少ない順・初出が古い順に '+q.length+' 件）</div>' +
-        '<div class="rv-help">見出し語から意味を思い出す → 「答えを見る」で確認 → 「学習した」を記録。土日は新しい表現を追加しません。</div>' + rows + '</div>' +
-      '<div class="section"><div class="sec-title">📝 復習クイズ（この復習リストから・全問英語）</div>' +
-        (quiz.length ? renderQuiz(quiz, 'wk-'+idx) + '<button type="button" class="btn" onclick="renderAll()">🔄 別の問題で出題する</button>' : '<div class="rv-help">クイズにできる表現がまだありません。</div>') +
-      '</div>';
+    const hasPassages = r.passages && r.passages.length > 0;
+    let body = '';
+    let targets = [];
+    if(hasPassages){
+      const idSet = entryIdSet(r);
+      idSet.forEach(function(id){ if(UMAP[id]) targets.push(UMAP[id]); });
+      body += '<div class="section"><div class="sec-title">🧩 復習の文章（'+r.passages.length+'本・対象表現 '+idSet.size+' 件）</div>' +
+        '<div class="rv-help">'+(r.scopeLabel ? '対象：'+esc(r.scopeLabel)+'。' : '')+'黄色のマーカーが復習対象の表現です（カーソルを乗せると意味が出ます）。まず文脈から意味を取り、必要なら日本語訳を開いて確認しましょう。🔊で全文を読み上げできます。</div>' +
+        r.passages.map(renderPassage).join('') + '</div>';
+    } else {
+      const q0 = reviewQueue();
+      targets = q0;
+      body += '<div class="section"><div class="sec-title">🔁 復習リスト（'+TARGET_COUNT+'回未満を、回数が少ない順・初出が古い順に '+q0.length+' 件）</div>' +
+        '<div class="rv-help">見出し語から意味を思い出す → 「答えを見る」で確認 → 「学習した」を記録。</div>' +
+        (q0.length ? q0.map(renderReviewRow).join('') : '<div class="rv-help">復習が必要な表現はありません 🎉</div>') + '</div>';
+    }
+    const quiz = targets.length ? buildMeaningQuiz(targets, UNIVERSE, 10) : [];
+    body += '<div class="section"><div class="sec-title">📝 復習クイズ（'+(hasPassages?'この日の対象表現から':'この復習リストから')+'・全問英語）</div>' +
+      (quiz.length ? renderQuiz(quiz, 'wk-'+idx) + '<button type="button" class="btn" onclick="renderAll()">🔄 別の問題で出題する</button>' : '<div class="rv-help">クイズにできる表現がまだありません。</div>') + '</div>';
+    if(hasPassages){
+      const ex = {};
+      entryIdSet(r).forEach(function(id){ ex[id] = true; });
+      const q1 = reviewQueue(ex);
+      body += '<div class="section"><details class="prog-detail"><summary>🗂 取りこぼしリスト（文章に含まれない・3回未満：'+q1.length+' 件・個別にチェック）</summary>' +
+        '<div class="rv-help">この日の文章に出てこない表現のうち、まだ3回に達していないものです。時間があるときの追加復習用（個別に「学習した」を記録できます）。</div>' +
+        (q1.length ? q1.map(renderReviewRow).join('') : '<div class="rv-help">ありません 🎉</div>') + '</details></div>';
+    }
+    return head + body;
   }
 
   return head +
@@ -2565,7 +2786,8 @@ function renderTabs(){
   nav.innerHTML = REPORTS.map(function(r, i){
     const d = new Date(r.date+'T00:00:00');
     const dow = DOW_JA[d.getDay()];
-    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+r.date.slice(5)+'<span class="dow">'+dow+'曜'+(r.mode==='review'?'·復習':'')+'</span></button>';
+    const ck = PROGRESS.days[r.date] ? '<span class="ck">✓</span>' : '';
+    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+r.date.slice(5)+ck+'<span class="dow">'+dow+'曜'+(r.mode==='review'?'·復習':'')+'</span></button>';
   }).join('');
 }
 
@@ -2605,8 +2827,9 @@ document.addEventListener('click', function(e){
   const sb = e.target.closest('.study-btn');
   if(sb){
     const id = sb.getAttribute('data-id');
-    setToday(id, !studiedToday(id));
+    setAdhocToday(id, !studiedToday(id));
     saveProgress();
+    rebuildExposure();
     updateAllStudyBtns();
     updateDayBtn();
     refreshProgress();
@@ -2642,7 +2865,7 @@ async function startReview(){
 
   const archiveReports = await loadArchive();
   const latestDate = ENGLISH_REPORTS[ENGLISH_REPORTS.length-1].date;
-  const uni = buildUniverse(archiveReports.concat(ENGLISH_REPORTS));
+  const uni = buildUniverse(mergeReports(archiveReports, ENGLISH_REPORTS));
   const pool = uni.filter(function(u){ return u.introDate !== latestDate && u.item.meaning_en; });
 
   if(pool.length < 4){
@@ -2667,7 +2890,7 @@ function entryToRows(r){
     rows.push([r.date, cat, term, it.meaning_en||'', it.meaning_ja,
       (it.examples||[]).join(' / '),
       (it.synonyms||[]).map(function(s){ return s.term+':'+s.nuance_ja; }).join(' ; '),
-      it.explanation_ja, countOf(id), logOf(id).join(' ')]);
+      it.explanation_ja, countOf(id), studyDatesOf(id).join(' ')]);
   }
   (r.coreItems||[]).forEach(function(it){ push((TYPE_META[it.type]||TYPE_META.word).label, it.term, it); });
   (r.adjectives||[]).forEach(function(it){ push('形容詞', it.term, it); });
@@ -2677,7 +2900,7 @@ function entryToRows(r){
 
 async function exportCsv(){
   const archiveReports = await loadArchive();
-  const allReports = archiveReports.concat(ENGLISH_REPORTS);
+  const allReports = mergeReports(archiveReports, ENGLISH_REPORTS);
   const header = ['date','category','term','meaning_en','meaning_ja','examples','synonyms','explanation_ja','study_count','study_dates'];
   let rows = [header];
   allReports.forEach(function(r){ rows = rows.concat(entryToRows(r)); });
@@ -2695,12 +2918,14 @@ async function exportCsv(){
 
 /* ── 起動 ── */
 loadProgress();
-UNIVERSE = buildUniverse(ENGLISH_REPORTS);
+rebuildAll();
 renderTabs();
 renderAll();
 loadArchive().then(function(arch){
   if(arch && arch.length){
-    UNIVERSE = buildUniverse(arch.concat(ENGLISH_REPORTS));
+    ALL_REPORTS = mergeReports(arch, ENGLISH_REPORTS);
+    rebuildAll();
+    renderTabs();
     renderAll();
   }
 });
