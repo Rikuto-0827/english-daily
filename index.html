@@ -230,325 +230,6 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-13",
-  dateLabel: "2026年9月13日（日）",
-  readTimeMin: 32,
-  coreItems: [
-    {
-      type: "word", term: "unencumbered", ipa: "/ˌʌnɪnˈkʌmbərd/", register: "フォーマル・法務/財務、比喩でも頻出",
-      meaning_en: "free from any burden, debt, obligation, or restriction that would otherwise limit or weigh something down",
-      meaning_ja: "（負債・制約・しがらみなどが）一切ない、身軽な",
-      examples: [
-        "The building is unencumbered — no mortgage, no liens — which is exactly why the lender is comfortable using it as collateral for the new facility.",
-        "She left her corporate job unencumbered by a non-compete, which is the only reason she could start consulting for a direct competitor the following Monday."
-      ],
-      synonyms: [
-        { term: "debt-free", nuance_ja: "対象がほぼ常に金銭的負債に限定される、より直接的でカジュアルな言い方。unencumbered は担保・契約上の制約など負債以外の法的拘束にも使える点で射程が広い。" },
-        { term: "free and clear", nuance_ja: "不動産取引で所有権に一切の請求権がないことを指す決まり文句。unencumbered とほぼ同義だが、不動産の文脈により強く結びついている。" },
-        { term: "unfettered", nuance_ja: "『足かせ』の比喩で、行動や判断の自由度に焦点がある。unencumbered が資産・立場の状態を静的に描写するのに対し、unfettered は能動的な自由をより強調する。" }
-      ],
-      explanation_ja: "語源は cumber（妨げる、重荷を負わせる）に en- を付した動詞 encumber の否定形。財務・法務文書では『担保設定や先取特権が付いていない資産』を指す専門語として頻出し、M&Aのデューデリジェンスでは真っ先に確認する項目の一つになる。比喩的には人や組織にも自然に転用でき、『しがらみがない』『身軽な』立場を指すのに便利。unencumbered by ~ の形で、何から自由なのかを明示する用法が典型的で、debt-free より射程が広く、資産だけでなく契約上の制約や過去のしがらみ全般を語れる懐の深さが実務での強み。"
-    },
-    {
-      type: "word", term: "languish", ipa: "/ˈlæŋɡwɪʃ/", register: "中立〜やや文語・停滞状態の描写で頻出",
-      meaning_en: "to remain in an unpleasant, neglected, or inactive state for a long time without improving",
-      meaning_ja: "（放置されて）低迷する、うだつが上がらないまま長く放置される",
-      examples: [
-        "The stock has languished in the low twenties for eighteen months, even as the underlying business quietly doubled revenue.",
-        "My gym membership has languished unused since February, but somehow I still haven't cancelled it."
-      ],
-      synonyms: [
-        { term: "stagnate", nuance_ja: "成長や進歩そのものが止まっている状態を指す、より中立的で経済的な語。languish が持つ『見過ごされ、放置されている』という気の毒さの含みはやや弱い。" },
-        { term: "wither", nuance_ja: "植物が枯れるイメージから、徐々に弱く小さくなっていく衰退そのものに焦点がある。languish は活力を失った『状態が続くこと』を指し、必ずしも縮小・消滅までは含意しない。" },
-        { term: "flounder", nuance_ja: "もがき苦しみながらも失敗を繰り返している、より能動的で混乱した苦境を指す。languish は静かに放置されている受動的な停滞というニュアンスが強い。" }
-      ],
-      explanation_ja: "ラテン語 languere（弱る、だるい）に由来し、元々は人の体調や気力が萎えていく様子を指した語。核心は『本来もっと良い状態になれるはずなのに、注目や資源を与えられずに停滞したままになっている』という、放置による機会損失の含みで、単なる stagnate より同情や苛立ちのニュアンスを帯びやすい。決算コメンタリーでは株価や特定事業セグメントが市場から無視されている状況を語る定番語で、in を伴い languish in (obscurity / the twenties / limbo) の形が頻出する。日常会話でも、やるべきなのに手をつけていないタスクや使っていないサブスクなどを自嘲気味に語るときに軽く使える便利な語。"
-    },
-    {
-      type: "word", term: "rankle", ipa: "/ˈræŋkl/", register: "中立・感情描写、対人関係で頻出",
-      meaning_en: "to cause lasting annoyance, resentment, or irritation, especially because of some past unfair treatment",
-      meaning_ja: "（不満や恨みが）いつまでもくすぶる、しこりとして残る",
-      examples: [
-        "Getting passed over for the partner vote still rankles, even though he'd never admit it in a review.",
-        "It still rankles that they charged us the full cancellation fee even though the airline moved the flight, not us."
-      ],
-      synonyms: [
-        { term: "fester", nuance_ja: "既出語。感情や問題が放置されて悪化していく過程そのものに焦点があり、rankle よりも『悪化』の含みが強い。rankle は悪化せずとも、ずっと不快感が残り続けるだけでも使える。" },
-        { term: "grate (on someone)", nuance_ja: "継続的な苛立ちの原因が『今まさに』作用していることに焦点があり、過去の出来事への持続的な恨みという rankle の時間的な深さはやや弱い。" },
-        { term: "stick in someone's craw", nuance_ja: "非常に口語的で、喉に何かが刺さったような生理的な不快感の比喩。rankle よりくだけていて、日常会話での愚痴に向く。" }
-      ],
-      explanation_ja: "古フランス語に由来するとされ、傷口に残った毒がじわじわ体内で作用し続けるイメージから来た語。核心は、出来事自体はとうに終わっているのに、その不公平感や屈辱感だけが主語の中に居座り続けるという時間差で、主語には人ではなく出来事（the decision, the comment, the snub）が来る非人称構文が圧倒的に多い。人事評価での見送り、理不尽な請求、根に持ちやすい一言など、『表向きは水に流したはずなのに、実はまだ引っかかっている』心理を的確に表現でき、still rankles の形で今も続く不快感を強調するのが定番。"
-    },
-    {
-      type: "word", term: "excoriate", ipa: "/ɪkˈskɔːrieɪt/", register: "強い批判・報道/論評で頻出",
-      meaning_en: "to criticize someone or something severely and publicly",
-      meaning_ja: "（人前で）痛烈に批判する、こき下ろす",
-      examples: [
-        "The activist investor's letter excoriated the board for approving the CEO's pay package the same week as the layoffs.",
-        "The reviewer excoriated the restaurant so thoroughly that the owner posted a public response the next morning."
-      ],
-      synonyms: [
-        { term: "lambaste", nuance_ja: "ほぼ同義でやや口語寄り。excoriate のほうが書き言葉的で、皮を剥ぐという語源のぶん、より容赦のない痛烈さを感じさせる。" },
-        { term: "blast", nuance_ja: "非常に口語的で報道の見出しにも頻出する短い語。excoriate より軽く、痛烈さの度合いは文脈次第で幅がある。" },
-        { term: "eviscerate", nuance_ja: "既出語。excoriate が『皮を剥ぐ』表面的な激しさなら、eviscerate は『内臓を抉り出す』というさらに徹底的な破壊のイメージで、批判の容赦なさは一段強い。" }
-      ],
-      explanation_ja: "ラテン語 excoriare（皮を剥ぐ）がそのまま語源で、ex（外へ）+ corium（皮）という構成。比喩としては、単なる反対意見ではなく、公の場で相手の主張や行動の皮を剥ぐように徹底的に、かつ容赦なく批判する様子を描写する。決算後のアナリストレポート、取締役会への株主書簡、映画評など、書き手が明確な立場を取って対象を厳しく糾弾する場面で好まれ、受動態 was excoriated for ~ の形で批判された側を主語にする用法も同じくらい頻出する。criticize よりはるかに強く、angry よりも冷静に組み立てられた論理的な痛烈さを伴うことが多い点が特徴。"
-    },
-    {
-      type: "idiom", term: "jockey for position", ipa: "", register: "中立〜批判的・社内政治/競争で頻出",
-      meaning_en: "to compete or maneuver strategically to gain an advantage over others, especially for status or opportunity",
-      meaning_ja: "（出し抜き合うように）有利な立場を取ろうと動き回る、ポジション争いをする",
-      examples: [
-        "Three VPs have been quietly jockeying for position ever since the CFO announced she's leaving in Q1.",
-        "The kids were jockeying for position by the door the second the ice cream truck's music started."
-      ],
-      synonyms: [
-        { term: "vie for (something)", nuance_ja: "より直接的でフォーマルな語。特定の一つの目標（賞、地位）を巡る競争そのものに焦点があり、jockey for position が持つ『絶えず立ち回る』プロセスの継続感はやや薄い。" },
-        { term: "angle for (something)", nuance_ja: "遠回しに、あるいはずる賢く欲しいものを狙う様子を指す口語。jockey for position が複数人の相対的な位置取り競争を含意するのに対し、angle for は一人の狙いにも使える。" },
-        { term: "maneuver for advantage", nuance_ja: "より説明的でフォーマルな言い換え。競馬由来の比喩が持つ機敏さや駆け引きの軽妙さは失われる。" }
-      ],
-      explanation_ja: "競馬でジョッキーがレース中に他馬との位置取りを絶えず調整する様子がそのまま比喩になった表現で、核心は『一度きりの勝負ではなく、有利なタイミングが来るまで継続的に立ち回る』という時間的な粘り強さにある。後継者争い、昇進レース、限られた予算枠の奪い合いなど、明確な勝敗がまだ決まっていない段階での駆け引きを描写するのに最適で、しばしば複数の当事者を主語にした能動表現として使われる。批判的にも中立的にも使えるが、あからさまな野心や打算が透けて見える状況を、やや皮肉を込めて語る際に特に効果的。"
-    },
-    {
-      type: "idiom", term: "steal someone's thunder", ipa: "", register: "口語〜中立・注目や手柄の横取りを指す",
-      meaning_en: "to take attention or credit away from someone else's achievement or announcement, often unintentionally",
-      meaning_ja: "（意図せずとも）人の手柄・注目を横取りする",
-      examples: [
-        "I hate to steal your thunder right before the board meeting, but the client just emailed to say they're signing today, not next week.",
-        "My sister announced her engagement at my graduation party, and everyone agreed she'd completely stolen my thunder."
-      ],
-      synonyms: [
-        { term: "upstage (someone)", nuance_ja: "演劇由来で、他者の存在を舞台上で完全に霞ませることに焦点がある。steal someone's thunder は必ずしも霞ませる意図がなくても使える一方、upstage はやや意図的な響きを伴いやすい。" },
-        { term: "overshadow", nuance_ja: "より中立的で、比較の結果として印象が薄まったという事実描写。thunder を盗む側の行為性は upstage や steal one's thunder ほど強調されない。" },
-        { term: "hog the spotlight", nuance_ja: "注目を独占しようとする貪欲さそのものに焦点があり、他人の手柄を奪ったという因果関係は必ずしも明示しない、より口語的な表現。" }
-      ],
-      explanation_ja: "18世紀の劇作家が雷鳴の効果音を発明したところ、後に別の劇でその技法を無断で使われ、『自分の雷（発明）を盗まれた』と怒ったという逸話に由来する。核心は『本来その人が受けるはずだった注目や称賛を、別の出来事や発言が先に、あるいは同時に奪ってしまう』という構図で、必ずしも悪意を前提としない点が特徴——家族の集まりで意図せず話題をさらってしまう場合にも自然に使える。ビジネスでは、発表の直前に類似情報が漏れる、同僚の成果が別件のニュースにかき消されるといった状況で頻出し、謝罪の前置きとして I don't mean to steal your thunder, but ... の形が定番。"
-    },
-    {
-      type: "idiom", term: "not mince (your) words", ipa: "", register: "口語〜フォーマル・率直さを評価/描写",
-      meaning_en: "to speak very directly and honestly, even if the truth is blunt or uncomfortable to hear",
-      meaning_ja: "遠慮せずにはっきりと言う、オブラートに包まない",
-      examples: [
-        "The new board member doesn't mince words — she told the CEO in his first review that the international strategy 'doesn't have a thesis, it has a wish list.'",
-        "Grandma never minces words about my cooking, which is either character-building or just mean, depending on the day."
-      ],
-      synonyms: [
-        { term: "pull no punches", nuance_ja: "ボクシング由来で、批判の『強さ』を手加減しないことに焦点がある。not mince words は言葉の選び方の率直さを指し、必ずしも攻撃的な内容とは限らない。" },
-        { term: "call a spade a spade", nuance_ja: "婉曲表現を避けて物事をそのままの名前で呼ぶことに焦点がある、やや古風な言い回し。率直さの対象が『呼び方』に限定されやすい。" },
-        { term: "be blunt", nuance_ja: "より一般的で中立的な形容詞的表現。not mince words は否定形の動詞句として『あえて遠慮しない』という選択のニュアンスをより強く伝える。" }
-      ],
-      explanation_ja: "mince（肉などを細かく刻む）という調理動詞が転じて、『言葉を細かく刻んで飲み込みやすくする＝オブラートに包む』という比喩を作り、その否定形が『刻まずそのまま出す＝率直に言う』という意味になった。核心は、相手が不快に思うかもしれないと分かっていながら、あえて婉曲表現を選ばないという意図的な選択で、単に正直というより『気遣いより明瞭さを優先する』というスタンスの表明に近い。取締役会での率直な指摘、家族間の遠慮のない物言いなど、聞き手が誰であれ態度を変えない一貫した率直さを評価（あるいは苦笑い）するときに使われ、doesn't mince words when it comes to ~ の形で対象を限定することも多い。"
-    },
-    {
-      type: "idiom", term: "throw (someone) a curveball", ipa: "", register: "口語・想定外の展開を指す、中立寄り",
-      meaning_en: "to surprise someone with an unexpected problem, question, or turn of events they weren't prepared for",
-      meaning_ja: "（予想外の展開で）不意を突く、想定外の変化球を投げる",
-      examples: [
-        "The due diligence process was going smoothly until the target's lawyers threw us a curveball with an undisclosed litigation matter on day two.",
-        "The interviewer threw me a curveball by asking what I'd do if I disagreed with my own manager in front of a client."
-      ],
-      synonyms: [
-        { term: "catch (someone) off guard", nuance_ja: "不意を突かれた側の状態そのものを描写する中立語で、curveball が持つ『変化球』という戦術的・意図的な響きはやや弱い。" },
-        { term: "come out of left field", nuance_ja: "既出語。curveball が『対応が難しい変則球』に焦点があるのに対し、come out of left field は『予測不能な方向から来た』という出所の意外性そのものに焦点がある。" },
-        { term: "blindside (someone)", nuance_ja: "不意打ちの衝撃がより大きく、しばしば裏切りや悪意に近い含みを伴う。curveball はスポーツ由来の軽さがあり、必ずしも悪意を前提としない。" }
-      ],
-      explanation_ja: "野球で打者の予測を外すために意図的に曲げて投げる変化球（curveball）から来た比喩で、核心は『規則や想定の範囲内だが、対応が難しい変則的な一手』という点にある——ルール違反ではなく、正当な範囲内での不意打ちだという含みが blindside との違い。M&Aのデューデリジェンス、面接での想定外の質問、旅行中の予定変更など、『準備していた筋書きが崩れる予想外の展開』全般に使え、悪意の有無を問わない中立性の高さが便利。throw (someone) a curveball の形で不意打ちを仕掛けた側を主語にする用法が最も一般的。"
-    },
-    {
-      type: "phrase", term: "It's not my wheelhouse.", ipa: "", register: "口語〜ビジネス・専門外を示す前置き",
-      meaning_en: "said to indicate that a topic or task falls outside your area of expertise or interest",
-      meaning_ja: "それは私の専門・得意分野ではありません",
-      examples: [
-        "Tax structuring really isn't my wheelhouse — you'll want to loop in someone from the accounting side before we go further.",
-        "Ask Dave about the wine pairing, that's his wheelhouse; I just show up for the cheese course."
-      ],
-      synonyms: [
-        { term: "That's outside my lane.", nuance_ja: "『レーン（車線）を外れる』という比喩で、自分の役割や責任範囲の外にあることをより組織的・構造的に述べる言い方。" },
-        { term: "That's above my pay grade.", nuance_ja: "既出フレーズ。能力の話ではなく権限・階層の話に焦点があり、wheelhouse が『専門性がない』という能力面の説明であるのに対し、pay grade は『決める立場にない』という権限面の説明になる。" },
-        { term: "I'm not the right person for that.", nuance_ja: "より直接的で説明的な言い換え。wheelhouse が持つ船の操舵室という比喩の軽妙さは失われる。" }
-      ],
-      explanation_ja: "wheelhouse は船の操舵室のことで、船を実際に操る操縦士が最も力を発揮する場所という原義から、野球ではバッターが最も得意とするコース（得意球）を指す隠語として定着し、そこからビジネス英語に広まった。核心は、能力不足を謝る消極的な表現ではなく、『自分の強みはここではなく別の場所にある』という前向きな線引きである点で、適切な担当者へ話をつなぐ際の自然な前置きとして機能する。会議で専門外の質問を振られたとき、雑談で得意でない話題になったときなど、謙遜と正確な自己認識を同時に示せる便利な一言で、not really my wheelhouse という控えめな言い方もよく使われる。"
-    },
-    {
-      type: "phrase", term: "keep (someone) honest", ipa: "", register: "ビジネス口語・チェック機能/説明責任の話題で頻出",
-      meaning_en: "to make sure someone stays accurate, disciplined, or accountable, usually by checking their work or challenging their assumptions",
-      meaning_ja: "（緊張感を保たせて）気を緩ませない、暴走・手抜きを防ぐ",
-      examples: [
-        "We have a second team build the model independently, purely to keep the deal team honest on the assumptions.",
-        "Having a workout partner keeps me honest — I skip leg day way less often when someone's waiting at the gym."
-      ],
-      synonyms: [
-        { term: "hold someone accountable", nuance_ja: "より直接的でフォーマル。結果責任を問うという事後的なニュアンスが強く、keep honest が持つ『そもそも横道に逸れさせない』予防的な機能はやや弱い。" },
-        { term: "be a check on (someone)", nuance_ja: "ガバナンス用語に近く、制度的な牽制機能を指すことが多い。keep someone honest は個人同士の関係でも自然に使える口語的な軽さがある。" },
-        { term: "hold someone's feet to the fire", nuance_ja: "既出語。keep honest より強く、既に約束したことの履行を厳しく迫るという対決的な響きがある。" }
-      ],
-      explanation_ja: "誰かの言動が誠実さを欠く方向に流れがちなとき、第三者の目や仕組みがあることで軌道修正が働く、という発想が核心にある表現。重要なのは、対象の人物が『不誠実』だと決めつけているわけではなく、『人は誰でも見られていないと甘くなる』という前提に基づいた、性弱説的で角の立たない言い回しである点——だからこそ監査、独立したセカンドオピニオン、ダイエットの相棒まで幅広い場面で好んで使われる。金融実務では、モデルのバイアスや希望的観測を排除するための独立チェック機構を説明する際の定番語彙で、keep the process honest のように対象を仕組みそのものに広げることもできる。"
-    },
-    {
-      type: "phrase", term: "put some teeth into (something)", ipa: "", register: "ビジネス・ガバナンス/規制の話題で頻出",
-      meaning_en: "to make a rule, policy, or agreement more enforceable or effective, usually by adding real consequences",
-      meaning_ja: "（規則・方針などに）実効性を持たせる、本当の拘束力を持たせる",
-      examples: [
-        "The code of conduct existed for years, but nobody put any teeth into it until a client actually walked over a violation.",
-        "We keep saying 'quiet hours' in this apartment, but until someone puts some teeth into it — like an actual fine — nothing's going to change."
-      ],
-      synonyms: [
-        { term: "give (something) real consequences", nuance_ja: "説明的で直接的な言い換え。put teeth into が持つ『牙を持たせる』という比喩的なイメージの喚起力は失われる。" },
-        { term: "have real bite", nuance_ja: "put teeth into の結果として得られる状態を形容詞的に述べる表現。『〜に牙を与える』能動的な行為ではなく、既にそうなっている状態を指す点で使い方が異なる。" },
-        { term: "with real enforcement mechanisms", nuance_ja: "契約書・規制文書に見られるフォーマルな言い換え。日常会話にはやや硬すぎる。" }
-      ],
-      explanation_ja: "既出の toothless（牙がない＝実効性がない）の対概念として覚えると効果が高く、歯のない規則に牙（teeth）を移植して初めて噛みつける＝実際に機能するようになる、という発想。核心は、規則や合意が『存在はするが誰も本気で守っていない』状態から、『違反すれば実際に痛い目を見る』状態への転換で、罰則、監査、強制力のある期限設定など、具体的な担保措置とセットで語られることが多い。企業のコンプライアンス方針、国際協定、家庭内のルールまで、『建前だけで終わらせない』という実務家の苛立ちと決意を同時に表現できる語で、名詞の teeth だけを主語にした This policy has no teeth. という形も同じくらい頻出する。"
-    },
-    {
-      type: "phrase", term: "throw shade at (someone)", ipa: "", register: "口語・SNS発祥、やや遊び心のある皮肉",
-      meaning_en: "to publicly criticize or express contempt for someone in a subtle, indirect, or sarcastic way",
-      meaning_ja: "（遠回しに、あるいは皮肉っぽく）けなす、あてこする",
-      examples: [
-        "The earnings call was polite on the surface, but the CFO threw some serious shade at the previous management team's 'aggressive accounting.'",
-        "My cousin's toast at the wedding threw so much shade at the ex-boyfriend that half the room was trying not to laugh."
-      ],
-      synonyms: [
-        { term: "take a dig at (someone)", nuance_ja: "より直接的で短い一撃を指すことが多く、throw shade が持つ『さりげなさ・皮肉の凝った演出』というニュアンスはやや弱い。" },
-        { term: "subtweet (someone)", nuance_ja: "名前を出さず SNS 上でほのめかす、という特定の媒体・手法に限定された語。throw shade は対面の発言や文書にも使える点で射程が広い。" },
-        { term: "backhanded compliment", nuance_ja: "一見褒めているようで実は貶しているという特定の修辞技法を指す名詞句で、throw shade のような直接的な攻撃性の幅の広さは持たない。" }
-      ],
-      explanation_ja: "1990年代のドラァグボールカルチャー発祥とされる俗語で、2010年代にSNSを通じて主流の口語表現として定着した比較的新しい表現。核心は、面と向かって罵るのではなく、婉曲的で気の利いた言い回しによって相手を貶める点にあり、聞き手には皮肉だと伝わるが、当人が直接名指しで反論しにくい絶妙な間接性が特徴。決算説明会での前経営陣への当てこすり、スピーチでの元恋人への皮肉など、フォーマルな場でも婉曲的な攻撃性として機能する場面が増えており、カジュアルな語源に反してビジネスメディアの見出しにも定着しつつある。ただし語源がくだけているため、非常にフォーマルな文書では避けたほうが無難。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "parsimonious", ipa: "/ˌpɑːrsɪˈmoʊniəs/", register: "フォーマル・批判的（資金配分・性格描写）",
-      meaning_en: "extremely unwilling to spend money or use resources, often to an excessive or stingy degree",
-      meaning_ja: "極端にけち臭い、出し惜しみする",
-      examples: [
-        "The board has been famously parsimonious with R&D spending, which explains why the product roadmap looks the same as it did three years ago.",
-        "My uncle is parsimonious to the point of reusing tea bags twice, but somehow always picks up the check at family dinners."
-      ],
-      synonyms: [
-        { term: "stingy", nuance_ja: "最も平易で日常的な語。parsimonious はよりフォーマルで、しばしば方針や資本配分など組織的な文脈で使われ、個人の性格描写にはやや大げさに響くこともある。" },
-        { term: "frugal", nuance_ja: "節約そのものを美徳として肯定的に描く語。parsimonious は同じ倹約でも『必要な支出まで出し渋る』という否定的な行き過ぎのニュアンスを常に含む。" },
-        { term: "tight-fisted", nuance_ja: "より口語的で身体的なイメージ（握った拳を開かない）を伴う。parsimonious より庶民的で、フォーマルな財務論評にはやや不向き。" }
-      ],
-      explanation_ja: "ラテン語 parcere（惜しむ、節約する）に由来し、語感としては frugal（節約家）よりもはるかに否定的で、『倹約の美徳を通り越して、必要なものまで出し渋る』という度を越した吝嗇を指す。決算コメンタリーでは、成長投資を怠って短期的な利益率だけを守ろうとする経営姿勢を批判する語として頻出し、しばしば皮肉を込めて parsimonious with (R&D / headcount / dividends) の形を取る。frugal が節約を賢明な判断として肯定的に描くのに対し、parsimonious は常に『やりすぎ』という価値判断を含む点が最大の違いで、フォーマルな書き言葉で人物や組織の資金配分姿勢を辛口に評するのに向いた語。"
-    },
-    {
-      term: "truculent", ipa: "/ˈtrʌkjələnt/", register: "批判的・交渉/対人関係の描写",
-      meaning_en: "eager to argue or fight, and displaying open aggression or defiance rather than cooperation",
-      meaning_ja: "喧嘩腰の、攻撃的で反抗的な",
-      examples: [
-        "The union's negotiators showed up truculent from the first session, opening with a list of grievances instead of a counter-proposal.",
-        "He gets truculent whenever anyone questions the itinerary he spent six months planning."
-      ],
-      synonyms: [
-        { term: "combative", nuance_ja: "対立や論争を辞さない姿勢そのものに焦点があり、truculent が持つ『不機嫌さ・威嚇的な態度』という感情面の色合いはやや弱い。" },
-        { term: "belligerent", nuance_ja: "ほぼ同義でより強く、実際の暴力や敵対行為に発展しかねない緊迫感を伴うことが多い。truculent はまだ言葉のレベルの攻撃性にとどまることが多い。" },
-        { term: "pugnacious", nuance_ja: "性格特性として『生来けんか好きである』ことを指すことが多く、特定の状況での一時的な態度を指す truculent より持続的な気質の描写に向く。" }
-      ],
-      explanation_ja: "ラテン語 trux（荒々しい、凶暴な）に由来し、元々は野蛮さや残忍さを表す強い語だったが、現代では実際の暴力よりも、交渉や議論の場での不機嫌で好戦的な態度を指すことがほとんど。核心は、協調ではなく対立を選び取る姿勢そのものへの非難で、相手が理性的な議論を持ちかけても喧嘩腰の反応しか返さない苛立たしさを伝える。労使交渉、規制当局との折衝、気難しい家族との会話まで、『話し合いにならないほど攻撃的な態度』を描写するのに向いており、文語的な響きが強いため、フォーマルな報道記事や分析文でより自然に使われる語。"
-    },
-    {
-      term: "obsequious", ipa: "/əbˈsiːkwiəs/", register: "批判的・人物評（媚びへつらいを非難）",
-      meaning_en: "excessively eager to please or obey someone, especially in a way that seems insincere or self-serving",
-      meaning_ja: "（媚びるほど）へつらう、卑屈なほどお世辞を言う",
-      examples: [
-        "The junior analysts get noticeably obsequious whenever the managing director walks by, which makes it easy to spot who actually wants his sponsorship.",
-        "The waiter was so obsequious about the wine pairing that I couldn't tell if he actually liked it or just wanted the bigger tip."
-      ],
-      synonyms: [
-        { term: "sycophantic", nuance_ja: "ほぼ同義でよりフォーマル・文語的。obsequious が態度や振る舞いの描写に使われやすいのに対し、sycophantic は特に『取り入るための発言・お世辞』に焦点が当たることが多い。" },
-        { term: "fawning", nuance_ja: "犬が飼い主にじゃれつく様子が語源で、過剰な愛想の良さや身体的なへつらいの仕草（お辞儀、笑顔の連発）により焦点がある、視覚的な語。" },
-        { term: "toady (to someone)", nuance_ja: "『太鼓持ち』を意味する名詞が動詞化した非常に軽蔑的な口語。obsequious より直接的な侮蔑の響きが強い。" }
-      ],
-      explanation_ja: "ラテン語 obsequi（従う、従順である）に由来し、本来は単なる従順さを指したが、現代では『権力者に取り入るための、行き過ぎた迎合』という否定的な意味に完全に転じている。核心は、その態度が相手への純粋な敬意ではなく、自分の利益（昇進、評価、チップ）を狙った打算に基づいていると見透かされている点で、話し手は常に軽蔑の視線でこの語を使う。上司の前でだけ態度が変わる同僚、過剰にへつらう接客業のスタッフなど、権力勾配がある場面での不自然な愛想の良さを鋭く指摘するのに向いた語で、フォーマルな書き言葉でも会話でも同じトーンで使える。"
-    },
-    {
-      term: "irascible", ipa: "/ɪˈræsəbl/", register: "人物評（批判寄り、時にユーモラスに使う）",
-      meaning_en: "easily made angry, and prone to sudden outbursts of temper over small things",
-      meaning_ja: "怒りっぽい、すぐカッとなる",
-      examples: [
-        "The founder is famously irascible in board meetings — three different CFOs have quit partly over how those calls go.",
-        "My irascible neighbor has called the building manager about the recycling bins four times this month."
-      ],
-      synonyms: [
-        { term: "hot-tempered", nuance_ja: "より平易で日常的な語。irascible はよりフォーマルで文語的、性格特性として持続的に怒りっぽいことを客観的に描写する響きがある。" },
-        { term: "short-tempered", nuance_ja: "怒りが爆発するまでの『我慢の短さ』に焦点がある。irascible は気質そのものの描写により重点があり、必ずしも我慢強さの欠如を強調しない。" },
-        { term: "testy", nuance_ja: "一時的ないら立ちや不機嫌さを指すことが多い、より軽い語。irascible は持続的な性格特性として、より本質的な気難しさを示す。" }
-      ],
-      explanation_ja: "ラテン語 ira（怒り）に由来し、『怒りやすい性質を持つ』という気質そのものを指すフォーマルな語。核心は、単発の激怒ではなく、些細なことで繰り返し不機嫌になる持続的な性格傾向を描写する点で、しばしば有能だが気難しい人物（名物経営者、頑固な職人、気難しい隣人）をやや愛情を込めて、あるいは諦め半分で形容する際に使われる。hot-tempered より文語的で知的な響きがあるため、伝記や人物評のプロフィール記事で好んで使われ、日常会話で使うと少しウィットの効いた言い回しに聞こえる。famously irascible（そのことで有名なほど怒りっぽい）という組み合わせが定番。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "bank on (something)",
-      meaning_en: "to rely on something happening or being true, often risking a plan or decision on that expectation",
-      meaning_ja: "（起こることを前提に）あてにする、頼りにする",
-      examples: [
-        "The whole retention plan is banking on the earnout hitting in year two — if it doesn't, half the senior team walks.",
-        "Don't bank on the weather holding for the outdoor ceremony; we booked the tent as a backup."
-      ],
-      synonyms: [
-        { term: "count on (something)", nuance_ja: "より一般的で中立的な語。bank on はお金の比喩を残しており、賭けに近い一定のリスクを取っているという含みがやや強い。" },
-        { term: "hinge on (something)", nuance_ja: "主語が『それ次第で結果が決まる』という構造に焦点があり、bank on のように誰かが意図的に期待をかけているという主体性はない。" }
-      ],
-      explanation_ja: "bank（銀行に預ける、資金を積む）という金融の比喩がそのまま『賭けるに値するほど確実だと見なす』という意味に転じた表現。核心は、単なる期待ではなく、計画や意思決定そのものをその前提の上に構築しているという依存の強さで、前提が崩れた場合の代償が明示されることが多い（if it doesn't, ~ の形で続く）。財務計画、契約交渉、日常の予定調整まで幅広く使え、否定形 don't bank on it は『それを前提にしないほうがいい』という実用的な警告として頻出する。"
-    },
-    {
-      phrase: "bet the farm (on something)",
-      meaning_en: "to risk everything you have on a single decision or outcome, leaving nothing in reserve if it fails",
-      meaning_ja: "（後がないほど）全財産を賭ける、一か八かの大勝負に出る",
-      examples: [
-        "The founders bet the farm on the enterprise pivot — they'd already spent the last of the Series A before a single logo signed.",
-        "I'm not going to bet the farm on one interview going well; I'm still applying everywhere else."
-      ],
-      synonyms: [
-        { term: "go all in", nuance_ja: "ポーカー由来で、単発の勝負に全リソースを投じる行為そのものに焦点がある。bet the farm はより長期的・生活基盤的な資産（farm＝生計の土台）を失うリスクを強調する。" },
-        { term: "put all your eggs in one basket", nuance_ja: "既出語。リスクの分散をしなかったという判断の甘さに焦点があり、bet the farm ほどの『失敗したら再起不能』という切迫感は必ずしも伴わない。" }
-      ],
-      explanation_ja: "農家が唯一の生計手段である農場そのものを担保に入れて一つの賭けに出る、という米国の農村文化に根差した比喩で、失敗すれば生活基盤ごと失うという後戻りのできなさが核心にある。put all your eggs in one basket が『分散しなかった』という判断の話であるのに対し、bet the farm は『賭けの規模そのものが破滅的なリスクを伴う』という規模の大きさに焦点がある点で使い分けられる。スタートアップの資金使い切りに近いピボット、個人のキャリアの大勝負など、失敗時の代償が致命的なレベルの意思決定を描写するのに向いており、しばしば否定形で慎重な判断を勧める警句として使われる。"
-    },
-    {
-      phrase: "hit your numbers",
-      meaning_en: "to reach the financial or performance targets that were set for you, such as sales quotas or budget goals",
-      meaning_ja: "（設定された）数値目標を達成する、ノルマをクリアする",
-      examples: [
-        "The region hit its numbers for the sixth straight quarter, mostly by pulling forward renewals that were due in Q1.",
-        "I just need to hit my step count today — I've been slacking on the fitness goals all week."
-      ],
-      synonyms: [
-        { term: "make quota", nuance_ja: "営業のノルマ達成という、より限定的で業界特化的な言い方。hit your numbers はあらゆる種類の数値目標（予算、KPI、体重管理まで）に転用できる汎用性がある。" },
-        { term: "meet targets", nuance_ja: "フォーマルで説明的な言い換え。hit your numbers のほうが会話的で、特に営業・財務の現場では圧倒的にこちらが自然。" }
-      ],
-      explanation_ja: "セールスや財務の現場で、設定された数値目標（クォータ、予算、KPI）を達成したかどうかを問う、最も日常的な業績確認の言い回し。核心は目標が既に具体的な数字として合意されている前提にあり、hit（命中させる）という動詞が示す通り、狙って的に当てるという達成感のニュアンスを持つ。決算説明会でのガイダンス達成報告から、営業チームの週次ミーティングでの進捗確認まで、あらゆる階層で使われる定番表現で、逆に未達を表す miss your numbers と対で覚えると実務での聞き取りが格段に楽になる。日常会話でも、体重や歩数など個人目標の達成を軽く報告する際に転用できる。"
-    },
-    {
-      phrase: "front-run (a decision / the market)",
-      meaning_en: "to act in advance based on information or an expected outcome before it becomes official or public, sometimes unfairly",
-      meaning_ja: "（正式発表・確定の前に）先回りして動く、抜け駆けする",
-      examples: [
-        "Legal asked us not to front-run the announcement — no hints to the sales team until the press release actually goes out at nine.",
-        "Some traders were clearly front-running the rate decision; volume spiked twenty minutes before the statement even dropped."
-      ],
-      synonyms: [
-        { term: "jump the gun", nuance_ja: "既出語。front-run は情報の非対称性を利用して先んじるという戦略性・時に不正の含みが強いのに対し、jump the gun は単純にタイミングを誤って早まったという意味合いが中心。" },
-        { term: "preempt", nuance_ja: "より中立的でフォーマルな語。相手の行動や発表を先取りして無効化するという目的の明確さがあり、front-run のようなインサイダー的な不公正さの含みは必須ではない。" }
-      ],
-      explanation_ja: "元々は証券会社が顧客からの大口注文情報を使い、その注文が執行される前に自己勘定で同じ銘柄を売買して利益を得る、規制違反の代表例を指す専門用語。そこから転じて、金融に限らず『まだ公式に決定・発表されていない情報を先取りして行動する』行為全般を指すようになり、正式発表前の人事異動の噂で動く、規制の確定前に事業判断を下すといった場面にも使われる。中心は『情報の非対称性を利用した先回り』という構図で、front-run the announcement のように対象を発表や決定そのものに取ることが多く、文脈によっては明確な不正行為から単なる早すぎる行動まで、深刻度に幅がある点に注意。"
-    }
-  ],
-  todayQuiz: [
-    { question: "The land came ___ — no mortgage, no easement, no pending litigation — which is why the buyer could close in two weeks.", choices: ["unencumbered", "parsimonious", "truculent", "obsequious"], answerIndex: 0, explanation: "\"Unencumbered\" describes a property free of debt and legal restrictions, matching land with no mortgage, easement, or litigation attached. The three adjectives describe personality traits, not the legal status of property." },
-    { question: "Despite genuine promise, the division has ___ for three years, starved of both marketing budget and management attention.", choices: ["languished", "rankled", "jockeyed for position", "excoriated"], answerIndex: 0, explanation: "\"Languish\" describes remaining neglected in an unimproved state over time, which fits a division starved of budget and attention for years. \"Rankle\" means to cause lingering resentment, which doesn't fit a business unit as the subject." },
-    { question: "The passed-over promotion still ___ him, even though nothing about the situation itself has gotten any worse since it happened.", choices: ["rankles", "festers", "languishes", "excoriates"], answerIndex: 0, explanation: "\"Rankle\" fits a past grievance that simply continues to cause resentment without necessarily worsening. \"Fester\" would imply the situation is actively getting worse over time, which the sentence explicitly rules out." },
-    { question: "The activist's open letter didn't just disagree with management — it ___ them for what it called 'a decade of value destruction.'", choices: ["excoriated", "rankled", "languished over", "banked on"], answerIndex: 0, explanation: "\"Excoriate\" means to criticize severely and publicly, which fits a letter attacking management over a decade of underperformance. \"Rankle\" describes a lingering feeling, not the act of delivering harsh criticism." },
-    { question: "With the CEO's retirement two years out, at least four executives have quietly begun ___ to be seen as the natural successor.", choices: ["jockeying for position", "vying for the position", "stealing the thunder", "throwing a curveball"], answerIndex: 0, explanation: "\"Jockey for position\" captures ongoing strategic maneuvering over an extended period, which fits executives positioning themselves years ahead of a single retirement date. \"Vie for the position\" implies a more direct, single competition rather than continuous maneuvering." },
-    { question: "I don't want to ___, but I should mention the client already verbally agreed before your presentation even started.", choices: ["steal your thunder", "throw you a curveball", "keep you honest", "put some teeth into it"], answerIndex: 0, explanation: "\"Steal someone's thunder\" fits taking away the impact of an announcement the listener was about to make, softened here by an apologetic preface. \"Throw you a curveball\" would mean surprising the listener with a problem, not undercutting their announcement." },
-    { question: "Unlike her predecessor, the new compliance chief doesn't ___ — she told the sales team directly that the current practice 'is not just risky, it's the kind of thing regulators write settlements about.'", choices: ["mince her words", "put teeth into it", "bank on it", "jockey for position"], answerIndex: 0, explanation: "\"Not mince words\" describes speaking bluntly and directly even when the truth is uncomfortable, which fits her blunt warning to the sales team. \"Put teeth into it\" refers to making a rule enforceable, not to a style of speaking." },
-    { question: "The board thought the vote was a formality until one director ___ by publicly opposing the deal minutes before the call.", choices: ["threw a curveball", "front-ran the decision", "banked on the outcome", "hit the numbers"], answerIndex: 0, explanation: "\"Throw a curveball\" fits an unexpected development that disrupts what everyone assumed would be routine. \"Front-run the decision\" would mean acting early based on advance knowledge of the outcome, not disrupting it with a surprise objection." },
-    { question: "They didn't just assume the acquisition would close — they ___, selling off two profitable divisions to fund it before signing was even final.", choices: ["bet the farm on it", "banked on it", "hit their numbers", "front-ran it"], answerIndex: 0, explanation: "\"Bet the farm on it\" fits committing resources so completely that failure would be catastrophic, matching the sale of profitable divisions to fund an unclosed deal. \"Bank on it\" describes mere reliance on an expectation, without the same scale of irreversible risk." },
-    { question: "Analysts dread the earnings call Q&A because the CEO turns ___ at even mildly critical questions, once telling a reporter to 'do his homework next time.'", choices: ["irascible", "obsequious", "parsimonious", "unencumbered"], answerIndex: 0, explanation: "\"Irascible\" describes being easily angered, which fits a CEO who snaps at mildly critical questions. \"Obsequious\" means excessively eager to please, the opposite of the hostility described here." }
-  ]
-},
-{
   date: "2026-09-14",
   dateLabel: "2026年9月14日（月）",
   readTimeMin: 33,
@@ -1931,6 +1612,196 @@ const ENGLISH_REPORTS = [
     { question: "The senior partner didn't ask nicely — he ___ the junior associates into working through the weekend by hinting their bonuses were on the line.", choices: ["browbeat", "extolled", "ran interference for", "footed the bill for"], answerIndex: 0, explanation: "\"Browbeat\" fits intimidating someone into doing something through pressure, matching the implied threat about bonuses. \"Extolled\" means praised enthusiastically, the opposite tone." },
     { question: "Even as growth slowed, the CEO spent the entire earnings call ___ the virtues of the new subscription model.", choices: ["extolling", "browbeating", "toeing the line on", "calling the bluff of"], answerIndex: 0, explanation: "\"Extolling\" fits praising something enthusiastically and publicly, matching a CEO talking up a new model on an earnings call. \"Browbeating\" means intimidating someone, which doesn't fit praising a product." },
     { question: "The vendor never actually intended to walk away — when we refused to prepay, we simply ___, and they folded within the hour.", choices: ["called their bluff", "footed the bill", "toed the line", "ran interference"], answerIndex: 0, explanation: "\"Called their bluff\" fits challenging someone to follow through on a threat that turns out to be empty, matching the vendor folding. \"Footed the bill\" means paying for something, unrelated to challenging a threat." }
+  ]
+},
+{
+  date: "2026-09-23",
+  dateLabel: "2026年9月23日（水）",
+  readTimeMin: 20,
+  coreItems: [
+    {
+      type: "word", term: "cajole", ipa: "/kəˈdʒoʊl/", register: "口語〜ビジネス、人を説得する場面（やや操作的なニュアンスを含むことも）",
+      meaning_en: "to persuade someone to do something by using flattery, charm, or gentle, persistent coaxing rather than force or logic",
+      meaning_ja: "(優しく・お世辞を使って)なだめすかして説得する、うまく丸め込む",
+      examples: [
+        "It took three follow-up emails and a fair amount of flattery, but she finally cajoled the vendor into extending the deadline by a week.",
+        "My roommate cajoled me into splitting an Uber to the airport at 5 a.m. by promising to buy coffee."
+      ],
+      synonyms: [
+        { term: "coax", nuance_ja: "cajoleとほぼ同義だが、coaxはより穏やかで根気強い説得を指し、必ずしもお世辞は伴わない。cajoleは相手を持ち上げる言葉や甘い言葉を使う点がより強く含意される。" },
+        { term: "persuade", nuance_ja: "最も中立的で一般的な語。説得の手段を問わない。cajoleは「お世辞や愛想の良さで少し渋る相手を動かす」という、より具体的で軽い操作性を感じさせる語。" },
+        { term: "sweet-talk", nuance_ja: "口語的で、cajoleよりもカジュアルかつやや軽薄な響き。ビジネス文書ではcajoleの方が使いやすい。" }
+      ],
+      explanation_ja: "フランス語 cajoler(お世辞を言う)に由来し、相手の機嫌を取りながら少しずつ意見を変えさせていくイメージの語。ビジネスでは、取引先やベンダーに無理なお願いを聞いてもらう際、強引に交渉するのではなく、褒め言葉や粘り強い頼み込みで相手の心証を良くして動かす場面で使われる。'cajole someone into (doing) something' という形が定番で、命令や説得(persuade)よりも柔らかく、時にわずかに『うまく丸め込んだ』という皮肉のニュアンスを込めて使われることもある。家族や友人との日常会話でも、駄々をこねる子供や気乗りしない相手を優しく説得する場面で頻出する。"
+    },
+    {
+      type: "word", term: "glean", ipa: "/ɡliːn/", register: "分析・報告（フォーマル〜中立、情報収集の描写で頻出）",
+      meaning_en: "to gather information or insight gradually and in small amounts, often from multiple or indirect sources and with some effort",
+      meaning_ja: "(苦労して少しずつ)情報・知見を集める、拾い集める",
+      examples: [
+        "From the footnotes in the 10-K alone, the analyst gleaned enough to suspect the company was quietly reclassifying debt.",
+        "I couldn't get a straight answer out of him, but I gleaned from his tone that the interview hadn't gone well."
+      ],
+      synonyms: [
+        { term: "extract", nuance_ja: "より意図的・機械的に情報を『引き出す』ニュアンスが強く、しばしば抵抗する相手や資料から強引に得る場合に使う。gleanは断片的な手がかりを丹念に拾い集めるという、より穏やかで地道な響きを持つ。" },
+        { term: "glean insights from", nuance_ja: "同語だが定型句として頻出。データ分析やリサーチのレポートで『〜から知見を得る』という決まり文句としてそのまま覚えておくと便利。" },
+        { term: "pick up on", nuance_ja: "より口語的でカジュアル。gleanはフォーマルな報告書や分析記事でも自然に使える点が異なる。" }
+      ],
+      explanation_ja: "元々は収穫後の畑に残った麦の穂を一本ずつ拾い集める『落穂拾い』を意味した農業用語で、そこから『断片的な情報を根気強く集めて全体像を掴む』という比喩的な意味に転じた。決算資料の細かい注記やアナリストコールでの言葉選びなど、直接開示されていない情報を間接的な手がかりから読み取る場面でビジネス英語に頻出し、'what can we glean from this data' のような形で分析の締めくくりによく使われる。単なる'get information'よりも、労力をかけて少しずつ集めたというニュアンスが加わる点が学習者にとっての価値。"
+    },
+    {
+      type: "idiom", term: "can't see the forest for the trees", ipa: "", register: "分析・助言（口語〜中立、視野の狭さを指摘する場面）",
+      meaning_en: "to be so focused on small details that you fail to understand or notice the overall situation",
+      meaning_ja: "木を見て森を見ず、細部にとらわれて全体像を見失う",
+      examples: [
+        "After three weeks buried in the model's assumptions, the team couldn't see the forest for the trees and missed that the entire deal thesis had fallen apart.",
+        "Take a day off from revising the essay — you're so deep in the wording now that you can't see the forest for the trees."
+      ],
+      synonyms: [
+        { term: "lose sight of the big picture", nuance_ja: "ほぼ同義でより直接的・説明的な言い方。can't see the forest for the treesの方が比喩的で、会話や文章に彩りを加えたいときに好まれる。" },
+        { term: "miss the forest for the trees", nuance_ja: "can'tを使わないバリエーションで意味はほぼ同じ。文脈によってどちらも使われるが、can'tを使う形の方がやや口語的でよく聞かれる。" }
+      ],
+      explanation_ja: "文字通り『木々(details)に気を取られて森全体(全体像)が見えなくなる』様子を表す、非常によく使われる比喩表現。プロジェクトの細部やデータの一点にこだわりすぎて、投資判断や戦略の本質的な問題を見失ってしまう場面で使われることが多く、レビューやフィードバックの場で『視野を広げよう』と促す際の定番フレーズ。特にモデリングや資料作成に没頭しすぎたチームメンバーに向けて使われることが多く、'step back and look at the forest, not just the trees' のように応用されることもある。"
+    },
+    {
+      type: "phrase", term: "I'll take it under advisement.", ipa: "", register: "フォーマル・ビジネス（提案・要望への返答、即答を避ける丁寧な言い回し）",
+      meaning_en: "used to politely say that you will seriously consider a suggestion or request before making a decision, without committing to any particular outcome",
+      meaning_ja: "検討させていただきます、よく考慮に入れておきます（即答を避ける丁寧な返答）",
+      examples: [
+        "When the junior analyst suggested restructuring the entire deck the night before the pitch, the partner simply said, 'I'll take it under advisement,' and moved on.",
+        "I'll take your feedback under advisement, but I want to run it by the rest of the committee before we change anything."
+      ],
+      synonyms: [
+        { term: "I'll think it over", nuance_ja: "より口語的でカジュアル。日常会話や気軽な相談に向く。I'll take it under advisementはフォーマルな会議や上下関係のある場面で使われる、やや距離を置いた丁寧な表現。" },
+        { term: "I'll give it due consideration", nuance_ja: "同程度にフォーマルだが、より硬い書き言葉寄りの響き。I'll take it under advisementは口頭でのやり取りでも自然に使える点が異なる。" },
+        { term: "Noted.", nuance_ja: "はるかに簡潔でそっけない返答。真剣な検討を約束するニュアンスは薄く、時に軽くあしらっている印象を与えることもある。" }
+      ],
+      explanation_ja: "元々は法律・行政の文脈で、裁判官や委員会が正式に審議・検討することを表す硬い言い回しだったが、ビジネスの場でも『すぐに賛成も反対もしないが、真剣に検討する』という立場を丁寧に示すために広く転用されている。特に、その場で即答したくない提案や、目下の相手からの意見に対して、角を立てずに一旦保留する際の定番表現で、実際には『やんわり断る』前置きとして使われることも少なくない。ネイティブの上司や役員が会議で多用する表現で、覚えておくと大人の対応として使いこなせるようになる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "assiduous", ipa: "/əˈsɪdʒuəs/", register: "称賛・フォーマル（勤勉さ・入念さを評する場面）",
+      meaning_en: "showing great care, thoroughness, and persistent effort in doing something",
+      meaning_ja: "勤勉で入念な、根気強くこつこつと取り組む",
+      examples: [
+        "Her assiduous attention to every footnote in the credit agreement caught a covenant breach that three other reviewers had missed.",
+        "He's assiduous about saving — he's tracked every dollar he's spent since college."
+      ],
+      synonyms: [
+        { term: "diligent", nuance_ja: "最も一般的で中立的な語。assiduousはよりフォーマルで、細部への執拗なまでの丹念さを強調するニュアンスが強い。" },
+        { term: "meticulous", nuance_ja: "「几帳面さ・正確さ」に焦点があるのに対し、assiduousは「持続的な努力・根気」により重きを置く語。" }
+      ],
+      explanation_ja: "ラテン語 assidere(そばに座る)に由来し、『ずっとそこに座って作業を続ける』イメージから『根気強く丹念に取り組む』という意味に転じた語。決算資料のレビューやデューデリジェンスなど、地道な確認作業を粘り強くやり遂げる人を称賛する際にフォーマルな評価文書や推薦状で好まれる語で、単なる'hardworking'よりも一段格式高く、知的な丹念さのニュアンスを含む。"
+    },
+    {
+      term: "diffident", ipa: "/ˈdɪfɪdənt/", register: "人物評（中立〜同情的、自信のなさを描写）",
+      meaning_en: "lacking confidence in one's own ability, worth, or opinions; hesitant to assert oneself",
+      meaning_ja: "自信のない、遠慮がちな、引っ込み思案な",
+      examples: [
+        "He's brilliant with numbers but painfully diffident in meetings, so his best ideas rarely make it into the room.",
+        "She was diffident about asking for a raise, even though her performance review was glowing."
+      ],
+      synonyms: [
+        { term: "timid", nuance_ja: "より広く「臆病さ・怖がり」全般を指す。diffidentは特に自分の能力や意見への自信のなさに焦点が絞られた、ややフォーマルな語。" },
+        { term: "self-effacing", nuance_ja: "謙遜して自分を目立たせないという、しばしば好意的なニュアンスを持つ。diffidentは自信の欠如そのものへの指摘で、必ずしも好意的とは限らない。" }
+      ],
+      explanation_ja: "confident(自信のある)の対義語的な成り立ちを持ち、『自分自身への信頼(fide)が欠けている(dis-)』という語源がそのまま意味に表れている語。優秀なのに自分の意見を主張できない同僚や部下を評する際によく使われ、しばしば『能力はあるのに損をしている』という惜しむニュアンスを伴う。shyよりもフォーマルで、人物評価やフィードバックの文書でも使いやすい語彙。"
+    },
+    {
+      term: "unimpeachable", ipa: "/ˌʌnɪmˈpiːtʃəbl/", register: "称賛・フォーマル（信頼性・経歴の評価、法務/監査でも使用）",
+      meaning_en: "completely trustworthy and beyond doubt or question; impossible to criticize or discredit",
+      meaning_ja: "非の打ちどころのない、疑いようのない(信頼性・経歴などについて)",
+      examples: [
+        "Her credentials were unimpeachable — a decade at the Fed followed by two at a bulge-bracket bank — so the board approved her appointment without a single follow-up question.",
+        "The auditor's findings were based on unimpeachable evidence, leaving the company no room to dispute the restatement."
+      ],
+      synonyms: [
+        { term: "impeccable", nuance_ja: "「完璧さ・欠点のなさ」全般に使える、より広い語(服装や作法にも使う)。unimpeachableは特に「信頼性・誠実さが疑いようがない」という点に焦点が絞られる。" },
+        { term: "beyond reproach", nuance_ja: "ほぼ同義の言い回し。unimpeachableは1語で簡潔に使える分、レポートや評価文書で好まれる。" }
+      ],
+      explanation_ja: "元々は弾劾(impeach)できない、つまり公的な地位にある人物の不正を訴追できないほど潔白であるという法律用語に由来する語。人物の経歴、監査結果、証拠など、疑問の余地なく信頼できるものを評する際にフォーマルな文脈で使われ、'unimpeachable credentials/reputation/evidence' という形で頻出する。単なる'trustworthy'よりも、あらゆる角度から検証しても揺らがないという強い確信のニュアンスを持つ点が特徴。"
+    },
+    {
+      term: "indelible", ipa: "/ɪnˈdelɪbl/", register: "比喩的・フォーマル(印象・記憶の描写、称賛的に使われることが多い)",
+      meaning_en: "making a mark or impression that cannot be removed, forgotten, or erased",
+      meaning_ja: "消えない、忘れられない(印象・記憶などについて)",
+      examples: [
+        "Her first presentation to the investment committee left an indelible impression — three years later, partners still bring it up.",
+        "The smell of my grandmother's kitchen is indelible; I can still picture every detail of that room."
+      ],
+      synonyms: [
+        { term: "unforgettable", nuance_ja: "より日常的でカジュアルな語。indelibleはよりフォーマルで文学的な響きを持ち、印象が『消せない痕跡として残る』という物理的なイメージを伴う。" },
+        { term: "lasting", nuance_ja: "より中立的で穏やかな「持続性」を指す。indelibleは「決して消せない」という、より強く断定的なニュアンスを持つ。" }
+      ],
+      explanation_ja: "元々は『消せないインク(indelible ink)』のように、物理的に消去できない印をつけることを指した語で、そこから『記憶や印象に強く刻まれて消えない』という比喩的な意味に広がった。プレゼンや面接、初対面の場での強い印象を称賛的に語る際によく使われ、'leave an indelible mark/impression on' という形が定番。ネガティブな出来事の傷跡を語る際にも使えるが、ビジネスの文脈では多くの場合、良い意味での強烈な印象を表すポジティブな語として使われる。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "keep tabs on",
+      meaning_en: "to monitor or keep informed about someone or something on an ongoing basis",
+      meaning_ja: "(継続的に)目を光らせる、動向を把握しておく",
+      examples: [
+        "The risk team keeps tabs on the fund's exposure to a handful of correlated positions every single morning.",
+        "I try to keep tabs on my old college friends, even though we're scattered across three time zones now."
+      ],
+      synonyms: [
+        { term: "monitor", nuance_ja: "より中立的でフォーマルな語。keep tabs onは口語的で、しばしば少し警戒や関心を込めたニュアンスを帯びる。" },
+        { term: "stay on top of", nuance_ja: "「遅れずについていく・管理できている」という能動的な達成感を強調する語。keep tabs onは単に継続的に注視するという観察寄りのニュアンス。" }
+      ],
+      explanation_ja: "『tab(勘定・記録)を保持しておく』というイメージから、誰か・何かの動向を継続的に把握しておくという意味に転じた口語表現。競合の値付けや部下の進捗、あるいは音信不通になりがちな友人の近況など、幅広い場面で使われる非常に汎用性の高い表現で、'keep close tabs on' のように close を添えて監視の強さを強調することもできる。"
+    },
+    {
+      phrase: "curry favor (with someone)",
+      meaning_en: "to try to win someone's approval or good opinion, especially through flattery or obsequious behavior",
+      meaning_ja: "(お世辞・媚びで)機嫌を取る、取り入ろうとする",
+      examples: [
+        "The new hire spent his first month currying favor with the partners instead of actually learning the deal process, and it didn't go unnoticed.",
+        "She's not above currying favor with the professor by staying after every lecture to ask 'thoughtful' questions."
+      ],
+      synonyms: [
+        { term: "brown-nose", nuance_ja: "非常に口語的でかなり侮蔑的な響きを持つ。curry favorはやや上品でフォーマルな文章でも使える点が異なる。" },
+        { term: "suck up to", nuance_ja: "同じくかなり口語的でくだけた表現。curry favorはビジネス記事や評価コメントでも使える、少しフォーマルな響きを保っている。" }
+      ],
+      explanation_ja: "中世フランス語で馬の毛並みを整える(curry)ことに由来するとされ、『相手の機嫌を丁寧に整えて取り入る』様子を比喩的に表す語。職場の出世競争や社内政治を批判的に描写する際の定番表現で、実力よりもご機嫌取りで評価を得ようとする姿勢を暗に非難するニュアンスが強い。'curry favor with the boss/client/professor' という形で頻出し、単なるflatterよりも計算高く立ち回っているという含みを持つ。"
+    },
+    {
+      phrase: "lock in (a rate / gains)",
+      meaning_en: "to secure a favorable price, rate, or profit so that it cannot change or be lost, typically by finalizing an agreement or closing a position",
+      meaning_ja: "(有利な金利・利益などを)確定させる、固定する",
+      examples: [
+        "We locked in the fixed rate before the Fed's next meeting, just in case they surprised the market with another hike.",
+        "After the stock doubled in a month, she decided to lock in her gains rather than risk giving it all back."
+      ],
+      synonyms: [
+        { term: "secure", nuance_ja: "より一般的で幅広い場面(資金・契約・地位など)で使える語。lock inは特に『数値・条件を変動させないよう固定する』という金融的なニュアンスが強い。" },
+        { term: "fix (a rate)", nuance_ja: "金利の文脈でほぼ同義。lock inはより口語的で、利益確定など金利以外の場面にも広く使える。" }
+      ],
+      explanation_ja: "『鍵をかけて閉じ込める(lock in)』というイメージから、有利な条件が変動する前に確定させてしまうという意味で使われる金融の定番表現。住宅ローンの金利選択から、株の含み益を確定させる場面まで幅広く使われ、'lock in a rate/price/profit' という形で頻出する。市場が変動する前に『今のうちに確保しておく』という機を逃さない判断のニュアンスが核心にある。"
+    },
+    {
+      phrase: "hammer out (a deal / the details)",
+      meaning_en: "to reach an agreement or resolve the details of something through prolonged and often difficult discussion or negotiation",
+      meaning_ja: "(交渉・議論の末に)まとめ上げる、詰める",
+      examples: [
+        "The two sides spent all weekend hammering out the final terms of the merger agreement before the Monday morning announcement.",
+        "We're still hammering out the details of the trip — nobody can agree on whether to rent a car."
+      ],
+      synonyms: [
+        { term: "work out", nuance_ja: "より中立的で一般的な語。hammer outは、意見の対立や困難を伴う交渉の末にようやくまとめ上げたという、より骨の折れる過程を強調する。" },
+        { term: "thrash out", nuance_ja: "英国寄りの言い回しでほぼ同義。米国のビジネス英語ではhammer outの方が圧倒的に一般的。" }
+      ],
+      explanation_ja: "鍛冶屋が金属を金槌(hammer)で叩いて形を整える様子が語源で、そこから『粗削りな案を、議論を重ねて実用可能な合意にまで練り上げる』という意味に転じた表現。M&Aの最終条件交渉から友人同士の旅行計画まで、意見の相違を乗り越えて具体的な合意にこぎつける場面で幅広く使われ、'hammer out a deal/agreement/the details' という形が定番。単にagree onよりも、そこに至るまでの労力や摩擦を感じさせる語。"
+    }
+  ],
+  todayQuiz: [
+    { question: "It took three follow-up emails and no shortage of flattery, but she finally ___ the landlord into repainting the apartment before move-in.", choices: ["cajoled", "gleaned", "hammered out", "curried favor with"], answerIndex: 0, explanation: "\"Cajoled\" fits persuading someone through flattery and persistent coaxing, matching the flattery and follow-ups described. \"Gleaned\" means gathering information gradually, which doesn't fit persuading a landlord." },
+    { question: "From a handful of offhand comments on the earnings call, the analyst ___ enough to suspect management was quietly walking back its full-year guidance.", choices: ["gleaned", "cajoled", "kept tabs on", "locked in"], answerIndex: 0, explanation: "\"Gleaned\" fits gathering insight gradually from indirect, fragmentary sources, matching offhand comments on a call. \"Locked in\" means securing a fixed rate or profit, unrelated to extracting information." },
+    { question: "The risk team ___ the fund's five biggest positions every single morning, flagging any that drift outside the approved range.", choices: ["keeps tabs on", "curries favor with", "locks in", "hammers out"], answerIndex: 0, explanation: "\"Keeps tabs on\" fits ongoing, routine monitoring of something over time, matching a daily morning check of positions. \"Curries favor with\" means trying to win approval through flattery, unrelated to monitoring." },
+    { question: "The team spent so long debating font sizes on the slide that they ___ and missed the fact that the entire recommendation contradicted last quarter's thesis.", choices: ["couldn't see the forest for the trees", "locked in their gains", "hammered out the details", "kept tabs on the client"], answerIndex: 0, explanation: "\"Couldn't see the forest for the trees\" fits being so absorbed in minor details that the bigger, more important problem goes unnoticed. \"Locked in their gains\" describes securing a financial profit, unrelated to losing sight of the big picture." },
+    { question: "He's brilliant with numbers but so ___ in meetings that his sharpest insights rarely get heard.", choices: ["diffident", "assiduous", "unimpeachable", "indelible"], answerIndex: 0, explanation: "\"Diffident\" fits lacking the confidence to assert good ideas in a group setting. \"Assiduous\" describes careful, persistent effort, not a lack of confidence." },
+    { question: "When the intern suggested scrapping the entire deck the night before the pitch, the partner simply smiled and said, '___,' then moved on to the next agenda item.", choices: ["I'll take it under advisement.", "I can't see the forest for the trees.", "I'll hammer this out with you.", "I'm currying favor with you."], answerIndex: 0, explanation: "\"I'll take it under advisement\" fits politely deferring a decision without committing to it, matching a non-committal, courteous response to an unwelcome suggestion. The other options don't fit a polite, noncommittal deferral." }
   ]
 }
 ];
