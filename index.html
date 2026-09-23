@@ -230,325 +230,6 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-12",
-  dateLabel: "2026年9月12日（土）",
-  readTimeMin: 33,
-  coreItems: [
-    {
-      type: "word", term: "ossify", ipa: "/ˈɑːsɪfaɪ/", register: "フォーマル寄り・組織論/報道で頻出",
-      meaning_en: "to gradually become fixed and resistant to change, losing the flexibility it once had",
-      meaning_ja: "（制度・考え方などが）硬直化する、固まって身動きが取れなくなる",
-      examples: [
-        "The approval process was lean in year one, but by year five it had ossified into eleven sign-offs for a single vendor contract.",
-        "His opinions on the neighborhood ossified after one bad experience a decade ago, and no amount of evidence since has moved him."
-      ],
-      synonyms: [
-        { term: "calcify", nuance_ja: "石灰化するという意味で似た硬直プロセスを指すが、医学的な比喩がより直接的。ossify は『骨のように動かなくなっていく』という長い時間の重みを強く含む。" },
-        { term: "entrench", nuance_ja: "地位や慣行が塹壕を掘ったように固定されること。ossify が『柔軟性を失っていく過程』を描くのに対し、entrench はすでに深く根を張った状態という結果に焦点がある。" },
-        { term: "set in one's ways", nuance_ja: "個人の習慣や考え方が変わらなくなることを指す口語。組織やシステムには使いにくく、人物評でのみ自然。" }
-      ],
-      explanation_ja: "生物学の骨化（軟骨が硬い骨組織に置き換わる過程）がそのまま比喩に転用された語で、『かつては柔らかく形を変えられたものが、時間とともに硬く動かせなくなる』という時間軸を常に含意する。実務では組織の承認フロー、業界の商慣行、個人の思考パターンなど、本来は改善できたはずのものが放置の末に変えられなくなった状況を批判的に描写するときに使う。sclerotic が『機能不全に陥るほど硬直した』という結果の深刻さを強調するのに対し、ossify は柔軟だったものが硬くなっていく過程そのものに焦点があるという違いを押さえておくと使い分けやすい。受動態 has ossified into ~ の形で、結果として固まった状態を示す用法が特に頻出する。"
-    },
-    {
-      type: "word", term: "obfuscate", ipa: "/ˈɑːbfəskeɪt/", register: "フォーマル・法務/財務文書の批評で頻出",
-      meaning_en: "to deliberately make something unclear or hard to understand, usually to hide the truth",
-      meaning_ja: "（意図的に）分かりにくくする、煙に巻く",
-      examples: [
-        "The footnote doesn't lie exactly, but it obfuscates the fact that half of that 'organic growth' came from a pricing change nobody flagged on the call.",
-        "Just tell me if the flight got cancelled — don't obfuscate with the whole story about the crew scheduling."
-      ],
-      synonyms: [
-        { term: "obscure", nuance_ja: "意図の有無を問わず、単に見えにくくすること全般に使える中立語。obfuscate が持つ『意図的に混乱させる』という悪意の含みは薄い。" },
-        { term: "double-talk", nuance_ja: "意味のない、あるいは矛盾したことを言って煙に巻く話し方そのものを指す口語名詞。obfuscate が書面・データにも使えるのに対し、こちらは主に話し言葉の技術を指す。" },
-        { term: "bury (something) in the fine print", nuance_ja: "本質的な情報を分量や配置で目立たなくする具体的な手口を描写する言い方。obfuscate より手口が視覚的・構造的である点が特徴。" }
-      ],
-      explanation_ja: "ラテン語 obfuscare（暗くする）に由来し、ob（〜に向かって）+ fuscus（暗い）という構成。核心は『情報そのものは存在するが、理解を妨げる形で提示されている』という点で、隠蔽（conceal）とは違い完全な非開示ではない——だからこそ開示規制の抜け道として使われやすく、決算資料やコンプライアンス文書を批評する語彙として定着している。動作主は人でも文書でもよく、\"the disclosure obfuscates more than it reveals\" のように書類を主語に取ることも多い。日常会話でも『わざと話をややこしくする』相手を指して普通に使えるが、法務・財務の文脈で最も切れ味を発揮する語。"
-    },
-    {
-      type: "word", term: "vacillate", ipa: "/ˈvæsəleɪt/", register: "中立〜フォーマル・意思決定の批評で頻出",
-      meaning_en: "to keep changing your mind or switching between two choices, unable to commit to either",
-      meaning_ja: "（決断できずに）揺れ動く、二転三転する",
-      examples: [
-        "The board vacillated for six weeks between the two term sheets, and by the time they picked one, the better investor had walked.",
-        "I vacillated between the two apartments so long that my roommate just signed the lease on the one I liked less."
-      ],
-      synonyms: [
-        { term: "flip-flop", nuance_ja: "特に公の場での立場変更を指す口語で、政治家の公約撤回などを揶揄する際に頻出。一貫性のなさへの非難が vacillate よりはるかに強い。" },
-        { term: "waver", nuance_ja: "一度決めた決意や信念が揺らぐことに焦点があり、二つの選択肢の間を行き来するという構造的な含みは vacillate より弱い。" },
-        { term: "dither", nuance_ja: "英国寄りの口語で、些細なことにまで決断できずおろおろする様子。深刻な意思決定より日常の些末な優柔不断を軽く揶揄する響きが強い。" }
-      ],
-      explanation_ja: "ラテン語 vacillare（揺れる、ぐらつく）が語源で、物理的に不安定に揺れるイメージがそのまま比喩化された。核心は『二つの選択肢の間を行ったり来たりする』という往復運動で、単に迷っているだけでなく、一度こちらに傾いてはまた戻るという揺れが繰り返される点が waver との違いになる。取締役会の意思決定、投資判断、個人のキャリア選択など、選択肢がはっきりしているのに踏み切れない状況を描写するのに最適で、批判的にも同情的にも使える中立性の高い語。前置詞は between が定番で、\"vacillate between A and B\" の形で覚えておくと使いやすい。"
-    },
-    {
-      type: "word", term: "abscond", ipa: "/əbˈskɑːnd/", register: "フォーマル・法務/報道で頻出",
-      meaning_en: "to leave suddenly and secretly, especially to escape from somewhere or avoid responsibility for something",
-      meaning_ja: "（責任・処罰を逃れるため）ひそかに姿をくらます、持ち逃げする",
-      examples: [
-        "The fund's operations lead absconded with what the filing later described as 'approximately $40 million in client assets.'",
-        "The contractor absconded halfway through the renovation, and we still owe two subcontractors he never paid."
-      ],
-      synonyms: [
-        { term: "flee", nuance_ja: "単に急いで逃げることを指す最も平易な語。持ち逃げする金品や逃亡先を隠す意図といった abscond 特有の周到さは含まない。" },
-        { term: "skip town", nuance_ja: "借金や約束を残したまま街を出て姿を消す口語表現。abscond よりくだけていて、法的な文脈より日常のゴシップ的な語り口に合う。" },
-        { term: "decamp", nuance_ja: "野営地をたたんで移動する軍事語源で、突然の撤収を指す。abscond ほど『罪から逃れる』という含みは強くなく、単なる急な離脱にも使える。" }
-      ],
-      explanation_ja: "ラテン語 abscondere（隠す）に由来し、ab（離れて）+ condere（隠す、納める）という構成。単なる『逃げる』ではなく、『何かをやましい理由で、痕跡を残さないよう計画的に姿を消す』という含みが常につきまとう語で、たいてい直後に with が続いて持ち去った対象（資金、証拠、時には人）が示される。横領事件や背任のニュース記事で決まり文句のように登場するため、金融犯罪の報道英語を読むうえでは避けて通れない。日常会話ではやや大げさに響くが、敷金を持ち逃げした元同居人のような身近な裏切りを皮肉交じりに語るときにも使える。"
-    },
-    {
-      type: "idiom", term: "throw in the towel", ipa: "", register: "口語・交渉/スポーツ比喩で頻出",
-      meaning_en: "to stop trying and accept defeat, especially after a long struggle",
-      meaning_ja: "（長く粘った末に）白旗を上げる、あきらめる",
-      examples: [
-        "After the third failed round of financing, the founders threw in the towel and started winding down the company in Q2.",
-        "I threw in the towel on fixing the dishwasher myself after the second trip to the hardware store."
-      ],
-      synonyms: [
-        { term: "throw in the sponge", nuance_ja: "同じボクシング由来の古い異形。意味は同一だが現代の口語ではほとんど廃れており、towel のほうが圧倒的に一般的。" },
-        { term: "wave the white flag", nuance_ja: "軍事由来で降伏そのものを指す比喩。相手に敗北を認めて見せるという対外的なジェスチャーの含みが強く、towel よりやや大仰。" },
-        { term: "call it quits", nuance_ja: "最も平易な口語で、勝敗のニュアンスは薄い。単に『ここで終わりにする』という中立的な決定を指す。" }
-      ],
-      explanation_ja: "ボクシングでセコンドが選手の安全を守るためリングにタオルを投げ入れ、試合を止めさせる動作が語源。重要なのは『外部からの介入』ではなく『当事者自身が続行を断念する』決断を指す点で、比喩化された今では主語は常に諦める本人になる。資金調達の失敗、長期化した交渉、報われない自己流の修理まで、『十分に粘ったが、これ以上は割に合わない』という納得感のある撤退を表すのに向いており、単なる敗北宣言よりも『よく頑張った末の決断』という同情的な響きを持つことが多い。give up より具体的でドラマチックなので、経緯を語る文章の締めに使うと効果的。"
-    },
-    {
-      type: "idiom", term: "keep something close to the vest", ipa: "", register: "口語・交渉/社内政治で頻出（米）",
-      meaning_en: "to keep your plans, opinions, or information secret instead of sharing them with others",
-      meaning_ja: "（計画・本音などを）胸の内にしまっておく、手の内を明かさない",
-      examples: [
-        "Management kept the restructuring numbers close to the vest until the announcement was ready, which meant three weeks of very tense hallway conversations.",
-        "She's kept her salary negotiation close to the vest — even her closest work friend doesn't know the number she's asking for."
-      ],
-      synonyms: [
-        { term: "play your cards close to the chest", nuance_ja: "英国寄りの同義表現で意味はほぼ同一。vest はアメリカ英語、chest はイギリス英語という地域差が主な違い。" },
-        { term: "keep a poker face", nuance_ja: "表情や態度に出さないという対人的な演技に焦点があり、情報そのものを秘匿しているとは限らない点が vest との違い。" },
-        { term: "play it close", nuance_ja: "close to the vest を短縮した口語的な言い方。意味は同じだが、よりくだけた場面で使われる。" }
-      ],
-      explanation_ja: "ポーカーで手札をベスト（チョッキ）に近づけて相手に見えないようにする姿勢から来た比喩。核心は『情報を持っているが、戦略的に開示のタイミングをコントロールしている』という点で、単なる秘密主義への非難ではなく、交渉上の合理的な選択として中立〜肯定的に使えることも多い。M&Aの初期段階、人事の意思決定、価格交渉など、早すぎる開示が不利に働く場面を語るのに定番の表現で、\"play your cards close to the vest\" という動詞 play を使う異形もよく見る。単発の秘密を指すことが多い表現とは異なり、こちらは継続的な手控えの姿勢そのものを描写する点で射程がやや異なる。"
-    },
-    {
-      type: "idiom", term: "bury the lede", ipa: "", register: "口語〜フォーマル・文章/プレゼン批評で頻出",
-      meaning_en: "to fail to lead with the most important piece of information, burying it under less relevant details",
-      meaning_ja: "（一番重要な情報を）後回しにして埋もれさせる",
-      examples: [
-        "The memo spent four paragraphs on methodology before mentioning that revenue missed by 15% — a pretty serious case of burying the lede.",
-        "You're burying the lede — you got the job! Why did you tell me about the parking situation first?"
-      ],
-      synonyms: [
-        { term: "bury the headline", nuance_ja: "同義の異形だが使用頻度は lede よりかなり低い。意味上の差はほぼない。" },
-        { term: "beat around the bush", nuance_ja: "本題そのものに触れず遠回しに話す態度を指し、情報の配置の問題である bury the lede とは異なり、話し手の躊躇や遠慮に焦点がある。" },
-        { term: "lead with (something)", nuance_ja: "望ましい正しい順序を指す動詞句で、bury the lede の反対語として対で覚えると効果的。『本来はこれでリードすべきだった』という含みで使う。" }
-      ],
-      explanation_ja: "lede は新聞編集室の業界綴りで、記事冒頭の要点（lead）を本文の \"leading\" と区別するために意図的に変えた綴り。ジャーナリズムでは記事の最初の一文に最重要事実を置く原則があり、それを守らず些末な情報から書き始めることを bury the lede と呼んだのが起源で、今ではプレゼン資料、メール、日常の話し方全般に転用されている。実務での効き目は、単に『説明が下手』と言うより具体的で角の立たない指摘ができる点にあり、上司へのフィードバックでも使いやすい。同僚同士の雑談で『いい話をすぐ言わずにもったいぶる』相手をからかう軽い言い方としても頻出する。"
-    },
-    {
-      type: "idiom", term: "drag your feet", ipa: "", register: "口語・交渉/プロジェクト管理で頻出",
-      meaning_en: "to deliberately act slowly or delay doing something because you don't really want to do it",
-      meaning_ja: "（気が進まず）わざと手間取る、のらりくらりと引き延ばす",
-      examples: [
-        "Legal has been dragging their feet on the redline for two weeks, and I don't think it's actually about the indemnification clause.",
-        "He's been dragging his feet on setting a date for the talk, which honestly tells you most of what you need to know."
-      ],
-      synonyms: [
-        { term: "stall", nuance_ja: "時間稼ぎという行為そのものに焦点があり、意図がより明確で計算高い印象を与える。drag your feet は単なる気乗り薄さにも使える点で射程が広い。" },
-        { term: "slow-walk (something)", nuance_ja: "特に組織や制度が意図的に手続きを遅らせる場合に使うフォーマル寄りの語で、政治・規制の文脈で頻出。個人の些細な先延ばしにはやや大げさ。" },
-        { term: "procrastinate", nuance_ja: "単に先延ばしにする一般語で、抵抗や不本意という感情の含みが drag your feet より弱い。" }
-      ],
-      explanation_ja: "足を引きずって歩く様子がそのまま比喩になった表現で、核心は『できないのではなく、やりたくないから遅らせている』という動機の推測にある——単なる遅延の事実描写ではなく、相手の消極的な抵抗を暗に非難するニュアンスが常につきまとう。交渉、承認プロセス、気の進まない会話の設定など、『表向きは進めているように見えて実は避けている』状況を指すのに最適で、しばしば on を伴い \"drag your feet on (something)\" の形を取る。似た意味の stall より感情の温度が低く、日常の職場の愚痴でも不自然にならない使いやすさが利点。"
-    },
-    {
-      type: "phrase", term: "Let's take a beat.", ipa: "", register: "口語・会議/議論の一時停止で頻出（米）",
-      meaning_en: "said to suggest pausing briefly before continuing, usually to think or let emotions settle",
-      meaning_ja: "少し間を置きましょう、一呼吸置きましょう",
-      examples: [
-        "Let's take a beat before we respond to the board — nobody drafts a good email at eleven p.m. right after reading bad news.",
-        "Let's take a beat. I don't think either of us is actually disagreeing about the number, just about how to present it."
-      ],
-      synonyms: [
-        { term: "Let's sit with that for a moment.", nuance_ja: "反射的に反応せず、内容をじっくり消化する時間を取るという含みがより強い。感情的な話題や重い決定の後で使うと自然。" },
-        { term: "Give me a second.", nuance_ja: "自分個人の即時の間を求める最も平易な言い方。場全体に間を提案する take a beat とは主語の範囲が異なる。" },
-        { term: "Let's pump the brakes.", nuance_ja: "性急に進みすぎている状況を止める含みが強く、単なる間ではなく『このペースはまずい』という警告のニュアンスを伴う。" }
-      ],
-      explanation_ja: "演劇・脚本用語の beat（せりふとせりふの間の『間』）から来た表現で、俳優や演出家が使っていた業界用語がビジネス英語に転用された。核心は、沈黙そのものを目的として明示的に提案する点にあり、単に黙るのではなく『今、意図的に間を取っている』と場に宣言することで、感情的な反応や拙速な結論を防ぐ効果がある。緊張した交渉の最中、悪いニュースを受け取った直後、意見が対立した会議など、『すぐ次の発言をしない方がいい』瞬間に発する一言として非常に実用的。視点や前提を見直す認知的な間を指す表現とは違い、こちらはより短く、感情を鎮めるための物理的な間に近い。"
-    },
-    {
-      type: "phrase", term: "Walk me through your thinking.", ipa: "", register: "ビジネス口語・1on1/レビューで頻出",
-      meaning_en: "used to ask someone to explain step by step how they arrived at a decision or conclusion",
-      meaning_ja: "どういう考えでそうなったか、順を追って説明してください",
-      examples: [
-        "Walk me through your thinking on the discount rate — 12% feels aggressive for a business with this much customer concentration.",
-        "Walk me through your thinking on turning down the offer. I want to understand it before I say anything."
-      ],
-      synonyms: [
-        { term: "Talk me through it.", nuance_ja: "より短くくだけた言い方で、日常会話にも自然に使える。順序立てて説明してほしいという構造的な要求はやや弱い。" },
-        { term: "What's your reasoning here?", nuance_ja: "結論に至った論理そのものを直接尋ねる、より分析的で率直な言い方。プロセスより論拠の妥当性に関心があるときに向く。" },
-        { term: "How did you get there?", nuance_ja: "結論への到達過程を問う口語表現。やや驚きや疑念のニュアンスを帯びやすく、詰問に聞こえる可能性がある点に注意。" }
-      ],
-      explanation_ja: "『順を追って案内する』という walk through の基本イメージが、思考プロセスの説明を求める表現に転用されたもの。重要なのは、これが批判ではなくニュートラルな依頼として機能する点で、結論そのものへの疑いを表に出さずに、判断の根拠を確認できる。マネージャーが部下の意思決定を評価するとき、投資委員会がアナリストの推奨を精査するとき、友人が重大な決断の理由を知りたいときなど、上下関係を問わず使える汎用性の高さが魅力。\"walk me through the numbers\" のように対象を数字や資料に変えても同じ構文で使え、ビジネス英語で最も汎用性の高い依頼表現の一つ。"
-    },
-    {
-      type: "phrase", term: "I don't want to speak out of turn, but ...", ipa: "", register: "フォーマル寄り・会議での慎重な発言前置き",
-      meaning_en: "said before offering an opinion or information that you are not sure it is your place to share",
-      meaning_ja: "差し出がましいようですが、〜",
-      examples: [
-        "I don't want to speak out of turn, but I think the client already knows about the delay — their procurement lead mentioned it to me last week.",
-        "I don't want to speak out of turn, but has anyone actually asked Legal if this structure is even allowed?"
-      ],
-      synonyms: [
-        { term: "This isn't really my place, but ...", nuance_ja: "自分の立場や役割の範囲外であることをより明確に認める言い方。発言の正当性そのものへの遠慮が強い。" },
-        { term: "Feel free to shut this down, but ...", nuance_ja: "却下されることを想定内としてあらかじめ許可を与える、よりくだけた前置き。相手に判断の主導権を明確に渡す響きが強い。" },
-        { term: "If it's not out of line to say, ...", nuance_ja: "発言の適切さそのものを問う、より丁寧でフォーマルな前置き。目上の相手や公式な場に向く。" }
-      ],
-      explanation_ja: "『順番を外れて発言する』という speak out of turn の直訳イメージ通り、本来自分が発言すべき立場・順番ではないかもしれない、という遠慮を先に示す前置き。実務での価値は、階層や役割を越えた発言（部下が経営判断に口を挟む、部外者が社内事情に言及するなど）を、礼儀を保ったまま行える点にあり、日本語の『差し出がましいようですが』とほぼ同じ機能を果たす。皮肉なことに、この前置きの直後にはしばしばかなり率直な、時に耳の痛い意見が続くのが実際の使われ方で、遠慮の言葉が本音を言うための許可証として機能している。上司や年長者に対して使うと特に効果的で、対等な相手にはやや大げさに響くこともある。"
-    },
-    {
-      type: "phrase", term: "At the risk of stating the obvious, ...", ipa: "", register: "フォーマル寄り・会議/文書で頻出",
-      meaning_en: "said before mentioning a point that may already be clear to everyone, just to make sure it isn't overlooked",
-      meaning_ja: "分かりきったことかもしれませんが、念のため、〜",
-      examples: [
-        "At the risk of stating the obvious, we should probably confirm the wire instructions by phone before we send seven figures anywhere.",
-        "At the risk of stating the obvious, maybe just ask her directly instead of guessing for another three weeks."
-      ],
-      synonyms: [
-        { term: "Stating the obvious here, but ...", nuance_ja: "より短く口語的な省略形。意味は同一だが、フォーマルな文書よりくだけた会話向き。" },
-        { term: "Just to state the obvious, ...", nuance_ja: "『リスクを冒して』という謙遜のニュアンスが抜け、より直接的で簡潔な前置きになる。" },
-        { term: "This might go without saying, but ...", nuance_ja: "『言わなくても分かるかもしれない』と控えめに前置きする言い方で、聞き手の知性を立てる配慮がやや強く出る。" }
-      ],
-      explanation_ja: "『分かりきったことを言うリスクを冒して』という直訳が示す通り、聞き手を見下していると取られかねないリスクを自覚した上で、それでも重要だから言う、という配慮を一語に込めた前置き。実務での典型的な使いどころは、忙しさや慣れの中で見落とされがちな基本的な確認事項（送金前の二重チェック、締切の再確認など）をあえて口にするときで、これを省略して基本手順が後で問題化した経験を持つ人ほど好んで使う表現。似た日本語の『念のため』とほぼ同じ心理的機能を持ち、相手の知性を疑っているわけではないという予防線を張りながら、実質的には重要な注意喚起を行っている。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "brusque", ipa: "/brʌsk/", register: "中立〜やや批判的・対人スタイルの評で頻出",
-      meaning_en: "abrupt and blunt in speech or manner, to the point of seeming rude",
-      meaning_ja: "ぶっきらぼうな、そっけなく素っ気ない",
-      examples: [
-        "The feedback was accurate but delivered so brusquely that he spent the rest of the week wondering if he was about to be let go.",
-        "The barista's a little brusque before 7 a.m., but the espresso is worth it."
-      ],
-      synonyms: [
-        { term: "curt", nuance_ja: "発言の短さそのものに焦点があり、時間や労力を惜しんでいる印象が強い。brusque はぶっきらぼうな態度全般を指し、言葉数の多寡は問わない。" },
-        { term: "blunt", nuance_ja: "率直さそのものを指す、より中立的で時に肯定的にも使える語。brusque が持つ『素っ気なさへの苛立ち』という否定的な響きは弱い。" },
-        { term: "curmudgeonly", nuance_ja: "気難しく不機嫌な性格そのものを指す、より人格評価的な語。一時的な態度ではなく持続的な気質を描写する点で射程が異なる。" }
-      ],
-      explanation_ja: "フランス語 brusque（急な、荒っぽい）を経由し、さらに遡るとイタリア語で『とげのある』を意味する語に行き着く。核心は『無礼を意図しているわけではないが、結果的に素っ気なく響く』話し方や態度で、悪意より不器用さや余裕のなさが原因であることが多いというニュアンスが curt や rude との違いになる。多忙なマネージャーや専門職に対して『能力は認めるが物腰が硬い』という、批判と擁護の中間くらいの評価を伝えたいときに使い勝手がよい。名詞形 brusqueness も使うが、副詞 brusquely のほうが実際の会話では頻出する。"
-    },
-    {
-      term: "prickly", ipa: "/ˈprɪkli/", register: "口語・対人関係の評で頻出",
-      meaning_en: "easily irritated or offended, and quick to react defensively to criticism",
-      meaning_ja: "とげとげしい、扱いにくいほど神経質な",
-      examples: [
-        "He's notoriously prickly about anyone questioning the model's assumptions, so bring data, not opinions, when you push back.",
-        "She's been a little prickly since the reorg was announced — give her some room this week."
-      ],
-      synonyms: [
-        { term: "touchy", nuance_ja: "特定の話題について敏感に反応するという限定的な神経質さを指すことが多く、性格全般の評価というよりその場の反応に焦点がある。" },
-        { term: "thin-skinned", nuance_ja: "批判に対する耐性の低さそのものを指す、より直接的で時に辛辣な評価。prickly より人格的な弱さとして描写される。" },
-        { term: "defensive", nuance_ja: "反応の性質（守りに入る）を客観的に描写する中立語で、性格特性というより特定の状況での振る舞いを指す。" }
-      ],
-      explanation_ja: "とげ prickle を持つ植物のイメージから来た語で、『近づくと刺さる』という比喩が対人関係にそのまま転用されている。核心は、批判や指摘に対して即座に、かつやや過剰に防御的な反応を返す傾向で、相手が悪意を持っているわけではなくても地雷を踏みやすい人物・話題を形容する。組織再編後のチームメンバーや、専門分野への疑義に敏感な専門家など、『理由のある苛立ちだが扱いには気を遣う』状況を温度低めに伝えられるのが利点で、より強い非難語にはならない。about を伴って対象を示す用法 \"prickly about ~\" が特によく使われる。"
-    },
-    {
-      term: "impervious", ipa: "/ɪmˈpɜːrviəs/", register: "フォーマル・評価/報道で頻出",
-      meaning_en: "not affected or influenced by something, no matter how much pressure or evidence is applied",
-      meaning_ja: "（批判・影響を受け付けず）びくともしない、無関係でいられる",
-      examples: [
-        "The stock has been oddly impervious to the sector-wide selloff, which either means the market knows something or is about to find out something.",
-        "He seems completely impervious to criticism of his cooking, which is both admirable and a little concerning."
-      ],
-      synonyms: [
-        { term: "immune", nuance_ja: "医学由来で、影響を受けない状態を客観的・恒久的な性質として描写する。impervious が持つ『外圧を跳ね返す』という能動的な強さの含みはやや弱い。" },
-        { term: "unfazed", nuance_ja: "動じない態度という一時的な反応に焦点があり、性質そのものというより特定の出来事への反応を描写する口語。" },
-        { term: "impermeable", nuance_ja: "物理的に液体や気体を通さないことを指す元来の技術語。比喩に使うと impervious よりやや硬く、化学・素材科学的な響きが残る。" }
-      ],
-      explanation_ja: "ラテン語 im（否定）+ pervius（通り抜けられる）に由来し、元は水や光を通さない物理的な素材を指す語だった。比喩用法の核心は『繰り返し圧力をかけても、内側の状態が一切変わらない』という頑健さで、単に反応が鈍いのではなく、外部からの影響を実質的にブロックしている強さの含みがある。株価が悪材料に反応しない、経営者が批判に態度を変えない、といった『通常なら動くはずのものが動かない』意外性を伝えるのに向いており、前置詞は to を伴い \"impervious to (criticism / pressure / logic)\" の形が定番。誉め言葉にも皮肉にも転びうる、価値中立性の高い語。"
-    },
-    {
-      term: "insufferable", ipa: "/ɪnˈsʌfərəbl/", register: "口語・強い不満/皮肉を込めた評",
-      meaning_en: "so unpleasant, arrogant, or self-satisfied that being around the person is very hard to tolerate",
-      meaning_ja: "（自慢や態度が）鼻持ちならない、我慢ならないほど不快な",
-      examples: [
-        "He's been insufferable since the promotion — every sentence somehow loops back to the new title.",
-        "The commentary track is insufferable; the director will not stop explaining how hard the shot was to get."
-      ],
-      synonyms: [
-        { term: "unbearable", nuance_ja: "苦痛や退屈など、原因を問わず耐え難いこと全般を指す一般語。insufferable が持つ『相手の傲慢さや自己満足』という性格への非難は含まれない。" },
-        { term: "insufferably smug", nuance_ja: "insufferable の原因（自己満足）を明示して強調した表現。単独の insufferable より非難の焦点が絞られる。" },
-        { term: "full of himself/herself", nuance_ja: "自惚れているという性格描写に限定した口語表現。insufferable が持つ『それに付き合わされる側の苦痛』という視点はあまり強くない。" }
-      ],
-      explanation_ja: "suffer（耐える）に否定接頭辞と『可能』の接尾辞がついた語で、文字通り『耐えることが不可能』という強い語感を持つ。核心は苦痛の原因が相手の性格（特に自慢、優越感、うぬぼれ）にあり、話し手がそれに付き合わされる側としての苛立ちを表明している点で、単なる不快の描写である unpleasant よりはるかに感情的で口語的。昇進直後の同僚、成功を語り続ける知人など、『能力や成功は本物だが、その態度に付き合うのがつらい』というよくある社会的状況を的確に、かつ皮肉を込めて表現できる。フォーマルな評価には向かず、友人同士の愚痴や軽い皮肉のトーンで使うのが自然。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "give the green light",
-      meaning_en: "to give official approval for something to start or proceed",
-      meaning_ja: "（正式に）ゴーサインを出す、承認する",
-      examples: [
-        "Compliance gave the green light on the marketing copy late Friday, which is exactly why it went out with a typo in the headline.",
-        "My parents finally gave the green light on the road trip, three weeks after I'd already booked the campsite."
-      ],
-      synonyms: [
-        { term: "give the go-ahead", nuance_ja: "ほぼ同義の言い換えで、フォーマル度も近い。green light のほうが視覚的で会話に彩りが出る分、日常でやや好まれる。" },
-        { term: "sign off on (something)", nuance_ja: "書面や正式な承認プロセスを経た決裁により重点があり、口頭のカジュアルな許可には green light のほうが自然。" }
-      ],
-      explanation_ja: "交通信号の青信号から来た極めて直感的な比喩で、赤（停止・却下）に対する青（進め・承認）という対比がそのまま意思決定に転用されている。実務での使いどころは、単なる同意ではなく『複数の関門を経て、正式に進行が許可された』という手続き感を伴う場面で、プロジェクトの開始、予算の執行、規制当局の認可などに広く使う。名詞としても動詞としても使え、\"the green light\"（承認そのもの）、\"green-light (a project)\"（承認する）のどちらの形も頻出する。反対語は当然ながら \"red light\" で、対にして覚えると定着しやすい。"
-    },
-    {
-      phrase: "corner the market",
-      meaning_en: "to gain control over the supply of something so completely that you dominate the market for it",
-      meaning_ja: "（市場を）独占する、一手に押さえる",
-      examples: [
-        "They didn't invent anything new — they just cornered the market on the one component everyone else's supply chain depended on.",
-        "That one bakery has basically cornered the market on birthday cakes in this town; everyone else gave up trying to compete."
-      ],
-      synonyms: [
-        { term: "dominate the market", nuance_ja: "シェアの大きさそのものを指す一般的な言い方で、corner が含む『供給を握って他社を締め出す』という戦略的な独占の手口までは示さない。" },
-        { term: "have a lock on (something)", nuance_ja: "競合が事実上入り込めない状態を指す口語表現。市場全体というより特定の顧客・案件・機会を確保している場合にも使える点で射程がやや広い。" }
-      ],
-      explanation_ja: "株式市場で特定の銘柄の流通株をほぼ買い占め、相場を『追い詰める（corner＝隅に追いやる）』という19世紀の相場操縦手法が語源。したがって本来は他者を選択の余地なく隅に追い詰めるという、かなり攻撃的な支配のイメージを内包している。現代では違法な相場操縦に限らず、特定商品・ニッチ市場で競合を寄せ付けないほどの優位を築いた場合に広く使われ、褒め言葉にも警戒の対象にもなりうる。前置詞は on が定番で、\"corner the market on (something)\" の形を覚えておくと自然に使える。"
-    },
-    {
-      phrase: "trim the fat",
-      meaning_en: "to remove unnecessary costs, staff, or content, keeping only what is essential",
-      meaning_ja: "（無駄を）そぎ落とす、贅肉を削る",
-      examples: [
-        "The new CFO spent her first ninety days trimming the fat — mostly overlapping software licenses nobody remembered signing up for.",
-        "Can you trim the fat on this email? Nobody needs three paragraphs of context before the actual ask."
-      ],
-      synonyms: [
-        { term: "cut the fluff", nuance_ja: "文章やプレゼン資料など、内容面の余分な装飾や冗長さを削ることに限定して使われやすい。trim the fat はコストや人員にも同じくらい自然に使える点で射程が広い。" },
-        { term: "streamline", nuance_ja: "プロセスや構造を効率化するというより中立的でフォーマルな語。trim the fat が持つ『余分なものを切り捨てる』という削減の痛みの含みは弱い。" }
-      ],
-      explanation_ja: "肉の余分な脂身を切り落とす調理の比喩で、『本体（筋肉＝本質的な価値）はそのままに、不要な部分（脂＝無駄）だけを除く』という区別が核心にある。だからこそ単なる cut costs より前向きに響き、『組織の本質的な強さは損なわずに効率化する』という経営判断を好意的に表現できる語として好まれる。予算削減、人員整理、文章やプレゼンの推敲まで幅広く使え、対象が『会社』でも『メール一通』でも自然という汎用性の高さも実務での人気の理由。ただし削られる側からすれば人員削減の婉曲表現として響くこともあるため、対象が人である場合は使う場面に配慮が要る。"
-    },
-    {
-      phrase: "put in the legwork",
-      meaning_en: "to do the tedious, time-consuming preparatory work required before a task can be completed properly",
-      meaning_ja: "（地道な）下調べ・下準備をきちんとやる",
-      examples: [
-        "Nobody wants to hear this, but the model is only as good as the legwork behind it — three weeks of calling suppliers, not three hours in Excel.",
-        "She put in the legwork calling every reference before the offer went out, which is more than most hiring managers bother to do."
-      ],
-      synonyms: [
-        { term: "do the groundwork", nuance_ja: "後続の作業の土台を作るという構築的な側面に焦点があり、legwork が持つ『足を使って動き回る泥臭さ』の含みはやや弱い。" },
-        { term: "pound the pavement", nuance_ja: "文字通り歩き回って営業や求職活動をする、という特に対面での地道な活動を指す口語。legwork より対象が対人的な訪問・面談に限定されやすい。" }
-      ],
-      explanation_ja: "文字通り『足（leg）を使う仕事』という意味で、机上の分析や思考ではなく、実際に動き回って情報を集め、確認し、根回しする泥臭い作業全般を指す。核心は『見栄えのする成果物の裏には、地味で目立たない準備作業が必ずある』という前提で、しばしば『その苦労は最終成果物には直接見えない』という含みを伴って使われる。デューデリジェンスでの一次情報の裏取り、就職活動での企業研究、引っ越し先の下見など、『手間を惜しまなかったかどうか』が結果を左右する場面で頻出し、\"do the legwork\" の形も \"put in the legwork\" と同じくらい自然。"
-    }
-  ],
-  todayQuiz: [
-    { question: "After years of success, the firm's decision-making process gradually ___ into a rigid twelve-step approval chain that even senior partners complained about.", choices: ["ossified", "vacillated", "absconded", "obfuscated"], answerIndex: 0, explanation: "\"Ossify\" describes a process becoming fixed and rigid over time, which fits a decision-making process turning into a rigid twelve-step chain. \"Vacillate\" means switching back and forth, \"abscond\" means to flee secretly, and \"obfuscate\" means to deliberately confuse — none fit a structure becoming rigid." },
-    { question: "The auditor's report didn't hide the losses outright, but the way the numbers were presented certainly ___ how concentrated the risk really was.", choices: ["obfuscated", "absconded", "ossified", "vacillated"], answerIndex: 0, explanation: "\"Obfuscate\" means to deliberately make something unclear without outright lying, which fits a presentation that technically discloses but hides the real picture. \"Abscond\" means to flee secretly and \"ossify\" means to become rigid — neither describes misleading presentation." },
-    { question: "Legal isn't confused about what they want — they've clearly decided against the clause. They're just ___ on telling us formally, probably hoping we'll drop it first.", choices: ["dragging their feet", "vacillating", "throwing in the towel", "burying the lede"], answerIndex: 0, explanation: "\"Drag your feet\" describes deliberately delaying an action you don't want to take, which fits Legal having already decided but stalling on communicating it. \"Vacillate\" would mean they haven't actually decided yet, which contradicts the sentence, and \"throw in the towel\" means to give up." },
-    { question: "The CEO ___ about the acquisition talks for months, and even the board only found out two weeks before the announcement.", choices: ["kept the acquisition talks close to the vest", "buried the lede on the acquisition talks", "threw in the towel on the acquisition talks", "dragged their feet on the acquisition talks"], answerIndex: 0, explanation: "\"Keep something close to the vest\" means deliberately withholding information, which matches the CEO not telling even the board for months. \"Bury the lede\" is about presentation order within a piece of writing or speech, not months of secrecy." },
-    { question: "He's brilliant, but ever since the award, he's been genuinely ___ — every conversation somehow becomes about the award.", choices: ["insufferable", "brusque", "impervious", "prickly"], answerIndex: 0, explanation: "\"Insufferable\" describes someone so smug or self-satisfied that being around them is hard to tolerate, matching constantly steering conversation back to his own award. \"Brusque\" describes an abrupt manner, and \"impervious\" means unaffected by outside pressure — neither fits boastfulness." },
-    { question: "She's ___ about any question involving the model's assumptions — bring data, not opinions, if you push back.", choices: ["prickly", "impervious", "insufferable", "brusque"], answerIndex: 0, explanation: "\"Prickly\" describes someone who reacts defensively and touchily to criticism on a specific topic, which fits being sensitive about questions on the model's assumptions. \"Impervious\" would mean the criticism has no effect on her at all, which is a stronger and different claim." },
-    { question: "Once the board ___, procurement finalized the contract within a week.", choices: ["gave the green light", "cornered the market", "trimmed the fat", "put in the legwork"], answerIndex: 0, explanation: "\"Give the green light\" means to formally approve something, which fits the board's approval leading directly to the contract being finalized. \"Corner the market\" and \"trim the fat\" describe unrelated actions involving supply control and cost-cutting." },
-    { question: "The two suppliers who ___ raw lithium access are now effectively setting prices for the entire battery industry.", choices: ["cornered the market on", "trimmed the fat off", "gave the green light to", "put in the legwork on"], answerIndex: 0, explanation: "\"Corner the market on\" something means gaining such dominant control over its supply that you can effectively set terms for an entire industry, matching suppliers setting prices industry-wide. The other collocations don't describe controlling supply." },
-    { question: "The recommendation looked polished in the deck, but almost none of the ___ — the supplier calls, the site visits — had actually been done.", choices: ["legwork", "green light", "fat", "lede"], answerIndex: 0, explanation: "\"Legwork\" refers to tedious preparatory work such as supplier calls and site visits, matching what the sentence says was missing. \"Green light\" refers to approval and \"fat\" refers to unnecessary costs (as in trim the fat) — neither fits missing preparatory work." },
-    { question: "By the time anyone at the firm realized the client accounts were empty, the portfolio manager had already ___ to a country with no extradition treaty.", choices: ["absconded", "vacillated", "cornered the market", "given the green light"], answerIndex: 0, explanation: "\"Abscond\" means to leave secretly, usually to escape punishment after wrongdoing, which fits a portfolio manager fleeing after emptying client accounts. \"Vacillate\" means to waver indecisively, unrelated to fleeing to escape justice." }
-  ]
-},
-{
   date: "2026-09-13",
   dateLabel: "2026年9月13日（日）",
   readTimeMin: 32,
@@ -2063,9 +1744,197 @@ const ENGLISH_REPORTS = [
     { question: "After the central bank chair gave nothing away in a two-hour hearing, reporters described him as utterly ___.", choices: ["inscrutable", "complacent", "audacious", "indomitable"], answerIndex: 0, explanation: "\"Inscrutable\" fits someone whose thoughts and intentions are impossible to read, exactly the two-hour hearing where nothing was given away. \"Complacent\" would describe unwarranted self-satisfaction, not unreadability." },
     { question: "The dual-class share structure means founders keep majority control no matter how other shareholders vote — critics say it simply ___ in management's favor.", choices: ["stacks the deck", "raises a red flag", "calls into question the numbers", "burns through cash"], answerIndex: 0, explanation: "\"Stack the deck\" describes arranging a structure so one side is unfairly guaranteed an advantage, matching the guaranteed control regardless of votes. \"Raise a red flag\" means flagging a suspicious sign about a specific fact, not a structurally guaranteed advantage." }
   ]
+},
+{
+  date: "2026-09-22",
+  dateLabel: "2026年9月22日（火）",
+  readTimeMin: 21,
+  coreItems: [
+    {
+      type: "word", term: "browbeat", ipa: "/ˈbraʊbiːt/", register: "批判的なニュアンス、口語〜報道でも使用(威圧的な言動を非難する文脈)",
+      meaning_en: "to intimidate or pressure someone into doing something through aggressive, forceful, or bullying behavior",
+      meaning_ja: "(威圧的に)言い含める、脅すようにして従わせる",
+      examples: [
+        "The senior partner had a habit of browbeating junior associates into working weekends by implying their bonus depended on it.",
+        "My dad tried to browbeat me into taking over the family hardware store, but I'd already accepted a job in another city."
+      ],
+      synonyms: [
+        { term: "bully", nuance_ja: "より広く一般的な「いじめる」行為全般を指し、身体的な脅しも含みうる。browbeatは主に言葉・態度による威圧で相手の意思決定を変えさせることに焦点がある、よりフォーマルな語。" },
+        { term: "coerce", nuance_ja: "「強制する」という結果そのものに焦点があり、しばしば法的な文脈でも使われる中立的な語。browbeatは威圧の「やり方」—執拗に責め立てる態度—が前面に出る、より描写的な語。" },
+        { term: "strong-arm", nuance_ja: "口語的で、しばしば力や地位を利用した粗野な圧力を指す。browbeatは主に言葉による執拗な圧力で、strong-armよりやや上品な響き。" }
+      ],
+      explanation_ja: "brow(眉)+ beat(打つ)が語源とされ、相手を睨みつけながら威圧するイメージから生まれた語。上司が部下に、あるいは親が子供に「反論の余地を与えないほど執拗に迫って従わせる」場面で使われ、単なる説得ではなく、相手の意思を押しつぶすような強引さへの非難が込められている。ビジネス記事では 'browbeaten into signing the deal' のように受動態で使われることも多く、力関係の不均衡を強調したいときに便利な語。"
+    },
+    {
+      type: "word", term: "extol", ipa: "/ɪkˈstoʊl/", register: "フォーマル、称賛を強調する場面(プレゼン・記事で頻出)",
+      meaning_en: "to praise someone or something enthusiastically and publicly",
+      meaning_ja: "(人前で熱心に)称賛する、褒めたたえる",
+      examples: [
+        "The CEO spent the entire earnings call extolling the virtues of the new subscription model, even as revenue growth slowed.",
+        "My grandmother still extols the virtues of hand-written thank-you notes over a quick text."
+      ],
+      synonyms: [
+        { term: "laud", nuance_ja: "extolとほぼ同義でフォーマルな書き言葉だが、laudはやや簡潔で報道の見出しなどで好まれる。extolはより熱心さ・情熱を込めて長々と称える響きがある。" },
+        { term: "sing the praises of", nuance_ja: "より口語的でカジュアルな言い回し。extolはフォーマルなプレゼンや記事で使われる書き言葉寄りの語。" },
+        { term: "commend", nuance_ja: "より控えめで公式な「評価・推薦する」響きが強く、感情的な熱意は薄い。extolは強い熱意を込めて称賛するニュアンスが核心。" }
+      ],
+      explanation_ja: "ラテン語 extollere(高く掲げる)に由来し、『相手を持ち上げる』という原義がそのまま残っている語。決算説明会や製品発表で経営陣が自社の戦略・製品を過剰なまでに称賛する際の定番語で、しばしば 'extol the virtues/benefits of ~' という形で使われる。文脈によっては、実態が伴っていないのに美辞麗句だけを並べているという皮肉のニュアンスを込めて使われることもあり、単なる褒め言葉より一段階誇張された響きを持つ点を覚えておくとよい。"
+    },
+    {
+      type: "idiom", term: "have your cake and eat it too", ipa: "", register: "口語〜ビジネスでも頻出(欲張りな要求を指摘する場面)",
+      meaning_en: "to want or try to have two good things at the same time, especially when they are mutually exclusive",
+      meaning_ja: "両方いいとこ取りをしようとする、虫のいい話をする",
+      examples: [
+        "Management wants to cut costs and boost customer satisfaction at the same time — at some point they need to accept they can't have their cake and eat it too.",
+        "You can't have your cake and eat it too: if you want to move to the mountains, you have to accept a longer commute."
+      ],
+      synonyms: [
+        { term: "want it both ways", nuance_ja: "have your cake and eat it tooとほぼ同義だが、より直接的でシンプルな言い方。ケーキの比喩がない分、ややドライで説明的な響き。" },
+        { term: "have it both ways", nuance_ja: "want it both waysとほぼ同義。have your cake and eat it tooの方が会話でより印象的で記憶に残りやすく、皮肉っぽいニュアンスを添えやすい。" }
+      ],
+      explanation_ja: "『ケーキを持っている(所有している)』と『ケーキを食べる(消費してなくす)』は本来両立しない、という単純な事実から来た16世紀からある古い慣用句。ビジネスの意思決定で、二律背反(トレードオフ)にある2つの目標を同時に達成しようとする経営陣や顧客を軽くたしなめる際の定番表現で、'you can't have your cake and eat it too' という形でよく使われる。英語学習者は誤って『ケーキを食べてから持つ』の意味だと誤解しがちだが、正しくは『両方を同時に得ようとする』という欲張りな態度を指す点に注意。"
+    },
+    {
+      type: "phrase", term: "if it's all the same to you, ...", ipa: "", register: "丁寧に代案・希望を切り出す前置き(ビジネス口語、丁寧め)",
+      meaning_en: "used to politely introduce a preference or a request for a different arrangement, while showing you don't mind if the other person disagrees",
+      meaning_ja: "もしよろしければ、差し支えなければ(という前置きで希望・代案を切り出す)",
+      examples: [
+        "If it's all the same to you, I'd rather we push the call to Thursday — I have a client on-site all day Wednesday.",
+        "If it's all the same to you, could we split the bill instead of you covering the whole thing?"
+      ],
+      synonyms: [
+        { term: "if you don't mind,", nuance_ja: "ほぼ同義でより短く、日常会話でより頻繁に使われる。if it's all the same to youは、相手の選択を尊重しつつ自分の希望を伝えるという、ややフォーマルで配慮の込もった響きがある。" },
+        { term: "would it be possible to ...", nuance_ja: "依頼そのものに焦点を当てた、より直接的でフォーマルな表現。if it's all the same to youは『自分はどちらでもいいが、あえて言うなら』という控えめな前置きのニュアンスが強い。" }
+      ],
+      explanation_ja: "文字通りには『あなたにとってすべてが同じ(どちらでも構わない)なら』という意味で、相手に選択の自由があることを示しつつ、自分の希望や代案を切り出す非常に丁寧な前置き表現。上司や取引先など、目上の相手に軽い変更をお願いする場面で重宝し、'if you don't mind' よりもややフォーマルで礼儀正しい響きを持つ。ネイティブは日常的に多用するが教科書にはあまり出てこないため、丁寧に自分の希望を通したいビジネスメールや会話で使えると一気にこなれた印象になる。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "acrimonious", ipa: "/ˌækrɪˈmoʊniəs/", register: "対立・交渉決裂を描写(フォーマル、報道・法務で頻出)",
+      meaning_en: "(of a dispute, discussion, or relationship) marked by bitterness, anger, and ill will",
+      meaning_ja: "(対立・交渉などが)険悪な、辛辣で激しい",
+      examples: [
+        "The merger talks turned acrimonious after the target company's board accused the acquirer of lowballing its valuation.",
+        "Their divorce got so acrimonious that they couldn't even agree on who would keep the dog."
+      ],
+      synonyms: [
+        { term: "bitter", nuance_ja: "より一般的で日常的な語。acrimoniousはよりフォーマルで、法務・報道・交渉の文脈で「激しい対立・非難の応酬」を客観的に描写する際に好まれる。" },
+        { term: "contentious", nuance_ja: "「意見が対立している・議論を呼ぶ」という論争性そのものに焦点があり、必ずしも怒りや敵意を伴わない。acrimoniousは実際に怒りや敵意が表面化していることを強く含意する。" }
+      ],
+      explanation_ja: "ラテン語 acer(辛い、刺すような)に由来し、味覚の『辛さ・刺激』が人間関係の『棘のある激しさ』に転じた語。M&A交渉の決裂、労使交渉、離婚訴訟など、当事者間の敵意が公然と表面化した対立を描写する報道記事で定番の語で、'acrimonious negotiations/dispute/divorce' という形でよく使われる。単に『意見が合わない』を超えて、非難の応酬や感情的なしこりが残るレベルの対立を指す点がcontentiousとの大きな違い。"
+    },
+    {
+      term: "astute", ipa: "/əˈstuːt/", register: "称賛・的確な判断力を評する(フォーマル、ビジネスで頻出)",
+      meaning_en: "having or showing an accurate and quick judgment, especially in practical or business matters",
+      meaning_ja: "鋭い判断力のある、抜け目のない(称賛の含みで)",
+      examples: [
+        "It was an astute move to hedge the currency exposure before the central bank's surprise announcement.",
+        "Her astute reading of the room told her the client was about to walk, so she offered a discount before they could ask."
+      ],
+      synonyms: [
+        { term: "shrewd", nuance_ja: "既出語。shrewdは実利的な抜け目なさ・計算高さにやや寄った語で、時にわずかにずる賢い含みを持つこともある。astuteは判断の的確さ・洞察力そのものへの純粋な称賛のニュアンスが強い。" },
+        { term: "perceptive", nuance_ja: "人の感情や状況を『察する力』に焦点がある語で、必ずしもビジネス上の判断や戦略には限定されない。astuteはより実務的な判断力・戦略眼を評価する場面で使われることが多い。" }
+      ],
+      explanation_ja: "ラテン語 astutus(狡猾な、鋭敏な)に由来するが、現代英語ではネガティブな含みはほぼ消え、『状況を素早く正確に見抜く判断力』を称賛する語として定着している。投資判断、交渉、人事など、実務的な場面での的確な見極めを評価する際に頻出し、'an astute observer/investor/move' という形でよく使われる。既出のshrewdと混同しやすいが、shrewdがやや計算高さ寄りなのに対し、astuteはより純粋に『洞察力の鋭さ』を称える、好意的なニュアンスが強い語。"
+    },
+    {
+      term: "precarious", ipa: "/prɪˈkeriəs/", register: "不安定な状況への警戒(フォーマル、金融・ニュースで頻出)",
+      meaning_en: "not securely held or in position; dangerously likely to fall, collapse, or fail at any moment",
+      meaning_ja: "不安定な、いつ崩れてもおかしくない(危うい状況)",
+      examples: [
+        "The company's precarious cash position meant it was one missed payment away from breaching its loan covenants.",
+        "Balancing three part-time jobs left her finances feeling precarious, even though she never technically missed a bill."
+      ],
+      synonyms: [
+        { term: "shaky", nuance_ja: "より口語的でカジュアルな語。precariousはよりフォーマルで、財務報告書やニュース記事で『崩壊寸前の危うさ』を客観的に描写する際に好まれる。" },
+        { term: "tenuous", nuance_ja: "既出語。tenuousは主に「根拠・つながり」が薄弱で説得力に欠けることを指すのに対し、precariousは「立場・状況」そのものが物理的・比喩的に不安定で今にも崩れそうなことを指す。" }
+      ],
+      explanation_ja: "ラテン語 precarius(祈りによって得られた、他人の意向次第の)に由来し、『自分でコントロールできない、いつ足元をすくわれてもおかしくない』という危うさが核心にある語。企業の資金繰り、雇用の安定性、政治情勢など、『表面上は保たれているが、わずかなきっかけで崩れかねない』状況を描写する際の定番語で、'a precarious position/balance/situation' という形で頻出する。物理的に『崖っぷちに立っている』イメージを持つと、比喩的な使い方も覚えやすい。"
+    },
+    {
+      term: "condescending", ipa: "/ˌkɑːndɪˈsendɪŋ/", register: "批判的、見下した態度を非難(日常〜ビジネスで頻出)",
+      meaning_en: "showing an attitude of patronizing superiority; treating someone as if they were less intelligent or important",
+      meaning_ja: "見下したような、恩着せがましい(態度)",
+      examples: [
+        "The new hire complained that her manager's feedback always came across as condescending, even when the advice itself was reasonable.",
+        "He meant it as a compliment, but telling her the presentation was 'pretty good for a first attempt' just sounded condescending."
+      ],
+      synonyms: [
+        { term: "patronizing", nuance_ja: "ほぼ同義で相互に置き換え可能。patronizingの方がやや一般的で、condescendingはよりフォーマルな響きを持つ場合がある。" },
+        { term: "supercilious", nuance_ja: "「見下し」に加えて、あからさまな傲慢さ・軽蔑の表情まで含意する、より強く辛辣な語。condescendingは態度や話し方に滲む見下しを指すことが多く、superciliousほど露骨ではない場合もある。" }
+      ],
+      explanation_ja: "ラテン語 condescendere(へりくだる、譲歩する)が語源で、本来は『目上の者が自ら進んで身を低くする』という謙虚な意味だったが、現代では逆に『相手を見下しながら、いかにも寛大に接しているふりをする』という皮肉な意味に転じた語。職場で、悪気はなくても口調や言葉選びが『子供扱いしている』ように聞こえてしまうフィードバックや態度を非難する際に非常によく使われ、'that came across as condescending' は同僚間の摩擦を説明する定番フレーズ。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "call someone's bluff",
+      meaning_en: "to challenge someone to actually follow through on a claim or threat, believing they are not being honest or serious",
+      meaning_ja: "(相手の)はったりを見抜いて挑む、口先だけかどうか試す",
+      examples: [
+        "When the supplier threatened to walk away unless we paid upfront, we called their bluff and they backed down within the hour.",
+        "He said he'd quit if we made him work the holiday shift again, so I called his bluff and scheduled him anyway."
+      ],
+      synonyms: [
+        { term: "put someone to the test", nuance_ja: "より中立的で、相手の主張が「はったり」だと疑っているとは限らない。call someone's bluffは、相手の脅し・主張が虚勢だと見抜いた上で、それを試す・暴くという挑戦的なニュアンスが強い。" }
+      ],
+      explanation_ja: "ポーカーで、相手が強い手を持っているふりをしている(bluffする)ときに、あえて賭け金を上げて『本当にその手があるなら見せてみろ』と迫る行為が語源。交渉やビジネスの駆け引きで、相手の脅し文句や強気の要求が本当に実行される覚悟のあるものなのかを見極めるために、あえて一歩踏み込む場面で使われる定番表現。'call their bluff' という形で、脅しに屈せず強気に出た結果を語る記事や逸話に頻出する。"
+    },
+    {
+      phrase: "foot the bill",
+      meaning_en: "to pay for something, especially a large or unwelcome expense",
+      meaning_ja: "(費用を)支払う、負担する(多くは高額・不本意な出費)",
+      examples: [
+        "The client insisted on business-class flights for the whole team, and the vendor ended up footing the bill.",
+        "My parents footed the bill for the wedding, even though we offered to split it three ways."
+      ],
+      synonyms: [
+        { term: "pick up the tab", nuance_ja: "より口語的でカジュアルな響き。食事や飲み会など、日常的で比較的少額の出費に使われることが多い。foot the billはより大きな金額・公式な文脈でも使える、やや広めの語。" },
+        { term: "bear the cost", nuance_ja: "よりフォーマルで会計・財務報告的な語。foot the billは口語的で、誰が実際に財布を開くことになったのかという結果を語る際に使われることが多い。" }
+      ],
+      explanation_ja: "請求書(bill)の一番下(foot)に記された合計金額を『支払う』という発想から来た表現とされ、しばしば『本来払うべきでない、あるいは想定より高額な出費を、結局誰かが負担することになった』という文脈で使われる。契約交渉や家族間の費用負担など、『誰が最終的にお金を出すのか』が焦点になる場面の定番表現で、'end up footing the bill' という形で、不本意な出費を強いられた側を描写する際によく登場する。"
+    },
+    {
+      phrase: "run interference (for someone)",
+      meaning_en: "to act to protect someone from unwanted contact, criticism, or obstacles, often by intercepting or deflecting problems before they reach that person",
+      meaning_ja: "(人の盾となって)障害・批判を防ぐ、矢面に立つ",
+      examples: [
+        "The chief of staff spent most of the meeting running interference for the CEO, fielding the tough questions so she wouldn't have to.",
+        "My older sister used to run interference for me with our parents whenever I broke curfew."
+      ],
+      synonyms: [
+        { term: "shield (someone) from", nuance_ja: "より一般的で受動的な「守る」行為を指す。run interferenceは、アメフトのブロッカーのように、相手の前に積極的に割って入って障害を排除するという、より能動的・戦術的なニュアンスがある。" },
+        { term: "take the heat for", nuance_ja: "「批判・非難を代わりに引き受ける」という結果に焦点がある。run interferenceは批判が『そもそも本人に届く前に』防ぐという、より予防的なニュアンスを含む。" }
+      ],
+      explanation_ja: "アメリカンフットボールで、ランニングバックの前を走る味方選手が相手ディフェンダーをブロックして道を切り開く『インターフェアランス』が語源。ビジネスの場では、秘書やアシスタント、上司の側近などが、本人に余計な問い合わせ・批判・雑務が届かないよう先回りして処理する様子を指す定番表現で、'run interference for the boss' という形でよく使われる。家庭内でも、兄弟姉妹が親からの小言を代わりに引き受けてくれるような場面にも使える、汎用性の高い比喩。"
+    },
+    {
+      phrase: "toe the line",
+      meaning_en: "to conform to the standards, rules, or expectations set by an authority, especially when one might not personally agree",
+      meaning_ja: "(規則・方針に)従う、足並みをそろえる",
+      examples: [
+        "New associates are expected to toe the line on billable hours during their first two years, no exceptions.",
+        "She always toed the line at family gatherings, even when she privately disagreed with her father's politics."
+      ],
+      synonyms: [
+        { term: "fall in line", nuance_ja: "ほぼ同義で、しばしば「渋々従う」という抵抗感のニュアンスを伴う。toe the lineは、規則・基準に正確に従うという「境界線を踏み外さない」イメージがより強い。" },
+        { term: "play by the rules", nuance_ja: "より中立的で、公正なルールの中で行動するという肯定的な響きを持つことが多い。toe the lineは、上からの規律・統制に従わされているという、やや窮屈なニュアンスを伴うことがある。" }
+      ],
+      explanation_ja: "スポーツの徒競走や軍隊の整列で、スタートラインに『つま先(toe)』をきっちり揃えて並ぶ様子が語源とされる。組織の規則やコンプライアンス基準、あるいは目上の人が定めた暗黙のルールに、個人的な意見の有無にかかわらず従う場面で使われる定番表現で、'toe the company line' のように会社の公式方針に従うことを指す場合にも頻出する。反対に、規則を破ることは 'step out of line' や 'cross the line' と表現される点もあわせて覚えておくと便利。"
+    }
+  ],
+  todayQuiz: [
+    { question: "It was a remarkably ___ move to hedge the currency exposure right before the central bank's surprise rate announcement — the kind of foresight that gets written up in case studies.", choices: ["astute", "acrimonious", "precarious", "condescending"], answerIndex: 0, explanation: "\"Astute\" fits a judgment call praised for its foresight and accuracy. \"Acrimonious\" describes bitter conflict, not sound judgment." },
+    { question: "After the target company's board accused the acquirer of lowballing the offer, the merger talks turned ___, with both sides trading public accusations.", choices: ["acrimonious", "astute", "precarious", "condescending"], answerIndex: 0, explanation: "\"Acrimonious\" fits a dispute marked by open bitterness and hostility, matching the public accusations. \"Precarious\" describes instability, not hostility between parties." },
+    { question: "One missed payment away from breaching its loan covenants, the company's cash position was undeniably ___.", choices: ["precarious", "astute", "acrimonious", "condescending"], answerIndex: 0, explanation: "\"Precarious\" fits a position that is dangerously unstable and could collapse at any moment, matching being one payment away from default. \"Astute\" describes sharp judgment, unrelated to financial instability." },
+    { question: "The senior partner didn't ask nicely — he ___ the junior associates into working through the weekend by hinting their bonuses were on the line.", choices: ["browbeat", "extolled", "ran interference for", "footed the bill for"], answerIndex: 0, explanation: "\"Browbeat\" fits intimidating someone into doing something through pressure, matching the implied threat about bonuses. \"Extolled\" means praised enthusiastically, the opposite tone." },
+    { question: "Even as growth slowed, the CEO spent the entire earnings call ___ the virtues of the new subscription model.", choices: ["extolling", "browbeating", "toeing the line on", "calling the bluff of"], answerIndex: 0, explanation: "\"Extolling\" fits praising something enthusiastically and publicly, matching a CEO talking up a new model on an earnings call. \"Browbeating\" means intimidating someone, which doesn't fit praising a product." },
+    { question: "The vendor never actually intended to walk away — when we refused to prepay, we simply ___, and they folded within the hour.", choices: ["called their bluff", "footed the bill", "toed the line", "ran interference"], answerIndex: 0, explanation: "\"Called their bluff\" fits challenging someone to follow through on a threat that turns out to be empty, matching the vendor folding. \"Footed the bill\" means paying for something, unrelated to challenging a threat." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-21 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-22 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
