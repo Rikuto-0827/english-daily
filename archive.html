@@ -6969,7 +6969,7 @@ function renderPanel(r){
         '<div class="vc-ex"><p>'+esc(String(p.text||'').replace(/\{\{([^|}]+)\|([^}]+)\}\}/g,'$1')).replace(/\n/g,'<br>')+'</p></div>' +
         (p.translation_ja?'<div class="vc-expl"><p>'+esc(p.translation_ja).replace(/\n/g,'<br>')+'</p></div>':'')+'</div>';
     }).join('');
-    return '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'（復習デー）</div></div>' +
+    return '<div class="meta-bar"><div class="meta-date">'+esc(r.day ? 'Day '+r.day+'（Phase '+(r.phase||1)+' 復習・Round '+(r.round||1)+'）' : r.dateLabel+'（復習デー）')+'</div></div>' +
       (ps ? (r.scopeLabel?'<div class="vc-grammar" style="margin-bottom:10px">対象：'+esc(r.scopeLabel)+'</div>':'') + ps
           : '<div id="empty-note">この日は復習デーのため、新規の表現はありません。</div>');
   }
@@ -6987,7 +6987,7 @@ let currentIdx = ENGLISH_REPORTS.length - 1;
 function renderTabs(){
   const nav = document.getElementById('tab-nav-inner');
   nav.innerHTML = ENGLISH_REPORTS.map(function(r, i){
-    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+r.date+'</button>';
+    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+(r.day ? 'Day '+r.day : r.date)+'</button>';
   }).join('');
 }
 function selectDay(i){ currentIdx = i; renderTabs(); renderAll(); }
