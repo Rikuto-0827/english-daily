@@ -196,6 +196,18 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 .psg-chips{margin-top:10px;display:flex;gap:6px;flex-wrap:wrap}
 .tchip{font-size:11px;background:#f5f3ff;color:#5b21b6;padding:2px 9px;border-radius:12px;cursor:help}
 .psg-ja{font-size:13px;color:#4b4638;line-height:1.9}
+/* Alerts (unlearned reports) */
+.alert-bar{border-radius:12px;padding:14px 18px;margin-bottom:16px}
+.alert-title{font-size:15px;font-weight:800;margin-bottom:4px}
+.alert-body{font-size:12.5px;line-height:1.75;margin-bottom:10px}
+.alert-red{background:#fef2f2;border:2px solid #dc2626;color:#7f1d1d}
+.alert-red .alert-title{color:#b91c1c}
+.alert-amber{background:#fffbeb;border:1.5px solid #f59e0b;color:#78350f}
+.alert-amber .alert-title{color:#b45309}
+.alert-green{background:#f0fdf4;border:1.5px solid #22c55e;color:#14532d}
+.alert-green .alert-title{color:#15803d}
+.alert-green .alert-body{margin-bottom:0}
+.badge-alert{background:rgba(239,68,68,.25) !important;border-color:#f87171 !important;color:#fecaca !important;font-weight:800}
 </style>
 </head>
 <body>
@@ -207,6 +219,7 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 </div>
 <div id="tab-nav"><div id="tab-nav-inner"></div></div>
 <div class="wrap">
+  <div id="alert-slot"></div>
   <div id="panels"></div>
 
   <div id="review-section">
@@ -536,16 +549,16 @@ const ENGLISH_REPORTS = [
     }
   ],
   todayQuiz: [
-    { question: "After being told for the third time that the deadline 'was always next Friday' — despite a written email confirming Monday — Maria began to genuinely doubt her own memory. Her manager was ___ her.", choices: ["gaslighting", "misleading", "mentoring", "briefing"], answerIndex: 0, explanation: "Gaslighting specifically means making someone doubt their own memory or sanity, not just giving false information. \"Misleading\" is too mild here — the key detail is that Maria started questioning her own perception, which is the defining feature of gaslighting." },
-    { question: "Because Alcoa reports earnings before nearly every other major industrial company each quarter, analysts often treat its results as a ___ for the broader economy.", choices: ["bellwether", "harbinger", "windfall", "backstop"], answerIndex: 0, explanation: "A bellwether is an indicator tracked because it tends to move before a broader trend — neutral and used for good or bad news alike. \"Harbinger\" usually implies an ominous sign specifically, which doesn't fit this neutral, purely predictive context." },
-    { question: "The task force spent two years and $12 million producing a 400-page strategy document that was never implemented and now sits in a drawer — a classic ___.", choices: ["boondoggle", "fiasco", "kerfuffle", "windfall"], answerIndex: 0, explanation: "A boondoggle is a wasteful project that quietly persists and produces no real value. \"Fiasco\" implies a dramatic, visible failure, which doesn't match a project that just fizzled out unnoticed; \"kerfuffle\" is far too small-scale for a two-year, $12 million effort." },
-    { question: "Even after the stock dropped 60% with no bottom in sight and the company still hadn't resolved its debt covenant issues, he kept buying more shares — friends warned he was trying to ___.", choices: ["catch a falling knife", "buy the dip", "cut and run", "hedge his bets"], answerIndex: 0, explanation: "\"Catch a falling knife\" specifically warns against buying an asset that is still actively declining with no confirmed bottom. \"Buy the dip\" is more neutral and doesn't carry that warning about an ongoing, unresolved decline." },
-    { question: "The private equity firm still believed the turnaround plan could work in theory, but after burning through two extra years of runway, they chose to sell the portfolio company at a steep loss rather than commit more capital — a decision to ___.", choices: ["cut and run", "throw in the towel", "double-click on it", "torpedo the deal"], answerIndex: 0, explanation: "\"Cut and run\" fits a calculated, strategic withdrawal from a position that might theoretically still work — the firm chose to abandon it rather than being simply worn down. \"Throw in the towel\" implies exhaustion and total defeat, which doesn't match \"still believed it could work.\"" },
-    { question: "Having interned at the target company the summer before the case competition, our team had ___ on every other team walking in blind.", choices: ["a leg up", "an edge", "table stakes", "a bellwether"], answerIndex: 0, explanation: "\"Have a leg up on (someone)\" is the natural set phrase for a comparative advantage over specific named others (\"on every other team\"). \"An edge\" is more abstract and doesn't pair as naturally with \"on every other team\" in this idiomatic construction." },
-    { question: "In the all-hands, the CEO said user growth was 'soft in EMEA' and immediately moved to the next slide. An analyst in the audience raised her hand and asked, 'Can we ___ on that? Soft compared to what?'", choices: ["double-click", "circle back", "level-set", "table stakes"], answerIndex: 0, explanation: "\"Double-click on\" means to probe a vague statement more deeply right now. \"Circle back\" means returning to the topic later, which contradicts asking immediately; \"level-set\" means aligning shared understanding, not requesting more detail." },
-    { question: "When the vendor asked if same-day customer support was required for the pilot program, the product lead replied, 'That's ___ — let's launch without it and revisit in Phase 2.'", choices: ["a nice-to-have, not a need-to-have", "mission-critical", "a bellwether", "a boondoggle"], answerIndex: 0, explanation: "\"Nice-to-have, not a need-to-have\" is used precisely to deprioritize something as non-essential while launching without it. \"Mission-critical\" means the opposite — essential to success — which contradicts the decision to launch without it." },
-    { question: "When the board rejected his pet acquisition, the CEO sent a ___ email accusing everyone of 'lacking vision' — a strange look for someone in his position.", choices: ["petulant", "sulky", "insouciant", "indefatigable"], answerIndex: 0, explanation: "Petulant captures the childish, actively complaining reaction to being told no, which fits \"sent an email accusing everyone.\" \"Sulky\" implies a quieter, withdrawn reaction rather than an outward, accusatory email." },
-    { question: "A single line in the reps-and-warranties section, buried on page 80, ended up ___ a deal that had taken eight months to negotiate.", choices: ["torpedoing", "poaching", "whitewashing", "moving markets on"], answerIndex: 0, explanation: "\"Torpedo a deal\" means to destroy a negotiation, which fits a single clause derailing eight months of work. \"Poach\" relates to hiring away talent, and \"whitewash\" relates to covering up wrongdoing — neither fits destroying a negotiation." }
+    { question: "After being told for the third time that the deadline 'was always next Friday' — despite a written email confirming Monday — Maria began to genuinely doubt her own memory. Her manager was ___ her.", choices: ["stonewalling", "micromanaging", "gaslighting", "sandbagging"], answerIndex: 2, explanation: "Gaslighting means manipulating someone into doubting their own memory or sanity — exactly what happened to Maria. Stonewalling is refusing to engage or answer, micromanaging is controlling every small detail, and sandbagging is deliberately understating your position or ability to gain an edge later; none of them make the victim doubt reality." },
+    { question: "Because Alcoa reports earnings before nearly every other major industrial company each quarter, analysts often treat its results as a ___ for the broader economy.", choices: ["bellwether", "harbinger", "linchpin", "backstop"], answerIndex: 0, explanation: "A bellwether is an indicator watched because it tends to move ahead of a broader trend, good or bad. A harbinger usually signals something ominous, a linchpin is the one piece that holds a whole system together, and a backstop is a last-resort source of support — none of them mean an early indicator for the wider economy." },
+    { question: "The task force spent two years and $12 million producing a 400-page strategy document that was never implemented and now sits in a drawer — a classic ___.", choices: ["fiasco", "kerfuffle", "pipe dream", "boondoggle"], answerIndex: 3, explanation: "A boondoggle is a wasteful project that consumes time and money and quietly produces nothing. A fiasco is a dramatic, visible failure, a kerfuffle is a minor fuss, and a pipe dream is an unrealistic hope — none of them capture expensive, pointless, and forgotten in a drawer." },
+    { question: "Even after the stock dropped 60% with no bottom in sight and the company still hadn't resolved its debt covenant issues, he kept buying more shares — friends warned he was trying to ___.", choices: ["chase yield", "catch a falling knife", "hedge his bets", "buy the dip"], answerIndex: 1, explanation: "Catch a falling knife warns against buying an asset that is still plunging before it has shown a bottom. Buy the dip sounds similar but implies a temporary pullback in a healthy asset, chase yield means reaching for higher income while ignoring risk, and hedge his bets means reducing risk — the opposite of piling in." },
+    { question: "The private equity firm still believed the turnaround plan could work in theory, but after burning through two extra years of runway, they chose to sell the portfolio company at a steep loss rather than commit more capital — a decision to ___.", choices: ["cut and run", "throw in the towel", "stay the course", "kick the can down the road"], answerIndex: 0, explanation: "Cut and run is a deliberate, strategic exit from a position that might still theoretically work. Throw in the towel implies exhaustion and total defeat, stay the course is the opposite of leaving, and kick the can down the road means postponing a decision — the firm actually made one." },
+    { question: "Having interned at the target company the summer before the case competition, our team had ___ on every other team walking in blind.", choices: ["the last laugh", "table stakes", "a leg up", "a blank check"], answerIndex: 2, explanation: "Have a leg up on (someone) means having a head start or advantage over specific rivals. The last laugh means winning in the end after being doubted, table stakes are the minimum requirements just to take part, and a blank check is unlimited authority to spend — none describe an advantage from prior experience." },
+    { question: "In the all-hands, the CEO said user growth was 'soft in EMEA' and immediately moved to the next slide. An analyst in the audience raised her hand and asked, 'Can we ___ on that? Soft compared to what?'", choices: ["circle back", "level-set", "take it offline", "double-click"], answerIndex: 3, explanation: "Double-click on means to zoom in and probe a vague statement right now. Circle back postpones the topic, take it offline moves it to a private discussion, and level-set aligns everyone's shared understanding — all three avoid digging into the detail in the moment, which is what the analyst wants." },
+    { question: "When the vendor asked if same-day customer support was required for the pilot program, the product lead replied, 'That's ___ — let's launch without it and revisit in Phase 2.'", choices: ["mission-critical", "a nice-to-have, not a need-to-have", "table stakes", "a dealbreaker"], answerIndex: 1, explanation: "A nice-to-have, not a need-to-have deprioritizes a feature so you can ship without it. Mission-critical, table stakes (the bare minimum to compete) and a dealbreaker all describe things that cannot be skipped — the opposite of launching without it." },
+    { question: "When the board rejected his pet acquisition, the CEO sent a ___ email accusing everyone of 'lacking vision' — a strange look for someone in his position.", choices: ["petulant", "sulky", "magnanimous", "sanguine"], answerIndex: 0, explanation: "Petulant describes childish, openly complaining irritation at not getting one's way — fitting an accusatory email. Sulky is a quieter, withdrawn mood, magnanimous means generous in defeat (the opposite), and sanguine means cheerfully optimistic." },
+    { question: "A single line in the reps-and-warranties section, buried on page 80, ended up ___ a deal that had taken eight months to negotiate.", choices: ["sweetening", "rubber-stamping", "torpedoing", "papering over"], answerIndex: 2, explanation: "Torpedo a deal means to sink a negotiation outright. Sweetening a deal makes it more attractive, rubber-stamping approves something without scrutiny, and papering over hides problems instead of destroying anything — none describe a clause that kills eight months of work." }
   ]
 },
 {
@@ -856,15 +869,15 @@ const ENGLISH_REPORTS = [
     }
   ],
   todayQuiz: [
-    { question: "The finance team's month-end close still relies on a ___ where an intern manually re-keys numbers from one system into another that was never built to receive them.", choices: ["kludge", "workaround", "band-aid fix", "patchwork"], answerIndex: 0, explanation: "Kludge specifically emphasizes an inelegant, jury-rigged solution that technically works but wasn't designed properly, which fits a manual re-keying process. \"Workaround\" is more neutral and doesn't carry the same connotation of clumsiness." },
-    { question: "The board passed over the brilliant but junior candidate, saying he lacked the ___ to face down activist investors in a live negotiation.", choices: ["gravitas", "authority", "presence", "stature"], answerIndex: 0, explanation: "Gravitas refers to a weighty, dignified seriousness of manner that makes people take someone seriously in high-stakes moments. \"Authority\" stems from formal power or title, which a talented junior candidate could still lack in a different sense." },
-    { question: "Rather than push the founder into one of their standard hedging products, the private bank built a fully ___ structure around his specific concentrated stock position.", choices: ["bespoke", "custom", "tailored", "made-to-order"], answerIndex: 0, explanation: "Bespoke carries the polished, high-end connotation of something designed from scratch for one client, fitting private banking language. \"Made-to-order\" sounds more like a manufacturing or restaurant term and lacks that same register." },
-    { question: "After the team worked through the weekend to save the launch, it would be ___ not to at least send a thank-you note, even if the final product still has bugs.", choices: ["churlish", "ungracious", "surly", "rude"], answerIndex: 0, explanation: "\"It would be churlish not to...\" is the standard idiomatic construction for criticizing an unfairly ungracious reaction to something that deserves thanks. \"Surly\" describes a sullen, bad-tempered manner rather than this specific failure to show due gratitude." },
-    { question: "Before joining the hedge fund, she ___ doing credit analysis at a small regional bank, which is where she learned to read a balance sheet cold.", choices: ["cut her teeth", "burned the midnight oil", "smelled a rat", "threw herself a bone"], answerIndex: 0, explanation: "\"Cut your teeth\" specifically describes gaining foundational experience early in a career. \"Burn the midnight oil\" refers to working late hours, which is unrelated to where someone first developed their skills." },
-    { question: "The auditor couldn't point to a specific error yet, but three quarters of suspiciously identical gross margins to the decimal point made her ___.", choices: ["smell a rat", "have her doubts", "sense something's off", "be suspicious"], answerIndex: 0, explanation: "\"Smell a rat\" specifically conveys a sharp, almost instinctive detection of dishonesty based on circumstantial evidence, matching the vivid, specific trigger described. \"Have her doubts\" is vaguer and doesn't carry that same sense of an active, sharpened suspicion of wrongdoing." },
-    { question: "Every week he emails HR about a new minor grievance — the thermostat, the parking assignment, the font on the internal wiki — earning him a reputation as the office's most ___ complainer.", choices: ["querulous", "garrulous", "ebullient", "sanctimonious"], answerIndex: 0, explanation: "Querulous specifically describes a habitual, whining tendency to complain about minor grievances, which matches the pattern of small recurring complaints. Garrulous describes excessive talkativeness in general, not specifically a complaining tone." },
-    { question: "His lecture on the importance of protecting personal time rang especially ___ given that he had sent the team eleven emails between midnight and 3 a.m. the night before.", choices: ["sanctimonious", "preachy", "querulous", "ebullient"], answerIndex: 0, explanation: "Sanctimonious captures not just a moralizing tone but the specific hypocrisy of preaching a standard the speaker himself violates, which fits the midnight emails detail. \"Preachy\" describes the moralizing tone alone without necessarily implying that hypocrisy." },
-    { question: "Even as the portfolio dropped another eight percent in a single session, the fund ___ and didn't sell a single position.", choices: ["held its nerve", "stayed calm", "stood its ground", "kept its composure"], answerIndex: 0, explanation: "\"Hold your nerve\" is the idiomatic phrase specifically used in trading and investing contexts for resisting the urge to panic-sell under pressure. \"Stand your ground\" implies defending a position or opinion against opposition, not enduring financial pressure without flinching." }
+    { question: "The finance team's month-end close still relies on a ___ where an intern manually re-keys numbers from one system into another that was never built to receive them.", choices: ["kludge", "audit trail", "sandbox", "backlog"], answerIndex: 0, explanation: "A kludge is an inelegant, jury-rigged fix that technically works but was never designed properly, like re-keying numbers by hand. An audit trail is a record of transactions, a sandbox is an isolated test environment, and a backlog is accumulated unfinished work — all plausible in finance operations, but none names the clumsy patch itself." },
+    { question: "The board passed over the brilliant but junior candidate, saying he lacked the ___ to face down activist investors in a live negotiation.", choices: ["levity", "gravitas", "leverage", "bandwidth"], answerIndex: 1, explanation: "Gravitas is the weighty, serious presence that makes people take you seriously in high-stakes moments. Levity is lightness or humor (roughly the opposite), leverage is bargaining power, and bandwidth is capacity for work — none is the personal quality needed to face down activist investors." },
+    { question: "Rather than push the founder into one of their standard hedging products, the private bank built a fully ___ structure around his specific concentrated stock position.", choices: ["plain-vanilla", "bootstrapped", "boilerplate", "bespoke"], answerIndex: 3, explanation: "Bespoke means made specifically for one client, the polished private-banking term. Plain-vanilla is the finance word for basic standard instruments (the standard hedging products the bank avoided), boilerplate is reusable standard text, and bootstrapped means funded without outside capital." },
+    { question: "After the team worked through the weekend to save the launch, it would be ___ not to at least send a thank-you note, even if the final product still has bugs.", choices: ["obsequious", "punctilious", "churlish", "tenacious"], answerIndex: 2, explanation: "It would be churlish not to… is the set phrase for criticizing an ungracious failure to show due thanks. Obsequious means fawning, punctilious means fussy about rules and details, and tenacious means stubbornly persistent — none of them fit a failure to say thank you." },
+    { question: "Before joining the hedge fund, she ___ doing credit analysis at a small regional bank, which is where she learned to read a balance sheet cold.", choices: ["jumped the gun", "cut her teeth", "rocked the boat", "cut corners"], answerIndex: 1, explanation: "Cut your teeth means to gain your first foundational experience. Jump the gun is to act too early, rock the boat is to disturb a stable situation, and cut corners is to skip steps to save effort — none explains where she learned her skills." },
+    { question: "The auditor couldn't point to a specific error yet, but three quarters of suspiciously identical gross margins to the decimal point made her ___.", choices: ["smell a rat", "blow the whistle", "see red", "rest easy"], answerIndex: 0, explanation: "Smell a rat is to sense that something dishonest is going on from circumstantial clues. Blowing the whistle means formally reporting wrongdoing (she has no proof yet), see red means to become furious, and rest easy is the opposite of suspicion." },
+    { question: "Every week he emails HR about a new minor grievance — the thermostat, the parking assignment, the font on the internal wiki — earning him a reputation as the office's most ___ complainer.", choices: ["laconic", "fastidious", "querulous", "garrulous"], answerIndex: 2, explanation: "Querulous describes a habitual, whining tendency to complain about small grievances. Garrulous means overly talkative, laconic means using very few words, and fastidious means extremely picky about quality or cleanliness — a fussy person is not necessarily a complainer." },
+    { question: "His lecture on the importance of protecting personal time rang especially ___ given that he had sent the team eleven emails between midnight and 3 a.m. the night before.", choices: ["querulous", "ebullient", "deferential", "sanctimonious"], answerIndex: 3, explanation: "Sanctimonious means making a show of moral superiority — and the midnight emails add the hypocrisy. Querulous is habitually complaining, ebullient is bubbly and enthusiastic, and deferential is respectfully yielding to others." },
+    { question: "Even as the portfolio dropped another eight percent in a single session, the fund ___ and didn't sell a single position.", choices: ["got cold feet", "held its nerve", "jumped ship", "threw in the towel"], answerIndex: 1, explanation: "Hold your nerve is the trading idiom for resisting the urge to panic-sell under pressure. Get cold feet means losing courage at the last moment, jump ship means abandoning a venture, and throw in the towel means admitting defeat — all describe backing out." }
   ]
 },
 {
@@ -1174,18 +1187,18 @@ const ENGLISH_REPORTS = [
     }
   ],
   todayQuiz: [
-    { question: "The board signed off on the acquisition, with one ___: the earn-out calculation still needs to be re-run once Q4 numbers close.", choices: ["caveat", "underpinning", "impasse", "disclaimer"], answerIndex: 0, explanation: "\"Caveat\" is the standard word for a single condition or qualification attached to an otherwise settled agreement. \"Disclaimer\" usually refers to a formal, often legal, statement of non-responsibility rather than a specific negotiated condition." },
-    { question: "The whole retention thesis in this deck is ___ by a single assumption about renewal rates that nobody on the deal team has actually pressure-tested.", choices: ["underpinned", "surfaced", "cherry-picked", "whiteboarded"], answerIndex: 0, explanation: "\"Underpin\" means to form the structural basis or foundation for a conclusion or plan. \"Surface\" means to reveal a previously hidden problem, an unrelated meaning here." },
-    { question: "Given how sensitive the restructuring talks are, legal has told everyone to stay ___ in any written communication until the announcement is final.", choices: ["circumspect", "flippant", "unabashed", "acerbic"], answerIndex: 0, explanation: "\"Circumspect\" means deliberately careful and cautious about what one says because of the risk involved. \"Flippant\" would mean treating the sensitive situation with inappropriate casualness, the opposite of what's being asked for." },
-    { question: "Everyone else praised the pitch politely, but her ___ remark — 'cute deck, shame about the unit economics' — was the line people actually quoted afterward.", choices: ["acerbic", "flippant", "circumspect", "austere"], answerIndex: 0, explanation: "\"Acerbic\" describes a sharply critical comment that is also witty and memorable. \"Flippant\" would describe an inappropriately casual, non-serious tone rather than a pointed, cutting remark." },
-    { question: "Once he admitted by email that he'd known about the defect before closing, he didn't ___ in the indemnification dispute.", choices: ["have a leg to stand on", "raise the bar", "jump through hoops", "wait for the other shoe to drop"], answerIndex: 0, explanation: "\"Not have a leg to stand on\" means to have no valid justification left for one's position, exactly the situation created by his own written admission. \"Raise the bar\" refers to increasing a standard of performance, an unrelated meaning." },
-    { question: "Ever since one associate started turning in flawless first drafts, the rest of the team has felt real pressure to keep up — she's basically ___ for the whole group.", choices: ["raised the bar", "jumped through hoops", "had a leg to stand on", "cherry-picked the data"], answerIndex: 0, explanation: "\"Raise the bar\" means to increase the expected standard of performance for everyone else. \"Jump through hoops\" describes going through complicated, often unnecessary steps, an unrelated meaning." },
-    { question: "After the first office closure was announced, employees at the other two locations have just been ___, assuming theirs is next.", choices: ["waiting for the other shoe to drop", "jumping through hoops", "getting ahead of themselves", "raising the bar"], answerIndex: 0, explanation: "\"Wait for the other shoe to drop\" means to anticipate a second piece of bad news after an initial unpleasant event. \"Get ahead of themselves\" would mean assuming a positive outcome prematurely, an unrelated and opposite tone." },
-    { question: "Getting reimbursed by that insurer meant three phone calls, two notarized forms, and a fax — literally having to ___ for a claim that should have been automatic.", choices: ["jump through hoops", "raise the bar", "sleep on it", "stand corrected"], answerIndex: 0, explanation: "\"Jump through hoops\" describes being forced through a series of difficult, often unnecessary steps to accomplish something simple. \"Sleep on it\" means to delay a decision overnight, an unrelated meaning." },
-    { question: "Even clients used to paying a premium for expertise raised eyebrows at the consultancy's ___ day rate.", choices: ["exorbitant", "austere", "unabashed", "circumspect"], answerIndex: 0, explanation: "\"Exorbitant\" specifically describes a price or fee that is unreasonably high. \"Austere\" describes something severely simple or without luxury, which does not fit a description of a high price." },
-    { question: "Facing a revenue shortfall, the company announced a surprisingly ___ budget for next year, cutting travel, offsites, and nearly all discretionary spend.", choices: ["austere", "exorbitant", "flippant", "acerbic"], answerIndex: 0, explanation: "\"Austere\" describes a style, policy, or budget that is strict and stripped of any luxury or comfort. \"Exorbitant\" describes something unreasonably expensive, the opposite of a cost-cutting budget." },
-    { question: "The case study only features the three clients who saw huge ROI and says nothing about the dozen who churned — a clear case of ___ the data.", choices: ["cherry-picking", "surfacing", "underpinning", "lowballing"], answerIndex: 0, explanation: "\"Cherry-pick\" means to selectively present only the favorable examples while omitting contradictory evidence. \"Surface\" means to bring a hidden problem to light, the opposite intent." },
-    { question: "Their opening offer on the house was almost insulting, but our agent said it was just a classic ___ meant to test how motivated we were to sell.", choices: ["lowball offer", "cherry-picked offer", "austere offer", "caveat"], answerIndex: 0, explanation: "\"Lowball\" describes an intentionally low opening offer used as a negotiating tactic. \"Caveat\" refers to a qualification attached to an agreement, an unrelated meaning." }
+    { question: "The board signed off on the acquisition, with one ___: the earn-out calculation still needs to be re-run once Q4 numbers close.", choices: ["caveat", "impasse", "underpinning", "quid pro quo"], answerIndex: 0, explanation: "A caveat is a specific condition or warning attached to an otherwise settled agreement. An impasse is a deadlock, an underpinning is a foundation, and a quid pro quo is an exchange of favors — none is a single outstanding condition on an approved deal." },
+    { question: "The whole retention thesis in this deck is ___ by a single assumption about renewal rates that nobody on the deal team has actually pressure-tested.", choices: ["corroborated", "surfaced", "cherry-picked", "underpinned"], answerIndex: 3, explanation: "Underpin means to form the foundation a conclusion rests on. Corroborated means confirmed by independent evidence (not by an untested assumption), surfaced means brought a hidden issue to light, and cherry-picked means selected only favorable examples." },
+    { question: "Given how sensitive the restructuring talks are, legal has told everyone to stay ___ in any written communication until the announcement is final.", choices: ["candid", "circumspect", "sanguine", "flippant"], answerIndex: 1, explanation: "Circumspect means deliberately careful about what you say given the risks. Candid (openly frank) and flippant (casually disrespectful) are the opposite of what legal wants, and sanguine means cheerfully optimistic, which says nothing about caution." },
+    { question: "Everyone else praised the pitch politely, but her ___ remark — 'cute deck, shame about the unit economics' — was the line people actually quoted afterward.", choices: ["effusive", "sanguine", "acerbic", "flippant"], answerIndex: 2, explanation: "Acerbic describes a sharp, cutting, witty remark, which is why \"cute deck, shame about the unit economics\" got quoted. Effusive means gushing, sanguine means optimistic, and flippant means casually unserious rather than pointed." },
+    { question: "Once he admitted by email that he'd known about the defect before closing, he didn't ___ in the indemnification dispute.", choices: ["have a leg to stand on", "have a change of heart", "have a hidden agenda", "have deep pockets"], answerIndex: 0, explanation: "Not have a leg to stand on means having no valid justification left — exactly what his written admission caused. A change of heart is a reversal of opinion, a hidden agenda is a secret motive, and deep pockets means plenty of money." },
+    { question: "Ever since one associate started turning in flawless first drafts, the rest of the team has felt real pressure to keep up — she's basically ___ for the whole group.", choices: ["moved the goalposts", "set a precedent", "passed the buck", "raised the bar"], answerIndex: 3, explanation: "Raise the bar means increasing the standard everyone else must meet. Move the goalposts changes the rules unfairly after the fact, set a precedent creates a model for future cases, and pass the buck shifts responsibility to someone else." },
+    { question: "After the first office closure was announced, employees at the other two locations have just been ___, assuming theirs is next.", choices: ["burying their heads in the sand", "waiting for the other shoe to drop", "weathering the storm", "getting ahead of themselves"], answerIndex: 1, explanation: "Wait for the other shoe to drop is anticipating a second piece of bad news after the first. Burying your head in the sand is ignoring a problem, weathering the storm is enduring hardship, and getting ahead of yourself is assuming too much too soon." },
+    { question: "Getting reimbursed by that insurer meant three phone calls, two notarized forms, and a fax — literally having to ___ for a claim that should have been automatic.", choices: ["jump through hoops", "cut through the red tape", "go the extra mile", "read the fine print"], answerIndex: 0, explanation: "Jump through hoops is being forced through many tedious steps for something simple. Cutting through red tape is the opposite (removing bureaucracy), going the extra mile is voluntary, and reading the fine print is checking the small details of a contract." },
+    { question: "Even clients used to paying a premium for expertise raised eyebrows at the consultancy's ___ day rate.", choices: ["exuberant", "expedient", "exorbitant", "exemplary"], answerIndex: 2, explanation: "Exorbitant describes a price that is unreasonably high. Exuberant means joyfully energetic, expedient means convenient rather than principled, and exemplary means worthy of being a model — none describe a fee." },
+    { question: "Facing a revenue shortfall, the company announced a surprisingly ___ budget for next year, cutting travel, offsites, and nearly all discretionary spend.", choices: ["profligate", "austere", "ascetic", "exorbitant"], answerIndex: 1, explanation: "Austere describes a strict, stripped-down policy or budget with no luxuries. Ascetic is similar but describes a person's self-denying lifestyle, profligate means recklessly wasteful, and exorbitant means excessively expensive." },
+    { question: "The case study only features the three clients who saw huge ROI and says nothing about the dozen who churned — a clear case of ___ the data.", choices: ["cherry-picking", "whitewashing", "benchmarking", "stress-testing"], answerIndex: 0, explanation: "Cherry-picking means presenting only the favorable examples and leaving out the contradicting ones. Whitewashing covers up wrongdoing with a glossy surface, benchmarking compares against peers, and stress-testing checks how something holds up under pressure." },
+    { question: "Their opening offer on the house was almost insulting, but our agent said it was just a classic ___ meant to test how motivated we were to sell.", choices: ["counteroffer", "sweetened offer", "lowball offer", "lump-sum offer"], answerIndex: 2, explanation: "A lowball offer is an intentionally low opening bid used as a negotiating tactic. A counteroffer is a reply to an earlier offer, a sweetened offer is one improved to make it more attractive, and a lump-sum offer describes a payment structure, not its size." }
   ]
 },
 {
@@ -1418,12 +1431,12 @@ const ENGLISH_REPORTS = [
     }
   ],
   todayQuiz: [
-    { question: "Even though only a handful of shareholders showed up in person, their ___ objections to the pay package dominated the entire meeting.", choices: ["vociferous", "duplicitous", "complacent", "inscrutable"], answerIndex: 0, explanation: "\"Vociferous\" describes loud, forceful, insistent objections, matching a small group dominating the meeting with their volume. \"Duplicitous\" describes deceitful behavior, unrelated to loudness." },
-    { question: "It wasn't just that he shaded the truth a little — internal messages showed he'd been ___ for months, telling each side something completely different.", choices: ["duplicitous", "vociferous", "indomitable", "audacious"], answerIndex: 0, explanation: "\"Duplicitous\" fits a sustained pattern of telling two different, incompatible stories to different people. \"Vociferous\" describes loudness of expression, not deceit." },
-    { question: "Before you take his one-star review at face value, you should know he ___ — the company laid him off last spring.", choices: ["has an axe to grind", "has skin in the game", "is stacking the deck", "is burning through cash"], answerIndex: 0, explanation: "\"Have an axe to grind\" fits a personal, hidden motive (being laid off) that could bias someone's opinion. \"Have skin in the game\" means having a genuine financial stake, not a grudge." },
-    { question: "___ this is the fourth vendor we've had to replace this year, which is why procurement is pushing for a more rigorous vetting process.", choices: ["For context,", "Call into question,", "Stack the deck,", "Raise a red flag,"], answerIndex: 0, explanation: "\"For context,\" is the natural way to open a sentence that provides background before making a point. The other three phrases normally function as verbs within a sentence, not as sentence-opening connectors." },
-    { question: "After the central bank chair gave nothing away in a two-hour hearing, reporters described him as utterly ___.", choices: ["inscrutable", "complacent", "audacious", "indomitable"], answerIndex: 0, explanation: "\"Inscrutable\" fits someone whose thoughts and intentions are impossible to read, exactly the two-hour hearing where nothing was given away. \"Complacent\" would describe unwarranted self-satisfaction, not unreadability." },
-    { question: "The dual-class share structure means founders keep majority control no matter how other shareholders vote — critics say it simply ___ in management's favor.", choices: ["stacks the deck", "raises a red flag", "calls into question the numbers", "burns through cash"], answerIndex: 0, explanation: "\"Stack the deck\" describes arranging a structure so one side is unfairly guaranteed an advantage, matching the guaranteed control regardless of votes. \"Raise a red flag\" means flagging a suspicious sign about a specific fact, not a structurally guaranteed advantage." }
+    { question: "Even though only a handful of shareholders showed up in person, their ___ objections to the pay package dominated the entire meeting.", choices: ["voracious", "vacuous", "vindictive", "vociferous"], answerIndex: 3, explanation: "Vociferous means loud, forceful and insistent. Voracious means having an insatiable appetite, vacuous means empty of thought, and vindictive means driven by revenge — none describes objections that dominate a meeting through their volume." },
+    { question: "It wasn't just that he shaded the truth a little — internal messages showed he'd been ___ for months, telling each side something completely different.", choices: ["ambivalent", "duplicitous", "mercurial", "ubiquitous"], answerIndex: 1, explanation: "Duplicitous means deceitful, especially telling different people incompatible stories. Ambivalent means having mixed feelings, mercurial means unpredictably changeable in mood, and ubiquitous means found everywhere." },
+    { question: "Before you take his one-star review at face value, you should know he ___ — the company laid him off last spring.", choices: ["has an axe to grind", "has skin in the game", "is stacking the deck", "is playing devil's advocate"], answerIndex: 0, explanation: "Have an axe to grind means to have a personal grievance that biases your opinion — here, being laid off. Skin in the game means having real money at stake, stacking the deck means rigging a situation, and playing devil's advocate means arguing the opposite side for the sake of debate." },
+    { question: "___ this is the fourth vendor we've had to replace this year, which is why procurement is pushing for a more rigorous vetting process.", choices: ["In hindsight,", "By and large,", "For context,", "At face value,"], answerIndex: 2, explanation: "For context, opens a sentence by giving the background needed to understand what follows. In hindsight, introduces a judgment made after the fact, by and large means generally, and at face value means taking something without deeper scrutiny." },
+    { question: "After the central bank chair gave nothing away in a two-hour hearing, reporters described him as utterly ___.", choices: ["inscrutable", "insufferable", "inexorable", "inconspicuous"], answerIndex: 0, explanation: "Inscrutable means impossible to read or interpret — a chair who reveals nothing. Insufferable means unbearably annoying, inexorable means relentless and unstoppable, and inconspicuous means not attracting attention." },
+    { question: "The dual-class share structure means founders keep majority control no matter how other shareholders vote — critics say it simply ___ in management's favor.", choices: ["plays it close to the vest", "stacks the deck", "shows its hand", "raises a red flag"], answerIndex: 1, explanation: "Stack the deck means to arrange things so one side has a guaranteed unfair advantage — like dual-class control. Play it close to the vest means being secretive, show your hand means revealing your plans, and raise a red flag means warning about a suspicious fact." }
   ]
 },
 {
@@ -1606,12 +1619,12 @@ const ENGLISH_REPORTS = [
     }
   ],
   todayQuiz: [
-    { question: "It was a remarkably ___ move to hedge the currency exposure right before the central bank's surprise rate announcement — the kind of foresight that gets written up in case studies.", choices: ["astute", "acrimonious", "precarious", "condescending"], answerIndex: 0, explanation: "\"Astute\" fits a judgment call praised for its foresight and accuracy. \"Acrimonious\" describes bitter conflict, not sound judgment." },
-    { question: "After the target company's board accused the acquirer of lowballing the offer, the merger talks turned ___, with both sides trading public accusations.", choices: ["acrimonious", "astute", "precarious", "condescending"], answerIndex: 0, explanation: "\"Acrimonious\" fits a dispute marked by open bitterness and hostility, matching the public accusations. \"Precarious\" describes instability, not hostility between parties." },
-    { question: "One missed payment away from breaching its loan covenants, the company's cash position was undeniably ___.", choices: ["precarious", "astute", "acrimonious", "condescending"], answerIndex: 0, explanation: "\"Precarious\" fits a position that is dangerously unstable and could collapse at any moment, matching being one payment away from default. \"Astute\" describes sharp judgment, unrelated to financial instability." },
-    { question: "The senior partner didn't ask nicely — he ___ the junior associates into working through the weekend by hinting their bonuses were on the line.", choices: ["browbeat", "extolled", "ran interference for", "footed the bill for"], answerIndex: 0, explanation: "\"Browbeat\" fits intimidating someone into doing something through pressure, matching the implied threat about bonuses. \"Extolled\" means praised enthusiastically, the opposite tone." },
-    { question: "Even as growth slowed, the CEO spent the entire earnings call ___ the virtues of the new subscription model.", choices: ["extolling", "browbeating", "toeing the line on", "calling the bluff of"], answerIndex: 0, explanation: "\"Extolling\" fits praising something enthusiastically and publicly, matching a CEO talking up a new model on an earnings call. \"Browbeating\" means intimidating someone, which doesn't fit praising a product." },
-    { question: "The vendor never actually intended to walk away — when we refused to prepay, we simply ___, and they folded within the hour.", choices: ["called their bluff", "footed the bill", "toed the line", "ran interference"], answerIndex: 0, explanation: "\"Called their bluff\" fits challenging someone to follow through on a threat that turns out to be empty, matching the vendor folding. \"Footed the bill\" means paying for something, unrelated to challenging a threat." }
+    { question: "It was a remarkably ___ move to hedge the currency exposure right before the central bank's surprise rate announcement — the kind of foresight that gets written up in case studies.", choices: ["audacious", "acute", "astute", "cavalier"], answerIndex: 2, explanation: "Astute describes sharp, perceptive judgment — the foresight to hedge before the announcement. Audacious means daringly bold, acute usually describes severity or sharp senses (an acute shortage), and cavalier means casually dismissive of risk." },
+    { question: "After the target company's board accused the acquirer of lowballing the offer, the merger talks turned ___, with both sides trading public accusations.", choices: ["acrimonious", "acquisitive", "acquiescent", "acerbic"], answerIndex: 0, explanation: "Acrimonious describes talks or relationships marked by open bitterness and hostility. Acquisitive means eager to acquire things, acquiescent means passively compliant, and acerbic describes sharp, cutting remarks rather than the overall tone of a dispute." },
+    { question: "One missed payment away from breaching its loan covenants, the company's cash position was undeniably ___.", choices: ["volatile", "insolvent", "prudent", "precarious"], answerIndex: 3, explanation: "Precarious means dangerously unstable — one missed payment from disaster. Volatile means prone to rapid swings, insolvent means already unable to pay debts (the company is still one step short of that), and prudent means carefully sensible." },
+    { question: "The senior partner didn't ask nicely — he ___ the junior associates into working through the weekend by hinting their bonuses were on the line.", choices: ["cajoled", "browbeat", "sweet-talked", "mentored"], answerIndex: 1, explanation: "To browbeat is to bully someone into compliance with pressure or implied threats. Cajoled and sweet-talked describe flattering someone into agreeing (the opposite tactic), and mentored means guiding a junior person's development." },
+    { question: "Even as growth slowed, the CEO spent the entire earnings call ___ the virtues of the new subscription model.", choices: ["extolling", "extrapolating", "exacerbating", "extricating"], answerIndex: 0, explanation: "To extol is to praise enthusiastically. Extrapolating means projecting from known data, exacerbating means making a problem worse, and extricating means freeing something from difficulty." },
+    { question: "The vendor never actually intended to walk away — when we refused to prepay, we simply ___, and they folded within the hour.", choices: ["upped the ante", "showed our hand", "called their bluff", "played our trump card"], answerIndex: 2, explanation: "Call someone's bluff means challenging a threat you suspect is empty — and the vendor folded. Upping the ante raises the stakes, showing your hand reveals your position, and playing a trump card uses your strongest advantage." }
   ]
 },
 {
@@ -1796,12 +1809,12 @@ const ENGLISH_REPORTS = [
     }
   ],
   todayQuiz: [
-    { question: "It took three follow-up emails and no shortage of flattery, but she finally ___ the landlord into repainting the apartment before move-in.", choices: ["cajoled", "gleaned", "hammered out", "curried favor with"], answerIndex: 0, explanation: "\"Cajoled\" fits persuading someone through flattery and persistent coaxing, matching the flattery and follow-ups described. \"Gleaned\" means gathering information gradually, which doesn't fit persuading a landlord." },
-    { question: "From a handful of offhand comments on the earnings call, the analyst ___ enough to suspect management was quietly walking back its full-year guidance.", choices: ["gleaned", "cajoled", "kept tabs on", "locked in"], answerIndex: 0, explanation: "\"Gleaned\" fits gathering insight gradually from indirect, fragmentary sources, matching offhand comments on a call. \"Locked in\" means securing a fixed rate or profit, unrelated to extracting information." },
-    { question: "The risk team ___ the fund's five biggest positions every single morning, flagging any that drift outside the approved range.", choices: ["keeps tabs on", "curries favor with", "locks in", "hammers out"], answerIndex: 0, explanation: "\"Keeps tabs on\" fits ongoing, routine monitoring of something over time, matching a daily morning check of positions. \"Curries favor with\" means trying to win approval through flattery, unrelated to monitoring." },
-    { question: "The team spent so long debating font sizes on the slide that they ___ and missed the fact that the entire recommendation contradicted last quarter's thesis.", choices: ["couldn't see the forest for the trees", "locked in their gains", "hammered out the details", "kept tabs on the client"], answerIndex: 0, explanation: "\"Couldn't see the forest for the trees\" fits being so absorbed in minor details that the bigger, more important problem goes unnoticed. \"Locked in their gains\" describes securing a financial profit, unrelated to losing sight of the big picture." },
-    { question: "He's brilliant with numbers but so ___ in meetings that his sharpest insights rarely get heard.", choices: ["diffident", "assiduous", "unimpeachable", "indelible"], answerIndex: 0, explanation: "\"Diffident\" fits lacking the confidence to assert good ideas in a group setting. \"Assiduous\" describes careful, persistent effort, not a lack of confidence." },
-    { question: "When the intern suggested scrapping the entire deck the night before the pitch, the partner simply smiled and said, '___,' then moved on to the next agenda item.", choices: ["I'll take it under advisement.", "I can't see the forest for the trees.", "I'll hammer this out with you.", "I'm currying favor with you."], answerIndex: 0, explanation: "\"I'll take it under advisement\" fits politely deferring a decision without committing to it, matching a non-committal, courteous response to an unwelcome suggestion. The other options don't fit a polite, noncommittal deferral." }
+    { question: "It took three follow-up emails and no shortage of flattery, but she finally ___ the landlord into repainting the apartment before move-in.", choices: ["browbeat", "bribed", "appeased", "cajoled"], answerIndex: 3, explanation: "Cajole means to persuade with flattery and persistent coaxing. Browbeat means to intimidate, bribe means to pay for a favor, and appease means to calm someone by giving in." },
+    { question: "From a handful of offhand comments on the earnings call, the analyst ___ enough to suspect management was quietly walking back its full-year guidance.", choices: ["gleaned", "extrapolated", "substantiated", "belabored"], answerIndex: 0, explanation: "To glean is to gather information gradually from scattered, indirect sources. Extrapolating extends known figures into an unknown future, substantiating means backing a claim with evidence, and belaboring means over-explaining a point." },
+    { question: "The risk team ___ the fund's five biggest positions every single morning, flagging any that drift outside the approved range.", choices: ["keeps a lid on", "sizes up", "keeps tabs on", "signs off on"], answerIndex: 2, explanation: "Keep tabs on means to monitor something routinely. Keep a lid on means to contain or suppress, size up means to assess a person or situation once, and sign off on means to give formal approval." },
+    { question: "The team spent so long debating font sizes on the slide that they ___ and missed the fact that the entire recommendation contradicted last quarter's thesis.", choices: ["put the cart before the horse", "couldn't see the forest for the trees", "fell through the cracks", "missed the boat"], answerIndex: 1, explanation: "Can't see the forest for the trees means being so absorbed in details that you miss the big picture. Putting the cart before the horse means doing things in the wrong order, falling through the cracks means being overlooked, and missing the boat means being too late." },
+    { question: "He's brilliant with numbers but so ___ in meetings that his sharpest insights rarely get heard.", choices: ["diffident", "indifferent", "deferential", "disruptive"], answerIndex: 0, explanation: "Diffident means lacking the confidence to speak up. Indifferent means not caring (a sound-alike trap), deferential means respectfully yielding to others, and disruptive means interrupting proceedings." },
+    { question: "When the intern suggested scrapping the entire deck the night before the pitch, the partner simply smiled and said, '___,' then moved on to the next agenda item.", choices: ["I stand corrected.", "Let me sleep on it.", "That's above my pay grade.", "I'll take it under advisement."], answerIndex: 3, explanation: "I'll take it under advisement is a polite way of noting a suggestion without committing to it. I stand corrected admits a mistake, Let me sleep on it delays a decision overnight, and That's above my pay grade says the decision belongs to someone more senior." }
   ]
 }
 ];
@@ -1831,6 +1844,9 @@ function jaDateLabel(d){ return d.getFullYear()+'年'+(d.getMonth()+1)+'月'+d.g
    基本は「日次」：各日のレポート（平日=新規12表現 / 土日=復習文章の対象表現）を読み終えたら、その日を1回「完了」にする。
    完了した日に含まれる全表現が +1回。ほかに、取りこぼしリストの個別チェック（log）も +1回として数える。目標は各表現3回。 */
 const TARGET_COUNT = 3;
+const PHASE1_END = '2026-09-30';    // Phase 1（新規表現の学習）の最終日。以降は既出表現の復習（Day制）
+const ALERT_THRESHOLD = 5;          // 未学習のレポートがこの日数以上たまったらアラート
+const ALERT_SINCE = '2026-09-20';   // 進捗管理の開始日。これ以降のレポートがアラート対象
 const PROGRESS_KEY = 'englishDailyProgress_v1';
 let PROGRESS = { days: {}, log: {}, settings: { reviewSize: 30 } };
 
@@ -1849,6 +1865,9 @@ function saveProgress(){
 }
 function normId(s){ return String(s||'').toLowerCase().replace(/\s+/g,' ').trim(); }
 function itemId(it){ return normId(it.term || it.phrase); }
+function entryKey(r){ return r.day ? ('P' + (r.phase||1) + 'D' + r.day) : r.date; }
+function entryLabel(r){ return r.day ? ('Day ' + r.day) : r.dateLabel; }
+function entryPhase(r){ return r.phase || (r.date <= PHASE1_END ? 1 : 2); }
 function logOf(id){ return PROGRESS.log[id] || []; }
 function studiedToday(id){ return logOf(id).indexOf(todayStr()) >= 0; }
 function setAdhocToday(id, want){
@@ -1905,15 +1924,15 @@ let UNIVERSE = [];
 let UMAP = {};
 function buildUniverse(reports){
   const map = new Map();
-  function add(it, meta, date){
+  function add(it, meta, date, phase){
     const id = itemId(it);
     if(!id || map.has(id)) return;
-    map.set(id, { id: id, term: it.term || it.phrase, item: it, meta: meta, introDate: date });
+    map.set(id, { id: id, term: it.term || it.phrase, item: it, meta: meta, introDate: date, phase: phase });
   }
   reports.slice().sort(function(a,b){ return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); }).forEach(function(r){
-    (r.coreItems||[]).forEach(function(it){ add(it, TYPE_META[it.type] || TYPE_META.word, r.date); });
-    (r.adjectives||[]).forEach(function(it){ add(it, TYPE_META.adjective, r.date); });
-    (r.collocations||[]).forEach(function(it){ add(it, TYPE_META.collocation, r.date); });
+    (r.coreItems||[]).forEach(function(it){ add(it, TYPE_META[it.type] || TYPE_META.word, r.date, entryPhase(r)); });
+    (r.adjectives||[]).forEach(function(it){ add(it, TYPE_META.adjective, r.date, entryPhase(r)); });
+    (r.collocations||[]).forEach(function(it){ add(it, TYPE_META.collocation, r.date, entryPhase(r)); });
   });
   return Array.from(map.values());
 }
@@ -1927,7 +1946,7 @@ function rebuildExposure(){
   EXPO_PRE = {};
   const t = todayStr();
   allEntries().forEach(function(r){
-    const d = PROGRESS.days[r.date];
+    const d = PROGRESS.days[entryKey(r)];
     if(!d) return;
     entryIdSet(r).forEach(function(id){
       EXPO[id] = (EXPO[id]||0) + 1;
@@ -1945,7 +1964,7 @@ function countBeforeToday(id){ return EXPO_PRE[id] || 0; }
 function studyDatesOf(id){
   const ds = [];
   allEntries().forEach(function(r){
-    const d = PROGRESS.days[r.date];
+    const d = PROGRESS.days[entryKey(r)];
     if(d && entryIdSet(r).has(id)) ds.push(d.doneAt);
   });
   logOf(id).forEach(function(x){ ds.push(x); });
@@ -1964,7 +1983,7 @@ function getReports(){
   const now = new Date();
   const ds = dateStr(now);
   const w = now.getDay();
-  if((w === 0 || w === 6) && !arr.some(function(r){ return r.date === ds; })){
+  if((w === 0 || w === 6) && !arr.some(function(r){ return r.date === ds; }) && !arr.some(function(r){ return r.day; })){
     arr.push({ date: ds, dateLabel: jaDateLabel(now), mode: 'review', virtual: true, readTimeMin: 25, coreItems: [], adjectives: [], collocations: [], todayQuiz: [] });
   }
   return arr;
@@ -2092,18 +2111,19 @@ function shuffle(arr){
 function renderQuiz(qs, prefix){
   return qs.map(function(q, i){
     const qid = prefix+'-'+i;
+    const order = shuffle(q.choices.map(function(_, k){ return k; }));
+    const shownAnswer = order.indexOf(q.answerIndex);
     return '<div class="quiz-box">' +
       '<div class="quiz-q">Q'+(i+1)+'. '+esc(q.question)+'</div>' +
       '<div class="quiz-choices" id="'+qid+'-choices">' +
-        q.choices.map(function(c, ci){
-          return '<button class="quiz-choice" onclick="answerQuiz(\''+qid+'\', '+ci+', '+q.answerIndex+')">'+esc(c)+'</button>';
+        order.map(function(k, ci){
+          return '<button class="quiz-choice" onclick="answerQuiz(\''+qid+'\', '+ci+', '+shownAnswer+')">'+esc(q.choices[k])+'</button>';
         }).join('') +
       '</div>' +
       '<div class="quiz-expl" id="'+qid+'-expl">'+esc(q.explanation)+'</div>' +
       '</div>';
   }).join('');
 }
-
 function answerQuiz(qid, chosenIdx, answerIdx){
   const box = document.getElementById(qid+'-choices');
   const btns = box.querySelectorAll('.quiz-choice');
@@ -2115,17 +2135,63 @@ function answerQuiz(qid, chosenIdx, answerIdx){
   document.getElementById(qid+'-expl').classList.add('show');
 }
 
+const STOP_WORDS = new Set(['the','and','for','with','that','this','from','into','are','was','its','their','they','who','which','when','not','more','than','very','used','often','usually','especially','someone','something','one','out','off','all','any','can','has','have','having','being','been','making','make','made','give','get']);
+function meaningTokens(s){
+  const set = new Set();
+  String(s||'').toLowerCase().replace(/[^a-z\s-]/g,' ').split(/[\s-]+/).forEach(function(w){
+    if(w.length > 2 && !STOP_WORDS.has(w)) set.add(w.replace(/(ing|ed|es|s|ly)$/,''));
+  });
+  return set;
+}
+function jaBigrams(s){
+  const set = new Set();
+  const t = String(s||'').replace(/[\s、。，．・（）()「」『』\[\]…—\-～〜!！?？:：;；,./"'“”‘’]/g, '');
+  for(let i=0;i<t.length-1;i++) set.add(t.substr(i, 2));
+  return set;
+}
+function overlap(x, y){
+  let inter = 0;
+  x.forEach(function(t){ if(y.has(t)) inter++; });
+  return inter / Math.sqrt((x.size||1) * (y.size||1));
+}
+function simFeatures(u){
+  if(!u._tok){
+    u._tok = meaningTokens(u.item.meaning_en);
+    u._ja = jaBigrams(u.item.meaning_ja);
+    u._syn = meaningTokens((u.item.synonyms||[]).map(function(s){ return s.term; }).join(' '));
+  }
+}
+/* 意味の近さ＝英語定義の語の重なり ＋ 日本語訳の重なり ＋ 類義語の重なり ＋ 同じ種別（単語/イディオム等） */
+function similarity(a, b){
+  simFeatures(a); simFeatures(b);
+  let s = overlap(a._tok, b._tok) + 1.2 * overlap(a._ja, b._ja) +
+          0.6 * Math.max(overlap(a._syn, b._tok), overlap(b._syn, a._tok), overlap(a._syn, b._syn));
+  if(a.meta.badge === b.meta.badge) s += 0.15;
+  return s;
+}/* 誤答は「意味の近い（＝紛らわしい）表現」から選ぶ。毎回、上位候補からランダムに3つ */
+function pickDistractors(u, pool, n){
+  const cands = pool.filter(function(p){ return p.id !== u.id && p.item.meaning_en && p.item.meaning_en !== u.item.meaning_en; })
+    .map(function(p){ return { p: p, s: similarity(u, p) + Math.random() * 0.05 }; })
+    .sort(function(x, y){ return y.s - x.s; });
+  return shuffle(cands.slice(0, Math.max(n*3, 9))).slice(0, n).map(function(x){ return x.p; });
+}
 function buildMeaningQuiz(items, poolAll, n){
-  const withMeaning = poolAll.filter(function(p){ return p.item.meaning_en; });
+  const pool = poolAll.filter(function(p){ return p.item.meaning_en; });
   const picks = shuffle(items.filter(function(u){ return u.item.meaning_en; })).slice(0, n);
   return picks.map(function(u){
-    const correct = u.item.meaning_en;
-    const distractors = shuffle(withMeaning.filter(function(p){ return p.item.meaning_en !== correct; })).slice(0,3).map(function(p){ return p.item.meaning_en; });
-    const choices = shuffle([correct].concat(distractors));
-    return { question: 'Which of the following best matches the meaning of "'+u.term+'"?', choices: choices, answerIndex: choices.indexOf(correct), explanation: 'Correct answer: '+correct };
+    const ds = pickDistractors(u, pool, 3);
+    const ex = ds.map(function(d){ return '"'+d.term+'" — '+d.item.meaning_en; }).join(' | ');
+    if(Math.random() < 0.5){
+      const correct = u.item.meaning_en;
+      const choices = shuffle([correct].concat(ds.map(function(d){ return d.item.meaning_en; })));
+      return { question: 'Which of the following best matches the meaning of "'+u.term+'"?', choices: choices, answerIndex: choices.indexOf(correct),
+        explanation: '"'+u.term+'" — '+correct+'. The other options define: '+ex+'.' };
+    }
+    const choices = shuffle([u.term].concat(ds.map(function(d){ return d.term; })));
+    return { question: 'Which expression matches this definition: "'+u.item.meaning_en+'"?', choices: choices, answerIndex: choices.indexOf(u.term),
+      explanation: '"'+u.term+'" — '+u.item.meaning_en+'. Compare: '+ex+'.' };
   });
 }
-
 /* ── 取りこぼしリスト：3回未満を「回数が少ない順 → 初出が古い順」で最大N件（excludeIds は除外） ── */
 function reviewQueue(excludeIds){
   const size = parseInt(PROGRESS.settings.reviewSize, 10) || 30;
@@ -2148,7 +2214,7 @@ function updateDayBtn(){
   if(!b) return;
   const r = REPORTS[currentIdx];
   if(usesEntryCompletion(r)){
-    const d = PROGRESS.days[r.date];
+    const d = PROGRESS.days[entryKey(r)];
     const n = entryIdSet(r).size;
     b.classList.toggle('done', !!d);
     b.textContent = d ? ('↩ 完了を取り消す（完了日 ' + d.doneAt.slice(5) + '）')
@@ -2163,8 +2229,8 @@ function updateDayBtn(){
 function toggleDay(){
   const r = REPORTS[currentIdx];
   if(usesEntryCompletion(r)){
-    if(PROGRESS.days[r.date]) delete PROGRESS.days[r.date];
-    else PROGRESS.days[r.date] = { doneAt: todayStr() };
+    if(PROGRESS.days[entryKey(r)]) delete PROGRESS.days[entryKey(r)];
+    else PROGRESS.days[entryKey(r)] = { doneAt: todayStr() };
   } else {
     const ids = currentDayAdhocIds();
     const all = ids.length > 0 && ids.every(studiedToday);
@@ -2176,6 +2242,7 @@ function toggleDay(){
   updateAllStudyBtns();
   updateDayBtn();
   refreshProgress();
+  renderAlert();
 }
 
 /* ── 進捗セクション（各日のレポート先頭） ── */
@@ -2196,7 +2263,7 @@ function renderCalendar(){
     let cls = 'cal-cell';
     let mark;
     if(!e){ cls += ' none'; mark = '配信なし'; }
-    else if(PROGRESS.days[ds]){ cls += ' hit'; mark = '✓ 完了'; }
+    else if(PROGRESS.days[entryKey(e)]){ cls += ' hit'; mark = '✓ 完了'; }
     else if(i === 0){ cls += ' today'; mark = '未完了'; }
     else { cls += ' miss'; mark = '未学習'; }
     if(wk) cls += ' wk';
@@ -2205,6 +2272,64 @@ function renderCalendar(){
   return '<div class="prog-cal-title">直近14日の学習記録（緑＝完了 / 赤＝配信されたのに未学習＝漏れ / 破線＝配信なし。記録はこの機能の追加日以降のみ）</div><div class="prog-cal">'+cells+'</div>';
 }
 
+/* ── Day制（Phase 1 復習）と未学習アラート ── */
+function hasDayEntries(){ return ENGLISH_REPORTS.some(function(r){ return r.day; }); }
+
+function renderDayStrip(){
+  const days = ENGLISH_REPORTS.filter(function(r){ return r.day; }).sort(function(a,b){ return a.day - b.day; }).slice(-21);
+  const lastDay = days.length ? days[days.length-1].day : 0;
+  const cells = days.map(function(r){
+    let cls = 'cal-cell', mark;
+    if(PROGRESS.days[entryKey(r)]){ cls += ' hit'; mark = '✓ 完了'; }
+    else if(r.day === lastDay){ cls += ' today'; mark = '新着'; }
+    else { cls += ' miss'; mark = '未学習'; }
+    return '<div class="'+cls+'"><div class="cal-d">Day '+r.day+'</div><div class="cal-w">R'+(r.round||1)+'</div><div class="cal-m">'+mark+'</div></div>';
+  }).join('');
+  return '<div class="prog-cal-title">Day別の学習記録（直近 '+days.length+' 日分。赤＝未学習のレポート。日付ではなく Day 順に進みます）</div><div class="prog-cal">'+cells+'</div>';
+}
+
+function studyableReports(){
+  return ENGLISH_REPORTS.filter(function(r){ return (r.day || r.date >= ALERT_SINCE) && usesEntryCompletion(r); });
+}
+function unlearnedReports(){
+  return studyableReports().filter(function(r){ return !PROGRESS.days[entryKey(r)]; })
+    .sort(function(a,b){ return a.date < b.date ? -1 : (a.date > b.date ? 1 : 0); });
+}
+function jumpToEntry(key){
+  for(let i=0;i<REPORTS.length;i++){
+    if(entryKey(REPORTS[i]) === key){ selectDay(i); window.scrollTo(0, 0); return; }
+  }
+}
+function renderAlert(){
+  if(!window.__baseTitle) window.__baseTitle = document.title;
+  const un = unlearnedReports();
+  const n = un.length;
+  let html = '';
+  if(n >= ALERT_THRESHOLD){
+    const oldest = un[0];
+    html += '<div class="alert-bar alert-red"><div class="alert-title">⚠ 学習が遅れています — 未学習のレポートが ' + n + ' 日分たまっています</div>' +
+      '<div class="alert-body">いちばん古い未学習は「' + esc(entryLabel(oldest)) + '」です。1日1レポートずつで大丈夫なので、今日は「' + esc(entryLabel(oldest)) + '」から取り戻しましょう（未学習が ' + (ALERT_THRESHOLD-1) + ' 日分以下になるとこの表示は消えます）。</div>' +
+      '<button type="button" class="btn small" onclick="jumpToEntry(\'' + esc(entryKey(oldest)) + '\')">いちばん古い未学習を開く →</button></div>';
+  } else if(n >= 3){
+    const oldest = un[0];
+    html += '<div class="alert-bar alert-amber"><div class="alert-title">📌 未学習のレポートが ' + n + ' 日分あります</div>' +
+      '<div class="alert-body">あと ' + (ALERT_THRESHOLD - n) + ' 日分たまると「学習が遅れています」のアラートが出ます。今日のうちに「' + esc(entryLabel(oldest)) + '」を進めておきましょう。</div>' +
+      '<button type="button" class="btn small" onclick="jumpToEntry(\'' + esc(entryKey(oldest)) + '\')">未学習を開く →</button></div>';
+  }
+  const lastDay = ENGLISH_REPORTS.filter(function(r){ return r.day; }).sort(function(a,b){ return b.day - a.day; })[0];
+  if(lastDay && lastDay.totalDays && lastDay.day >= lastDay.totalDays){
+    html += '<div class="alert-bar alert-green"><div class="alert-title">🎉 Phase 1 の復習サイクルを最後まで配信しました</div>' +
+      '<div class="alert-body">全 ' + lastDay.totalDays + ' 日（' + (lastDay.rounds||3) + ' ラウンド）の配信が終わりました。未学習のレポートを終えたら、Phase 2（新規表現の学習の再開）に進むかどうかをClaudeに伝えてください。</div></div>';
+  }
+  const slot = document.getElementById('alert-slot');
+  if(slot) slot.innerHTML = html;
+  const badge = document.getElementById('stat-badge');
+  if(badge){
+    badge.textContent = (n > 0 ? (n >= ALERT_THRESHOLD ? '⚠ ' : '') + '未学習 ' + n + ' 日分 ・ ' : '') + '掲載レポート ' + ENGLISH_REPORTS.length + ' 件';
+    badge.classList.toggle('badge-alert', n >= ALERT_THRESHOLD);
+  }
+  document.title = (n >= ALERT_THRESHOLD ? '⚠' + n + ' ' : '') + window.__baseTitle;
+}
 function renderProgressInner(r){
   const N = UNIVERSE.length;
   let done3 = 0, part = 0, none = 0, sum = 0;
@@ -2215,7 +2340,7 @@ function renderProgressInner(r){
   });
   const pct = N ? Math.round(sum / (N * TARGET_COUNT) * 100) : 0;
 
-  const doneDays = allEntries().filter(function(x){ return PROGRESS.days[x.date]; }).length;
+  const doneDays = allEntries().filter(function(x){ return PROGRESS.days[entryKey(x)]; }).length;
   let todayLine;
   if(r.mode === 'review' && usesEntryCompletion(r)){
     const ids = entryIdSet(r);
@@ -2229,6 +2354,12 @@ function renderProgressInner(r){
     todayLine = '📅 この日の表現 ' + items.length + ' 件（1回以上 ' + ones + ' 件 / 3回達成 ' + threes + ' 件）。学習が終わったら右上の「この日の学習を完了にする」を1回押すだけで、この日の全表現が +1回 になります（単語ごとの記録は不要）。';
   }
 
+  if(r.day && usesEntryCompletion(r)){
+    todayLine = '🔁 Phase 1 復習 Day ' + r.day + '（Round ' + (r.round||1) + '・第' + (r.batch||1) + '/' + (r.numBatches||1) + '回）：この日の復習対象は ' + entryIdSet(r).size + ' 表現（文章 ' + (r.passages||[]).length + ' 本）。文章を読み（黄色マーカー＝対象表現）、読み終えたら右上の「この復習を完了にする」を1回押してください。全 ' + (r.totalDays||'?') + ' 日（' + (r.rounds||3) + ' ラウンド）で各表現を ' + TARGET_COUNT + ' 回ずつ復習します。' + (r.scopeLabel ? '（対象：' + r.scopeLabel + '）' : '');
+  }
+  const phaseCounts = {};
+  UNIVERSE.forEach(function(u){ phaseCounts[u.phase] = (phaseCounts[u.phase]||0) + 1; });
+  const phaseLine = Object.keys(phaseCounts).sort().map(function(p){ return 'Phase ' + p + '：' + phaseCounts[p] + ' 表現'; }).join(' / ');
   const pending = UNIVERSE.filter(function(u){ return countOf(u.id) < TARGET_COUNT; }).sort(function(a,b){
     const ca = countOf(a.id), cb = countOf(b.id);
     if(ca !== cb) return ca - cb;
@@ -2255,9 +2386,9 @@ function renderProgressInner(r){
         '<div class="prog-tile none"><div class="n">'+none+'</div><div class="l">未学習</div></div>' +
       '</div>' +
       '<div class="prog-bar"><div class="prog-bar-fill" style="width:'+pct+'%"></div></div>' +
-      '<div class="prog-bar-lbl">全体の達成率 '+pct+'%（累計 '+sum+' / 目標 '+(N*TARGET_COUNT)+' 回）・完了した日 '+doneDays+' 日</div>' +
+      '<div class="prog-bar-lbl">全体の達成率 '+pct+'%（累計 '+sum+' / 目標 '+(N*TARGET_COUNT)+' 回）・完了した日 '+doneDays+' 日・'+phaseLine+'</div>' +
       '<div class="prog-today">'+esc(todayLine)+'</div>' +
-      renderCalendar() +
+      (hasDayEntries() ? renderDayStrip() : renderCalendar()) +
       '<details class="prog-detail"><summary>📋 要復習リスト（'+TARGET_COUNT+'回未満：'+pending.length+' 件）</summary>' +
         (pending.length ? '<div class="tbl-scroll"><table class="prog-tbl"><thead><tr><th>表現</th><th>初出</th><th>回数</th><th>最終学習日</th></tr></thead><tbody>'+rows+'</tbody></table></div>'+more : '<div class="rv-help">すべての表現が'+TARGET_COUNT+'回に達しています 🎉</div>') +
       '</details>' +
@@ -2339,8 +2470,8 @@ function setReviewSize(v){
 function renderPanel(r, idx){
   const review = (r.mode === 'review');
   const head =
-    '<div class="meta-bar"><div class="meta-date">'+esc(r.dateLabel)+'</div>' +
-    (review ? '<div class="meta-tag">🔁 復習デー（新規なし）</div>' : '') +
+    '<div class="meta-bar"><div class="meta-date">'+esc(entryLabel(r))+'</div>' +
+    (review ? '<div class="meta-tag">'+(r.day ? '🔁 Phase 1 復習 · Round '+(r.round||1)+' · 第'+(r.batch||1)+'/'+(r.numBatches||1)+'回' : '🔁 復習デー（新規なし）')+'</div>' : '') +
     '<div class="meta-time">⏱ 目安 '+(r.readTimeMin||20)+'分</div>' +
     '<button type="button" class="day-study-btn"></button></div>' +
     '<div class="section" id="progress-section">'+renderProgressInner(r)+'</div>';
@@ -2390,13 +2521,17 @@ function renderPanel(r, idx){
 function renderTabs(){
   const nav = document.getElementById('tab-nav-inner');
   nav.innerHTML = REPORTS.map(function(r, i){
-    const d = new Date(r.date+'T00:00:00');
-    const dow = DOW_JA[d.getDay()];
-    const ck = PROGRESS.days[r.date] ? '<span class="ck">✓</span>' : '';
-    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+r.date.slice(5)+ck+'<span class="dow">'+dow+'曜'+(r.mode==='review'?'·復習':'')+'</span></button>';
+    const ck = PROGRESS.days[entryKey(r)] ? '<span class="ck">✓</span>' : '';
+    let top, sub;
+    if(r.day){ top = 'Day ' + r.day; sub = 'R' + (r.round||1) + '·復習'; }
+    else {
+      const d = new Date(r.date+'T00:00:00');
+      top = r.date.slice(5);
+      sub = DOW_JA[d.getDay()] + '曜' + (r.mode==='review' ? '·復習' : '');
+    }
+    return '<button class="tab-btn'+(i===currentIdx?' active':'')+'" onclick="selectDay('+i+')">'+top+ck+'<span class="dow">'+sub+'</span></button>';
   }).join('');
 }
-
 function selectDay(i){
   currentIdx = i;
   renderTabs();
@@ -2407,10 +2542,7 @@ function renderAll(){
   const panels = document.getElementById('panels');
   const r = REPORTS[currentIdx];
   panels.innerHTML = '<div class="report-panel active">' + renderPanel(r, currentIdx) + '</div>';
-  const totalToday = ENGLISH_REPORTS.reduce(function(s, x){
-    return s + entryItems(x).length;
-  }, 0);
-  document.getElementById('stat-badge').textContent = '直近7日で ' + totalToday + ' 表現を掲載中';
+  renderAlert();
   updateAllStudyBtns();
   updateDayBtn();
 }
@@ -2496,7 +2628,7 @@ function entryToRows(r){
     rows.push([r.date, cat, term, it.meaning_en||'', it.meaning_ja,
       (it.examples||[]).join(' / '),
       (it.synonyms||[]).map(function(s){ return s.term+':'+s.nuance_ja; }).join(' ; '),
-      it.explanation_ja, countOf(id), studyDatesOf(id).join(' ')]);
+      it.explanation_ja, countOf(id), studyDatesOf(id).join(' '), entryPhase(r)]);
   }
   (r.coreItems||[]).forEach(function(it){ push((TYPE_META[it.type]||TYPE_META.word).label, it.term, it); });
   (r.adjectives||[]).forEach(function(it){ push('形容詞', it.term, it); });
@@ -2507,7 +2639,7 @@ function entryToRows(r){
 async function exportCsv(){
   const archiveReports = await loadArchive();
   const allReports = mergeReports(archiveReports, ENGLISH_REPORTS);
-  const header = ['date','category','term','meaning_en','meaning_ja','examples','synonyms','explanation_ja','study_count','study_dates'];
+  const header = ['date','category','term','meaning_en','meaning_ja','examples','synonyms','explanation_ja','study_count','study_dates','phase'];
   let rows = [header];
   allReports.forEach(function(r){ rows = rows.concat(entryToRows(r)); });
   const csv = rows.map(function(row){ return row.map(csvField).join(','); }).join('\r\n');
