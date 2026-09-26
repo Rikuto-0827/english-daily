@@ -243,12 +243,207 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-15",
-  dateLabel: "2026年9月15日（火）",
+  date: "2026-09-25",
+  dateLabel: "2026年9月25日（金）",
+  readTimeMin: 20,
+  coreItems: [
+    {
+      type: "word", term: "accretive", ipa: "/əˈkriːtɪv/", register: "M&A・財務（フォーマル、買収評価の議論で頻出）",
+      meaning_en: "(of a transaction, especially an acquisition) resulting in an increase to a company's earnings per share or overall value, rather than reducing it",
+      meaning_ja: "(M&Aなどの取引が)実施後にEPSや企業価値を押し上げる効果を持つこと(増価的な、価値を積み増す)",
+      examples: [
+        "Wall Street gave the deal a warm reception because management framed it as accretive to earnings within the first twelve months, not dilutive.",
+        "Before we even talk price, we need a model showing whether this bolt-on acquisition is accretive or dilutive to next year's EPS."
+      ],
+      synonyms: [
+        { term: "value-adding", nuance_ja: "value-addingはより一般的な表現で『何らかの価値を加える』という広い意味。accretiveはEPSや企業価値への数値的な押し上げ効果を指す、決算・M&A文脈に限定されたより専門的な語。" },
+        { term: "earnings-enhancing", nuance_ja: "意味はほぼ重なるが、accretiveの方がアナリストやIR資料で使われる定型語として圧倒的に頻度が高く、より業界標準的な響きを持つ。" },
+        { term: "EPS-positive", nuance_ja: "アナリストの口語的な言い方に近く、accretiveよりカジュアルな響き。正式なプレスリリースや資料ではaccretiveが使われることが圧倒的に多い。" }
+      ],
+      explanation_ja: "accretiveはラテン語で『増大する』を意味するaccrescereに由来し、対義語のdilutive(希薄化的な)とセットで覚えるのが定番。M&Aの発表資料やアナリストとの決算コールでは、買収がEPSにとってaccretiveかdilutiveかがほぼ必ず質問される最重要論点で、\"accretive within 12 months\"のように具体的な時期まで言及されることが多い。CPA・MBAであれば財務モデリングの授業や実務で頻繁に目にする語だが、日常会話ではまず使われない、完全にプロフェッショナル文脈専用の語彙という点も覚えておきたい。買収価格が割高でも、シナジーやレバレッジ効果でaccretiveに『化ける』ケースもあり、この単語1つで会話の解像度が大きく上がる。"
+    },
+    {
+      type: "word", term: "unflinching", ipa: "/ʌnˈflɪntʃɪŋ/", register: "人物評・報道(称賛的、困難な状況でひるまない姿勢を評する)",
+      meaning_en: "showing no fear, hesitation, or weakness even when facing something difficult, painful, or intimidating",
+      meaning_ja: "困難や批判、恐怖に直面してもひるまず、動じない(態度・姿勢を称賛的に評する語)",
+      examples: [
+        "Her unflinching answers during the earnings call, even when pressed on the missed guidance, earned her a surprising amount of credibility with analysts.",
+        "The report is refreshingly unflinching about the fund's mistakes, naming specific bets that went wrong instead of burying them in vague language."
+      ],
+      synonyms: [
+        { term: "resolute", nuance_ja: "resoluteは『固い決意』そのものに焦点があり、unflinchingが強調する『外部からの圧力・恐怖にさらされても表情や態度が揺るがない』という対峙の場面のニュアンスはやや弱い。" },
+        { term: "unwavering", nuance_ja: "unwaveringは主に忠誠心や支持・信念の『一貫性』を形容し、unflinchingのように『痛みや批判を直視する』という具体的な対決の文脈への焦点は薄い。" },
+        { term: "stoic", nuance_ja: "stoicは感情を表に出さない忍耐強さを指し、必ずしも『困難に立ち向かう』能動的な姿勢は含意しない。unflinchingはより能動的・対決的なニュアンスを持つ。" }
+      ],
+      explanation_ja: "flinch(ひるむ、たじろぐ)にun-と-ingが付いた語で、文字通り『ひるむことがない』様子を描写する。決算報告や社内メモ、報道記事などで、都合の悪い事実や失敗を隠さず直視する姿勢を称賛する際によく使われ、\"an unflinching assessment/look at ...\"という形で名詞を修飾する用法が特に多い。似た語のresoluteやunwaveringが『意志の強さ』全般を指すのに対し、unflinchingは常に『何か困難・不都合なものに直面している』という具体的なシチュエーションとセットで使われる点が最大の違い。人の性格そのものよりも、ある特定の発言や報告書、決断のスタイルを評する場面で使われることが多い実務的な語彙。"
+    },
+    {
+      type: "idiom", term: "throw down the gauntlet", ipa: "", register: "対決・競争の宣言(ややフォーマル、報道・ビジネス戦略の文脈で頻出)",
+      meaning_en: "to issue a direct and public challenge to someone, inviting them to compete, respond, or prove themselves",
+      meaning_ja: "相手に対して公然と挑戦状を叩きつける、真っ向勝負を挑む(競争や対立の開始を宣言する)",
+      examples: [
+        "By slashing prices 20% the week before earnings, the new entrant effectively threw down the gauntlet to the two incumbents that had controlled the market for a decade.",
+        "When the CEO said in the interview that no competitor could match their service within five years, she was clearly throwing down the gauntlet to the entire industry."
+      ],
+      synonyms: [
+        { term: "issue a challenge", nuance_ja: "より直接的で説明的な言い方。throw down the gauntletが持つ『中世の決闘の作法』に由来する、劇的で公然とした挑発のニュアンスは薄い。" },
+        { term: "fire a shot across the bow", nuance_ja: "a shot across the bowはむしろ『警告』のニュアンスが強く、本格的な対決というよりは『これ以上やるなら報復する』という威嚇に近い。gauntletの方がより明確に『勝負を挑む』意図を示す。" },
+        { term: "raise the stakes", nuance_ja: "raise the stakesは既存の競争や交渉の『賭け金・リスクを引き上げる』ことに焦点があり、gauntletのように『新たに対決を宣言する』開始の瞬間を指すわけではない。" }
+      ],
+      explanation_ja: "gauntlet(籠手、鎧の手袋)を地面に投げつけて相手に決闘を挑んだ中世ヨーロッパの騎士の習慣に由来する表現で、拾えば挑戦を受諾したことになるという逸話がそのまま比喩表現として定着した。現代のビジネス・スポーツ・政治報道では、価格戦争や新製品発表、選挙戦などで『真っ向から対決姿勢を示す』行動を描写する際に頻出し、しばしば受動態でも使われる(\"the gauntlet has been thrown down\")。似た語源のrun the gauntlet(集団から次々に攻撃を受ける、という全く別の意味の慣用句)と混同されやすいので、throw down(挑む側)なのかrun(挑まれて苦しむ側)なのか、前置詞のペアで区別すると覚えやすい。"
+    },
+    {
+      type: "phrase", term: "Correct me if I'm off base, but ...", ipa: "", register: "会議・意見表明の前置き(ビジネス口語、控えめに異論・確認を切り出す場面)",
+      meaning_en: "used to introduce an opinion, assumption, or correction politely, signaling that the speaker is open to being wrong while still stating their view directly",
+      meaning_ja: "自分の理解や意見が間違っているかもしれないという余地を残しつつ、それでもはっきり自分の見解を述べる際の前置き表現(『的外れだったら訂正してほしいのですが』)",
+      examples: [
+        "Correct me if I'm off base, but didn't we already rule out that vendor last quarter over the compliance issue?",
+        "Correct me if I'm off base, but it sounds like this forecast is assuming renewal rates that are way higher than what we've actually seen this year."
+      ],
+      synonyms: [
+        { term: "Correct me if I'm wrong, but ...", nuance_ja: "意味はほぼ同じで交換可能だが、off baseの方がやや口語的でカジュアルな響きがあり、野球の『塁を離れて危険な状態』という比喩の分だけ表現に彩りがある。" },
+        { term: "I could be missing something, but ...", nuance_ja: "より控えめで、自分の理解不足の可能性を強調する言い方。off baseの方が『指摘してほしい』という相手への呼びかけの姿勢がより明確。" },
+        { term: "Not to second-guess this, but ...", nuance_ja: "既存の決定や計画に疑問を呈するというニュアンスがより強く出る言い方で、off baseほど『自分の理解が間違っているかもしれない』という謙虚さは前面に出ない。" }
+      ],
+      explanation_ja: "off base(塁から離れている)は野球用語で、走者が塁を離れて次の塁を狙っている状態、つまり『無防備で危険な状態』を指す比喩から、『見当違いである』という意味に転じた。\"Correct me if I'm off base, but ...\"は、特に会議で上司や他部署の前提に疑問を呈したり、聞き取れなかった内容を確認したりする際に、角を立てずに切り出すための定番フレーズとして非常によく使われる。似た機能を持つ\"Correct me if I'm wrong\"よりも一段カジュアルで、テック企業やスタートアップ系のミーティングでは特に好まれる言い回し。実際には話者は大抵かなり自信を持っている場合が多く、謙虚さを装いながら鋭い指摘をするための一種のクッション言葉として機能する。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "blithe", ipa: "/blaɪð/", register: "批判的〜中立(フォーマル寄り、無頓着さ・軽率さを評する場面で頻出)",
+      meaning_en: "showing a casual or carefree indifference that is considered inappropriate given the seriousness of the situation, especially toward risk or others' concerns",
+      meaning_ja: "深刻さに見合わない、能天気なまでの無頓着さ・軽い態度(批判的なニュアンスを伴うことが多い)",
+      examples: [
+        "The board's blithe dismissal of the whistleblower's complaint looked far worse in hindsight, once the accounting issues became public.",
+        "I'm always a little unsettled by how blithe some traders are about tail risk right before a big macro event."
+      ],
+      synonyms: [
+        { term: "nonchalant", nuance_ja: "nonchalantは『冷静・平然としている』という態度そのものを中立的に描写することが多く、blitheが持つ『それは無責任だ』という批判のニュアンスは必ずしも伴わない。" },
+        { term: "cavalier", nuance_ja: "cavalierは『尊大なまでに軽視する』という、やや高圧的・傲慢な態度を含意しやすいのに対し、blitheはより『無邪気に気づいていない』という無自覚さに寄った軽さを表す。" },
+        { term: "insouciant", nuance_ja: "insouciantはフランス語由来でより文学的・皮肉な響きを持ち、しばしば魅力の一部として肯定的にも使われるが、blitheはビジネス文脈では基本的に批判的に使われる。" }
+      ],
+      explanation_ja: "blitheは古英語由来の『陽気な、快活な』を意味する語で、本来は単に『朗らかな』というポジティブな意味だったが、現代では\"blithe disregard for ...\"や\"blithe indifference to ...\"のように、ほぼ常に何らかの深刻な問題への『能天気すぎる態度』を批判する文脈で使われる。リスク管理やコンプライアンスの議論で、経営陣やチームが警告サインを軽視していたことを後から振り返って評する際の定番語で、単独で人を形容するより、blithe + 名詞(disregard, confidence, assumptionなど)の組み合わせで使われることが圧倒的に多い点も覚えておくと実践で使いやすい。"
+    },
+    {
+      term: "supercilious", ipa: "/ˌsuːpərˈsɪliəs/", register: "強い批判・人物評(フォーマル、見下した態度を痛烈に非難する場面)",
+      meaning_en: "behaving as though one thinks one is better or more important than other people, in a way that shows contempt or disdain",
+      meaning_ja: "他人を見下し、自分の方が優れているかのように振る舞う、鼻持ちならない態度(強い非難のニュアンス)",
+      examples: [
+        "The senior partner's supercilious tone in front of the client made the whole team wince — nobody needed a reminder of the pecking order in that room.",
+        "There's a supercilious way some Ivy League hires talk to support staff that management really needs to address before it costs them good people."
+      ],
+      synonyms: [
+        { term: "condescending", nuance_ja: "condescendingは『相手を下に見た口調で話す』という具体的な行為・話し方に焦点があるのに対し、superciliousはより表情や態度全体、内面的な優越感そのものを非難する、やや文語的な語。" },
+        { term: "haughty", nuance_ja: "haughtyは『高慢・尊大』という全体的な自己評価の高さを形容し、superciliousほど『他人を明確に見下し軽蔑する』という対人的な蔑みの視線は強調しない。" },
+        { term: "disdainful", nuance_ja: "disdainfulは『軽蔑』という感情そのものを直接的に表す語で、superciliousが持つ『眉を上げる、鼻で笑うといった具体的な表情・仕草』の含意はやや弱い。" }
+      ],
+      explanation_ja: "superciliousはラテン語で『眉』を意味するsuperciliumに由来し、『眉を吊り上げて相手を見下す』仕草がそのまま語源になっている、非常に視覚的な語。ビジネスの場では、学歴や役職を笠に着て部下や取引先を見下すような態度を痛烈に批判する際に使われ、condescendingよりも一段強く、書き言葉的な響きを持つ。人事考課や退職者インタビューの文脈で、\"a supercilious manager\"という表現が出てきたら、それはかなり深刻な人間関係の問題を示唆していると理解してよい。"
+    },
+    {
+      term: "cloying", ipa: "/ˈklɔɪɪŋ/", register: "批評・マーケティング評(批判的、過度な甘さ・感傷を非難する場面)",
+      meaning_en: "excessively sweet, sentimental, or flattering to the point of being unpleasant or insincere",
+      meaning_ja: "甘すぎる、感傷的すぎる、あるいはお世辞が過剰で不快なほど(『わざとらしい』というニュアンスを伴う)",
+      examples: [
+        "The new ad campaign's cloying 'we're all family here' messaging felt tone-deaf right after two rounds of layoffs.",
+        "I like the product, but the onboarding emails are so cloying — three exclamation points and a 'You're amazing!' in every single one — that I almost unsubscribed."
+      ],
+      synonyms: [
+        { term: "saccharine", nuance_ja: "saccharine(人工甘味料が語源)はcloyingとほぼ同義で交換可能だが、より『人工的でわざとらしい甘さ』という質感の悪さを強調する傾向がある。" },
+        { term: "sappy", nuance_ja: "sappyはより口語的・軽い響きで、映画や音楽など感傷的な作品の批評でよく使われる。cloyingはビジネス文脈のトーンやコピーを評する際にも使いやすい、やや上品な語。" },
+        { term: "over-the-top", nuance_ja: "over-the-topは『やりすぎ』全般を指す汎用的な表現で、cloyingが特に持つ『甘さ・感傷・お世辞』という質的な方向性までは限定しない。" }
+      ],
+      explanation_ja: "cloyは元々『(甘いものの食べ過ぎで)うんざりさせる』という意味の動詞で、そこから『甘すぎて胸焼けがするような』というcloyingの形容詞的な意味が生まれた。マーケティングコピーや企業のブランドボイス、あるいは褒め言葉が多すぎる人事評価などを批評する際に、\"the copy reads a little cloying\"のように使われ、味覚由来の比喩でありながら、文章やコミュニケーションのトーンを評する語として金融・マーケティング業界でもよく使われる。日本語の『わざとらしい』『甘ったるい』に近いが、必ず『甘さ・感傷・お世辞』という方向性の過剰さを指す点で使い所が限定される。"
+    },
+    {
+      term: "trenchant", ipa: "/ˈtrentʃənt/", register: "称賛・分析評(フォーマル、鋭い批評・分析力を称える場面)",
+      meaning_en: "(of a comment, criticism, or piece of writing) sharp, incisive, and effective in a way that gets directly and forcefully to the heart of an issue",
+      meaning_ja: "(意見・批評・分析が)鋭く的確で、問題の核心を力強く突いている(称賛的に使われることが多い)",
+      examples: [
+        "Her trenchant critique of the merger thesis in the investment committee memo was the reason the deal never made it past round two.",
+        "The analyst's trenchant take on the retailer's margin problem — 'they've been buying growth with discounts for three years' — got quoted in half the earnings recaps that week."
+      ],
+      synonyms: [
+        { term: "incisive", nuance_ja: "incisiveは『鋭さ・的確さ』一般を広く指すのに対し、trenchantはより『力強く切り込む』攻撃的なニュアンスを伴い、しばしば対象への痛烈な批判を含む場面で使われる。" },
+        { term: "penetrating", nuance_ja: "penetratingは『物事の本質を見抜く洞察力』に焦点があり、trenchantが持つ『歯に衣着せぬ、切れ味の鋭い言葉遣い』という表現スタイルへの言及はやや弱い。" },
+        { term: "cutting", nuance_ja: "cuttingは人を傷つける『辛辣さ』により寄った語で、trenchantのような『分析として優れている』という知的な称賛のニュアンスは薄い。" }
+      ],
+      explanation_ja: "trenchantはフランス語で『切る』を意味するtrancherに由来し、trench(塹壕、溝)と語源を共有する。刃物で『鋭く切り込む』イメージがそのまま『議論や批評が鋭く本質を突いている』という意味に転用された語で、書評・投資メモ・アナリストレポートなど、知的な分析力を称える文脈で特によく使われる。似た語のincisiveより一段フォーマルで文語的な響きがあり、単なる『頭が良い』ではなく『歯に衣着せず核心を突く』という攻撃的な切れ味まで含意する点が最大の特徴。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "grease the skids (for something)",
+      meaning_en: "to make it easier for something to happen or proceed smoothly, often through informal influence, preparation, or behind-the-scenes effort",
+      meaning_ja: "(表立たない根回しや準備によって)物事がスムーズに進むよう地ならしをする、後押しをする",
+      examples: [
+        "A few quiet calls to the regulator's staff over the summer greased the skids for what turned out to be a surprisingly fast approval.",
+        "The advance team spent two weeks greasing the skids with local officials before the CEO's visit, so every meeting ran exactly on schedule."
+      ],
+      synonyms: [
+        { term: "pave the way (for something)", nuance_ja: "pave the wayはより中立的でフォーマルな言い方で、公的な発表や政策変更などにも使いやすい。grease the skidsは非公式な根回し・裏での働きかけのニュアンスがより強い、口語的な表現。" },
+        { term: "lay the groundwork", nuance_ja: "lay the groundworkは準備・基盤作りという行為そのものに焦点があるのに対し、grease the skidsは特に『抵抗や摩擦を減らして通りやすくする』という潤滑油的な効果を強調する。" }
+      ],
+      explanation_ja: "skid(そり、滑走台)に油を差して物を滑りやすくする、という文字通りの作業から来た表現で、比喩的に『物事が引っかからずスムーズに進むよう手を回す』という意味で使われる。政治・規制・社内政治の文脈で特によく登場し、必ずしも不正な意味合いは持たないが、\"quietly\"や\"behind the scenes\"といった語と一緒に使われることが多く、公式な場ではあまり語られない根回しのプロセスを指す点がポイント。全く同じ意味のgrease the wheelsよりもややアメリカ英語的でカジュアルな響きを持つ。"
+    },
+    {
+      phrase: "float a trial balloon",
+      meaning_en: "to release an idea, plan, or piece of information publicly on a tentative basis in order to gauge people's reactions before making a firm decision or commitment",
+      meaning_ja: "本格的に決定する前に、反応を見るためにアイデアや案を試験的に世に出してみること(観測気球を上げる)",
+      examples: [
+        "The leaked memo about relocating the headquarters was almost certainly a trial balloon floated by leadership to see how loud the backlash would be.",
+        "Before committing to the new fee structure, we floated a trial balloon with a handful of key clients to gauge how much pushback to expect."
+      ],
+      synonyms: [
+        { term: "test the waters", nuance_ja: "test the watersはより一般的で日常的な言い方で、必ずしも公にアイデアを出す必要はない。trial balloonは特に『世間や関係者の反応を見るために、意図的に情報を漏らす・発表する』という戦略的な行為を指す。" },
+        { term: "put out feelers", nuance_ja: "put out feelersは個別の相手に非公式に打診する、より内輪で小規模な探りを指すことが多く、trial balloonのような『広く公表して世論の反応を見る』という規模感は必ずしも伴わない。" }
+      ],
+      explanation_ja: "trial balloon(試験気球)は文字通り、風向きや気象条件を調べるために実際に気球を飛ばしていた慣習に由来し、政治の世界で『本格的な政策発表の前に、あえて情報をリークして世論の反応を試す』手法を指す言葉として定着した。企業の広報・IR戦略でも、価格改定やリストラといった反発が予想される決定を発表する前に、意図的に情報を『漏らして』反応を見る、という同じ手法が使われ、この表現で描写される。動詞はfly/float both usable だが float a trial balloonの組み合わせが最も一般的。"
+    },
+    {
+      phrase: "hold the fort",
+      meaning_en: "to take responsibility for managing a place, situation, or set of duties temporarily while the person normally in charge is away",
+      meaning_ja: "(通常担当している人が不在の間)一時的にその場・業務を守り、維持すること(留守を預かる)",
+      examples: [
+        "I'll be out of the office for the client trip, so I need someone senior to hold the fort and make the call on anything urgent.",
+        "She held the fort for three months while the CFO was on medical leave, and it clearly factored into her promotion the following year."
+      ],
+      synonyms: [
+        { term: "cover for (someone)", nuance_ja: "cover forはより具体的に『特定の人の代わりに業務をこなす』ことに焦点があるのに対し、hold the fortは『不在の間、全体の状況を維持・管理する』という、より広範な責任を示唆する。" },
+        { term: "keep things running", nuance_ja: "より平易で直接的な言い方。hold the fortは『守り抜く』という軍事的な比喩の分だけ、一時的な困難や責任の重さのニュアンスがやや強く出る。" }
+      ],
+      explanation_ja: "fort(砦)を『守り抜く』という軍事的なイメージに由来する表現で、上司や同僚が休暇・出張・産休などで不在の間、その業務や責任を代わりに引き受けることを指す。ビジネスメールでは\"Can you hold the fort while I'm out?\"のように依頼として使われることが非常に多く、単なる『代理をする』以上に、『多少の混乱があっても持ちこたえてくれ』という信頼と重責を託すニュアンスを含む、覚えておくと便利な定番フレーズ。"
+    },
+    {
+      phrase: "run a tight ship",
+      meaning_en: "to manage an organization, team, or operation in a strict, well-disciplined, and highly efficient manner, with little room for disorder or waste",
+      meaning_ja: "組織やチームを厳格かつ効率的に、無駄なく統率して運営すること(規律の効いた経営・管理をする)",
+      examples: [
+        "Say what you want about her management style, but she runs a tight ship — the team hits every deadline and the budget never has surprises.",
+        "The new plant manager inherited a facility with loose safety protocols and immediately started running a tight ship, to the relief of the compliance team."
+      ],
+      synonyms: [
+        { term: "keep a tight rein on (something)", nuance_ja: "keep a tight rein onは特定の対象(予算、支出、プロセスなど)を厳しく統制することに焦点があるのに対し、run a tight shipは組織全体の運営スタイルそのものを形容する、より包括的な表現。" },
+        { term: "manage with an iron fist", nuance_ja: "an iron fistは統制の『厳しさ・強権性』を強調し、しばしば恐怖による支配というネガティブな含みを持つ。run a tight shipは基本的に称賛的で、効率性・規律の良さを評価するニュアンスが強い。" }
+      ],
+      explanation_ja: "船を『整然と、規律正しく』運航させるという海事由来の比喩表現で、船長が乗組員を厳格に統率し、船内に無駄・混乱がない状態を指した。現代のビジネスでは、経営者やマネージャーがチームを効率的かつ規律正しく運営していることを称賛する際の定番表現として非常によく使われ、\"a tight ship\"という名詞句だけでも「規律の効いた組織」を指せる。ネガティブな含みはほとんどなく、むしろ『信頼できる、しっかりした管理者』という評価に直結する、覚えておいて損のないポジティブな評価語。"
+    }
+  ],
+  todayQuiz: [
+    { question: "Analysts on the call kept pressing management on whether the acquisition would be ___ or dilutive to next year's EPS.", choices: ["value-adding", "accretive", "earnings-enhancing", "additive"], answerIndex: 1, explanation: "Accretive is correct because it's the standard M&A/finance term for a deal that increases EPS, and it's specifically the word paired with 'dilutive' in analyst questions about earnings impact. Value-adding is too generic and isn't the term used in this specific EPS-accretion/dilution framework. Earnings-enhancing conveys a similar idea but isn't the conventional term consistently paired with dilutive in analyst and IR language. Additive sounds plausible but isn't an established financial term for this concept." },
+    { question: "The report on the failed product launch is refreshingly ___, naming exactly which decisions went wrong instead of burying them in vague corporate language.", choices: ["unflinching", "stoic", "unwavering", "resolute"], answerIndex: 0, explanation: "Unflinching is correct because it specifically describes directly confronting and naming uncomfortable facts without softening them. Stoic describes enduring hardship without showing emotion, not the act of openly naming one's own failures. Unwavering describes consistency of commitment or belief over time, not the act of confronting a difficult truth head-on. Resolute describes firm determination in general, but doesn't specifically capture the act of facing and naming uncomfortable facts the way unflinching does." },
+    { question: "By cutting prices 20% right before its rival's major product launch, the startup effectively ___.", choices: ["fired a shot across the bow", "raised the stakes", "threw down the gauntlet", "ran a tight ship"], answerIndex: 2, explanation: "Threw down the gauntlet is correct because it specifically means issuing a direct, public challenge inviting a competitive response, matching the aggressive pricing move timed right before a rival's launch. Fired a shot across the bow suggests a warning meant to signal restraint or caution, not a full competitive challenge. Raised the stakes implies escalating an existing conflict rather than initiating a new direct challenge. Ran a tight ship describes efficient, disciplined management and has nothing to do with competitive challenges." },
+    { question: "___, but isn't this the same vendor we already rejected last year for the compliance issue?", choices: ["I could be missing something", "Not to second-guess this", "Let's take a step back", "Correct me if I'm off base"], answerIndex: 3, explanation: "Correct me if I'm off base is correct because it's the natural way to politely preface pointing out a specific factual inconsistency while inviting correction. I could be missing something is overly tentative and doesn't function well as a lead-in to a direct factual question like this one. Not to second-guess this implies challenging a decision that's already been made, not raising a factual question about history. Let's take a step back is used to pause and reconsider a discussion broadly, not to introduce a specific point of correction." },
+    { question: "Junior analysts dreaded presenting to him, not because he was hard on the numbers, but because of the ___ way he'd sigh and say 'let me explain it again' before he'd even heard the full pitch.", choices: ["supercilious", "condescending", "haughty", "cloying"], answerIndex: 1, explanation: "Condescending is correct because it specifically describes a demeaning tone or manner of speaking, matching the described behavior of sighing and repeating explanations before even listening. Supercilious describes an overall air of superiority, often shown through expression or bearing, rather than a specific pattern of speech like this one. Haughty describes general excessive pride or self-regard, without the specific dismissive, talking-down interaction described. Cloying means excessively sweet or sentimental, the opposite tone from a dismissive put-down." },
+    { question: "Before announcing the full restructuring plan, the CFO ___ in an internal town hall to see how much resistance to expect.", choices: ["put out feelers", "greased the skids", "floated a trial balloon", "held the fort"], answerIndex: 2, explanation: "Floated a trial balloon is correct because it specifically describes releasing an idea in a semi-public setting, like a town hall, to gauge broad reaction before committing to it. Put out feelers usually describes quiet, individual, informal inquiries rather than addressing a room at a town hall. Greased the skids means smoothing the path for something already decided, not testing reactions to gauge resistance. Held the fort means temporarily managing responsibilities while someone is away, unrelated to testing reactions to a plan." }
+  ]
+},
+{
+  date: "2026-09-17",
+  dateLabel: "2026年9月17日（木）",
   readTimeMin: 33,
   coreItems: [
     {
-      type: "word", term: "kludge", ipa: "/klʌdʒ/", register: "口語・エンジニアリング/業務プロセス批評",
+      type: "word", term: "caveat", ipa: "/ˈkæviæt/", register: "会議・契約（フォーマル寄り、条件を一つ添える場面）",
       meaning_en: "an inelegant but workable solution or fix, cobbled together to solve an immediate problem rather than done properly",
       meaning_ja: "場当たり的だが一応動く、継ぎ接ぎの解決策",
       examples: [
