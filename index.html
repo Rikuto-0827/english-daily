@@ -243,327 +243,6 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-17",
-  dateLabel: "2026年9月17日（木）",
-  readTimeMin: 33,
-  coreItems: [
-    {
-      type: "word", term: "caveat", ipa: "/ˈkæviæt/", register: "会議・契約（フォーマル寄り、条件を一つ添える場面）",
-      meaning_en: "a warning or qualification attached to a statement or agreement, pointing out a limitation, exception, or condition that the listener should keep in mind",
-      meaning_ja: "但し書き、留保条件（本題に付け加える一言の警告・例外事項）",
-      examples: [
-        "I'll sign off on the projection, with one caveat: it assumes the renewal rate holds above ninety percent.",
-        "She said she'd help me move this weekend, with the caveat that she might have to leave early for a family thing."
-      ],
-      synonyms: [
-        { term: "qualification", nuance_ja: "ほぼ同義でよりフォーマル・学術的。caveatのほうが口語の会議でも自然に使え、警告のニュアンスがやや強い。" },
-        { term: "disclaimer", nuance_ja: "法的・公式な免責文言を指すことが多く、書面や契約書に付随する定型的な響き。caveatは口頭でも気軽に一つだけ条件を添える場合に使える。" },
-        { term: "fine print", nuance_ja: "契約書の小さな文字で書かれた注意事項という具体的なイメージ。caveatは一文で述べる単一の留保点を指し、fine printのような網羅的な詳細群ではない。" }
-      ],
-      explanation_ja: "ラテン語で「気をつけよ（let him beware）」という警告の命令形がそのまま英語の名詞になった語。ビジネスの現場では \"one caveat\" として、ある結論や合意に対してただ一つだけ注意すべき条件・前提を添えるときの定番の切り出し方として使われる。同意や称賛を先に述べてから \"...with one caveat\" と続けることで、相手の面子を潰さずに懸念点を伝えられる、実務上非常に便利な緩衝材のような一語。複数形 caveats を使えば、留保点が一つではなく複数あることも簡潔に示せる。"
-    },
-    {
-      type: "word", term: "underpin", ipa: "/ˌʌndərˈpɪn/", register: "分析・議論（フォーマル、構造・前提への言及）",
-      meaning_en: "to form the basis or foundation for something, providing the essential support that makes it possible or valid, often used for arguments, strategies, or systems",
-      meaning_ja: "（議論・戦略・仕組みなどを）根底で支える、裏付ける",
-      examples: [
-        "The whole valuation is underpinned by an assumption that churn stays flat for the next three years.",
-        "Their friendship is underpinned by a shared habit of showing up for each other during the bad years, not just the good ones."
-      ],
-      synonyms: [
-        { term: "support", nuance_ja: "汎用的で中立的な語。underpinは「土台として存在しなければ全体が崩れる」という構造的な必須性をより強く含意する。" },
-        { term: "substantiate", nuance_ja: "主張や数字を証拠によって裏付けるという検証寄りの語。underpinは証拠というより構造的な基盤・前提そのものを指す点が異なる。" },
-        { term: "anchor", nuance_ja: "動きを固定する比喩がより強く、変動を抑える安定装置のニュアンス。underpinは静的な基盤・支持構造そのものを指すことが多い。" }
-      ],
-      explanation_ja: "建築で建物の基礎（foundation）を補強・支持する工事を指す専門用語がそのまま比喩に転じ、目に見える結論や成果の裏にある「見えない土台」を指す語になった。決算資料や投資メモで \"the thesis is underpinned by...\" という形が頻出し、結論そのものより前提・仮定の妥当性に読者の注意を向けさせる効果がある。受動態で使われる頻度が非常に高く、能動態 \"X underpins Y\" よりも \"Y is underpinned by X\" の形で、支える側を後半に置く語順が自然に響く。"
-    },
-    {
-      type: "word", term: "circumspect", ipa: "/ˈsɜːrkəmspɛkt/", register: "発言・行動の描写（フォーマル、リスクを見越した慎重さ）",
-      meaning_en: "careful and cautious about what one says or does, especially by considering the possible consequences before acting, typically in a situation with some risk or uncertainty",
-      meaning_ja: "用心深い、慎重な（リスクを見越して発言・行動を控えめにする）",
-      examples: [
-        "The CFO has been circumspect about giving any specific guidance until the refinancing closes.",
-        "I'd be circumspect about mentioning the job offer to your current boss before you've actually decided."
-      ],
-      synonyms: [
-        { term: "cautious", nuance_ja: "一般的で幅広く使える中立語。circumspectは特に「発言」に対して使われる頻度が高く、失言のリスクを避けるための慎重さを強調する。" },
-        { term: "guarded", nuance_ja: "感情や情報を意図的に隠す、防御的な響きが強い。circumspectはより思慮深く先を見越した慎重さで、必ずしも隠し立てを含意しない。" },
-        { term: "discreet", nuance_ja: "秘密や機密情報の扱いに焦点があり、口の堅さを指す。circumspectは発言内容そのものの選び方・タイミングの慎重さを指す点が異なる。" }
-      ],
-      explanation_ja: "ラテン語 circum（周りを）+ specere（見る）が語源で、文字通り「周囲を見回す」姿から「あらゆる方向のリスクを見てから動く」という意味に発展した。IR（投資家向け広報）担当者やM&A交渉中の経営陣が、確定していない情報について発言を控える場面を描写する際に好んで使われるフォーマルな語。単なる cautious よりも「先読みして言葉を選んでいる」という知的な慎重さのニュアンスを伝えられるのが実務上の価値。"
-    },
-    {
-      type: "word", term: "acerbic", ipa: "/əˈsɜːrbɪk/", register: "論評・人物評（辛辣な機知を伴う批判）",
-      meaning_en: "(of a comment, tone, or person) sharply critical or biting in a witty but unkind way, often making the target feel foolish",
-      meaning_ja: "辛辣な、痛烈に皮肉な（機知に富むが手厳しい物言い）",
-      examples: [
-        "The analyst's acerbic note called the guidance 'aspirational at best, fictional at worst.'",
-        "My aunt has this acerbic sense of humor that makes family dinners either hilarious or deeply uncomfortable, depending on who's sitting across from her."
-      ],
-      synonyms: [
-        { term: "scathing", nuance_ja: "非難の強さ・激しさに焦点があり、機知やユーモアは必ずしも伴わない。acerbicは「毒舌だが知的で切れ味がある」という機知の要素が強い。" },
-        { term: "caustic", nuance_ja: "「腐食性の」という化学的比喩そのままに、relentlessに人を傷つける響きが強い。acerbicのほうがやや軽妙で、社交の場でも許容される皮肉のトーンを指せる。" },
-        { term: "biting", nuance_ja: "批判の鋭さ一般を指す平易な語。acerbicはより文語的で、レビューや論評など書き言葉での辛辣な論調を描写するのに向いている。" }
-      ],
-      explanation_ja: "ラテン語 acerbus（酸っぱい、渋い）に由来し、未熟な果実の刺すような酸味が、人の物言いの「刺すような辛辣さ」に転用された。単に怒っているのではなく、機知や言葉選びの巧みさを伴った手厳しさを指すのが核心で、アナリストのレポートや映画評論など、賢さと毒舌が同居する文章を評する際に定番の語。人柄そのものを形容する場合は、周囲から一目置かれつつも近寄りがたい人物像を暗示することが多い。"
-    },
-    {
-      type: "idiom", term: "not have a leg to stand on", ipa: "", register: "議論・法的立場（強い、弁解の余地なし）",
-      meaning_en: "to have no valid justification, evidence, or excuse for one's position, especially in an argument, negotiation, or legal dispute",
-      meaning_ja: "（議論・立場において）拠り所となる根拠が全くない、弁解の余地がない",
-      examples: [
-        "Once they found the email where we'd agreed to the delay in writing, we didn't have a leg to stand on in the dispute.",
-        "You can't complain about the noise from the new bar when you signed a lease across the street from a nightlife district — you don't have a leg to stand on."
-      ],
-      synonyms: [
-        { term: "have no case", nuance_ja: "法律的・フォーマルな響きが強く、正式な訴訟や公式な議論の文脈に限定されやすい。not have a leg to stand onはより口語的で日常の口論にも使える。" },
-        { term: "be on shaky ground", nuance_ja: "根拠が「弱い」ことを指すが、完全にゼロとは限らない余地を残す。not have a leg to stand onは弁解の余地が全くないという、より断定的な状態を指す。" },
-        { term: "have nothing to back it up", nuance_ja: "説明的で平板な言い換え。イディオムのほうが「片足で立とうとしても崩れる」という視覚的なイメージの喚起力を保っている。" }
-      ],
-      explanation_ja: "文字通り「立つための脚が一本もない」、つまり体を支える土台自体が存在しないという身体的な比喩から来ている。単に「間違っている」のではなく、反論しようにも拠り所となる根拠が構造的に何一つないという、議論における完全な脆弱さを表すのが核心。契約書の文言や証拠が相手に決定的に不利な状況を描写する際、弁護士や交渉担当者が好んで使う定型表現で、たいてい否定文の形でしか使われない。"
-    },
-    {
-      type: "idiom", term: "raise the bar", ipa: "", register: "成果・水準の評価（好意的、称賛を含む）",
-      meaning_en: "to increase the standard or level of performance that is expected or required, often making it harder for others to compete or keep up",
-      meaning_ja: "水準を引き上げる、基準を高くする（後に続く者へのハードルを上げる）",
-      examples: [
-        "The new associate's model quality raised the bar for the whole team — nobody wants to hand in something sloppy next to that.",
-        "Once one neighbor put up professional holiday lights, he single-handedly raised the bar for the entire street."
-      ],
-      synonyms: [
-        { term: "set a new standard", nuance_ja: "説明的でやや中立的。raise the barは「以前より高くなった」という比較の動きそのものを強調する動的な表現。" },
-        { term: "up the ante", nuance_ja: "賭け金を吊り上げる比喩で、リスクや投入するものそのものを増やす含みが強い。raise the barは要求される水準・品質の基準に焦点があり、必ずしもリスク増大は含意しない。" },
-        { term: "push the envelope", nuance_ja: "限界そのものに挑戦し、範囲や可能性を広げることに焦点がある。raise the barは既存の尺度上で単純に「基準が上がった」ことを述べる点が異なる。" }
-      ],
-      explanation_ja: "陸上競技の走り高跳びやリンボーダンスで、バー（bar）の高さを物理的に上げていく様子がそのまま比喩になった表現。誰か一人の卓越した成果が、以降その分野・チーム全体の期待水準そのものを引き上げてしまう、という連鎖的な効果を描写するのに向いている。褒め言葉として使われることが多いが、\"the bar has been raised\" と受動態で使えば、後に続く人へのプレッシャーの高まりを客観的に描写することもできる。"
-    },
-    {
-      type: "idiom", term: "wait for the other shoe to drop", ipa: "", register: "不安・予感の描写（口語、悪い続報を警戒）",
-      meaning_en: "to anticipate an unpleasant or negative event that seems likely to happen soon, especially after an initial piece of bad news or an unresolved situation",
-      meaning_ja: "（悪いことの続きが来るのではと）身構えて待つ、次の一撃を警戒する",
-      examples: [
-        "After the first round of layoffs, half the office has just been waiting for the other shoe to drop on their own team.",
-        "The inspection found one crack in the foundation, and now we're just waiting for the other shoe to drop before we make an offer on the house."
-      ],
-      synonyms: [
-        { term: "brace for impact", nuance_ja: "衝撃そのものへの物理的・心理的な身構えを指し、必ずしも「次に何が来るか分からない不安な待機」という含みはない。wait for the other shoe to dropは、既に一つ悪い知らせがあり続報を恐れて待つという時系列の構造を持つ。" },
-        { term: "anticipate bad news", nuance_ja: "説明的で直接的。イディオムが持つ、靴が片方ずつ床に落ちる音を待つという生活感のある比喩の面白みがない。" },
-        { term: "see the writing on the wall", nuance_ja: "既に結末がほぼ確定していると悟ることに焦点があり、不確実な「まだ来ていない一撃」を待つ緊張感は薄い。" }
-      ],
-      explanation_ja: "アパートの上の階の住人が靴を脱ぐ音（一足目がドスンと落ちる音）を聞いた下の階の住人が、もう一足がいつ落ちるかとつい身構えてしまう、というニューヨークの集合住宅生活に由来する逸話が語源とされる。単なる不安ではなく「一つ目の悪い兆候が既にあり、二つ目が来るのは時間の問題だと感じている」という具体的な心理状態を描写するのに向いている。レイオフ、業績警告、家族の健康問題など、悪い知らせが立て続けに来ることが多い状況全般で自然に使われる。"
-    },
-    {
-      type: "idiom", term: "jump through hoops", ipa: "", register: "手続き・要求への不満（口語、やや皮肉）",
-      meaning_en: "to go through a series of difficult, complicated, or seemingly unnecessary steps or requirements in order to achieve something",
-      meaning_ja: "（不必要に感じるほど）面倒な手続きを次々とこなす、無理難題を乗り越える",
-      examples: [
-        "We had to jump through so many compliance hoops just to open a corporate bank account in that country.",
-        "The airline made us jump through hoops for a refund that should have taken five minutes."
-      ],
-      synonyms: [
-        { term: "go through red tape", nuance_ja: "官僚的な書類手続きそのものに焦点がある。jump through hoopsはより広く、書類に限らず人為的に課された条件全般（承認、テスト、条件クリアなど）を指せる。" },
-        { term: "clear hurdles", nuance_ja: "克服すべき障害という中立的な響き。jump through hoopsは「本質的には不必要かもしれない」という苛立ちや皮肉のニュアンスをより強く含む。" },
-        { term: "tick boxes", nuance_ja: "形式的なチェックリストを埋めるだけの作業という、やや軽視したニュアンス。jump through hoopsは労力や忍耐を要する一連のプロセス全体を指す点でより大がかりな響きがある。" }
-      ],
-      explanation_ja: "サーカスの動物が調教師の指示で次々と輪（hoop）をくぐり抜ける芸に由来し、人が誰かの決めた恣意的な条件に従わされている様子を、やや皮肉を込めて描写する表現。単に「難しい」のではなく「本当に必要なのか疑わしい形式的な条件を、相手の言うがままにいくつもクリアさせられる」という不満のニュアンスを含むのが核心。ビザ申請、返金手続き、社内承認フローなど、官僚的でフラストレーションの溜まるプロセスを愚痴る際の定番表現。"
-    },
-    {
-      type: "phrase", term: "I stand corrected.", ipa: "", register: "議論・訂正（口語〜フォーマル、率直に非を認める）",
-      meaning_en: "a short, direct way of admitting that you were wrong about something after receiving new information, often used to gracefully concede a point in a discussion",
-      meaning_ja: "訂正します、私が間違っていました（新事実を受けての率直な非を認める一言）",
-      examples: [
-        "I said the covenant test was quarterly — I stand corrected, it's actually tested monthly.",
-        "I stand corrected: apparently my sister did tell me about the move, I just wasn't listening."
-      ],
-      synonyms: [
-        { term: "You're right, I was wrong.", nuance_ja: "直接的で率直だが、やや幼稚・単調に響くこともある。I stand correctedはより簡潔でフォーマルな場でも品よく非を認められる定型句。" },
-        { term: "My mistake.", nuance_ja: "カジュアルで軽い響き、小さなミスに向く。I stand correctedは議論や事実確認の場で、相手の指摘によって考えを改めたことを明確に示す、やや儀礼的な響きがある。" },
-        { term: "Fair enough, I was off on that.", nuance_ja: "口語的で友好的。I stand correctedのほうが簡潔で、フォーマルな会議やメールでもそのまま使える万能さがある。" }
-      ],
-      explanation_ja: "法廷で判決や訂正が確定し、それ以上争わず「その通りに立つ（stand）」という司法的な響きを残した表現で、現在では日常会話・ビジネスの両方で使われる簡潔な非の認め方として定着している。言い訳や長い説明を挟まずに一言で誤りを認められるため、会議中に指摘を受けた際、話の流れを止めずに次に進める便利なフレーズ。皮肉っぽく使うことも可能で、些細な指摘に対してわざと大げさにこの表現を使うと、軽いユーモアとしても機能する。"
-    },
-    {
-      type: "phrase", term: "Let's sleep on it.", ipa: "", register: "意思決定の保留（口語、翌日まで即断を避ける）",
-      meaning_en: "a suggestion to postpone a decision until the next day, allowing time to think it over calmly rather than deciding immediately under pressure",
-      meaning_ja: "一晩考えよう、その場では決めずに寝かせよう",
-      examples: [
-        "The term sheet looks solid, but this is a ten-year commitment — let's sleep on it and reconvene tomorrow morning.",
-        "We both liked the apartment, but it's a huge decision, so we told the agent we'd sleep on it."
-      ],
-      synonyms: [
-        { term: "take some time to think it over", nuance_ja: "説明的で中立、期間の長さは曖昧。let's sleep on itは具体的に「一晩」という短い区切りを示し、翌日には答えを出すという前提がある。" },
-        { term: "give it some more thought", nuance_ja: "熟考すること自体に焦点があり、必ずしも時間の区切りを示さない。let's sleep on itは「今すぐ決めない」という即断回避の意図がより明確。" },
-        { term: "hold off on deciding", nuance_ja: "決定の保留そのものを事務的に述べる。イディオムのほうが「一晩寝かせることで冷静な判断ができる」という感覚的な信頼のニュアンスを伝えられる。" }
-      ],
-      explanation_ja: "睡眠が思考を整理し、感情的な勢いを鎮めてくれるという経験則がそのまま定型句になった表現で、重要な決断ほど即答を避けるべきだという知恵を一言で伝えられる。プレッシャーの強い交渉の場で、その場の空気に流されて即決するのを避けたいときに、角を立てずに時間を稼げる便利な一言。翌日改めて連絡することを暗に約束する表現でもあるため、使った後に本当に翌日フォローアップするのが礼儀とされる。"
-    },
-    {
-      type: "phrase", term: "Just so we're clear, ...", ipa: "", register: "確認・念押し（会議、誤解防止のための前置き）",
-      meaning_en: "a phrase used to introduce a direct restatement of a point, condition, or expectation, in order to remove any possible ambiguity before proceeding",
-      meaning_ja: "念のため確認ですが、〜（誤解のないようはっきりさせておきたい点を切り出す前置き）",
-      examples: [
-        "Just so we're clear, this quote doesn't include installation — that's a separate line item.",
-        "Just so we're clear, I'm not lending you the car again after what happened last time."
-      ],
-      synonyms: [
-        { term: "To confirm, ...", nuance_ja: "事務的で中立的な確認の切り出し方。just so we're clearはやや強めのトーンを持ち、誤解や後からの言い逃れを防ぎたいという意図がより明確に伝わる。" },
-        { term: "For the avoidance of doubt, ...", nuance_ja: "契約書や公式文書で使われるフォーマルな定型句。just so we're clearは口頭の会話でも自然に使える、より口語的なバージョン。" },
-        { term: "Let's make sure we're on the same page:", nuance_ja: "双方の理解を揃えることに焦点があり、対話的なニュアンスが強い。just so we're clearは話者側から一方的に条件を明確化する響きがやや強い。" }
-      ],
-      explanation_ja: "曖昧さを残したまま話を進めると後で「言った・言わない」の水掛け論になりかねない、という実務上のリスクを未然に防ぐための前置き表現。特に金額・範囲・責任の所在など、後から誤解が生じやすい条件を伝える直前に置かれることが多く、やや念押しの強さを伴う。家庭内の約束事や友人関係の境界線を明確にする場面でも使われ、ビジネスに限らず「これ以上は譲れない」という一線を引く合図としても機能する。"
-    },
-    {
-      type: "phrase", term: "Let's not get ahead of ourselves.", ipa: "", register: "楽観の抑制（会議・日常、先走りを戒める）",
-      meaning_en: "a suggestion to slow down and avoid assuming or planning for a future outcome before it is actually confirmed, especially when a group is getting overly optimistic or hasty",
-      meaning_ja: "先走らないようにしよう、まだ気が早い（確定前に浮かれたり計画を進めすぎたりするのを戒める）",
-      examples: [
-        "The term sheet isn't signed yet, so let's not get ahead of ourselves and start hiring for the new office.",
-        "I know the second date went well, but let's not get ahead of ourselves and start planning a trip together."
-      ],
-      synonyms: [
-        { term: "Let's not count our chickens before they hatch.", nuance_ja: "同じ意味を持つ古典的なことわざで、より比喩的・文学的。let's not get ahead of ourselvesはより直接的で、現代のビジネス会話にも自然になじむ。" },
-        { term: "One step at a time.", nuance_ja: "プロセス全体を段階的に進めるべきという一般的な助言。let's not get ahead of ourselvesは特に「まだ確定していないことを前提に浮かれている」状況への戒めという文脈がより明確。" },
-        { term: "Let's not jump the gun.", nuance_ja: "早まった行動そのものを戒める点で近いが、jump the gunは「行動を起こすタイミング」に焦点があり、get ahead of ourselvesは「期待や計画の先走り」という心理面により焦点がある。" }
-      ],
-      explanation_ja: "集団やチームが良い兆候に浮かれて、まだ確定していない未来を前提に話を進めてしまう状況を、一歩引いて冷静にたしなめる表現。楽観的な空気に水を差すというより、浮かれすぎたチームを現実に引き戻す優しいブレーキ役として使われることが多く、言った本人も同じくらい期待している場合がほとんど。投資委員会が好感触を示した直後や、交際が順調なカップルの会話など、期待と現実のギャップが後で痛手になりうる場面で先回りして使われる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "flippant", ipa: "/ˈflɪpənt/", register: "人物評・発言評（批判的、不謹慎さを非難）",
-      meaning_en: "treating a serious matter with a casual or disrespectful lack of seriousness, especially in a way that seems inappropriate given the situation",
-      meaning_ja: "軽薄な、不真面目に茶化すような（真剣であるべき場面での不謹慎さ）",
-      examples: [
-        "His flippant 'we'll figure it out' response didn't exactly reassure the board about the compliance gap.",
-        "She made a flippant joke about the diagnosis, and I couldn't tell if it was her way of coping or if she really wasn't taking it seriously."
-      ],
-      synonyms: [
-        { term: "glib", nuance_ja: "口先だけの滑らかさ・浅はかな説得力に焦点がある。flippantは「真剣さが求められる場面でわざと軽く扱う」という不謹慎さそのものに焦点がある。" },
-        { term: "dismissive", nuance_ja: "相手の懸念や意見を軽視・却下する態度に焦点がある。flippantは態度そのものの軽さ・ふざけた調子を指し、必ずしも相手を無視しているとは限らない。" },
-        { term: "cavalier", nuance_ja: "リスクや結果への無頓着さ・傲慢さに焦点がある。flippantは主に「口調・言い方」の軽さを指し、態度全体の傲慢さまでは含意しない。" }
-      ],
-      explanation_ja: "深刻な話題やリスクの大きい状況に対して、まるで大したことがないかのように軽く受け流す態度を批判的に描写する語。単に「冗談っぽい」のではなく、「この場面でその軽さは不適切だ」という周囲の違和感・非難を伴うのが核心で、危機対応や謝罪の場面で経営陣の発言がflippantだと報じられると、それだけで評判に傷がつく。友人や家族との会話でも、深刻な相談に対して軽い返しをしてしまった相手を評する際に使える便利な一語。"
-    },
-    {
-      term: "unabashed", ipa: "/ˌʌnəˈbæʃt/", register: "人物評（中立〜好意的、気後れのなさを称える）",
-      meaning_en: "showing no embarrassment, guilt, or shame about something that might normally be expected to cause it, often used to describe openly and confidently expressed opinions or desires",
-      meaning_ja: "悪びれない、恥じることなく堂々とした（普通なら気後れするようなことを平然と示す）",
-      examples: [
-        "She's an unabashed advocate for raising prices even when the sales team pushes back — she just doesn't flinch.",
-        "He's an unabashed fan of reality TV and will talk about last night's episode in any meeting if you let him."
-      ],
-      synonyms: [
-        { term: "unapologetic", nuance_ja: "ほぼ同義で交換可能な頻出語。unabashedはやや文語的で、感情の乱れの欠如（気後れのなさ）そのものに焦点がある。" },
-        { term: "shameless", nuance_ja: "道徳的な非難を伴うことが多く、否定的な文脈で使われやすい。unabashedはより中立的〜好意的に使え、率直さや自信を称える文脈でも自然。" },
-        { term: "brazen", nuance_ja: "図々しさ・厚かましさへの批判が強く、他者への配慮の欠如を非難するニュアンス。unabashedは単に「気にしない」という心理状態を指し、必ずしも他者への迷惑を含意しない。" }
-      ],
-      explanation_ja: "動詞 abash（恥じ入らせる、うろたえさせる）の否定形が形容詞化した語で、本来なら気恥ずかしさや躊躇を感じるはずの場面で、それが全く見られない様子を指す。批判的にも好意的にも使える中立性が実務上の強みで、\"an unabashed fan of X\" のように、少し変わった趣味や強い意見を悪びれずに公言する人物を、むしろ好感を持って描写する際によく使われる。似た brazen が図々しさへの非難を含むのに対し、unabashedは単純な気後れのなさを指すため、褒め言葉としても違和感なく使える。"
-    },
-    {
-      term: "exorbitant", ipa: "/ɪɡˈzɔːrbɪtənt/", register: "価格・料金の評価（強い批判、法外さを非難）",
-      meaning_en: "(of a price, fee, or demand) unreasonably or excessively high, far beyond what is considered fair or normal",
-      meaning_ja: "法外な、途方もなく高い（相場からかけ離れた価格・要求）",
-      examples: [
-        "The exorbitant overdraft fees on that account were basically why we switched banks.",
-        "Renewing the lease at that exorbitant rate didn't make sense once we ran the numbers against buying."
-      ],
-      synonyms: [
-        { term: "excessive", nuance_ja: "汎用的で中立的な「行き過ぎ」を指す語。exorbitantは特に価格・料金・要求の文脈で使われる頻度が圧倒的に高く、より強い非難のニュアンスを持つ。" },
-        { term: "extortionate", nuance_ja: "恐喝（extortion）を連想させ、意図的に不当な利益を得ようとしているという非難がより強い。exorbitantは意図の有無に関わらず単に金額が異常に高いことを指せる。" },
-        { term: "steep", nuance_ja: "口語的で軽いニュアンス、価格が高めという程度の指摘に留まる。exorbitantはより強く、常識を逸脱したレベルの高さを非難する響きを持つ。" }
-      ],
-      explanation_ja: "ラテン語 exorbitare（軌道から外れる）に由来し、正常な範囲・軌道を大きく逸脱しているという比喩がそのまま「異常な高値」に転用された語。単に高いのではなく「相場や常識という軌道から完全に外れている」という強い非難を含むのが核心で、銀行手数料、違約金、独占的な業者の料金など、選択の余地が少ない状況で足元を見られていると感じる場面で特によく使われる。日常会話でも駐車場代や空港の飲食店の値段など、明らかに割高な料金への不満を表現する際に効果的。"
-    },
-    {
-      term: "austere", ipa: "/ɔːˈstɪr/", register: "様式・政策・生活の評価（フォーマル、贅沢の排除）",
-      meaning_en: "severely simple, strict, or without any luxury or comfort, whether describing a style, a way of life, or a set of policies",
-      meaning_ja: "簡素で厳格な、贅沢を排した（様式・生活・政策について）",
-      examples: [
-        "The government's austere budget proposal cuts discretionary spending across nearly every department.",
-        "His apartment is almost monastically austere — a bed, a desk, and nothing on the walls."
-      ],
-      synonyms: [
-        { term: "stark", nuance_ja: "見た目の飾り気のなさ・冷たさに焦点があり、視覚的な印象を強く指す。austereはライフスタイルや政策など、より広い範囲の「贅沢の排除」を指せる。" },
-        { term: "spartan", nuance_ja: "古代スパルタの厳格な鍛錬生活に由来し、意図的な自己鍛錬・耐乏のニュアンスが強い。austereはより一般的で、必ずしも鍛錬の意図を含意しない。" },
-        { term: "frugal", nuance_ja: "個人の倹約志向という前向きな響きが強い。austereはより厳格・冷厳な印象を与え、政策や様式など組織的な文脈でも自然に使える。" }
-      ],
-      explanation_ja: "ギリシャ語 austeros（渋い、厳しい）に由来し、渋み・厳しさの感覚がそのまま「贅肉のない厳格さ」に転用された語。財政緊縮策を指す \"austerity measures\" という定型句で経済ニュースに頻出し、個人の生活様式（ミニマリスト的な暮らし）から国家の政策まで幅広いスケールで使えるのが特徴。単なる「質素」ではなく、本来あってもよいはずの快適さ・余裕をあえて排除しているという意志的なニュアンスを含む点が、単に貧しいことを指す語との違い。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "surface an issue",
-      meaning_en: "to bring a hidden or previously unnoticed problem to the attention of others, especially so it can be addressed before it becomes bigger",
-      meaning_ja: "（隠れていた）問題を表面化させる、明るみに出す",
-      examples: [
-        "The junior analyst surfaced an issue with the debt schedule that would have thrown off the whole model if it had gone unnoticed until closing.",
-        "I want to surface a concern about the venue before we send the invitations, not after."
-      ],
-      synonyms: [
-        { term: "raise a red flag", nuance_ja: "警告として強い危険信号を発するニュアンスが強い。surface an issueはより中立的で、必ずしも深刻な危険を意味せず、単に見過ごされていた点を指摘する場合にも使える。" },
-        { term: "flag a concern", nuance_ja: "ほぼ同義で交換可能。surface an issueはより「隠れていたものを表に出す」という発見・可視化のプロセスに焦点がある。" }
-      ],
-      explanation_ja: "水面下（under the surface）に隠れていたものを水面上（surface）に浮かび上がらせる、という視覚的な比喩がそのまま動詞化された表現。単に「言う」のではなく、それまで誰も気づいていなかった、あるいは意図的に見過ごされていた問題を初めて可視化するというニュアンスが核心にある。デューデリジェンスやコードレビューなど、詳細を精査する過程で見つかった見落としを報告する際の定番表現で、非難のトーンを抑えつつ建設的に問題提起できる便利な言い方。"
-    },
-    {
-      phrase: "whiteboard an idea",
-      meaning_en: "to informally sketch out, diagram, or think through an idea together with others, typically in an early and unpolished stage before it becomes a formal plan",
-      meaning_ja: "（ホワイトボードを使うように）アイデアを気軽に図解しながら一緒に練る",
-      examples: [
-        "Before we build a full deck, let's just whiteboard the idea and see if the unit economics even make sense.",
-        "We ended up whiteboarding the whole seating chart for the wedding at the kitchen table because the spreadsheet wasn't cutting it."
-      ],
-      synonyms: [
-        { term: "brainstorm", nuance_ja: "アイデアの数を出すこと自体に焦点があり、必ずしも図解や構造化を伴わない。whiteboard an ideaは図や矢印で関係性を可視化しながら考えるという、より視覚的・構造的な作業を指す。" },
-        { term: "sketch out", nuance_ja: "ほぼ同義で汎用的。whiteboard an ideaは特にオフィス・スタートアップ文化に根ざした比喩で、複数人が集まって議論しながら描く共同作業のニュアンスが強い。" }
-      ],
-      explanation_ja: "実際のホワイトボードにマーカーで図やフローチャートを描きながらアイデアを練るオフィス文化がそのまま動詞化された、比較的新しいビジネス俗語。パワーポイントやスプレッドシートのような「仕上がった」ツールを使う前段階の、ラフで気軽な思考のプロセスを指すのが核心で、\"let's not build a deck yet, let's just whiteboard it\" のように、まだ固まっていないアイデアに時間をかけすぎないよう促す場面で便利に使われる。物理的なホワイトボードがなくても、紙やオンラインツールを使う場合にも比喩として使われる。"
-    },
-    {
-      phrase: "cherry-pick (the data)",
-      meaning_en: "to selectively choose only the examples, data points, or facts that support a particular conclusion, while ignoring evidence that would contradict it",
-      meaning_ja: "（都合のいい）データ・事例だけをつまみ食いする",
-      examples: [
-        "The vendor's case study cherry-picks the three clients who saw huge returns and says nothing about the dozen who churned.",
-        "You can't cherry-pick the one week the diet worked and ignore the two months it didn't."
-      ],
-      synonyms: [
-        { term: "be selective with", nuance_ja: "中立的で穏やかな言い方。cherry-pickは意図的に都合の良いものだけを選び、不利な情報を隠しているという非難のニュアンスがより強い。" },
-        { term: "skew the data", nuance_ja: "データそのものを歪めて見せることに焦点がある。cherry-pickはデータを歪めるのではなく、真実の一部だけを選んで全体像を隠すという手口の違いがある。" }
-      ],
-      explanation_ja: "熟したチェリーだけを選んで摘み取り、傷んだものは木に残しておくという果樹園での行為が、都合の良い事実だけを選び取る比喩に転用された表現。データや事例そのものは嘘ではないのに、選び方によって全体像を歪めているという、統計・レポート作成における典型的な誤魔化しの手口を指すのが核心。投資家向け資料やマーケティング資料の信頼性を検証する際、\"which data points were left out\" を問う視点とセットでよく語られる、批判的思考の基本語彙。"
-    },
-    {
-      phrase: "lowball (an offer)",
-      meaning_en: "to intentionally offer a price, salary, or amount that is significantly lower than what is fair or expected, especially as an opening negotiating tactic",
-      meaning_ja: "（意図的に）不当に低い金額を提示する、足元を見た安値をふっかける",
-      examples: [
-        "They lowballed us on the initial offer, clearly expecting us to negotiate up from there.",
-        "The contractor lowballed the estimate to win the bid and then added 'unexpected' costs once the work had started."
-      ],
-      synonyms: [
-        { term: "undercut", nuance_ja: "競合他社より安く価格設定することで市場での優位を狙う戦略的な語。lowballは特定の相手個人・取引に対して不当に低い金額を提示することに焦点がある。" },
-        { term: "shortchange", nuance_ja: "支払うべき金額よりも少なく渡す、不正な少なさそのものに焦点がある。lowballは初回提示額の低さ、つまり交渉の駆け引きとしての戦術を指す点が異なる。" }
-      ],
-      explanation_ja: "野球やボウリングで意図的に低く投げる・転がすというスポーツ用語が、交渉で意図的に低い数字を「投げてくる」比喩に転じたとされる語。単に「安い」のではなく、相手の足元を見て、あるいは交渉の出発点として意図的・戦略的に低い金額を提示するという駆け引きの意図が核心にある。給与交渉、不動産取引、フリーランスの見積もりなど、初回提示額を額面通り受け取ってはいけない場面を警戒する際によく使われる語で、動詞としても名詞（a lowball offer）としても頻出する。"
-    }
-  ],
-  todayQuiz: [
-    { question: "The board signed off on the acquisition, with one ___: the earn-out calculation still needs to be re-run once Q4 numbers close.", choices: ["caveat", "impasse", "underpinning", "quid pro quo"], answerIndex: 0, explanation: "A caveat is a specific condition or warning attached to an otherwise settled agreement. An impasse is a deadlock, an underpinning is a foundation, and a quid pro quo is an exchange of favors — none is a single outstanding condition on an approved deal." },
-    { question: "The whole retention thesis in this deck is ___ by a single assumption about renewal rates that nobody on the deal team has actually pressure-tested.", choices: ["corroborated", "surfaced", "cherry-picked", "underpinned"], answerIndex: 3, explanation: "Underpin means to form the foundation a conclusion rests on. Corroborated means confirmed by independent evidence (not by an untested assumption), surfaced means brought a hidden issue to light, and cherry-picked means selected only favorable examples." },
-    { question: "Given how sensitive the restructuring talks are, legal has told everyone to stay ___ in any written communication until the announcement is final.", choices: ["candid", "circumspect", "sanguine", "flippant"], answerIndex: 1, explanation: "Circumspect means deliberately careful about what you say given the risks. Candid (openly frank) and flippant (casually disrespectful) are the opposite of what legal wants, and sanguine means cheerfully optimistic, which says nothing about caution." },
-    { question: "Everyone else praised the pitch politely, but her ___ remark — 'cute deck, shame about the unit economics' — was the line people actually quoted afterward.", choices: ["effusive", "sanguine", "acerbic", "flippant"], answerIndex: 2, explanation: "Acerbic describes a sharp, cutting, witty remark, which is why \"cute deck, shame about the unit economics\" got quoted. Effusive means gushing, sanguine means optimistic, and flippant means casually unserious rather than pointed." },
-    { question: "Once he admitted by email that he'd known about the defect before closing, he didn't ___ in the indemnification dispute.", choices: ["have a leg to stand on", "have a change of heart", "have a hidden agenda", "have deep pockets"], answerIndex: 0, explanation: "Not have a leg to stand on means having no valid justification left — exactly what his written admission caused. A change of heart is a reversal of opinion, a hidden agenda is a secret motive, and deep pockets means plenty of money." },
-    { question: "Ever since one associate started turning in flawless first drafts, the rest of the team has felt real pressure to keep up — she's basically ___ for the whole group.", choices: ["moved the goalposts", "set a precedent", "passed the buck", "raised the bar"], answerIndex: 3, explanation: "Raise the bar means increasing the standard everyone else must meet. Move the goalposts changes the rules unfairly after the fact, set a precedent creates a model for future cases, and pass the buck shifts responsibility to someone else." },
-    { question: "After the first office closure was announced, employees at the other two locations have just been ___, assuming theirs is next.", choices: ["burying their heads in the sand", "waiting for the other shoe to drop", "weathering the storm", "getting ahead of themselves"], answerIndex: 1, explanation: "Wait for the other shoe to drop is anticipating a second piece of bad news after the first. Burying your head in the sand is ignoring a problem, weathering the storm is enduring hardship, and getting ahead of yourself is assuming too much too soon." },
-    { question: "Getting reimbursed by that insurer meant three phone calls, two notarized forms, and a fax — literally having to ___ for a claim that should have been automatic.", choices: ["jump through hoops", "cut through the red tape", "go the extra mile", "read the fine print"], answerIndex: 0, explanation: "Jump through hoops is being forced through many tedious steps for something simple. Cutting through red tape is the opposite (removing bureaucracy), going the extra mile is voluntary, and reading the fine print is checking the small details of a contract." },
-    { question: "Even clients used to paying a premium for expertise raised eyebrows at the consultancy's ___ day rate.", choices: ["exuberant", "expedient", "exorbitant", "exemplary"], answerIndex: 2, explanation: "Exorbitant describes a price that is unreasonably high. Exuberant means joyfully energetic, expedient means convenient rather than principled, and exemplary means worthy of being a model — none describe a fee." },
-    { question: "Facing a revenue shortfall, the company announced a surprisingly ___ budget for next year, cutting travel, offsites, and nearly all discretionary spend.", choices: ["profligate", "austere", "ascetic", "exorbitant"], answerIndex: 1, explanation: "Austere describes a strict, stripped-down policy or budget with no luxuries. Ascetic is similar but describes a person's self-denying lifestyle, profligate means recklessly wasteful, and exorbitant means excessively expensive." },
-    { question: "The case study only features the three clients who saw huge ROI and says nothing about the dozen who churned — a clear case of ___ the data.", choices: ["cherry-picking", "whitewashing", "benchmarking", "stress-testing"], answerIndex: 0, explanation: "Cherry-picking means presenting only the favorable examples and leaving out the contradicting ones. Whitewashing covers up wrongdoing with a glossy surface, benchmarking compares against peers, and stress-testing checks how something holds up under pressure." },
-    { question: "Their opening offer on the house was almost insulting, but our agent said it was just a classic ___ meant to test how motivated we were to sell.", choices: ["counteroffer", "sweetened offer", "lowball offer", "lump-sum offer"], answerIndex: 2, explanation: "A lowball offer is an intentionally low opening bid used as a negotiating tactic. A counteroffer is a reply to an earlier offer, a sweetened offer is one improved to make it more attractive, and a lump-sum offer describes a payment structure, not its size." }
-  ]
-},
-{
   date: "2026-09-20",
   dateLabel: "2026年9月20日（日）",
   mode: "review",
@@ -1568,9 +1247,28 @@ const ENGLISH_REPORTS = [
     { question: "The negotiations over severance terms grew so ___ that the two sides stopped speaking directly and communicated only through lawyers.", choices: ["vitriolic", "scathing", "acrimonious", "venomous"], answerIndex: 2, explanation: "Acrimonious describes bitterness in a relationship or process as a whole, fitting negotiations that broke down into total silence. Vitriolic and venomous typically describe specific remarks or attacks rather than an entire drawn-out process. Scathing describes a sharply critical review or comment, not an ongoing relationship dynamic." },
     { question: "Analysts noted that even as three consecutive quarters of data undercut his thesis, the portfolio manager remained ___, refusing to trim the position by even a single share.", choices: ["intransigent", "unyielding", "diligent", "obdurate"], answerIndex: 3, explanation: "Obdurate captures a personal, almost willful refusal to be swayed by evidence, with a critical undertone. Intransigent is most natural in negotiation or political contexts where two sides refuse to compromise, not simply an individual ignoring data. Unyielding is more neutral-to-positive and can describe admirable resolve, which doesn't match the critical tone here. Diligent means careful and hardworking, an unrelated quality entirely." }
   ]
+},
+{
+  date: "2026-09-26",
+  dateLabel: "2026年9月26日（土）",
+  mode: "review",
+  readTimeMin: 28,
+  scopeLabel: "9/21〜9/25に初出の表現 60件",
+  passages: [
+    { title: "Re: Warehouse Ops Contract — Where We Landed", genre: "Email", text: "Hi Mara,\n\n{{For context,|for context,}} I want to catch you up before Friday's board update: the renewal talks with Meridian Logistics got uglier than expected.\n\nTheir rep opened with a term sheet that clearly {{stacked the deck|stack the deck (in someone's favor)}} in their favor — a three-year lock-in with no exit clause. When I pushed back, he got surprisingly {{vociferous|vociferous}} on the call, all but shouting that we'd regret walking away. I later learned from a former client of theirs that Meridian has a history of being {{duplicitous|duplicitous}} about renewal pricing, quoting one number out loud and slipping a higher one into the fine print.\n\nSo I {{called his bluff|call someone's bluff}} and said we were prepared to switch providers within thirty days. That's when the tone changed. We spent two more calls trying to {{cajole|cajole}} them into a fairer structure, and eventually {{hammered out|hammer out (a deal / the details)}} a one-year deal with an opt-out clause.\n\nWe're still {{burning through cash|burn through cash}} faster than I'd like this quarter, so who ultimately {{foots the bill|foot the bill}} for the transition fee matters. I told the team we'd {{toe the line|toe the line}} on the budget until this settles.\n\nTalk Thursday,\nPriya", translation_ja: "マラへ\n\n参考までに、金曜日の役員会報告の前に共有しておきたいことがあります。Meridian Logisticsとの契約更新交渉が思ったより荒れました。\n\n先方の担当者は、退出条項なしの3年間縛りという、明らかに自分たちに有利な条件を最初に提示してきました。こちらが押し返すと、電話越しにかなり声を荒げて、解約したら後悔すると言わんばかりの剣幕でした。後で以前の顧客から聞いた話では、Meridianは更新価格について二枚舌を使う癖があるらしく、口頭ではある金額を伝えておきながら、契約書の細部にはもっと高い金額を忍ばせるそうです。\n\nそこで私はハッタリを見抜いて挑むことにし、30日以内に他社へ切り替える準備があると伝えました。そこから相手の態度が変わりました。さらに2回の電話でより公正な条件になるようになだめすかしながら交渉を重ね、最終的にはオプトアウト条項付きの1年契約をまとめ上げました。\n\n今四半期はまだ想定より資金を早く使い果たしている状況なので、移行費用を最終的に誰が負担するのかは重要です。チームには、この件が落ち着くまで予算については規律を守るよう伝えました。\n\n木曜日に話しましょう\nプリヤ" },
+    { title: "Notes — Product Strategy Sync (Thursday)", genre: "Meeting Recap", text: "Attendees: Dana (VP Product), Tomas (Eng Lead), Wei (Finance)\n\nDana opened by warning the team not to get {{complacent|complacent}} just because last quarter's numbers beat forecast. She argued for a more {{audacious|audacious}} roadmap — cutting two legacy features entirely to fund the new analytics module.\n\nTomas stayed characteristically {{inscrutable|inscrutable}} through most of the debate, giving almost no reaction until Wei directly asked whether engineering could hit the date. Wei's own presentation was genuinely {{astute|astute}}, flagging that the current burn rate leaves the runway looking {{precarious|precarious}} if the module slips even one quarter.\n\nDana pressed the point that the team has shown {{indomitable|indomitable}} resolve through two failed launches already, so a third attempt is worth the risk. One of the junior PMs tried to {{raise a red flag|raise a red flag}} about customer support capacity but got cut off before finishing the thought — a couple of people later said Dana's response came across as a bit {{condescending|condescending}}.\n\nWei's numbers ultimately {{called into question|call into question}} the original Q4 timeline. Tomas agreed to quietly {{run interference|run interference (for someone)}} with the platform team so the analytics build doesn't get deprioritized again.\n\nAction items below.", translation_ja: "出席者：ダナ（プロダクト担当VP）、トマス（エンジニアリングリード）、ウェイ（財務）\n\nダナは、前四半期の数字が予測を上回ったからといって現状に満足して油断してはいけないと釘を刺すところから会議を始めた。彼女は、既存の2つの旧機能を完全に廃止して新しい分析モジュールの原資にするという、より大胆なロードマップを主張した。\n\nトマスは議論の大半で相変わらず何を考えているか読み取れない様子で、ウェイがエンジニアリング側に本当に期日に間に合うのか直接尋ねるまで、ほとんど反応を見せなかった。ウェイの発表は本当に鋭い指摘に富んでおり、現在の資金消費ペースのままだと、モジュールが1四半期でもずれ込めば資金繰りが危うい状態になると警鐘を鳴らした。\n\nダナは、チームはこれまで2度の失敗したローンチを経てもなお不屈の意志を示してきたのだから、3度目の挑戦もリスクを取る価値があると強く主張した。若手PMの一人がカスタマーサポート体制について警鐘を鳴らそうとしたが、話し終える前に遮られてしまい、後で何人かは、ダナの対応が少し見下すような態度に見えたと話していた。\n\nウェイの数字は結局のところ、当初のQ4スケジュールに疑問を投げかける結果となった。トマスは、分析基盤の開発が再び後回しにされないよう、プラットフォームチームに対してひそかに矢面に立つことを了承した。\n\n以下、アクションアイテム。" },
+    { title: "Regional Bank Under Fire Over Legacy Unit's Finances", genre: "News Brief", text: "Shareholders of Hartwell Regional Bank are pressing the board to explain how the lender's small commercial-leasing arm, long treated as an {{ancillary|ancillary}} sideline to its core retail business, quietly built up losses large enough to threaten the group's capital ratio.\n\nAn internal review reportedly found evidence of {{profligate|profligate}} spending inside the unit, including multi-year vendor contracts signed without competitive bids. Whether the previous management team should have caught the pattern earlier is now largely {{moot|moot}} — three of the five executives named in the review had their equity {{vest|vest}} and left the bank before the findings became public.\n\nAnalysts say the episode has turned {{acrimonious|acrimonious}}, with the audit committee and the former CFO publicly disputing each other's account of when the losses were first {{marked to market|mark to market}}.\n\nRegulators are now requiring Hartwell to {{ring-fence|ring-fence (funds / a division)}} the leasing unit's remaining assets from the retail bank's balance sheet, and to {{peg|peg (a price / a rate) to a benchmark}} any future related-party pricing to an independent industry benchmark.\n\nUntil the bank can produce records regulators consider {{unimpeachable|unimpeachable}}, the capital rebuild will remain under close supervision — a process executives admit has {{raised the stakes|raise the stakes}} for the bank's upcoming credit rating review.", translation_ja: "Hartwell地方銀行の株主たちは、長らく本業の小売銀行業務に対する付随的な部門として扱われてきた小規模な商業リース子会社が、グループ全体の自己資本比率を脅かすほどの損失をひそかに積み上げていた経緯について、取締役会に説明を求めている。\n\n内部調査により、この部門内で入札を経ずに複数年契約を結ぶなど、放漫とも言える支出があったことが判明したとされる。以前の経営陣がもっと早くこのパターンに気づくべきだったかどうかは、今となってはほとんど議論する意味のない話になっている。調査で名指しされた5人の幹部のうち3人は、この結果が公表される前にストックオプションの権利が確定し、すでに銀行を去っていたからだ。\n\nアナリストによれば、この一件は険悪な様相を呈しており、監査委員会と前CFOは、損失がいつ時価評価されたのかについて、互いに食い違う説明を公然と主張し合っているという。\n\n規制当局は現在、Hartwellに対し、リース部門に残る資産を小売銀行のバランスシートから隔離すること、そして今後の関連当事者間の価格設定については独立した業界指標に連動させることを求めている。\n\n規制当局が疑いようがないとみなせる記録を銀行が提示できるまで、資本の立て直しは厳しい監視下に置かれることになる。幹部たちも、この一件が今後の信用格付け審査にとって一段と重大な局面を招いたことを認めている。" },
+    { title: "Two Analysts After the All-Hands", genre: "Dialogue", text: "JORDAN: Okay, be honest — did Marcus actually believe that pitch, or does he just {{have an axe to grind|have an axe to grind}} with the ops team?\nSAM: Bit of both, honestly. He spent the whole Q&A trying to {{browbeat|browbeat}} the intern into admitting the model was wrong, and then turned around and started to {{extol|extol}} his own slide deck like it solved everything.\nJORDAN: He wants budget approval and full credit for the idea — classic case of wanting to {{have his cake and eat it too|have your cake and eat it too}}.\nSAM: When I asked him to walk me through the assumptions, he actually said, \"{{If it's all the same to you,|if it's all the same to you, ...}} let's not get into the weeds right now.\"\nJORDAN: Sounds like he {{couldn't see the forest for the trees|can't see the forest for the trees}} on his own numbers. Did anyone push back?\nSAM: I just said, \"{{I'll take it under advisement.|I'll take it under advisement.}}\" Didn't want to fight it in front of the whole floor.\nJORDAN: Honestly the new branding on that dashboard is just {{lipstick on a pig|put lipstick on a pig}} — the underlying data's still a mess.\nSAM: Ha, exactly. I actually said, \"{{Can we take this to the parking lot?|Can we take this to the parking lot?}}\" and he agreed to a follow-up.\nJORDAN: Good. Next time someone starts spiraling on font choices, somebody just needs to say, \"{{Let's zoom out for a second.|Let's zoom out for a second.}}\"", translation_ja: "ジョーダン：正直に言って、マルカスは本当にあのピッチを信じてたの？それとも単にオペレーションチームに対して個人的な恨みでもあるの？\nサム：正直、半々かな。Q&Aの間ずっと、インターンに『モデルが間違っていた』と認めさせようと威圧的に迫っていたと思ったら、今度は自分のスライド資料をまるで全部解決したかのように褒めちぎり始めたし。\nジョーダン：予算承認も欲しいし、アイデアの手柄も全部欲しいって、まさに両方いいとこ取りをしようとしてるパターンだね。\nサム：前提を説明してほしいと頼んだら、実際に『もしよろしければ、今は細かい話には立ち入らないでおきましょう』って言ってきたよ。\nジョーダン：自分の数字なのに木を見て森を見ずになってる感じだね。誰か反論した？\nサム：私はただ『検討させていただきます』とだけ言っておいた。フロア全体の前でわざわざ揉めたくなかったから。\nジョーダン：正直、あのダッシュボードの新しいブランディングなんて、本質的な問題を解決せずうわべだけ取り繕っているだけだよね。データ自体は相変わらずぐちゃぐちゃだし。\nサム：ほんとそれ。だから実際に『この件、いったん脇に置いて別途話しましょうか』って言ったら、フォローアップに応じてくれたよ。\nジョーダン：よかった。今度また誰かがフォント選びで延々ともめ始めたら、誰かが『いったん一歩引いて全体を見てみましょう』って言えばいいんだよ。" },
+    { title: "Memo: Updates to the Mid-Year Review Process", genre: "Internal Memo", text: "To: All People Managers\nFrom: HR Business Partners\n\nAs you prepare mid-year reviews, a few reminders.\n\nDon't rely solely on what you {{glean|glean}} from a single retro — talk to at least two peers per report before forming a rating, and {{keep tabs on|keep tabs on}} whether feedback patterns repeat across quarters, not just the latest sprint.\n\nTwo recurring issues are worth naming directly. Some managers reward whoever is best at {{currying favor|curry favor (with someone)}} with leadership rather than whoever is most {{assiduous|assiduous}} about the actual work. Please correct for that bias.\n\nSeparately, several reports flagged as underperforming turned out to simply be {{diffident|diffident}} in group settings, not lacking in ability; a well-written self-review can leave an {{indelible|indelible}} impression on a promotion committee months later, so encourage people to write in their own voice rather than staying quiet in the room. If someone's presence in meetings feels {{fickle|fickle}} — sharp one week, silent the next — dig into why before scoring them down.\n\nIf a manager's written feedback reads as {{peremptory|peremptory}}, HR will ask for a revision before it's shared. Every report deserves the chance to {{flag a risk|flag a risk}} in their own self-review and to {{peel back the layers|peel back the layers}} on any rating they don't understand.\n\nThanks for your care with this process.", translation_ja: "宛先：全マネージャー\n差出人：HRビジネスパートナー\n\n中間レビューの準備にあたり、いくつか確認事項があります。\n\n一度の振り返りミーティングだけから拾い集めた情報だけに頼らず、評価をつける前に各メンバーについて最低2人の同僚に話を聞いてください。また、最新のスプリントだけでなく、四半期をまたいでフィードバックのパターンが繰り返されていないか、継続的に把握しておいてください。\n\n繰り返し見られる問題を2つ、あえて名指しします。一部のマネージャーは、実際の業務に対して最も勤勉に取り組んでいる人ではなく、上層部にうまく取り入るのが上手い人を評価してしまっています。このバイアスは修正してください。\n\nまた、「業績不振」とフラグが付いた複数のメンバーが、実際には能力不足ではなく、単に集団の場では遠慮がちだっただけだったケースがありました。よく書けたセルフレビューは、数ヶ月後に昇進委員会に消えない印象を残すこともあるので、会議室で黙っているのではなく、自分の言葉で書くことを勧めてください。ある人の会議での存在感が、ある週は鋭くても次の週は静かというように移り気に見える場合は、評価を下げる前にその理由を掘り下げてください。\n\nマネージャーの文章によるフィードバックが有無を言わさぬ高圧的な調子に読める場合、HRは共有前に修正を依頼します。すべてのメンバーには、自分自身のセルフレビューでリスクに警鐘を鳴らす機会と、理解できない評価について一枚ずつめくって深掘りする機会が与えられるべきです。\n\nこのプロセスへの丁寧な対応に感謝します。" },
+    { title: "What My Grandfather Taught Me About Negotiating with Myself", genre: "Personal Essay", text: "My grandfather negotiated for a living — used cars, mostly, outside Cleveland — and he was famous for how he could {{play hardball|play hardball}} with a customer for twenty minutes and still send them home with a handshake.\n\nI only understood as a kid that he was {{fastidious|fastidious}} about one rule: never sign anything the same day. He'd say, sleep on the number, and if it still feels fair tomorrow, {{lock in|lock in (a rate / gains)}} the deal then.\n\nWhat I didn't appreciate until later was how {{unflinching|unflinching}} he could be about his own mistakes. He once told the whole table he'd sold a car for less than it was worth because he liked the buyer's kid — no spin, no excuses. He was almost {{obdurate|obdurate}} about refusing to blame the market instead.\n\nHe was {{scrupulous|scrupulous}} about paperwork in a business that didn't require it, and I once watched him {{call in a favor|call in a favor}} from an old mechanic friend just to double-check an engine before a sale closed.\n\nGrief can be {{pernicious|pernicious}}, especially the kind that surfaces months later in an argument you can't quite {{put a number on|put a number on it}} — but whenever I start sounding too {{vitriolic|vitriolic}} with someone I love, I hear his voice telling me to sleep on it first.", translation_ja: "祖父は仕事として交渉をしていた人だった――主に中古車で、クリーブランド郊外で商売をしていて、20分も客と強気に渡り合ったかと思うと、最後は握手で客を帰らせることで家族の間でも有名だった。\n\n子供の頃は、祖父がひとつだけこだわり抜いていたことしか分からなかった――その場では絶対に何にもサインしないということだ。数字は一晩寝かせなさい、それでも明日、公正だと思えるなら、その時に条件を確定させればいい、とよく言っていた。\n\nもっと後になってようやく分かったのは、祖父が自分自身の失敗について、いかに動じずに向き合っていたかということだ。あるとき祖父は、買い手の子供が気に入ったからという理由だけで、車を本来の価値より安く売ってしまったことを、言い訳も取り繕いもせず、みんなの前で認めたことがあった。市場のせいにはせず、頑として自分の判断ミスを認め続けていた。\n\n祖父は、書類なんて必要のない商売の中で、律儀なまでに書類仕事にこだわっていた。あるときは、取引が成立する前にエンジンをもう一度確認してもらうためだけに、昔からの整備士の友人に借りを返してもらうよう頼んでいるのを見たこともある。\n\n悲しみは、じわじわと蝕んでくるものになりうる――特に何ヶ月も経ってから、うまく言葉にできない口論という形で表に出てくるような悲しみは。だが、私が大切な人と辛辣すぎる言い合いをしそうになるたび、まず一晩寝かせなさいという祖父の声が聞こえてくる。" }
+  ],
+  coreItems: [],
+  adjectives: [],
+  collocations: [],
+  todayQuiz: []
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-25 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-26 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
