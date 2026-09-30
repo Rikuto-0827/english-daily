@@ -243,194 +243,6 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-22",
-  dateLabel: "2026年9月22日（火）",
-  readTimeMin: 21,
-  coreItems: [
-    {
-      type: "word", term: "browbeat", ipa: "/ˈbraʊbiːt/", register: "批判的なニュアンス、口語〜報道でも使用(威圧的な言動を非難する文脈)",
-      meaning_en: "to intimidate or pressure someone into doing something through aggressive, forceful, or bullying behavior",
-      meaning_ja: "(威圧的に)言い含める、脅すようにして従わせる",
-      examples: [
-        "The senior partner had a habit of browbeating junior associates into working weekends by implying their bonus depended on it.",
-        "My dad tried to browbeat me into taking over the family hardware store, but I'd already accepted a job in another city."
-      ],
-      synonyms: [
-        { term: "bully", nuance_ja: "より広く一般的な「いじめる」行為全般を指し、身体的な脅しも含みうる。browbeatは主に言葉・態度による威圧で相手の意思決定を変えさせることに焦点がある、よりフォーマルな語。" },
-        { term: "coerce", nuance_ja: "「強制する」という結果そのものに焦点があり、しばしば法的な文脈でも使われる中立的な語。browbeatは威圧の「やり方」—執拗に責め立てる態度—が前面に出る、より描写的な語。" },
-        { term: "strong-arm", nuance_ja: "口語的で、しばしば力や地位を利用した粗野な圧力を指す。browbeatは主に言葉による執拗な圧力で、strong-armよりやや上品な響き。" }
-      ],
-      explanation_ja: "brow(眉)+ beat(打つ)が語源とされ、相手を睨みつけながら威圧するイメージから生まれた語。上司が部下に、あるいは親が子供に「反論の余地を与えないほど執拗に迫って従わせる」場面で使われ、単なる説得ではなく、相手の意思を押しつぶすような強引さへの非難が込められている。ビジネス記事では 'browbeaten into signing the deal' のように受動態で使われることも多く、力関係の不均衡を強調したいときに便利な語。"
-    },
-    {
-      type: "word", term: "extol", ipa: "/ɪkˈstoʊl/", register: "フォーマル、称賛を強調する場面(プレゼン・記事で頻出)",
-      meaning_en: "to praise someone or something enthusiastically and publicly",
-      meaning_ja: "(人前で熱心に)称賛する、褒めたたえる",
-      examples: [
-        "The CEO spent the entire earnings call extolling the virtues of the new subscription model, even as revenue growth slowed.",
-        "My grandmother still extols the virtues of hand-written thank-you notes over a quick text."
-      ],
-      synonyms: [
-        { term: "laud", nuance_ja: "extolとほぼ同義でフォーマルな書き言葉だが、laudはやや簡潔で報道の見出しなどで好まれる。extolはより熱心さ・情熱を込めて長々と称える響きがある。" },
-        { term: "sing the praises of", nuance_ja: "より口語的でカジュアルな言い回し。extolはフォーマルなプレゼンや記事で使われる書き言葉寄りの語。" },
-        { term: "commend", nuance_ja: "より控えめで公式な「評価・推薦する」響きが強く、感情的な熱意は薄い。extolは強い熱意を込めて称賛するニュアンスが核心。" }
-      ],
-      explanation_ja: "ラテン語 extollere(高く掲げる)に由来し、『相手を持ち上げる』という原義がそのまま残っている語。決算説明会や製品発表で経営陣が自社の戦略・製品を過剰なまでに称賛する際の定番語で、しばしば 'extol the virtues/benefits of ~' という形で使われる。文脈によっては、実態が伴っていないのに美辞麗句だけを並べているという皮肉のニュアンスを込めて使われることもあり、単なる褒め言葉より一段階誇張された響きを持つ点を覚えておくとよい。"
-    },
-    {
-      type: "idiom", term: "have your cake and eat it too", ipa: "", register: "口語〜ビジネスでも頻出(欲張りな要求を指摘する場面)",
-      meaning_en: "to want or try to have two good things at the same time, especially when they are mutually exclusive",
-      meaning_ja: "両方いいとこ取りをしようとする、虫のいい話をする",
-      examples: [
-        "Management wants to cut costs and boost customer satisfaction at the same time — at some point they need to accept they can't have their cake and eat it too.",
-        "You can't have your cake and eat it too: if you want to move to the mountains, you have to accept a longer commute."
-      ],
-      synonyms: [
-        { term: "want it both ways", nuance_ja: "have your cake and eat it tooとほぼ同義だが、より直接的でシンプルな言い方。ケーキの比喩がない分、ややドライで説明的な響き。" },
-        { term: "have it both ways", nuance_ja: "want it both waysとほぼ同義。have your cake and eat it tooの方が会話でより印象的で記憶に残りやすく、皮肉っぽいニュアンスを添えやすい。" }
-      ],
-      explanation_ja: "『ケーキを持っている(所有している)』と『ケーキを食べる(消費してなくす)』は本来両立しない、という単純な事実から来た16世紀からある古い慣用句。ビジネスの意思決定で、二律背反(トレードオフ)にある2つの目標を同時に達成しようとする経営陣や顧客を軽くたしなめる際の定番表現で、'you can't have your cake and eat it too' という形でよく使われる。英語学習者は誤って『ケーキを食べてから持つ』の意味だと誤解しがちだが、正しくは『両方を同時に得ようとする』という欲張りな態度を指す点に注意。"
-    },
-    {
-      type: "phrase", term: "if it's all the same to you, ...", ipa: "", register: "丁寧に代案・希望を切り出す前置き(ビジネス口語、丁寧め)",
-      meaning_en: "used to politely introduce a preference or a request for a different arrangement, while showing you don't mind if the other person disagrees",
-      meaning_ja: "もしよろしければ、差し支えなければ(という前置きで希望・代案を切り出す)",
-      examples: [
-        "If it's all the same to you, I'd rather we push the call to Thursday — I have a client on-site all day Wednesday.",
-        "If it's all the same to you, could we split the bill instead of you covering the whole thing?"
-      ],
-      synonyms: [
-        { term: "if you don't mind,", nuance_ja: "ほぼ同義でより短く、日常会話でより頻繁に使われる。if it's all the same to youは、相手の選択を尊重しつつ自分の希望を伝えるという、ややフォーマルで配慮の込もった響きがある。" },
-        { term: "would it be possible to ...", nuance_ja: "依頼そのものに焦点を当てた、より直接的でフォーマルな表現。if it's all the same to youは『自分はどちらでもいいが、あえて言うなら』という控えめな前置きのニュアンスが強い。" }
-      ],
-      explanation_ja: "文字通りには『あなたにとってすべてが同じ(どちらでも構わない)なら』という意味で、相手に選択の自由があることを示しつつ、自分の希望や代案を切り出す非常に丁寧な前置き表現。上司や取引先など、目上の相手に軽い変更をお願いする場面で重宝し、'if you don't mind' よりもややフォーマルで礼儀正しい響きを持つ。ネイティブは日常的に多用するが教科書にはあまり出てこないため、丁寧に自分の希望を通したいビジネスメールや会話で使えると一気にこなれた印象になる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "acrimonious", ipa: "/ˌækrɪˈmoʊniəs/", register: "対立・交渉決裂を描写(フォーマル、報道・法務で頻出)",
-      meaning_en: "(of a dispute, discussion, or relationship) marked by bitterness, anger, and ill will",
-      meaning_ja: "(対立・交渉などが)険悪な、辛辣で激しい",
-      examples: [
-        "The merger talks turned acrimonious after the target company's board accused the acquirer of lowballing its valuation.",
-        "Their divorce got so acrimonious that they couldn't even agree on who would keep the dog."
-      ],
-      synonyms: [
-        { term: "bitter", nuance_ja: "より一般的で日常的な語。acrimoniousはよりフォーマルで、法務・報道・交渉の文脈で「激しい対立・非難の応酬」を客観的に描写する際に好まれる。" },
-        { term: "contentious", nuance_ja: "「意見が対立している・議論を呼ぶ」という論争性そのものに焦点があり、必ずしも怒りや敵意を伴わない。acrimoniousは実際に怒りや敵意が表面化していることを強く含意する。" }
-      ],
-      explanation_ja: "ラテン語 acer(辛い、刺すような)に由来し、味覚の『辛さ・刺激』が人間関係の『棘のある激しさ』に転じた語。M&A交渉の決裂、労使交渉、離婚訴訟など、当事者間の敵意が公然と表面化した対立を描写する報道記事で定番の語で、'acrimonious negotiations/dispute/divorce' という形でよく使われる。単に『意見が合わない』を超えて、非難の応酬や感情的なしこりが残るレベルの対立を指す点がcontentiousとの大きな違い。"
-    },
-    {
-      term: "astute", ipa: "/əˈstuːt/", register: "称賛・的確な判断力を評する(フォーマル、ビジネスで頻出)",
-      meaning_en: "having or showing an accurate and quick judgment, especially in practical or business matters",
-      meaning_ja: "鋭い判断力のある、抜け目のない(称賛の含みで)",
-      examples: [
-        "It was an astute move to hedge the currency exposure before the central bank's surprise announcement.",
-        "Her astute reading of the room told her the client was about to walk, so she offered a discount before they could ask."
-      ],
-      synonyms: [
-        { term: "shrewd", nuance_ja: "既出語。shrewdは実利的な抜け目なさ・計算高さにやや寄った語で、時にわずかにずる賢い含みを持つこともある。astuteは判断の的確さ・洞察力そのものへの純粋な称賛のニュアンスが強い。" },
-        { term: "perceptive", nuance_ja: "人の感情や状況を『察する力』に焦点がある語で、必ずしもビジネス上の判断や戦略には限定されない。astuteはより実務的な判断力・戦略眼を評価する場面で使われることが多い。" }
-      ],
-      explanation_ja: "ラテン語 astutus(狡猾な、鋭敏な)に由来するが、現代英語ではネガティブな含みはほぼ消え、『状況を素早く正確に見抜く判断力』を称賛する語として定着している。投資判断、交渉、人事など、実務的な場面での的確な見極めを評価する際に頻出し、'an astute observer/investor/move' という形でよく使われる。既出のshrewdと混同しやすいが、shrewdがやや計算高さ寄りなのに対し、astuteはより純粋に『洞察力の鋭さ』を称える、好意的なニュアンスが強い語。"
-    },
-    {
-      term: "precarious", ipa: "/prɪˈkeriəs/", register: "不安定な状況への警戒(フォーマル、金融・ニュースで頻出)",
-      meaning_en: "not securely held or in position; dangerously likely to fall, collapse, or fail at any moment",
-      meaning_ja: "不安定な、いつ崩れてもおかしくない(危うい状況)",
-      examples: [
-        "The company's precarious cash position meant it was one missed payment away from breaching its loan covenants.",
-        "Balancing three part-time jobs left her finances feeling precarious, even though she never technically missed a bill."
-      ],
-      synonyms: [
-        { term: "shaky", nuance_ja: "より口語的でカジュアルな語。precariousはよりフォーマルで、財務報告書やニュース記事で『崩壊寸前の危うさ』を客観的に描写する際に好まれる。" },
-        { term: "tenuous", nuance_ja: "既出語。tenuousは主に「根拠・つながり」が薄弱で説得力に欠けることを指すのに対し、precariousは「立場・状況」そのものが物理的・比喩的に不安定で今にも崩れそうなことを指す。" }
-      ],
-      explanation_ja: "ラテン語 precarius(祈りによって得られた、他人の意向次第の)に由来し、『自分でコントロールできない、いつ足元をすくわれてもおかしくない』という危うさが核心にある語。企業の資金繰り、雇用の安定性、政治情勢など、『表面上は保たれているが、わずかなきっかけで崩れかねない』状況を描写する際の定番語で、'a precarious position/balance/situation' という形で頻出する。物理的に『崖っぷちに立っている』イメージを持つと、比喩的な使い方も覚えやすい。"
-    },
-    {
-      term: "condescending", ipa: "/ˌkɑːndɪˈsendɪŋ/", register: "批判的、見下した態度を非難(日常〜ビジネスで頻出)",
-      meaning_en: "showing an attitude of patronizing superiority; treating someone as if they were less intelligent or important",
-      meaning_ja: "見下したような、恩着せがましい(態度)",
-      examples: [
-        "The new hire complained that her manager's feedback always came across as condescending, even when the advice itself was reasonable.",
-        "He meant it as a compliment, but telling her the presentation was 'pretty good for a first attempt' just sounded condescending."
-      ],
-      synonyms: [
-        { term: "patronizing", nuance_ja: "ほぼ同義で相互に置き換え可能。patronizingの方がやや一般的で、condescendingはよりフォーマルな響きを持つ場合がある。" },
-        { term: "supercilious", nuance_ja: "「見下し」に加えて、あからさまな傲慢さ・軽蔑の表情まで含意する、より強く辛辣な語。condescendingは態度や話し方に滲む見下しを指すことが多く、superciliousほど露骨ではない場合もある。" }
-      ],
-      explanation_ja: "ラテン語 condescendere(へりくだる、譲歩する)が語源で、本来は『目上の者が自ら進んで身を低くする』という謙虚な意味だったが、現代では逆に『相手を見下しながら、いかにも寛大に接しているふりをする』という皮肉な意味に転じた語。職場で、悪気はなくても口調や言葉選びが『子供扱いしている』ように聞こえてしまうフィードバックや態度を非難する際に非常によく使われ、'that came across as condescending' は同僚間の摩擦を説明する定番フレーズ。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "call someone's bluff",
-      meaning_en: "to challenge someone to actually follow through on a claim or threat, believing they are not being honest or serious",
-      meaning_ja: "(相手の)はったりを見抜いて挑む、口先だけかどうか試す",
-      examples: [
-        "When the supplier threatened to walk away unless we paid upfront, we called their bluff and they backed down within the hour.",
-        "He said he'd quit if we made him work the holiday shift again, so I called his bluff and scheduled him anyway."
-      ],
-      synonyms: [
-        { term: "put someone to the test", nuance_ja: "より中立的で、相手の主張が「はったり」だと疑っているとは限らない。call someone's bluffは、相手の脅し・主張が虚勢だと見抜いた上で、それを試す・暴くという挑戦的なニュアンスが強い。" }
-      ],
-      explanation_ja: "ポーカーで、相手が強い手を持っているふりをしている(bluffする)ときに、あえて賭け金を上げて『本当にその手があるなら見せてみろ』と迫る行為が語源。交渉やビジネスの駆け引きで、相手の脅し文句や強気の要求が本当に実行される覚悟のあるものなのかを見極めるために、あえて一歩踏み込む場面で使われる定番表現。'call their bluff' という形で、脅しに屈せず強気に出た結果を語る記事や逸話に頻出する。"
-    },
-    {
-      phrase: "foot the bill",
-      meaning_en: "to pay for something, especially a large or unwelcome expense",
-      meaning_ja: "(費用を)支払う、負担する(多くは高額・不本意な出費)",
-      examples: [
-        "The client insisted on business-class flights for the whole team, and the vendor ended up footing the bill.",
-        "My parents footed the bill for the wedding, even though we offered to split it three ways."
-      ],
-      synonyms: [
-        { term: "pick up the tab", nuance_ja: "より口語的でカジュアルな響き。食事や飲み会など、日常的で比較的少額の出費に使われることが多い。foot the billはより大きな金額・公式な文脈でも使える、やや広めの語。" },
-        { term: "bear the cost", nuance_ja: "よりフォーマルで会計・財務報告的な語。foot the billは口語的で、誰が実際に財布を開くことになったのかという結果を語る際に使われることが多い。" }
-      ],
-      explanation_ja: "請求書(bill)の一番下(foot)に記された合計金額を『支払う』という発想から来た表現とされ、しばしば『本来払うべきでない、あるいは想定より高額な出費を、結局誰かが負担することになった』という文脈で使われる。契約交渉や家族間の費用負担など、『誰が最終的にお金を出すのか』が焦点になる場面の定番表現で、'end up footing the bill' という形で、不本意な出費を強いられた側を描写する際によく登場する。"
-    },
-    {
-      phrase: "run interference (for someone)",
-      meaning_en: "to act to protect someone from unwanted contact, criticism, or obstacles, often by intercepting or deflecting problems before they reach that person",
-      meaning_ja: "(人の盾となって)障害・批判を防ぐ、矢面に立つ",
-      examples: [
-        "The chief of staff spent most of the meeting running interference for the CEO, fielding the tough questions so she wouldn't have to.",
-        "My older sister used to run interference for me with our parents whenever I broke curfew."
-      ],
-      synonyms: [
-        { term: "shield (someone) from", nuance_ja: "より一般的で受動的な「守る」行為を指す。run interferenceは、アメフトのブロッカーのように、相手の前に積極的に割って入って障害を排除するという、より能動的・戦術的なニュアンスがある。" },
-        { term: "take the heat for", nuance_ja: "「批判・非難を代わりに引き受ける」という結果に焦点がある。run interferenceは批判が『そもそも本人に届く前に』防ぐという、より予防的なニュアンスを含む。" }
-      ],
-      explanation_ja: "アメリカンフットボールで、ランニングバックの前を走る味方選手が相手ディフェンダーをブロックして道を切り開く『インターフェアランス』が語源。ビジネスの場では、秘書やアシスタント、上司の側近などが、本人に余計な問い合わせ・批判・雑務が届かないよう先回りして処理する様子を指す定番表現で、'run interference for the boss' という形でよく使われる。家庭内でも、兄弟姉妹が親からの小言を代わりに引き受けてくれるような場面にも使える、汎用性の高い比喩。"
-    },
-    {
-      phrase: "toe the line",
-      meaning_en: "to conform to the standards, rules, or expectations set by an authority, especially when one might not personally agree",
-      meaning_ja: "(規則・方針に)従う、足並みをそろえる",
-      examples: [
-        "New associates are expected to toe the line on billable hours during their first two years, no exceptions.",
-        "She always toed the line at family gatherings, even when she privately disagreed with her father's politics."
-      ],
-      synonyms: [
-        { term: "fall in line", nuance_ja: "ほぼ同義で、しばしば「渋々従う」という抵抗感のニュアンスを伴う。toe the lineは、規則・基準に正確に従うという「境界線を踏み外さない」イメージがより強い。" },
-        { term: "play by the rules", nuance_ja: "より中立的で、公正なルールの中で行動するという肯定的な響きを持つことが多い。toe the lineは、上からの規律・統制に従わされているという、やや窮屈なニュアンスを伴うことがある。" }
-      ],
-      explanation_ja: "スポーツの徒競走や軍隊の整列で、スタートラインに『つま先(toe)』をきっちり揃えて並ぶ様子が語源とされる。組織の規則やコンプライアンス基準、あるいは目上の人が定めた暗黙のルールに、個人的な意見の有無にかかわらず従う場面で使われる定番表現で、'toe the company line' のように会社の公式方針に従うことを指す場合にも頻出する。反対に、規則を破ることは 'step out of line' や 'cross the line' と表現される点もあわせて覚えておくと便利。"
-    }
-  ],
-  todayQuiz: [
-    { question: "It was a remarkably ___ move to hedge the currency exposure right before the central bank's surprise rate announcement — the kind of foresight that gets written up in case studies.", choices: ["audacious", "acute", "astute", "cavalier"], answerIndex: 2, explanation: "Astute describes sharp, perceptive judgment — the foresight to hedge before the announcement. Audacious means daringly bold, acute usually describes severity or sharp senses (an acute shortage), and cavalier means casually dismissive of risk." },
-    { question: "After the target company's board accused the acquirer of lowballing the offer, the merger talks turned ___, with both sides trading public accusations.", choices: ["acrimonious", "acquisitive", "acquiescent", "acerbic"], answerIndex: 0, explanation: "Acrimonious describes talks or relationships marked by open bitterness and hostility. Acquisitive means eager to acquire things, acquiescent means passively compliant, and acerbic describes sharp, cutting remarks rather than the overall tone of a dispute." },
-    { question: "One missed payment away from breaching its loan covenants, the company's cash position was undeniably ___.", choices: ["volatile", "insolvent", "prudent", "precarious"], answerIndex: 3, explanation: "Precarious means dangerously unstable — one missed payment from disaster. Volatile means prone to rapid swings, insolvent means already unable to pay debts (the company is still one step short of that), and prudent means carefully sensible." },
-    { question: "The senior partner didn't ask nicely — he ___ the junior associates into working through the weekend by hinting their bonuses were on the line.", choices: ["cajoled", "browbeat", "sweet-talked", "mentored"], answerIndex: 1, explanation: "To browbeat is to bully someone into compliance with pressure or implied threats. Cajoled and sweet-talked describe flattering someone into agreeing (the opposite tactic), and mentored means guiding a junior person's development." },
-    { question: "Even as growth slowed, the CEO spent the entire earnings call ___ the virtues of the new subscription model.", choices: ["extolling", "extrapolating", "exacerbating", "extricating"], answerIndex: 0, explanation: "To extol is to praise enthusiastically. Extrapolating means projecting from known data, exacerbating means making a problem worse, and extricating means freeing something from difficulty." },
-    { question: "The vendor never actually intended to walk away — when we refused to prepay, we simply ___, and they folded within the hour.", choices: ["upped the ante", "showed our hand", "called their bluff", "played our trump card"], answerIndex: 2, explanation: "Call someone's bluff means challenging a threat you suspect is empty — and the vendor folded. Upping the ante raises the stakes, showing your hand reveals your position, and playing a trump card uses your strongest advantage." }
-  ]
-},
-{
   date: "2026-09-23",
   dateLabel: "2026年9月23日（水）",
   readTimeMin: 20,
@@ -1232,9 +1044,194 @@ const ENGLISH_REPORTS = [
     { question: "Despite three rounds of arbitration, the pricing dispute between the two co-founders remains ___ — neither side has moved an inch.", choices: ["intractable", "intransigent", "thorny", "futile"], answerIndex: 0, explanation: "Intractable is correct because it describes a problem or dispute that resists resolution, fitting grammatically and logically as a description of the dispute itself. Intransigent is the trap answer: it describes a person's stubborn refusal to compromise, not the dispute itself, so it doesn't work as a description of the disagreement as a whole. Thorny means delicate or tricky, but it understates a conflict that has already survived three failed rounds of arbitration. Futile means useless or pointless, which would describe the arbitration attempts themselves, not the ongoing state of the dispute." },
     { question: "The ___ reason for postponing the product announcement was 'further internal review,' though insiders say the real driver was a last-minute change to the revenue projections.", choices: ["apparent", "alleged", "ostensible", "purported"], answerIndex: 2, explanation: "Ostensible is correct because it specifically means 'stated as the reason, but likely not the real one,' matching the sentence's own contrast introduced by 'though insiders say...'. Apparent just means something seems to be the case, without the built-in suggestion that it's a cover story. Alleged is normally used for accusations or claims of wrongdoing, which doesn't fit the neutral 'reason for postponing' context. Purported is close in meaning but is usually paired with a claim being reported or quoted directly, and doesn't fit as naturally in the fixed collocation 'the ostensible reason.'" }
   ]
+},
+{
+  date: "2026-09-29",
+  dateLabel: "2026年9月29日（火）",
+  readTimeMin: 20,
+  coreItems: [
+    {
+      type: "word", term: "acquiesce", ipa: "/ˌækwiˈɛs/", register: "フォーマル〜ややフォーマル。交渉・会議の議事録やニュースで頻出。",
+      meaning_en: "to accept something reluctantly but without protest, especially after initial resistance",
+      meaning_ja: "（最初は抵抗しつつも）最終的にしぶしぶ受け入れる、黙って従う。",
+      examples: [
+        "After weeks of pushback, the board ultimately acquiesced to the activist investor's demand for two seats.",
+        "I don't love the new expense policy, but I'll acquiesce for now since nobody else is fighting it."
+      ],
+      synonyms: [
+        { term: "capitulate", nuance_ja: "既出。capitulateは『完全に降参する』という、対立の末の劇的な敗北のニュアンスが強い。acquiesceは静かにしぶしぶ従う穏やかな場面にも使える。" },
+        { term: "comply", nuance_ja: "ルール・要求に単に『従う』という中立的な語で、acquiesceが持つ『抵抗した末に』という含みは薄い。" },
+        { term: "cave", nuance_ja: "非常にくだけた言い方で、『圧力に負けて折れた』という弱さ・失望のニュアンスが強く、acquiesceよりフォーマルさが低い。" }
+      ],
+      explanation_ja: "acquiesceはラテン語で『静かにする』を意味するquiescereに由来し、『声高に反対せず、静かに受け入れる』という語感が核にあります。単なる同意（agree）と違い、内心では不満を残しながら表面的には争わない、という微妙な心理状態を一語で表せるのが便利な点。ビジネス英語では\"acquiesce to a demand/request\"の形で頻出し、交渉の記事でよく見る\"reluctantly acquiesced\"という副詞との組み合わせも覚えておくと便利です。"
+    },
+    {
+      type: "word", term: "abrogate", ipa: "/ˈæbrəɡeɪt/", register: "非常にフォーマル。法律・契約・条約の文脈（ニュース記事の見出しで頻出）。",
+      meaning_en: "to formally cancel, repeal, or do away with a law, agreement, or right",
+      meaning_ja: "（法律・契約・権利などを）正式に廃止する、撤回する。",
+      examples: [
+        "The new administration moved quickly to abrogate the trade agreement signed by its predecessor.",
+        "Shareholders argued that the board had effectively abrogated its fiduciary duty by approving the deal without a fairness opinion."
+      ],
+      synonyms: [
+        { term: "rescind", nuance_ja: "既出。rescindは契約・命令・決定など『特定の一つの取り決め』を取り消す日常的な場面にも使えるが、abrogateはより公的・格式高い響きで条約や法律規模の話に向く。" },
+        { term: "repeal", nuance_ja: "主に議会が『法律』を廃止する場合に特化して使われる語。abrogateはより広く条約・協定・権利にも使える点が異なる。" },
+        { term: "annul", nuance_ja: "annulは『最初からなかったことにする（無効化する）』という遡及的な響きが強く、結婚の無効化などにも使われる特殊な語。" }
+      ],
+      explanation_ja: "abrogateはラテン語のab-（離れて）+rogare（提案する、法を可決させる）に由来し、もともと『議会で通した法を取り消す』という含みを持つ格式高い語です。日常会話にはまず出てきませんが、条約破棄・契約の一方的解除・権利の撤回といった重いニュース記事の見出しで頻出するため、ニュース英語を読むMBA/金融の読者には知っておく価値が高い語。既出のrescindよりも『公的・制度的なものを覆す』という重みがある点を意識すると使い分けやすいです。"
+    },
+    {
+      type: "idiom", term: "put your money where your mouth is", ipa: "", register: "インフォーマル〜ビジネス会話。口先だけでなく実際に行動・投資で示せ、という場面で頻出。",
+      meaning_en: "to back up what you say with real action or commitment, especially by investing your own money or resources",
+      meaning_ja: "口先だけでなく、実際に自分の資金や行動で裏付ける、身をもって示す。",
+      examples: [
+        "If you're so confident about this stock, put your money where your mouth is and buy some yourself.",
+        "The CEO decided to put his money where his mouth is by personally investing in the same fund he was pitching to clients."
+      ],
+      synonyms: [
+        { term: "have skin in the game", nuance_ja: "既出。have skin in the gameは『既にリスクを負っている状態』を指す静的な表現。put your money where your mouth isは『主張と行動を一致させろ』という挑発・呼びかけの動的なニュアンスが強い。" },
+        { term: "walk the talk", nuance_ja: "より一般的に『言ったことを実行する』という広い意味で使われ、必ずしも金銭的なコミットメントを伴わない。put your money where your mouth isはお金という具体的な裏付けを要求する点が特徴的。" }
+      ],
+      explanation_ja: "賭け事の比喩から来た表現で、口だけで強気な発言をする人に対して『本当にそう思うなら実際にお金を賭けてみろ』と挑む場面で使われてきました。ビジネスでは、アナリストが強気の推奨をしながら自社株を持っていないことへの批判や、幹部が自社の戦略に自己資金を投じることの説得力を語る際に頻出します。既出のhave skin in the gameとセットで覚えると、『すでに賭けている状態』と『賭けてみろという呼びかけ』の違いが整理しやすいです。"
+    },
+    {
+      type: "phrase", term: "let's not turn this into a science project", ipa: "", register: "インフォーマル〜ビジネス会話。会議・実務で『簡単なことを複雑にしすぎるな』と言う場面。",
+      meaning_en: "used to suggest that a task or decision should be kept simple and not be over-analyzed, overengineered, or unnecessarily complicated",
+      meaning_ja: "（簡単なはずのことを）必要以上に複雑にするな、大げさにするな、というときに使う表現。",
+      examples: [
+        "It's just a landing page — let's not turn this into a science project with five rounds of stakeholder review.",
+        "I appreciate the thoroughness, but let's not turn this into a science project; we just need a rough estimate by Friday."
+      ],
+      synonyms: [
+        { term: "let's not overengineer this", nuance_ja: "より直接的で技術的な響きが強く、主にプロダクト・エンジニアリングの文脈で使われる。science projectの方が比喩的でカジュアルな会話にも馴染む。" },
+        { term: "let's keep it simple", nuance_ja: "中立的で穏やかな言い方。science projectほどのユーモアや『大げさすぎる』という軽い非難のニュアンスは持たない。" }
+      ],
+      explanation_ja: "学校の理科の自由研究（science project）のように、必要以上に手間をかけて仔細に検証・実験してしまう様子を揶揄した比喩表現です。会議で誰かが簡単な意思決定に過剰な分析やプロセスを持ち込もうとしたときに、軽くたしなめる形で使われます。既出のdon't let perfect be the enemy of goodと一緒に使われることも多く、『完璧主義に陥って前に進めなくなる』ことへの警鐘という点で共通しています。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "supercilious", ipa: "/ˌsuːpərˈsɪliəs/", register: "フォーマル〜文学的。人の態度・表情を批判的に描写する場面。",
+      meaning_en: "behaving as though you think you are better or more important than other people; showing arrogant disdain",
+      meaning_ja: "見下すような、人を軽蔑した態度の（高慢な）。",
+      examples: [
+        "The partner had a supercilious way of responding to junior analysts' questions, as if every question were beneath him.",
+        "She gave the intern's suggestion a supercilious smile and moved on without comment."
+      ],
+      synonyms: [
+        { term: "condescending", nuance_ja: "既出。condescendingは『相手を子供扱いするように話す』態度に焦点があり、言葉遣いに表れやすい。superciliousは表情・雰囲気全体に漂う『見下し』を指すことが多い。" },
+        { term: "haughty", nuance_ja: "高慢さそのもの（プライドの高さ）に焦点があり、必ずしも『他人を軽蔑して見せる』という対人的な要素を含まない場合もある。" }
+      ],
+      explanation_ja: "ラテン語で『まぶたを上げる』に由来し、文字通り『（相手を見下すように）眉を上げる』しぐさから来た語です。既出のcondescending（見下した言い方をする）よりも、表情・雰囲気全体に染み出る高慢さを指すことが多く、\"a supercilious smirk/tone/glance\"のように顔の表情や視線と結びつくコロケーションが特徴的です。オフィスの権力関係（パートナーvsジュニア）を描写するときに頻出します。"
+    },
+    {
+      term: "blithe", ipa: "/blaɪð/", register: "ニュース分析・批判的な文脈（フォーマル、リスクへの無頓着さを批判する場面）。",
+      meaning_en: "showing a casual and cheerful indifference considered to be careless or inappropriate, especially about risk or the seriousness of a situation",
+      meaning_ja: "（リスクや深刻さに対して）不注意なほど無頓着な、あっけらかんとした。",
+      examples: [
+        "Investors' blithe disregard for valuation eventually caught up with them when the sector corrected 40%.",
+        "I was struck by how blithe he was about the covenant breach, as if it were a minor technicality."
+      ],
+      synonyms: [
+        { term: "cavalier", nuance_ja: "既出。cavalierは『無頓着・軽率』という点でほぼ同義だが、態度そのものの傲慢さにやや重心があるのに対し、blitheは『深刻さを理解していないかのような、無邪気な明るさ』というニュアンスが強い。" },
+        { term: "nonchalant", nuance_ja: "より中立的で、必ずしも批判的な意味を含まない（単に落ち着いている、動じない）。blitheはリスクや問題の軽視という否定的な文脈で使われることが圧倒的に多い。" }
+      ],
+      explanation_ja: "もともとは『陽気な、無邪気な』という肯定的な意味だった語ですが、現代のビジネス・ニュース英語では、ほぼ必ず\"blithe disregard/indifference/optimism\"のように、深刻なリスクを軽く見ていることを批判する文脈で使われます。既出のcavalierとの違いは、cavalierが『傲慢さ』寄り、blitheが『無邪気さゆえの無頓着』寄りという点。バブル崩壊後の分析記事で\"blithe optimism\"という表現が定番で登場します。"
+    },
+    {
+      term: "taciturn", ipa: "/ˈtæsɪtɜːrn/", register: "人物描写（中立〜やや否定的、寡黙な人を形容）。",
+      meaning_en: "saying very little; reserved or uncommunicative by nature",
+      meaning_ja: "（性格的に）寡黙な、口数が少ない。",
+      examples: [
+        "The new CFO is famously taciturn in earnings calls, often answering analyst questions in a single sentence.",
+        "He's a taciturn negotiator — he'll let long silences do the talking rather than filling the air."
+      ],
+      synonyms: [
+        { term: "reticent", nuance_ja: "reticentは『話したがらない、話すことを控える』という意図的な要素が強く、特定の話題について口を閉ざす場合にも使われる。taciturnは性格として一般的に口数が少ないことを指すことが多い。" },
+        { term: "reserved", nuance_ja: "より広く『感情表現を控える、控えめな』性格全体を指し、必ずしも『話さない』ことに限定されない。" }
+      ],
+      explanation_ja: "決算カンファレンスコールやニュースのプロフィール記事で経営者の人物像を描写する際によく使われる語です。既出のreticentと似ていますが、taciturnは『性格・気質としてもともと寡黙』というニュアンスが強く、reticentは『（この件については）話したくない』という文脈依存の使われ方をすることが多い、という違いを覚えておくと便利です。"
+    },
+    {
+      term: "impetuous", ipa: "/ɪmˈpɛtʃuəs/", register: "人物・意思決定の評価（中立〜否定的、性急さを批判する場面）。",
+      meaning_en: "acting or done quickly and without thought or care, often as a result of strong feeling",
+      meaning_ja: "深く考えずに性急に行動する、短気で衝動的な。",
+      examples: [
+        "The board later admitted the acquisition was an impetuous decision made under pressure to show growth.",
+        "He's brilliant but impetuous — he'll fire off a reply to a client before thinking through the implications."
+      ],
+      synonyms: [
+        { term: "rash", nuance_ja: "impetuousとほぼ同義で使われるが、より『危険を軽視した』という結果面の批判に重心があり、impetuousは『性格として性急な』という気質面の描写にも使われる。" },
+        { term: "impulsive", nuance_ja: "日常的な行動（買い物など）にも広く使われる中立的な語で、impetuousの方がよりフォーマルで、重要な意思決定（投資、買収、契約）についての性急さを批判する場面で好まれる。" }
+      ],
+      explanation_ja: "既出のimpulsiveと似ていますが、impetuousの方がやや文語的で、重要な意思決定（投資、買収、契約）についての性急さを批判する場面で好まれます。語源はラテン語のimpetus（勢い、突進）で、『勢いに任せて突っ走る』というイメージが核にあります。取締役会や経営判断の事後分析記事で\"an impetuous decision\"という形でよく使われます。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "backfill (a role / a position)",
+      meaning_en: "to find someone to fill a job or position after the previous person has left, especially on a temporary or urgent basis",
+      meaning_ja: "（人が退職・異動した後の）ポジションの後任を埋める、代わりの人員を補充する。",
+      examples: [
+        "It took almost four months to backfill her role after she was promoted to the London office.",
+        "We're operating a person short on the deal team while we backfill the associate position."
+      ],
+      synonyms: [
+        { term: "fill the gap", nuance_ja: "より一般的な言い方で、必ずしも『人事的な後任探し』という業務プロセスを指すとは限らない。backfillは人事・組織運営の文脈で定着した専門的な響きがある。" }
+      ],
+      explanation_ja: "もともと土木・建築で『掘った穴を埋め戻す』ことを指す語が、人事の世界で『空いたポジションを埋める』という意味に転用されました。名詞としても動詞としても使われ、\"we need to backfill this role ASAP\"のように人員計画のミーティングで頻出する実務語です。単にhireと言うより、『既存のポジションの穴を埋める』という文脈が明確に伝わる点が便利です。"
+    },
+    {
+      phrase: "ballpark (a number / a figure)",
+      meaning_en: "to give a rough, approximate estimate of a number, without claiming it to be precise",
+      meaning_ja: "（数字を）おおよそ、ざっくりと見積もる。",
+      examples: [
+        "Can you ballpark the total cost before we get the formal quote from the vendor?",
+        "I haven't run the model yet, but if I had to ballpark it, I'd say we're looking at a 20% margin hit."
+      ],
+      synonyms: [
+        { term: "back-of-the-envelope (calculation)", nuance_ja: "既出。名詞・形容詞として使われることが多く、\"a back-of-the-envelope estimate\"のように計算のプロセス・粗さを形容する。ballparkは動詞として『ざっくり数字を出す』行為そのものを指すことが多い点が異なる。" }
+      ],
+      explanation_ja: "野球場（ballpark）の広さのように『だいたいこのあたり』という大まかな範囲を示すことから来た表現です。名詞で\"a ballpark figure\"、動詞で\"can you ballpark this?\"のどちらの形でも非常によく使われ、会議で正確な数字が出せない時に『とりあえず大まかな数字だけでも』と頼む定番の言い方です。既出のback-of-the-envelopeが『計算の粗さ』を形容するのに対し、ballparkは『動詞として概算を出す行為』を表す点で使い分けが可能です。"
+    },
+    {
+      phrase: "workshop (an idea / a deck)",
+      meaning_en: "to develop, refine, or improve something (such as an idea, a document, or a presentation) through collaborative discussion and revision",
+      meaning_ja: "（アイデアや資料などを）みんなで議論しながら練り上げる、ブラッシュアップする。",
+      examples: [
+        "Let's workshop the deck together before the client sees it — the framework on slide 3 still feels shaky.",
+        "The team spent an hour workshopping the pricing strategy before presenting it to leadership."
+      ],
+      synonyms: [
+        { term: "flesh out (an idea)", nuance_ja: "flesh outは『まだ骨組みしかないアイデアに具体的な詳細を追加する』ことに焦点があるのに対し、workshopは『複数人で議論しながら改善する』という共同作業のプロセスそのものを指す。" }
+      ],
+      explanation_ja: "もともと名詞（workshop＝研修会、作業場）だったものが、動詞として『（アイデアや文書を）みんなで議論しながら磨き上げる』という意味で使われるようになった、比較的新しいビジネス俗語です。特にコンサルティングやスタートアップ文化で\"let's workshop this\"という形で頻出し、単にreviseやeditと言うよりも『複数人の共同作業で練り上げる』という協働的なニュアンスが伝わります。"
+    },
+    {
+      phrase: "onboard (a new hire / a client)",
+      meaning_en: "to integrate a new employee or client into an organization, including training, orientation, and setup",
+      meaning_ja: "（新入社員や新規クライアントを）組織に導入し、必要な研修・準備を行う。",
+      examples: [
+        "It typically takes about six weeks to fully onboard a new analyst on our team.",
+        "The client success team is responsible for onboarding new accounts within the first 30 days."
+      ],
+      synonyms: [
+        { term: "ramp up (a new hire)", nuance_ja: "ramp upは『新人が実際に成果を出せるようになるまでの立ち上がり』というパフォーマンス面に焦点があり、onboardは『制度的な導入プロセス（研修、システムアクセス、手続き）』そのものを指す点が異なる。" }
+      ],
+      explanation_ja: "船や飛行機に『乗せる』という意味のon boardが動詞化し、HRやカスタマーサクセスの世界で『新しい人・クライアントをシステムや組織に慣れさせる』という意味で定着しました。名詞形の\"onboarding\"はもはや日本語のビジネス用語としても定着しつつありますが、動詞としての\"to onboard someone\"という使い方も英語では非常に自然で頻出です。"
+    }
+  ],
+  todayQuiz: [
+    { question: "The junior partner didn't agree with the client's pricing pushback, but rather than argue in the meeting, she simply ___ and let the discussion move on.", choices: ["acquiesced", "capitulated", "complied", "caved"], answerIndex: 0, explanation: "Acquiesced is correct because the sentence's own framing — she didn't agree, but quietly let the discussion move on without a fight — describes going along without protest, the core meaning of acquiesce. Capitulated implies a dramatic full surrender after visible resistance, which doesn't match the calm, understated way she let the meeting continue. Complied is too neutral and procedural, missing the built-in sense of reluctant, silent disagreement. Caved is too casual and implies an obvious, visible collapse under pressure, which contradicts the muted, professional tone of the scene." },
+    { question: "When the new government took power, one of its first acts was to ___ the trade treaty that its predecessor had signed, framing it as unconstitutional overreach.", choices: ["repeal", "abrogate", "rescind", "annul"], answerIndex: 1, explanation: "Abrogate is correct because it is the standard, formal term for a government formally cancelling a treaty or international agreement, matching 'trade treaty' and the weighty framing of 'unconstitutional overreach.' Repeal is specific to laws passed by a legislature, not international treaties, so it doesn't fit the object of the verb. Rescind usually applies to a single decision, order, or contract and lacks the weight appropriate for cancelling a national treaty. Annul implies treating something as if it never legally existed from the start, which doesn't match a treaty that was validly signed and is now simply being cancelled going forward." },
+    { question: "Which sentence uses the idiom 'put your money where your mouth is' correctly?", choices: ["He put his money where his mouth is by finally admitting he was wrong about the forecast.", "The company put its money where its mouth is when it acquired a competitor entirely with debt financing.", "She always puts her money where her mouth is — when she recommends a stock, she buys it herself first.", "They put their money where their mouth is by cutting costs across every department."], answerIndex: 2, explanation: "The third sentence is correct because it shows someone backing up a specific claim (a stock recommendation) with a real financial commitment (buying it herself), exactly what the idiom means. The first sentence misuses it for admitting a mistake, which has nothing to do with financial commitment. The second sentence applies it to an acquisition funded by debt, not personal financial backing of a claim. The fourth sentence confuses it with generic cost-cutting, which doesn't involve proving a stated belief through one's own money." },
+    { question: "Which sentence uses the expression 'let's not turn this into a science project' correctly?", choices: ["The lab team turned the actual R&D roadmap into a science project after doubling the budget.", "It's just a one-page internal form — let's not turn this into a science project with five layers of legal review.", "Let's turn this hiring decision into a science project since it's such an important, complex role.", "We decided to turn the quarterly review into a science project by adding more slides."], answerIndex: 1, explanation: "The second sentence is correct because it uses the expression as intended: warning against adding unnecessary layers of process to a genuinely simple task. The first sentence misuses it literally, describing an actual R&D roadmap that really did become more complex, not a small task being needlessly overanalyzed. The third sentence inverts the idiom's meaning, using it to justify overanalyzing something instead of warning against it. The fourth sentence uses it as a plain description of an event rather than as a caution against unnecessary complexity." },
+    { question: "Even after auditors flagged the same reconciliation error for the third consecutive quarter, the finance team's ___ attitude — 'it's probably nothing' — suggested they hadn't grasped how serious the pattern actually was.", choices: ["nonchalant", "supercilious", "cavalier", "blithe"], answerIndex: 3, explanation: "Blithe is correct because it specifically describes a careless, seemingly innocent underestimation of risk or seriousness, matching the team's dismissive 'it's probably nothing' response to a recurring, serious problem. Nonchalant is too neutral; it describes calm unconcern without necessarily implying a failure to grasp real danger. Supercilious describes a scornful, superior attitude toward other people, not an underestimation of a risk. Cavalier is close but leans more toward arrogant dismissiveness, whereas the sentence's emphasis on not having 'grasped how serious' the issue is points to blithe's sense of naive unawareness rather than deliberate arrogance." },
+    { question: "We don't have exact procurement costs yet, but if you had to ___ it for the board deck, what would you guess — plus or minus 10%?", choices: ["workshop", "backfill", "ballpark", "onboard"], answerIndex: 2, explanation: "Ballpark is correct because it specifically means giving a rough, approximate number, matching the request for a guess 'plus or minus 10%.' Workshop means to refine an idea or document through collaborative discussion, not to produce a numeric estimate. Backfill means filling an empty job position, which has no numerical meaning here. Onboard means integrating a new hire or client into an organization, which is unrelated to estimating a cost figure." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-28 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-29 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
