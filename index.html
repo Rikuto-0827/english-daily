@@ -243,196 +243,6 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-23",
-  dateLabel: "2026年9月23日（水）",
-  readTimeMin: 20,
-  coreItems: [
-    {
-      type: "word", term: "cajole", ipa: "/kəˈdʒoʊl/", register: "口語〜ビジネス、人を説得する場面（やや操作的なニュアンスを含むことも）",
-      meaning_en: "to persuade someone to do something by using flattery, charm, or gentle, persistent coaxing rather than force or logic",
-      meaning_ja: "(優しく・お世辞を使って)なだめすかして説得する、うまく丸め込む",
-      examples: [
-        "It took three follow-up emails and a fair amount of flattery, but she finally cajoled the vendor into extending the deadline by a week.",
-        "My roommate cajoled me into splitting an Uber to the airport at 5 a.m. by promising to buy coffee."
-      ],
-      synonyms: [
-        { term: "coax", nuance_ja: "cajoleとほぼ同義だが、coaxはより穏やかで根気強い説得を指し、必ずしもお世辞は伴わない。cajoleは相手を持ち上げる言葉や甘い言葉を使う点がより強く含意される。" },
-        { term: "persuade", nuance_ja: "最も中立的で一般的な語。説得の手段を問わない。cajoleは「お世辞や愛想の良さで少し渋る相手を動かす」という、より具体的で軽い操作性を感じさせる語。" },
-        { term: "sweet-talk", nuance_ja: "口語的で、cajoleよりもカジュアルかつやや軽薄な響き。ビジネス文書ではcajoleの方が使いやすい。" }
-      ],
-      explanation_ja: "フランス語 cajoler(お世辞を言う)に由来し、相手の機嫌を取りながら少しずつ意見を変えさせていくイメージの語。ビジネスでは、取引先やベンダーに無理なお願いを聞いてもらう際、強引に交渉するのではなく、褒め言葉や粘り強い頼み込みで相手の心証を良くして動かす場面で使われる。'cajole someone into (doing) something' という形が定番で、命令や説得(persuade)よりも柔らかく、時にわずかに『うまく丸め込んだ』という皮肉のニュアンスを込めて使われることもある。家族や友人との日常会話でも、駄々をこねる子供や気乗りしない相手を優しく説得する場面で頻出する。"
-    },
-    {
-      type: "word", term: "glean", ipa: "/ɡliːn/", register: "分析・報告（フォーマル〜中立、情報収集の描写で頻出）",
-      meaning_en: "to gather information or insight gradually and in small amounts, often from multiple or indirect sources and with some effort",
-      meaning_ja: "(苦労して少しずつ)情報・知見を集める、拾い集める",
-      examples: [
-        "From the footnotes in the 10-K alone, the analyst gleaned enough to suspect the company was quietly reclassifying debt.",
-        "I couldn't get a straight answer out of him, but I gleaned from his tone that the interview hadn't gone well."
-      ],
-      synonyms: [
-        { term: "extract", nuance_ja: "より意図的・機械的に情報を『引き出す』ニュアンスが強く、しばしば抵抗する相手や資料から強引に得る場合に使う。gleanは断片的な手がかりを丹念に拾い集めるという、より穏やかで地道な響きを持つ。" },
-        { term: "glean insights from", nuance_ja: "同語だが定型句として頻出。データ分析やリサーチのレポートで『〜から知見を得る』という決まり文句としてそのまま覚えておくと便利。" },
-        { term: "pick up on", nuance_ja: "より口語的でカジュアル。gleanはフォーマルな報告書や分析記事でも自然に使える点が異なる。" }
-      ],
-      explanation_ja: "元々は収穫後の畑に残った麦の穂を一本ずつ拾い集める『落穂拾い』を意味した農業用語で、そこから『断片的な情報を根気強く集めて全体像を掴む』という比喩的な意味に転じた。決算資料の細かい注記やアナリストコールでの言葉選びなど、直接開示されていない情報を間接的な手がかりから読み取る場面でビジネス英語に頻出し、'what can we glean from this data' のような形で分析の締めくくりによく使われる。単なる'get information'よりも、労力をかけて少しずつ集めたというニュアンスが加わる点が学習者にとっての価値。"
-    },
-    {
-      type: "idiom", term: "can't see the forest for the trees", ipa: "", register: "分析・助言（口語〜中立、視野の狭さを指摘する場面）",
-      meaning_en: "to be so focused on small details that you fail to understand or notice the overall situation",
-      meaning_ja: "木を見て森を見ず、細部にとらわれて全体像を見失う",
-      examples: [
-        "After three weeks buried in the model's assumptions, the team couldn't see the forest for the trees and missed that the entire deal thesis had fallen apart.",
-        "Take a day off from revising the essay — you're so deep in the wording now that you can't see the forest for the trees."
-      ],
-      synonyms: [
-        { term: "lose sight of the big picture", nuance_ja: "ほぼ同義でより直接的・説明的な言い方。can't see the forest for the treesの方が比喩的で、会話や文章に彩りを加えたいときに好まれる。" },
-        { term: "miss the forest for the trees", nuance_ja: "can'tを使わないバリエーションで意味はほぼ同じ。文脈によってどちらも使われるが、can'tを使う形の方がやや口語的でよく聞かれる。" }
-      ],
-      explanation_ja: "文字通り『木々(details)に気を取られて森全体(全体像)が見えなくなる』様子を表す、非常によく使われる比喩表現。プロジェクトの細部やデータの一点にこだわりすぎて、投資判断や戦略の本質的な問題を見失ってしまう場面で使われることが多く、レビューやフィードバックの場で『視野を広げよう』と促す際の定番フレーズ。特にモデリングや資料作成に没頭しすぎたチームメンバーに向けて使われることが多く、'step back and look at the forest, not just the trees' のように応用されることもある。"
-    },
-    {
-      type: "phrase", term: "I'll take it under advisement.", ipa: "", register: "フォーマル・ビジネス（提案・要望への返答、即答を避ける丁寧な言い回し）",
-      meaning_en: "used to politely say that you will seriously consider a suggestion or request before making a decision, without committing to any particular outcome",
-      meaning_ja: "検討させていただきます、よく考慮に入れておきます（即答を避ける丁寧な返答）",
-      examples: [
-        "When the junior analyst suggested restructuring the entire deck the night before the pitch, the partner simply said, 'I'll take it under advisement,' and moved on.",
-        "I'll take your feedback under advisement, but I want to run it by the rest of the committee before we change anything."
-      ],
-      synonyms: [
-        { term: "I'll think it over", nuance_ja: "より口語的でカジュアル。日常会話や気軽な相談に向く。I'll take it under advisementはフォーマルな会議や上下関係のある場面で使われる、やや距離を置いた丁寧な表現。" },
-        { term: "I'll give it due consideration", nuance_ja: "同程度にフォーマルだが、より硬い書き言葉寄りの響き。I'll take it under advisementは口頭でのやり取りでも自然に使える点が異なる。" },
-        { term: "Noted.", nuance_ja: "はるかに簡潔でそっけない返答。真剣な検討を約束するニュアンスは薄く、時に軽くあしらっている印象を与えることもある。" }
-      ],
-      explanation_ja: "元々は法律・行政の文脈で、裁判官や委員会が正式に審議・検討することを表す硬い言い回しだったが、ビジネスの場でも『すぐに賛成も反対もしないが、真剣に検討する』という立場を丁寧に示すために広く転用されている。特に、その場で即答したくない提案や、目下の相手からの意見に対して、角を立てずに一旦保留する際の定番表現で、実際には『やんわり断る』前置きとして使われることも少なくない。ネイティブの上司や役員が会議で多用する表現で、覚えておくと大人の対応として使いこなせるようになる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "assiduous", ipa: "/əˈsɪdʒuəs/", register: "称賛・フォーマル（勤勉さ・入念さを評する場面）",
-      meaning_en: "showing great care, thoroughness, and persistent effort in doing something",
-      meaning_ja: "勤勉で入念な、根気強くこつこつと取り組む",
-      examples: [
-        "Her assiduous attention to every footnote in the credit agreement caught a covenant breach that three other reviewers had missed.",
-        "He's assiduous about saving — he's tracked every dollar he's spent since college."
-      ],
-      synonyms: [
-        { term: "diligent", nuance_ja: "最も一般的で中立的な語。assiduousはよりフォーマルで、細部への執拗なまでの丹念さを強調するニュアンスが強い。" },
-        { term: "meticulous", nuance_ja: "「几帳面さ・正確さ」に焦点があるのに対し、assiduousは「持続的な努力・根気」により重きを置く語。" }
-      ],
-      explanation_ja: "ラテン語 assidere(そばに座る)に由来し、『ずっとそこに座って作業を続ける』イメージから『根気強く丹念に取り組む』という意味に転じた語。決算資料のレビューやデューデリジェンスなど、地道な確認作業を粘り強くやり遂げる人を称賛する際にフォーマルな評価文書や推薦状で好まれる語で、単なる'hardworking'よりも一段格式高く、知的な丹念さのニュアンスを含む。"
-    },
-    {
-      term: "diffident", ipa: "/ˈdɪfɪdənt/", register: "人物評（中立〜同情的、自信のなさを描写）",
-      meaning_en: "lacking confidence in one's own ability, worth, or opinions; hesitant to assert oneself",
-      meaning_ja: "自信のない、遠慮がちな、引っ込み思案な",
-      examples: [
-        "He's brilliant with numbers but painfully diffident in meetings, so his best ideas rarely make it into the room.",
-        "She was diffident about asking for a raise, even though her performance review was glowing."
-      ],
-      synonyms: [
-        { term: "timid", nuance_ja: "より広く「臆病さ・怖がり」全般を指す。diffidentは特に自分の能力や意見への自信のなさに焦点が絞られた、ややフォーマルな語。" },
-        { term: "self-effacing", nuance_ja: "謙遜して自分を目立たせないという、しばしば好意的なニュアンスを持つ。diffidentは自信の欠如そのものへの指摘で、必ずしも好意的とは限らない。" }
-      ],
-      explanation_ja: "confident(自信のある)の対義語的な成り立ちを持ち、『自分自身への信頼(fide)が欠けている(dis-)』という語源がそのまま意味に表れている語。優秀なのに自分の意見を主張できない同僚や部下を評する際によく使われ、しばしば『能力はあるのに損をしている』という惜しむニュアンスを伴う。shyよりもフォーマルで、人物評価やフィードバックの文書でも使いやすい語彙。"
-    },
-    {
-      term: "unimpeachable", ipa: "/ˌʌnɪmˈpiːtʃəbl/", register: "称賛・フォーマル（信頼性・経歴の評価、法務/監査でも使用）",
-      meaning_en: "completely trustworthy and beyond doubt or question; impossible to criticize or discredit",
-      meaning_ja: "非の打ちどころのない、疑いようのない(信頼性・経歴などについて)",
-      examples: [
-        "Her credentials were unimpeachable — a decade at the Fed followed by two at a bulge-bracket bank — so the board approved her appointment without a single follow-up question.",
-        "The auditor's findings were based on unimpeachable evidence, leaving the company no room to dispute the restatement."
-      ],
-      synonyms: [
-        { term: "impeccable", nuance_ja: "「完璧さ・欠点のなさ」全般に使える、より広い語(服装や作法にも使う)。unimpeachableは特に「信頼性・誠実さが疑いようがない」という点に焦点が絞られる。" },
-        { term: "beyond reproach", nuance_ja: "ほぼ同義の言い回し。unimpeachableは1語で簡潔に使える分、レポートや評価文書で好まれる。" }
-      ],
-      explanation_ja: "元々は弾劾(impeach)できない、つまり公的な地位にある人物の不正を訴追できないほど潔白であるという法律用語に由来する語。人物の経歴、監査結果、証拠など、疑問の余地なく信頼できるものを評する際にフォーマルな文脈で使われ、'unimpeachable credentials/reputation/evidence' という形で頻出する。単なる'trustworthy'よりも、あらゆる角度から検証しても揺らがないという強い確信のニュアンスを持つ点が特徴。"
-    },
-    {
-      term: "indelible", ipa: "/ɪnˈdelɪbl/", register: "比喩的・フォーマル(印象・記憶の描写、称賛的に使われることが多い)",
-      meaning_en: "making a mark or impression that cannot be removed, forgotten, or erased",
-      meaning_ja: "消えない、忘れられない(印象・記憶などについて)",
-      examples: [
-        "Her first presentation to the investment committee left an indelible impression — three years later, partners still bring it up.",
-        "The smell of my grandmother's kitchen is indelible; I can still picture every detail of that room."
-      ],
-      synonyms: [
-        { term: "unforgettable", nuance_ja: "より日常的でカジュアルな語。indelibleはよりフォーマルで文学的な響きを持ち、印象が『消せない痕跡として残る』という物理的なイメージを伴う。" },
-        { term: "lasting", nuance_ja: "より中立的で穏やかな「持続性」を指す。indelibleは「決して消せない」という、より強く断定的なニュアンスを持つ。" }
-      ],
-      explanation_ja: "元々は『消せないインク(indelible ink)』のように、物理的に消去できない印をつけることを指した語で、そこから『記憶や印象に強く刻まれて消えない』という比喩的な意味に広がった。プレゼンや面接、初対面の場での強い印象を称賛的に語る際によく使われ、'leave an indelible mark/impression on' という形が定番。ネガティブな出来事の傷跡を語る際にも使えるが、ビジネスの文脈では多くの場合、良い意味での強烈な印象を表すポジティブな語として使われる。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "keep tabs on",
-      meaning_en: "to monitor or keep informed about someone or something on an ongoing basis",
-      meaning_ja: "(継続的に)目を光らせる、動向を把握しておく",
-      examples: [
-        "The risk team keeps tabs on the fund's exposure to a handful of correlated positions every single morning.",
-        "I try to keep tabs on my old college friends, even though we're scattered across three time zones now."
-      ],
-      synonyms: [
-        { term: "monitor", nuance_ja: "より中立的でフォーマルな語。keep tabs onは口語的で、しばしば少し警戒や関心を込めたニュアンスを帯びる。" },
-        { term: "stay on top of", nuance_ja: "「遅れずについていく・管理できている」という能動的な達成感を強調する語。keep tabs onは単に継続的に注視するという観察寄りのニュアンス。" }
-      ],
-      explanation_ja: "『tab(勘定・記録)を保持しておく』というイメージから、誰か・何かの動向を継続的に把握しておくという意味に転じた口語表現。競合の値付けや部下の進捗、あるいは音信不通になりがちな友人の近況など、幅広い場面で使われる非常に汎用性の高い表現で、'keep close tabs on' のように close を添えて監視の強さを強調することもできる。"
-    },
-    {
-      phrase: "curry favor (with someone)",
-      meaning_en: "to try to win someone's approval or good opinion, especially through flattery or obsequious behavior",
-      meaning_ja: "(お世辞・媚びで)機嫌を取る、取り入ろうとする",
-      examples: [
-        "The new hire spent his first month currying favor with the partners instead of actually learning the deal process, and it didn't go unnoticed.",
-        "She's not above currying favor with the professor by staying after every lecture to ask 'thoughtful' questions."
-      ],
-      synonyms: [
-        { term: "brown-nose", nuance_ja: "非常に口語的でかなり侮蔑的な響きを持つ。curry favorはやや上品でフォーマルな文章でも使える点が異なる。" },
-        { term: "suck up to", nuance_ja: "同じくかなり口語的でくだけた表現。curry favorはビジネス記事や評価コメントでも使える、少しフォーマルな響きを保っている。" }
-      ],
-      explanation_ja: "中世フランス語で馬の毛並みを整える(curry)ことに由来するとされ、『相手の機嫌を丁寧に整えて取り入る』様子を比喩的に表す語。職場の出世競争や社内政治を批判的に描写する際の定番表現で、実力よりもご機嫌取りで評価を得ようとする姿勢を暗に非難するニュアンスが強い。'curry favor with the boss/client/professor' という形で頻出し、単なるflatterよりも計算高く立ち回っているという含みを持つ。"
-    },
-    {
-      phrase: "lock in (a rate / gains)",
-      meaning_en: "to secure a favorable price, rate, or profit so that it cannot change or be lost, typically by finalizing an agreement or closing a position",
-      meaning_ja: "(有利な金利・利益などを)確定させる、固定する",
-      examples: [
-        "We locked in the fixed rate before the Fed's next meeting, just in case they surprised the market with another hike.",
-        "After the stock doubled in a month, she decided to lock in her gains rather than risk giving it all back."
-      ],
-      synonyms: [
-        { term: "secure", nuance_ja: "より一般的で幅広い場面(資金・契約・地位など)で使える語。lock inは特に『数値・条件を変動させないよう固定する』という金融的なニュアンスが強い。" },
-        { term: "fix (a rate)", nuance_ja: "金利の文脈でほぼ同義。lock inはより口語的で、利益確定など金利以外の場面にも広く使える。" }
-      ],
-      explanation_ja: "『鍵をかけて閉じ込める(lock in)』というイメージから、有利な条件が変動する前に確定させてしまうという意味で使われる金融の定番表現。住宅ローンの金利選択から、株の含み益を確定させる場面まで幅広く使われ、'lock in a rate/price/profit' という形で頻出する。市場が変動する前に『今のうちに確保しておく』という機を逃さない判断のニュアンスが核心にある。"
-    },
-    {
-      phrase: "hammer out (a deal / the details)",
-      meaning_en: "to reach an agreement or resolve the details of something through prolonged and often difficult discussion or negotiation",
-      meaning_ja: "(交渉・議論の末に)まとめ上げる、詰める",
-      examples: [
-        "The two sides spent all weekend hammering out the final terms of the merger agreement before the Monday morning announcement.",
-        "We're still hammering out the details of the trip — nobody can agree on whether to rent a car."
-      ],
-      synonyms: [
-        { term: "work out", nuance_ja: "より中立的で一般的な語。hammer outは、意見の対立や困難を伴う交渉の末にようやくまとめ上げたという、より骨の折れる過程を強調する。" },
-        { term: "thrash out", nuance_ja: "英国寄りの言い回しでほぼ同義。米国のビジネス英語ではhammer outの方が圧倒的に一般的。" }
-      ],
-      explanation_ja: "鍛冶屋が金属を金槌(hammer)で叩いて形を整える様子が語源で、そこから『粗削りな案を、議論を重ねて実用可能な合意にまで練り上げる』という意味に転じた表現。M&Aの最終条件交渉から友人同士の旅行計画まで、意見の相違を乗り越えて具体的な合意にこぎつける場面で幅広く使われ、'hammer out a deal/agreement/the details' という形が定番。単にagree onよりも、そこに至るまでの労力や摩擦を感じさせる語。"
-    }
-  ],
-  todayQuiz: [
-    { question: "It took three follow-up emails and no shortage of flattery, but she finally ___ the landlord into repainting the apartment before move-in.", choices: ["browbeat", "bribed", "appeased", "cajoled"], answerIndex: 3, explanation: "Cajole means to persuade with flattery and persistent coaxing. Browbeat means to intimidate, bribe means to pay for a favor, and appease means to calm someone by giving in." },
-    { question: "From a handful of offhand comments on the earnings call, the analyst ___ enough to suspect management was quietly walking back its full-year guidance.", choices: ["gleaned", "extrapolated", "substantiated", "belabored"], answerIndex: 0, explanation: "To glean is to gather information gradually from scattered, indirect sources. Extrapolating extends known figures into an unknown future, substantiating means backing a claim with evidence, and belaboring means over-explaining a point." },
-    { question: "The risk team ___ the fund's five biggest positions every single morning, flagging any that drift outside the approved range.", choices: ["keeps a lid on", "sizes up", "keeps tabs on", "signs off on"], answerIndex: 2, explanation: "Keep tabs on means to monitor something routinely. Keep a lid on means to contain or suppress, size up means to assess a person or situation once, and sign off on means to give formal approval." },
-    { question: "The team spent so long debating font sizes on the slide that they ___ and missed the fact that the entire recommendation contradicted last quarter's thesis.", choices: ["put the cart before the horse", "couldn't see the forest for the trees", "fell through the cracks", "missed the boat"], answerIndex: 1, explanation: "Can't see the forest for the trees means being so absorbed in details that you miss the big picture. Putting the cart before the horse means doing things in the wrong order, falling through the cracks means being overlooked, and missing the boat means being too late." },
-    { question: "He's brilliant with numbers but so ___ in meetings that his sharpest insights rarely get heard.", choices: ["diffident", "indifferent", "deferential", "disruptive"], answerIndex: 0, explanation: "Diffident means lacking the confidence to speak up. Indifferent means not caring (a sound-alike trap), deferential means respectfully yielding to others, and disruptive means interrupting proceedings." },
-    { question: "When the intern suggested scrapping the entire deck the night before the pitch, the partner simply smiled and said, '___,' then moved on to the next agenda item.", choices: ["I stand corrected.", "Let me sleep on it.", "That's above my pay grade.", "I'll take it under advisement."], answerIndex: 3, explanation: "I'll take it under advisement is a polite way of noting a suggestion without committing to it. I stand corrected admits a mistake, Let me sleep on it delays a decision overnight, and That's above my pay grade says the decision belongs to someone more senior." }
-  ]
-},
-{
   date: "2026-09-24",
   dateLabel: "2026年9月24日（木）",
   readTimeMin: 20,
@@ -1229,9 +1039,202 @@ const ENGLISH_REPORTS = [
     { question: "Even after auditors flagged the same reconciliation error for the third consecutive quarter, the finance team's ___ attitude — 'it's probably nothing' — suggested they hadn't grasped how serious the pattern actually was.", choices: ["nonchalant", "supercilious", "cavalier", "blithe"], answerIndex: 3, explanation: "Blithe is correct because it specifically describes a careless, seemingly innocent underestimation of risk or seriousness, matching the team's dismissive 'it's probably nothing' response to a recurring, serious problem. Nonchalant is too neutral; it describes calm unconcern without necessarily implying a failure to grasp real danger. Supercilious describes a scornful, superior attitude toward other people, not an underestimation of a risk. Cavalier is close but leans more toward arrogant dismissiveness, whereas the sentence's emphasis on not having 'grasped how serious' the issue is points to blithe's sense of naive unawareness rather than deliberate arrogance." },
     { question: "We don't have exact procurement costs yet, but if you had to ___ it for the board deck, what would you guess — plus or minus 10%?", choices: ["workshop", "backfill", "ballpark", "onboard"], answerIndex: 2, explanation: "Ballpark is correct because it specifically means giving a rough, approximate number, matching the request for a guess 'plus or minus 10%.' Workshop means to refine an idea or document through collaborative discussion, not to produce a numeric estimate. Backfill means filling an empty job position, which has no numerical meaning here. Onboard means integrating a new hire or client into an organization, which is unrelated to estimating a cost figure." }
   ]
+},
+{
+  date: "2026-09-30",
+  dateLabel: "2026年9月30日（水）",
+  readTimeMin: 20,
+  coreItems: [
+    {
+      type: "word", term: "acumen", ipa: "/əˈkjuːmən/", register: "称賛的・フォーマル（専門分野での判断力を評価する場面、人物評や履歴書でも頻出）",
+      meaning_en: "keen and practical judgment, especially in a specific field such as business or finance, often built up through experience",
+      meaning_ja: "（実務経験に裏打ちされた）鋭い判断力、目利きの力、勘所を押さえる力",
+      examples: [
+        "Her sharp acumen for spotting undervalued assets is exactly why the fund brought her onto the deal team.",
+        "It doesn't take an MBA to have business acumen — some of the best negotiators I know never finished college."
+      ],
+      synonyms: [
+        { term: "shrewdness", nuance_ja: "acumenとほぼ同義だが、shrewdnessはやや『抜け目のなさ』という打算的なニュアンスを帯びることがある。acumenは純粋に『判断力の高さ』を称賛する響きが強い。" },
+        { term: "savvy", nuance_ja: "savvyはより口語的でカジュアル。acumenはフォーマルな人物評・履歴書などで好まれる硬めの語。" },
+        { term: "insight", nuance_ja: "insightは一時的な『洞察』を指す広い語。acumenは経験によって磨かれた継続的な判断力そのものを指す。" }
+      ],
+      explanation_ja: "ラテン語のacuere（鋭くする）に由来し、『鋭さ』が語源にある語。単なる知識ではなく、経験によって磨かれた『勘所を押さえる判断力』を指すため、'business acumen'、'financial acumen'、'political acumen'のように特定の分野を表す語と組み合わせて使われることが非常に多い。履歴書や人物評価、投資家のプロフィール紹介などフォーマルな文脈で頻出し、'she has real acumen'のように単独でも使える。学歴よりも実践知を評価するニュアンスが強い語。"
+    },
+    {
+      type: "word", term: "steelman", ipa: "/ˈstiːlmæn/", register: "口語〜分析的フォーマル（議論・意思決定の場で相手の主張を公正に扱う姿勢を示す、近年広まった表現）",
+      meaning_en: "to present the strongest, most persuasive possible version of an argument or position you actually disagree with, before responding to it (the opposite of a strawman)",
+      meaning_ja: "（反対意見の）最も説得力のある形を自ら提示してから反論する、相手の主張を最強の形で捉え直す",
+      examples: [
+        "Before we shoot down the acquisition idea, let's steelman it: what's the best possible case for why this deal makes sense?",
+        "A good debate coach makes you steelman the other side's argument before you're allowed to attack it."
+      ],
+      synonyms: [
+        { term: "give the opposing view its due", nuance_ja: "意味は近いが説明的な言い方。steelmanは1語の動詞として簡潔に使え、ディベートや意思決定の場で好んで使われる比較的新しい造語。" },
+        { term: "pass the Ideological Turing Test (on)", nuance_ja: "より専門的・学術寄りの言い方で、相手の立場を『相手自身が言うように』再現できるかを指す。steelmanはそこまで厳密でなく、単に『最強の反論を想定する』程度の意味で使われることが多い。" }
+      ],
+      explanation_ja: "strawman（藁人形論法＝相手の主張をわざと弱く歪めて攻撃する詭弁）の対義語として近年のディベート・意思決定の文脈で作られた比較的新しい語。鉄（steel）のように『最も頑丈で崩せない形』に相手の主張を組み立て直してから検討する、という発想に由来する。投資委員会（IC）で反対意見を封じ込める前にきちんと検討したことを示すために'let's steelman the bear case'のように使われ、知的に誠実な議論の姿勢を示す語として特にコンサル・VC・PE業界で好まれる。"
+    },
+    {
+      type: "idiom", term: "jump ship", ipa: "", register: "口語〜ビジネス（中立〜やや批判的、転職・離脱を指す場面で頻出）",
+      meaning_en: "to leave a company, project, or team, especially for a better opportunity elsewhere or because things are going badly",
+      meaning_ja: "（会社・プロジェクトを）見限って離れる、見切りをつけて辞める",
+      examples: [
+        "Two of the fund's top analysts jumped ship to a competitor right after the disappointing Q3 results came out.",
+        "I don't blame her for jumping ship — the whole team had been miserable since the reorg."
+      ],
+      synonyms: [
+        { term: "bail (on something)", nuance_ja: "より口語的でカジュアル。jump shipはビジネス文脈でも自然に使えるが、bailはやや友人同士の会話寄り。" },
+        { term: "cut and run", nuance_ja: "既出。jump shipが『(沈みかけた船から)逃げる』個人の転職・離脱に焦点があるのに対し、cut and runは損失を認めて『撤退する』という決断・行動全般を指すことが多い。" },
+        { term: "defect", nuance_ja: "よりフォーマルで重い語。政治的な離反にも使われる硬い語で、jump shipより深刻・裏切り的なニュアンスを帯びる。" }
+      ],
+      explanation_ja: "沈没しかけた船から真っ先に逃げ出す船員のイメージに由来する表現。会社の業績が悪化していたり、プロジェクトが失敗しそうな時に、優秀な人材から順に他社へ移っていく状況を描写する際によく使われる。'rats jumping ship'という比喩が背景にあり、やや否定的なニュアンス（見捨てる、という含み）を帯びることもあるが、単に『良い機会があったので転職した』という中立的な文脈でも日常的に使われる。決算後の人材流出報道などで頻出する定番表現。"
+    },
+    {
+      type: "phrase", term: "Let's not lose the plot here.", ipa: "", register: "口語・会議（中立〜やや強め、議論が脱線・本質を見失いかけている時に使う）",
+      meaning_en: "used to bring a discussion back to its main point when people seem to be getting distracted by minor details or side issues",
+      meaning_ja: "本題を見失わないようにしましょう、話がそれないようにしましょう",
+      examples: [
+        "We can debate the font on the slide later — let's not lose the plot here, the real question is whether the numbers support the thesis.",
+        "I know the pricing detail is annoying, but let's not lose the plot: the bigger risk is that the whole market is shrinking."
+      ],
+      synonyms: [
+        { term: "let's not lose sight of the big picture", nuance_ja: "ほぼ同義でより説明的・フォーマルな言い方。lose the plotの方が口語的で、会議中に軽くたしなめるようなトーンで使いやすい。" },
+        { term: "let's stay focused", nuance_ja: "より穏やかで中立的な言い方。lose the plotはやや苛立ちや焦りのニュアンスを含みうる、より口語的な表現。" }
+      ],
+      explanation_ja: "'lose the plot'は元々『(小説や映画の)筋を見失う』という意味の口語イディオムで、そこから転じて『(議論や状況の)本質・目的を見失う』という意味で広く使われるようになった。イギリス英語ではさらに『正気を失う、おかしくなる』という意味でも使われるが、アメリカのビジネス会議では『些末な点にこだわりすぎて本題を見失わないように』と場を仕切り直す際の決まり文句として定着している。議論の脱線を軌道修正する時に使う、実務で非常に役立つ一言。"
+    }
+  ],
+  adjectives: [
+    {
+      term: "trenchant", ipa: "/ˈtrentʃənt/", register: "称賛的・フォーマル（批評・分析の鋭さを評する書き言葉、レビューや論説で頻出）",
+      meaning_en: "(of comments, criticism, or ideas) expressed in a clear, direct, and incisively critical way that cuts straight to the essential point",
+      meaning_ja: "（批評・意見などが）鋭く歯に衣着せない、痛烈で的を射た",
+      examples: [
+        "The analyst's trenchant critique of the merger thesis convinced half the committee to vote against it.",
+        "Her trenchant op-ed on corporate governance got quoted in three different newsletters this week."
+      ],
+      synonyms: [
+        { term: "incisive", nuance_ja: "既出。incisiveは『鋭さ・的確さ』全般に使える中立的な褒め言葉なのに対し、trenchantはより『批判的・攻撃的な鋭さ』を含意することが多い。" },
+        { term: "scathing", nuance_ja: "既出。scathingは単に『痛烈な非難』を指し必ずしも的を射ているとは限らないが、trenchantは『鋭く、かつ正鵠を射ている』という知的な評価を伴う点が異なる。" },
+        { term: "cutting", nuance_ja: "cuttingは個人攻撃的・意地悪な響きを持ちやすいのに対し、trenchantは論理的・分析的な鋭さを称賛するフォーマルな語。" }
+      ],
+      explanation_ja: "フランス語で『切る』を意味するtrancherに由来し、文字通り『切れ味の良い』批評・議論を形容する。単に厳しいだけでなく、『的確に本質を突いている』という知的な鋭さへの敬意が込められている点がscathingとの違い。新聞の論説、書評、決算分析コメントなど、フォーマルな書き言葉で'trenchant analysis' 'trenchant criticism'のように使われることが多い語。"
+    },
+    {
+      term: "sardonic", ipa: "/sɑːrˈdɒnɪk/", register: "中立〜やや否定的（皮肉っぽい態度・口調を描写する場面、会話・小説どちらでも使われる）",
+      meaning_en: "grimly mocking or cynical in tone, often through dry, sarcastic humor that suggests scorn or disbelief",
+      meaning_ja: "皮肉っぽい、冷笑的な（態度・口調）",
+      examples: [
+        "He gave a sardonic smile when the intern asked if the deal would close by Friday as originally promised.",
+        "Her sardonic sense of humor makes the weekly all-hands meetings almost bearable."
+      ],
+      synonyms: [
+        { term: "cynical", nuance_ja: "cynicalは『人の動機を疑う姿勢・世界観』全般を指すのに対し、sardonicはその場での『表情・口調』に表れる皮肉さを指すことが多い。" },
+        { term: "wry", nuance_ja: "wryはより控えめでユーモラスな皮肉を指し、必ずしも冷笑的とは限らない。sardonicはより辛辣で、時に見下したようなニュアンスを含む。" },
+        { term: "mordant", nuance_ja: "mordantはさらにフォーマルで文語的、かつ『痛烈に鋭い』ユーモアを指す。sardonicより使用頻度は低い。" }
+      ],
+      explanation_ja: "ギリシャ語で『サルデーニャ島の（植物）』を意味する語に由来するとされ、その植物を食べると顔がひきつって笑っているように見える、という伝説から『苦々しい嘲笑』の意味に発展したとされる語源説がある。単なる『面白い皮肉』ではなく、どこか軽蔑や諦めを含んだ冷笑的なトーンを指すため、上司の理不尽な指示に対する同僚の一言や、記者の皮肉めいた質問などを描写する時によく使われる。'a sardonic smile' 'a sardonic remark'のように名詞とセットで頻出する。"
+    },
+    {
+      term: "self-serving", ipa: "/ˌsɛlfˈsɜːrvɪŋ/", register: "批判的・フォーマル（動機や主張を非難する場面、ニュースや議論で頻出）",
+      meaning_en: "acting or done mainly to promote one's own interests, often at the expense of honesty, fairness, or the interests of others",
+      meaning_ja: "自己都合の、我田引水の、自分の利益しか考えていない",
+      examples: [
+        "The board dismissed the CEO's explanation as self-serving — of course he'd argue his own compensation package was fair.",
+        "It's a little self-serving for the incumbent supplier to claim that switching vendors would be 'too risky.'"
+      ],
+      synonyms: [
+        { term: "self-interested", nuance_ja: "self-interestedはより中立的な記述で、必ずしも非難のニュアンスを含まない。self-servingは『不誠実さ』への批判が強く込められる。" },
+        { term: "opportunistic", nuance_ja: "opportunisticは『機会に乗じる』という行動パターンを指すのに対し、self-servingは主張や説明そのものが『自分に都合よく作られている』ことを指す。" },
+        { term: "disingenuous", nuance_ja: "既出。disingenuousは『不誠実さ』一般を指すが、self-servingは特に『自分の利益のため』という動機の側面を強調する点が異なる。" }
+      ],
+      explanation_ja: "誰かの発言・主張・行動を『表向きは正当に聞こえるが、実際は自分の利益を守るためのものだ』と見抜いて批判する時に使う、ビジネスやニュースの分析記事で非常によく使われる語。特に、利害関係者が自分に有利な立場を『客観的な意見』であるかのように語る場面（経営陣の報酬正当化、既得権益者の反対意見など）で頻出し、'a self-serving argument' 'self-serving interpretation'のように名詞を修飾する形が定番。"
+    },
+    {
+      term: "glacial", ipa: "/ˈɡleɪʃəl/", register: "口語〜フォーマル（進行の遅さへの不満・皮肉、ビジネス・日常どちらでも使える）",
+      meaning_en: "extremely slow, especially in a way that is frustrating or seems to make no visible progress (used figuratively about pace, not temperature)",
+      meaning_ja: "（氷河のように）極めて遅い、うんざりするほど進みが遅い",
+      examples: [
+        "The approval process at this bank moves at a glacial pace — we've been waiting six weeks for a simple sign-off.",
+        "Progress on the merger integration has been glacial ever since legal got involved."
+      ],
+      synonyms: [
+        { term: "sluggish", nuance_ja: "sluggishは『活気がない、鈍い』動きを幅広く指すのに対し、glacialは『信じられないほど遅い』という誇張的な不満のニュアンスがより強い。" },
+        { term: "plodding", nuance_ja: "ploddingは『地道だが遅い』という作業のペースを描写するのに近く、glacialほど大げさな苛立ちは含まない。" },
+        { term: "interminable", nuance_ja: "interminableは『終わりが見えない』という時間の長さそのものへの不満を表し、glacialは『遅さ・進まなさ』そのものに焦点がある点が異なる。" }
+      ],
+      explanation_ja: "本来は『氷河の』という意味の語だが、氷河が何百年もかけてわずかに動く様子から転じて、『うんざりするほど遅い進行』を誇張気味に表す比喩表現として日常・ビジネス両方で非常によく使われる。'at a glacial pace'という形が定番で、社内の承認プロセスや官僚的な手続き、交渉の停滞などを皮肉交じりに表現する時にぴったりの語。temperature（気温）の意味と混同しないよう注意。"
+    }
+  ],
+  collocations: [
+    {
+      phrase: "back-load (costs / compensation)",
+      meaning_en: "to arrange payments, costs, or work so that a larger portion falls later in a schedule or period, rather than being spread evenly or concentrated early on",
+      meaning_ja: "（費用・報酬などを）後ろ倒しにする、後半に偏らせる",
+      examples: [
+        "The new comp plan back-loads a big chunk of the bonus to Q4, which the sales team isn't thrilled about.",
+        "We back-loaded most of the renovation costs to next fiscal year to keep this year's budget on track."
+      ],
+      synonyms: [
+        { term: "defer (payments / costs)", nuance_ja: "deferは単に『先送りにする』ことを指す一般的な語。back-loadは『スケジュール全体の中で後半に重みを寄せる』という配分の偏りを強調するニュアンスがある。" },
+        { term: "front-load", nuance_ja: "既出、対義語。back-loadはその逆で、負担やコストを意図的に後半に集中させる。" }
+      ],
+      explanation_ja: "front-load（前半に集中させる）の対義語として使われる語で、報酬体系や予算配分、契約のペイメントスケジュールなど『いつ負担・支払いが発生するか』を議論する時に頻出する。例えば新人の給与体系を'back-loaded'にすると、最初は低く後から上がっていく設計を指す。予算やファイナンスの会議で'let's back-load the capex'のように動詞として使われる。"
+    },
+    {
+      phrase: "close a round (of funding)",
+      meaning_en: "to complete a financing transaction in which a company raises money from investors, marking the point at which funds are officially committed and the deal is finalized",
+      meaning_ja: "（資金調達の）ラウンドを完了させる、クロージングする",
+      examples: [
+        "The startup closed its Series B round at a $200 million valuation, well above what the founders expected.",
+        "We're hoping to close this round by the end of the quarter, but two investors are still doing diligence."
+      ],
+      synonyms: [
+        { term: "finalize a deal", nuance_ja: "より一般的な言い方で資金調達に限らず使える。close a roundはベンチャー投資・資金調達の文脈に特化した定番表現。" },
+        { term: "wrap up financing", nuance_ja: "closeよりもやや口語的。close a roundの方がVC・PE業界の会話や報道でより標準的に使われる。" }
+      ],
+      explanation_ja: "ベンチャーキャピタルやプライベートエクイティの世界で、資金調達の交渉・デューデリジェンスが完了し、投資契約と送金が正式に完了した状態を'close'と呼ぶ。'raise a round'（調達活動をする）と'close a round'（調達を完了させる）は似ているが異なる段階を指す点に注意。'the round is closing next week'のように進行形でも使われ、資金調達のニュースやピッチの会話で非常に頻出する実務表現。"
+    },
+    {
+      phrase: "push out (a deadline / a timeline)",
+      meaning_en: "to move a scheduled date, deadline, or timeline to a later point, typically because more time is needed",
+      meaning_ja: "（締め切り・スケジュールを）後ろ倒しにする、延期する",
+      examples: [
+        "Legal asked us to push out the closing date by two weeks to finish the last round of due diligence.",
+        "We had to push the launch out to January after the vendor missed their delivery date."
+      ],
+      synonyms: [
+        { term: "push back", nuance_ja: "ほぼ同義でよく使われる。push outとpush backはどちらも『後ろ倒しにする』意味で自由に使い分けられるが、push backは日付そのものに、push outはタイムライン全体に使われることがやや多い印象がある。" },
+        { term: "delay", nuance_ja: "delayはより中立的でフォーマルな一般語。push out/push backは口語的な会議・メールで好まれる、より実務的な言い方。" }
+      ],
+      explanation_ja: "スケジュールやプロジェクトの締め切りを後ろにずらす、という非常に日常的なビジネス表現。'push out'は日付や期限を目的語にとる形（'push out the deadline'）で使われ、'push back'とほぼ同義で置き換え可能。メールや会議で'can we push this out a week?'のようにカジュアルかつ頻繁に使われ、フォーマルな'postpone'よりも実務の現場でこなれた響きを持つ。"
+    },
+    {
+      phrase: "buy (some) time",
+      meaning_en: "to do something that delays a problem, decision, or deadline in order to gain a little more time to prepare, decide, or find a solution",
+      meaning_ja: "時間を稼ぐ、猶予を得る",
+      examples: [
+        "Offering a partial refund bought us some time to actually fix the underlying issue with the product.",
+        "The company's request for a covenant waiver was really just an attempt to buy time before the inevitable restructuring."
+      ],
+      synonyms: [
+        { term: "stall (for time)", nuance_ja: "stallはより否定的で、意図的に引き延ばす・言い訳をするというネガティブなニュアンスが強い。buy timeはより中立的で、正当な目的の場合にも使える。" },
+        { term: "kick the can down the road", nuance_ja: "既出。kick the can down the roadは『問題の解決を先送りにするだけで根本解決にならない』という批判的な含みが強いのに対し、buy timeは『時間を稼ぐこと自体が有効な戦略』というニュアンスでも使われる、より中立的な表現。" }
+      ],
+      explanation_ja: "文字通り『時間を買う』という発想の口語表現で、差し迫った問題や決断を先延ばしにして、対応の準備をするための猶予を得る、という意味で日常的に使われる。ビジネスでは、リストラや倒産の危機に瀕した企業が銀行との交渉で猶予を得る場面や、プロダクトの不具合に対して暫定対応でしのぐ場面など幅広く使われる。'buy us a few more days/weeks'のように具体的な期間と一緒に使われることも多い。"
+    }
+  ],
+  todayQuiz: [
+    { question: "After ten years running distressed-debt portfolios, she has real financial ___ — she can spot a mispriced bond before anyone else on the desk.", choices: ["insight", "acumen", "savvy", "shrewdness"], answerIndex: 1, explanation: "Acumen is correct because it specifically names the trained, experience-built judgment described by 'ten years running distressed-debt portfolios,' and pairs naturally with 'financial' in formal professional contexts. Insight suggests a single flash of understanding rather than an ongoing, honed capability, so it undersells the years of practice described. Savvy is too casual for this formal register and usually describes general street-smart competence rather than deep professional judgment. Shrewdness implies a degree of cunning or self-interest that doesn't fit the purely skill-based praise in this sentence." },
+    { question: "When the startup's runway dropped to three months, two of the four founding engineers ___ to take stable jobs at bigger companies.", choices: ["bailed", "defected", "jumped ship", "cut and run"], answerIndex: 2, explanation: "Jumped ship is correct because it precisely describes leaving a struggling venture for a safer opportunity elsewhere, matching 'to take stable jobs at bigger companies.' Defected implies a serious ideological or political betrayal, far too dramatic a word for an ordinary job change. Cut and run describes abandoning a course of action to avoid further losses, but it emphasizes giving up rather than moving toward something better, which doesn't fit 'to take stable jobs.' Bailed could technically fit grammatically, but it's a much more casual, throwaway word that doesn't match the measured, professional tone of describing engineers leaving for new positions." },
+    { question: "Guys, ___ — the real issue is whether we hit the March deadline, not what font we use on the cover slide.", choices: ["I stand corrected.", "That's not a hill I want to die on.", "Let's take a step back.", "Let's not lose the plot here."], answerIndex: 3, explanation: "Let's not lose the plot here is correct because it is used exactly to redirect a group back to the main point when they're getting distracted by a minor detail, matching the contrast between the font and the deadline. I stand corrected is used to admit you personally were wrong about something, not to redirect a group discussion. That's not a hill I want to die on signals giving up on a minor point yourself, not calling out others for focusing on one. Let's take a step back suggests pausing to reconsider the broader situation before deciding, which is close but doesn't specifically call out the group for fixating on a trivial detail the way losing the plot does." },
+    { question: "The columnist's ___ takedown of the merger didn't just criticize the deal — it dismantled every assumption in the press release, point by point, with precise, almost surgical logic.", choices: ["trenchant", "scathing", "sardonic", "incisive"], answerIndex: 0, explanation: "Trenchant is correct because it captures both sharp criticism and precise, logical rigor, matching 'dismantled every assumption... point by point, with precise, almost surgical logic.' Scathing emphasizes the harshness and severity of the criticism but doesn't specifically imply logical precision. Sardonic describes a mocking, cynical tone, not analytical rigor or point-by-point argumentation. Incisive means sharply perceptive but is more neutral and doesn't necessarily involve criticizing or dismantling something, so it undersells the critical force of a 'takedown.'" },
+    { question: "When asked whether the layoffs were really about 'efficiency,' the former employee gave a ___ laugh and said, 'Sure, if by efficiency you mean cutting the people who complained the loudest.'", choices: ["glacial", "sardonic", "self-serving", "trenchant"], answerIndex: 1, explanation: "Sardonic is correct because it describes exactly this kind of bitter, mocking laugh paired with a cynical remark. Glacial describes extreme slowness, which has no connection to a laugh or tone of voice. Self-serving describes a motive or argument crafted to benefit oneself, not the quality of a laugh. Trenchant describes sharp, incisive criticism or analysis, which doesn't naturally describe the sound or manner of a laugh." },
+    { question: "To make this year's numbers look better for the board, the CFO decided to ___ most of the integration costs — pushing the bulk of the expense recognition into next year instead.", choices: ["front-load", "write down", "true up", "back-load"], answerIndex: 3, explanation: "Back-load is correct because it precisely means shifting the weight of costs to a later period, matching 'pushing the bulk of the expense recognition into next year.' Front-load is the opposite of what's described, concentrating costs earlier rather than later. Write down means permanently reducing the recorded book value of an asset or cost, which is unrelated to the timing of when an expense is recognized. True up means adjusting figures to match actual results, not deliberately deferring recognition to a later period." }
+  ]
 }
 ];
-// ── END_DATA ──  (last sync: 2026-09-29 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-09-30 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
