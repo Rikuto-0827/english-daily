@@ -243,201 +243,6 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-24",
-  dateLabel: "2026年9月24日（木）",
-  readTimeMin: 20,
-  coreItems: [
-    {
-      type: "word", term: "vest", ipa: "/vɛst/", register: "人事・報酬制度（フォーマル、株式報酬・年金の文脈で頻出）",
-      meaning_en: "for a right or benefit (such as stock options, equity, or a pension) to become fully and irrevocably owned by someone, typically after a set period of time or upon meeting certain conditions",
-      meaning_ja: "権利・利益（ストックオプション、株式報酬、年金など）が一定期間の経過や条件達成により、正式かつ取り消し不能な形で本人のものになること（権利確定）",
-      examples: [
-        "Her RSUs vest over four years with a one-year cliff, so if she leaves before her first anniversary, she walks away with nothing.",
-        "The pension doesn't vest until you've completed five years of service, which is exactly why so many people leave right before that milestone."
-      ],
-      synonyms: [
-        { term: "accrue", nuance_ja: "accrueは時間経過とともに『徐々に積み上がっていく』ことに焦点があり（利息や休暇日数など）、vestのような『ある時点で権利が確定し、取り消せなくなる』という法的な区切りの意味合いは薄い。" },
-        { term: "mature", nuance_ja: "matureは債券や保険など『満期を迎えて現金化・履行可能になる』金融商品に使われることが多く、人の報酬・権利がvestするという人事文脈とは使われ方が異なる。" },
-        { term: "kick in", nuance_ja: "kick inはより口語的で、『(条項や効果が)発動し始める』という一般的な意味。vestが持つ『段階的な権利確定スケジュール』という制度的な厳密さは持たない。" }
-      ],
-      explanation_ja: "vestはもともと『衣服を着せる』という意味のラテン語vestireに由来し、そこから『権利や財産を(人に)帰属させる』という法律用語に転じた。MBAやCPAの文脈では特にストックオプション・RSU(譲渡制限付株式)の\"vesting schedule\"(権利確定スケジュール)でほぼ毎日のように登場する概念で、4年かけて均等に、あるいは1年目に一気に25%(クリフ)といった形で設計されることが多い。日本語の『権利確定』は正確だが硬い訳語で、実務会話では動詞のまま\"my options haven't vested yet\"のように使うのが自然。年金(pension)の文脈でも同様に使われ、転職を考える際に必ず出てくる実務語彙。"
-    },
-    {
-      type: "word", term: "moot", ipa: "/muːt/", register: "議論・会議（フォーマル〜中立、『もはや意味がない』論点を指摘する場面）",
-      meaning_en: "no longer relevant or worth discussing because the situation has already changed, making the original question or debate pointless",
-      meaning_ja: "状況がすでに変化してしまったため、議論すること自体がもはや意味をなさない(論点そのものが無意味になった)こと",
-      examples: [
-        "We spent an hour debating which vendor to pick, but it turned out to be moot — the board had already signed with someone else last week.",
-        "Whether we should have raised prices in Q1 is kind of moot at this point; the quarter's closed and we're already planning Q3."
-      ],
-      synonyms: [
-        { term: "irrelevant", nuance_ja: "irrelevantは単に『関係がない』という一般的な語で、mootが持つ『状況が変わったことで議論の前提そのものが崩れた』という時間的な経緯のニュアンスはない。" },
-        { term: "academic", nuance_ja: "academicも『実務上意味がない、理論上の話』を指す点でmootに近いが、こちらは『実行不可能・現実離れしている』というニュアンスがやや強く、mootのような『すでに決着がついた』という含みは薄い。" },
-        { term: "beside the point", nuance_ja: "議論の本筋からずれている、というニュアンスで、mootの『そもそも問う意味がなくなった』という決定的な無効化のニュアンスより穏やか。" }
-      ],
-      explanation_ja: "mootは元々中世英語で『集会・議会』を意味した名詞(moot hall＝集会場)で、そこから『議論すべき論点』という形容詞の意味が生まれた。ややこしいのは、アメリカ英語では『もはや議論する意味がない』という意味で使われるのに対し、法学部などでは今も\"moot court\"(模擬裁判)のように『議論のための、実践的な』という真逆に近いニュアンスでも生き残っている点。ビジネス会話では99%\"the point is moot\"＝『その論点はもう意味がない』の用法で、会議で誰かが過去の判断を蒸し返した時に、やんわり切り上げる決まり文句として非常によく使われる。"
-    },
-    {
-      type: "idiom", term: "put lipstick on a pig", ipa: "", register: "口語・やや皮肉（表面だけ取り繕う行為を批判する）",
-      meaning_en: "to make superficial or cosmetic improvements to something that is fundamentally flawed or unattractive, without fixing the underlying problem",
-      meaning_ja: "本質的な問題を解決せず、うわべだけを取り繕って良く見せようとすること（皮肉を込めて使う）",
-      examples: [
-        "Rebranding the failing product line with a slicker logo and a new tagline is just putting lipstick on a pig if the underlying technology is still years behind the competition.",
-        "The landlord repainted the lobby right before the open house, but let's be honest, that's lipstick on a pig — the elevator's been broken for six months."
-      ],
-      synonyms: [
-        { term: "window dressing", nuance_ja: "window dressingは特に財務諸表や決算を実態より良く見せる会計操作を指すことが多く、より『意図的な粉飾』のニュアンスが強い。lipstick on a pigはより広く、製品・提案・状況全般の表面的な取り繕いに使える。" },
-        { term: "a band-aid solution", nuance_ja: "band-aid solutionは『一時しのぎ』に焦点があり、いずれ本格対応が必要という含みだが、lipstick on a pigほど『どうやっても醜いものは醜いままだ』という辛辣な皮肉のトーンは持たない。" },
-        { term: "a cosmetic fix", nuance_ja: "より直接的で説明的な言い方。lipstick on a pigが持つ『どんなに着飾っても中身は変わらない』という視覚的な皮肉のインパクトは薄い。" }
-      ],
-      explanation_ja: "この表現はアメリカの政治演説や広告業界で古くから使われてきた比喩で、『どれだけ口紅を塗っても、豚は豚のままだ』という身も蓋もない現実を突きつけるフレーズ。2008年の米大統領選でサラ・ペイリンが対立候補の政策を評して使い、一気に全米で有名になった経緯もある。ビジネスでは、業績不振の事業を派手なプレスリリースで取り繕おうとする経営陣や、根本的な欠陥のある製品にUIだけ手を入れるプロダクトチームを揶揄する際に、皮肉たっぷりに使われる。かなり強い表現なので、社内の内輪の会話や記事の論調としては自然だが、本人に面と向かって使うと角が立つ点は要注意。"
-    },
-    {
-      type: "phrase", term: "Can we take this to the parking lot?", ipa: "", register: "会議進行・脱線防止（ビジネス口語、テック/コンサル業界で頻出）",
-      meaning_en: "used to suggest that a topic being discussed is important but off-track, and should be set aside to be discussed separately after the current meeting, often noted on a literal or figurative 'parking lot' list",
-      meaning_ja: "議論している話題が大事ではあるものの本題から逸れているため、いったん脇に置いて別途話し合おうと提案する際の決まり文句（『パーキングロット』というリストに書き留めて後で扱う、会議運営の慣習に由来）",
-      examples: [
-        "That's a great question about the pricing model, but we've only got ten minutes left — can we take this to the parking lot and circle back after the demo?",
-        "Every time compliance brings up the audit findings, the CFO says, 'Let's take that to the parking lot,' and somehow it never actually gets revisited."
-      ],
-      synonyms: [
-        { term: "let's table that", nuance_ja: "table thatはアメリカ英語では『後回しにする』意味だが（イギリス英語では逆に『今すぐ議題に上げる』の意味になるため注意）、parking lotほど『専用のリストに記録して後で必ず戻る』という運営上の仕組みは含意しない。" },
-        { term: "let's park that (for now)", nuance_ja: "既出の表現とほぼ同義。parking lotの方が『駐車場に停めておく』という視覚的なイメージがより明示的で、会議ファシリテーションの文脈でよりカジュアルに使われる。" },
-        { term: "let's circle back to that separately", nuance_ja: "『後で戻る』という行為そのものを直接的に述べる言い方で、parking lotが持つ『いったん脇に停めておく』という一時保留の比喩的な軽さはない。" }
-      ],
-      explanation_ja: "parking lot（駐車場）という比喩は、ファシリテーションの手法として1990年代以降アメリカの企業研修やアジャイル開発のスクラムミーティングで広まった。ホワイトボードの隅に実際に『Parking Lot』という欄を作り、本題から逸れた質問やアイデアをそこに書き留めておいて、会議の終わりや別の機会に扱う、という具体的な運用が背景にある。既出の\"let's park that (for now)\"と意味は近いが、\"take this to the parking lot\"の方がより明示的にファシリテーションの型（誰かが書き留める前提）を連想させ、テック企業やコンサルのミーティングでは名詞としても動詞句としても非常によく使われる。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "ancillary", ipa: "/ˈænsəleri/", register: "分析・財務（フォーマル、主要事業に対する『付随的』な位置づけを説明する場面）",
-      meaning_en: "providing additional support or a secondary function to something more central or important, rather than being the main focus itself",
-      meaning_ja: "主要な事業・目的を補助する付随的な位置づけであること（本業ではなく、それを支える二次的な機能・収益源など）",
-      examples: [
-        "Baggage fees, seat upgrades, and onboard Wi-Fi are all ancillary revenue for airlines — and for some carriers, it's now more profitable than the actual ticket price.",
-        "The consulting arm was originally just an ancillary service to support software sales, but it now generates a third of total revenue."
-      ],
-      synonyms: [
-        { term: "supplementary", nuance_ja: "supplementaryは『補足的に追加された』という一般的な語で、ancillaryが金融・決算報告で持つ『本業に対する二次的な収益源・機能』という専門的な位置づけの含意はやや弱い。" },
-        { term: "secondary", nuance_ja: "secondaryは単に『順位が二番目』という中立的な意味合いが強く、ancillaryのように『本体を支える付随的な役割』という機能面の関係性までは必ずしも含意しない。" },
-        { term: "peripheral", nuance_ja: "peripheralは『中心から外れた、周辺的な』という距離感・重要度の低さを強調し、ancillaryほど『本業と密接に結びついて支えている』という積極的な補完関係のニュアンスは薄い。" }
-      ],
-      explanation_ja: "ancillaryはラテン語で『召使い』を意味するancillaに由来し、『主人(本体)に仕える存在』というイメージが今の『付随的』という意味に残っている。決算説明会やIR資料では\"ancillary revenue\"(付随収益)という形で航空会社・ホテル・スポーツ興行などの業界で頻出し、本業の利益率が薄い業界ほど、このancillary revenueの伸びが株価を左右する重要な指標として注目される。日本語の『副次的』と近いが、英語のancillaryは特に『財務・事業構造の分析』という文脈で使われる比率が高く、MBAのケーススタディやIR資料を読む際に必須の語彙。"
-    },
-    {
-      term: "profligate", ipa: "/ˈprɒflɪɡət/", register: "強い批判・財政/経営（フォーマル、無駄遣い・放漫経営を非難する場面）",
-      meaning_en: "recklessly wasteful with money or resources, spending far more than is reasonable or necessary",
-      meaning_ja: "金銭や資源を無謀なまでに浪費する、放漫な（財政・経営姿勢を強く非難する語）",
-      examples: [
-        "After two years of profligate spending on office renovations and executive retreats, the startup ran out of runway before it ever hit product-market fit.",
-        "Critics called the state's profligate borrowing during the boom years the real reason it couldn't handle a single bad quarter of tax revenue."
-      ],
-      synonyms: [
-        { term: "wasteful", nuance_ja: "wastefulは中立的で日常的な『無駄遣い』を指し、profligateが持つ『歯止めが利かないほど放漫で、道徳的にも非難されるべき』という強い批判のニュアンスは薄い。" },
-        { term: "extravagant", nuance_ja: "extravagantは『豪華・派手な出費』そのものへの焦点が強く、必ずしも『破綻を招くほど無責任』という含意は伴わない。profligateはより深刻な財政的無責任さを非難する語。" },
-        { term: "reckless (spending)", nuance_ja: "recklessは『無謀さ』一般を指す語で、必ずしも金銭に限定されない。profligateは金銭・資源の浪費という対象がより明確な語。" }
-      ],
-      explanation_ja: "profligateはラテン語で『打ち倒された、堕落した』を意味する語に由来し、単なる『無駄遣い』を超えて『節度を失った放蕩・堕落』という道徳的な非難のニュアンスを強く伴う。決算やニュース報道では、経営破綻した企業の過去の放漫経営や、財政赤字を膨らませた政府の歳出を批判する文脈で頻出し、\"profligate spending\"という組み合わせで特によく使われる。単に『無駄遣い』を言いたいだけならwastefulで十分だが、profligateを使うことで『本来なら許されないレベルの、責任放棄に近い浪費』という強い含みを伝えられる。"
-    },
-    {
-      term: "fickle", ipa: "/ˈfɪkəl/", register: "人物評・市場心理（中立〜批判、あてにならない移り気を形容）",
-      meaning_en: "changing frequently and unpredictably in one's opinions, loyalties, or affections, especially in a way that makes someone or something hard to rely on",
-      meaning_ja: "意見・忠誠心・好みなどがころころと変わりやすく、あてにならないこと（人にも市場・消費者心理にも使う）",
-      examples: [
-        "Consumer loyalty in fast fashion is famously fickle — a brand can be everywhere on social media one season and completely forgotten the next.",
-        "The board has been fickle about the AI strategy, greenlighting three different vendors in eighteen months without ever committing to one."
-      ],
-      synonyms: [
-        { term: "capricious", nuance_ja: "capriciousは『気まぐれ』という個々の判断・行動の唐突さに焦点があり、fickleのような『特定の対象への忠誠・好みが移り変わる』という継続的な関係性のニュアンスはやや弱い。" },
-        { term: "volatile", nuance_ja: "volatileは主に市場価格や感情の『振れ幅の大きさ』そのものを指し、fickleが含む『何かへの支持・愛着が長続きしない』という対人的・消費者的な不誠実さのニュアンスは薄い。" },
-        { term: "erratic", nuance_ja: "erraticは行動や動きに一貫したパターンがなく予測不能であることを指し、fickleのように『特定の対象を裏切るように乗り換える』という方向性は必ずしも含まない。" }
-      ],
-      explanation_ja: "fickleはもともと古英語で『欺瞞的な、狡猾な』という意味の語に由来し、そこから『信頼できないほどコロコロ変わる』という現在の意味に発展した。マーケティングやコンサルティングの文脈では\"fickle consumer\"(気まぐれな消費者)という組み合わせで非常に頻出し、ブランドロイヤルティの脆さを語る際の定番語。人間関係についても\"a fickle friend\"のように使われ、必ずしも悪意はないが『頼りにならない、あてにできない』というニュアンスを伴う点が、単なる『変化』を表す語との違い。"
-    },
-    {
-      term: "peremptory", ipa: "/pəˈrɛmptəri/", register: "人物評・発言評（フォーマル、高圧的・一方的な命令口調を批判）",
-      meaning_en: "issuing orders or making decisions in an abrupt, commanding way that does not allow for discussion, disagreement, or refusal",
-      meaning_ja: "有無を言わさぬ、高圧的で一方的な命令口調・態度（反論や議論の余地を与えない）",
-      examples: [
-        "The peremptory one-line email — 'Have this on my desk by 5' — landed badly with a team that had just spent the weekend on the analysis.",
-        "She has a peremptory way of ending meetings the second she's heard enough, which junior analysts find intimidating even when her calls are usually right."
-      ],
-      synonyms: [
-        { term: "imperious", nuance_ja: "imperiousは『皇帝のような』尊大さ・支配欲そのものに焦点があり、peremptoryが指す『議論の余地を与えず一方的に指示を下す』という具体的な命令のスタイルよりも、人格全体の傲慢さを広く形容する。" },
-        { term: "curt", nuance_ja: "curtは単に『言葉数が少なく素っ気ない』という口調の短さを指し、peremptoryが含む『命令・決定を有無を言わさず下す』という権威的な響きは必ずしも伴わない。" },
-        { term: "dictatorial", nuance_ja: "dictatorialはより強く、独裁的な支配構造そのものを非難する語で、peremptoryのような『特定の一つの発言・指示のスタイル』を指す限定的な使い方とは規模感が異なる。" }
-      ],
-      explanation_ja: "peremptoryはもともと『妨げられない、決定的な』という意味のラテン語peremptoriusに由来し、法律用語としては今も\"peremptory challenge\"(陪審員候補を理由なく忌避する権利)という形で使われている。日常のビジネス英語では、上司や取引先が『説明も相談もなく、一方的に結論だけを言い渡す』話し方・書き方を批判的に描写する際に使われ、特にメールの一文が\"Just get it done.\"のように短く高圧的な場合に\"a peremptory tone\"と評される。フォーマルな語感を持ちながらも、人物評として日常的な会話にも登場する、覚えておくと便利な語。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "mark to market",
-      meaning_en: "to adjust the recorded value of an asset or portfolio to reflect its current market price, rather than its original purchase price",
-      meaning_ja: "資産やポートフォリオの帳簿価格を、取得原価ではなく現在の市場価格に基づいて再評価すること（時価評価）",
-      examples: [
-        "The fund marks its holdings to market every night, so a bad afternoon in equities shows up in the NAV before the market even closes.",
-        "Once we mark the building to market, the balance sheet is going to look a lot worse than it did under historical cost."
-      ],
-      synonyms: [
-        { term: "revalue", nuance_ja: "revalueはより一般的な『再評価する』という語で、mark to marketが持つ『現在の市場価格を厳密な基準として用いる』という会計手法特有の含意は持たない。" },
-        { term: "fair-value (something)", nuance_ja: "会計基準上の\"fair value accounting\"に近い言い方で、ほぼ同義だが、mark to marketの方が実務・トレーディングの現場でより口語的に使われる。" }
-      ],
-      explanation_ja: "mark to market(時価会計、時に\"MTM\"と略される)は、資産を取得時の価格のまま帳簿に残すhistorical cost会計と対をなす概念で、特にヘッジファンドやトレーディング部門では毎営業日、時には日中に何度も評価替えが行われる。2008年の金融危機では、下落し続ける住宅ローン担保証券を時価評価せざるを得なかったことが金融機関の損失を一気に表面化させ、mark-to-marketのルール自体が政治的な論争の的になった歴史がある。日常会話でも比喩的に『現実を直視する』という意味で\"let's mark our expectations to market\"のように使われることがあり、覚えておくと会話の幅が広がる。"
-    },
-    {
-      phrase: "ring-fence (funds / a division)",
-      meaning_en: "to formally separate and protect a specific set of funds, assets, or business units from being used for other purposes or affected by other risks",
-      meaning_ja: "特定の資金・資産・事業部門を、他の用途やリスクから隔離して保護すること（他に流用・巻き込まれないよう囲い込む）",
-      examples: [
-        "Regulators required the bank to ring-fence its retail deposits from the investment banking arm after the crisis, so that trading losses couldn't touch ordinary customers' savings.",
-        "We ring-fenced the marketing budget for the product launch so it wouldn't get quietly reallocated the next time the CFO wanted to cut costs."
-      ],
-      synonyms: [
-        { term: "wall off", nuance_ja: "wall offは物理的・比喩的に『壁で仕切る』という直接的な言い方で、ring-fenceほど規制・ガバナンス文脈での正式な響きは持たない。" },
-        { term: "earmark", nuance_ja: "earmarkは『特定の用途のために取っておく』という予算配分の意味合いが強く、ring-fenceが持つ『他のリスクから守る・侵食させない』という防御的なニュアンスはやや弱い。" }
-      ],
-      explanation_ja: "ring-fence(囲い込む)はもともと農地を柵で囲うイメージに由来し、イギリスの銀行規制(2013年のVickers改革など)で\"ring-fencing\"という言葉が広く使われるようになったことから、金融業界の標準語彙として定着した。個人の小売預金を守るために投資銀行部門の高リスク業務と法人格・資本を分離する規制の文脈が最も典型的だが、企業のM&Aや事業再編でも『特定の負債・資産を切り離して保護する』という意味で日常的に使われる。日本語の『分離』『隔離』よりも、囲い込んで『他から一切手を出させない』という強い防御姿勢のニュアンスが強い点がポイント。"
-    },
-    {
-      phrase: "peg (a price / a rate) to a benchmark",
-      meaning_en: "to fix or link the value, level, or rate of one thing directly to another, so that it moves in tandem with that reference point",
-      meaning_ja: "何かの価値・水準・レートを特定の指標や基準に連動させて固定すること",
-      examples: [
-        "The supplier agreement pegs steel prices directly to the LME benchmark, with no cap or floor — when the index moves 5%, our purchase price moves exactly 5% the next day.",
-        "Hong Kong has pegged its currency to the U.S. dollar for decades, which limits how much its central bank can independently adjust interest rates."
-      ],
-      synonyms: [
-        { term: "tie (something) to", nuance_ja: "tie toはより一般的で日常的な言い方。pegは特に為替レート・給与・価格など『数値的な連動』を示す場面で使われる、より専門的・金融的な語。" },
-        { term: "index (something) to", nuance_ja: "indexは特に物価指数や賃金など、統計的な指標に自動的に連動させる仕組みを指すことが多く(インデックス連動)、pegより『一定の計算式で緩やかに調整される』という含みが強く、pegほどの厳密な一対一の固定関係は必ずしも意味しない。" }
-      ],
-      explanation_ja: "pegはもともと『杭で固定する』という意味の語で、そこから『ある値を別の値に固定・連動させる』という金融用語に転じた。最も有名な用法は\"pegged exchange rate\"(固定為替相場制)で、香港ドルや(かつての)中国人民元のように自国通貨を米ドルなど特定通貨に固定する制度を指す。企業の報酬制度やM&Aの条件交渉でも\"peg the earnout to revenue targets\"のように頻出し、CPA・MBA保持者であれば特に契約書やターム・シートで目にする機会が多い実務語彙。"
-    },
-    {
-      phrase: "call in a favor",
-      meaning_en: "to ask someone to do something for you in return for a favor you previously did for them, especially when you need their help urgently",
-      meaning_ja: "以前相手にしてあげた恩を根拠に、見返りとして今何かをしてほしいと頼むこと（貸しを回収する）",
-      examples: [
-        "We were three weeks behind on the audit, so the partner called in a favor with a former colleague at the client to get the documents expedited.",
-        "I had to call in a favor from my old roommate, who now works at the bank, just to get someone to actually look at our loan application."
-      ],
-      synonyms: [
-        { term: "cash in a favor", nuance_ja: "ほぼ同義で交換可能。cash inの方が『貯めていたものを現金化する』という比喩がより明確に立ち、call inよりわずかに口語的。" },
-        { term: "pull some strings", nuance_ja: "pull some stringsは『裏で人脈やコネを使って便宜を図る』という意味で、必ずしも過去に貸しを作った相手である必要はなく、地位や権力を使う点に焦点がある。call in a favorは明確に『過去の恩』が前提にある。" }
-      ],
-      explanation_ja: "favorを\"call in\"するという表現は、『貸し』を銀行の預金や借用証書のように捉え、必要なときに『引き出す・回収する』というメタファーに基づいている。政治の世界では\"calling in favors\"は根回しや貸し借りの構造を語る際の定番表現で、報道でもよく使われる。ビジネスの実務でも、規制当局や取引先との人脈を『いざという時のための貸し』として意識的に築いておく文化があり、この表現を知っておくと、単なる「頼み事をする」以上の、人間関係の力学を含んだニュアンスを理解できる。"
-    }
-  ],
-  todayQuiz: [
-    { question: "Under the new plan, your stock options ___ over four years, with 25% becoming yours after the first twelve months.", choices: ["accrue", "vest", "mature", "kick in"], answerIndex: 1, explanation: "Vest is correct because it refers to stock options becoming irrevocably owned after a set schedule. Accrue describes something gradually accumulating over time, like interest, not a legal ownership event. Mature is used for financial instruments like bonds reaching their payoff date, not for options becoming owned by an employee. Kick in describes a clause or effect starting to apply, but doesn't carry the specific vesting-schedule meaning used in compensation plans." },
-    { question: "Now that the client has already signed with our competitor, whether we should have lowered our price last month is ___ .", choices: ["irrelevant", "academic", "moot", "beside the point"], answerIndex: 2, explanation: "Moot is correct because the situation has already changed, making the prior debate pointless to revisit now. Irrelevant just means unrelated, without the sense that events made the question outdated. Academic suggests a discussion is only theoretical or impractical, not that circumstances have overtaken it. Beside the point means off-topic from the current discussion, not that the entire question has been rendered pointless by events." },
-    { question: "The company's core product has had the same underlying performance issues for two years; renaming it and giving it a shinier UI is just ___ .", choices: ["window dressing", "a band-aid solution", "a cosmetic fix", "putting lipstick on a pig"], answerIndex: 3, explanation: "Putting lipstick on a pig is correct because it specifically means dressing up something fundamentally flawed or ugly without fixing the core problem, matching a shinier UI on a broken product. Window dressing usually refers to manipulating financial statements or reports to look better, not a product's actual design. A band-aid solution implies a temporary fix that at least addresses the problem short-term, but a cosmetic rename fixes nothing at all. A cosmetic fix is a plausible literal description, but it isn't the sharper, more idiomatic choice being tested here." },
-    { question: "This pricing question deserves real discussion, but we're five minutes from the end of the call — let's ___ and make sure someone actually writes it down so we come back to it next time.", choices: ["take this to the parking lot", "table that", "circle back to that separately", "park that for now"], answerIndex: 0, explanation: "Take this to the parking lot is correct because it specifically implies a formal, written list of deferred topics to revisit later, matching 'make sure someone actually writes it down.' Table that means to postpone in American English, but doesn't carry the written-list mechanism. Circle back to that separately just means revisiting later without implying any list. Park that for now means setting it aside temporarily, but without the specific parking-lot documentation practice being described." },
-    { question: "To reassure depositors after the scandal, the bank had to ___ its retail deposits so that losses from the trading desk could never touch ordinary customers' savings.", choices: ["earmark", "ring-fence", "offset", "quarantine"], answerIndex: 1, explanation: "Ring-fence is correct because it's the standard finance and regulatory term for formally separating and protecting specific funds from other risks, exactly matching this retail-deposits-versus-trading-desk scenario. Earmark just means designating funds for a specific purpose or budget line, without the protective element. Offset means counterbalancing one financial position against another, which is the opposite of isolating funds. Quarantine implies isolating something because it itself is risky or contaminated, but here it's the safe deposits being protected, not isolated because they're dangerous." },
-    { question: "Retail investors have been notoriously ___ this year — piling into meme stocks one month and fleeing to cash the next.", choices: ["volatile", "erratic", "fickle", "capricious"], answerIndex: 2, explanation: "Fickle is correct because it specifically describes shifting loyalty or preference between things, matching 'piling into X then fleeing.' Volatile usually describes large fluctuations in prices or moods themselves, not a pattern of switching allegiance between assets. Erratic describes unpredictable behavior without a clear pattern, but doesn't capture the specific back-and-forth switching of preference. Capricious describes impulsive, whimsical decisions in general, but lacks fickle's specific sense of loyalty repeatedly shifting from one thing to another." }
-  ]
-},
-{
   date: "2026-09-25",
   dateLabel: "2026年9月25日（金）",
   readTimeMin: 18,
@@ -1264,9 +1069,41 @@ const ENGLISH_REPORTS = [
   adjectives: [],
   collocations: [],
   todayQuiz: []
+},
+{
+  date: "2026-10-02",
+  dateLabel: "Day 2",
+  day: 2, phase: 1, round: 1, batch: 2, numBatches: 19, rounds: 3, totalDays: 57,
+  mode: "review",
+  readTimeMin: 30,
+  scopeLabel: "Phase 1 復習 Round 1・第2/19回（30表現）",
+  passages: [
+    {
+      title: "Email: Scaling the Singapore Desk",
+      genre: "Business Email",
+      text: "Hi all,\n\nI know hitting a Q1 launch date for the Singapore desk is {{a tall order|a tall order}}, but I think it's doable if we move now. Before we commit real budget, I want to {{get buy-in|get buy-in}} from Risk and Compliance so nobody is blindsided in week six. Legal has already started to {{lay the groundwork|lay the groundwork}} with the local regulator, which helps our timeline.\n\nHonestly, our March revenue is going to {{take a hit|take a hit}} if we delay this again, so I'd rather we {{double down on|double down on}} the hiring plan than scale it back now. Looking at the hiring market today, Maria was {{prescient|prescient}} back in October when she warned us that senior compliance hires would take four months to close — that's exactly what's happening.\n\nI don't want to be {{disingenuous|disingenuous}} about the risk: the onboarding paperwork alone will be {{onerous|onerous}} for a five-person team. Still, if we {{cover our bases|cover your bases}} on licensing early, a {{back-of-the-envelope|back-of-the-envelope}} estimate says we break even by August.\n\nThoughts welcome.\nJoon",
+      translation_ja: "皆さん\n\nシンガポール拠点のQ1立ち上げは相当な難題だと分かっていますが、今すぐ動けば実現可能だと思います。本格的に予算を投じる前に、週6でつまずかないようリスク部門とコンプライアンス部門の了承を得ておきたいです。法務はすでに現地の規制当局との地ならしを始めてくれており、これがスケジュールの助けになっています。\n\n正直に言うと、ここでまた延期すれば3月の売上は痛手を受けます。だから今は計画を縮小するより、採用計画にさらに力を入れるべきだと思います。今の採用市場を見ると、マリアが10月に『シニアのコンプライアンス人材の採用には4か月かかる』と先見の明をもって警告していたことが、まさに今起きています。\n\nリスクについて誤解を招くような言い方はしたくありません。オンボーディングの書類だけでも5人体制にはかなりの重荷になります。それでも、ライセンス関連を早めに手堅く押さえておけば、ざっくりした試算では8月には損益分岐点に達します。\n\nご意見をお待ちしています。\nJoon"
+    },
+    {
+      title: "Internal Memo: Reading the Credit Market",
+      genre: "Internal Memo",
+      text: "To: Credit Committee\nRe: Market color before Thursday's vote\n\nSpreads on leveraged loans still look {{frothy|frothy}} to me — pricing hasn't caught up with how {{hawkish|hawkish}} the Fed sounded last week. I'd rather wait for a {{watertight|watertight}} covenant package than chase yield into a market that's clearly overheated.\n\nI also want to flag something from Tuesday's call: our analyst's comment about the borrower's 'temporary' cash crunch felt {{tone-deaf|tone-deaf}}, given that three of their stores already closed this year. Anyone who's actually {{in the weeds|in the weeds}} on this credit knows the real issue is store-level traffic, not seasonality. Calling it temporary would be {{myopic|myopic}} at best.\n\nThat said, I respect that the originations team has {{skin in the game|have skin in the game}} here — their bonus is tied to this closing, so I understand the pressure. We still need someone {{savvy|savvy}} enough to flag {{the elephant in the room|the elephant in the room}}: this deal is {{bloated|bloated}} with add-backs that won't survive diligence.\n\n— Priya",
+      translation_ja: "宛先：クレジット委員会\nRe: 木曜の審査前のマーケット感覚\n\nレバレッジドローンのスプレッドは依然として過熱気味に見えます。先週のFRBがあれほどタカ派的な発言をした以上、プライシングがまだそれに追いついていません。市場が明らかに過熱している今、利回りを追いかけるより、鉄壁のコベナンツ・パッケージを待つ方がいいと思います。\n\n火曜の電話会議であったアナリストのコメントについても指摘したいのですが、借手のキャッシュ逼迫を『一時的』と表現したのは的外れに聞こえました。すでに今年3店舗が閉店しているのに。この案件の細部まで入り込んで把握している人なら、本当の問題が季節性ではなく店舗レベルの客足だと分かるはずです。それを一時的と呼ぶのは近視眼的と言わざるを得ません。\n\nとはいえ、オリジネーション担当チームがこの件に自分の利害を賭けていることは理解しています。ボーナスがこのクローズにかかっていますから、プレッシャーも分かります。それでも木曜には、誰かが抜け目なくその場の空気を読みつつ、見て見ぬふりをされている本質的な問題を指摘する必要があります。このディールはデューデリジェンスを通らないであろうアドバックで膨れ上がっています。\n\n— Priya"
+    },
+    {
+      title: "Catching Up After the Town Hall",
+      genre: "Dialogue",
+      text: "\"So, how was the new CEO's first town hall?\"\n\"Honestly, it was {{a far cry from|a far cry from}} what I expected. He actually seemed to {{read the room|read the room}} — no corporate spin, just straight talk about the layoffs.\"\n\"Interesting. Taking this job at all felt like {{a leap of faith|a leap of faith}} for him, given how the last three CEOs flamed out.\"\n\"True, but I'm willing to {{give him the benefit of the doubt|give someone the benefit of the doubt}} for now. He said the systems migration should feel {{seamless|seamless}} to clients, no downtime at all.\"\n\"Did he address the complaints about the new VP? People say she's pretty {{abrasive|abrasive}} in meetings.\"\n\"He did, actually. He wants the leadership team to {{take stock of|take stock of}} morale before Q4 planning. Says the rebrand is finally starting to {{gain traction|gain traction}} with clients, so he doesn't want to lose people now.\"\n\"Good. We definitely {{hit a snag|hit a snag}} with the last integration — hope this one goes smoother.\"\n\"Same. At least he {{set the tone|set the tone}} for the quarter: be honest, move fast, fix what's broken.\"",
+      translation_ja: "「新CEOの最初のタウンホール、どうだった？」\n「正直、想像とはかなり違ってたよ。企業っぽい言い回しなしで、レイオフについて率直に話していて、ちゃんと空気を読んでる感じだった」\n「面白いね。過去3人のCEOが失敗してきたことを考えると、彼がこの仕事を受けたこと自体が賭けだったわけだし」\n「たしかに。でも今のところは彼を信じて疑わないことにするよ。システム移行はクライアントにとってダウンタイムなしのシームレスなものになるはずだと言ってた」\n「新しい副社長への不満については何か言ってた？会議でかなりきつい言い方をするって評判だけど」\n「それについても触れてた。Q4の計画の前にリーダーシップチームで社内の士気を一度きちんと把握したいって。リブランディングはようやくクライアントの間で浸透し始めているから、今は人を失いたくないとも言ってた」\n「それはいいね。前回の統合では完全につまずいたから、今回はもっとスムーズに進むといいな」\n「同感。少なくとも彼は今四半期のトーンを決めてくれた。正直に、速く動いて、壊れているものを直す、という方向で」"
+    }
+  ],
+  coreItems: [],
+  adjectives: [],
+  collocations: [],
+  todayQuiz: []
 }
 ];
-// ── END_DATA ──  (last sync: 2026-10-01 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-10-02 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
