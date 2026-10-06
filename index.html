@@ -243,210 +243,6 @@ mark.tgt{background:#fef08a;color:#25211b;padding:1px 3px;border-radius:4px;font
 // ── START_DATA ──
 const ENGLISH_REPORTS = [
 {
-  date: "2026-09-27",
-  dateLabel: "2026年9月27日（日）",
-  mode: "review",
-  readTimeMin: 27,
-  scopeLabel: "9/14〜9/20に初出の表現 60件",
-  passages: [
-    { title: "Before Thursday's Investment Committee", genre: "Business Email", text: "Subject: Before Thursday's Investment Committee\n\nHi Sam,\n\nQuick thoughts before we walk in. Consumer discretionary has become a {{bellwether|bellwether}} for the whole portfolio this quarter — if that basket turns, everything else follows within weeks. Priya wants to add to Halden Retail on the dip, but I'd rather not {{catch a falling knife|catch a falling knife}} on a cheap-looking multiple.\n\nOn the org side, we finally {{have a leg up|have a leg up (on someone)}} on the two funds still integrating last year's back-office system — ours is already live. Worth defending: a rival shop is trying to {{poach two of our best analysts|poach talent (from a competitor)}} with a 40% pay bump, so let's move on retention before Friday. Finance also flagged that the office relocation has turned into a full {{boondoggle|boondoggle}} — two million over budget with nothing to show for it.\n\nCan we {{double-click on|Can we double-click on that?}} the Meridian earn-out numbers before the meeting? I don't want anyone to {{torpedo the whole proposal|torpedo a deal}} over a rounding error nobody checked. And can we {{take the temperature on this before we decide|Let's take the temperature on this before we decide.}}, rather than forcing a vote today?\n\nThanks for being so {{indefatigable|indefatigable}} on this deal. One earnings surprise from Halden could {{move markets|move markets}} across the sector, so stay sharp this week.\n\nBest,\nJordan", translation_ja: "件名: 木曜日の投資委員会の前に\n\nサムへ\n\n会議室に入る前に、いくつか共有しておきます。今四半期、消費財セクターがポートフォリオ全体の先行指標のようになっていて、あのバスケットが崩れれば他の銘柄も数週間以内に連れ安するはずです。プリヤはHalden Retailの株価が30%下がっているからと買い増しを主張していますが、指標上安く見えるからといって、まだ下落中の資産に飛びつくようなことはしたくありません。\n\n組織面では、昨年のバックオフィスシステム統合にまだ苦戦している2社に対して、ようやく一歩優位に立てています。うちのプラットフォームはすでに稼働中です。この優位性は守る価値があります。ライバル会社がうちの優秀なアナリスト2人を40%の昇給で引き抜こうとしていると聞いたので、金曜日までにリテンション対応を進めましょう。財務からの指摘では、オフィス移転プロジェクトが予算超過200万ドルで何の成果も出ていない、完全な無駄プロジェクトと化しているそうです。\n\n会議の前に、Meridianのアーンアウトの数字についてもう少し深掘りしておけますか。誰かが確認漏れの端数計算のせいで提案全体をぶち壊すような事態は避けたいです。あと、今日その場で無理に採決するのではなく、まずみんなの温度感を確認してから決める、というのはどうでしょうか。\n\nここまで根気強く対応してくれて感謝しています、大変な案件だったのは分かっています。Haldenの決算サプライズひとつでセクター全体の相場が動きかねないので、今週は気を抜かずにいきましょう。\n\nよろしく、\nジョーダン" },
-    { title: "New Hire Onboarding — Notes", genre: "Meeting Recap", text: "Quick recap from today's onboarding retro. A few new hires said the first week felt like trying to {{drink from a firehose|drink from a firehose}} — three systems, two org charts, and a compliance module on day one. We're spreading orientation over two weeks starting next cohort.\n\nThere was also a small {{kerfuffle|kerfuffle}} about badge access — IT deactivated three accounts by mistake, and one analyst felt genuinely {{gaslit|gaslight}} when the help desk insisted nothing was wrong for two full days. We're escalating that.\n\nOn culture: the desk-rotation policy has gotten a bit {{cantankerous|cantankerous}}, with two team leads bickering over who keeps the window seats. Compare that to Elena, who stayed remarkably {{insouciant|insouciant}} about losing her corner spot and just moved her plants.\n\nManagement floated a new mentorship program. Reaction was mixed — most people said {{I don't love it, but I can live with it|I don't love it, but I can live with it.}}, though one director was outright {{petulant|petulant}} about not being consulted. We reminded the room this is {{a nice-to-have, not a need-to-have|That's a nice-to-have, not a need-to-have.}} this quarter, so nobody should {{cut and run|cut and run}} from the pilot after one bad week.\n\nLastly, HR confirmed last year's exit-survey uproar was not an attempt to {{whitewash a scandal|whitewash a scandal}}, just a report delayed by legal review.", translation_ja: "本日のオンボーディング振り返りミーティングの簡単な記録です。何人かの新入社員から、最初の週はまるで消防ホースの水を一気に飲まされるような情報量だったという声がありました――初日だけで3つのシステム、2つの組織図、コンプライアンス研修まで詰め込まれていたとのことです。次回のコホートからは、オリエンテーションを2週間に分散させることで合意しました。\n\nバッジのアクセス権限をめぐって、ちょっとした揉め事もありました。ITが誤って3つのアカウントを無効化してしまい、あるアナリストはヘルプデスクから2日間も「そちらには問題ない」と言われ続け、まるで自分の記憶や認識を疑わされているような気分になったそうです。この件はエスカレーション対応中です。\n\n組織文化については、デスクのローテーション制度がやや険悪な雰囲気になっており、2人のチームリーダーが窓際の席をめぐって公然と言い合いをしているとの指摘がありました。一方でエレナは、自分の角席を失ったことについて驚くほど飄々としていて、文句も言わずに観葉植物を移動させただけでした。\n\n経営陣から新しいメンター制度が提案されました。反応は分かれていて、多くの人は「完全には納得していないけれど、妥協案として受け入れられる」という程度でしたが、あるディレクターは事前に相談されなかったことに露骨に不機嫌になっていました。これは今四半期においてはあったら良い程度の優先度の低い施策であることを念のため伝え、1週間うまくいかなかっただけでパイロットから急に手を引くようなことがないようお願いしました。\n\n最後に、人事から一言記録しておきたいとのことです。昨年の退職者アンケートを巡る騒動は、不祥事を隠蔽しようとしたものでは決してなく、単に法務レビューにより報告が遅れただけとのことです。" },
-    { title: "Linhurst Capital Names New CIO", genre: "News Brief", text: "MARKET BRIEF — Linhurst Capital names new CIO\n\nLinhurst Capital has promoted Theo Adeyemi, who {{cut his teeth|cut your teeth (on something)}} on the distressed-debt desk two decades ago, to chief investment officer next month. Colleagues describe him as a rare mix of technical depth and {{gravitas|gravitas}} — someone the trading floor listens to without needing volume.\n\nAdeyemi inherits a firm still relying on what one former employee called a {{kludge|kludge}} of spreadsheets patched together after last year's migration; he has promised a fully {{bespoke|bespoke}} risk platform by Q3. Sources say he already has {{his ducks in a row|have your ducks in a row}} for the transition, with a roadmap reportedly ready before the announcement went out.\n\nNot everyone is convinced. One rival portfolio manager called the timeline \"frankly {{churlish|churlish}}\" toward the two internal candidates passed over, though Linhurst denies any tension. Analysts say investors should {{take the announcement with a grain of salt|take something with a grain of salt}} until the framework is tested in a downturn.\n\nAdeyemi reportedly spent the past month {{burning the midnight oil|burn the midnight oil}} reviewing every fund's exposure personally. Several juniors say they {{smelled a rat|smell a rat}} when two senior risk officers quietly left last quarter. For now, the board has decided to {{throw the new CIO a bone|throw someone a bone}}: a full year before his first review.", translation_ja: "市場速報 — Linhurst Capital、新CIOを発表\n\nLinhurst Capitalは、20年前にディストレスト債務デスクで経験を積んだセオ・アデイェミ氏を、来月付けで最高投資責任者に昇格させると発表した。同僚たちは、彼を技術的な深い知見と、声を張らなくてもトレーディングフロアが耳を傾けるような貫禄を兼ね備えた稀有な人物だと評している。\n\nアデイェミ氏が引き継ぐのは、昨年のシステム移行後に継ぎ接ぎで組み上げられたスプレッドシートの寄せ集めだと元社員が語る体制であり、彼は第3四半期までに完全にオーダーメイドのリスク管理プラットフォームを構築すると約束している。関係者によれば、彼はすでに移行に向けた準備を整えており、発表前の時点で技術ロードマップまで用意されていたという。\n\n全員が納得しているわけではない。匿名を条件に語ったある競合ファンドのポートフォリオマネージャーは、今回の昇格のタイミングについて、内部で候補から外された2人に対して「率直に言って無礼だ」と評した。ただしLinhurst側は緊張関係を否定している。アナリストは、新しいリスク管理フレームワークが実際に不況下で試されるまでは、この発表を鵜呑みにせず割り引いて受け止めるべきだと述べている。\n\nアデイェミ氏はこの1か月、各ファンドのエクスポージャーを自ら精査するため、夜遅くまで根を詰めていたと伝えられる。数名の若手社員は、前四半期に2人のシニアリスク担当者が相次いで退職した際、何か怪しいと感づいたと話しているが、会社側は無関係だとしている。今のところ取締役会は、新CIOにちょっとした温情を示すことにしたようだ――最初の正式な業績評価まで丸1年の猶予を与えたのだ。" },
-    { title: "Notes Before the Vendor Renewal Call", genre: "Internal Memo", text: "INTERNAL MEMO — Before the vendor renewal call\n\nA few notes before Thursday. Procurement doesn't need anyone to {{twist their arm|twist someone's arm}} on renewing with Castellan Data — the terms are fair, and {{let's not reinvent the wheel|let's not reinvent the wheel}} on a process that's worked fine for three years.\n\nKeep the call efficient. Castellan's rep can be a little {{garrulous|garrulous}} once he gets going, so someone should own timekeeping. Stay professional even if their counsel gets {{querulous|querulous}} about the indemnification clause again — that complaint resurfaces every renewal and has never changed the outcome.\n\nOn tone: we'd rather sound confident than {{sanctimonious|sanctimonious}} about our compliance record, even though it's genuinely strong this year. If they push back on price, {{hold your nerve|hold your nerve}} — we already have two alternative vendors vetted.\n\nFinance has agreed to {{clear the runway|clear the runway (for something)}} so the contract can be signed before month-end, and legal will {{build in a buffer|build in a buffer}} of two extra weeks in case redlines drag on. Everyone should {{move in lockstep|move in lockstep (with)}} — no side conversations promising exceptions Castellan hasn't earned.\n\nThe team has been genuinely {{ebullient|ebullient}} about closing this out before the holidays, so let's not lose that momentum over a clause we've already negotiated three times.", translation_ja: "社内メモ — ベンダー更新契約の電話会議の前に\n\n木曜日の前にいくつか共有します。調達チームは、Castellan Dataとの契約更新について誰かを無理に説得する必要はありません。条件は妥当ですし、3年間問題なく機能してきたプロセスをわざわざゼロから作り直す必要もありません。\n\n通話は効率的に進めてください。Castellanの営業担当は話し出すと止まらないところがあるので、誰かが時間管理を担当してください。先方の顧問弁護士が今回も補償条項について文句がましい態度を見せてきても、こちら側はプロらしく対応しましょう。この不満は更新のたびに毎回蒸し返されますが、これまで結果が変わったことは一度もありません。\n\nトーンについては、今年のコンプライアンス実績は本当に良好ですが、それを聖人ぶって誇示するのではなく、自信を持って伝えるようにしましょう。価格面で押し返されても、動じずに持ちこたえてください。代替候補となるベンダーはすでに2社、審査済みです。\n\n運用面では、財務が月末までに新契約を締結できるよう障害を取り除くことに合意しており、法務にはレドラインの調整が長引いた場合に備えて2週間分の余裕を組み込んでおくよう依頼しています。全員が足並みを揃えて動く必要があります――Castellanがまだ得ていない例外を、個別に約束するような裏交渉は禁止です。\n\nもう一点。チームはこの案件を年末休暇前に片付けられることに本当に活気づいているので、もう3回も交渉してきた条項ひとつでその勢いを失わないようにしましょう。" },
-    { title: "Debrief After the Client Call", genre: "Dialogue", text: "RENA: So they agreed to the pilot, but with one big {{caveat|caveat}} — they want an exit clause after ninety days.\nDEV: Fine, as long as the whole partnership isn't {{underpinned by|underpin}} that one clause. We need real commitment, not a trial they can walk away from.\nRENA: Agreed. I stayed pretty {{circumspect|circumspect}} on the call — didn't want to promise anything about pricing until legal weighs in.\nDEV: Good, because their new negotiator was borderline {{acerbic|acerbic}} about our last proposal. Called it \"lazy,\" apparently.\nRENA: If they push that hard without any data to back it up, they {{don't have a leg to stand on|not have a leg to stand on}}. Our numbers are solid.\nDEV: True, but they did {{raise the bar|raise the bar}} for what we need to deliver this time. Last year's version won't cut it.\nRENA: Honestly, I've spent all week {{waiting for the other shoe to drop|wait for the other shoe to drop}} on this deal.\nDEV: Same. Their compliance team made us {{jump through hoops|jump through hoops}} just to get the NDA signed.\nRENA: I thought they'd walk after the pricing discussion. {{I stand corrected.|I stand corrected.}}\nDEV: Let's not decide how to respond tonight, though. {{Let's sleep on it.|Let's sleep on it.}} and regroup tomorrow with clearer heads.", translation_ja: "レナ：向こうはパイロット導入に同意したけど、大きな条件付きだった――90日後に解約できる条項が欲しいって。\nデヴ：それはいいけど、パートナーシップ全体がその一条項だけに支えられているような状態にはしたくないな。いつでも抜けられる試用期間じゃなくて、本当のコミットメントが必要だ。\nレナ：同感。価格については法務が確認するまで何も約束したくなかったから、電話ではかなり慎重に対応したよ。\nデヴ：よかった、というのも先方の新しい交渉担当が前回の提案についてかなり辛辣だったから。「手抜きだ」とまで言われたらしい。\nレナ：データの裏付けもなくそこまで強気に来るなら、彼らには拠り所となる根拠が全くないよ。うちの数字はしっかりしてる。\nデヴ：たしかに。でも今回は水準を引き上げられたのは事実。去年のバージョンじゃもう通用しない。\nレナ：正直、今週はずっとこの話が壊れるんじゃないかと身構えて待ってたよ。\nデヴ：同じく。先方のコンプライアンスチームには、NDAにサインしてもらうだけなのに無理難題を乗り越えさせられた。\nレナ：価格の話が出た時点で向こうは撤退すると思ってたよ。訂正するよ、私が間違ってた。\nデヴ：今夜結論を出すのはやめよう。一晩寝かせて、明日頭がすっきりした状態で仕切り直そう。" },
-    { title: "What I Learned Negotiating My First Raise", genre: "Personal Essay", text: "I used to think negotiating a salary meant being {{flippant|flippant}} about the number — tossing out something absurd and seeing what stuck. That's not what worked. What worked was walking in with real numbers: three comparable roles, their pay ranges, and mine.\n\nMy manager's first offer was almost {{exorbitant|exorbitant}} in the wrong direction — barely above what I already made, a clear attempt to {{lowball me|lowball (an offer)}} before negotiations even started. I didn't get {{unabashed|unabashed}} and demand double, but I did say, \"{{Just so we're clear|Just so we're clear, ...}}, I have three other offers, and none of them look like this.\"\n\nWe spent an hour trying to {{whiteboard an idea|whiteboard an idea}} that worked for both sides — more base pay now, a bonus tied to a six-month review. I made sure to {{surface the issue|surface an issue}} of the six-month gap since our last real conversation, since it had genuinely affected my trust.\n\nAt one point I almost {{got ahead of myself|Let's not get ahead of ourselves.}} planning how to spend money I didn't have. My roommate talked me down: don't {{cherry-pick|cherry-pick (the data)}} the one optimistic scenario and ignore the other three.\n\nIn the end, the raise wasn't dramatic, and my lifestyle stayed {{austere|austere}} for another year. But I'd negotiated for the first time without flinching, and that mattered more than the number.", translation_ja: "以前の私は、給与交渉というのは軽薄に、とんでもない数字を投げてみて相手の反応をうかがうようなものだと思っていた。でも実際にうまくいったのはそういうやり方ではなかった。本当に効果があったのは、類似する3つの職種の給与レンジと自分の現在の給与という、具体的な数字を持って臨むことだった。\n\n上司からの最初の提示額は、逆方向にとんでもない金額だった――今もらっている額とほとんど変わらず、交渉が始まる前から明らかに安値を提示して足元を見ようとするものだった。だからといって私は悪びれずに倍額を要求したりはしなかったが、こう言った。「念のためはっきりさせておきますが、他に3社からオファーをもらっていて、どれもこんな内容ではありません」。\n\n私たちは1時間かけて、双方にとって納得できる案を気軽に図解しながら一緒に練り上げた――基本給を今すぐ上げて、半年後の評価に連動したボーナスを付ける形だ。前回の話し合いから今回までの半年間の空白について、それが自分の信頼にどれほど影響したかを、きちんと表面化させて伝えるようにした。\n\n一瞬、まだ手にしていないお金の使い道を先走って考え始めそうになったが、ルームメイトが引き止めてくれた。楽観的なシナリオひとつだけをつまみ食いして、数字がほとんど動かない残り3つのシナリオを無視してはいけない、と。\n\n結局、昇給額は劇的なものではなく、その後1年間も生活は相変わらず質素なままだった。それでも、怯まずに初めて交渉できたことのほうが、金額そのものより重要だった。" }
-  ],
-  coreItems: [],
-  adjectives: [],
-  collocations: [],
-  todayQuiz: []
-},
-{
-  date: "2026-09-28",
-  dateLabel: "2026年9月28日（月）",
-  readTimeMin: 20,
-  coreItems: [
-    {
-      type: "word", term: "hubris", ipa: "/ˈhjuːbrɪs/", register: "ニュース・決算分析で頻出（フォーマル、失敗の原因を批判的に語る場面）",
-      meaning_en: "excessive pride or self-confidence, especially of a kind that leads to a serious misjudgment or downfall",
-      meaning_ja: "度を超した自信・傲慢さ。特にそれが原因で重大な判断ミスや失脚を招く場合に使う。",
-      examples: [
-        "The CEO's hubris led him to ignore three separate warnings from the risk committee before the fund collapsed.",
-        "It was pure hubris to think we could integrate two competing platforms in six weeks."
-      ],
-      synonyms: [
-        { term: "arrogance", nuance_ja: "より中立的・一般的な『傲慢さ』。hubrisほど『破滅につながる』ニュアンスは強くない。" },
-        { term: "conceit", nuance_ja: "自己評価の高さに焦点があり、他者への影響や結果への含みは薄い。" },
-        { term: "overreach", nuance_ja: "傲慢さそのものより『行き過ぎた行動』に焦点がある。hubrisは内面的な心理状態を指す点が異なる。" }
-      ],
-      explanation_ja: "hubrisはもともとギリシャ悲劇で『神々への挑戦的な傲慢さ』を指す語で、必ずその報い(=downfall, nemesis)とセットで語られてきた歴史があります。ビジネス英語でも単なる自信家を指すのではなく、『その自信のせいで痛い目にあった/あうだろう』という含みが必ず伴う点がarrogance/conceitと違うところ。決算カンファレンスコールやM&A失敗の分析記事で\"corporate hubris\"という形で頻出するので、ニュースを読む上でも覚えておく価値が高い語です。"
-    },
-    {
-      type: "word", term: "mollify", ipa: "/ˈmɒlɪfaɪ/", register: "ややフォーマル。PR・カスタマー対応のニュースでよく使われる。",
-      meaning_en: "to calm someone down or make them less angry, often by making small concessions",
-      meaning_ja: "（怒りなどを）なだめる、和らげる。多くの場合、小さな譲歩によって相手を落ち着かせること。",
-      examples: [
-        "The airline offered a partial refund to mollify passengers after the third delay announcement.",
-        "Nothing I said seemed to mollify her — she was still fuming about the missed deadline an hour later."
-      ],
-      synonyms: [
-        { term: "placate", nuance_ja: "意味はほぼ同じだが、placateの方が『一時しのぎ・表面的』という含みがわずかに強い場面で好まれる。" },
-        { term: "appease", nuance_ja: "より大きな譲歩（要求そのものを飲む）を伴うことが多く、政治的文脈では『宥和政策』のように否定的な含みを帯びやすい。" },
-        { term: "soothe", nuance_ja: "感情（痛み・不安）を穏やかにする一般的な語で、必ずしも『相手の怒りへの対応』という文脈を必要としない。" }
-      ],
-      explanation_ja: "mollifyはラテン語のmollis（柔らかい）に由来し、文字通り『相手を柔らかくする』というイメージの語です。似た単語のplacate・appeaseとの使い分けが頻出のポイント：mollifyは『一時的に落ち着かせる』小さな行動（謝罪、割引、説明など）に使われることが多く、根本的な問題解決までは含意しません。PR文脈のニュース記事で\"in an attempt to mollify critics\"のような形でよく登場します。"
-    },
-    {
-      type: "idiom", term: "eat what you kill", ipa: "", register: "インフォーマル〜ビジネス俗語。特に金融・法律業界（歩合制の報酬体系）で頻出。",
-      meaning_en: "used to describe a compensation or business model in which your income depends directly on the revenue or deals you personally generate, rather than a fixed salary",
-      meaning_ja: "自分が生み出した成果（売上・案件）に直結して報酬が決まる歩合制の仕組みを指す表現。固定給ではなく『自分で獲得した分だけ得る』文化。",
-      examples: [
-        "At most boutique advisory firms, it's an eat-what-you-kill culture — your bonus is basically your origination revenue.",
-        "She left the salaried research role for a sales desk that pays eat-what-you-kill commissions, and she's thriving under the pressure."
-      ],
-      synonyms: [
-        { term: "pay for performance", nuance_ja: "より中立的でフォーマルな人事用語。『狩り』のような生々しいニュアンスはない。" },
-        { term: "commission-based", nuance_ja: "単に報酬形態を説明する客観的な語で、eat what you killが持つ『弱肉強食の企業文化』というニュアンスまでは含まない。" }
-      ],
-      explanation_ja: "狩猟の比喩から来た表現で、文字通り『自分が仕留めたものを食べる＝自分が稼いだ分しか得られない』という厳しい歩合制の世界を指します。ヘッジファンドの営業職や独立系のM&Aブティック、法律事務所のパートナー制度などでよく使われ、単に『歩合制』と説明するより、その文化の競争的・自己責任的な雰囲気まで一語で伝えられるのが魅力です。ネガティブにもポジティブにも（『実力主義で公平』という文脈でも）使われます。"
-    },
-    {
-      type: "phrase", term: "a war chest", ipa: "", register: "ビジネスニュース・M&A文脈で頻出。会話でも使える。",
-      meaning_en: "a large sum of money that a company or investor has accumulated and kept available for a future purpose, such as an acquisition, a legal fight, or a downturn",
-      meaning_ja: "将来の買収・訴訟・不況対応などに備えて蓄えておく多額の資金（『軍資金』）。",
-      examples: [
-        "After the divestiture, the company is sitting on a $2 billion war chest for potential acquisitions.",
-        "The activist investor built up a sizable war chest before launching its proxy fight against the board."
-      ],
-      synonyms: [
-        { term: "dry powder", nuance_ja: "PE/VC業界で特によく使われる同義語。war chestより『未投資の待機資金』という金融専門的な響きが強い。" },
-        { term: "cash reserves", nuance_ja: "より中立的・会計的な表現。war chestが持つ『戦略的な攻めの資金』という含みは薄い。" }
-      ],
-      explanation_ja: "文字通り『戦争のための資金』が語源で、企業や投資家が『いざという時のために蓄えた資金』を指す比喩表現です。M&Aのニュースでは買収資金として、政治や訴訟の文脈では『戦うための資金』として使われます。同義語のdry powderはPE/VCファンドが『まだ投資していない待機資金』を指す際に好まれ、war chestの方が業界を問わず使える汎用的な表現です。金融ニュースの見出しにも非常によく登場します。"
-    }
-  ],
-  adjectives: [
-    {
-      term: "intractable", ipa: "/ɪnˈtræktəbl/", register: "分析・ニュース（フォーマル、解決困難な問題・状況を形容）",
-      meaning_en: "very difficult to solve, control, or manage; not easily resolved",
-      meaning_ja: "（問題などが）手に負えない、解決困難な。",
-      examples: [
-        "Inflation has proven far more intractable than the central bank initially projected.",
-        "The two co-founders have an intractable disagreement about the company's exit strategy."
-      ],
-      synonyms: [
-        { term: "intransigent", nuance_ja: "既出。こちらは『人の態度・意見が頑固』を指すことが多く、intractableは『問題・状況』そのものに使うのが基本という違いがある。" },
-        { term: "thorny", nuance_ja: "既出。intractableより『扱いにくい・デリケート』という感触が強く、必ずしも『解決不可能』というほど深刻でないことも多い。" }
-      ],
-      explanation_ja: "tractable（御しやすい、従順な）にin-がついた否定形で、『手綱を引いても従わない』というイメージの語です。人よりも『問題・課題・状況』を主語にすることが圧倒的に多く、決算資料やニュースでは\"an intractable problem\"のように使われます。既出のintransigent（人が頑固）との使い分け——主語が『人』ならintransigent、『問題』ならintractableと覚えると整理しやすいです。"
-    },
-    {
-      term: "surreptitious", ipa: "/ˌsʌrəpˈtɪʃəs/", register: "会話・ニュース（中立〜やや否定的、こっそりとした行動を形容）",
-      meaning_en: "done secretly or stealthily, often because it would not be approved of if discovered",
-      meaning_ja: "こっそりと行われる、人目を忍んだ。（発覚すれば問題になるようなことについて使う）",
-      examples: [
-        "He took a surreptitious glance at his phone during the board meeting.",
-        "The company made a surreptitious change to the terms of service that nobody noticed for months."
-      ],
-      synonyms: [
-        { term: "covert", nuance_ja: "より公式・組織的な『隠密』（諜報活動など）に使われやすく、個人のちょっとした行動にはsurreptitiousの方が自然。" },
-        { term: "clandestine", nuance_ja: "covertよりさらに『違法性・陰謀めいた重大さ』を帯びやすく、日常的な『こっそり』にはやや大げさ。" }
-      ],
-      explanation_ja: "個人の『ちょっとした、バレたらまずい行動』を描写するのに最も自然な語で、covert/clandestineが軍事・諜報寄りの重々しい語であるのに対し、surreptitiousは会議中にこっそりスマホを見る、こっそりメモを渡す、といった日常的なスケールの『こっそり』にぴったりです。副詞形surreptitiouslyも非常によく使われます。"
-    },
-    {
-      term: "cogent", ipa: "/ˈkoʊdʒənt/", register: "プレゼン・議論評（フォーマル、論理構成の質を褒める場面）",
-      meaning_en: "(of an argument or reason) clear, logical, and convincing",
-      meaning_ja: "（議論・理由が）説得力があり筋が通っている、明快な。",
-      examples: [
-        "She made a cogent case for why the team should delay the launch by a quarter.",
-        "The memo lacked a cogent explanation for the sudden change in strategy."
-      ],
-      synonyms: [
-        { term: "compelling", nuance_ja: "『感情的にも引き込まれる』ニュアンスを含みやすく、cogentは純粋に『論理構成がしっかりしている』ことに焦点がある。" },
-        { term: "persuasive", nuance_ja: "『相手を説得できたかどうか』という結果寄りの語。cogentは結果に関わらず『論の組み立てそのものの質』を評価する語。" }
-      ],
-      explanation_ja: "コンサルタントやMBAの文脈で、プレゼンや議論の『質』を褒める際の定番の語です。persuasiveは『実際に相手を動かせたか』に重心がありますが、cogentは『論理が破綻なく、無駄なく組み立てられているか』という構造面の評価に使われます。\"a cogent argument/case/explanation\"のコロケーションで覚えておくと便利です。"
-    },
-    {
-      term: "ostensible", ipa: "/ɒˈstensəbl/", register: "ニュース・分析（フォーマル、表向きの理由への懐疑を示す場面）",
-      meaning_en: "stated or appearing to be true, but not necessarily so — often implying the real reason is different",
-      meaning_ja: "表向きの、うわべ上の（実際の理由は別にあることを示唆する）。",
-      examples: [
-        "The ostensible reason for his resignation was 'personal reasons,' but everyone suspected the real story was the failed product launch.",
-        "The meeting's ostensible purpose was a budget review, though it quickly turned into a discussion about the reorg."
-      ],
-      synonyms: [
-        { term: "apparent", nuance_ja: "単に『見た目上そう見える』というだけで、『実は違う』という含みはostensibleほど強くない。" },
-        { term: "purported", nuance_ja: "『そう主張されている』という伝聞・引用のニュアンスが強く、話者の懐疑を示すのはostensibleより弱いことが多い。" }
-      ],
-      explanation_ja: "ostensibleは必ずと言っていいほど『本当の理由は別にある』という皮肉・疑いのニュアンスを伴う点がapparentと異なります。ニュース記事で\"the ostensible reason\"と出てきたら、その直後に『しかし実際は…』という文が続くと予測して読むと理解が早くなります。ostensibly（副詞）も同じ含みで頻出です。"
-    }
-  ],
-  collocations: [
-    {
-      phrase: "run a tight ship",
-      meaning_en: "to manage an organization, team, or operation in a strict, disciplined, and efficient way",
-      meaning_ja: "組織やチームを規律正しく、無駄なく効率的に運営する。",
-      examples: [
-        "Say what you want about her management style, but she runs a tight ship — deadlines are never missed.",
-        "The new plant manager runs a tight ship: every process is documented and every exception gets flagged."
-      ],
-      synonyms: [
-        { term: "keep things buttoned-up", nuance_ja: "既出のbuttoned-upを使った言い換え。よりカジュアルで『組織化されコントロール下にある』という状態面に寄る。run a tight shipは『統率のスタイル』そのものを指す点がやや異なる。" }
-      ],
-      explanation_ja: "船の乗組員を厳しく統率する船長のイメージから来た表現で、良い意味（効率的）にも、やや批判的な意味（厳しすぎる）にも使えます。マネジメントスタイルを評価するときの定番表現で、面接で自分の強みを語る際にも\"I run a tight ship\"のように自己紹介的に使われます。"
-    },
-    {
-      phrase: "keep a lid on (costs / spending)",
-      meaning_en: "to prevent something, especially costs or spending, from increasing or getting out of control",
-      meaning_ja: "（コストや支出などを）抑え込む、増やさないようにコントロールする。",
-      examples: [
-        "Management has managed to keep a lid on costs despite rising input prices.",
-        "It's getting harder to keep a lid on employee expectations after two years of double-digit raises."
-      ],
-      synonyms: [
-        { term: "rein in (something)", nuance_ja: "既出。rein inは『すでに増えすぎているものを引き戻す』ニュアンスが強く、keep a lid onは『そもそも増えないよう蓋をしておく』予防的な意味合いがやや強い。" }
-      ],
-      explanation_ja: "『蓋をして中身が噴き出さないようにする』というイメージの表現で、コスト・インフレ・従業員の不満など『放っておくと膨れ上がるもの』を抑える文脈で使われます。決算発表のQ&Aで\"How are you keeping a lid on opex?\"のような形でよく質問されます。"
-    },
-    {
-      phrase: "tighten the belt / tighten your belt",
-      meaning_en: "to spend less money and live or operate more frugally, usually because of financial difficulty",
-      meaning_ja: "支出を切り詰める、節約する（財政的に苦しい時に）。",
-      examples: [
-        "With revenue down 15% year over year, every department has been asked to tighten its belt.",
-        "We had to tighten our belts for a few months after I switched to a lower-paying but more interesting job."
-      ],
-      synonyms: [
-        { term: "cut corners", nuance_ja: "既出。cut cornersは『品質や手順を犠牲にして手を抜く』というネガティブな含みが強く、tighten the beltは単に『支出を減らす』という中立的な節約行動を指す点が異なる。" }
-      ],
-      explanation_ja: "ベルトを締めて（お腹が空いていても）我慢する、というイメージから来た非常にポピュラーな慣用句です。個人の家計にも、企業のコスト削減にも同じように使え、ネガティブな響きは比較的弱く『賢く節約する』という前向きな文脈でもよく使われます。"
-    },
-    {
-      phrase: "raise a stink (about something)",
-      meaning_en: "to complain loudly and persistently about something, often to draw attention or force a change",
-      meaning_ja: "（何かについて）大騒ぎして強く抗議する、しつこく文句を言う。",
-      examples: [
-        "A few customers raised a stink on social media, and the company reversed the policy within 24 hours.",
-        "He's not the type to raise a stink, so if he's complaining, something must genuinely be wrong."
-      ],
-      synonyms: [
-        { term: "kick up a fuss", nuance_ja: "よりイギリス英語的な響きが強い同義表現。意味はほぼ同じ。" }
-      ],
-      explanation_ja: "文字通り『悪臭を巻き起こす』というイメージのくだけた表現で、フォーマルな文書には使いませんが、同僚との会話やニュースの引用文では非常によく登場します。似た構造の\"raise a red flag\"（既出：懸念を指摘する）より、raise a stinkは『騒ぎ立てて周囲を巻き込む』という感情的・大げさなニュアンスが強い点が違いです。"
-    }
-  ],
-  todayQuiz: [
-    { question: "Analysts largely blamed the deal's collapse on executive ___ — leadership was so confident in the synergy projections that they brushed aside every warning from due diligence, and the integration cost the firm nearly a third of its market cap.", choices: ["hubris", "arrogance", "conceit", "overreach"], answerIndex: 0, explanation: "Hubris is correct because the sentence explicitly ties the overconfidence to a disastrous outcome (the deal's collapse and the massive loss in value) — that link between excessive self-belief and downfall is the defining feature of hubris. Arrogance only names the attitude itself, without hubris's built-in sense of eventual comeuppance. Conceit focuses narrowly on vanity about one's own image, not on ignoring warnings that lead to failure. Overreach names the behavior of going too far, not the psychological trait behind it that the sentence is asking for." },
-    { question: "The board's proposal to freeze executive bonuses for a single year was clearly meant to ___ shareholders angry about the pay ratio — a modest, symbolic gesture rather than any real change to the compensation structure.", choices: ["appease", "goad", "flatter", "mollify"], answerIndex: 3, explanation: "Mollify is correct because it describes calming someone's anger through a small, often symbolic concession, exactly matching 'a modest, symbolic gesture rather than any real change.' Appease is the trap answer: it implies actually giving in to the underlying demand, which the sentence explicitly rules out. Goad means the opposite — to provoke or incite someone, not calm them. Flatter means to compliment someone insincerely, which has nothing to do with responding to shareholder anger." },
-    { question: "Which sentence uses the idiom 'eat what you kill' correctly?", choices: ["The startup finally started to eat what you kill after burning through two rounds of funding.", "The regulator decided to eat what you kill and approved the merger without conditions.", "Junior bankers on that origination desk are on an eat-what-you-kill plan — no deals closed, no bonus.", "After the layoffs, the remaining employees had to eat what you kill to cover the extra workload."], answerIndex: 2, explanation: "The third sentence is correct because it uses the idiom for its actual meaning: a compensation structure where income depends directly on the deals or revenue you personally generate. The first sentence misuses it to mean 'become profitable,' which isn't what the idiom describes. The second sentence misapplies it to a regulator's decision, which has nothing to do with personal compensation. The fourth sentence confuses the idiom with simply 'having to handle more workload,' rather than a pay structure tied to individual output." },
-    { question: "A private equity fund that has raised $5 billion in committed capital but has not yet deployed any of it toward acquisitions is best described as sitting on a large amount of ___.", choices: ["war chest", "dry powder", "cash reserve", "nest egg"], answerIndex: 1, explanation: "Dry powder is correct because it's the standard industry term specifically for capital that a PE or VC fund has raised but not yet invested. War chest is a real and related term, but it's used more broadly for companies or activist investors building up funds for a future fight or acquisition, not the specific fund-level jargon for uncalled committed capital. Cash reserve is too generic and accounting-flavored for this fund-specific context. Nest egg is used for personal savings, not institutional investment capital, so the register is wrong." },
-    { question: "Despite three rounds of arbitration, the pricing dispute between the two co-founders remains ___ — neither side has moved an inch.", choices: ["intractable", "intransigent", "thorny", "futile"], answerIndex: 0, explanation: "Intractable is correct because it describes a problem or dispute that resists resolution, fitting grammatically and logically as a description of the dispute itself. Intransigent is the trap answer: it describes a person's stubborn refusal to compromise, not the dispute itself, so it doesn't work as a description of the disagreement as a whole. Thorny means delicate or tricky, but it understates a conflict that has already survived three failed rounds of arbitration. Futile means useless or pointless, which would describe the arbitration attempts themselves, not the ongoing state of the dispute." },
-    { question: "The ___ reason for postponing the product announcement was 'further internal review,' though insiders say the real driver was a last-minute change to the revenue projections.", choices: ["apparent", "alleged", "ostensible", "purported"], answerIndex: 2, explanation: "Ostensible is correct because it specifically means 'stated as the reason, but likely not the real one,' matching the sentence's own contrast introduced by 'though insiders say...'. Apparent just means something seems to be the case, without the built-in suggestion that it's a cover story. Alleged is normally used for accusations or claims of wrongdoing, which doesn't fit the neutral 'reason for postponing' context. Purported is close in meaning but is usually paired with a claim being reported or quoted directly, and doesn't fit as naturally in the fixed collocation 'the ostensible reason.'" }
-  ]
-},
-{
   date: "2026-09-29",
   dateLabel: "2026年9月29日（火）",
   readTimeMin: 20,
@@ -951,9 +747,41 @@ const ENGLISH_REPORTS = [
   adjectives: [],
   collocations: [],
   todayQuiz: []
+},
+{
+  date: "2026-10-06",
+  dateLabel: "Day 5",
+  day: 5, phase: 1, round: 1, batch: 5, numBatches: 19, rounds: 3, totalDays: 57,
+  mode: "review",
+  readTimeMin: 30,
+  scopeLabel: "Phase 1 復習 Round 1・第5/19回（30表現）",
+  passages: [
+    {
+      title: "Email: Hard Truths on the Meridian Position",
+      genre: "Business Email",
+      text: "Hi team,\n\nI'll be blunt: the Meridian trade has gone from a core position to a problem. Revenue fell off a {{precipitous|precipitous}} cliff last quarter, and management's explanation on the call felt {{perfunctory|perfunctory}} — a few slides, no real detail, almost like {{a dog and pony show|a dog and pony show}} for the board rather than an honest update.\n\nI know our original thesis felt {{unassailable|unassailable}} a year ago, but the facts have changed. Whoever was covering the sector clearly {{dropped the ball|drop the ball}} on monitoring covenant compliance, and now we're staring at a {{cut your losses|cut your losses}} decision instead of a value-add one.\n\nBefore anyone accuses finance of {{cooking the books|cook the books}}, let me be clear: the restatement was the company's doing, not ours. Still, if the new auditor's findings are {{commensurate|commensurate}} with what I'm hearing informally, I think we should {{pull the plug|pull the plug}} on the position rather than wait for Q4.\n\nI know this feels like {{back to square one|back to square one}} for the sector thesis, but better now than in six months.\n\nDana",
+      translation_ja: "チームへ\n\n率直に言います。Meridianの取引はコアポジションから問題案件になってしまいました。前四半期の売上は急激な崖を転げ落ちるように落ち込み、電話会議での経営陣の説明は形だけのもので、詳細はほとんどなく、取締役会向けの見せかけのデモンストレーションのようでした。\n\n1年前はこの投資テーマは揺るぎないものだと感じていましたが、状況は変わりました。このセクターを担当していた誰かがコベナンツ遵守のモニタリングで明らかに手を抜き、今では付加価値を生む判断ではなく、損切りの判断を迫られています。\n\n財務が帳簿を操作しているなどと言われないようにはっきりさせておきますが、修正再表示は会社側がやったことで、私たちの責任ではありません。とはいえ、新しい監査人の所見が非公式に聞いている話と見合うものなら、第4四半期を待つのではなく、このポジションから手を引くべきだと思います。\n\nセクターの投資テーマがまた振り出しに戻るように感じるのは分かっていますが、6か月後より今の方がいいでしょう。\n\nダナ"
+    },
+    {
+      title: "Recap: Vendor Contract Renegotiation",
+      genre: "Meeting Recap",
+      text: "Recap from today's vendor renegotiation prep.\n\nEveryone agrees {{the ball is in your court|the ball is in your court}} now — we made the last offer two weeks ago and haven't heard back. Legal reminded us not to assume the vendor's rep is {{asleep at the wheel|asleep at the wheel}} just because the silence is dragging on; he's historically been pretty {{unflappable|unflappable}} under pressure, so radio silence might just be a negotiating tactic.\n\nWhat struck most of us was how {{brazen|brazen}} their last counter-offer was, practically assuming we wouldn't push back at all. Procurement wants to bring in someone more {{hard-nosed|hard-nosed}} for the next call, since our current negotiator has been too accommodating. Priya pointed out that being {{wishy-washy|wishy-washy}} about our walk-away price last time probably cost us leverage.\n\nOn the numbers side, finance wants to {{shore up|shore up (something)}} the contingency budget before we commit to anything new, and operations asked us to {{rein in|rein in (something)}} scope creep on the SLA language — it's grown with every draft. We still need to {{hash out the details|hash out (the details)}} on liability caps before Thursday.\n\nOne flag: someone noticed the vendor may have {{padded the numbers|pad the numbers}} in their cost breakdown, inflating line items we never approved. Worth raising directly rather than letting it slide.",
+      translation_ja: "本日のベンダー再交渉準備の振り返り。\n\n今はボールは相手側にあるという点で全員一致しています——2週間前に最後のオファーを出してから返事がありません。法務は、沈黙が長引いているからといってベンダー側の担当者が居眠り運転をしているわけではないと念押ししました。彼は昔からプレッシャーの中でも動揺しないタイプなので、この沈黙は単なる交渉戦術かもしれません。\n\n多くの人が驚いたのは、相手の前回のカウンターオファーがあまりに図々しく、まるで私たちが反論しないと決めつけているかのようだった点です。調達部門は次回の電話会議にはもっと強硬な交渉役を立てたいと考えています。現在の担当者が譲歩しすぎだったからです。プリヤは、前回こちらの撤退価格について曖昧な態度を取ったことが交渉力を失わせた原因だろうと指摘しました。\n\n数字の面では、財務は新しいコミットをする前に予備予算をしっかり固めておきたいとのことで、オペレーション側はSLAの文言における範囲の膨張を抑えてほしいと求めています——ドラフトを重ねるたびに肥大化しています。木曜までに責任上限についての細部をまだ詰める必要があります。\n\n一点注意として、ベンダーがコスト内訳で数字を水増ししており、承認していない項目を盛り込んでいる可能性があるとの指摘がありました。見過ごさず直接指摘する価値があります。"
+    },
+    {
+      title: "Office Chat: The Product Launch Postmortem",
+      genre: "Dialogue",
+      text: "\"Did you get a chance to {{broach|broach}} the budget issue with marketing yet?\"\n\"Not yet. I don't want them to think we're trying to {{sandbag|sandbag}} their numbers before the quarter even starts.\"\n\"Fair. Though if this actually works, we could {{parlay|parlay}} the launch data into a much bigger ask for next year.\"\n\"True. Right now I'm more worried about {{optics|optics}} — if the launch slips again, it'll look like the team can't ship.\"\n\"Isn't that kind of {{the tail wagging the dog|the tail wagging the dog}}, though? We're letting optics drive the actual decision instead of the data.\"\n\"Maybe. But legal says we're {{on the hook|be on the hook (for something)}} for the vendor penalty either way, slip or no slip.\"\n\"Ugh. Is there any way to just {{paper over the cracks|paper over the cracks}} for this release and fix it properly next quarter?\"\n\"I wish. Realistically we {{have our work cut out for us|have your work cut out for you}} just getting the core feature stable.\"\n\"So a full relaunch before year-end is basically {{a non-starter|a non-starter}}?\"\n\"Pretty much. At this point I just want us to agree on {{a hard stop|a hard stop}} for scope changes so we can actually ship something.\"",
+      translation_ja: "「マーケティングに予算の問題、もう切り出した?」\n「まだ。四半期が始まる前から相手の数字を低く見積もらせようとしてると思われたくなくて」\n「分かる。でもこれが本当にうまくいけば、ローンチのデータを使って来年もっと大きな予算を引き出せるかもしれない」\n「そうだね。今は見え方の方が心配。またローンチが延びたら、チームが出荷できないように見えてしまう」\n「それって本質を見失ってない?尻尾が犬を振っているみたいに、実際のデータより見え方の方が意思決定を動かしてしまってる」\n「かもね。でも法務によれば、延びようが延びなかろうが、ベンダーへの違約金はどちらにしても負う義務があるらしい」\n「うーん。今回のリリースは表面だけ繕って、ちゃんとした修正は来四半期にする、みたいなことはできないの?」\n「できればいいけど。現実的には、コア機能を安定させるだけでもやるべきことが山積みだよ」\n「じゃあ年内のフルリローンチは、現実的には検討の余地なしってこと?」\n「ほぼそうだね。今のところは、スコープ変更の締め切りを一つ決めて、ちゃんと何かを出荷できるようにしたい」"
+    }
+  ],
+  coreItems: [],
+  adjectives: [],
+  collocations: [],
+  todayQuiz: []
 }
 ];
-// ── END_DATA ──  (last sync: 2026-10-04 / automated refresh)
+// ── END_DATA ──  (last sync: 2026-10-06 / automated refresh)
 
 function esc(s){
   if(s===undefined||s===null) return '';
